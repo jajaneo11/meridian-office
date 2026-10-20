@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T21:02:42.464986+00:00",
+ "generated_at": "2026-10-20T21:07:42.097634+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -35,6 +35,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-20T21:06:24.366Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- ENERGY-SOL: bot holders 33.32% > 30%"
+   },
    {
     "ts": "2026-10-20T20:39:24.224Z",
     "type": "no_deploy",
@@ -122,14 +130,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED - Narrative quality is unclear (still generating) and smart wallets are absent, making it hard to assess conviction. - Fee/TVL ratio is moderate, but volume a"
-   },
-   {
-    "ts": "2026-10-20T16:48:56.737Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED - Fees paid (258.5 SOL) is above the threshold, but the narrative is still being generated, and there are no smart wallets present, making it a risky choice. "
    }
   ]
  },
@@ -181,25 +181,25 @@
    },
    {
     "hour": "21:00",
-    "count": 0
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T21:00:01.159",
+  "last_screening": "2026-10-20T21:06:24.064",
   "last_management": "2026-10-20T21:00:00.742"
  },
  "log_tail": [
-  "[2026-10-20T20:55:10.112Z] [ERROR] Agent loop error at step 0: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-20T20:55:10.113Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-20T21:00:00.742Z] [CRON] Starting management cycle",
-  "[2026-10-20T21:00:01.120Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-20T21:00:01.121Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-20T21:00:01.159Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T21:00:01.160Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-20T21:00:02.237Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 48.29% > 30%",
   "[2026-10-20T21:00:03.665Z] [ERROR] Agent loop error at step 0: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-20T21:00:03.666Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits"
+  "[2026-10-20T21:00:03.666Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
+  "[2026-10-20T21:06:24.064Z] [SCREENING] PVP guard: ENERGY-SOL has active rival Energy Coin (Wr8xawXW)",
+  "[2026-10-20T21:06:24.064Z] [CRON] [Opportunity] ENERGY-SOL degen 98.3 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-20T21:06:24.064Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T21:06:24.064Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T21:06:24.174Z] [SCREENING] PVP guard: ENERGY-SOL has active rival Energy Coin (Wr8xawXW)",
+  "[2026-10-20T21:06:24.357Z] [SCREENING] Bot-holder filter: dropped ENERGY-SOL \u2014 bots 33.32% > 30%"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

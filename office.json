@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T16:47:40.608788+00:00",
+ "generated_at": "2026-10-20T16:52:42.885452+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -35,6 +35,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-20T16:50:43.023Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED - Narrative quality is unclear (still generating) and smart wallets are absent, making it hard to assess conviction. - Fee/TVL ratio is moderate, but volume a"
+   },
+   {
+    "ts": "2026-10-20T16:48:56.737Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED - Fees paid (258.5 SOL) is above the threshold, but the narrative is still being generated, and there are no smart wallets present, making it a risky choice. "
+   },
    {
     "ts": "2026-10-20T16:41:15.704Z",
     "type": "no_deploy",
@@ -114,22 +130,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - Both pools lack a clear narrative (narratives are still being generated), which is a critical signal for deployment. - No smart wallets are present in either pool, reducing confidence in the organic acti"
-   },
-   {
-    "ts": "2026-10-20T15:50:14.330Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED - No smart wallets present in any candidate pool, reducing confidence. - Narrative quality is unclear (still being generated) for all candidates, making it ha"
-   },
-   {
-    "ts": "2026-10-20T15:45:32.874Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - Both candidates lack a clear narrative (narratives are still being generated), which is a critical signal for deployment. - No smart wallets are present in either pool, reducing confidence in the organic"
    }
   ]
  },
@@ -145,7 +145,7 @@
    },
    {
     "hour": "07:00",
-    "count": 4
+    "count": 2
    },
    {
     "hour": "08:00",
@@ -181,25 +181,25 @@
    },
    {
     "hour": "16:00",
-    "count": 9
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T16:46:53.805",
-  "last_management": "2026-10-20T16:40:00.906"
+  "last_screening": "2026-10-20T16:50:01.354",
+  "last_management": "2026-10-20T16:50:00.566"
  },
  "log_tail": [
-  "[2026-10-20T16:40:00.906Z] [CRON] Starting management cycle",
-  "[2026-10-20T16:40:01.332Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-20T16:40:01.703Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T16:40:01.703Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T16:40:07.487Z] [ERROR] Agent loop error at step 0: 429 Provider returned error",
-  "[2026-10-20T16:41:15.703Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-20T16:46:53.805Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-20T16:46:53.805Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T16:46:53.806Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T16:47:07.249Z] [ERROR] Agent loop error at step 0: 429 Provider returned error"
+  "[2026-10-20T16:47:07.249Z] [ERROR] Agent loop error at step 0: 429 Provider returned error",
+  "[2026-10-20T16:47:57.582Z] [ERROR] Agent loop error at step 2: 429 Provider returned error",
+  "[2026-10-20T16:48:56.737Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T16:50:00.566Z] [CRON] Starting management cycle",
+  "[2026-10-20T16:50:00.980Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-20T16:50:01.354Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T16:50:01.354Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T16:50:43.023Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

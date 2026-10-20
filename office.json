@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T17:07:40.147679+00:00",
+ "generated_at": "2026-10-20T17:12:40.003731+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -35,6 +35,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-20T17:10:49.500Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE FTR-SOL (7dCLVSgExKHWZLWcuLbyYNKHxmZbtpqiYbgynv5HpdFk) WHY SKIPPED - Narrative quality: All narratives are still being generated, making it impossible to assess the token's story or catalyst. - Smart wallets: No smart wallets are"
+   },
    {
     "ts": "2026-10-20T17:07:33.807Z",
     "type": "no_deploy",
@@ -122,14 +130,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Dacity-USDC: bot holders 49.48% > 30%"
-   },
-   {
-    "ts": "2026-10-20T16:10:34.192Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PUNANI-SOL WHY SKIPPED - **Narrative Quality**: All candidates have narratives still being generated, making it impossible to assess their quality or legitimacy. - **Smart Wallets**: None of the pools have smart wallets present, "
    }
   ]
  },
@@ -145,7 +145,7 @@
    },
    {
     "hour": "08:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "09:00",
@@ -181,25 +181,25 @@
    },
    {
     "hour": "17:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T17:07:08.832",
-  "last_management": "2026-10-20T17:00:00.014"
+  "last_screening": "2026-10-20T17:10:01.289",
+  "last_management": "2026-10-20T17:10:00.555"
  },
  "log_tail": [
-  "[2026-10-20T17:00:00.014Z] [CRON] Starting management cycle",
-  "[2026-10-20T17:00:00.429Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-20T17:00:00.430Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-20T17:00:00.462Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T17:00:00.462Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-20T17:00:24.462Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-20T17:07:08.832Z] [CRON] [Opportunity] FTR-SOL degen 61.4 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-20T17:07:08.832Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T17:07:08.832Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T17:07:33.806Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T17:07:33.806Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T17:10:00.555Z] [CRON] Starting management cycle",
+  "[2026-10-20T17:10:00.923Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-20T17:10:01.289Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T17:10:01.290Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T17:10:49.500Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

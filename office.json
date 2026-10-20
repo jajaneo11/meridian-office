@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:12:40.941629+00:00",
+ "generated_at": "2026-10-20T15:17:45.244515+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -26,15 +26,23 @@
   "win_rate_pct": null
  },
  "decisions": {
-  "total": 99,
-  "today": 99,
+  "total": 100,
+  "today": 100,
   "by_type": {
-   "no_deploy": 99
+   "no_deploy": 100
   },
   "by_actor": {
-   "SCREENER": 99
+   "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-20T15:15:38.536Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - Both candidates lack a clear narrative (narrative is still being generated), which is a critical signal for deployment. - No smart wallets are present in either pool, reducing confidence in organic tract"
+   },
    {
     "ts": "2026-10-20T15:10:17.867Z",
     "type": "no_deploy",
@@ -122,14 +130,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "### Analysis of the Candidate Pool: Pok\u00e9mon-SOL 1. **Narrative Quality**: The narrative is being generated, and there is no specific information available yet. This is a neutral-to-negative signal as it lacks a clear, identifiable catalyst or community backing. 2. **Smart Wallets**: No smart wallets"
-   },
-   {
-    "ts": "2026-10-20T14:10:19.794Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - No narrative available for either candidate, making it impossible to assess their quality or origin. - No smart wallets are present in either pool, reducing confidence in the setups. - COMPUTE-SOL has lo"
    }
   ]
  },
@@ -181,25 +181,25 @@
    },
    {
     "hour": "15:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T15:10:01.098",
+  "last_screening": "2026-10-20T15:15:23.763",
   "last_management": "2026-10-20T15:10:00.263"
  },
  "log_tail": [
-  "[2026-10-20T15:05:38.810Z] [CRON] [Opportunity] PUNANI-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-20T15:05:38.810Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T15:05:38.810Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T15:05:39.125Z] [SCREENING] Bot-holder filter: dropped PUNANI-SOL \u2014 bots 33.59% > 30%",
   "[2026-10-20T15:10:00.263Z] [CRON] Starting management cycle",
   "[2026-10-20T15:10:00.694Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-20T15:10:01.098Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T15:10:01.098Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-20T15:10:03.961Z] [SCREENING] Bot-holder filter: dropped PUNANI-SOL \u2014 bots 33.46% > 30%",
-  "[2026-10-20T15:10:17.867Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T15:10:17.867Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T15:15:23.763Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-20T15:15:23.763Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T15:15:23.763Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T15:15:38.535Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

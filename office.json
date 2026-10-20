@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T16:42:43.598897+00:00",
+ "generated_at": "2026-10-20T16:47:40.608788+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -186,20 +186,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T16:40:01.703",
+  "last_screening": "2026-10-20T16:46:53.805",
   "last_management": "2026-10-20T16:40:00.906"
  },
  "log_tail": [
-  "[2026-10-20T16:37:08.794Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 91.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-20T16:37:08.795Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T16:37:08.795Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T16:37:16.080Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-20T16:40:00.906Z] [CRON] Starting management cycle",
   "[2026-10-20T16:40:01.332Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-20T16:40:01.703Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T16:40:01.703Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-20T16:40:07.487Z] [ERROR] Agent loop error at step 0: 429 Provider returned error",
-  "[2026-10-20T16:41:15.703Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T16:41:15.703Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T16:46:53.805Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-20T16:46:53.805Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T16:46:53.806Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T16:47:07.249Z] [ERROR] Agent loop error at step 0: 429 Provider returned error"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

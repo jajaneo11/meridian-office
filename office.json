@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T14:47:38.803403+00:00",
+ "generated_at": "2026-10-20T14:52:39.562433+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -26,15 +26,23 @@
   "win_rate_pct": null
  },
  "decisions": {
-  "total": 94,
-  "today": 94,
+  "total": 95,
+  "today": 95,
   "by_type": {
-   "no_deploy": 94
+   "no_deploy": 95
   },
   "by_actor": {
-   "SCREENER": 94
+   "SCREENER": 95
   },
   "recent": [
+   {
+    "ts": "2026-10-20T14:50:15.174Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - All candidates lack a clear, specific narrative (narratives are still being generated). - No smart wallets are present in any pool, reducing confidence in organic demand. - Fee/TVL ratios are moderate, b"
+   },
    {
     "ts": "2026-10-20T14:45:33.512Z",
     "type": "no_deploy",
@@ -122,14 +130,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - Both candidates lack a clear narrative (still generating), which is a key signal for conviction. - No smart wallets are present in either pool, reducing confidence in organic demand. - UHI-SOL has lower "
-   },
-   {
-    "ts": "2026-10-20T13:47:38.627Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE UHI-SOL WHY SKIPPED - The narrative for UHI-SOL is still being generated, indicating no clear or identifiable catalyst or origin story. - No smart wallets are present in the pool, reducing confidence in the token's organic tracti"
    }
   ]
  },
@@ -181,25 +181,25 @@
    },
    {
     "hour": "14:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T14:45:23.873",
-  "last_management": "2026-10-20T14:40:00.714"
+  "last_screening": "2026-10-20T14:50:01.019",
+  "last_management": "2026-10-20T14:50:00.209"
  },
  "log_tail": [
-  "[2026-10-20T14:36:31.233Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-20T14:40:00.714Z] [CRON] Starting management cycle",
-  "[2026-10-20T14:40:01.157Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-20T14:40:01.561Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T14:40:01.562Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T14:40:18.195Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-20T14:45:23.873Z] [CRON] [Opportunity] UHI-SOL degen 87.5 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-20T14:45:23.873Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T14:45:23.873Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T14:45:33.511Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T14:45:33.511Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T14:50:00.209Z] [CRON] Starting management cycle",
+  "[2026-10-20T14:50:00.633Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-20T14:50:01.019Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T14:50:01.019Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T14:50:10.772Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-20T14:50:15.174Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

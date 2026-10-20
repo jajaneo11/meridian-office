@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T17:17:42.790582+00:00",
+ "generated_at": "2026-10-20T17:22:39.855141+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -35,6 +35,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-20T17:20:31.862Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL WHY SKIPPED The pool fee/active-TVL ratio is 0%, which is below the configured minimum threshold of 0.05%. This makes the pool unattractive for deployment despite other favorable metrics like organic score and volatility"
+   },
    {
     "ts": "2026-10-20T17:16:01.549Z",
     "type": "no_deploy",
@@ -122,14 +130,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - The narrative is still being generated, indicating a lack of clear, identifiable origin or community backing. - No smart wallets are present in the pool, which reduces confidence in the organic demand. -"
-   },
-   {
-    "ts": "2026-10-20T16:20:22.798Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED - No narrative available for any candidate, and no smart wallets are present to override this lack of context. - The best candidate (Pok\u00e9mon-SOL) has a generi"
    }
   ]
  },
@@ -145,7 +145,7 @@
    },
    {
     "hour": "08:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "09:00",
@@ -181,25 +181,25 @@
    },
    {
     "hour": "17:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T17:15:23.854",
-  "last_management": "2026-10-20T17:10:00.555"
+  "last_screening": "2026-10-20T17:20:00.998",
+  "last_management": "2026-10-20T17:20:00.087"
  },
  "log_tail": [
-  "[2026-10-20T17:07:33.806Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-20T17:10:00.555Z] [CRON] Starting management cycle",
-  "[2026-10-20T17:10:00.923Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-20T17:10:01.289Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T17:10:01.290Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-20T17:10:49.500Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-20T17:15:23.854Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-20T17:15:23.854Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T17:15:23.854Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T17:16:01.548Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T17:16:01.548Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T17:20:00.087Z] [CRON] Starting management cycle",
+  "[2026-10-20T17:20:00.511Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-20T17:20:00.998Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T17:20:00.998Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T17:20:31.862Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

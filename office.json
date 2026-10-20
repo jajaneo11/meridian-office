@@ -1,0 +1,205 @@
+{
+ "generated_at": "2026-10-20T14:37:02.901387+00:00",
+ "mode": {
+  "dry_run": true,
+  "model": "deepseek/deepseek-chat"
+ },
+ "wallet": {
+  "sol": 0.0
+ },
+ "limits": {
+  "max_positions": 3,
+  "deploy_sol": 0.5,
+  "screening_min": 30,
+  "management_min": 10
+ },
+ "positions": {
+  "open_count": 0,
+  "open": [],
+  "total_tracked": 0
+ },
+ "pnl": {
+  "last24h_usd": 0,
+  "fees24h_usd": 0,
+  "all_time_usd": 0,
+  "closed_total": 0,
+  "win_rate_pct": null
+ },
+ "decisions": {
+  "total": 93,
+  "today": 93,
+  "by_type": {
+   "no_deploy": 93
+  },
+  "by_actor": {
+   "SCREENER": 93
+  },
+  "recent": [
+   {
+    "ts": "2026-10-20T14:36:31.234Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - The narrative for the token is still being generated, indicating a lack of clear or identifiable origin or community backing. - No smart wallets are present in the pool, which reduces confidence in the t"
+   },
+   {
+    "ts": "2026-10-20T14:30:11.213Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - None of the candidates have a clear or generated narrative, which is a critical signal for deployment. - No smart wallets are present in any of the pools, reducing confidence in organic activity. - The f"
+   },
+   {
+    "ts": "2026-10-20T14:25:27.715Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - Both candidates lack a clear narrative (still generating), which is a critical signal for deployment. - No smart wallets are present in either pool, reducing confidence in organic activity. - While Pok\u00e9m"
+   },
+   {
+    "ts": "2026-10-20T14:20:09.369Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - No narrative available yet for Pok\u00e9mon-SOL, and no smart wallets are present to override this. - COMPUTE-SOL and WEFT-SOL also lack narratives and smart wallets, making them weak candidates. - All candid"
+   },
+   {
+    "ts": "2026-10-20T14:18:17.374Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "### Analysis of the Candidate Pool: Pok\u00e9mon-SOL 1. **Narrative Quality**: The narrative is being generated, and there is no specific information available yet. This is a neutral-to-negative signal as it lacks a clear, identifiable catalyst or community backing. 2. **Smart Wallets**: No smart wallets"
+   },
+   {
+    "ts": "2026-10-20T14:10:19.794Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - No narrative available for either candidate, making it impossible to assess their quality or origin. - No smart wallets are present in either pool, reducing confidence in the setups. - COMPUTE-SOL has lo"
+   },
+   {
+    "ts": "2026-10-20T14:09:12.209Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED The candidate pool Pok\u00e9mon-SOL has a strong organic score (86) and decent metrics (fee/TVL: 0.1396%, volume: $23,625, volatility: 2.6207). However, the narrative is still being generated, and there are no "
+   },
+   {
+    "ts": "2026-10-20T14:00:12.091Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - No narrative available for any of the candidates, making it impossible to assess their quality or origin. - No smart wallets are present in any of the pools, which reduces confidence in their viability. "
+   },
+   {
+    "ts": "2026-10-20T13:55:33.888Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Both candidates lack a clear narrative and have no smart wallets present. Pok\u00e9mon-SOL has higher volume and TVL, but the narrative is still generating, and LUKE-SOL has lower metrics across the board. With"
+   },
+   {
+    "ts": "2026-10-20T13:50:54.686Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED - Both candidates lack a clear narrative (still generating), which is a key signal for conviction. - No smart wallets are present in either pool, reducing confidence in organic demand. - UHI-SOL has lower "
+   },
+   {
+    "ts": "2026-10-20T13:47:38.627Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE UHI-SOL WHY SKIPPED - The narrative for UHI-SOL is still being generated, indicating no clear or identifiable catalyst or origin story. - No smart wallets are present in the pool, reducing confidence in the token's organic tracti"
+   },
+   {
+    "ts": "2026-10-20T13:40:42.627Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED All candidates have narratives still generating, making it impossible to assess narrative quality - a key factor in deployment decisions. Additionally, none h"
+   }
+  ]
+ },
+ "activity": {
+  "per_hour": [
+   {
+    "hour": "03:00",
+    "count": 0
+   },
+   {
+    "hour": "04:00",
+    "count": 0
+   },
+   {
+    "hour": "05:00",
+    "count": 0
+   },
+   {
+    "hour": "06:00",
+    "count": 8
+   },
+   {
+    "hour": "07:00",
+    "count": 12
+   },
+   {
+    "hour": "08:00",
+    "count": 10
+   },
+   {
+    "hour": "09:00",
+    "count": 11
+   },
+   {
+    "hour": "10:00",
+    "count": 10
+   },
+   {
+    "hour": "11:00",
+    "count": 12
+   },
+   {
+    "hour": "12:00",
+    "count": 11
+   },
+   {
+    "hour": "13:00",
+    "count": 11
+   },
+   {
+    "hour": "14:00",
+    "count": 8
+   }
+  ]
+ },
+ "cycles": {
+  "last_screening": "2026-10-20T14:36:23.738",
+  "last_management": "2026-10-20T14:30:00.145"
+ },
+ "log_tail": [
+  "[2026-10-20T14:30:00.145Z] [CRON] Starting management cycle",
+  "[2026-10-20T14:30:00.587Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-20T14:30:00.588Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-20T14:30:00.625Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T14:30:00.625Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T14:30:11.213Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T14:36:23.738Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 97.3 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-20T14:36:23.738Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T14:36:23.738Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T14:36:31.233Z] [AGENT] \u26d4 NO DEPLOY"
+ ],
+ "state_last_updated": "2026-10-20T06:07:49.580Z"
+}

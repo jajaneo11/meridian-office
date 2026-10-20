@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T17:22:39.855141+00:00",
+ "generated_at": "2026-10-20T17:27:45.786282+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -186,20 +186,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T17:20:00.998",
+  "last_screening": "2026-10-20T17:25:08.836",
   "last_management": "2026-10-20T17:20:00.087"
  },
  "log_tail": [
-  "[2026-10-20T17:10:49.500Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-20T17:15:23.854Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-20T17:15:23.854Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T17:15:23.854Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T17:16:01.548Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-20T17:20:00.087Z] [CRON] Starting management cycle",
   "[2026-10-20T17:20:00.511Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-20T17:20:00.998Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T17:20:00.998Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T17:20:31.862Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T17:20:31.862Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T17:25:08.835Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-20T17:25:08.836Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T17:25:08.836Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T17:25:21.464Z] [ERROR] Agent loop error at step 2: 402 This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.",
+  "[2026-10-20T17:25:21.464Z] [CRON_ERROR] Screening cycle failed: 402 This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits."
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

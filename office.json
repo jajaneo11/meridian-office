@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:22:39.218451+00:00",
+ "generated_at": "2026-10-20T15:27:40.000487+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -186,20 +186,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T15:20:01.606",
+  "last_screening": "2026-10-20T15:25:08.799",
   "last_management": "2026-10-20T15:20:00.734"
  },
  "log_tail": [
-  "[2026-10-20T15:15:23.763Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T15:15:23.763Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T15:15:38.535Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-20T15:20:00.734Z] [CRON] Starting management cycle",
-  "[2026-10-20T15:20:01.213Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-20T15:20:01.606Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T15:20:01.606Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-20T15:20:03.575Z] [SCREENING] Bot-holder filter: dropped PUNANI-SOL \u2014 bots 33.94% > 30%",
   "[2026-10-20T15:20:03.575Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 49.46% > 30%",
-  "[2026-10-20T15:20:28.128Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T15:20:28.128Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T15:25:08.798Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-20T15:25:08.799Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T15:25:08.799Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T15:25:10.212Z] [SCREENING] Bot-holder filter: dropped PUNANI-SOL \u2014 bots 34.14% > 30%",
+  "[2026-10-20T15:25:30.270Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

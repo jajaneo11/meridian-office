@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T14:37:02.901387+00:00",
+ "generated_at": "2026-10-20T14:42:38.759201+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -186,20 +186,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T14:36:23.738",
-  "last_management": "2026-10-20T14:30:00.145"
+  "last_screening": "2026-10-20T14:40:01.561",
+  "last_management": "2026-10-20T14:40:00.714"
  },
  "log_tail": [
-  "[2026-10-20T14:30:00.145Z] [CRON] Starting management cycle",
-  "[2026-10-20T14:30:00.587Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-20T14:30:00.588Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-20T14:30:00.625Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-20T14:30:00.625Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-20T14:30:11.213Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-20T14:36:23.738Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 97.3 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-20T14:36:23.738Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T14:36:23.738Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-20T14:36:31.233Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T14:36:31.233Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T14:40:00.714Z] [CRON] Starting management cycle",
+  "[2026-10-20T14:40:01.157Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-20T14:40:01.561Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T14:40:01.562Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T14:40:18.195Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T16:02:39.162980+00:00",
+ "generated_at": "2026-10-20T16:07:39.759466+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -35,6 +35,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-20T16:06:24.075Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PUNANI-SOL: bot holders 33.10% > 30%"
+   },
    {
     "ts": "2026-10-20T16:00:34.309Z",
     "type": "no_deploy",
@@ -122,14 +130,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- PUNANI-SOL: bot holders 33.59% > 30%"
-   },
-   {
-    "ts": "2026-10-20T15:00:24.556Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "I couldn't complete that reliably because no tool call was made. Please retry after checking the logs."
    }
   ]
  },
@@ -145,7 +145,7 @@
    },
    {
     "hour": "07:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "08:00",
@@ -181,25 +181,25 @@
    },
    {
     "hour": "16:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-20T16:00:01.300",
+  "last_screening": "2026-10-20T16:06:23.781",
   "last_management": "2026-10-20T16:00:00.850"
  },
  "log_tail": [
-  "[2026-10-20T15:55:09.579Z] [SCREENING] Bot-holder filter: dropped PUNANI-SOL \u2014 bots 33.53% > 30%",
-  "[2026-10-20T15:55:23.112Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-20T16:00:00.850Z] [CRON] Starting management cycle",
-  "[2026-10-20T16:00:01.300Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-20T16:00:01.300Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-20T16:00:01.343Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-20T16:00:01.343Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-20T16:00:03.140Z] [SCREENING] Bot-holder filter: dropped PUNANI-SOL \u2014 bots 33.41% > 30%",
   "[2026-10-20T16:00:03.140Z] [SCREENING] Bot-holder filter: dropped PUNANI-SOL \u2014 bots 33.41% > 30%",
-  "[2026-10-20T16:00:34.308Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-20T16:00:34.308Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-20T16:06:23.781Z] [CRON] [Opportunity] PUNANI-SOL degen 99.2 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-20T16:06:23.781Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-20T16:06:23.781Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-20T16:06:24.074Z] [SCREENING] Bot-holder filter: dropped PUNANI-SOL \u2014 bots 33.10% > 30%"
  ],
  "state_last_updated": "2026-10-20T06:07:49.580Z"
 }

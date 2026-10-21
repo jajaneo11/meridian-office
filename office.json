@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T13:52:46.790387+00:00",
+ "generated_at": "2026-10-21T13:57:43.165032+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 60
+  "decisions_mentioning": 61
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 389,
+  "total_real": 390,
   "today": 100,
-  "today_real": 180,
+  "today_real": 181,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T13:56:29.785Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CRAWL-SOL WHY SKIPPED Wallet balance is 0.000 SOL, insufficient for the required 0.5 SOL deployment. Despite acceptable metrics (fees, smart wallet signal, and volatility), capital availability is a hard block. REJECTED CRAWL-SOL"
+   },
+   {
+    "ts": "2026-10-21T13:56:08.868Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- HUMANOID-SOL: bot holders 45.76% > 30%"
+   },
    {
     "ts": "2026-10-21T13:50:19.451Z",
     "type": "no_deploy",
@@ -159,22 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Both top candidates (GTA6-SOL with 2 smart wallets, Pok\u00e9mon-SOL with 1 smart wallet) failed deploy validation. The first was blocked due to fee/active-TVL ratio below configured minimum. The second was blo"
-   },
-   {
-    "ts": "2026-10-21T12:25:43.665Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE NEURALINK-SOL WHY SKIPPED Although this pool passes hard filters (fees > 30 SOL, valid bin step), it lacks a verifiable narrative and has no smart wallet presence. Per screening guidelines, candidates with no narrative and no sma"
-   },
-   {
-    "ts": "2026-10-21T12:20:25.968Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpdJeWer4xsHUff93WPnmECYpDXE4GW1y2QmXtzFBm) WHY SKIPPED PHP-SOL had the strongest signal (1 smart wallet: Degen #15) but failed the hard gate on fee/active-TVL ratio (0.0005% < required 0.005%). This check runs at depl"
    }
   ]
  },
@@ -202,7 +202,7 @@
    },
    {
     "hour": "07:00",
-    "count": 6
+    "count": 4
    },
    {
     "hour": "08:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "13:00",
-    "count": 8
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T13:50:01.847",
+  "last_screening": "2026-10-21T13:56:18.167",
   "last_management": "2026-10-21T13:50:00.621"
  },
  "log_tail": [
-  "[2026-10-21T13:45:06.150Z] [SCREENING] Bot-holder filter: dropped QUANTS-SOL \u2014 bots 52.87% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T13:50:00.621Z] [CRON] Starting management cycle",
-  "[2026-10-21T13:50:01.301Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T13:50:01.847Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T13:50:01.848Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.02% > 30%",
   "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.02% > 30%",
   "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped Normie-SOL \u2014 bots 34.33% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T13:56:18.034Z] [CRON] [Opportunity] HUMANOID-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T13:56:18.167Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T13:56:18.167Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T13:56:19.353Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 45.78% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

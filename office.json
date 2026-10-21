@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T17:57:44.365533+00:00",
+ "generated_at": "2026-10-21T18:11:32.741318+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 438,
+  "total_real": 441,
   "today": 100,
-  "today_real": 229,
+  "today_real": 232,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T18:11:02.490Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP2SHELL-SOL WHY SKIPPED DOPE-SOL failed the fee/active-TVL threshold despite smart wallet and momentum. OGDOGE-SOL passed fee check but no smart wallets and heavy 1h dump. PHP2SHELL has smart wallet but -55% 1h price action cre"
+   },
+   {
+    "ts": "2026-10-21T18:05:52.810Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Both Pok\u00e9mon-SOL and DOPE-SOL were rejected by the active-TVL fee gate, even though they had strong smart wallet signals and decent metrics. The pre-loaded data doesn't reflect real-time active-TVL, and th"
+   },
    {
     "ts": "2026-10-21T17:50:24.366Z",
     "type": "no_deploy",
@@ -159,38 +175,18 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL WHY SKIPPED Deploy blocked by pool's active fee/TVL ratio (0%) being below the minimum threshold. No smart wallets were present in the highest-fee pool (pill-baton) to offset this risk. REJECTED - ALPENGLOW-SOL: fee"
-   },
-   {
-    "ts": "2026-10-21T16:45:36.543Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED My wallet balance is 0.00 SOL, but a deployment requires 0.5 SOL. Without sufficient capital, no position can be opened regardless of candidate quality. The cycle cannot proceed until funds are replenished"
-   },
-   {
-    "ts": "2026-10-21T16:40:46.596Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL WHY SKIPPED ALPENGLOW-SOL had strong conviction signals (1 smart wallet present, solid fees), but failed the fee/active-TVL ratio filter on deployment. PEPA-SOL and PHP-SOL were valid on all hard metrics but the sys"
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "06:00",
-    "count": 0
-   },
-   {
     "hour": "07:00",
     "count": 0
    },
    {
     "hour": "08:00",
-    "count": 27
+    "count": 25
    },
    {
     "hour": "09:00",
@@ -227,24 +223,28 @@
    {
     "hour": "17:00",
     "count": 9
+   },
+   {
+    "hour": "18:00",
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T17:56:17.850",
-  "last_management": "2026-10-21T17:50:00.919"
+  "last_screening": "2026-10-21T18:10:02.074",
+  "last_management": "2026-10-21T18:10:00.897"
  },
  "log_tail": [
-  "[2026-10-21T17:50:00.919Z] [CRON] Starting management cycle",
-  "[2026-10-21T17:50:01.472Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T17:50:02.037Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T17:50:02.037Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T17:50:23.494Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-21T18:05:18.429Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
-  "[2026-10-21T17:56:17.746Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 79.7 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T17:56:17.850Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T17:56:17.850Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "[2026-10-21T18:10:00.897Z] [CRON] Starting management cycle",
+  "[2026-10-21T18:10:01.533Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T18:10:02.074Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T18:10:02.074Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T18:10:52.417Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-21T18:10:58.256Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-21T18:11:00.011Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

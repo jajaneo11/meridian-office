@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T17:42:43.312031+00:00",
+ "generated_at": "2026-10-21T17:47:46.414970+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 435,
+  "total_real": 436,
   "today": 100,
-  "today_real": 226,
+  "today_real": 227,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T17:45:34.012Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP2SHELL-SOL WHY SKIPPED DOPE-SOL failed on fee/active-TVL ratio during deployment, and retrying in the same session is blocked by the SDK. PHP2SHELL-SOL was the runner-up with a smart wallet signal and strong metrics, but with "
+   },
    {
     "ts": "2026-10-21T17:40:49.674Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Both pools show placeholder narratives (\"being generated\") with no verifiable origin or community story. Neither has smart wallet presence to validate the setup. Both are extremely new (1h and 11h), which incr"
-   },
-   {
-    "ts": "2026-10-21T16:30:40.175Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpd...) WHY SKIPPED Wallet balance is 0 SOL. Goal is 0.5 SOL. Unable to deploy. REJECTED PHP-SOL (ELnpd...) - No funds ALPENGLOW-SOL - No funds GTA6-SOL - No funds Pok\u00e9mon-SOL - No funds WEFT-SOL - No funds PEPA-SOL - "
    }
   ]
  },
@@ -190,7 +190,7 @@
    },
    {
     "hour": "08:00",
-    "count": 29
+    "count": 28
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "17:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T17:40:01.532",
+  "last_screening": "2026-10-21T17:45:03.829",
   "last_management": "2026-10-21T17:40:00.452"
  },
  "log_tail": [
-  "[2026-10-21T17:36:04.037Z] [CRON] [Opportunity] GTA6-SOL degen 51.4 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T17:36:04.304Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T17:36:04.306Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T17:40:00.452Z] [CRON] Starting management cycle",
   "[2026-10-21T17:40:01.044Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T17:40:01.532Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T17:40:01.533Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T17:40:03.673Z] [SCREENING] Bot-holder filter: dropped Normie-SOL \u2014 bots 32.21% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T17:45:03.743Z] [CRON] [Opportunity] WEFT-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T17:45:03.829Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T17:45:03.829Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

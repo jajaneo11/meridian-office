@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T12:52:38.839500+00:00",
+ "generated_at": "2026-10-21T12:57:48.310468+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 57
+  "decisions_mentioning": 56
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 377,
+  "total_real": 378,
   "today": 100,
-  "today_real": 168,
+  "today_real": 169,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T12:55:32.745Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-21T12:45:26.755Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-21T11:21:30.388Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Deploy attempt did not succeed",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -206,7 +206,7 @@
    },
    {
     "hour": "07:00",
-    "count": 15
+    "count": 14
    },
    {
     "hour": "08:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "12:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T12:50:01.378",
+  "last_screening": "2026-10-21T12:55:32.671",
   "last_management": "2026-10-21T12:50:00.318"
  },
  "log_tail": [
-  "[2026-10-21T12:45:02.703Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T12:45:02.800Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T12:45:02.800Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-21T12:50:00.318Z] [CRON] Starting management cycle",
   "[2026-10-21T12:50:00.889Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T12:50:01.378Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T12:50:01.378Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T12:50:06.616Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 31.85% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T12:55:32.572Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T12:55:32.671Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T12:55:32.671Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

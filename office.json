@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T17:27:45.907873+00:00",
+ "generated_at": "2026-10-21T17:32:40.924848+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 432,
+  "total_real": 433,
   "today": 100,
-  "today_real": 223,
+  "today_real": 224,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T17:30:52.340Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DOPE-SOL (FpRcdzEgiHLpo4LPTWDkhq86fCuwoejFXnmoH9cSZZ6Q) WHY SKIPPED Wallet balance is insufficient (0 SOL remaining) to fund the 0.5 SOL deployment. Even though DOPE-SOL showed strong momentum and smart wallet support, I cannot e"
+   },
    {
     "ts": "2026-10-21T17:26:32.238Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED PHP-SOL has strong fee/TVL and a smart wallet present, but the -45% hourly price drop is a significant risk signal. The first deploy attempt (swordcat) failed due to fee/active-TVL ratio, and the tool is now b"
-   },
-   {
-    "ts": "2026-10-21T16:15:59.614Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available to deploy. This was the primary blocker regardless of pool quality. Without funds, no position can be opened. REJECTED PHP-SOL (no balance), ALPENGLOW-SOL (no bal"
    }
   ]
  },
@@ -190,7 +190,7 @@
    },
    {
     "hour": "08:00",
-    "count": 32
+    "count": 31
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "17:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T17:26:18.071",
-  "last_management": "2026-10-21T17:20:00.270"
+  "last_screening": "2026-10-21T17:30:01.286",
+  "last_management": "2026-10-21T17:30:00.741"
  },
  "log_tail": [
-  "[2026-10-21T17:20:00.270Z] [CRON] Starting management cycle",
-  "[2026-10-21T17:20:00.787Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T17:20:01.313Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T17:20:01.313Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T17:20:03.668Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 35.82% > 30%",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T17:26:17.990Z] [CRON] [Opportunity] DOPE-SOL degen 49.1 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T17:26:18.071Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T17:26:18.071Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T17:30:00.741Z] [CRON] Starting management cycle",
+  "[2026-10-21T17:30:01.280Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T17:30:01.280Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T17:30:01.286Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T17:30:01.286Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

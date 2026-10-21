@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:12:45.741289+00:00",
+ "generated_at": "2026-10-21T06:17:38.993612+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -225,20 +225,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T06:10:00.459",
+  "last_screening": "2026-10-21T06:15:56.995",
   "last_management": "2026-10-21T06:10:00.338"
  },
  "log_tail": [
-  "[2026-10-21T06:04:45.419Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T06:04:45.419Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T06:06:02.977Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-21T06:10:00.338Z] [CRON] Starting management cycle",
-  "[2026-10-21T06:10:00.459Z] [CRON] [Opportunity] WEFT-SOL degen 99.7 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T06:10:00.459Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T06:10:00.459Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T06:10:00.769Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T06:10:00.769Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T06:11:38.703Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-21T06:11:38.703Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-21T06:15:15.653Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T06:15:15.657Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T06:15:15.657Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T06:15:56.152Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-21T06:15:56.995Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T06:15:56.997Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOY (DRY RUN ONLY)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

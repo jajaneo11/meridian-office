@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T18:17:42.587902+00:00",
+ "generated_at": "2026-10-21T18:22:40.863918+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 43,
+  "active_24h": 42,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 442,
+  "total_real": 443,
   "today": 100,
-  "today_real": 233,
+  "today_real": 234,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T18:21:43.948Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-21T18:11:02.490Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP2SHELL-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available to deploy. Even the strongest candidate (PHP2SHELL) cannot be executed without funds. This appears to be a fresh session with no deposited capital. REJECTED"
-   },
-   {
-    "ts": "2026-10-21T16:50:29.602Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL WHY SKIPPED Deploy blocked by pool's active fee/TVL ratio (0%) being below the minimum threshold. No smart wallets were present in the highest-fee pool (pill-baton) to offset this risk. REJECTED - ALPENGLOW-SOL: fee"
    }
   ]
  },
@@ -186,7 +186,7 @@
    },
    {
     "hour": "08:00",
-    "count": 25
+    "count": 24
    },
    {
     "hour": "09:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "18:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T18:15:03.468",
-  "last_management": "2026-10-21T18:10:00.897"
+  "last_screening": "2026-10-21T18:20:01.452",
+  "last_management": "2026-10-21T18:20:00.364"
  },
  "log_tail": [
-  "[2026-10-21T18:10:02.074Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T18:10:02.074Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T18:10:52.417Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-21T18:10:58.256Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-21T18:11:00.011Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY",
   "[2026-10-21T18:15:03.360Z] [CRON] [Opportunity] fone-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T18:15:03.468Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T18:15:03.468Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T18:20:00.364Z] [CRON] Starting management cycle",
+  "[2026-10-21T18:20:00.921Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T18:20:01.452Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T18:20:01.452Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

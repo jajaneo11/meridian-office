@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T16:32:45.938844+00:00",
+ "generated_at": "2026-10-21T16:37:42.984302+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 61
+  "decisions_mentioning": 62
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 421,
+  "total_real": 422,
   "today": 100,
-  "today_real": 212,
+  "today_real": 213,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T16:36:16.505Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Both pools show placeholder narratives (\"being generated\") with no verifiable origin or community story. Neither has smart wallet presence to validate the setup. Both are extremely new (1h and 11h), which incr"
+   },
    {
     "ts": "2026-10-21T16:30:40.175Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- BACKERS-SOL: bot holders 35.95% > 30%"
-   },
-   {
-    "ts": "2026-10-21T15:15:13.610Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot execute deploy. Additionally, fee/TVL ratio is very high which might indicate temporary fee spikes. REJECTED PHP-SOL (insufficient funds) WEFT-SOL (insufficient funds) CRA"
    }
   ]
  },
@@ -194,7 +194,7 @@
    },
    {
     "hour": "08:00",
-    "count": 40
+    "count": 39
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "16:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T16:30:01.118",
+  "last_screening": "2026-10-21T16:36:03.596",
   "last_management": "2026-10-21T16:30:00.554"
  },
  "log_tail": [
-  "[2026-10-21T16:25:33.007Z] [CRON] [Opportunity] PEPA-SOL degen 96.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T16:25:33.786Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T16:25:33.786Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T16:30:00.554Z] [CRON] Starting management cycle",
   "[2026-10-21T16:30:01.118Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T16:30:01.118Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T16:30:01.133Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T16:30:01.133Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T16:36:03.398Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T16:36:03.596Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T16:36:03.596Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

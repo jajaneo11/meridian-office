@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T13:37:45.211184+00:00",
+ "generated_at": "2026-10-21T13:42:49.908856+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 386,
+  "total_real": 387,
   "today": 100,
-  "today_real": 177,
+  "today_real": 178,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T13:35:17.808",
-  "last_management": "2026-10-21T13:30:00.347"
+  "last_screening": "2026-10-21T13:40:01.123",
+  "last_management": "2026-10-21T13:40:00.012"
  },
  "log_tail": [
-  "[2026-10-21T13:30:01.083Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T13:30:01.084Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T13:30:01.117Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T13:30:01.117Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T13:30:03.355Z] [SCREENING] Bot-holder filter: dropped QUANTS-SOL \u2014 bots 52.88% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T13:35:17.720Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T13:35:17.808Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T13:35:17.808Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T13:40:00.012Z] [CRON] Starting management cycle",
+  "[2026-10-21T13:40:00.625Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T13:40:01.123Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T13:40:01.124Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T13:40:03.867Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 41.49% > 30%",
+  "[2026-10-21T13:40:03.868Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 41.49% > 30%",
+  "[2026-10-21T13:40:03.868Z] [SCREENING] Bot-holder filter: dropped QUANTS-SOL \u2014 bots 52.75% > 30%",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

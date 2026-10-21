@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T21:32:41.520623+00:00",
+ "generated_at": "2026-10-21T21:37:47.394110+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 481,
+  "total_real": 482,
   "today": 100,
-  "today_real": 272,
+  "today_real": 273,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T21:30:00.572",
+  "last_screening": "2026-10-21T21:35:18.318",
   "last_management": "2026-10-21T21:30:00.037"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T21:25:32.906Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T21:25:33.065Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T21:25:33.065Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T21:30:00.037Z] [CRON] Starting management cycle",
   "[2026-10-21T21:30:00.572Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T21:30:00.572Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T21:30:00.598Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T21:30:00.598Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-21T21:30:00.598Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T21:35:18.205Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T21:35:18.318Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T21:35:18.318Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T21:35:21.040Z] [SCREENING] Bot-holder filter: dropped PANGEA-SOL \u2014 bots 30.12% > 30%",
+  "[2026-10-21T21:35:21.040Z] [SCREENING] Bot-holder filter: dropped Gato-SOL \u2014 bots 30.51% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

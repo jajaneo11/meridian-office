@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T16:37:42.984302+00:00",
+ "generated_at": "2026-10-21T16:42:43.960809+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 44,
+  "active_24h": 43,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 422,
+  "total_real": 423,
   "today": 100,
-  "today_real": 213,
+  "today_real": 214,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T16:40:46.596Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL WHY SKIPPED ALPENGLOW-SOL had strong conviction signals (1 smart wallet present, solid fees), but failed the fee/active-TVL ratio filter on deployment. PEPA-SOL and PHP-SOL were valid on all hard metrics but the sys"
+   },
    {
     "ts": "2026-10-21T16:36:16.505Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is 0.000 SOL. I have no capital available to execute a deployment of the required 0.5 SOL. REJECTED PHP-SOL \u2014 Funds insufficient ALPENGLOW-SOL \u2014 Funds insufficient DOPE-SOL \u2014 Funds insufficient "
-   },
-   {
-    "ts": "2026-10-21T15:15:39.519Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- BACKERS-SOL: bot holders 35.95% > 30%"
    }
   ]
  },
@@ -194,7 +194,7 @@
    },
    {
     "hour": "08:00",
-    "count": 39
+    "count": 38
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "16:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T16:36:03.596",
-  "last_management": "2026-10-21T16:30:00.554"
+  "last_screening": "2026-10-21T16:40:01.470",
+  "last_management": "2026-10-21T16:40:00.116"
  },
  "log_tail": [
-  "[2026-10-21T16:30:00.554Z] [CRON] Starting management cycle",
-  "[2026-10-21T16:30:01.118Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T16:30:01.118Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T16:30:01.133Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T16:30:01.133Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "\u26d4 NO DEPLOY",
-  "[2026-10-21T16:36:03.398Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T16:36:03.596Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T16:36:03.596Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T16:40:00.116Z] [CRON] Starting management cycle",
+  "[2026-10-21T16:40:00.754Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T16:40:01.470Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T16:40:01.470Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T16:40:03.960Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 33.36% > 30%",
+  "[2026-10-21T16:40:36.772Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-21T16:40:39.800Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-21T16:40:41.539Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T23:42:45.814289+00:00",
+ "generated_at": "2026-10-21T23:48:38.202875+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 497,
+  "total_real": 498,
   "today": 100,
-  "today_real": 288,
+  "today_real": 289,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T23:43:57.942Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry due to technical error. BEST LOOKING CANDIDATE CYBER-SOL (HmNQrpfMZLmqvsP1JAf9beHBDkW1wEZ1By4Azx7YCcmm) WHY SKIPPED Deploy failed during validation step. The SDK rejected the configuration before any on-chain execution. This pool had strong signals (sma"
+   },
    {
     "ts": "2026-10-21T23:41:48.751Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-21T20:15:19.669Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL (5zbcXagpc7XBnDMUVak4Qo2hYh8pRJo2exq43Lpf5Aj5) WHY SKIPPED This pool had the strongest signals (2 smart wallets, good organic score, and solid fees), but the deploy_position tool was blocked from retrying within the sam"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "23:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T23:38:18.106",
+  "last_screening": "2026-10-21T23:43:33.131",
   "last_management": "2026-10-21T23:40:00.620"
  },
  "log_tail": [
-  "[2026-10-21T23:33:03.364Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T23:38:18.019Z] [CRON] [Opportunity] CYBER-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T23:38:18.106Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T23:38:18.107Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T23:40:00.620Z] [CRON] Starting management cycle",
   "[2026-10-21T23:40:01.133Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T23:40:01.133Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "\u26d4 NO DEPLOY",
-  "The only high-conviction candidate failed on-chain due to pool not found error. Smart wallet presence and high fee/TVL were strong, but deployment infrastructure blocked the transaction."
+  "The only high-conviction candidate failed on-chain due to pool not found error. Smart wallet presence and high fee/TVL were strong, but deployment infrastructure blocked the transaction.",
+  "[2026-10-21T23:43:33.059Z] [CRON] [Opportunity] CYBER-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T23:43:33.131Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T23:43:33.132Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "Cycle finished with no valid entry due to technical error.",
+  "CYBER-SOL (HmNQ...) - deploy validation failed (bin_step check error)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

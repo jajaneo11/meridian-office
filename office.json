@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T07:02:39.563006+00:00",
+ "generated_at": "2026-10-21T07:12:38.625061+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 18,
+  "today": 19,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T07:10:38.414Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE FTR-SOL (2jAq7KMy4eqxex1DQHo1nSybEv2yTY94dUDKmvZ2yUb3) WHY SKIPPED bin_step=50 sits below the hard [80\u2013125] gate \u2014 pool not deployable regardless of other metrics. Narrative still generating (no story) and zero smart wallets pres"
+   },
    {
     "ts": "2026-10-21T07:01:56.235Z",
     "type": "no_deploy",
@@ -161,14 +169,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL \u2014 5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs WHY SKIPPED Real blocker, not judgment: deploy_position returned `blocked: true` \u2014 \"Pool fee/active-TVL 0.00354% is below configured minFeeActiveTvlRatio 0.05%\". Harness gat"
-   },
-   {
-    "ts": "2026-10-21T05:45:29.460Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE pill-US"
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "07:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T07:00:01.389",
-  "last_management": "2026-10-21T07:00:00.624"
+  "last_screening": "2026-10-21T07:09:11.691",
+  "last_management": "2026-10-21T07:10:00.153"
  },
  "log_tail": [
-  "[2026-10-21T06:57:11.464Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T06:57:11.464Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T06:58:04.545Z] [ERROR] Agent loop error at step 0: 500 Internal Server Error",
-  "[2026-10-21T06:58:04.545Z] [CRON_ERROR] Screening cycle failed: 500 Internal Server Error",
-  "[2026-10-21T07:00:00.624Z] [CRON] Starting management cycle",
-  "[2026-10-21T07:00:01.356Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T07:00:01.356Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-21T07:00:01.389Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T07:00:01.389Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T07:01:56.234Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-21T07:01:56.234Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-21T07:09:11.687Z] [CRON] [Opportunity] FTR-SOL degen 62.1 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T07:09:11.691Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T07:09:11.692Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T07:10:00.153Z] [CRON] Starting management cycle",
+  "[2026-10-21T07:10:00.584Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T07:10:00.585Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T07:10:38.409Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

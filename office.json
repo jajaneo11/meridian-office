@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:42:40.762314+00:00",
+ "generated_at": "2026-10-21T08:45:41.508965+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,11 +37,15 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 60
+  "decisions_mentioning": 59
  },
  "mode": {
   "dry_run": true,
-  "model": "tig/mimo-v2.6-flash-UNCENSORED"
+  "model": "tig/mimo-v2.6-flash-UNCENSORED",
+  "screener_model": "mercury-2.5",
+  "manager_model": "tig/mimo-v2.6-flash-UNCENSORED",
+  "general_model": "tig/mimo-v2.6-flash-UNCENSORED",
+  "fallback_model": "tig/deepseek-v4.1-flash"
  },
  "wallet": {
   "sol": 0.0
@@ -66,7 +70,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 71,
+  "today": 73,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +78,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T08:45:37.997Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 30.61% > 30%"
+   },
+   {
+    "ts": "2026-10-21T08:45:21.760Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-21T08:41:55.805Z",
     "type": "no_deploy",
@@ -153,22 +173,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. Deploy attempt failed \u2014 blocked by system. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Selected Pok\u00e9mon-SOL as top candidate: best fee/TVL (0.071), highest volume ($12.4k), smart wallet Long #14 present"
-   },
-   {
-    "ts": "2026-10-21T08:36:18.764Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED The deploy_position tool executed in DRY_RUN mode, preventing an actual on-chain transaction. Only one candidate (Pok\u00e9mon-SOL) had enough confidence (smart wallets + low concentration) but the narrative wa"
-   },
-   {
-    "ts": "2026-10-21T08:36:10.990Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED Wallet balance is 0 SOL \u2014 verified on-chain via get_wallet_balance. No deploy is possible regardless of candidate quality, and the header already showed SOL: 0.0"
    }
   ]
  },
@@ -220,7 +224,7 @@
    },
    {
     "hour": "08:00",
-    "count": 38
+    "count": 40
    }
   ]
  },

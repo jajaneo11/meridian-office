@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T05:47:42.608734+00:00",
+ "generated_at": "2026-10-21T05:52:40.574649+00:00",
  "mode": {
   "dry_run": true,
   "model": "tig/longcat-2.5-preview"
@@ -186,20 +186,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T05:46:45.951",
-  "last_management": "2026-10-21T05:40:00.930"
+  "last_screening": "2026-10-21T05:50:01.030",
+  "last_management": "2026-10-21T05:50:00.275"
  },
  "log_tail": [
-  "[2026-10-21T05:40:01.324Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T05:40:29.597Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-21T05:42:42.132Z] [CRON] [Opportunity] pill-USDT degen 62.2 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T05:42:42.134Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T05:42:42.135Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T05:45:29.449Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-21T05:46:45.188Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
   "[2026-10-21T05:46:45.951Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T05:46:45.951Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T05:46:47.362Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.99% > 30%"
+  "[2026-10-21T05:46:47.362Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.99% > 30%",
+  "[2026-10-21T05:49:23.805Z] [AGENT] \ud83d\ude80 DEPLOYED \u2014 DRY RUN ONLY (no transaction sent)",
+  "[2026-10-21T05:50:00.275Z] [CRON] Starting management cycle",
+  "[2026-10-21T05:50:00.653Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T05:50:01.030Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T05:50:01.030Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T05:50:02.438Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.99% > 30%"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

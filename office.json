@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T20:57:46.650233+00:00",
+ "generated_at": "2026-10-21T21:02:41.752337+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 474,
+  "total_real": 475,
   "today": 100,
-  "today_real": 265,
+  "today_real": 266,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "09:00",
-    "count": 4
-   },
-   {
     "hour": "10:00",
     "count": 9
    },
@@ -227,24 +223,28 @@
    {
     "hour": "20:00",
     "count": 6
+   },
+   {
+    "hour": "21:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T20:55:32.957",
-  "last_management": "2026-10-21T20:50:00.066"
+  "last_screening": "2026-10-21T21:00:01.135",
+  "last_management": "2026-10-21T21:00:00.537"
  },
  "log_tail": [
-  "[2026-10-21T20:50:00.066Z] [CRON] Starting management cycle",
-  "[2026-10-21T20:50:00.642Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T20:50:01.187Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T20:50:01.187Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T20:50:28.656Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T20:55:32.876Z] [CRON] [Opportunity] PULLBACK-SOL degen 99.7 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T20:55:32.957Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T20:55:32.957Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (SIMULATED)"
+  "\ud83d\ude80 DEPLOYED (SIMULATED)",
+  "[2026-10-21T21:00:00.537Z] [CRON] Starting management cycle",
+  "[2026-10-21T21:00:01.110Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T21:00:01.110Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T21:00:01.135Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T21:00:01.135Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

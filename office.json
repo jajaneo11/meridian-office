@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T14:56:31.814180+00:00",
+ "generated_at": "2026-10-21T15:02:44.572643+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 402,
+  "total_real": 403,
   "today": 100,
-  "today_real": 193,
+  "today_real": 194,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T15:00:39.898Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL (HAXx3Ph77m7jL6AmN85VN84rKN2tbfXqo2YBKhjNDr7Q) WHY SKIPPED The only viable candidate had smart wallet confirmation and solid metrics (fee/TVL 0.52, 51.8 SOL in fees, 6.56 volatility). However, the deploy_position to"
+   },
    {
     "ts": "2026-10-21T14:55:43.300Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CRAWL-SOL WHY SKIPPED Wallet balance is zero (0 SOL), so no deployment is possible. Even if funds were available, this cycle lacks a high-conviction setup with strong specific narrative catalysts. All candidates rely on generated"
-   },
-   {
-    "ts": "2026-10-21T13:35:46.502Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE KNOTS-STONK WHY SKIPPED The pool passed all candidate screening gates (fees > 30 SOL, healthy concentration, positive volatility), but the system blocked the deployment due to a configuration constraint: the fee/active-TVL ratio "
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "03:00",
-    "count": 0
-   },
    {
     "hour": "04:00",
     "count": 0
@@ -202,7 +198,7 @@
    },
    {
     "hour": "08:00",
-    "count": 54
+    "count": 53
    },
    {
     "hour": "09:00",
@@ -227,24 +223,28 @@
    {
     "hour": "14:00",
     "count": 8
+   },
+   {
+    "hour": "15:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T14:55:32.867",
-  "last_management": "2026-10-21T14:50:00.082"
+  "last_screening": "2026-10-21T15:00:01.223",
+  "last_management": "2026-10-21T15:00:00.642"
  },
  "log_tail": [
-  "[2026-10-21T14:50:00.082Z] [CRON] Starting management cycle",
-  "[2026-10-21T14:50:01.349Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T14:50:01.882Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T14:50:01.884Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T14:50:06.526Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 37.09% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T14:55:32.724Z] [CRON] [Opportunity] WEFT-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T14:55:32.867Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T14:55:32.868Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T15:00:00.642Z] [CRON] Starting management cycle",
+  "[2026-10-21T15:00:01.223Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T15:00:01.223Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T15:00:01.261Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T15:00:01.261Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "The only viable candidate had smart wallet confirmation and solid metrics (fee/TVL 0.52, 51.8 SOL in fees, 6.56 volatility). However, the deploy_position tool failed with a range calculation error (NaN total bins below minimum 35). Retry was blocked by session rules, so no deployment could complete."
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

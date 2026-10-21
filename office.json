@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:57:38.988330+00:00",
+ "generated_at": "2026-10-21T08:58:15.985595+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,7 +70,9 @@
  },
  "decisions": {
   "total": 100,
+  "total_real": 319,
   "today": 90,
+  "today_real": 110,
   "by_type": {
    "no_deploy": 100
   },

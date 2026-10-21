@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T18:22:40.863918+00:00",
+ "generated_at": "2026-10-21T18:27:41.183069+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 443,
+  "total_real": 444,
   "today": 100,
-  "today_real": 234,
+  "today_real": 235,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T18:20:01.452",
+  "last_screening": "2026-10-21T18:26:17.937",
   "last_management": "2026-10-21T18:20:00.364"
  },
  "log_tail": [
-  "[2026-10-21T18:11:00.011Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T18:15:03.360Z] [CRON] [Opportunity] fone-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T18:15:03.468Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T18:15:03.468Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T18:20:00.364Z] [CRON] Starting management cycle",
   "[2026-10-21T18:20:00.921Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T18:20:01.452Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T18:20:01.452Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
+  "[2026-10-21T18:20:01.452Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T18:26:17.824Z] [CRON] [Opportunity] Macca-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T18:26:17.937Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T18:26:17.937Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

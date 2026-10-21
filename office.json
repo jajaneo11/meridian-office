@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T09:07:39.052897+00:00",
+ "generated_at": "2026-10-21T09:12:44.636901+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 329,
+  "total_real": 331,
   "today": 93,
-  "today_real": 120,
+  "today_real": 122,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T09:07:27.423",
-  "last_management": "2026-10-21T09:00:00.689"
+  "last_screening": "2026-10-21T09:10:00.634",
+  "last_management": "2026-10-21T09:10:00.244"
  },
  "log_tail": [
-  "[2026-10-21T09:06:29.257Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
-  "[2026-10-21T09:06:29.431Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
-  "[2026-10-21T09:07:26.868Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-21T09:07:27.423Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
-  "[2026-10-21T09:07:27.423Z] [CRON] Starting screening cycle [model: openrouter/auto]",
-  "[2026-10-21T09:07:27.424Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T09:07:27.429Z] [TELEGRAM_ERROR] sendChatAction 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
-  "[2026-10-21T09:07:29.854Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-21T09:07:29.855Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
-  "[2026-10-21T09:07:30.031Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}"
+  "[2026-10-21T09:10:00.630Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-21T09:10:00.633Z] [TELEGRAM_ERROR] sendChatAction 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-21T09:10:00.634Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-21T09:10:00.634Z] [CRON] Starting screening cycle [model: openrouter/auto]",
+  "[2026-10-21T09:10:00.634Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T09:10:04.819Z] [TELEGRAM_ERROR] sendChatAction 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-21T09:10:09.351Z] [TELEGRAM_ERROR] sendChatAction 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-21T09:10:12.181Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
+  "[2026-10-21T09:10:12.182Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
+  "[2026-10-21T09:10:12.357Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

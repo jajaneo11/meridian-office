@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T18:11:32.741318+00:00",
+ "generated_at": "2026-10-21T18:17:42.587902+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 441,
+  "total_real": 442,
   "today": 100,
-  "today_real": 232,
+  "today_real": 233,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T18:10:02.074",
+  "last_screening": "2026-10-21T18:15:03.468",
   "last_management": "2026-10-21T18:10:00.897"
  },
  "log_tail": [
-  "[2026-10-21T18:05:18.429Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T18:10:00.897Z] [CRON] Starting management cycle",
-  "[2026-10-21T18:10:01.533Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T18:10:02.074Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T18:10:02.074Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T18:10:52.417Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-21T18:10:58.256Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-21T18:11:00.011Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T18:15:03.360Z] [CRON] [Opportunity] fone-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T18:15:03.468Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T18:15:03.468Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

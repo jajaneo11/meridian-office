@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T23:52:51.011591+00:00",
+ "generated_at": "2026-10-21T23:57:44.031636+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 64
+  "decisions_mentioning": 63
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 499,
+  "total_real": 500,
   "today": 100,
-  "today_real": 290,
+  "today_real": 291,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T23:54:34.378Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL (HmNQrpfMZLmqvsP1JAf9beHBDkW1wEZ1By4Azx7YCcmm) WHY SKIPPED Deploy was executed in DRY_RUN mode \u2014 no on-chain transaction was sent. Since the tool did not return computed range coverage values (downside_pct/upside_pct we"
+   },
    {
     "ts": "2026-10-21T23:52:37.631Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DOPE-SOL WHY SKIPPED DOPE-SOL passed all hard filters (smart wallets present, 78 organic, 16% top10 concentration, 627 SOL fees), but the deploy was blocked by a fee/active-TVL ratio check. This appears to be a systemic configura"
-   },
-   {
-    "ts": "2026-10-21T20:41:10.526Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Primary pick DOPE-SOL blocked due to zero active fees (fee/active-TVL 0% < 0.005% threshold). Retry blocked per system rule: \"deploy_position already attempted this session \u2014 do not retry.\" REJECTED DOPE-S"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "23:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T23:48:48.300",
+  "last_screening": "2026-10-21T23:54:03.545",
   "last_management": "2026-10-21T23:50:00.097"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "Cycle finished with no valid entry due to technical error.",
-  "CYBER-SOL (HmNQ...) - deploy validation failed (bin_step check error)",
-  "[2026-10-21T23:48:48.186Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T23:48:48.300Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T23:48:48.300Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T23:50:00.097Z] [CRON] Starting management cycle",
   "[2026-10-21T23:50:00.622Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T23:50:00.622Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T23:54:03.289Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T23:54:03.545Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T23:54:03.545Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T16:53:01.152756+00:00",
+ "generated_at": "2026-10-21T16:57:42.463418+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 425,
+  "total_real": 426,
   "today": 100,
-  "today_real": 216,
+  "today_real": 217,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T16:50:01.818",
+  "last_screening": "2026-10-21T16:57:03.678",
   "last_management": "2026-10-21T16:50:00.718"
  },
  "log_tail": [
-  "[2026-10-21T16:45:03.469Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T16:50:00.718Z] [CRON] Starting management cycle",
-  "[2026-10-21T16:50:01.337Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T16:50:01.818Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T16:50:01.819Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T16:50:04.261Z] [SCREENING] Bot-holder filter: dropped PHP2SHELL-SOL \u2014 bots 30.28% > 30%",
   "[2026-10-21T16:50:22.159Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-21T16:50:23.309Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T16:57:03.561Z] [CRON] [Opportunity] VEIL-SOL degen 41.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T16:57:03.678Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T16:57:03.679Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

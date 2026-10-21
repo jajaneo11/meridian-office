@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:17:38.993612+00:00",
+ "generated_at": "2026-10-21T06:22:39.631134+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 79
+  "decisions_mentioning": 78
  },
  "mode": {
   "dry_run": true,
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 11,
+  "today": 12,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T06:22:18.966Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Top pick was blocked by the config gate before any transaction landed: fee/active-TVL 0.0121% is below minFeeActiveTvlRatio 0.05%. The deploy tool then locked"
+   },
    {
     "ts": "2026-10-21T06:11:38.707Z",
     "type": "no_deploy",
@@ -161,14 +169,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (xg71xrhn7MEj5akrZGteuYeiTLbBzyNCpBn69bRYd5a) WHY SKIPPED Fundamentals pass the hard gates \u2014 fees 324.29 SOL, bots 5.96%, top10 17%, bin_step 100, volatility 1.2075 positive, fee/TVL 7.55%. But the narrative field is a p"
-   },
-   {
-    "ts": "2026-10-20T21:10:01.031Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "06:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T06:15:56.995",
-  "last_management": "2026-10-21T06:10:00.338"
+  "last_screening": "2026-10-21T06:20:01.166",
+  "last_management": "2026-10-21T06:20:00.336"
  },
  "log_tail": [
-  "[2026-10-21T06:10:00.769Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T06:10:00.769Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T06:11:38.703Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-21T06:15:15.653Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T06:15:15.657Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T06:15:15.657Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T06:15:56.152Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
   "[2026-10-21T06:15:56.995Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T06:15:56.997Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOY (DRY RUN ONLY)"
+  "\ud83d\ude80 DEPLOY (DRY RUN ONLY)",
+  "[2026-10-21T06:20:00.336Z] [CRON] Starting management cycle",
+  "[2026-10-21T06:20:00.790Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T06:20:01.166Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T06:20:01.166Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T06:21:38.528Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-21T06:22:18.964Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

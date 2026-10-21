@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T20:02:40.616183+00:00",
+ "generated_at": "2026-10-21T20:07:40.919377+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 64
+  "decisions_mentioning": 65
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 463,
+  "total_real": 464,
   "today": 100,
-  "today_real": 254,
+  "today_real": 255,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T20:05:29.834Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED The deployment was blocked in dry-run mode due to a previous attempt. The would_deploy shows it would have succeeded with 0.5 SOL in bid_ask strategy, but without a confirmed transaction and proper range_cov"
+   },
    {
     "ts": "2026-10-21T19:55:43.803Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6...) WHY SKIPPED Wallet balance is 0 SOL. No funds available to deploy. Even though Pok\u00e9mon-SOL (EQEu6...) had strong signals (2 smart wallets, valid bin step, solid organic score), deployment requires actual ca"
-   },
-   {
-    "ts": "2026-10-21T18:45:54.531Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Wallet balance is 0 SOL. Deploy amount required is 0.5 SOL. No capital available to fund the position. REJECTED Pok\u00e9mon-SOL (EQEu6...): Wallet has 0 SOL balan"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "20:00",
-    "count": 0
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T20:00:01.020",
+  "last_screening": "2026-10-21T20:05:18.242",
   "last_management": "2026-10-21T20:00:00.457"
  },
  "log_tail": [
-  "[2026-10-21T19:55:32.804Z] [CRON] [Opportunity] Macca-SOL degen 46.1 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T19:55:32.928Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T19:55:32.929Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T20:00:00.457Z] [CRON] Starting management cycle",
   "[2026-10-21T20:00:00.995Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T20:00:00.995Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-21T20:00:01.020Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T20:00:01.021Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 PLANNED DEPLOY (DRY RUN)"
+  "\ud83d\ude80 PLANNED DEPLOY (DRY RUN)",
+  "[2026-10-21T20:05:18.155Z] [CRON] [Opportunity] PHP-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T20:05:18.242Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T20:05:18.242Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

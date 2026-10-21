@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T21:47:44.783413+00:00",
+ "generated_at": "2026-10-21T21:52:41.705970+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 484,
+  "total_real": 485,
   "today": 100,
-  "today_real": 275,
+  "today_real": 276,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T21:47:18.002",
-  "last_management": "2026-10-21T21:40:00.559"
+  "last_screening": "2026-10-21T21:52:33.031",
+  "last_management": "2026-10-21T21:50:00.021"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T21:40:00.559Z] [CRON] Starting management cycle",
-  "[2026-10-21T21:40:01.157Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T21:40:01.638Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T21:40:01.638Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T21:40:03.892Z] [SCREENING] Bot-holder filter: dropped Gato-SOL \u2014 bots 30.12% > 30%",
-  "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T21:47:17.898Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T21:47:18.002Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T21:47:18.002Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
+  "[2026-10-21T21:47:18.002Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T21:50:00.021Z] [CRON] Starting management cycle",
+  "[2026-10-21T21:50:00.560Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T21:50:00.561Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T21:52:32.945Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T21:52:33.031Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T21:52:33.031Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

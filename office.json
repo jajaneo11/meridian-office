@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T18:52:40.456876+00:00",
+ "generated_at": "2026-10-21T18:57:42.037454+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 58
+  "decisions_mentioning": 59
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 449,
+  "total_real": 450,
   "today": 100,
-  "today_real": 240,
+  "today_real": 241,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T18:56:26.515Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED The deploy tool returned a dry-run response with no real transaction sent. While Macca-SOL passed hard filters (bin_step 100, fees 66.68 SOL, volatility 5.7), the dry-run mode prevented an actual deployment."
+   },
    {
     "ts": "2026-10-21T18:50:21.491Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED This pool passes all hard technical gates (fees > 30 SOL, bin step 100, positive volatility). However, it fails qualitative conviction checks: there are zero smart wallets present and the narrative status is "
-   },
-   {
-    "ts": "2026-10-21T17:30:52.340Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DOPE-SOL (FpRcdzEgiHLpo4LPTWDkhq86fCuwoejFXnmoH9cSZZ6Q) WHY SKIPPED Wallet balance is insufficient (0 SOL remaining) to fund the 0.5 SOL deployment. Even though DOPE-SOL showed strong momentum and smart wallet support, I cannot e"
    }
   ]
  },
@@ -186,7 +186,7 @@
    },
    {
     "hour": "08:00",
-    "count": 20
+    "count": 19
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "18:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T18:50:01.829",
+  "last_screening": "2026-10-21T18:56:17.941",
   "last_management": "2026-10-21T18:50:00.835"
  },
  "log_tail": [
-  "[2026-10-21T18:40:01.380Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T18:45:02.922Z] [CRON] [Opportunity] Macca-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T18:45:03.005Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T18:45:03.005Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-21T18:50:00.835Z] [CRON] Starting management cycle",
   "[2026-10-21T18:50:01.331Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T18:50:01.829Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T18:50:01.829Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T18:56:17.868Z] [CRON] [Opportunity] Macca-SOL degen 92.5 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T18:56:17.941Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T18:56:17.941Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

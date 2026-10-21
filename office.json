@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T07:47:40.419309+00:00",
+ "generated_at": "2026-10-21T07:52:19.085717+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -226,19 +226,19 @@
  },
  "cycles": {
   "last_screening": "2026-10-21T07:46:28.601",
-  "last_management": "2026-10-21T07:40:00.460"
+  "last_management": "2026-10-21T07:50:00.008"
  },
  "log_tail": [
-  "[2026-10-21T07:35:13.565Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T07:35:13.566Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
-  "[2026-10-21T07:35:13.566Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T07:40:00.460Z] [CRON] Starting management cycle",
   "[2026-10-21T07:40:00.922Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T07:40:00.923Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-21T07:46:22.810Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-21T07:46:28.601Z] [CRON] [Opportunity] CRAWL-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T07:46:28.601Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
-  "[2026-10-21T07:46:28.602Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
+  "[2026-10-21T07:46:28.602Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T07:50:00.008Z] [CRON] Starting management cycle",
+  "[2026-10-21T07:50:00.493Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T07:50:00.493Z] [CRON] Screening skipped \u2014 previous cycle still running"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

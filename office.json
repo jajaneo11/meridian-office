@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T14:40:04.987316+00:00",
+ "generated_at": "2026-10-21T14:56:31.814180+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 399,
+  "total_real": 402,
   "today": 100,
-  "today_real": 190,
+  "today_real": 193,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,30 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T14:55:43.300Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient capital for 0.5 SOL deploy. Even if funds were available, the candidate fails quality checks: narrative is empty (\"being generated\") and no smart wallets are present, vi"
+   },
+   {
+    "ts": "2026-10-21T14:50:48.658Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None (wallet balance 0 SOL) WHY SKIPPED Wallet balance is 0 SOL but deployment requires 0.5 SOL. No deploy can be executed without sufficient capital regardless of candidate quality. REJECTED No candidates reviewed due to insuffi"
+   },
+   {
+    "ts": "2026-10-21T14:45:43.662Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL WHY SKIPPED SOL balance is 0. Cannot fund the required 0.5 SOL deployment. REJECTED ALPENGLOW-SOL, Pok\u00e9mon-SOL, pill-USDT, GTA6-SOL, MANLET-SOL, PHP-SOL"
+   },
    {
     "ts": "2026-10-21T14:36:20.015Z",
     "type": "no_deploy",
@@ -151,30 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE KNOTS-STONK WHY SKIPPED The pool passed all candidate screening gates (fees > 30 SOL, healthy concentration, positive volatility), but the system blocked the deployment due to a configuration constraint: the fee/active-TVL ratio "
-   },
-   {
-    "ts": "2026-10-21T13:30:14.015Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE JEANPHIL-SOL WHY SKIPPED Wallet balance is empty (0 SOL); deployment impossible regardless of pool quality. Even if funded, the pool had weak narrative data. REJECTED pill-SOL (bin_step=50 violates hard rule 80\u2013125), PHP-SOL (hig"
-   },
-   {
-    "ts": "2026-10-21T13:25:41.813Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED The narrative is still pending/unknown and no smart wallets are present. Per guidelines, skip pools with no narrative and no smart wallet signals. While fees and metrics are solid, the lack of confirmed catal"
-   },
-   {
-    "ts": "2026-10-21T13:21:19.654Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (xg71xrhn7MEj5akrZGteuYeiTLbBzyNCpBn69bRYd5a) WHY SKIPPED GTA6-SOL was blocked by hard config rule (fee/active-TVL ratio 0.00036% < 0.005% threshold). No other pool had enough conviction (smart wallets + stable fundament"
    }
   ]
  },
@@ -202,7 +202,7 @@
    },
    {
     "hour": "08:00",
-    "count": 57
+    "count": 54
    },
    {
     "hour": "09:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "14:00",
-    "count": 5
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T14:40:01.837",
-  "last_management": "2026-10-21T14:40:00.639"
+  "last_screening": "2026-10-21T14:55:32.867",
+  "last_management": "2026-10-21T14:50:00.082"
  },
  "log_tail": [
-  "[2026-10-21T14:36:03.560Z] [CRON] [Opportunity] ALPENGLOW-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T14:36:03.722Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T14:36:03.724Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY (DRY RUN VALIDATION)",
-  "WHY SELECTED (DID DEPLOY AS DRY RUN)",
-  "[2026-10-21T14:40:00.639Z] [CRON] Starting management cycle",
-  "[2026-10-21T14:40:01.256Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T14:40:01.837Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T14:40:01.837Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T14:40:04.656Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 37.79% > 30%"
+  "[2026-10-21T14:50:00.082Z] [CRON] Starting management cycle",
+  "[2026-10-21T14:50:01.349Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T14:50:01.882Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T14:50:01.884Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T14:50:06.526Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 37.09% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T14:55:32.724Z] [CRON] [Opportunity] WEFT-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T14:55:32.867Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T14:55:32.868Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

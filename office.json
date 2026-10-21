@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:52:44.180411+00:00",
+ "generated_at": "2026-10-21T08:54:24.058252+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,7 +70,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 86,
+  "today": 88,
   "by_type": {
    "no_deploy": 100
   },
@@ -78,6 +78,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T08:54:16.673Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Wallet balance is 0 SOL, leaving no capital available for deployment. Although this pool had strong fundamentals and smart wallet presence, a deploy cannot pr"
+   },
+   {
+    "ts": "2026-10-21T08:53:11.675Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Deploy tool ran in DRY_RUN mode \u2014 no actual transaction was sent. Additionally, the tool adjusted the range to max bins (69) which may be too wide for the cur"
+   },
    {
     "ts": "2026-10-21T08:52:15.618Z",
     "type": "no_deploy",
@@ -157,22 +173,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- PHP-SOL: bot holders 30.61% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:45:52.483Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 30.61% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:45:51.967Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 30.61% > 30%"
    }
   ]
  },
@@ -224,25 +224,25 @@
    },
    {
     "hour": "08:00",
-    "count": 53
+    "count": 55
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T08:52:00.269",
+  "last_screening": "2026-10-21T08:53:23.331",
   "last_management": "2026-10-21T08:50:00.916"
  },
  "log_tail": [
-  "[2026-10-21T08:50:05.119Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.19% > 30%",
-  "[2026-10-21T08:50:14.602Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 16\",\"parameters\":{\"retry_after\":16}}",
-  "[2026-10-21T08:50:18.954Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 12\",\"parameters\":{\"retry_after\":12}}",
-  "[2026-10-21T08:50:23.305Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 7\",\"parameters\":{\"retry_after\":7}}",
   "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T08:51:58.291Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
   "[2026-10-21T08:52:00.269Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T08:52:00.270Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T08:52:03.588Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.18% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T08:53:22.105Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-21T08:53:23.331Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T08:53:23.331Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T08:53:25.194Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.17% > 30%"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

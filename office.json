@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:58:15.985595+00:00",
+ "generated_at": "2026-10-21T09:02:40.985479+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,15 +37,15 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 52
+  "decisions_mentioning": 51
  },
  "mode": {
-  "dry_run": true,
-  "model": "mercury-2.5",
-  "screener_model": "mercury-2.5",
+  "dry_run": false,
+  "model": "openrouter/auto",
+  "screener_model": "openrouter/auto",
   "manager_model": "mercury-2.5",
   "general_model": "mercury-2.5",
-  "fallback_model": "mercury-2.5"
+  "fallback_model": "openrouter/auto"
  },
  "wallet": {
   "sol": 0.0
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 319,
-  "today": 90,
-  "today_real": 110,
+  "total_real": 323,
+  "today": 93,
+  "today_real": 114,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,30 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T09:00:37.066Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED Wallet balance is 0 SOL. Deploy requires 0.5 SOL per the cycle goal. No deployment can proceed without capital. REJECTED PHP-SOL (ELnpdJeWer4xsHUff93WPnmECYpDXE4"
+   },
+   {
+    "ts": "2026-10-21T09:00:26.671Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED Narrative is unknown/blank (\"being generated\"), and no smart wallets are present. Per rules, a pool without confirmed story or smart wallet backing should be skipped regardless of metrics. REJECTED GTA6-SOL: "
+   },
+   {
+    "ts": "2026-10-21T08:59:21.164Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED Deploy attempt failed during verification \u2014 system could not validate pool screening thresholds. The pool appears on-chain but may be ineligible under current ha"
+   },
    {
     "ts": "2026-10-21T08:55:33.303Z",
     "type": "no_deploy",
@@ -151,39 +175,11 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- PHP-SOL: bot holders 30.19% > 30% - PHP-SOL: bot holders 30.19% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:48:53.802Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED DRY RUN prevented actual deployment confirmation. Range coverage data was not returned by the tool for this dry run. Bin step and smart wallet signals were strong but transaction execution needs to be veri"
-   },
-   {
-    "ts": "2026-10-21T08:46:39.425Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED The deploy tool failed on first attempt due to a range calculation error (total bins below minimum threshold). Only one strong candidate remained after hard filters (bin_step 80-125, fees >= 30 SOL), and retr"
-   },
-   {
-    "ts": "2026-10-21T08:46:09.654Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 30.59% > 30%"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "21:00",
-    "count": 2
-   },
    {
     "hour": "22:00",
     "count": 0
@@ -226,25 +222,29 @@
    },
    {
     "hour": "08:00",
-    "count": 57
+    "count": 58
+   },
+   {
+    "hour": "09:00",
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T08:55:33.224",
-  "last_management": "2026-10-21T08:50:00.916"
+  "last_screening": "2026-10-21T09:01:41.163",
+  "last_management": "2026-10-21T09:00:00.689"
  },
  "log_tail": [
-  "[2026-10-21T08:53:23.331Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T08:53:25.194Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.17% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T08:55:06.295Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-21T08:55:07.649Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T08:55:07.649Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T08:55:12.175Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.11% > 30%",
-  "[2026-10-21T08:55:32.037Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-21T08:55:33.224Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T08:55:33.224Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
+  "[2026-10-21T09:00:01.185Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T09:00:17.574Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-21T09:00:18.814Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T09:00:18.815Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T09:01:39.882Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-21T09:01:41.163Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
+  "[2026-10-21T09:01:41.163Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T09:01:43.202Z] [ERROR] Agent loop error at step 0: 400 [{\"type\":\"value_error\",\"loc\":[\"body\",\"model\"],\"msg\":\"Value error, Model must be one of the following: mercury, mercury-2, mercury-2.5, mercury-3, mercury-3-preview-1002, mercury-3-preview-1014, mercury-coder, mercury-coder-small, mercury-small\",\"ctx\":{\"error\":\"Model must be one of the following: mercury, mercury-2, mercury-2.5, mercury-3, mercury-3-preview-1002, mercury-3-preview-1014, mercury-coder, mercury-coder-small, mercury-small\"}},{\"type\":\"value_error\",\"loc\":[\"body\",\"tools\"],\"msg\":\"Value error, Model must be specified before tools can be validated\",\"ctx\":{\"error\":\"Model must be specified before tools can be validated\"}}]",
+  "[2026-10-21T09:01:43.202Z] [CRON_ERROR] Screening cycle failed: 400 [{\"type\":\"value_error\",\"loc\":[\"body\",\"model\"],\"msg\":\"Value error, Model must be one of the following: mercury, mercury-2, mercury-2.5, mercury-3, mercury-3-preview-1002, mercury-3-preview-1014, mercury-coder, mercury-coder-small, mercury-small\",\"ctx\":{\"error\":\"Model must be one of the following: mercury, mercury-2, mercury-2.5, mercury-3, mercury-3-preview-1002, mercury-3-preview-1014, mercury-coder, mercury-coder-small, mercury-small\"}},{\"type\":\"value_error\",\"loc\":[\"body\",\"tools\"],\"msg\":\"Value error, Model must be specified before tools can be validated\",\"ctx\":{\"error\":\"Model must be specified before tools can be validated\"}}]"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

@@ -1,5 +1,44 @@
 {
- "generated_at": "2026-10-21T05:52:40.574649+00:00",
+ "generated_at": "2026-10-21T05:56:48.037257+00:00",
+ "smart_wallets": {
+  "total": 78,
+  "by_category": {
+   "alpha": 30,
+   "Degen": 25,
+   "Multihours": 23
+  },
+  "active_24h": 47,
+  "total_value_usd": 135996,
+  "total_activity": 390,
+  "top": [
+   {
+    "name": "Multihours Long LP",
+    "category": "Multihours",
+    "value_usd": 24128
+   },
+   {
+    "name": "Long #6",
+    "category": "alpha",
+    "value_usd": 10320
+   },
+   {
+    "name": "Multihours Long LP",
+    "category": "Multihours",
+    "value_usd": 8781
+   },
+   {
+    "name": "Multihours Long LP",
+    "category": "Multihours",
+    "value_usd": 8561
+   },
+   {
+    "name": "Degen Fast LP",
+    "category": "Degen",
+    "value_usd": 6437
+   }
+  ],
+  "decisions_mentioning": 79
+ },
  "mode": {
   "dry_run": true,
   "model": "tig/longcat-2.5-preview"
@@ -27,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 7,
+  "today": 8,
   "by_type": {
    "no_deploy": 100
   },
@@ -35,6 +74,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T05:52:52.161Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL \u2014 5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs WHY SKIPPED Real blocker, not judgment: deploy_position returned `blocked: true` \u2014 \"Pool fee/active-TVL 0.00354% is below configured minFeeActiveTvlRatio 0.05%\". Harness gat"
+   },
    {
     "ts": "2026-10-21T05:45:29.460Z",
     "type": "no_deploy",
@@ -122,14 +169,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "All candidates filtered before deploy"
-   },
-   {
-    "ts": "2026-10-20T20:20:01.443Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- NEURALINK-SOL: volatility 0 is unusable"
    }
   ]
  },
@@ -181,7 +220,7 @@
    },
    {
     "hour": "05:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
@@ -190,8 +229,6 @@
   "last_management": "2026-10-21T05:50:00.275"
  },
  "log_tail": [
-  "[2026-10-21T05:46:45.188Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-21T05:46:45.951Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T05:46:45.951Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T05:46:47.362Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.99% > 30%",
   "[2026-10-21T05:49:23.805Z] [AGENT] \ud83d\ude80 DEPLOYED \u2014 DRY RUN ONLY (no transaction sent)",
@@ -199,7 +236,9 @@
   "[2026-10-21T05:50:00.653Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T05:50:01.030Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T05:50:01.030Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T05:50:02.438Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.99% > 30%"
+  "[2026-10-21T05:50:02.438Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.99% > 30%",
+  "[2026-10-21T05:52:52.159Z] [AGENT] \u26d4 NO DEPLOY",
+  "Real blocker, not judgment: deploy_position returned `blocked: true` \u2014 \"Pool fee/active-TVL 0.00354% is below configured minFeeActiveTvlRatio 0.05%\". Harness gate fired before any transaction. Only one deploy attempt is permitted per session, so falling back to the second GTA6 pool (xg71xrhn\u2026) was refused with \"do not retry\". Separately, get_wallet_balance returned `{\"sol\":0,\"error\":\"Wallet not configured\"}` \u2014 0 SOL available against a 0.5 SOL target, so capital is absent regardless of pool quality."
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

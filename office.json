@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:37:39.634657+00:00",
+ "generated_at": "2026-10-21T06:42:40.623723+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 14,
+  "today": 15,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T06:41:49.097Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE pill-USDT (FU1k3nK4CPdSYyuR1rQ3sVg5WDoFm2Rs4QTLXeuYkoma) WHY SKIPPED pill-USDT clears every hard gate \u2014 bin_step 80 (in range), fees 654.46 SOL, bots 24.28%, top10 19.31% \u2014 but narrative fetch returned \"generating\" (no usable sto"
+   },
    {
     "ts": "2026-10-21T06:37:39.289Z",
     "type": "no_deploy",
@@ -161,14 +169,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "Verified: narrative still \"generating\" (no real story), 0 smart wallets, no pool memory. Applying the explicit gate \u2014 no narrative + no smart wallets \u2192 skip. Metrics are strong (organic 82, fees 653.92 SOL, top10 19.3%) but the rule doesn't allow metrics to override a missing narrative, and `dev_mig"
-   },
-   {
-    "ts": "2026-10-21T05:21:20.615Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL WHY SKIPPED Deploy blocked by the fee/active-TVL gate: 0.0106% vs configured minimum 0.05% \u2014 pool's active-bin TVL is too thin to justify the fee rate. Secondary weakness: no narrative (still \"generating\") and zero smart"
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "06:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T06:36:56.883",
-  "last_management": "2026-10-21T06:30:00.830"
+  "last_screening": "2026-10-21T06:40:01.428",
+  "last_management": "2026-10-21T06:40:00.566"
  },
  "log_tail": [
-  "[2026-10-21T06:30:01.313Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T06:30:01.349Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T06:30:01.350Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T06:30:26.537Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-21T06:30:53.481Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-21T06:32:28.409Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-21T06:36:56.868Z] [CRON] [Opportunity] pill-USDT degen 74.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T06:36:56.883Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T06:36:56.884Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T06:37:39.287Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-21T06:37:39.287Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-21T06:40:00.566Z] [CRON] Starting management cycle",
+  "[2026-10-21T06:40:01.054Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T06:40:01.428Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T06:40:01.428Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T06:41:49.094Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

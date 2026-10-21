@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T19:27:40.641620+00:00",
+ "generated_at": "2026-10-21T19:32:40.771820+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 61
+  "decisions_mentioning": 62
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 456,
+  "total_real": 457,
   "today": 100,
-  "today_real": 247,
+  "today_real": 248,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T19:30:26.776Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED Wallet balance is 0 SOL. No deployment is possible without sufficient capital. REJECTED CLAUDIA-SOL (2 smart wallets, high fees) PHP-SOL (1 smart wallet) Pok\u00e9mon-SOL (1 smart wallet) Macca-SOL (No smart wa"
+   },
    {
     "ts": "2026-10-21T19:10:18.244Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Both Pok\u00e9mon-SOL and DOPE-SOL were rejected by the active-TVL fee gate, even though they had strong smart wallet signals and decent metrics. The pre-loaded data doesn't reflect real-time active-TVL, and th"
-   },
-   {
-    "ts": "2026-10-21T17:50:24.366Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP2SHELL-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient funds to deploy 0.5 SOL. PHP2SHELL had the highest fee/TVL (0.70), smart wallet present, and bin_step 100, but execution is impossible without capital. REJECTED - p"
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "08:00",
-    "count": 16
+    "count": 15
    },
    {
     "hour": "09:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "19:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T19:26:17.976",
-  "last_management": "2026-10-21T19:20:00.338"
+  "last_screening": "2026-10-21T19:30:01.453",
+  "last_management": "2026-10-21T19:30:00.881"
  },
  "log_tail": [
-  "[2026-10-21T19:20:00.338Z] [CRON] Starting management cycle",
-  "[2026-10-21T19:20:00.908Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T19:20:01.451Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T19:20:01.451Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T19:26:17.894Z] [CRON] [Opportunity] PHP-SOL degen 86.8 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T19:26:17.976Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T19:26:17.976Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T19:26:19.260Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.05% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T19:30:00.881Z] [CRON] Starting management cycle",
+  "[2026-10-21T19:30:01.430Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T19:30:01.430Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T19:30:01.453Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T19:30:01.453Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T19:30:03.337Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.05% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

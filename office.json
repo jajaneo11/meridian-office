@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T18:57:42.037454+00:00",
+ "generated_at": "2026-10-21T19:02:40.272961+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 450,
+  "total_real": 451,
   "today": 100,
-  "today_real": 241,
+  "today_real": 242,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T19:00:10.718Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None (wallet balance $0) WHY SKIPPED Available SOL balance is 0.000 SOL, which is insufficient for the required 0.5 SOL deploy. Without deploy capital, no pool can be opened even if other signals were favorable. REJECTED \u2014"
+   },
    {
     "ts": "2026-10-21T18:56:26.515Z",
     "type": "no_deploy",
@@ -167,26 +175,14 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Wallet balance is 0 SOL. Cannot proceed with 0.5 SOL deployment requirement. REJECTED Pok\u00e9mon-SOL (funds unavailable) DOPE-SOL (funds unavailable) HOTBOT-SOL (funds unavailable)"
-   },
-   {
-    "ts": "2026-10-21T17:36:30.124Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED This pool passes all hard technical gates (fees > 30 SOL, bin step 100, positive volatility). However, it fails qualitative conviction checks: there are zero smart wallets present and the narrative status is "
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "07:00",
-    "count": 0
-   },
-   {
     "hour": "08:00",
-    "count": 19
+    "count": 18
    },
    {
     "hour": "09:00",
@@ -227,23 +223,27 @@
    {
     "hour": "18:00",
     "count": 8
+   },
+   {
+    "hour": "19:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T18:56:17.941",
-  "last_management": "2026-10-21T18:50:00.835"
+  "last_screening": "2026-10-21T19:00:00.853",
+  "last_management": "2026-10-21T19:00:00.334"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T18:50:00.835Z] [CRON] Starting management cycle",
-  "[2026-10-21T18:50:01.331Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T18:50:01.829Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T18:50:01.829Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T18:56:17.868Z] [CRON] [Opportunity] Macca-SOL degen 92.5 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T18:56:17.941Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T18:56:17.941Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T19:00:00.334Z] [CRON] Starting management cycle",
+  "[2026-10-21T19:00:00.853Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T19:00:00.853Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T19:00:00.879Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T19:00:00.880Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

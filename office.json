@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T16:22:40.021795+00:00",
+ "generated_at": "2026-10-21T16:28:11.732836+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 61
+  "decisions_mentioning": 62
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 419,
+  "total_real": 420,
   "today": 100,
-  "today_real": 210,
+  "today_real": 211,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T16:25:49.345Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ENA-USDC WHY SKIPPED ENA-USDC has no smart wallets present and an empty narrative (\"being generated\"), triggering the no-narrative/no-smart-wallet skip rule. Even though fees are acceptable, without clear signals or capital, depl"
+   },
    {
     "ts": "2026-10-21T16:20:32.123Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL (HAXx3Ph77m7jL6AmN85VN84rKN2tbfXqo2YBKhjNDr7Q) WHY SKIPPED The first deploy attempt was blocked by the SDK's fee/active-TVL ratio check (returned 0%, below min 0.005%). A second attempt on EXFIL-SOL was blocked beca"
-   },
-   {
-    "ts": "2026-10-21T15:00:39.898Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL (HAXx3Ph77m7jL6AmN85VN84rKN2tbfXqo2YBKhjNDr7Q) WHY SKIPPED The only viable candidate had smart wallet confirmation and solid metrics (fee/TVL 0.52, 51.8 SOL in fees, 6.56 volatility). However, the deploy_position to"
    }
   ]
  },
@@ -194,7 +194,7 @@
    },
    {
     "hour": "08:00",
-    "count": 42
+    "count": 41
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "16:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T16:20:02.074",
+  "last_screening": "2026-10-21T16:25:33.786",
   "last_management": "2026-10-21T16:20:00.861"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
-  "[2026-10-21T16:15:03.388Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T16:15:03.474Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T16:15:03.474Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-21T16:20:00.861Z] [CRON] Starting management cycle",
   "[2026-10-21T16:20:01.498Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T16:20:02.074Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T16:20:02.074Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T16:25:33.007Z] [CRON] [Opportunity] PEPA-SOL degen 96.3 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T16:25:33.786Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T16:25:33.786Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

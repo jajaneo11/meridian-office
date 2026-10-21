@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:12:41.924764+00:00",
+ "generated_at": "2026-10-21T08:17:45.906212+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 68
+  "decisions_mentioning": 63
  },
  "mode": {
   "dry_run": true,
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 39,
+  "today": 44,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,46 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T08:16:08.454Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 32.65% > 30% - PHP-SOL: bot holders 32.65% > 30%"
+   },
+   {
+    "ts": "2026-10-21T08:15:52.581Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 32.56% > 30%"
+   },
+   {
+    "ts": "2026-10-21T08:15:51.147Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 32.56% > 30% - PHP-SOL: bot holders 32.56% > 30%"
+   },
+   {
+    "ts": "2026-10-21T08:15:48.683Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 32.54% > 30% - PHP-SOL: bot holders 32.56% > 30%"
+   },
+   {
+    "ts": "2026-10-21T08:15:41.413Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 32.54% > 30% - PHP-SOL: bot holders 32.56% > 30%"
+   },
    {
     "ts": "2026-10-21T08:11:22.974Z",
     "type": "no_deploy",
@@ -129,46 +169,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (smart wallet Degen #15 present, organic 73) WHY SKIPPED WEFT-SOL deploy blocked on-chain: pool fee/active-TVL 0.0073% below configured min 0.015% \u2014 hard rule, no override. CRAWL-SOL deploy blocked by system (session dep"
-   },
-   {
-    "ts": "2026-10-21T07:52:38.158Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CRAWL-SOL WHY SKIPPED Hard gates passed (fees 653.82 SOL, bots 10.51%, top10 13.61%, bin_step 100), but narrative is an empty placeholder \u2014 no origin, no named entity, no catalyst \u2014 and zero smart wallets present. That combo trig"
-   },
-   {
-    "ts": "2026-10-21T07:52:29.661Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 31.24% > 30%"
-   },
-   {
-    "ts": "2026-10-21T07:52:20.770Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "Hard block \u2014 actual fee/active-TVL 0.0064% < 0.05% minimum. WEFT un-deployable regardless of its listed ratio. CRAWL has no narrative + zero smart wallets \u2192 hard skip by rule. Nothing left. \u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnn"
-   },
-   {
-    "ts": "2026-10-21T07:46:22.851Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Deploy on Pok\u00e9mon-SOL blocked: on-chain fee/active-TVL 0% below configured minFeeActiveTvlRatio 0.05% \u2014 the pre-loaded fee_tvl=0.0637 didn't match live active"
-   },
-   {
-    "ts": "2026-10-21T07:42:02.226Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 30.83% > 30%"
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "08:00",
-    "count": 6
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T08:10:00.812",
+  "last_screening": "2026-10-21T08:15:43.703",
   "last_management": "2026-10-21T08:10:00.041"
  },
  "log_tail": [
-  "[2026-10-21T08:05:58.809Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T08:06:01.175Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 31.77% > 30%",
-  "[2026-10-21T08:06:01.175Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 31.77% > 30%",
-  "[2026-10-21T08:10:00.041Z] [CRON] Starting management cycle",
-  "[2026-10-21T08:10:00.422Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T08:10:00.812Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
-  "[2026-10-21T08:10:00.812Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T08:10:02.801Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 31.99% > 30%",
   "[2026-10-21T08:10:02.801Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 31.99% > 30%",
-  "[2026-10-21T08:10:50.994Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-21T08:10:50.994Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-21T08:13:06.752Z] [TELEGRAM_ERROR] Poll error: fetch failed",
+  "[2026-10-21T08:15:43.701Z] [CRON] [Opportunity] PHP-SOL degen 85.1 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T08:15:43.703Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
+  "[2026-10-21T08:15:43.704Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T08:15:52.064Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-21T08:15:52.094Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-21T08:15:52.574Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 32.56% > 30%"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

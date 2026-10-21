@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T16:28:11.732836+00:00",
+ "generated_at": "2026-10-21T16:32:45.938844+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 62
+  "decisions_mentioning": 61
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 420,
+  "total_real": 421,
   "today": 100,
-  "today_real": 211,
+  "today_real": 212,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T16:30:40.175Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpd...) WHY SKIPPED Wallet balance is 0 SOL. Goal is 0.5 SOL. Unable to deploy. REJECTED PHP-SOL (ELnpd...) - No funds ALPENGLOW-SOL - No funds GTA6-SOL - No funds Pok\u00e9mon-SOL - No funds WEFT-SOL - No funds PEPA-SOL - "
+   },
    {
     "ts": "2026-10-21T16:25:49.345Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot execute deploy. Additionally, fee/TVL ratio is very high which might indicate temporary fee spikes. REJECTED PHP-SOL (insufficient funds) WEFT-SOL (insufficient funds) CRA"
-   },
-   {
-    "ts": "2026-10-21T15:05:44.206Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL (HAXx3Ph77m7jL6AmN85VN84rKN2tbfXqo2YBKhjNDr7Q) WHY SKIPPED The first deploy attempt was blocked by the SDK's fee/active-TVL ratio check (returned 0%, below min 0.005%). A second attempt on EXFIL-SOL was blocked beca"
    }
   ]
  },
@@ -194,7 +194,7 @@
    },
    {
     "hour": "08:00",
-    "count": 41
+    "count": 40
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "16:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T16:25:33.786",
-  "last_management": "2026-10-21T16:20:00.861"
+  "last_screening": "2026-10-21T16:30:01.118",
+  "last_management": "2026-10-21T16:30:00.554"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T16:20:00.861Z] [CRON] Starting management cycle",
-  "[2026-10-21T16:20:01.498Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T16:20:02.074Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T16:20:02.074Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T16:25:33.007Z] [CRON] [Opportunity] PEPA-SOL degen 96.3 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T16:25:33.786Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T16:25:33.786Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T16:30:00.554Z] [CRON] Starting management cycle",
+  "[2026-10-21T16:30:01.118Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T16:30:01.118Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T16:30:01.133Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T16:30:01.133Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

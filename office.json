@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T20:12:39.905673+00:00",
+ "generated_at": "2026-10-21T20:17:38.675611+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 465,
+  "total_real": 466,
   "today": 100,
-  "today_real": 256,
+  "today_real": 257,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T20:15:19.669Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL (5zbcXagpc7XBnDMUVak4Qo2hYh8pRJo2exq43Lpf5Aj5) WHY SKIPPED This pool had the strongest signals (2 smart wallets, good organic score, and solid fees), but the deploy_position tool was blocked from retrying within the sam"
+   },
    {
     "ts": "2026-10-21T20:10:35.002Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None (wallet balance $0) WHY SKIPPED Available SOL balance is 0.000 SOL, which is insufficient for the required 0.5 SOL deploy. Without deploy capital, no pool can be opened even if other signals were favorable. REJECTED \u2014"
-   },
-   {
-    "ts": "2026-10-21T18:56:26.515Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED The deploy tool returned a dry-run response with no real transaction sent. While Macca-SOL passed hard filters (bin_step 100, fees 66.68 SOL, volatility 5.7), the dry-run mode prevented an actual deployment."
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "20:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T20:10:02.084",
+  "last_screening": "2026-10-21T20:15:04.146",
   "last_management": "2026-10-21T20:10:00.918"
  },
  "log_tail": [
-  "[2026-10-21T20:05:18.155Z] [CRON] [Opportunity] PHP-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T20:05:18.242Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T20:05:18.242Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T20:10:00.918Z] [CRON] Starting management cycle",
   "[2026-10-21T20:10:01.556Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T20:10:02.084Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T20:10:02.085Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T20:10:02.327Z] [SCREENING] PVP guard: GP-SOL has active rival Graphite (31k88G5M)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T20:15:04.038Z] [CRON] [Opportunity] PHP-SOL degen 99.6 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T20:15:04.146Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T20:15:04.146Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

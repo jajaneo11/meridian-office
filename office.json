@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:22:39.446849+00:00",
+ "generated_at": "2026-10-21T08:27:39.596124+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 46,
+  "today": 52,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,54 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T08:26:25.958Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 32.40% > 30%"
+   },
+   {
+    "ts": "2026-10-21T08:26:21.186Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Candidate 1 passed all hard rules (bin_step 100, fees 594 SOL, positive volatility) and had a smart wallet signal, but the system was in DRY_RUN mode. The too"
+   },
+   {
+    "ts": "2026-10-21T08:26:18.996Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 32.37% > 30%"
+   },
+   {
+    "ts": "2026-10-21T08:26:17.675Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- PHP-SOL: bot holders 32.37% > 30%"
+   },
+   {
+    "ts": "2026-10-21T08:26:13.530Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CRAWL-SOL WHY SKIPPED Only candidate, but deploy_position blocked it: fee/active-TVL 0% below configured min ratio 0.015%. Narrative still generating (unverified), 0/30 smart wallets in pool \u2014 fundamentals alone weren't enough to"
+   },
+   {
+    "ts": "2026-10-21T08:25:21.328Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CRAWL-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 cannot fund a 0.5 SOL deploy. Additionally, this pool has no narrative story and no smart wallet presence, which are required confidence signals before deployment. REJECTED CRAWL-SO"
+   },
    {
     "ts": "2026-10-21T08:21:03.472Z",
     "type": "no_deploy",
@@ -121,54 +169,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- PHP-SOL: bot holders 32.54% > 30% - PHP-SOL: bot holders 32.56% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:15:41.413Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 32.54% > 30% - PHP-SOL: bot holders 32.56% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:11:22.974Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE pill-USDT (FU1k3nK4CPdSYyuR1rQ3sVg5WDoFm2Rs4QTLXeuYkoma) WHY SKIPPED pill-USDT was blocked on-chain: actual fee/active-TVL ratio 0.0038% < configured minimum 0.015% \u2014 screen-time fee_tvl figure didn't reflect live active-bin TVL."
-   },
-   {
-    "ts": "2026-10-21T08:11:15.043Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE pill-SOL (FDQmWtwHbz6v9TDAn6AXugYN8MdZdJ5Qh2LmWcQZwj5B) WHY SKIPPED Attempted deploy of pill-SOL (0.5 SOL, bid_ask, 48 bins below, vol 1.8976) \u2014 contract blocked it: fee/active-TVL 0% below configured minimum 0.015%. Wallet balan"
-   },
-   {
-    "ts": "2026-10-21T08:10:50.995Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE pill-USDT (FU1k3nK4CPdSYyuR1rQ3sVg5WDoFm2Rs4QTLXeuYkoma) WHY SKIPPED Wallet holds 0 SOL and returns \"Wallet not configured\" \u2014 0.5 SOL deploy impossible this cycle, nothing to send. Both pools also fail the narrative gate: narrati"
-   },
-   {
-    "ts": "2026-10-21T08:06:20.518Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 31.73% > 30% - PHP-SOL: bot holders 31.73% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:06:01.202Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 31.77% > 30% - PHP-SOL: bot holders 31.77% > 30%"
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "08:00",
-    "count": 13
+    "count": 19
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T08:20:01.658",
+  "last_screening": "2026-10-21T08:26:58.640",
   "last_management": "2026-10-21T08:20:00.563"
  },
  "log_tail": [
-  "[2026-10-21T08:15:43.704Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T08:15:52.064Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-21T08:15:52.094Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-21T08:15:52.574Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 32.56% > 30%",
   "[2026-10-21T08:20:00.563Z] [CRON] Starting management cycle",
   "[2026-10-21T08:20:01.215Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T08:20:01.658Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
   "[2026-10-21T08:20:01.666Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T08:20:02.562Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 31.98% > 30%",
-  "[2026-10-21T08:20:02.563Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 31.98% > 30%"
+  "[2026-10-21T08:20:02.563Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 31.98% > 30%",
+  "[2026-10-21T08:26:58.630Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T08:26:58.640Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
+  "[2026-10-21T08:26:58.642Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T08:27:00.315Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 32.38% > 30%"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

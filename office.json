@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T01:57:43.912009+00:00",
+ "generated_at": "2026-10-21T02:02:38.185436+00:00",
  "mode": {
   "dry_run": true,
   "model": "deepseek/deepseek-chat"
@@ -136,10 +136,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "14:00",
-    "count": 11
-   },
-   {
     "hour": "15:00",
     "count": 11
    },
@@ -182,24 +178,28 @@
    {
     "hour": "01:00",
     "count": 0
+   },
+   {
+    "hour": "02:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T01:55:19.097",
-  "last_management": "2026-10-21T01:50:00.106"
+  "last_screening": "2026-10-21T02:00:01.063",
+  "last_management": "2026-10-21T02:00:00.616"
  },
  "log_tail": [
-  "[2026-10-21T01:50:00.923Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
-  "[2026-10-21T01:50:00.923Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T01:50:01.989Z] [SCREENING] Bot-holder filter: dropped Normie-SOL \u2014 bots 32.98% > 30%",
-  "[2026-10-21T01:50:02.634Z] [ERROR] Agent loop error at step 0: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-21T01:50:02.634Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-21T01:55:19.097Z] [CRON] [Opportunity] WEFT-SOL degen 88.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T01:55:19.097Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
   "[2026-10-21T01:55:19.098Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T01:55:20.113Z] [ERROR] Agent loop error at step 0: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-21T01:55:20.114Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits"
+  "[2026-10-21T01:55:20.114Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
+  "[2026-10-21T02:00:00.616Z] [CRON] Starting management cycle",
+  "[2026-10-21T02:00:01.034Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T02:00:01.035Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T02:00:01.063Z] [CRON] Starting screening cycle [model: deepseek/deepseek-chat]",
+  "[2026-10-21T02:00:01.064Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T02:00:03.164Z] [ERROR] Agent loop error at step 0: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
+  "[2026-10-21T02:00:03.164Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

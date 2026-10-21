@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T15:07:47.880113+00:00",
+ "generated_at": "2026-10-21T15:12:44.794489+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 404,
+  "total_real": 405,
   "today": 100,
-  "today_real": 195,
+  "today_real": 196,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T15:05:18.263",
-  "last_management": "2026-10-21T15:00:00.642"
+  "last_screening": "2026-10-21T15:10:01.610",
+  "last_management": "2026-10-21T15:10:00.151"
  },
  "log_tail": [
-  "[2026-10-21T15:00:01.223Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T15:00:01.223Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T15:00:01.261Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T15:00:01.261Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\u26d4 NO DEPLOY",
-  "The only viable candidate had smart wallet confirmation and solid metrics (fee/TVL 0.52, 51.8 SOL in fees, 6.56 volatility). However, the deploy_position tool failed with a range calculation error (NaN total bins below minimum 35). Retry was blocked by session rules, so no deployment could complete.",
   "[2026-10-21T15:05:18.129Z] [CRON] [Opportunity] ALPENGLOW-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T15:05:18.263Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T15:05:18.264Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T15:10:00.151Z] [CRON] Starting management cycle",
+  "[2026-10-21T15:10:01.086Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T15:10:01.610Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T15:10:01.611Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T15:10:18.842Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

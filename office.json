@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:54:24.058252+00:00",
+ "generated_at": "2026-10-21T08:57:38.988330+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 54
+  "decisions_mentioning": 52
  },
  "mode": {
   "dry_run": true,
@@ -70,7 +70,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 88,
+  "today": 90,
   "by_type": {
    "no_deploy": 100
   },
@@ -78,6 +78,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T08:55:33.303Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
+   {
+    "ts": "2026-10-21T08:55:25.011Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-21T08:54:16.673Z",
     "type": "no_deploy",
@@ -157,22 +173,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- PHP-SOL: bot holders 30.59% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:46:01.828Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 30.61% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:45:52.631Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 30.61% > 30%"
    }
   ]
  },
@@ -224,25 +224,25 @@
    },
    {
     "hour": "08:00",
-    "count": 55
+    "count": 57
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T08:53:23.331",
+  "last_screening": "2026-10-21T08:55:33.224",
   "last_management": "2026-10-21T08:50:00.916"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T08:51:58.291Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-21T08:52:00.269Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T08:52:00.270Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T08:52:03.588Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.18% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T08:53:22.105Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-21T08:53:23.331Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T08:53:23.331Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T08:53:25.194Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.17% > 30%"
+  "[2026-10-21T08:53:25.194Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.17% > 30%",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T08:55:06.295Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-21T08:55:07.649Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T08:55:07.649Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T08:55:12.175Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.11% > 30%",
+  "[2026-10-21T08:55:32.037Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-21T08:55:33.224Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T08:55:33.224Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T10:52:38.973116+00:00",
+ "generated_at": "2026-10-21T10:57:41.605596+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 56
+  "decisions_mentioning": 55
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 353,
+  "total_real": 354,
   "today": 100,
-  "today_real": 144,
+  "today_real": 145,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T10:55:38.739Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED The only candidate (CLAUDIA-SOL) has a bin_step of 50, which violates the hard rule requiring bin_step between 80 and 125. This structural constraint makes the pool unsuitable for deployment. REJECTED CLAU"
+   },
    {
     "ts": "2026-10-21T10:45:57.465Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED Wallet balance is 0 SOL. Deploy requires 0.5 SOL per the cycle goal. No deployment can proceed without capital. REJECTED PHP-SOL (ELnpdJeWer4xsHUff93WPnmECYpDXE4"
-   },
-   {
-    "ts": "2026-10-21T09:00:26.671Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED Narrative is unknown/blank (\"being generated\"), and no smart wallets are present. Per rules, a pool without confirmed story or smart wallet backing should be skipped regardless of metrics. REJECTED GTA6-SOL: "
    }
   ]
  },
@@ -206,7 +206,7 @@
    },
    {
     "hour": "05:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "06:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "10:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T10:50:01.124",
+  "last_screening": "2026-10-21T10:55:33.287",
   "last_management": "2026-10-21T10:50:00.016"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T10:45:02.874Z] [CRON] [Opportunity] OTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T10:45:03.001Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T10:45:03.001Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-21T10:50:00.016Z] [CRON] Starting management cycle",
   "[2026-10-21T10:50:00.648Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T10:50:01.124Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T10:50:01.125Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T10:55:33.177Z] [CRON] [Opportunity] CLAUDIA-SOL degen 41.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T10:55:33.287Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T10:55:33.287Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

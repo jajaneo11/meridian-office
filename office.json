@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T16:17:45.204833+00:00",
+ "generated_at": "2026-10-21T16:22:40.021795+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 60
+  "decisions_mentioning": 61
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 418,
+  "total_real": 419,
   "today": 100,
-  "today_real": 209,
+  "today_real": 210,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T16:20:32.123Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED PHP-SOL has strong fee/TVL and a smart wallet present, but the -45% hourly price drop is a significant risk signal. The first deploy attempt (swordcat) failed due to fee/active-TVL ratio, and the tool is now b"
+   },
    {
     "ts": "2026-10-21T16:15:59.614Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL (HAXx3Ph77m7jL6AmN85VN84rKN2tbfXqo2YBKhjNDr7Q) WHY SKIPPED The only viable candidate had smart wallet confirmation and solid metrics (fee/TVL 0.52, 51.8 SOL in fees, 6.56 volatility). However, the deploy_position to"
-   },
-   {
-    "ts": "2026-10-21T14:55:43.300Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient capital for 0.5 SOL deploy. Even if funds were available, the candidate fails quality checks: narrative is empty (\"being generated\") and no smart wallets are present, vi"
    }
   ]
  },
@@ -194,7 +194,7 @@
    },
    {
     "hour": "08:00",
-    "count": 43
+    "count": 42
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "16:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T16:15:03.474",
-  "last_management": "2026-10-21T16:10:00.346"
+  "last_screening": "2026-10-21T16:20:02.074",
+  "last_management": "2026-10-21T16:20:00.861"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T16:10:00.346Z] [CRON] Starting management cycle",
-  "[2026-10-21T16:10:01.089Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T16:10:01.688Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T16:10:01.689Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\ud83d\ude80 DEPLOYED (DRY RUN)",
   "[2026-10-21T16:15:03.388Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T16:15:03.474Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T16:15:03.474Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T16:20:00.861Z] [CRON] Starting management cycle",
+  "[2026-10-21T16:20:01.498Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T16:20:02.074Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T16:20:02.074Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

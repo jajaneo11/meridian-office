@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T15:38:06.866045+00:00",
+ "generated_at": "2026-10-21T15:42:40.972101+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 61
+  "decisions_mentioning": 62
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 410,
+  "total_real": 411,
   "today": 100,
-  "today_real": 201,
+  "today_real": 202,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T15:40:21.834Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpd...) WHY SKIPPED Wallet balance is 0 SOL; no deploy funds available. All other pools filtered out due to bin step constraints or lacking smart wallet confidence. REJECTED PHP-SOL (BPnATE) \u2013 no smart wallets WEFT-SOL"
+   },
    {
     "ts": "2026-10-21T15:30:23.669Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED Wallet balance is 0 SOL; unable to fund any deploy. Additionally, the narrative is still generating (weak signal) and volatility is low (3.15), limiting range ut"
-   },
-   {
-    "ts": "2026-10-21T14:15:24.073Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED CLAUDE-SOL passed all hard filters (bin_step=125, fees>30 SOL, smart wallets present) but the system executed only a dry run. No on-chain transaction was sent, so no real position was opened. Without a liv"
    }
   ]
  },
@@ -198,7 +198,7 @@
    },
    {
     "hour": "08:00",
-    "count": 49
+    "count": 48
    },
    {
     "hour": "09:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "15:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T15:36:02.773",
-  "last_management": "2026-10-21T15:30:00.395"
+  "last_screening": "2026-10-21T15:40:02.032",
+  "last_management": "2026-10-21T15:40:00.878"
  },
  "log_tail": [
-  "[2026-10-21T15:30:00.395Z] [CRON] Starting management cycle",
-  "[2026-10-21T15:30:00.929Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T15:30:00.929Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T15:30:00.963Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T15:30:00.963Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T15:36:02.694Z] [CRON] [Opportunity] PHP-SOL degen 42.8 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T15:36:02.773Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T15:36:02.773Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T15:40:00.878Z] [CRON] Starting management cycle",
+  "[2026-10-21T15:40:01.510Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T15:40:02.032Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T15:40:02.032Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T15:40:05.534Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 35.35% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

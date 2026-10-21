@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T19:48:04.745165+00:00",
+ "generated_at": "2026-10-21T19:52:48.879441+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 460,
+  "total_real": 461,
   "today": 100,
-  "today_real": 251,
+  "today_real": 252,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T19:50:14.077Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpdJeWer4xsHUff93WPnmECYpDXE4GW1y2QmXtzFBm) WHY SKIPPED Deploy was blocked by DRY RUN mode; no transaction was actually sent. PHP-SOL passed all hard rules (bin_step=100, fees=132 SOL, smart wallets=1) and had the stro"
+   },
    {
     "ts": "2026-10-21T19:45:43.443Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-21T18:32:56.134Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "08:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "19:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T19:45:02.951",
-  "last_management": "2026-10-21T19:40:00.391"
+  "last_screening": "2026-10-21T19:50:02.068",
+  "last_management": "2026-10-21T19:50:00.912"
  },
  "log_tail": [
-  "[2026-10-21T19:40:00.391Z] [CRON] Starting management cycle",
-  "[2026-10-21T19:40:01.171Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T19:40:01.781Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T19:40:01.784Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "This pool had the strongest fundamentals: smart wallet present (Degen #15), high Fee/TVL ratio (0.38), solid organic score (75), and positive momentum (+1.18% 1h). All hard filters passed (fees 131 SOL, bin step 100, volatility 3.47). The deploy was blocked by the SDK due to a range calculation error, not a candidate quality issue.",
   "[2026-10-21T19:45:02.864Z] [CRON] [Opportunity] Macca-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T19:45:02.951Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T19:45:02.951Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T19:50:00.912Z] [CRON] Starting management cycle",
+  "[2026-10-21T19:50:01.532Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T19:50:02.068Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T19:50:02.069Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

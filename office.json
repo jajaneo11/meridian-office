@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T22:33:44.216502+00:00",
+ "generated_at": "2026-10-21T22:45:18.025557+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 62
+  "decisions_mentioning": 63
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 491,
+  "total_real": 492,
   "today": 100,
-  "today_real": 282,
+  "today_real": 283,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T22:43:23.535Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Current wallet balance is 0 SOL. Despite identifying a high-conviction candidate with smart wallet activity and strong momentum, no deployment can occur withou"
+   },
    {
     "ts": "2026-10-21T21:52:46.223Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED The deployment was blocked in dry-run mode due to a previous attempt. The would_deploy shows it would have succeeded with 0.5 SOL in bid_ask strategy, but without a confirmed transaction and proper range_cov"
-   },
-   {
-    "ts": "2026-10-21T19:55:43.803Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED The agent wallet has 0 SOL balance \u2014 no capital available to deploy positions. Even though Macca-SOL has decent fundamentals (71 organic score, smart wallet presence, adequate fees), deployment is impossible"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "22:00",
-    "count": 0
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T22:30:00.597",
-  "last_management": "2026-10-21T22:30:00.055"
+  "last_screening": "2026-10-21T22:43:33.112",
+  "last_management": "2026-10-21T22:40:00.613"
  },
  "log_tail": [
-  "If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.",
-  "[2026-10-21T22:23:18.048Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T22:23:18.171Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T22:23:18.171Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
-  "[2026-10-21T22:30:00.055Z] [CRON] Starting management cycle",
-  "[2026-10-21T22:30:00.597Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T22:30:00.598Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T22:30:00.603Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T22:30:00.603Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-21T22:30:00.603Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T22:40:00.613Z] [CRON] Starting management cycle",
+  "[2026-10-21T22:40:01.301Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T22:40:01.301Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T22:43:33.017Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T22:43:33.112Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T22:43:33.112Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

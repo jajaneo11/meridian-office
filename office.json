@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T13:47:43.261270+00:00",
+ "generated_at": "2026-10-21T13:52:46.790387+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 59
+  "decisions_mentioning": 60
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 388,
+  "total_real": 389,
   "today": 100,
-  "today_real": 179,
+  "today_real": 180,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T13:50:19.451Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CRAWL-SOL WHY SKIPPED Wallet balance is zero (0 SOL), so no deployment is possible. Even if funds were available, this cycle lacks a high-conviction setup with strong specific narrative catalysts. All candidates rely on generated"
+   },
    {
     "ts": "2026-10-21T13:35:46.502Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpdJeWer4xsHUff93WPnmECYpDXE4GW1y2QmXtzFBm) WHY SKIPPED PHP-SOL had the strongest signal (1 smart wallet: Degen #15) but failed the hard gate on fee/active-TVL ratio (0.0005% < required 0.005%). This check runs at depl"
-   },
-   {
-    "ts": "2026-10-21T12:15:26.329Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED First deploy attempt on GTA6-SOL failed due to pool not found (likely stale bin). Tool now blocks further attempts in this session. OTC-SOL was strong (3 smart wallets, low bots, solid TVL), but couldn't be re"
    }
   ]
  },
@@ -202,7 +202,7 @@
    },
    {
     "hour": "07:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "08:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "13:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T13:45:03.174",
-  "last_management": "2026-10-21T13:40:00.012"
+  "last_screening": "2026-10-21T13:50:01.847",
+  "last_management": "2026-10-21T13:50:00.621"
  },
  "log_tail": [
-  "[2026-10-21T13:40:03.868Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 41.49% > 30%",
-  "[2026-10-21T13:40:03.868Z] [SCREENING] Bot-holder filter: dropped QUANTS-SOL \u2014 bots 52.75% > 30%",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
-  "[2026-10-21T13:45:03.046Z] [CRON] [Opportunity] HUMANOID-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T13:45:03.174Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T13:45:03.177Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T13:45:06.150Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 40.50% > 30%",
-  "[2026-10-21T13:45:06.150Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 40.50% > 30%",
   "[2026-10-21T13:45:06.150Z] [SCREENING] Bot-holder filter: dropped QUANTS-SOL \u2014 bots 52.87% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T13:50:00.621Z] [CRON] Starting management cycle",
+  "[2026-10-21T13:50:01.301Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T13:50:01.847Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T13:50:01.848Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.02% > 30%",
+  "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.02% > 30%",
+  "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped Normie-SOL \u2014 bots 34.33% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

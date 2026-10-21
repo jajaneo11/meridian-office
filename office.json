@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:47:39.195465+00:00",
+ "generated_at": "2026-10-21T06:52:40.057026+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 78
+  "decisions_mentioning": 77
  },
  "mode": {
   "dry_run": true,
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 16,
+  "today": 17,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T06:50:59.608Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED WEFT was the only pool passing the hard bin_step gate (100, inside 80\u2013125), and the only one with positive volatility. It reached the deploy call but the transac"
+   },
    {
     "ts": "2026-10-21T06:46:50.278Z",
     "type": "no_deploy",
@@ -161,14 +169,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no executed entry. No on-chain transaction was submitted. BEST LOOKING CANDIDATE WEFT-SOL \u2014 95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8 WHY SKIPPED Selected WEFT-SOL (best LP economics: fee/TVL 0.6084, vol 6.3128, graduated, dev_migrations=1). First deploy call was r"
-   },
-   {
-    "ts": "2026-10-21T05:31:26.775Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE pill-USDT WHY SKIPPED All three eligible pools returned a placeholder narrative (\"being generated\") and zero tracked smart wallets \u2014 the hard rule is no narrative + no smart wallets \u2192 skip. pill-USDT was the best of the weak set "
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "06:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T06:45:11.461",
-  "last_management": "2026-10-21T06:40:00.566"
+  "last_screening": "2026-10-21T06:50:00.858",
+  "last_management": "2026-10-21T06:50:00.052"
  },
  "log_tail": [
-  "[2026-10-21T06:37:39.287Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-21T06:40:00.566Z] [CRON] Starting management cycle",
-  "[2026-10-21T06:40:01.054Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T06:40:01.428Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T06:40:01.428Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T06:41:49.094Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-21T06:45:11.460Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T06:45:11.461Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T06:45:11.461Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T06:46:50.275Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-21T06:46:50.275Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-21T06:50:00.052Z] [CRON] Starting management cycle",
+  "[2026-10-21T06:50:00.480Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T06:50:00.858Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T06:50:00.858Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T06:50:59.607Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

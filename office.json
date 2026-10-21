@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T12:12:46.908861+00:00",
+ "generated_at": "2026-10-21T12:17:39.505163+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -40,12 +40,12 @@
   "decisions_mentioning": 56
  },
  "mode": {
-  "dry_run": false,
-  "model": "openrouter/auto",
+  "dry_run": true,
+  "model": "mercury-2.5",
   "screener_model": "mercury-2.5",
   "manager_model": "mercury-2.5",
   "general_model": "mercury-2.5",
-  "fallback_model": "openrouter/auto"
+  "fallback_model": "mercury-2.5"
  },
  "wallet": {
   "sol": 0.0
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 369,
+  "total_real": 370,
   "today": 100,
-  "today_real": 160,
+  "today_real": 161,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T12:15:26.329Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED First deploy attempt on GTA6-SOL failed due to pool not found (likely stale bin). Tool now blocks further attempts in this session. OTC-SOL was strong (3 smart wallets, low bots, solid TVL), but couldn't be re"
+   },
    {
     "ts": "2026-10-21T12:10:24.412Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED The only candidate (CLAUDIA-SOL) has a bin_step of 50, which violates the hard rule requiring bin_step between 80 and 125. This structural constraint makes the pool unsuitable for deployment. REJECTED CLAU"
-   },
-   {
-    "ts": "2026-10-21T10:45:57.465Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL (Ekm4LYkihEdQgZx2UReDMJ3eCDDjExPQLG94WfWmfyWr) WHY SKIPPED Wallet balance is 0 SOL; insufficient funds for deployment. Even the strongest candidate requires available capital to proceed. REJECTED OTC-SOL (Ekm4...), OTC-SO"
    }
   ]
  },
@@ -202,7 +202,7 @@
    },
    {
     "hour": "06:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "07:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "12:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T12:10:01.406",
+  "last_screening": "2026-10-21T12:15:02.905",
   "last_management": "2026-10-21T12:10:00.271"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T12:06:47.598Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T12:06:47.708Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T12:06:47.709Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T12:10:00.271Z] [CRON] Starting management cycle",
   "[2026-10-21T12:10:00.887Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T12:10:01.406Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T12:10:01.407Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T12:15:02.774Z] [CRON] [Opportunity] FTR-SOL degen 95.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T12:15:02.905Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T12:15:02.905Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T07:17:49.609592+00:00",
+ "generated_at": "2026-10-21T07:22:39.417545+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -41,7 +41,7 @@
  },
  "mode": {
   "dry_run": true,
-  "model": "tig/longcat-2.5-preview"
+  "model": "tig/mimo-v2.6-flash-UNCENSORED"
  },
  "wallet": {
   "sol": 0.0
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 19,
+  "today": 21,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T07:21:44.125Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
+   {
+    "ts": "2026-10-21T07:20:56.714Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CRAWL-SOL (4s2bzyM1CStvWCUC1r1q8Maoj6UmkqnBqnwBEFtDtpko) WHY SKIPPED Wallet not configured \u2014 SOL balance 0.00, so the 0.5 SOL deploy cannot be funded; any call would fail on-chain. Independently, all four candidates carry no usab"
+   },
    {
     "ts": "2026-10-21T07:10:38.414Z",
     "type": "no_deploy",
@@ -153,22 +169,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED GTA6-SOL was the strongest pick but deploy_position was hard-blocked by config: \"Pool fee/active-TVL 0% is below configured minFeeActiveTvlRatio 0.05%\". Not a choice \u2014 config gate fired. No transaction landed"
-   },
-   {
-    "ts": "2026-10-21T06:00:23.332Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED Only candidate in the pool, and it fails the narrative gate. Token narrative is still \"generating\" \u2014 no verifiable origin story, no named entity, no community ca"
-   },
-   {
-    "ts": "2026-10-21T05:52:52.161Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL \u2014 5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs WHY SKIPPED Real blocker, not judgment: deploy_position returned `blocked: true` \u2014 \"Pool fee/active-TVL 0.00354% is below configured minFeeActiveTvlRatio 0.05%\". Harness gat"
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "07:00",
-    "count": 2
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T07:14:26.483",
-  "last_management": "2026-10-21T07:10:00.153"
+  "last_screening": "2026-10-21T07:21:43.989",
+  "last_management": "2026-10-21T07:20:00.671"
  },
  "log_tail": [
-  "[2026-10-21T07:09:11.692Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T07:10:00.153Z] [CRON] Starting management cycle",
-  "[2026-10-21T07:10:00.584Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T07:10:00.585Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T07:10:38.409Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-21T07:14:26.483Z] [CRON] [Opportunity] WEFT-SOL degen 99.6 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T07:14:26.483Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T07:14:26.483Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T07:14:33.923Z] [ERROR] Agent loop error at step 0: 503 Layanan sedang sibuk, coba lagi sebentar.",
-  "[2026-10-21T07:14:33.923Z] [CRON_ERROR] Screening cycle failed: 503 Layanan sedang sibuk, coba lagi sebentar."
+  "[2026-10-21T07:19:41.537Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T07:19:41.537Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T07:20:00.671Z] [CRON] Starting management cycle",
+  "[2026-10-21T07:20:01.061Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T07:20:01.061Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T07:20:56.706Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-21T07:21:43.231Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-21T07:21:43.989Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
+  "[2026-10-21T07:21:43.990Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T07:22:13.990Z] [TELEGRAM_ERROR] Poll error: fetch failed"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

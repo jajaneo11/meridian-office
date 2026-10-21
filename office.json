@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T05:07:41.365969+00:00",
+ "generated_at": "2026-10-21T05:12:42.636043+00:00",
  "mode": {
   "dry_run": true,
   "model": "tig/longcat-2.5-preview"
@@ -186,20 +186,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T05:07:26.761",
-  "last_management": "2026-10-21T05:00:00.066"
+  "last_screening": "2026-10-21T05:10:01.786",
+  "last_management": "2026-10-21T05:10:00.765"
  },
  "log_tail": [
-  "[2026-10-21T05:00:00.470Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T05:00:02.222Z] [ERROR] Agent loop error at step 0: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-21T05:00:02.223Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1616. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-21T05:02:11.318Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-21T05:02:12.091Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T05:02:12.092Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T05:03:50.849Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-21T05:07:26.756Z] [CRON] [Opportunity] GTA6-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T05:07:26.761Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T05:07:26.761Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
+  "[2026-10-21T05:07:26.761Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T05:08:39.507Z] [ERROR] Agent loop error at step 0: 503 Layanan sedang sibuk, coba lagi sebentar.",
+  "[2026-10-21T05:08:39.511Z] [CRON_ERROR] Screening cycle failed: 503 Layanan sedang sibuk, coba lagi sebentar.",
+  "[2026-10-21T05:10:00.765Z] [CRON] Starting management cycle",
+  "[2026-10-21T05:10:01.403Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T05:10:01.786Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T05:10:01.787Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T05:11:04.765Z] [ERROR] Agent loop error at step 0: 503 Layanan sedang sibuk, coba lagi sebentar.",
+  "[2026-10-21T05:11:04.766Z] [CRON_ERROR] Screening cycle failed: 503 Layanan sedang sibuk, coba lagi sebentar."
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

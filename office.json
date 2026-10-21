@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T09:37:39.697874+00:00",
+ "generated_at": "2026-10-21T09:42:42.882994+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,10 +37,10 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 51
+  "decisions_mentioning": 52
  },
  "mode": {
-  "dry_run": false,
+  "dry_run": true,
   "model": "mercury-2.5",
   "screener_model": "mercury-2.5",
   "manager_model": "mercury-2.5",
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 337,
-  "today": 93,
-  "today_real": 128,
+  "total_real": 339,
+  "today": 94,
+  "today_real": 130,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T09:40:31.062Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BACKERS-SOL WHY SKIPPED The top candidate passed fee/TVL ratio checks and had strong smart wallet presence, but failed on-chain deployment due to the fee/active-TVL ratio falling below the configured minimum. This suggests either"
+   },
    {
     "ts": "2026-10-21T09:00:37.066Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Pok\u00e9mon-SOL (smart wallets present, high vol/volume) was blocked at deploy due to fee/active-TVL ratio < 0.015%. pill-USDT had higher fee_tvl but deploy_position disallowed retry after first failure. REJEC"
-   },
-   {
-    "ts": "2026-10-21T08:50:02.891Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 30.19% > 30% - PHP-SOL: bot holders 30.19% > 30%"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "09:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T09:36:28.356",
-  "last_management": "2026-10-21T09:30:00.134"
+  "last_screening": "2026-10-21T09:39:48.439",
+  "last_management": "2026-10-21T09:40:00.149"
  },
  "log_tail": [
-  "[2026-10-21T09:35:19.914Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-21T09:35:19.914Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
-  "[2026-10-21T09:36:27.786Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-21T09:36:28.356Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
-  "[2026-10-21T09:36:28.356Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T09:36:28.357Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T09:36:28.361Z] [TELEGRAM_ERROR] sendChatAction 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
-  "[2026-10-21T09:36:31.279Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-21T09:36:31.279Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
-  "[2026-10-21T09:36:31.454Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}"
+  "[2026-10-21T09:38:16.283Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
+  "[2026-10-21T09:38:16.725Z] [TELEGRAM_ERROR] sendChatAction 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-21T09:38:16.812Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-21T09:39:46.926Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-21T09:39:48.439Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T09:39:48.440Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T09:40:00.149Z] [CRON] Starting management cycle",
+  "[2026-10-21T09:40:00.707Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T09:40:00.707Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T09:52:44.207444+00:00",
+ "generated_at": "2026-10-21T09:57:39.452049+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 341,
+  "total_real": 342,
   "today": 95,
-  "today_real": 132,
+  "today_real": 133,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T09:50:01.871",
+  "last_screening": "2026-10-21T09:57:02.850",
   "last_management": "2026-10-21T09:50:00.654"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T09:45:02.869Z] [CRON] [Opportunity] BACKERS-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T09:45:02.963Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T09:45:02.963Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T09:50:00.654Z] [CRON] Starting management cycle",
   "[2026-10-21T09:50:01.294Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T09:50:01.871Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T09:50:01.871Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T09:57:02.769Z] [CRON] [Opportunity] BACKERS-SOL degen 93.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T09:57:02.850Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T09:57:02.850Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

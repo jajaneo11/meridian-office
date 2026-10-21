@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T16:42:43.960809+00:00",
+ "generated_at": "2026-10-21T16:47:42.969483+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 423,
+  "total_real": 424,
   "today": 100,
-  "today_real": 214,
+  "today_real": 215,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T16:45:36.543Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED My wallet balance is 0.00 SOL, but a deployment requires 0.5 SOL. Without sufficient capital, no position can be opened regardless of candidate quality. The cycle cannot proceed until funds are replenished"
+   },
    {
     "ts": "2026-10-21T16:40:46.596Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpd...) WHY SKIPPED Wallet balance is 0 SOL; no deploy funds available. All other pools filtered out due to bin step constraints or lacking smart wallet confidence. REJECTED PHP-SOL (BPnATE) \u2013 no smart wallets WEFT-SOL"
-   },
-   {
-    "ts": "2026-10-21T15:30:23.669Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is 0.000 SOL. I have no capital available to execute a deployment of the required 0.5 SOL. REJECTED PHP-SOL \u2014 Funds insufficient ALPENGLOW-SOL \u2014 Funds insufficient DOPE-SOL \u2014 Funds insufficient "
    }
   ]
  },
@@ -194,7 +194,7 @@
    },
    {
     "hour": "08:00",
-    "count": 38
+    "count": 37
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "16:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T16:40:01.470",
+  "last_screening": "2026-10-21T16:45:03.468",
   "last_management": "2026-10-21T16:40:00.116"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T16:40:00.116Z] [CRON] Starting management cycle",
-  "[2026-10-21T16:40:00.754Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T16:40:01.470Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T16:40:01.470Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T16:40:03.960Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 33.36% > 30%",
   "[2026-10-21T16:40:36.772Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-21T16:40:39.800Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-21T16:40:41.539Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T16:45:03.391Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T16:45:03.468Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T16:45:03.469Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

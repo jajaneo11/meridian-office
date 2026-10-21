@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T22:18:08.116653+00:00",
+ "generated_at": "2026-10-21T22:22:39.323267+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -232,19 +232,19 @@
  },
  "cycles": {
   "last_screening": "2026-10-21T22:10:01.076",
-  "last_management": "2026-10-21T22:10:00.060"
+  "last_management": "2026-10-21T22:20:00.502"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T22:06:02.951Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T22:06:03.074Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T22:06:03.074Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T22:10:00.060Z] [CRON] Starting management cycle",
   "[2026-10-21T22:10:00.588Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T22:10:01.076Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T22:10:01.077Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T22:10:03.462Z] [SCREENING] Bot-holder filter: dropped Gato-SOL \u2014 bots 30.17% > 30%"
+  "[2026-10-21T22:10:03.462Z] [SCREENING] Bot-holder filter: dropped Gato-SOL \u2014 bots 30.17% > 30%",
+  "[2026-10-21T22:20:00.502Z] [CRON] Starting management cycle",
+  "[2026-10-21T22:20:01.110Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T22:20:01.111Z] [CRON] Screening skipped \u2014 previous cycle still running"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

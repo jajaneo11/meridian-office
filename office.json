@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:02:41.655640+00:00",
+ "generated_at": "2026-10-21T06:07:43.772866+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,8 +7,8 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 47,
-  "total_value_usd": 135996,
+  "active_24h": 48,
+  "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
    {
@@ -32,9 +32,9 @@
     "value_usd": 8561
    },
    {
-    "name": "Degen Fast LP",
-    "category": "Degen",
-    "value_usd": 6437
+    "name": "Multihours Long LP",
+    "category": "Multihours",
+    "value_usd": 7285
    }
   ],
   "decisions_mentioning": 79
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 9,
+  "today": 10,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T06:06:03.002Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED GTA6-SOL was the strongest pick but deploy_position was hard-blocked by config: \"Pool fee/active-TVL 0% is below configured minFeeActiveTvlRatio 0.05%\". Not a choice \u2014 config gate fired. No transaction landed"
+   },
    {
     "ts": "2026-10-21T06:00:23.332Z",
     "type": "no_deploy",
@@ -161,14 +169,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- ENERGY-SOL: bot holders 33.32% > 30%"
-   },
-   {
-    "ts": "2026-10-20T20:39:24.224Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- CUMROCKET-SOL: bot holders 39.64% > 30%"
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "06:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T05:59:30.448",
+  "last_screening": "2026-10-21T06:04:45.419",
   "last_management": "2026-10-21T06:00:00.762"
  },
  "log_tail": [
-  "[2026-10-21T05:52:52.159Z] [AGENT] \u26d4 NO DEPLOY",
-  "Real blocker, not judgment: deploy_position returned `blocked: true` \u2014 \"Pool fee/active-TVL 0.00354% is below configured minFeeActiveTvlRatio 0.05%\". Harness gate fired before any transaction. Only one deploy attempt is permitted per session, so falling back to the second GTA6 pool (xg71xrhn\u2026) was refused with \"do not retry\". Separately, get_wallet_balance returned `{\"sol\":0,\"error\":\"Wallet not configured\"}` \u2014 0 SOL available against a 0.5 SOL target, so capital is absent regardless of pool quality.",
-  "[2026-10-21T05:59:30.438Z] [CRON] [Opportunity] WEFT-SOL degen 99.6 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T05:59:30.448Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T05:59:30.448Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T06:00:00.762Z] [CRON] Starting management cycle",
   "[2026-10-21T06:00:00.764Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-21T06:00:01.185Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T06:00:01.187Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T06:00:23.326Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-21T06:00:23.326Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-21T06:04:45.419Z] [CRON] [Opportunity] WEFT-SOL degen 99.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T06:04:45.419Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T06:04:45.419Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T06:06:02.977Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T09:57:39.452049+00:00",
+ "generated_at": "2026-10-21T10:02:40.945663+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 52
+  "decisions_mentioning": 53
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 342,
-  "today": 95,
-  "today_real": 133,
+  "total_real": 343,
+  "today": 96,
+  "today_real": 134,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T10:01:00.371Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BACKERS-SOL WHY SKIPPED Wallet balance is 0 SOL; no capital available for deployment. Even though BACKERS-SOL had strong signals (2 smart wallets, high fees, good bin_step), there are no funds to allocate. REJECTED BACKERS-SOL, G"
+   },
    {
     "ts": "2026-10-21T09:50:47.530Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED First deploy attempt failed: fee/active-TVL ratio (0%) below min threshold (0.005%). Second attempt blocked: session rules prohibit multiple deploy_position calls. Neither GTA6-SOL nor other candidates could b"
-   },
-   {
-    "ts": "2026-10-21T08:50:38.077Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED OTC-SOL had the strongest smart wallet signal (3 active wallets) and high fees, but it failed the fee/active-TVL ratio gate. The system blocked deployment because the pool's fee ratio fell below the required m"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "22:00",
-    "count": 0
-   },
    {
     "hour": "23:00",
     "count": 0
@@ -227,24 +223,28 @@
    {
     "hour": "09:00",
     "count": 4
+   },
+   {
+    "hour": "10:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T09:57:02.850",
-  "last_management": "2026-10-21T09:50:00.654"
+  "last_screening": "2026-10-21T10:00:00.845",
+  "last_management": "2026-10-21T10:00:00.206"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T09:50:00.654Z] [CRON] Starting management cycle",
-  "[2026-10-21T09:50:01.294Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T09:50:01.871Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T09:50:01.871Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T09:57:02.769Z] [CRON] [Opportunity] BACKERS-SOL degen 93.8 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T09:57:02.850Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T09:57:02.850Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T10:00:00.206Z] [CRON] Starting management cycle",
+  "[2026-10-21T10:00:00.845Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T10:00:00.846Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T10:00:00.908Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T10:00:00.911Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

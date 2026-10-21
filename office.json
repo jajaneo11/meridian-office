@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T17:02:40.803281+00:00",
+ "generated_at": "2026-10-21T17:07:41.739803+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 62
+  "decisions_mentioning": 61
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 427,
+  "total_real": 428,
   "today": 100,
-  "today_real": 218,
+  "today_real": 219,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T17:06:01.347Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP2SHELL-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available to deploy. Even the strongest candidate (PHP2SHELL) cannot be executed without funds. This appears to be a fresh session with no deposited capital. REJECTED"
+   },
    {
     "ts": "2026-10-21T16:50:29.602Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED PHP-SOL had the strongest fee/TVL ratio (0.33) and smart wallet presence, but it failed the deploy check due to pool fee/active-TVL ratio being below the configured minimum. The session's deployment attempts w"
-   },
-   {
-    "ts": "2026-10-21T15:45:44.560Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available for deployment. Even the strongest candidate requires funding before any transaction can be submitted. REJECTED PHP-SOL (insufficient funds) ALPENGLOW-SOL (insuff"
    }
   ]
  },
@@ -190,7 +190,7 @@
    },
    {
     "hour": "08:00",
-    "count": 36
+    "count": 35
    },
    {
     "hour": "09:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "17:00",
-    "count": 0
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T17:00:00.738",
+  "last_screening": "2026-10-21T17:05:18.222",
   "last_management": "2026-10-21T17:00:00.201"
  },
  "log_tail": [
-  "[2026-10-21T16:57:03.561Z] [CRON] [Opportunity] VEIL-SOL degen 41.4 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T16:57:03.678Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T16:57:03.679Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T17:00:00.201Z] [CRON] Starting management cycle",
   "[2026-10-21T17:00:00.738Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T17:00:00.738Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T17:00:00.771Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T17:00:00.773Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T17:05:18.115Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T17:05:18.222Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T17:05:18.223Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

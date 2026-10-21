@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T17:47:46.414970+00:00",
+ "generated_at": "2026-10-21T17:52:40.343546+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 436,
+  "total_real": 437,
   "today": 100,
-  "today_real": 227,
+  "today_real": 228,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T17:50:24.366Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP2SHELL-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient funds to deploy 0.5 SOL. PHP2SHELL had the highest fee/TVL (0.70), smart wallet present, and bin_step 100, but execution is impossible without capital. REJECTED - p"
+   },
    {
     "ts": "2026-10-21T17:45:34.012Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ALPENGLOW-SOL WHY SKIPPED ALPENGLOW-SOL had strong conviction signals (1 smart wallet present, solid fees), but failed the fee/active-TVL ratio filter on deployment. PEPA-SOL and PHP-SOL were valid on all hard metrics but the sys"
-   },
-   {
-    "ts": "2026-10-21T16:36:16.505Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Both pools show placeholder narratives (\"being generated\") with no verifiable origin or community story. Neither has smart wallet presence to validate the setup. Both are extremely new (1h and 11h), which incr"
    }
   ]
  },
@@ -190,7 +190,7 @@
    },
    {
     "hour": "08:00",
-    "count": 28
+    "count": 27
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "17:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T17:45:03.829",
-  "last_management": "2026-10-21T17:40:00.452"
+  "last_screening": "2026-10-21T17:50:02.037",
+  "last_management": "2026-10-21T17:50:00.919"
  },
  "log_tail": [
-  "[2026-10-21T17:40:00.452Z] [CRON] Starting management cycle",
-  "[2026-10-21T17:40:01.044Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T17:40:01.532Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T17:40:01.533Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T17:40:03.673Z] [SCREENING] Bot-holder filter: dropped Normie-SOL \u2014 bots 32.21% > 30%",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T17:45:03.743Z] [CRON] [Opportunity] WEFT-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T17:45:03.829Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T17:45:03.829Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T17:50:00.919Z] [CRON] Starting management cycle",
+  "[2026-10-21T17:50:01.472Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T17:50:02.037Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T17:50:02.037Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T17:50:23.494Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T14:39:31.247587+00:00",
+ "generated_at": "2026-10-21T14:40:04.987316+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 398,
+  "total_real": 399,
   "today": 100,
-  "today_real": 189,
+  "today_real": 190,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T14:36:03.722",
-  "last_management": "2026-10-21T14:30:00.743"
+  "last_screening": "2026-10-21T14:40:01.837",
+  "last_management": "2026-10-21T14:40:00.639"
  },
  "log_tail": [
-  "[2026-10-21T14:30:01.292Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T14:30:01.339Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T14:30:01.340Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T14:30:04.124Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 38.79% > 30%",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T14:36:03.560Z] [CRON] [Opportunity] ALPENGLOW-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T14:36:03.722Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T14:36:03.724Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY (DRY RUN VALIDATION)",
-  "WHY SELECTED (DID DEPLOY AS DRY RUN)"
+  "WHY SELECTED (DID DEPLOY AS DRY RUN)",
+  "[2026-10-21T14:40:00.639Z] [CRON] Starting management cycle",
+  "[2026-10-21T14:40:01.256Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T14:40:01.837Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T14:40:01.837Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T14:40:04.656Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 37.79% > 30%"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

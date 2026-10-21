@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T13:27:55.842264+00:00",
+ "generated_at": "2026-10-21T13:32:50.949407+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 58
+  "decisions_mentioning": 59
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 384,
+  "total_real": 385,
   "today": 100,
-  "today_real": 175,
+  "today_real": 176,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T13:30:14.015Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE JEANPHIL-SOL WHY SKIPPED Wallet balance is empty (0 SOL); deployment impossible regardless of pool quality. Even if funded, the pool had weak narrative data. REJECTED pill-SOL (bin_step=50 violates hard rule 80\u2013125), PHP-SOL (hig"
+   },
    {
     "ts": "2026-10-21T13:25:41.813Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 cannot deploy the required 0.5 SOL. Even though this pool had strong fundamentals (596 SOL fees, smart wallet signal, named entity narrative), I cannot execute any position withou"
-   },
-   {
-    "ts": "2026-10-21T12:00:46.122Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED No SOL balance available for deployment. Additionally, no narratives have been fully generated yet (1 minute wait). REJECTED GTA6-SOL (xg71...): 1 smart wallet, "
    }
   ]
  },
@@ -202,7 +202,7 @@
    },
    {
     "hour": "07:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "08:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "13:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T13:25:32.741",
-  "last_management": "2026-10-21T13:20:00.840"
+  "last_screening": "2026-10-21T13:30:01.083",
+  "last_management": "2026-10-21T13:30:00.347"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T13:20:00.840Z] [CRON] Starting management cycle",
-  "[2026-10-21T13:20:01.470Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T13:20:01.983Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T13:20:01.984Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T13:25:32.606Z] [CRON] [Opportunity] GTA6-SOL degen 69.8 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T13:25:32.741Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T13:25:32.741Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T13:30:00.347Z] [CRON] Starting management cycle",
+  "[2026-10-21T13:30:01.083Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T13:30:01.084Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T13:30:01.117Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T13:30:01.117Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T13:30:03.355Z] [SCREENING] Bot-holder filter: dropped QUANTS-SOL \u2014 bots 52.88% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

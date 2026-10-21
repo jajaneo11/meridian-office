@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T05:22:43.504606+00:00",
+ "generated_at": "2026-10-21T05:27:39.353878+00:00",
  "mode": {
   "dry_run": true,
   "model": "tig/longcat-2.5-preview"
@@ -186,20 +186,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T05:20:01.603",
+  "last_screening": "2026-10-21T05:26:11.935",
   "last_management": "2026-10-21T05:20:00.810"
  },
  "log_tail": [
-  "[2026-10-21T05:11:04.765Z] [ERROR] Agent loop error at step 0: 503 Layanan sedang sibuk, coba lagi sebentar.",
-  "[2026-10-21T05:11:04.766Z] [CRON_ERROR] Screening cycle failed: 503 Layanan sedang sibuk, coba lagi sebentar.",
-  "[2026-10-21T05:17:11.704Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
   "[2026-10-21T05:17:12.506Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T05:17:12.507Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T05:20:00.810Z] [CRON] Starting management cycle",
   "[2026-10-21T05:20:01.224Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T05:20:01.603Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T05:20:01.603Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T05:21:20.614Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-21T05:21:20.614Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-21T05:26:11.934Z] [CRON] [Opportunity] pill-USDT degen 88.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T05:26:11.935Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
+  "[2026-10-21T05:26:11.936Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

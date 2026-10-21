@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T11:47:41.723398+00:00",
+ "generated_at": "2026-10-21T11:52:41.947379+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 55
+  "decisions_mentioning": 56
  },
  "mode": {
   "dry_run": false,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 364,
+  "total_real": 365,
   "today": 100,
-  "today_real": 155,
+  "today_real": 156,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T11:51:08.076Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED The best candidate (PHP-SOL) failed due to a system error during deploy attempt. The tool reported \"Pool not found\" when trying to verify screening thresholds. Since the deploy tool rejected the call, no posit"
+   },
    {
     "ts": "2026-10-21T11:45:41.417Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PAID-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot deploy required 0.5 SOL. Even with funds, PAID has weak narrative and only one smart wallet, leaving little upside conviction. REJECTED - PAID-SOL (balance issue, weak narrativ"
-   },
-   {
-    "ts": "2026-10-21T10:31:57.623Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED Wallet balance is 0 SOL, so no capital is available to deploy. Even though OTC-SOL had the strongest smart wallet signals (3 active wallets), deployment requires available funds. REJECTED OTC-SOL (strong smart"
    }
   ]
  },
@@ -206,7 +206,7 @@
    },
    {
     "hour": "06:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "07:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "11:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T11:45:03.019",
-  "last_management": "2026-10-21T11:40:00.730"
+  "last_screening": "2026-10-21T11:50:01.538",
+  "last_management": "2026-10-21T11:50:00.279"
  },
  "log_tail": [
-  "[2026-10-21T11:40:00.730Z] [CRON] Starting management cycle",
-  "[2026-10-21T11:40:01.535Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T11:40:02.069Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T11:40:02.070Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T11:40:05.064Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 32.16% > 30%",
-  "[2026-10-21T11:45:02.912Z] [CRON] [Opportunity] GTA6-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T11:45:03.019Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T11:45:03.019Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T11:45:05.588Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 32.74% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T11:50:00.279Z] [CRON] Starting management cycle",
+  "[2026-10-21T11:50:01.019Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T11:50:01.538Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T11:50:01.538Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T11:50:04.120Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 33.09% > 30%",
+  "\u26d4 NO DEPLOY",
+  "The best candidate (PHP-SOL) failed due to a system error during deploy attempt. The tool reported \"Pool not found\" when trying to verify screening thresholds. Since the deploy tool rejected the call, no position was opened this cycle."
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

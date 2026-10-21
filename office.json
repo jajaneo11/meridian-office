@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T11:52:41.947379+00:00",
+ "generated_at": "2026-10-21T11:57:47.219280+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 365,
+  "total_real": 366,
   "today": 100,
-  "today_real": 156,
+  "today_real": 157,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T11:50:01.538",
+  "last_screening": "2026-10-21T11:56:17.688",
   "last_management": "2026-10-21T11:50:00.279"
  },
  "log_tail": [
-  "[2026-10-21T11:45:03.019Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T11:45:05.588Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 32.74% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T11:50:00.279Z] [CRON] Starting management cycle",
   "[2026-10-21T11:50:01.019Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T11:50:01.538Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T11:50:01.538Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T11:50:04.120Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 33.09% > 30%",
   "\u26d4 NO DEPLOY",
-  "The best candidate (PHP-SOL) failed due to a system error during deploy attempt. The tool reported \"Pool not found\" when trying to verify screening thresholds. Since the deploy tool rejected the call, no position was opened this cycle."
+  "The best candidate (PHP-SOL) failed due to a system error during deploy attempt. The tool reported \"Pool not found\" when trying to verify screening thresholds. Since the deploy tool rejected the call, no position was opened this cycle.",
+  "[2026-10-21T11:56:17.561Z] [CRON] [Opportunity] LASTAGENCY-SOL degen 95.7 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T11:56:17.688Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T11:56:17.688Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T19:02:40.272961+00:00",
+ "generated_at": "2026-10-21T19:07:41.696602+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 59
+  "decisions_mentioning": 60
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 451,
+  "total_real": 452,
   "today": 100,
-  "today_real": 242,
+  "today_real": 243,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T19:06:28.291Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED Macca-SOL failed screening verification (pool not found in current thresholds). CRIME-USDC had stagnant volume ($4.7k) and massive age (17027h), indicating low current relevance. Neither pool had smart walle"
+   },
    {
     "ts": "2026-10-21T19:00:10.718Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP2SHELL-SOL WHY SKIPPED DOPE-SOL failed on fee/active-TVL ratio during deployment, and retrying in the same session is blocked by the SDK. PHP2SHELL-SOL was the runner-up with a smart wallet signal and strong metrics, but with "
-   },
-   {
-    "ts": "2026-10-21T17:40:49.674Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Wallet balance is 0 SOL. Cannot proceed with 0.5 SOL deployment requirement. REJECTED Pok\u00e9mon-SOL (funds unavailable) DOPE-SOL (funds unavailable) HOTBOT-SOL (funds unavailable)"
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "08:00",
-    "count": 18
+    "count": 17
    },
    {
     "hour": "09:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "19:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T19:00:00.853",
+  "last_screening": "2026-10-21T19:06:03.005",
   "last_management": "2026-10-21T19:00:00.334"
  },
  "log_tail": [
-  "[2026-10-21T18:56:17.868Z] [CRON] [Opportunity] Macca-SOL degen 92.5 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T18:56:17.941Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T18:56:17.941Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T19:00:00.334Z] [CRON] Starting management cycle",
   "[2026-10-21T19:00:00.853Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T19:00:00.853Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T19:00:00.879Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T19:00:00.880Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T19:06:02.863Z] [CRON] [Opportunity] Macca-SOL degen 53.5 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T19:06:03.005Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T19:06:03.005Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

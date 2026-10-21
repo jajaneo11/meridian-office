@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T13:57:43.165032+00:00",
+ "generated_at": "2026-10-21T14:02:41.997571+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 390,
+  "total_real": 391,
   "today": 100,
-  "today_real": 181,
+  "today_real": 182,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "02:00",
-    "count": 0
-   },
-   {
     "hour": "03:00",
     "count": 0
    },
@@ -227,24 +223,28 @@
    {
     "hour": "13:00",
     "count": 10
+   },
+   {
+    "hour": "14:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T13:56:18.167",
-  "last_management": "2026-10-21T13:50:00.621"
+  "last_screening": "2026-10-21T14:00:00.756",
+  "last_management": "2026-10-21T14:00:00.249"
  },
  "log_tail": [
-  "[2026-10-21T13:50:01.848Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.02% > 30%",
-  "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.02% > 30%",
-  "[2026-10-21T13:50:04.605Z] [SCREENING] Bot-holder filter: dropped Normie-SOL \u2014 bots 34.33% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T13:56:18.034Z] [CRON] [Opportunity] HUMANOID-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T13:56:18.167Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T13:56:18.167Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T13:56:19.353Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 45.78% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T14:00:00.249Z] [CRON] Starting management cycle",
+  "[2026-10-21T14:00:00.756Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T14:00:00.756Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T14:00:00.785Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T14:00:00.785Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T14:00:06.578Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.96% > 30%",
+  "[2026-10-21T14:00:06.579Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.96% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

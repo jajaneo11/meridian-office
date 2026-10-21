@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T10:32:38.930060+00:00",
+ "generated_at": "2026-10-21T10:37:40.861014+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 349,
+  "total_real": 350,
   "today": 100,
-  "today_real": 140,
+  "today_real": 141,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T10:35:54.660Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PAID-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot deploy required 0.5 SOL. Even with funds, PAID has weak narrative and only one smart wallet, leaving little upside conviction. REJECTED - PAID-SOL (balance issue, weak narrativ"
+   },
    {
     "ts": "2026-10-21T10:31:57.623Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "All candidates filtered before deploy"
-   },
-   {
-    "ts": "2026-10-21T08:55:25.011Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
    }
   ]
  },
@@ -206,7 +206,7 @@
    },
    {
     "hour": "05:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "06:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "10:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T10:30:01.720",
+  "last_screening": "2026-10-21T10:35:17.588",
   "last_management": "2026-10-21T10:30:00.977"
  },
  "log_tail": [
-  "[2026-10-21T10:27:02.509Z] [CRON] [Opportunity] BACKERS-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T10:27:02.652Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T10:27:02.652Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T10:30:00.977Z] [CRON] Starting management cycle",
   "[2026-10-21T10:30:01.453Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T10:30:01.453Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-21T10:30:01.720Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T10:30:01.723Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T10:35:17.459Z] [CRON] [Opportunity] PHP-SOL degen 99.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T10:35:17.588Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T10:35:17.588Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T05:37:45.915257+00:00",
+ "generated_at": "2026-10-21T05:42:40.179266+00:00",
  "mode": {
   "dry_run": true,
   "model": "tig/longcat-2.5-preview"
@@ -27,7 +27,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 5,
+  "today": 6,
   "by_type": {
    "no_deploy": 100
   },
@@ -35,6 +35,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T05:40:29.615Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no executed entry. No on-chain transaction was submitted. BEST LOOKING CANDIDATE WEFT-SOL \u2014 95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8 WHY SKIPPED Selected WEFT-SOL (best LP economics: fee/TVL 0.6084, vol 6.3128, graduated, dev_migrations=1). First deploy call was r"
+   },
    {
     "ts": "2026-10-21T05:31:26.775Z",
     "type": "no_deploy",
@@ -122,14 +130,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "All candidates filtered before deploy"
-   },
-   {
-    "ts": "2026-10-20T17:20:31.862Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL WHY SKIPPED The pool fee/active-TVL ratio is 0%, which is below the configured minimum threshold of 0.05%. This makes the pool unattractive for deployment despite other favorable metrics like organic score and volatility"
    }
   ]
  },
@@ -181,25 +181,25 @@
    },
    {
     "hour": "05:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-21T05:35:12.237",
-  "last_management": "2026-10-21T05:30:00.318"
+  "last_management": "2026-10-21T05:40:00.930"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T05:30:00.318Z] [CRON] Starting management cycle",
-  "[2026-10-21T05:30:00.736Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T05:30:00.736Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-21T05:30:00.770Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
   "[2026-10-21T05:30:00.770Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T05:31:26.774Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-21T05:35:12.236Z] [CRON] [Opportunity] baton-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T05:35:12.237Z] [CRON] Starting screening cycle [model: tig/longcat-2.5-preview]",
-  "[2026-10-21T05:35:12.237Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
+  "[2026-10-21T05:35:12.237Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T05:40:00.930Z] [CRON] Starting management cycle",
+  "[2026-10-21T05:40:01.324Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T05:40:01.324Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-21T05:40:29.597Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

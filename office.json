@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T15:17:42.349886+00:00",
+ "generated_at": "2026-10-21T15:22:49.688211+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 406,
+  "total_real": 407,
   "today": 100,
-  "today_real": 197,
+  "today_real": 198,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T15:15:02.912",
-  "last_management": "2026-10-21T15:10:00.151"
+  "last_screening": "2026-10-21T15:20:01.934",
+  "last_management": "2026-10-21T15:20:00.734"
  },
  "log_tail": [
-  "[2026-10-21T15:10:01.086Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T15:10:01.610Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T15:10:01.611Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T15:10:18.842Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T15:15:02.775Z] [CRON] [Opportunity] ALPENGLOW-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T15:15:02.912Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T15:15:02.912Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-21T15:15:05.635Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 36.04% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T15:20:00.734Z] [CRON] Starting management cycle",
+  "[2026-10-21T15:20:01.380Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T15:20:01.934Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T15:20:01.934Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T15:20:05.728Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 35.27% > 30%",
+  "[2026-10-21T15:20:05.728Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.26% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

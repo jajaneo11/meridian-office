@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T14:02:41.997571+00:00",
+ "generated_at": "2026-10-21T14:07:51.629556+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 391,
+  "total_real": 392,
   "today": 100,
-  "today_real": 182,
+  "today_real": 183,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,19 +231,19 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T14:00:00.756",
+  "last_screening": "2026-10-21T14:05:18.687",
   "last_management": "2026-10-21T14:00:00.249"
  },
  "log_tail": [
-  "[2026-10-21T13:56:19.353Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 45.78% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T14:00:00.249Z] [CRON] Starting management cycle",
-  "[2026-10-21T14:00:00.756Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T14:00:00.756Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T14:00:00.785Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T14:00:00.785Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-21T14:00:06.578Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.96% > 30%",
   "[2026-10-21T14:00:06.579Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 46.96% > 30%",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-21T14:05:18.499Z] [CRON] [Opportunity] HUMANOID-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T14:05:18.687Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T14:05:18.687Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T14:05:21.819Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 43.28% > 30%",
+  "[2026-10-21T14:05:21.819Z] [SCREENING] Bot-holder filter: dropped HUMANOID-SOL \u2014 bots 43.28% > 30%",
   "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

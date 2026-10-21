@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T11:42:41.520925+00:00",
+ "generated_at": "2026-10-21T11:47:41.723398+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 363,
+  "total_real": 364,
   "today": 100,
-  "today_real": 154,
+  "today_real": 155,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T11:45:41.417Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED Wallet balance is 0 SOL; insufficient capital for 0.5 SOL deployment. REJECTED - GTA6-SOL (5A1...) \u2014 2 smart wallets, strong candidate; skipped due to zero funds"
+   },
    {
     "ts": "2026-10-21T11:41:44.420Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED Wallet balance is 0 SOL, so no capital is available to deploy. Even though OTC-SOL had the strongest smart wallet signals (3 active wallets), deployment requires available funds. REJECTED OTC-SOL (strong smart"
-   },
-   {
-    "ts": "2026-10-21T10:20:24.802Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PAID-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot deploy without funds. The goal assumes 0.5 SOL available but the agent wallet is empty. No other candidate overcomes this blocker. REJECTED PAID-SOL, GTA6-SOL, BACKERS-SOL, pil"
    }
   ]
  },
@@ -206,7 +206,7 @@
    },
    {
     "hour": "06:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "07:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "11:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T11:40:02.069",
+  "last_screening": "2026-10-21T11:45:03.019",
   "last_management": "2026-10-21T11:40:00.730"
  },
  "log_tail": [
-  "[2026-10-21T11:30:00.706Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-21T11:35:17.655Z] [CRON] [Opportunity] GTA6-SOL degen 54.4 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T11:35:17.779Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T11:35:17.779Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-21T11:40:00.730Z] [CRON] Starting management cycle",
   "[2026-10-21T11:40:01.535Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-21T11:40:02.069Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T11:40:02.070Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T11:40:05.064Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 32.16% > 30%"
+  "[2026-10-21T11:40:05.064Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 32.16% > 30%",
+  "[2026-10-21T11:45:02.912Z] [CRON] [Opportunity] GTA6-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-21T11:45:03.019Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T11:45:03.019Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T11:45:05.588Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 32.74% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

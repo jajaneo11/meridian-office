@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:37:40.070807+00:00",
+ "generated_at": "2026-10-21T08:42:40.762314+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -66,7 +66,7 @@
  },
  "decisions": {
   "total": 100,
-  "today": 61,
+  "today": 71,
   "by_type": {
    "no_deploy": 100
   },
@@ -74,6 +74,86 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T08:41:55.805Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with deploy blocked by system. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Top candidate blocked: `Pool fee/active-TVL 0% is below configured minFeeActiveTvlRatio 0.015%.` Deploy rejected before any transaction \u2014 no positio"
+   },
+   {
+    "ts": "2026-10-21T08:41:55.296Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. Deploy attempt on top candidate was rejected by gate: `Pool fee/active-TVL 0% is below configured minFeeActiveTvlRatio 0.015%.` Session allows one deploy attempt \u2014 no retry possible this cycle. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu"
+   },
+   {
+    "ts": "2026-10-21T08:41:54.163Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Top pick (Pok\u00e9mon-SOL) was rejected on-chain: pool fee/active-TVL 0.0032% fell below the configured minimum 0.015% \u2014 the $93k TVL is far too fat for the fee s"
+   },
+   {
+    "ts": "2026-10-21T08:41:53.996Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Pok\u00e9mon-SOL (EQEu) was the clear top pick \u2014 smart wallet present, strongest volume ($13k), best 1h momentum (+10.18%, 193 net buyers) \u2014 but deploy was blocked"
+   },
+   {
+    "ts": "2026-10-21T08:41:30.814Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED Wallet balance is 0 SOL. Cannot meet the 0.5 SOL deploy requirement. REJECTED GTA6-SOL (5A15...), Pok\u00e9mon-SOL (EQEu...) \u2014 insufficient funds All others \u2014 either "
+   },
+   {
+    "ts": "2026-10-21T08:41:19.018Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6...) WHY SKIPPED Wallet has 0 SOL balance, so no capital is available to deploy positions. The top candidate failed due to blocked fee/TVL ratio and insufficient funds. REJECTED Pok\u00e9mon-SOL (EQEu6...) - Blocked,"
+   },
+   {
+    "ts": "2026-10-21T08:41:01.618Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED The first candidate (Pok\u00e9mon-SOL) failed the hard fee/active-TVL ratio check. The second candidate (GTA6-SOL) reached the system retry limit after a blocked atte"
+   },
+   {
+    "ts": "2026-10-21T08:41:01.090Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6...) WHY SKIPPED The top candidate (Pok\u00e9mon-SOL EQEu6...) passed all manual filters with strong fee_tvl (0.0842) and smart wallet presence, but failed the system fee/active-TVL ratio check at deploy time, blocki"
+   },
+   {
+    "ts": "2026-10-21T08:40:22.768Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient capital to fund the 0.5 SOL deployment. Even though this pool had strong smart wallet signals (2 present), no position can"
+   },
+   {
+    "ts": "2026-10-21T08:38:02.656Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. Deploy attempt failed \u2014 blocked by system. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Selected Pok\u00e9mon-SOL as top candidate: best fee/TVL (0.071), highest volume ($12.4k), smart wallet Long #14 present"
+   },
    {
     "ts": "2026-10-21T08:36:18.764Z",
     "type": "no_deploy",
@@ -89,86 +169,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED Wallet balance is 0 SOL \u2014 verified on-chain via get_wallet_balance. No deploy is possible regardless of candidate quality, and the header already showed SOL: 0.0"
-   },
-   {
-    "ts": "2026-10-21T08:35:49.172Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Candidate passed all screening criteria (fees_sol 594.58, top10 15.14%, bots 17.01%, smart wallet present), but the deploy_position tool executed in DRY_RUN mode. This indicates the environment is in test "
-   },
-   {
-    "ts": "2026-10-21T08:35:10.287Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "No pool clears the bar. \u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE pill-USDT WHY SKIPPED Quote = USDT, deploy mandate = SOL only \u2014 amount_y would not be SOL, structural mismatch. Fee/TVL weakest of set (0.0512), narrative status \"generating\" (empty), 0/30 smart wallets in"
-   },
-   {
-    "ts": "2026-10-21T08:32:16.048Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED WEFT passed all screening but deploy was rejected on-chain gate: fee/active-TVL 0.0051% below configured min 0.015%. Retry blocked by session rule (one deploy at"
-   },
-   {
-    "ts": "2026-10-21T08:31:14.467Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED No narrative available for either token (both still \"generating\") and zero smart wallets in either pool \u2014 the base rule requires at least one of those. WEFT also"
-   },
-   {
-    "ts": "2026-10-21T08:30:30.348Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6...) WHY SKIPPED SOL wallet balance is 0.0, insufficient for the 0.5 SOL deploy requirement. Even though this pool has a smart wallet long position and clean metrics, the agent cannot execute without capital. RE"
-   },
-   {
-    "ts": "2026-10-21T08:30:28.981Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL (LCfcXdK92Lm42Z7GMtChWHPuNabPijbvXekp4h4XiQg) WHY SKIPPED The system is in DRY_RUN mode and will not execute real on-chain transactions. Deploy attempt returned \"DRY RUN \u2014 no transaction sent\" instead of a live deploymen"
-   },
-   {
-    "ts": "2026-10-21T08:30:18.187Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED The deploy was blocked by the system due to a previous attempt in this session. While this pool had the strongest confidence signal (1 smart wallet present), "
-   },
-   {
-    "ts": "2026-10-21T08:26:25.958Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 32.40% > 30%"
-   },
-   {
-    "ts": "2026-10-21T08:26:21.186Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL (EQEu6NyEq8nECAiem1YkTu3uDBiGTEA2tYBLBmr9YJ7Y) WHY SKIPPED Candidate 1 passed all hard rules (bin_step 100, fees 594 SOL, positive volatility) and had a smart wallet signal, but the system was in DRY_RUN mode. The too"
-   },
-   {
-    "ts": "2026-10-21T08:26:18.996Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- PHP-SOL: bot holders 32.37% > 30%"
    }
   ]
  },
@@ -220,25 +220,25 @@
    },
    {
     "hour": "08:00",
-    "count": 28
+    "count": 38
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T08:35:58.939",
-  "last_management": "2026-10-21T08:30:00.217"
+  "last_screening": "2026-10-21T08:40:01.290",
+  "last_management": "2026-10-21T08:40:00.477"
  },
  "log_tail": [
-  "[2026-10-21T08:30:04.926Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 3\",\"parameters\":{\"retry_after\":3}}",
-  "[2026-10-21T08:30:18.729Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 12\",\"parameters\":{\"retry_after\":12}}",
-  "[2026-10-21T08:30:23.120Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 8\",\"parameters\":{\"retry_after\":8}}",
-  "[2026-10-21T08:30:27.480Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 3\",\"parameters\":{\"retry_after\":3}}",
-  "[2026-10-21T08:31:14.460Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-21T08:35:58.902Z] [CRON] [Opportunity] WEFT-SOL degen 97.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T08:35:58.939Z] [CRON] Starting screening cycle [model: tig/mimo-v2.6-flash-UNCENSORED]",
-  "[2026-10-21T08:35:58.943Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T08:36:03.755Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 30.96% > 30%",
-  "\ud83d\ude80 DEPLOYED (dry run \u2014 no tx)"
+  "[2026-10-21T08:40:03.201Z] [SCREENING] Bot-holder filter: dropped PHP-SOL \u2014 bots 31.22% > 30%",
+  "[2026-10-21T08:40:07.939Z] [ERROR] Agent loop error at step 0: 429 Layanan sedang sibuk, coba lagi sebentar.",
+  "[2026-10-21T08:40:14.364Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 16\",\"parameters\":{\"retry_after\":16}}",
+  "[2026-10-21T08:40:18.713Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 12\",\"parameters\":{\"retry_after\":12}}",
+  "[2026-10-21T08:40:23.057Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 8\",\"parameters\":{\"retry_after\":8}}",
+  "[2026-10-21T08:40:27.400Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 3\",\"parameters\":{\"retry_after\":3}}",
+  "[2026-10-21T08:40:41.743Z] [ERROR] Agent loop error at step 1: 429 Layanan sedang sibuk, coba lagi sebentar.",
+  "[2026-10-21T08:40:53.485Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 8\",\"parameters\":{\"retry_after\":8}}",
+  "[2026-10-21T08:40:57.828Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 4\",\"parameters\":{\"retry_after\":4}}",
+  "[2026-10-21T08:41:53.979Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

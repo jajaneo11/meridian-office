@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T12:17:39.505163+00:00",
+ "generated_at": "2026-10-21T12:22:38.794130+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 48,
+  "active_24h": 47,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 370,
+  "total_real": 371,
   "today": 100,
-  "today_real": 161,
+  "today_real": 162,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-21T12:20:25.968Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpdJeWer4xsHUff93WPnmECYpDXE4GW1y2QmXtzFBm) WHY SKIPPED PHP-SOL had the strongest signal (1 smart wallet: Degen #15) but failed the hard gate on fee/active-TVL ratio (0.0005% < required 0.005%). This check runs at depl"
+   },
    {
     "ts": "2026-10-21T12:15:26.329Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED Fee/active-TVL ratio is below 0.005% threshold (reported 0% on-chain). Even though other metrics looked good (smart wallets, low concentration, valid bin step), the core liquidity efficiency signal is weak"
-   },
-   {
-    "ts": "2026-10-21T10:55:38.739Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED The only candidate (CLAUDIA-SOL) has a bin_step of 50, which violates the hard rule requiring bin_step between 80 and 125. This structural constraint makes the pool unsuitable for deployment. REJECTED CLAU"
    }
   ]
  },
@@ -202,7 +202,7 @@
    },
    {
     "hour": "06:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "07:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "12:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T12:15:02.905",
-  "last_management": "2026-10-21T12:10:00.271"
+  "last_screening": "2026-10-21T12:20:01.938",
+  "last_management": "2026-10-21T12:20:00.816"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-21T12:10:00.271Z] [CRON] Starting management cycle",
-  "[2026-10-21T12:10:00.887Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T12:10:01.406Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T12:10:01.407Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-21T12:15:02.774Z] [CRON] [Opportunity] FTR-SOL degen 95.9 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T12:15:02.905Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-21T12:15:02.905Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-21T12:20:00.816Z] [CRON] Starting management cycle",
+  "[2026-10-21T12:20:01.441Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T12:20:01.938Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T12:20:01.938Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

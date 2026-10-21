@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T12:57:48.310468+00:00",
+ "generated_at": "2026-10-21T13:02:47.353472+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 378,
+  "total_real": 379,
   "today": 100,
-  "today_real": 169,
+  "today_real": 170,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "01:00",
-    "count": 0
-   },
-   {
     "hour": "02:00",
     "count": 0
    },
@@ -227,24 +223,28 @@
    {
     "hour": "12:00",
     "count": 7
+   },
+   {
+    "hour": "13:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-21T12:55:32.671",
-  "last_management": "2026-10-21T12:50:00.318"
+  "last_screening": "2026-10-21T13:00:01.328",
+  "last_management": "2026-10-21T13:00:00.789"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-21T12:50:00.318Z] [CRON] Starting management cycle",
-  "[2026-10-21T12:50:00.889Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-21T12:50:01.378Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T12:50:01.378Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-21T12:50:06.616Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 31.85% > 30%",
   "\ud83d\ude80 DEPLOYED",
   "[2026-10-21T12:55:32.572Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-21T12:55:32.671Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T12:55:32.671Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
+  "[2026-10-21T12:55:32.671Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T13:00:00.789Z] [CRON] Starting management cycle",
+  "[2026-10-21T13:00:01.328Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-21T13:00:01.328Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-21T13:00:01.419Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-21T13:00:01.419Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

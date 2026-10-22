@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T02:57:39.046537+00:00",
+ "generated_at": "2026-10-22T03:02:43.002319+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 537,
+  "total_real": 538,
   "today": 22,
-  "today_real": 36,
+  "today_real": 37,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "15:00",
-    "count": 9
-   },
-   {
     "hour": "16:00",
     "count": 9
    },
@@ -227,24 +223,28 @@
    {
     "hour": "02:00",
     "count": 7
+   },
+   {
+    "hour": "03:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T02:55:33.276",
-  "last_management": "2026-10-22T02:50:00.853"
+  "last_screening": "2026-10-22T03:00:00.911",
+  "last_management": "2026-10-22T03:00:00.357"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
-  "[2026-10-22T02:50:00.853Z] [CRON] Starting management cycle",
-  "[2026-10-22T02:50:01.466Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T02:50:01.956Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T02:50:01.956Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T02:55:33.094Z] [CRON] [Opportunity] RETAIL-SOL degen 97.3 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T02:55:33.276Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T02:55:33.276Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T03:00:00.357Z] [CRON] Starting management cycle",
+  "[2026-10-22T03:00:00.911Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T03:00:00.911Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T03:00:01.011Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T03:00:01.011Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T03:00:06.023Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 42.02% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T20:27:41.330054+00:00",
+ "generated_at": "2026-10-22T20:32:40.995307+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 747,
+  "total_real": 748,
   "today": 100,
-  "today_real": 246,
+  "today_real": 247,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T20:30:41.657Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED The deploy was blocked due to a fee/active-TVL ratio constraint despite screening data showing adequate fees. This indicates an on-chain discrepancy where the active bin is not generating sufficient fee data f"
+   },
    {
     "ts": "2026-10-22T20:25:48.637Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CHROME-SOL WHY SKIPPED 1. No smart wallet support or real narrative backing (empty narrative status). 2. Extreme price instability: -46% drop in 1 hour signals high risk. 3. Marginal fee signal (30.44 SOL just above the 30 SOL ha"
-   },
-   {
-    "ts": "2026-10-22T19:20:16.884Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED DRY_RUN mode is enabled \u2014 no transaction can be sent. While PANGEA-SOL had strong conviction (2 smart wallets present, valid volatility and fee thresholds), the system cannot execute on-chain actions in dry"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "20:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T20:25:34.140",
-  "last_management": "2026-10-22T20:20:00.076"
+  "last_screening": "2026-10-22T20:30:01.136",
+  "last_management": "2026-10-22T20:30:00.533"
  },
  "log_tail": [
-  "[2026-10-22T20:20:03.470Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 37.57% > 30%",
-  "[2026-10-22T20:20:03.470Z] [SCREENING] Bot-holder filter: dropped PUMPATAR-SOL \u2014 bots 31.75% > 30%",
-  "[2026-10-22T20:20:03.470Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T20:25:34.039Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T20:25:34.140Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T20:25:34.140Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T20:25:35.705Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 40.61% > 30%",
-  "[2026-10-22T20:25:35.705Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
+  "[2026-10-22T20:30:01.103Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T20:30:01.136Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T20:30:01.136Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T20:30:03.653Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 37.56% > 30%",
+  "[2026-10-22T20:30:03.654Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.52% > 30%",
+  "[2026-10-22T20:30:03.654Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 37.62% > 30%",
+  "[2026-10-22T20:30:03.654Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.52% > 30%",
+  "[2026-10-22T20:30:03.654Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 43.52% > 30%",
+  "[2026-10-22T20:30:03.654Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.97% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

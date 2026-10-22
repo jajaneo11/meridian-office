@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T09:02:50.829547+00:00",
+ "generated_at": "2026-10-22T09:07:42.041479+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 610,
-  "today": 72,
-  "today_real": 109,
+  "total_real": 611,
+  "today": 73,
+  "today_real": 110,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T09:05:31.600Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA was blocked at deploy time because fee/active-TVL ratio (0.0016) fell below the system minimum (0.005%) \u2014 a hard guardrail for fee efficiency. PHP-SOL had even lower fee/TVL (0.015) and would face th"
+   },
    {
     "ts": "2026-10-22T09:01:04.322Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "Deploy attempt did not succeed",
     "reason_short": "\ud83d\ude80 DEPLOYED PHP-SOL ELnpdJeWer4xsHUff93WPnmECYpDXE4GW1y2QmXtzFBm \u25ce 0.5 SOL | bid_ask | bin -455 Range: pending on-chain conversion \u2192 pending on-chain conversion Range cover: exact percentages unavailable in dry-run output MARKET Fee/TVL: 0.02% Volume: $32,374 TVL: $168,348 Volatility: 2.59 Organic: 8"
-   },
-   {
-    "ts": "2026-10-22T07:27:13.101Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Au-SOL WHY SKIPPED Wallet SOL balance is 0, so 0.5 SOL cannot be deployed. The only bin-step-valid pool (Au-SOL, 125) still requires capital you don't have. The other two candidates fail the hard bin_step rule (50 < 80). REJECTED"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "09:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T09:00:01.165",
+  "last_screening": "2026-10-22T09:05:18.517",
   "last_management": "2026-10-22T09:00:00.583"
  },
  "log_tail": [
-  "[2026-10-22T08:55:33.597Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T09:00:00.583Z] [CRON] Starting management cycle",
-  "[2026-10-22T09:00:01.153Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T09:00:01.154Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T09:00:01.165Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T09:00:01.165Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T09:00:07.153Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.31% > 30%",
   "[2026-10-22T09:01:01.487Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T09:05:18.430Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T09:05:18.517Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T09:05:18.517Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

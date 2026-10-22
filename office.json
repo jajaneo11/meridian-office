@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T15:22:38.748805+00:00",
+ "generated_at": "2026-10-22T15:27:40.296250+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 686,
+  "total_real": 687,
   "today": 100,
-  "today_real": 185,
+  "today_real": 186,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T15:20:02.098",
+  "last_screening": "2026-10-22T15:26:19.373",
   "last_management": "2026-10-22T15:20:00.720"
  },
  "log_tail": [
-  "[2026-10-22T15:15:03.802Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T15:15:03.947Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T15:15:03.947Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T15:20:00.720Z] [CRON] Starting management cycle",
   "[2026-10-22T15:20:01.396Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T15:20:02.098Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T15:20:02.098Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T15:20:05.424Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.31% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T15:26:19.238Z] [CRON] [Opportunity] BTC-SOL degen 96.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T15:26:19.373Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T15:26:19.373Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T15:26:20.413Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.30% > 30%",
+  "\ud83d\ude80 DEPLOYMENT SIMULATED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

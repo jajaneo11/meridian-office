@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T04:52:39.868326+00:00",
+ "generated_at": "2026-10-22T04:57:43.126293+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 17,
+  "active_24h": 15,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 560,
+  "total_real": 561,
   "today": 37,
-  "today_real": 59,
+  "today_real": 60,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T04:50:01.411",
+  "last_screening": "2026-10-22T04:56:18.756",
   "last_management": "2026-10-22T04:50:00.288"
  },
  "log_tail": [
-  "[2026-10-22T04:45:07.210Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 30.84% > 30%",
-  "[2026-10-22T04:45:07.210Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.72% > 30%",
-  "\u26d4 NO DEPLOY",
-  "First deploy attempt failed with pool verification error. System prevented retry attempts this session. This pool had smart wallet presence and solid organic score (82) but couldn't be validated on-chain.",
-  "[2026-10-22T04:50:00.288Z] [CRON] Starting management cycle",
   "[2026-10-22T04:50:00.886Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T04:50:01.411Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T04:50:01.412Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T04:50:05.037Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 39.84% > 30%",
-  "[2026-10-22T04:50:05.037Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 30.67% > 30%"
+  "[2026-10-22T04:50:05.037Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 30.67% > 30%",
+  "[2026-10-22T04:56:18.676Z] [CRON] [Opportunity] simulator-SOL degen 93.5 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T04:56:18.756Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T04:56:18.756Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T04:56:21.143Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.46% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

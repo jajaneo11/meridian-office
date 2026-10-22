@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T15:42:42.766865+00:00",
+ "generated_at": "2026-10-22T15:47:39.455229+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 690,
+  "total_real": 691,
   "today": 100,
-  "today_real": 189,
+  "today_real": 190,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T15:40:01.813",
+  "last_screening": "2026-10-22T15:45:04.075",
   "last_management": "2026-10-22T15:40:00.737"
  },
  "log_tail": [
-  "[2026-10-22T15:36:52.273Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 43.24% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T15:40:00.737Z] [CRON] Starting management cycle",
-  "[2026-10-22T15:40:01.271Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T15:40:01.813Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T15:40:01.814Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T15:40:04.804Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.30% > 30%",
-  "[2026-10-22T15:40:04.804Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.30% > 30%",
   "[2026-10-22T15:40:04.804Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 43.30% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T15:45:03.993Z] [CRON] [Opportunity] Macca-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T15:45:04.075Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T15:45:04.076Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T15:45:06.897Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.33% > 30%",
+  "[2026-10-22T15:45:06.897Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.19% > 30%",
+  "[2026-10-22T15:45:06.897Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.33% > 30%",
+  "[2026-10-22T15:45:06.898Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 43.33% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

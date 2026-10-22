@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T08:17:40.233985+00:00",
+ "generated_at": "2026-10-22T08:22:39.898796+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 601,
-  "today": 66,
-  "today_real": 100,
+  "total_real": 602,
+  "today": 67,
+  "today_real": 101,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T08:20:19.211Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Agent wallet has 0 SOL available. Goal deploy amount is 0.5 SOL. Funds insufficient. REJECTED PANGEA-SOL (smart wallet signal) \u2013 balance 0 SOL All other candidates \u2013 balance 0 SOL"
+   },
    {
     "ts": "2026-10-22T08:05:26.855Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is empty (0 SOL), making deployment impossible. Even the strongest fundamentals (82 organic score, 216 SOL fees) require capital we don't have. REJECTED - ANTHROPIC-USDC: Bin step 50 (must be 80"
-   },
-   {
-    "ts": "2026-10-22T06:40:28.716Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15...) WHY SKIPPED The most conviction candidate (2 smart wallets, passes all hard rules) failed the active fee/tvl check during deploy. Pool fee/active- TVL ratio was 0% vs required minimum 0.005%. This indicates low"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "08:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T08:15:04.851",
-  "last_management": "2026-10-22T08:10:00.865"
+  "last_screening": "2026-10-22T08:20:01.434",
+  "last_management": "2026-10-22T08:20:00.396"
  },
  "log_tail": [
-  "[2026-10-22T08:10:01.421Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T08:10:01.896Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T08:10:01.896Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T08:15:04.720Z] [SCREENING] PVP guard: GP-SOL has active rival Graphite (31k88G5M)",
   "[2026-10-22T08:15:04.720Z] [CRON] [Opportunity] GP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T08:15:04.851Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T08:15:04.851Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T08:15:05.064Z] [SCREENING] PVP guard: GP-SOL has active rival Graphite (31k88G5M)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T08:20:00.396Z] [CRON] Starting management cycle",
+  "[2026-10-22T08:20:00.940Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T08:20:01.434Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T08:20:01.435Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T23:42:40.250030+00:00",
+ "generated_at": "2026-10-22T23:47:40.102484+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 786,
+  "total_real": 787,
   "today": 100,
-  "today_real": 285,
+  "today_real": 286,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T23:40:02.040",
+  "last_screening": "2026-10-22T23:45:04.222",
   "last_management": "2026-10-22T23:40:00.871"
  },
  "log_tail": [
-  "[2026-10-22T23:36:51.398Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 38.79% > 30%",
-  "[2026-10-22T23:36:51.398Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.49% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T23:40:00.871Z] [CRON] Starting management cycle",
-  "[2026-10-22T23:40:01.500Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T23:40:02.040Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T23:40:02.040Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T23:40:04.235Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.01% > 30%",
   "[2026-10-22T23:40:04.235Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 39.08% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T23:45:04.143Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T23:45:04.222Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T23:45:04.223Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T23:45:06.731Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 31.17% > 30%",
+  "[2026-10-22T23:45:06.731Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 39.08% > 30%",
+  "[2026-10-22T23:45:06.732Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.00% > 30%",
+  "[2026-10-22T23:45:06.732Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.92% > 30%",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

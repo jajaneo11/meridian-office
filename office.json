@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T21:37:40.871172+00:00",
+ "generated_at": "2026-10-22T21:42:41.046555+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 761,
+  "total_real": 762,
   "today": 100,
-  "today_real": 260,
+  "today_real": 261,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T21:36:04.413",
-  "last_management": "2026-10-22T21:30:00.560"
+  "last_screening": "2026-10-22T21:40:01.097",
+  "last_management": "2026-10-22T21:40:00.110"
  },
  "log_tail": [
-  "[2026-10-22T21:30:01.094Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T21:30:03.728Z] [SCREENING] Bot-holder filter: dropped Kimchi-SOL \u2014 bots 30.18% > 30%",
-  "[2026-10-22T21:30:03.729Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.62% > 30%",
-  "[2026-10-22T21:30:03.729Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.94% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T21:36:04.188Z] [CRON] [Opportunity] PHP-SOL degen 64.5 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T21:36:04.413Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T21:36:04.415Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T21:36:06.339Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.94% > 30%",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-22T21:40:00.110Z] [CRON] Starting management cycle",
+  "[2026-10-22T21:40:00.606Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T21:40:01.097Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T21:40:01.098Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T21:40:01.582Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-22T21:40:03.375Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

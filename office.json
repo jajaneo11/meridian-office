@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T03:47:40.156108+00:00",
+ "generated_at": "2026-10-22T03:52:44.712142+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 19,
+  "active_24h": 18,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 547,
-  "today": 30,
-  "today_real": 46,
+  "total_real": 548,
+  "today": 31,
+  "today_real": 47,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T03:50:08.458Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Deploy triggered in dry-run mode and failed to return range coverage percentages. The strict reporting format requires exact range_coverage values from the deploy tool, which were not provided. Until a live"
+   },
    {
     "ts": "2026-10-22T03:45:41.084Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RETAIL-SOL (jzQqJisotkjiCYzghXQxFFZxYUtAAE6rRWtxd9dMyB2) WHY SKIPPED DRY_RUN mode active; the deployment was simulated and not executed on-chain. While RETAIL-SOL had strong signals (high fee/TVL 1.66, smart wallet present, +87% "
-   },
-   {
-    "ts": "2026-10-22T02:30:12.146Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RETAIL-SOL WHY SKIPPED This environment is in DRY_RUN mode; no real on-chain transactions were sent. The Retail-SOL pool met all hard screening rules and had strong fee efficiency with smart wallet support, but actual deployment "
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "03:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T03:45:03.606",
-  "last_management": "2026-10-22T03:40:00.485"
+  "last_screening": "2026-10-22T03:50:01.118",
+  "last_management": "2026-10-22T03:50:00.053"
  },
  "log_tail": [
-  "[2026-10-22T03:40:03.815Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 39.83% > 30%",
-  "[2026-10-22T03:40:03.815Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 31.36% > 30%",
-  "[2026-10-22T03:40:03.815Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.42% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T03:45:03.513Z] [CRON] [Opportunity] RETAIL-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T03:45:03.606Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T03:45:03.606Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T03:45:06.172Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 38.48% > 30%",
   "[2026-10-22T03:45:06.173Z] [SCREENING] Bot-holder filter: dropped Au-USDT \u2014 bots 38.48% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T03:50:00.053Z] [CRON] Starting management cycle",
+  "[2026-10-22T03:50:00.648Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T03:50:01.118Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T03:50:01.118Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T03:50:03.188Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 37.59% > 30%",
+  "[2026-10-22T03:50:03.188Z] [SCREENING] Bot-holder filter: dropped Au-USDT \u2014 bots 37.59% > 30%",
+  "[2026-10-22T03:50:03.189Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.23% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

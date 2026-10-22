@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T17:43:34.718505+00:00",
+ "generated_at": "2026-10-22T17:48:07.881204+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 714,
+  "total_real": 715,
   "today": 100,
-  "today_real": 213,
+  "today_real": 214,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T17:40:01.855",
+  "last_screening": "2026-10-22T17:45:04.080",
   "last_management": "2026-10-22T17:40:00.790"
  },
  "log_tail": [
-  "[2026-10-22T17:35:18.993Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T17:35:18.993Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T17:40:00.790Z] [CRON] Starting management cycle",
-  "[2026-10-22T17:40:01.342Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T17:40:01.855Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T17:40:01.855Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T17:40:04.371Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.15% > 30%",
   "[2026-10-22T17:40:04.371Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.70% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T17:45:03.966Z] [CRON] [Opportunity] BLACKTOBER-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T17:45:04.080Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T17:45:04.080Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T17:45:06.795Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.73% > 30%",
+  "[2026-10-22T17:45:06.795Z] [SCREENING] Bot-holder filter: dropped tinfoilcat-SOL \u2014 bots 38.40% > 30%",
+  "[2026-10-22T17:45:06.795Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.46% > 30%",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T22:42:38.799215+00:00",
+ "generated_at": "2026-10-22T22:47:39.357659+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 71
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 774,
+  "total_real": 775,
   "today": 100,
-  "today_real": 273,
+  "today_real": 274,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T22:45:18.269Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED Wallet balance is 0 SOL (needs 0.5 SOL deploy). No smart wallets present and narratives were not yet verified. REJECTED McRib-SOL (new, high bots) PHP-SOL (low fee/TVL) Macca-SOL (0 wallet funds) JEANPHIL-SO"
+   },
    {
     "ts": "2026-10-22T22:36:12.616Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Kimchi-SOL WHY SKIPPED No smart wallet support and narrative is still generating/unknown. High PVP conflict with a much stronger rival (Aura Final Boss). While it passes hard filters, conviction is too low for a single remaining "
-   },
-   {
-    "ts": "2026-10-22T20:50:29.646Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PVE-SOL (3oXbUwiDxWGisDGcinLW6c1ANmWG93ZLoFd3H7xpT2XT) WHY SKIPPED Wallet balance is empty (0 SOL). Cannot execute any deployment. All candidates remain unselected due to lack of capital. REJECTED - kimchi-SOL: PVP conflict (HIGH"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "22:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T22:40:01.334",
+  "last_screening": "2026-10-22T22:45:04.128",
   "last_management": "2026-10-22T22:40:00.287"
  },
  "log_tail": [
-  "[2026-10-22T22:36:04.794Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T22:36:04.795Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T22:40:00.287Z] [CRON] Starting management cycle",
-  "[2026-10-22T22:40:00.807Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T22:40:01.334Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T22:40:01.334Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T22:40:03.726Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.00% > 30%",
   "[2026-10-22T22:40:03.726Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.91% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T22:45:04.051Z] [CRON] [Opportunity] McRib-SOL degen 96.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T22:45:04.128Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T22:45:04.128Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T22:45:05.863Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.01% > 30%",
+  "[2026-10-22T22:45:05.863Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.92% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

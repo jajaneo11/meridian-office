@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T22:32:40.083995+00:00",
+ "generated_at": "2026-10-22T22:37:41.748154+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 772,
+  "total_real": 773,
   "today": 100,
-  "today_real": 271,
+  "today_real": 272,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T22:36:12.616Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The system only executed a dry-run attempt for PANGEA-SOL, meaning no real on-chain transaction was sent. A second attempt was blocked by the tool to prevent duplicate deployments in the same session. REJEC"
+   },
    {
     "ts": "2026-10-22T22:30:12.070Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PVE-SOL (3oXbUwiDxWGisDGcinLW6c1ANmWG93ZLoFd3H7xpT2XT) WHY SKIPPED Wallet balance is empty (0 SOL). Cannot execute any deployment. All candidates remain unselected due to lack of capital. REJECTED - kimchi-SOL: PVP conflict (HIGH"
-   },
-   {
-    "ts": "2026-10-22T20:45:31.752Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None (wallet balance empty) WHY SKIPPED Wallet has 0 SOL, so no deployment is possible. Additionally, pill-SOL has bin_step=50 (invalid) and the remaining pools lack smart wallets and have weak or missing narratives with negative"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "22:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T22:30:01.388",
+  "last_screening": "2026-10-22T22:36:04.794",
   "last_management": "2026-10-22T22:30:00.798"
  },
  "log_tail": [
-  "[2026-10-22T22:30:01.324Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T22:30:01.324Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T22:30:01.388Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T22:30:01.388Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T22:30:04.058Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.93% > 30%",
   "[2026-10-22T22:30:04.059Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.93% > 30%",
   "[2026-10-22T22:30:04.059Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 43.93% > 30%",
   "[2026-10-22T22:30:04.059Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
   "[2026-10-22T22:30:11.273Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T22:36:04.698Z] [CRON] [Opportunity] McRib-SOL degen 96.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T22:36:04.794Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T22:36:04.795Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

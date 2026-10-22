@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T18:03:33.585622+00:00",
+ "generated_at": "2026-10-22T18:07:40.725746+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 718,
+  "total_real": 719,
   "today": 100,
-  "today_real": 217,
+  "today_real": 218,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T18:00:01.306",
+  "last_screening": "2026-10-22T18:05:19.211",
   "last_management": "2026-10-22T18:00:00.754"
  },
  "log_tail": [
-  "[2026-10-22T17:55:34.188Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T17:55:34.188Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T17:55:35.199Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.72% > 30%",
-  "[2026-10-22T18:00:00.754Z] [CRON] Starting management cycle",
-  "[2026-10-22T18:00:01.306Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T18:00:01.307Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T18:00:01.366Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T18:00:01.367Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T18:00:06.181Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.75% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T18:05:19.120Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T18:05:19.211Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T18:05:19.212Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T18:05:22.242Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.75% > 30%",
+  "[2026-10-22T18:05:22.242Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.93% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

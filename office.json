@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T18:27:50.861016+00:00",
+ "generated_at": "2026-10-22T18:32:43.739600+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 723,
+  "total_real": 724,
   "today": 100,
-  "today_real": 222,
+  "today_real": 223,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T18:25:34.023",
-  "last_management": "2026-10-22T18:20:00.790"
+  "last_screening": "2026-10-22T18:30:00.971",
+  "last_management": "2026-10-22T18:30:00.343"
  },
  "log_tail": [
-  "[2026-10-22T18:20:07.019Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.18% > 30%",
-  "\u26d4 NO DEPLOY",
-  "Initial deploy call failed due to pool verification error on-chain. The tool blocks retries after a failed attempt in this session.",
-  "[2026-10-22T18:25:33.940Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T18:25:34.023Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T18:25:34.024Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T18:25:35.425Z] [SCREENING] Bot-holder filter: dropped CHROME-SOL \u2014 bots 33.08% > 30%",
-  "[2026-10-22T18:25:35.425Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.77% > 30%",
-  "[2026-10-22T18:25:35.425Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.12% > 30%",
-  "\u26d4 NO DEPLOY"
+  "[2026-10-22T18:30:00.343Z] [CRON] Starting management cycle",
+  "[2026-10-22T18:30:00.926Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T18:30:00.926Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T18:30:00.971Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T18:30:00.972Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T18:30:04.700Z] [SCREENING] Bot-holder filter: dropped CHROME-SOL \u2014 bots 32.38% > 30%",
+  "[2026-10-22T18:30:04.700Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.78% > 30%",
+  "[2026-10-22T18:30:04.700Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.25% > 30%",
+  "[2026-10-22T18:30:04.700Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.45% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

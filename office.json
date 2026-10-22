@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T01:02:42.835491+00:00",
+ "generated_at": "2026-10-22T01:07:41.316999+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 32,
+  "active_24h": 30,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 514,
-  "today": 9,
-  "today_real": 13,
+  "total_real": 515,
+  "today": 10,
+  "today_real": 14,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T01:06:51.667Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Wallet balance is 0 SOL; deploy cannot execute. Pool metrics otherwise strongest (smart wallet present, high fees, positive 1h price action). REJECTED Pok\u00e9mon-SOL: zero wallet balance CYBER-SOL: PVP risk +"
+   },
    {
     "ts": "2026-10-22T00:56:33.562Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL (HmNQrpfMZLmqvsP1JAf9beHBDkW1wEZ1By4Azx7YCcmm) WHY SKIPPED Deploy was executed in DRY_RUN mode \u2014 no on-chain transaction was sent. Since the tool did not return computed range coverage values (downside_pct/upside_pct we"
-   },
-   {
-    "ts": "2026-10-21T23:52:37.631Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The deployment was executed in DRY RUN mode for testing purposes. No on-chain transaction was sent. REJECTED PANGEA-SOL (dry run, simulated) CYBER-SOL (smart wallet present but price crash risk) Note: This "
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "01:00",
-    "count": 0
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T01:00:01.371",
+  "last_screening": "2026-10-22T01:07:33.253",
   "last_management": "2026-10-22T01:00:00.859"
  },
  "log_tail": [
-  "[2026-10-22T00:56:18.059Z] [CRON] [Opportunity] CYBER-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T00:56:18.157Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T00:56:18.157Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T01:00:00.859Z] [CRON] Starting management cycle",
   "[2026-10-22T01:00:00.880Z] [CRON] Starting morning briefing",
   "[2026-10-22T01:00:01.371Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T01:00:01.371Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T01:00:01.456Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T01:00:01.457Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-22T01:00:01.457Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T01:07:33.136Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T01:07:33.253Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T01:07:33.253Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

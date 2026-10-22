@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T21:12:41.174630+00:00",
+ "generated_at": "2026-10-22T21:17:44.437162+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 756,
+  "total_real": 757,
   "today": 100,
-  "today_real": 255,
+  "today_real": 256,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,19 +231,19 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T21:10:01.786",
+  "last_screening": "2026-10-22T21:15:04.348",
   "last_management": "2026-10-22T21:10:00.590"
  },
  "log_tail": [
-  "[2026-10-22T21:10:01.247Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T21:10:01.786Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T21:10:01.789Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T21:10:02.254Z] [SCREENING] PVP guard: kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
-  "[2026-10-22T21:10:04.186Z] [SCREENING] Bot-holder filter: dropped Kimchi-SOL \u2014 bots 30.64% > 30%",
-  "[2026-10-22T21:10:04.186Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 31.37% > 30%",
-  "[2026-10-22T21:10:04.187Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.71% > 30%",
-  "[2026-10-22T21:10:04.187Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.71% > 30%",
-  "[2026-10-22T21:10:04.187Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.59% > 30%",
+  "[2026-10-22T21:15:04.348Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T21:15:04.526Z] [SCREENING] PVP guard: kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-22T21:15:04.530Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-22T21:15:07.143Z] [SCREENING] Bot-holder filter: dropped Kimchi-SOL \u2014 bots 32.22% > 30%",
+  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 30.52% > 30%",
+  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
+  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.71% > 30%",
+  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.76% > 30%",
+  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.76% > 30%",
   "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

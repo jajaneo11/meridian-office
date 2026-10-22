@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T21:47:40.920857+00:00",
+ "generated_at": "2026-10-22T21:52:40.468630+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 71
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 763,
+  "total_real": 764,
   "today": 100,
-  "today_real": 262,
+  "today_real": 263,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T21:50:17.778Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 cannot fund the 0.5 SOL deployment. REJECTED McRib-SOL (0 SOL wallet balance) OTC-SOL (lower fee/TVL, no capital) BORDR-SOL (no capital) PANGEA-SOL (no capital) PHP-SOL (no smart wa"
+   },
    {
     "ts": "2026-10-22T21:26:25.892Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA had the highest organic score and smart wallet backing, but fee/TVL (0.035) was too low to justify entry. Deployment also failed due to tool constraints on retry attempts after initial blocking. REJE"
-   },
-   {
-    "ts": "2026-10-22T20:15:30.279Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED Despite having the strongest signals (2 smart wallets, 951 SOL fees, low concentration), this pool was blocked by the fee/active-TVL ratio gate during deployment. The other top candidates had PVP conflicts"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "21:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T21:45:04.153",
-  "last_management": "2026-10-22T21:40:00.110"
+  "last_screening": "2026-10-22T21:50:01.670",
+  "last_management": "2026-10-22T21:50:00.562"
  },
  "log_tail": [
-  "[2026-10-22T21:40:01.098Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T21:40:01.582Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
-  "[2026-10-22T21:40:03.375Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T21:45:04.047Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
-  "[2026-10-22T21:45:04.047Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T21:45:04.153Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T21:45:04.153Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T21:45:04.372Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T21:50:00.562Z] [CRON] Starting management cycle",
+  "[2026-10-22T21:50:01.112Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T21:50:01.670Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T21:50:01.670Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T21:50:04.106Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

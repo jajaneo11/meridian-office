@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T09:07:42.041479+00:00",
+ "generated_at": "2026-10-22T09:12:41.471050+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 611,
+  "total_real": 612,
   "today": 73,
-  "today_real": 110,
+  "today_real": 111,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T09:05:18.517",
-  "last_management": "2026-10-22T09:00:00.583"
+  "last_screening": "2026-10-22T09:10:01.488",
+  "last_management": "2026-10-22T09:10:00.079"
  },
  "log_tail": [
-  "[2026-10-22T09:00:01.154Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T09:00:01.165Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T09:00:01.165Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T09:00:07.153Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.31% > 30%",
-  "[2026-10-22T09:01:01.487Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY",
   "[2026-10-22T09:05:18.430Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T09:05:18.517Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T09:05:18.517Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T09:10:00.079Z] [CRON] Starting management cycle",
+  "[2026-10-22T09:10:00.868Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T09:10:01.488Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T09:10:01.489Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

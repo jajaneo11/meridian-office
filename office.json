@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T08:12:39.903749+00:00",
+ "generated_at": "2026-10-22T08:17:40.233985+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 600,
+  "total_real": 601,
   "today": 66,
-  "today_real": 99,
+  "today_real": 100,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,19 +231,19 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T08:10:01.896",
+  "last_screening": "2026-10-22T08:15:04.851",
   "last_management": "2026-10-22T08:10:00.865"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T08:05:18.537Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T08:05:18.613Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T08:05:18.613Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T08:10:00.865Z] [CRON] Starting management cycle",
   "[2026-10-22T08:10:01.421Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T08:10:01.896Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T08:10:01.896Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T08:15:04.720Z] [SCREENING] PVP guard: GP-SOL has active rival Graphite (31k88G5M)",
+  "[2026-10-22T08:15:04.720Z] [CRON] [Opportunity] GP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T08:15:04.851Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T08:15:04.851Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T08:15:05.064Z] [SCREENING] PVP guard: GP-SOL has active rival Graphite (31k88G5M)",
   "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

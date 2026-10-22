@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T06:12:42.882184+00:00",
+ "generated_at": "2026-10-22T06:17:39.609621+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 576,
-  "today": 50,
-  "today_real": 75,
+  "total_real": 577,
+  "today": 51,
+  "today_real": 76,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T06:15:21.283Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED No SOL available in wallet to fund the position (balance: 0.000 SOL). REJECTED PANGEA-SOL (no funds), Gato-SOL (no smart wallets), Pok\u00e9mon-SOL (no smart wallets), CRAWL-SOL (no smart wallets), PHP-SOL (no s"
+   },
    {
     "ts": "2026-10-22T06:10:21.020Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Deploy blocked due to fee/active-TVL ratio falling below the configured minimum. The pool had strong signals (smart wallet, organic score), but the fee check prevented execution. REJECTED PANGEA-SOL (fee ch"
-   },
-   {
-    "ts": "2026-10-22T05:05:18.476Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "06:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T06:10:01.529",
+  "last_screening": "2026-10-22T06:15:03.897",
   "last_management": "2026-10-22T06:10:00.420"
  },
  "log_tail": [
-  "[2026-10-22T06:06:03.700Z] [CRON] [Opportunity] PHP-SOL degen 41.2 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T06:06:03.831Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T06:06:03.832Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T06:10:00.420Z] [CRON] Starting management cycle",
   "[2026-10-22T06:10:00.965Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T06:10:01.529Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T06:10:01.529Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
-  "The deploy_position tool returned a tool error on the first attempt. The second attempt was blocked as retries are not permitted within the same session. Despite this technical failure, PANGEA-SOL was the strongest candidate due to smart wallet presence and top organic score."
+  "The deploy_position tool returned a tool error on the first attempt. The second attempt was blocked as retries are not permitted within the same session. Despite this technical failure, PANGEA-SOL was the strongest candidate due to smart wallet presence and top organic score.",
+  "[2026-10-22T06:15:03.773Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 99.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T06:15:03.897Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T06:15:03.897Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T12:17:42.279013+00:00",
+ "generated_at": "2026-10-22T12:22:38.880105+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 68
+  "decisions_mentioning": 69
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 649,
+  "total_real": 650,
   "today": 100,
-  "today_real": 148,
+  "today_real": 149,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T12:20:33.392Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry due to DRY RUN mode. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED DRY RUN mode prevents actual on-chain deployment. Selected for strong smart wallet signal (1 present), healthy organic score (75), and compliant bin step (100). No other candidate offere"
+   },
    {
     "ts": "2026-10-22T12:15:19.836Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (or KWH-SOL) WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient funds to deploy. Even if funds were available, both top candidates lack active smart wallet positions and have narratives still generating. REJECTED - KWH-S"
-   },
-   {
-    "ts": "2026-10-22T11:00:13.287Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The tool execution resulted in a dry run only, with no actual transaction confirmed. Since we cannot confirm a real on-chain execution, we must skip this cycle and report no deploy. REJECTED PANGEA-SOL (dry"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "12:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T12:15:03.953",
-  "last_management": "2026-10-22T12:10:00.899"
+  "last_screening": "2026-10-22T12:20:01.271",
+  "last_management": "2026-10-22T12:20:00.480"
  },
  "log_tail": [
-  "[2026-10-22T12:10:00.899Z] [CRON] Starting management cycle",
-  "[2026-10-22T12:10:01.682Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T12:10:02.208Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T12:10:02.210Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T12:10:53.714Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T12:15:03.804Z] [CRON] [Opportunity] PHP-SOL degen 58.4 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T12:15:03.953Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T12:15:03.953Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T12:20:00.480Z] [CRON] Starting management cycle",
+  "[2026-10-22T12:20:01.052Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T12:20:01.271Z] [TELEGRAM_ERROR] sendChatAction failed: fetch failed",
+  "[2026-10-22T12:20:01.271Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
+  "[2026-10-22T12:20:01.271Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T12:20:01.279Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

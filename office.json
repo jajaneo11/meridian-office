@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T04:22:39.565398+00:00",
+ "generated_at": "2026-10-22T04:27:40.650433+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 554,
+  "total_real": 555,
   "today": 33,
-  "today_real": 53,
+  "today_real": 54,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T04:20:01.872",
+  "last_screening": "2026-10-22T04:26:18.703",
   "last_management": "2026-10-22T04:20:00.823"
  },
  "log_tail": [
-  "[2026-10-22T04:15:03.405Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T04:15:03.405Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T04:15:06.043Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 36.77% > 30%",
-  "[2026-10-22T04:20:00.823Z] [CRON] Starting management cycle",
-  "[2026-10-22T04:20:01.364Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T04:20:01.872Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T04:20:01.872Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T04:20:05.049Z] [SCREENING] Bot-holder filter: dropped Au-USDT \u2014 bots 35.00% > 30%",
   "[2026-10-22T04:20:05.049Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 35.00% > 30%",
-  "**\ud83d\ude80 DEPLOYED (DRY RUN)**"
+  "**\ud83d\ude80 DEPLOYED (DRY RUN)**",
+  "[2026-10-22T04:26:18.569Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T04:26:18.703Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T04:26:18.703Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T04:26:20.674Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 49.37% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

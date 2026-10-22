@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T15:47:39.455229+00:00",
+ "generated_at": "2026-10-22T15:58:21.525208+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 67
+  "decisions_mentioning": 68
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 691,
+  "total_real": 693,
   "today": 100,
-  "today_real": 190,
+  "today_real": 192,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T15:50:48.387Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL WHY SKIPPED The only pool with smart wallet presence (CLAUDIA-SOL) was blocked during deployment due to 0% active fee yield. All other candidates lacked smart wallet signals and had weaker conviction. REJECTED PHP-SOL"
+   },
    {
     "ts": "2026-10-22T15:40:29.145Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED OTC-SOL had the strongest conviction (3 smart wallets, 2.5k SOL fees, 55-day track record) but failed the fee/active-TVL ratio gate. The remaining candidates had weaker signals (1 or 0 smart wallets) and I rea"
-   },
-   {
-    "ts": "2026-10-22T14:35:32.149Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Wallet balance shows 0 SOL available, but 0.5 SOL is required to deploy. No capital means no positions can be opened regardless of candidate quality. REJECTED"
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "04:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "05:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "15:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T15:45:04.075",
-  "last_management": "2026-10-22T15:40:00.737"
+  "last_screening": "2026-10-22T15:56:18.964",
+  "last_management": "2026-10-22T15:50:00.304"
  },
  "log_tail": [
-  "[2026-10-22T15:40:04.804Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 43.30% > 30%",
+  "[2026-10-22T15:50:00.304Z] [CRON] Starting management cycle",
+  "[2026-10-22T15:50:00.863Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T15:50:01.324Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T15:50:01.325Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T15:50:05.352Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.14% > 30%",
   "\u26d4 NO DEPLOY",
-  "[2026-10-22T15:45:03.993Z] [CRON] [Opportunity] Macca-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T15:45:04.075Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T15:45:04.076Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T15:45:06.897Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.33% > 30%",
-  "[2026-10-22T15:45:06.897Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.19% > 30%",
-  "[2026-10-22T15:45:06.897Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.33% > 30%",
-  "[2026-10-22T15:45:06.898Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 43.33% > 30%",
+  "[2026-10-22T15:56:18.848Z] [CRON] [Opportunity] CLAUDIA-SOL degen 67.3 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T15:56:18.964Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T15:56:18.964Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

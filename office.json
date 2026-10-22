@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T18:42:39.820313+00:00",
+ "generated_at": "2026-10-22T18:47:41.961570+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 726,
+  "total_real": 727,
   "today": 100,
-  "today_real": 225,
+  "today_real": 226,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T18:45:21.461Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL WHY SKIPPED The best candidates with smart wallets (Pepper-SOL, PANGEA-SOL) failed deployment due to low fee-to-active-TVL ratios. High-fee pools like MRNA-SOL were blocked by session retry limits. REJECTED Pepper-SOL "
+   },
    {
     "ts": "2026-10-22T18:41:07.163Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pok\u00e9mon-SOL WHY SKIPPED Both candidates have narratives still generating (no verified story) and no smart wallet presence. The hard guidelines require either a clear narrative or smart wallet activity; without both, the risk is t"
-   },
-   {
-    "ts": "2026-10-22T17:16:07.422Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA passed all static checks (high organic score 85, smart wallets present, strong fees), but the live on-chain check blocked it: the fee/active-TVL ratio was 0.0003% vs the 0.005% minimum. Dynamic activ"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "18:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T18:40:02.058",
+  "last_screening": "2026-10-22T18:45:04.807",
   "last_management": "2026-10-22T18:40:00.827"
  },
  "log_tail": [
-  "[2026-10-22T18:35:22.015Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.77% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T18:40:00.827Z] [CRON] Starting management cycle",
-  "[2026-10-22T18:40:01.446Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T18:40:02.058Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T18:40:02.058Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T18:40:04.481Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.74% > 30%",
   "[2026-10-22T18:40:04.481Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.45% > 30%",
   "[2026-10-22T18:40:04.481Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.34% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T18:45:04.740Z] [CRON] [Opportunity] CHROME-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T18:45:04.807Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T18:45:04.807Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T18:45:07.144Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.90% > 30%",
+  "[2026-10-22T18:45:07.145Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.50% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

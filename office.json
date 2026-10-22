@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T05:57:29.067821+00:00",
+ "generated_at": "2026-10-22T06:02:40.703780+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 67
+  "decisions_mentioning": 68
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 573,
-  "today": 47,
-  "today_real": 72,
+  "total_real": 574,
+  "today": 48,
+  "today_real": 73,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T06:00:30.063Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL, insufficient to deploy the required 0.5 SOL. Even though this pool had smart wallet presence and valid bin step, deployment cannot proceed without available capital. REJECTED baton-"
+   },
    {
     "ts": "2026-10-22T05:56:23.514Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-22T04:45:22.430Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED First deploy attempt failed with pool verification error. System prevented retry attempts this session. This pool had smart wallet presence and solid organic score (82) but couldn't be validated on-chain. R"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "18:00",
-    "count": 8
-   },
    {
     "hour": "19:00",
     "count": 9
@@ -227,23 +223,27 @@
    {
     "hour": "05:00",
     "count": 10
+   },
+   {
+    "hour": "06:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T05:56:18.405",
-  "last_management": "2026-10-22T05:50:00.284"
+  "last_screening": "2026-10-22T06:00:01.417",
+  "last_management": "2026-10-22T06:00:00.872"
  },
  "log_tail": [
-  "[2026-10-22T05:50:00.845Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T05:50:01.358Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T05:50:01.358Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T05:50:05.232Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.36% > 30%",
-  "[2026-10-22T05:50:21.488Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T05:56:18.322Z] [CRON] [Opportunity] PHP-SOL degen 70.5 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T05:56:18.405Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T05:56:18.405Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T06:00:00.872Z] [CRON] Starting management cycle",
+  "[2026-10-22T06:00:01.417Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T06:00:01.417Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T06:00:01.466Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T06:00:01.466Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T06:00:22.250Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-22T06:00:26.095Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-22T06:00:27.013Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-22T06:00:27.832Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

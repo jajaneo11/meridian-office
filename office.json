@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T05:37:39.818014+00:00",
+ "generated_at": "2026-10-22T05:42:45.366681+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 569,
-  "today": 43,
-  "today_real": 68,
+  "total_real": 570,
+  "today": 44,
+  "today_real": 69,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T05:40:33.654Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet SOL balance is 0. Cannot deploy without funds. Even though PANGEA-SOL has a smart wallet signal (1 present), all candidates are blocked by lack of capital. Other pools like PHP-SOL (ELnpd) show good "
+   },
    {
     "ts": "2026-10-22T05:35:39.386Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "Deploy attempt did not succeed",
     "reason_short": "**\ud83d\ude80 DEPLOYED (DRY RUN)** **PHP-SOL** ELnpdJeWer4xsHUff93WPnmECYpDXE4GW1y2QmXtzFBm \u25ce 0.5 SOL | bid_ask | bin -439 Range: -69% downside | 0% upside | 69% total **MARKET** Fee/TVL: 0.53% Volume: $65,279 TVL: $132,736 Volatility: 6.12 Organic: 81 Mcap: $1,347,480 Age: 23h **AUDIT** Top10: 20.36% Bots: 2"
-   },
-   {
-    "ts": "2026-10-22T04:17:46.139Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "05:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T05:35:19.101",
-  "last_management": "2026-10-22T05:30:00.271"
+  "last_screening": "2026-10-22T05:40:02.069",
+  "last_management": "2026-10-22T05:40:00.859"
  },
  "log_tail": [
-  "[2026-10-22T05:30:00.801Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T05:30:00.801Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T05:30:02.915Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 38.25% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T05:35:18.991Z] [CRON] [Opportunity] CRAWL-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T05:35:19.101Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T05:35:19.101Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T05:35:21.494Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 35.35% > 30%",
   "[2026-10-22T05:35:21.494Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.34% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T05:40:00.859Z] [CRON] Starting management cycle",
+  "[2026-10-22T05:40:01.482Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T05:40:02.069Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T05:40:02.070Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T05:40:04.224Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 33.22% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

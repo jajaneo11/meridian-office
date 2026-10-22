@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T00:02:48.807329+00:00",
+ "generated_at": "2026-10-22T00:07:41.672938+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 502,
+  "total_real": 503,
   "today": 1,
-  "today_real": 1,
+  "today_real": 2,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T00:00:01.206",
+  "last_screening": "2026-10-22T00:05:18.257",
   "last_management": "2026-10-22T00:00:00.648"
  },
  "log_tail": [
-  "[2026-10-21T23:59:18.070Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-21T23:59:18.186Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-21T23:59:18.186Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-22T00:00:00.648Z] [CRON] Starting management cycle",
   "[2026-10-22T00:00:01.206Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T00:00:01.206Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T00:00:01.252Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T00:00:01.252Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T00:05:18.153Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T00:05:18.257Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T00:05:18.257Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"
 }

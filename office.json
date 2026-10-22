@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T20:07:42.397568+00:00",
+ "generated_at": "2026-10-22T20:12:39.946666+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 743,
+  "total_real": 744,
   "today": 100,
-  "today_real": 242,
+  "today_real": 243,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T20:10:13.852Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Wallet balance is 0 SOL. No capital available to execute the 0.5 SOL deploy. Even though CLAUDIA-SOL showed strong signals (2 smart wallets, high fees), deplo"
+   },
    {
     "ts": "2026-10-22T20:00:54.576Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL (DbbnpRoXfTrqKJZdbw6drht59qbumJoimaQK5usyp5P4) WHY SKIPPED Deploy attempt failed with invalid amount format. This pool had the strongest fundamentals (best fee/TVL ratio of 0.24, 1 smart wallet present, and +22.8% pric"
-   },
-   {
-    "ts": "2026-10-22T19:00:43.995Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL WHY SKIPPED All candidates were evaluated; Pepper-SOL had the strongest fundamentals (smart wallets, fee/TVL, volume), but the deploy_position tool executed in DRY_RUN mode, so no transaction was submitted. REJECTED Pe"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "20:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T20:06:04.332",
-  "last_management": "2026-10-22T20:00:00.026"
+  "last_screening": "2026-10-22T20:10:01.713",
+  "last_management": "2026-10-22T20:10:00.540"
  },
  "log_tail": [
-  "[2026-10-22T20:00:00.673Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T20:00:00.673Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T20:00:04.588Z] [SCREENING] PVP guard: McRib-SOL has active rival The McRib Indicator (8idEA8Qo)",
-  "[2026-10-22T20:00:06.388Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 37.14% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T20:06:04.146Z] [CRON] [Opportunity] McRib-SOL degen 98.9 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T20:06:04.332Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T20:06:04.332Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T20:06:05.626Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 49.26% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T20:10:00.540Z] [CRON] Starting management cycle",
+  "[2026-10-22T20:10:01.187Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T20:10:01.713Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T20:10:01.714Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T20:10:02.141Z] [SCREENING] PVP guard: McRib-SOL has active rival The McRib Indicator (8idEA8Qo)",
+  "[2026-10-22T20:10:03.954Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 47.98% > 30%",
+  "[2026-10-22T20:10:03.954Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 37.82% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

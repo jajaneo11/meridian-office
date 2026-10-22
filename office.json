@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T21:19:07.338935+00:00",
+ "generated_at": "2026-10-22T21:22:40.932831+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 757,
+  "total_real": 758,
   "today": 100,
-  "today_real": 256,
+  "today_real": 257,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T21:20:21.606Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Smart wallet presence made it the strongest choice, but the pool fee/active-TVL ratio was 0% during the deploy check, which is below the hard min threshold. This triggered a block. The remaining candidates a"
+   },
    {
     "ts": "2026-10-22T21:05:35.442Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Wallet balance is 0 SOL. No capital available to execute the 0.5 SOL deploy. Even though CLAUDIA-SOL showed strong signals (2 smart wallets, high fees), deplo"
-   },
-   {
-    "ts": "2026-10-22T20:00:54.576Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Wallet balance is 0 SOL (must have at least 0.5 SOL to deploy). Even though this pool had strong signals (2 smart wallets present, fee > 30 SOL, bin step 125)"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "21:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T21:15:04.348",
-  "last_management": "2026-10-22T21:10:00.590"
+  "last_screening": "2026-10-22T21:20:01.094",
+  "last_management": "2026-10-22T21:20:00.058"
  },
  "log_tail": [
-  "[2026-10-22T21:15:04.348Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T21:15:04.526Z] [SCREENING] PVP guard: kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
-  "[2026-10-22T21:15:04.530Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
-  "[2026-10-22T21:15:07.143Z] [SCREENING] Bot-holder filter: dropped Kimchi-SOL \u2014 bots 32.22% > 30%",
-  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 30.52% > 30%",
-  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
-  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.71% > 30%",
-  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.76% > 30%",
-  "[2026-10-22T21:15:07.144Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.76% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "[2026-10-22T21:20:00.058Z] [CRON] Starting management cycle",
+  "[2026-10-22T21:20:00.578Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T21:20:01.094Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T21:20:01.094Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T21:20:01.559Z] [SCREENING] PVP guard: kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-22T21:20:01.562Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-22T21:20:03.611Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 30.25% > 30%",
+  "[2026-10-22T21:20:03.611Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.94% > 30%",
+  "[2026-10-22T21:20:03.611Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.93% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

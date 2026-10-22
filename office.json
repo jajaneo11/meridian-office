@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T18:52:41.970295+00:00",
+ "generated_at": "2026-10-22T18:57:41.966501+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 728,
+  "total_real": 729,
   "today": 100,
-  "today_real": 227,
+  "today_real": 228,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T18:50:01.344",
+  "last_screening": "2026-10-22T18:55:34.040",
   "last_management": "2026-10-22T18:50:00.308"
  },
  "log_tail": [
-  "[2026-10-22T18:45:07.144Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.90% > 30%",
-  "[2026-10-22T18:45:07.145Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.50% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T18:50:00.308Z] [CRON] Starting management cycle",
   "[2026-10-22T18:50:00.839Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T18:50:01.344Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T18:50:01.344Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T18:50:07.116Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.90% > 30%",
   "\u26d4 NO DEPLOY",
-  "Deployment verification error blocked the entry despite strong signals. The pool verification thresholds could not be confirmed during the transaction attempt."
+  "Deployment verification error blocked the entry despite strong signals. The pool verification thresholds could not be confirmed during the transaction attempt.",
+  "[2026-10-22T18:55:33.900Z] [CRON] [Opportunity] CHROME-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T18:55:34.040Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T18:55:34.040Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

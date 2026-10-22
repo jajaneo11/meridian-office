@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T15:27:40.296250+00:00",
+ "generated_at": "2026-10-22T15:32:39.764143+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 67
+  "decisions_mentioning": 66
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 687,
+  "total_real": 688,
   "today": 100,
-  "today_real": 186,
+  "today_real": 187,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T15:30:43.987Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available to deploy. The agent cannot open any positions until funds are added. REJECTED LUKE-SOL (0 SOL balance) PANGEA-SOL (0 SOL balance) PHP-SOL (0 SOL balance) Macca-"
+   },
    {
     "ts": "2026-10-22T15:21:00.935Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED First deploy was rejected due to active fee/TVL ratio below system threshold. Subsequent attempts were blocked by session retry limits. REJECTED PANGEA-SOL \u2013 Blocked by active fee/TVL ratio check LUKE-SOL \u2013"
-   },
-   {
-    "ts": "2026-10-22T14:26:26.389Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-SOL WHY SKIPPED Both candidates fail hard deployment rules. HOOKED has an invalid bin_step (50) below the required 80. LASTCALL fails the minimum fee threshold (25.62 SOL < 30). Neither pool qualifies for deployment. REJEC"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "15:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T15:26:19.373",
-  "last_management": "2026-10-22T15:20:00.720"
+  "last_screening": "2026-10-22T15:30:00.798",
+  "last_management": "2026-10-22T15:30:00.239"
  },
  "log_tail": [
-  "[2026-10-22T15:20:01.396Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T15:20:02.098Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T15:20:02.098Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T15:20:05.424Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.31% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T15:26:19.238Z] [CRON] [Opportunity] BTC-SOL degen 96.9 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T15:26:19.373Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T15:26:19.373Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T15:26:20.413Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.30% > 30%",
-  "\ud83d\ude80 DEPLOYMENT SIMULATED"
+  "\ud83d\ude80 DEPLOYMENT SIMULATED",
+  "[2026-10-22T15:30:00.239Z] [CRON] Starting management cycle",
+  "[2026-10-22T15:30:00.746Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T15:30:00.746Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T15:30:00.798Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T15:30:00.798Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T15:30:05.640Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.29% > 30%",
+  "[2026-10-22T15:30:39.915Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

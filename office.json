@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T06:07:38.331004+00:00",
+ "generated_at": "2026-10-22T06:12:42.882184+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 575,
-  "today": 49,
-  "today_real": 74,
+  "total_real": 576,
+  "today": 50,
+  "today_real": 75,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T06:10:21.020Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The deploy_position tool returned a tool error on the first attempt. The second attempt was blocked as retries are not permitted within the same session. Despite this technical failure, PANGEA-SOL was the s"
+   },
    {
     "ts": "2026-10-22T06:06:09.700Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "All candidates filtered before deploy"
-   },
-   {
-    "ts": "2026-10-22T05:01:09.969Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Deploy attempt did not succeed",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "06:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T06:06:03.831",
-  "last_management": "2026-10-22T06:00:00.872"
+  "last_screening": "2026-10-22T06:10:01.529",
+  "last_management": "2026-10-22T06:10:00.420"
  },
  "log_tail": [
-  "[2026-10-22T06:00:01.466Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T06:00:22.250Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-22T06:00:26.095Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-22T06:00:27.013Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-22T06:00:27.832Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T06:06:03.700Z] [CRON] [Opportunity] PHP-SOL degen 41.2 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T06:06:03.831Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T06:06:03.832Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T06:10:00.420Z] [CRON] Starting management cycle",
+  "[2026-10-22T06:10:00.965Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T06:10:01.529Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T06:10:01.529Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "The deploy_position tool returned a tool error on the first attempt. The second attempt was blocked as retries are not permitted within the same session. Despite this technical failure, PANGEA-SOL was the strongest candidate due to smart wallet presence and top organic score."
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

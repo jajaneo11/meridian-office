@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T06:02:40.703780+00:00",
+ "generated_at": "2026-10-22T06:07:38.331004+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 1,
+  "active_24h": 0,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 68
+  "decisions_mentioning": 69
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 574,
-  "today": 48,
-  "today_real": 73,
+  "total_real": 575,
+  "today": 49,
+  "today_real": 74,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T06:06:09.700Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet is empty (0 SOL available), so no capital to deploy. Additionally, candidate lacks smart wallet support and the narrative is still generating/unknown. 1h price is down ~20%. REJECTED PHP-SOL - Zero bala"
+   },
    {
     "ts": "2026-10-22T06:00:30.063Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "Deploy attempt did not succeed",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-22T04:51:15.916Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "06:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T06:00:01.417",
+  "last_screening": "2026-10-22T06:06:03.831",
   "last_management": "2026-10-22T06:00:00.872"
  },
  "log_tail": [
-  "[2026-10-22T06:00:00.872Z] [CRON] Starting management cycle",
-  "[2026-10-22T06:00:01.417Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T06:00:01.417Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T06:00:01.466Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T06:00:01.466Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T06:00:22.250Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-22T06:00:26.095Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-22T06:00:27.013Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-22T06:00:27.832Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T06:06:03.700Z] [CRON] [Opportunity] PHP-SOL degen 41.2 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T06:06:03.831Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T06:06:03.832Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

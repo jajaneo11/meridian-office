@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T05:32:40.007249+00:00",
+ "generated_at": "2026-10-22T05:37:39.818014+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 10,
+  "active_24h": 8,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 64
+  "decisions_mentioning": 65
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 568,
-  "today": 42,
-  "today_real": 67,
+  "total_real": 569,
+  "today": 43,
+  "today_real": 68,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T05:35:39.386Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5) WHY SKIPPED PANGEA-SOL had 1 smart wallet and decent fundamentals, but failed the fee/active-TVL check (0% < 0.005% threshold). PHP-SOL had strong fee_tvl=0.0464 and high organic score but was also blocked "
+   },
    {
     "ts": "2026-10-22T05:30:19.229Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-22T03:50:08.458Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Deploy triggered in dry-run mode and failed to return range coverage percentages. The strict reporting format requires exact range_coverage values from the deploy tool, which were not provided. Until a live"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "05:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T05:30:00.784",
+  "last_screening": "2026-10-22T05:35:19.101",
   "last_management": "2026-10-22T05:30:00.271"
  },
  "log_tail": [
-  "[2026-10-22T05:26:18.435Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T05:26:18.435Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T05:30:00.271Z] [CRON] Starting management cycle",
-  "[2026-10-22T05:30:00.784Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T05:30:00.784Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T05:30:00.801Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T05:30:00.801Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T05:30:02.915Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 38.25% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T05:35:18.991Z] [CRON] [Opportunity] CRAWL-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T05:35:19.101Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T05:35:19.101Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T05:35:21.494Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 35.35% > 30%",
+  "[2026-10-22T05:35:21.494Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.34% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

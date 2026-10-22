@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T23:07:40.066998+00:00",
+ "generated_at": "2026-10-22T23:12:39.646751+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 779,
+  "total_real": 780,
   "today": 100,
-  "today_real": 278,
+  "today_real": 279,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T23:06:05.060",
-  "last_management": "2026-10-22T23:00:00.331"
+  "last_screening": "2026-10-22T23:10:01.458",
+  "last_management": "2026-10-22T23:10:00.158"
  },
  "log_tail": [
-  "[2026-10-22T23:00:00.808Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T23:00:04.417Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.10% > 30%",
-  "[2026-10-22T23:00:04.417Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.00% > 30%",
-  "[2026-10-22T23:00:04.417Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.91% > 30%",
-  "[2026-10-22T23:00:20.565Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\ud83d\ude80 DEPLOYED (dry run)",
-  "[2026-10-22T23:06:04.615Z] [CRON] [Opportunity] BTC-SOL degen 54.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T23:06:05.060Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T23:06:05.060Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T23:06:06.159Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.90% > 30%"
+  "[2026-10-22T23:06:06.159Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.90% > 30%",
+  "[2026-10-22T23:10:00.158Z] [CRON] Starting management cycle",
+  "[2026-10-22T23:10:00.717Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T23:10:01.458Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T23:10:01.458Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T23:10:03.706Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.00% > 30%",
+  "[2026-10-22T23:10:03.706Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 31.97% > 30%",
+  "[2026-10-22T23:10:03.707Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 44.00% > 30%",
+  "[2026-10-22T23:10:03.707Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.86% > 30%",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

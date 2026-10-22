@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T07:02:40.532802+00:00",
+ "generated_at": "2026-10-22T07:07:39.741788+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 586,
+  "total_real": 587,
   "today": 57,
-  "today_real": 85,
+  "today_real": 86,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T07:00:01.537",
+  "last_screening": "2026-10-22T07:06:03.471",
   "last_management": "2026-10-22T07:00:00.996"
  },
  "log_tail": [
-  "[2026-10-22T06:57:48.501Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T06:57:49.999Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.24% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T07:00:00.996Z] [CRON] Starting management cycle",
   "[2026-10-22T07:00:01.537Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T07:00:01.537Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T07:00:01.572Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T07:00:01.572Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T07:00:04.013Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.24% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T07:06:03.354Z] [CRON] [Opportunity] GTA6-SOL degen 42.6 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T07:06:03.471Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T07:06:03.471Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T05:02:39.806019+00:00",
+ "generated_at": "2026-10-22T05:07:43.768793+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 63
+  "decisions_mentioning": 62
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 562,
-  "today": 38,
-  "today_real": 61,
+  "total_real": 563,
+  "today": 39,
+  "today_real": 62,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T05:05:18.476Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-22T05:01:09.969Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Despite having a smart wallet present (Long #14), the pool blocked deployment due to 0% active fee/TVL ratio, indicating no active fee generation. No other can"
-   },
-   {
-    "ts": "2026-10-22T03:30:34.906Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Smart wallets were present, but the deploy failed due to active fee/TVL ratio below minimum threshold (0% vs 0.005%). Without active fee generation, providing liquidity would be inefficient. Other pools lac"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "05:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T05:00:01.332",
+  "last_screening": "2026-10-22T05:05:18.395",
   "last_management": "2026-10-22T05:00:00.776"
  },
  "log_tail": [
-  "[2026-10-22T04:56:21.143Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.46% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T05:00:00.776Z] [CRON] Starting management cycle",
   "[2026-10-22T05:00:01.332Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T05:00:01.332Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T05:00:01.423Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T05:00:01.423Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T05:00:04.014Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 38.99% > 30%",
   "[2026-10-22T05:00:04.015Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.25% > 30%",
-  "[2026-10-22T05:01:08.751Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa"
+  "[2026-10-22T05:01:08.751Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-22T05:05:18.287Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T05:05:18.395Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T05:05:18.395Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T08:52:41.321547+00:00",
+ "generated_at": "2026-10-22T08:57:39.221384+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 608,
-  "today": 70,
-  "today_real": 107,
+  "total_real": 609,
+  "today": 71,
+  "today_real": 108,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T08:55:39.410Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot execute 0.5 SOL deploy. Pool itself meets hard rules (fees >30, bin step 80-125, smart wallets present), but capital availability blocks deployment. REJECTED PANGEA-SOL (insu"
+   },
    {
     "ts": "2026-10-22T08:45:28.864Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A1) WHY SKIPPED Wallet has 0 SOL available to deploy. Even though this pool had smart wallets present, I cannot proceed without funds. REJECTED GTA6-SOL (5A1): Smart wallets but no balance PHP-SOL: Strong metrics but n"
-   },
-   {
-    "ts": "2026-10-22T07:15:16.945Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15QUc6kMxw9dsVpVUv6ZdTTBeyWBN2scyy1MEQJFQs) WHY SKIPPED Insufficient SOL balance (0 SOL available). Even if capital were present, only two pools meet bin_step requirements (100\u2013125) without excessive concentration ris"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "08:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T08:50:01.232",
+  "last_screening": "2026-10-22T08:55:33.597",
   "last_management": "2026-10-22T08:50:00.041"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T08:45:04.513Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T08:45:04.715Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T08:45:04.715Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-22T08:50:00.041Z] [CRON] Starting management cycle",
   "[2026-10-22T08:50:00.648Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T08:50:01.232Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T08:50:01.233Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T08:55:33.422Z] [CRON] [Opportunity] PANGEA-SOL degen 75.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T08:55:33.597Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T08:55:33.597Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

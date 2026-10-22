@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T14:52:42.338700+00:00",
+ "generated_at": "2026-10-22T14:57:38.596463+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 68
+  "decisions_mentioning": 67
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 680,
+  "total_real": 681,
   "today": 100,
-  "today_real": 179,
+  "today_real": 180,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T14:55:35.260Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- BTC-SOL: bot holders 59.15% > 30%"
+   },
    {
     "ts": "2026-10-22T14:51:21.716Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None qualified WHY SKIPPED YAPROACH violates the hard fee rule (25.49 SOL < 30 threshold). CLAUDIA violates the hard bin step rule (50 < 80-125 range). Neither meets the critical safety gates required for deployment. REJECTED YAP"
-   },
-   {
-    "ts": "2026-10-22T13:21:00.915Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The primary candidate SHAV-SOL failed a critical fee/TVL ratio check at deployment time. PANGEA-SOL was the next strongest alternative with smart wallets present, but volatility was too low for directional "
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "03:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "04:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "14:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T14:50:01.458",
+  "last_screening": "2026-10-22T14:55:34.167",
   "last_management": "2026-10-22T14:50:00.226"
  },
  "log_tail": [
-  "[2026-10-22T14:45:03.931Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T14:45:04.084Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T14:45:04.084Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T14:45:06.758Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 49.16% > 30%",
   "[2026-10-22T14:45:06.758Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.09% > 30%",
   "[2026-10-22T14:50:00.226Z] [CRON] Starting management cycle",
   "[2026-10-22T14:50:00.898Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T14:50:01.458Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T14:50:01.459Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T14:50:04.329Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.09% > 30%"
+  "[2026-10-22T14:50:04.329Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.09% > 30%",
+  "[2026-10-22T14:55:34.026Z] [CRON] [Opportunity] BTC-SOL degen 89.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T14:55:34.167Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T14:55:34.167Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T14:55:35.259Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.15% > 30%"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

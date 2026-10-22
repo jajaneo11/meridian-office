@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T13:12:40.480133+00:00",
+ "generated_at": "2026-10-22T13:22:41.754817+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 68
+  "decisions_mentioning": 70
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 660,
+  "total_real": 662,
   "today": 100,
-  "today_real": 159,
+  "today_real": 161,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T13:21:00.915Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The primary candidate SHAV-SOL failed a critical fee/TVL ratio check at deployment time. PANGEA-SOL was the next strongest alternative with smart wallets present, but volatility was too low for directional "
+   },
+   {
+    "ts": "2026-10-22T13:15:50.729Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL WHY SKIPPED The top candidate (CYBER-SOL) with smart wallets, high organic score, and positive momentum blocked during deployment due to a pool validation error. The other strong candidate (SHAV-SOL) also failed verific"
+   },
    {
     "ts": "2026-10-22T13:11:03.798Z",
     "type": "no_deploy",
@@ -159,22 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is 0 SOL, but deploy goal requires 0.5 SOL. I cannot execute a deploy without capital. REJECTED PHP-SOL (0 SOL balance) RAT-USDC (bin_step < 80, fees < 30) baton-SOL (bin_step < 80) CLAUDIA-SOL "
-   },
-   {
-    "ts": "2026-10-22T12:10:53.859Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0 SOL (required 0.5 SOL for deployment). Even though LUKE-SOL had strong smart wallet signals (2 present), insufficient capital blocks all action. No other candidate can proceed without fund"
-   },
-   {
-    "ts": "2026-10-22T12:05:38.125Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL; insufficient capital to execute the planned 0.5 SOL deploy. No rebalancing or other sources of liquidity were available in this cycle. REJECTED PANGEA-SOL (smart wallet present, goo"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "13:00",
-    "count": 3
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T13:10:01.493",
-  "last_management": "2026-10-22T13:10:00.374"
+  "last_screening": "2026-10-22T13:20:01.977",
+  "last_management": "2026-10-22T13:20:00.844"
  },
  "log_tail": [
-  "[2026-10-22T13:06:03.830Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T13:06:03.831Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T13:15:04.388Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T13:15:04.510Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T13:15:04.510Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
-  "[2026-10-22T13:10:00.374Z] [CRON] Starting management cycle",
-  "[2026-10-22T13:10:00.931Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T13:10:01.493Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T13:10:01.493Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T13:11:01.078Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-22T13:11:03.090Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "The top candidate (CYBER-SOL) with smart wallets, high organic score, and positive momentum blocked during deployment due to a pool validation error. The other strong candidate (SHAV-SOL) also failed verification, and no other pools met the fee/bot thresholds with comparable conviction.",
+  "[2026-10-22T13:20:00.844Z] [CRON] Starting management cycle",
+  "[2026-10-22T13:20:01.457Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T13:20:01.977Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T13:20:01.977Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

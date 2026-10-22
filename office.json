@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T11:52:40.657999+00:00",
+ "generated_at": "2026-10-22T11:57:41.986900+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 69
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 644,
-  "today": 96,
-  "today_real": 143,
+  "total_real": 645,
+  "today": 97,
+  "today_real": 144,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T11:57:14.450Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet SOL balance is 0.000 but deployment requires 0.5 SOL. No funds available to execute position. REJECTED PANGEA-SOL - insufficient funds"
+   },
    {
     "ts": "2026-10-22T11:45:16.180Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The deploy attempt failed because the pool's fee/active-TVL ratio was below the configured minimum threshold (0.005%). This indicates the pool may not generate sufficient fee revenue relative to its active "
-   },
-   {
-    "ts": "2026-10-22T10:30:19.997Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpdJeWer4xsHUff93WPnmECYpDXE4GW1y2QmXtzFBm) WHY SKIPPED Dry run mode is enabled for this cycle, so no on-chain transaction was sent. Range percentages cannot be calculated without a live deployment. To proceed, exit DR"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "11:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T11:50:02.004",
+  "last_screening": "2026-10-22T11:57:03.660",
   "last_management": "2026-10-22T11:50:00.885"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T11:45:03.857Z] [CRON] [Opportunity] CYBER-USDC degen 98.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T11:45:03.963Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T11:45:03.963Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-22T11:50:00.885Z] [CRON] Starting management cycle",
   "[2026-10-22T11:50:01.488Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T11:50:02.004Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T11:50:02.005Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-22T11:57:03.581Z] [CRON] [Opportunity] PANGEA-SOL degen 67.7 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T11:57:03.660Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T11:57:03.660Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

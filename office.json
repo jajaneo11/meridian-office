@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T19:37:39.665537+00:00",
+ "generated_at": "2026-10-22T19:42:40.052310+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 737,
+  "total_real": 738,
   "today": 100,
-  "today_real": 236,
+  "today_real": 237,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T19:40:13.086Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Deploy attempt did not succeed",
+    "reason_short": "\u26d4 DEPLOY FAILED Could not verify pool screening thresholds before deploy: Pool BHUK9DCiq7WrwUwtb5THMvw4LDYmwH823cV2gcJw949k not found. POSSIBLE CAUSES Pool may have been removed, the address is incorrect, or the on-chain state is inconsistent with current records. RECOMMENDATION Re-check pool availa"
+   },
    {
     "ts": "2026-10-22T19:35:46.719Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (blocked on fee/active-TVL) / Pepper-SOL (deployment attempted, not retryable) WHY SKIPPED PHP-SOL was blocked due to fee/active-TVL ratio below system minimum. Pepper-SOL was the next best (smart wallet present, strong 1"
-   },
-   {
-    "ts": "2026-10-22T18:35:52.833Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL WHY SKIPPED Wallet balance is 0 SOL; deploying 0.5 SOL is impossible. Even if funds were available, this cycle is effectively blocked due to lack of capital for on-chain transactions. REJECTED All other candidates (SI-"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "19:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T19:35:19.008",
-  "last_management": "2026-10-22T19:30:00.539"
+  "last_screening": "2026-10-22T19:40:01.084",
+  "last_management": "2026-10-22T19:40:00.017"
  },
  "log_tail": [
-  "[2026-10-22T19:30:03.647Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
-  "[2026-10-22T19:30:15.173Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "Multiple deployment attempts failed due to system errors. The deploy_position tool returned failures indicating the pool could not be verified or the function is blocked for this session. This appears to be an infrastructure issue rather than a fundamental problem with the candidates.",
-  "[2026-10-22T19:35:18.925Z] [CRON] [Opportunity] MRNA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T19:35:19.008Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T19:35:19.008Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T19:35:21.538Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.09% > 30%",
   "[2026-10-22T19:35:21.538Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.94% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T19:40:00.017Z] [CRON] Starting management cycle",
+  "[2026-10-22T19:40:00.590Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T19:40:01.084Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T19:40:01.084Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T19:40:03.649Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.54% > 30%",
+  "[2026-10-22T19:40:03.650Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.94% > 30%",
+  "\u26d4 DEPLOY FAILED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

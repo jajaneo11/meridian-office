@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T02:03:56.423954+00:00",
+ "generated_at": "2026-10-22T02:22:41.540207+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 26,
+  "active_24h": 24,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 526,
-  "today": 16,
-  "today_real": 25,
+  "total_real": 530,
+  "today": 17,
+  "today_real": 29,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T02:10:24.625Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Deployed in DRY_RUN mode \u2014 no real transaction sent. Selected due to strong smart wallet signal (2 wallets present) and valid bin_step (125), but system didn'"
+   },
    {
     "ts": "2026-10-22T02:00:20.680Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Wallet balance is 0 SOL. Cannot deploy 0.5 SOL required by strategy. No funds available for new positions. REJECTED - PANGEA-SOL: Smart wallet present, best fe"
-   },
-   {
-    "ts": "2026-10-22T00:30:18.383Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL had strong fundamentals: smart wallet presence (Degen #9), 170 SOL fees, 0.24 fee/TVL, and 81 organic score. The deploy tool executed in dry-run mode, preventing actual on-chain execution. This a"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "02:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T02:00:00.649",
-  "last_management": "2026-10-22T02:00:00.099"
+  "last_screening": "2026-10-22T02:20:01.208",
+  "last_management": "2026-10-22T02:20:00.142"
  },
  "log_tail": [
-  "[2026-10-22T01:55:33.294Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T01:55:34.004Z] [SCREENING] Bot-holder filter: dropped RETAIL-SOL \u2014 bots 31.38% > 30%",
-  "[2026-10-22T02:00:00.099Z] [CRON] Starting management cycle",
-  "[2026-10-22T02:00:00.624Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T02:00:00.624Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T02:00:00.649Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T02:00:00.649Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T02:00:03.943Z] [SCREENING] Bot-holder filter: dropped RETAIL-SOL \u2014 bots 30.60% > 30%",
-  "[2026-10-22T02:00:03.943Z] [SCREENING] Bot-holder filter: dropped MERCURY-SOL \u2014 bots 38.65% > 30%",
-  "\u26d4 NO DEPLOY"
+  "[2026-10-22T02:15:03.470Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T02:15:03.551Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T02:15:03.551Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T02:20:00.142Z] [CRON] Starting management cycle",
+  "[2026-10-22T02:20:00.729Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T02:20:01.208Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T02:20:01.208Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "# DRY RUN - DEPLOYMENT TEST",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

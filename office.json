@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T14:32:41.889440+00:00",
+ "generated_at": "2026-10-22T14:37:40.182573+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 69
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 676,
+  "total_real": 677,
   "today": 100,
-  "today_real": 175,
+  "today_real": 176,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T14:35:32.149Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Wallet balance shows 0 SOL available, but 0.5 SOL is required to deploy. No capital means no positions can be opened regardless of candidate quality. REJECTED"
+   },
    {
     "ts": "2026-10-22T14:30:38.915Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The system is in DRY_RUN mode, so no actual transaction was sent. The candidate passed all hard gates (fees_sol > 30, bin_step 80-125, positive volatility) and had smart wallet confidence boost, but the dep"
-   },
-   {
-    "ts": "2026-10-22T13:01:47.563Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot fund the required 0.5 SOL deploy. All other candidates were disqualified due to lack of smart wallet signals or bin-step violations (EMBER, CLAUDIA duplicate). REJECTED LUKE-SO"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "14:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T14:30:00.850",
+  "last_screening": "2026-10-22T14:35:19.305",
   "last_management": "2026-10-22T14:30:00.242"
  },
  "log_tail": [
-  "[2026-10-22T14:26:18.978Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T14:26:20.862Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.82% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T14:30:00.242Z] [CRON] Starting management cycle",
-  "[2026-10-22T14:30:00.850Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T14:30:00.850Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T14:30:00.904Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T14:30:00.904Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T14:30:03.892Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.81% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T14:35:19.194Z] [CRON] [Opportunity] CLAUDIA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T14:35:19.305Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T14:35:19.306Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T14:35:21.959Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.03% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

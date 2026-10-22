@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T09:42:47.313908+00:00",
+ "generated_at": "2026-10-22T09:47:45.418692+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 618,
-  "today": 78,
-  "today_real": 117,
+  "total_real": 619,
+  "today": 79,
+  "today_real": 118,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T09:45:12.627Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Deploy attempt failed due to parameter misconfiguration (bins_below was mistakenly passed as bin_step). After the error, the system blocked further deploy atte"
+   },
    {
     "ts": "2026-10-22T09:40:11.871Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": "LOAD-SOL",
     "summary": "Single candidate skipped",
     "reason_short": "top10 concentration 69.18% above maximum 60%"
-   },
-   {
-    "ts": "2026-10-22T08:20:19.211Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Agent wallet has 0 SOL available. Goal deploy amount is 0.5 SOL. Funds insufficient. REJECTED PANGEA-SOL (smart wallet signal) \u2013 balance 0 SOL All other candidates \u2013 balance 0 SOL"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "09:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T09:40:02.491",
+  "last_screening": "2026-10-22T09:45:03.691",
   "last_management": "2026-10-22T09:40:00.832"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T09:35:19.177Z] [CRON] [Opportunity] LUKE-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T09:35:19.255Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T09:35:19.255Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T09:40:00.832Z] [CRON] Starting management cycle",
   "[2026-10-22T09:40:01.853Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T09:40:02.491Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T09:40:02.493Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T09:45:03.620Z] [CRON] [Opportunity] LUKE-SOL degen 99.2 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T09:45:03.691Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T09:45:03.691Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "Deploy attempt failed due to parameter misconfiguration (bins_below was mistakenly passed as bin_step). After the error, the system blocked further deploy attempts for this session. The candidate had strong fundamentals: smart wallet presence, fee_tvl ratio of 1.35%, and organic score of 82."
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

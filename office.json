@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T22:52:40.553388+00:00",
+ "generated_at": "2026-10-22T22:57:39.378975+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 776,
+  "total_real": 777,
   "today": 100,
-  "today_real": 275,
+  "today_real": 276,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T22:56:24.952Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE JEANPHIL-SOL WHY SKIPPED The only candidate has a bin_step of 50, violating the hard rule requiring 80\u2013125. Additionally, no smart wallets are present and the narrative signal is unavailable. REJECTED JEANPHIL-SOL (bin_step 50 < "
+   },
    {
     "ts": "2026-10-22T22:45:18.269Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED BORDR-SOL was the strongest candidate (smart wallet present, no PVP conflict) but the deploy failed due to pool fee/active-TVL being below the configured minimum threshold. No other pool was strong enough to"
-   },
-   {
-    "ts": "2026-10-22T20:55:39.623Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Kimchi-SOL WHY SKIPPED No smart wallet support and narrative is still generating/unknown. High PVP conflict with a much stronger rival (Aura Final Boss). While it passes hard filters, conviction is too low for a single remaining "
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "22:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T22:50:01.884",
+  "last_screening": "2026-10-22T22:56:19.185",
   "last_management": "2026-10-22T22:50:00.802"
  },
  "log_tail": [
-  "[2026-10-22T22:45:05.863Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.01% > 30%",
-  "[2026-10-22T22:45:05.863Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.92% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T22:50:00.802Z] [CRON] Starting management cycle",
   "[2026-10-22T22:50:01.368Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T22:50:01.884Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T22:50:01.885Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T22:50:03.426Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.11% > 30%",
   "[2026-10-22T22:50:03.426Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.04% > 30%",
-  "\u26d4 DRY RUN DEPLOY"
+  "\u26d4 DRY RUN DEPLOY",
+  "[2026-10-22T22:56:19.063Z] [CRON] [Opportunity] JEANPHIL-SOL degen 52.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T22:56:19.185Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T22:56:19.185Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

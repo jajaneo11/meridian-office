@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T20:47:41.443801+00:00",
+ "generated_at": "2026-10-22T20:52:42.048204+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 751,
+  "total_real": 752,
   "today": 100,
-  "today_real": 250,
+  "today_real": 251,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T20:50:29.646Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PVE-SOL (3oXbUwiDxWGisDGcinLW6c1ANmWG93ZLoFd3H7xpT2XT) WHY SKIPPED Wallet balance is empty (0 SOL). Cannot execute any deployment. All candidates remain unselected due to lack of capital. REJECTED - kimchi-SOL: PVP conflict (HIGH"
+   },
    {
     "ts": "2026-10-22T20:45:31.752Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE onboard-SOL WHY SKIPPED Wallet balance is 0 SOL. Deploy requires 0.5 SOL. No capital available to execute position. REJECTED onboard-SOL \u2014 No funds LUKE-SOL \u2014 No funds OPENAI-SOL \u2014 High concentration (46% top10), low fee/TVL Othe"
-   },
-   {
-    "ts": "2026-10-22T19:40:13.086Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Deploy attempt did not succeed",
-    "reason_short": "\u26d4 DEPLOY FAILED Could not verify pool screening thresholds before deploy: Pool BHUK9DCiq7WrwUwtb5THMvw4LDYmwH823cV2gcJw949k not found. POSSIBLE CAUSES Pool may have been removed, the address is incorrect, or the on-chain state is inconsistent with current records. RECOMMENDATION Re-check pool availa"
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "09:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "10:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "20:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T20:45:05.729",
-  "last_management": "2026-10-22T20:40:00.037"
+  "last_screening": "2026-10-22T20:50:01.561",
+  "last_management": "2026-10-22T20:50:00.551"
  },
  "log_tail": [
-  "[2026-10-22T20:45:05.618Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T20:45:05.729Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T20:45:05.730Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T20:45:05.923Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
-  "[2026-10-22T20:45:08.176Z] [SCREENING] Bot-holder filter: dropped Kimchi-SOL \u2014 bots 36.12% > 30%",
-  "[2026-10-22T20:45:08.176Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 34.47% > 30%",
-  "[2026-10-22T20:45:08.176Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
-  "[2026-10-22T20:45:08.177Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.47% > 30%",
-  "[2026-10-22T20:45:08.177Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.91% > 30%",
+  "[2026-10-22T20:50:01.561Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T20:50:01.563Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T20:50:02.129Z] [SCREENING] PVP guard: Kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-22T20:50:02.145Z] [SCREENING] PVP guard: kimchi-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-22T20:50:04.033Z] [SCREENING] Bot-holder filter: dropped Kimchi-SOL \u2014 bots 31.51% > 30%",
+  "[2026-10-22T20:50:04.033Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 32.69% > 30%",
+  "[2026-10-22T20:50:04.033Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.67% > 30%",
+  "[2026-10-22T20:50:04.033Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
+  "[2026-10-22T20:50:04.033Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.48% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

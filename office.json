@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T15:58:21.525208+00:00",
+ "generated_at": "2026-10-22T16:02:49.538320+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 693,
+  "total_real": 694,
   "today": 100,
-  "today_real": 192,
+  "today_real": 193,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T16:00:32.081Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHE...) WHY SKIPPED Insufficient SOL balance (0.000 SOL available). Wallet is empty and cannot fund the 0.5 SOL deployment. No tokens or SOL available to proceed. REJECTED - CLAUDIA-SOL (DfHE...): Smart wallets + hi"
+   },
    {
     "ts": "2026-10-22T15:50:48.387Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-22T14:40:39.438Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED OTC-SOL had the strongest conviction (3 smart wallets, 2.5k SOL fees, 55-day track record) but failed the fee/active-TVL ratio gate. The remaining candidates had weaker signals (1 or 0 smart wallets) and I rea"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "04:00",
-    "count": 5
-   },
    {
     "hour": "05:00",
     "count": 10
@@ -227,24 +223,28 @@
    {
     "hour": "15:00",
     "count": 8
+   },
+   {
+    "hour": "16:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T15:56:18.964",
-  "last_management": "2026-10-22T15:50:00.304"
+  "last_screening": "2026-10-22T16:00:01.358",
+  "last_management": "2026-10-22T16:00:00.737"
  },
  "log_tail": [
-  "[2026-10-22T15:50:00.304Z] [CRON] Starting management cycle",
-  "[2026-10-22T15:50:00.863Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T15:50:01.324Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T15:50:01.325Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T15:50:05.352Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.14% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T15:56:18.848Z] [CRON] [Opportunity] CLAUDIA-SOL degen 67.3 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T15:56:18.964Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T15:56:18.964Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T16:00:00.737Z] [CRON] Starting management cycle",
+  "[2026-10-22T16:00:01.358Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T16:00:01.358Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T16:00:01.430Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T16:00:01.431Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T16:00:07.468Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.80% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T04:07:45.870013+00:00",
+ "generated_at": "2026-10-22T04:12:41.125576+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 551,
+  "total_real": 552,
   "today": 31,
-  "today_real": 50,
+  "today_real": 51,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T04:05:18.460",
-  "last_management": "2026-10-22T04:00:00.518"
+  "last_screening": "2026-10-22T04:10:01.493",
+  "last_management": "2026-10-22T04:10:00.318"
  },
  "log_tail": [
-  "[2026-10-22T04:00:01.099Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T04:00:03.312Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 37.31% > 30%",
-  "[2026-10-22T04:00:03.312Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.22% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "This pool had the highest fee/TVL ratio (1.26%) among all candidates, indicating strong fee efficiency. Bins below (63) was calculated from volatility and falls within the 35-69 range. No smart wallets were present, but fee metrics were superior to alternatives like PHP-SOL and GTA6-SOL. DRY_RUN confirmed no errors.",
-  "[2026-10-22T04:05:18.348Z] [CRON] [Opportunity] Au-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T04:05:18.460Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T04:05:18.461Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T04:05:20.735Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 36.49% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T04:10:00.318Z] [CRON] Starting management cycle",
+  "[2026-10-22T04:10:00.951Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T04:10:01.493Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T04:10:01.493Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T04:10:03.888Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 36.79% > 30%",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

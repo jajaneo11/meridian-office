@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T08:02:38.587249+00:00",
+ "generated_at": "2026-10-22T08:07:38.675313+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 69
+  "decisions_mentioning": 68
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 598,
-  "today": 65,
-  "today_real": 97,
+  "total_real": 599,
+  "today": 66,
+  "today_real": 98,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T08:05:26.855Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Deployment failed due to fee/active-TVL ratio being below the configured minimum (0% < 0.005%). The system blocks retries within the same session, preventing further attempts on this pool. REJECTED PANGEA-S"
+   },
    {
     "ts": "2026-10-22T08:00:10.460Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL (5A15...) WHY SKIPPED The most conviction candidate (2 smart wallets, passes all hard rules) failed the active fee/tvl check during deploy. Pool fee/active- TVL ratio was 0% vs required minimum 0.005%. This indicates low"
-   },
-   {
-    "ts": "2026-10-22T06:30:27.181Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot fund the 0.5 SOL deployment. No capital available regardless of candidate quality. REJECTED PANGEA-SOL (0 SOL balance)"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "08:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T08:00:00.874",
+  "last_screening": "2026-10-22T08:05:18.613",
   "last_management": "2026-10-22T08:00:00.351"
  },
  "log_tail": [
-  "[2026-10-22T07:57:48.437Z] [CRON] [Opportunity] PHP-SOL degen 44.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T07:57:48.560Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T07:57:48.562Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T08:00:00.351Z] [CRON] Starting management cycle",
   "[2026-10-22T08:00:00.874Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T08:00:00.875Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T08:00:00.938Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T08:00:00.938Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T08:05:18.537Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T08:05:18.613Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T08:05:18.613Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

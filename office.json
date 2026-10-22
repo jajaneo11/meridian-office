@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T11:47:39.435567+00:00",
+ "generated_at": "2026-10-22T11:52:40.657999+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 643,
+  "total_real": 644,
   "today": 96,
-  "today_real": 142,
+  "today_real": 143,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T11:45:03.963",
-  "last_management": "2026-10-22T11:40:00.347"
+  "last_screening": "2026-10-22T11:50:02.004",
+  "last_management": "2026-10-22T11:50:00.885"
  },
  "log_tail": [
-  "[2026-10-22T11:40:00.347Z] [CRON] Starting management cycle",
-  "[2026-10-22T11:40:00.908Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T11:40:01.440Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T11:40:01.441Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T11:40:04.065Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 41.15% > 30%",
   "\ud83d\ude80 DEPLOYED",
   "[2026-10-22T11:45:03.857Z] [CRON] [Opportunity] CYBER-USDC degen 98.3 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T11:45:03.963Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T11:45:03.963Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T11:50:00.885Z] [CRON] Starting management cycle",
+  "[2026-10-22T11:50:01.488Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T11:50:02.004Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T11:50:02.005Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

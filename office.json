@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T02:22:41.540207+00:00",
+ "generated_at": "2026-10-22T02:39:23.555590+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 24,
+  "active_24h": 22,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 62
+  "decisions_mentioning": 63
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 530,
-  "today": 17,
-  "today_real": 29,
+  "total_real": 533,
+  "today": 20,
+  "today_real": 32,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,30 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T02:36:50.227Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RETAIL-SOL (jzQqJisotkjiCYzghXQxFFZxYUtAAE6rRWtxd9dMyB2) WHY SKIPPED DRY_RUN mode active; the deployment was simulated and not executed on-chain. While RETAIL-SOL had strong signals (high fee/TVL 1.66, smart wallet present, +87% "
+   },
+   {
+    "ts": "2026-10-22T02:30:12.146Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RETAIL-SOL WHY SKIPPED This environment is in DRY_RUN mode; no real on-chain transactions were sent. The Retail-SOL pool met all hard screening rules and had strong fee efficiency with smart wallet support, but actual deployment "
+   },
+   {
+    "ts": "2026-10-22T02:27:32.447Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RETAIL-SOL WHY SKIPPED DRY_RUN mode was active, preventing real on-chain transactions. All candidates met hard criteria (fees >30 SOL, valid bin step, positive volatility), but no position could be opened. The system is in dry-ru"
+   },
    {
     "ts": "2026-10-22T02:10:24.625Z",
     "type": "no_deploy",
@@ -151,30 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL (HmNQrpfMZLmqvsP1JAf9beHBDkW1wEZ1By4Azx7YCcmm) WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient funds to deploy the required 0.5 SOL. Additionally, all candidates share identical audit scores and organic ratings, with"
-   },
-   {
-    "ts": "2026-10-22T00:50:23.920Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL (0.0160) WHY SKIPPED Wallet balance is zero; deployed deployment requires 0.5 SOL in capital. REJECTED CYBER-SOL: Insufficient funds for deployment (wallet balance = 0 SOL)"
-   },
-   {
-    "ts": "2026-10-22T00:40:27.095Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL was the strongest pool (smart wallet Degen #9, high organic 81, bin step 100) but was blocked at deploy time because the pool's fee/active-TVL ratio was below the configured minimum of 0.005%. Th"
-   },
-   {
-    "ts": "2026-10-22T00:36:20.130Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Wallet balance is 0 SOL. Cannot deploy 0.5 SOL required by strategy. No funds available for new positions. REJECTED - PANGEA-SOL: Smart wallet present, best fe"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "02:00",
-    "count": 2
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T02:20:01.208",
-  "last_management": "2026-10-22T02:20:00.142"
+  "last_screening": "2026-10-22T02:35:18.268",
+  "last_management": "2026-10-22T02:30:00.638"
  },
  "log_tail": [
-  "[2026-10-22T02:15:03.470Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T02:15:03.551Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T02:15:03.551Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T02:20:00.142Z] [CRON] Starting management cycle",
-  "[2026-10-22T02:20:00.729Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T02:20:01.208Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T02:20:01.208Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "# DRY RUN - DEPLOYMENT TEST",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "[2026-10-22T02:30:01.173Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T02:30:01.287Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T02:30:01.288Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T02:30:03.606Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 44.33% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T02:35:18.186Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T02:35:18.268Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T02:35:18.268Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T02:35:20.819Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 43.15% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

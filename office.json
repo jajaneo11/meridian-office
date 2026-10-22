@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T20:17:46.315189+00:00",
+ "generated_at": "2026-10-22T20:22:40.488532+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 745,
+  "total_real": 746,
   "today": 100,
-  "today_real": 244,
+  "today_real": 245,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T20:20:31.675Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA had the highest organic score and smart wallet backing, but fee/TVL (0.035) was too low to justify entry. Deployment also failed due to tool constraints on retry attempts after initial blocking. REJE"
+   },
    {
     "ts": "2026-10-22T20:15:30.279Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE onboard-SOL WHY SKIPPED The system blocked the deploy due to fee/active-TVL ratio (0.000015%) being below the configured threshold (0.005%), despite strong candidate metrics. Subsequent candidates could not be deployed in this se"
-   },
-   {
-    "ts": "2026-10-22T19:10:15.068Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Only candidate with smart wallet presence (2), but deploy blocked by active fee/TVL ratio check. All other valid pools have weak narratives and zero smart wallet signals. REJECTED - PANGEA-SOL: Active fee/T"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "20:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T20:15:04.547",
-  "last_management": "2026-10-22T20:10:00.540"
+  "last_screening": "2026-10-22T20:20:01.234",
+  "last_management": "2026-10-22T20:20:00.076"
  },
  "log_tail": [
-  "[2026-10-22T20:10:03.954Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 37.82% > 30%",
   "\u26d4 NO DEPLOY",
-  "[2026-10-22T20:15:04.475Z] [SCREENING] PVP guard: McRib-SOL has active rival The McRib Indicator (8idEA8Qo)",
-  "[2026-10-22T20:15:04.475Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T20:15:04.547Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T20:15:04.548Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T20:15:04.693Z] [SCREENING] PVP guard: McRib-SOL has active rival The McRib Indicator (8idEA8Qo)",
-  "[2026-10-22T20:15:06.983Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 46.46% > 30%",
-  "[2026-10-22T20:15:06.984Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 37.87% > 30%",
+  "[2026-10-22T20:20:00.076Z] [CRON] Starting management cycle",
+  "[2026-10-22T20:20:00.684Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T20:20:01.234Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T20:20:01.235Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T20:20:03.470Z] [SCREENING] Bot-holder filter: dropped McRib-SOL \u2014 bots 42.87% > 30%",
+  "[2026-10-22T20:20:03.470Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 37.57% > 30%",
+  "[2026-10-22T20:20:03.470Z] [SCREENING] Bot-holder filter: dropped PUMPATAR-SOL \u2014 bots 31.75% > 30%",
+  "[2026-10-22T20:20:03.470Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

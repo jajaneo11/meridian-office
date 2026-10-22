@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T13:07:39.540796+00:00",
+ "generated_at": "2026-10-22T13:12:40.480133+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 659,
+  "total_real": 660,
   "today": 100,
-  "today_real": 158,
+  "today_real": 159,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T13:11:03.798Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL WHY SKIPPED CYBER-SOL had the best fundamentals (smart wallets, highest fee/TVL, strong 1h momentum) but was blocked by the system's fee/active-TVL ratio check. The CYBER pools appear to have artificially low active TVL"
+   },
    {
     "ts": "2026-10-22T13:06:17.779Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL; insufficient capital to execute the planned 0.5 SOL deploy. No rebalancing or other sources of liquidity were available in this cycle. REJECTED PANGEA-SOL (smart wallet present, goo"
-   },
-   {
-    "ts": "2026-10-22T12:00:23.739Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is zero; insufficient capital to execute the 0.5 SOL deployment. REJECTED PHP-SOL, PANGEA-SOL, CYBER-USDC, Macca-SOL"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "13:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T13:06:03.830",
-  "last_management": "2026-10-22T13:00:00.760"
+  "last_screening": "2026-10-22T13:10:01.493",
+  "last_management": "2026-10-22T13:10:00.374"
  },
  "log_tail": [
-  "[2026-10-22T13:00:01.778Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T13:00:01.827Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T13:00:01.828Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T13:00:23.358Z] [ERROR] Agent loop error at step 3: 429 Rate limit reached: output token limit exceeded",
-  "[2026-10-22T13:00:55.673Z] [ERROR] Agent loop error at step 4: 429 Rate limit reached: output token limit exceeded",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T13:06:03.651Z] [CRON] [Opportunity] PANGEA-SOL degen 41.8 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T13:06:03.830Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T13:06:03.831Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T13:10:00.374Z] [CRON] Starting management cycle",
+  "[2026-10-22T13:10:00.931Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T13:10:01.493Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T13:10:01.493Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T13:11:01.078Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-22T13:11:03.090Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

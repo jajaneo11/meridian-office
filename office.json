@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T12:52:45.668629+00:00",
+ "generated_at": "2026-10-22T12:57:38.766591+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 68
+  "decisions_mentioning": 67
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 656,
+  "total_real": 657,
   "today": 100,
-  "today_real": 155,
+  "today_real": 156,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T12:55:57.411Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-USDC WHY SKIPPED Wallet balance shows 0 SOL. Without deployable capital, I cannot open a position despite the pool's solid fundamentals (high fees, clean audit). REJECTED CYBER-USDC (wallet empty) CYBER-SOL (wallet empty)"
+   },
    {
     "ts": "2026-10-22T12:51:03.722Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0 SOL (0.000 USD), so no deployment is possible despite valid pool metrics. REJECTED LUKE-SOL (smart wallets present, but insufficient capital) PANGEA-SOL (smart wallet present, but insuffic"
-   },
-   {
-    "ts": "2026-10-22T11:35:34.576Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL. Cannot deploy 0.5 SOL with insufficient funds. Pools pass fees and bin_step checks but lack capital for execution. REJECTED LUKE-SOL (smart wallets present but no funds) KWH-SOL (hi"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "12:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T12:50:01.151",
+  "last_screening": "2026-10-22T12:55:34.300",
   "last_management": "2026-10-22T12:50:00.027"
  },
  "log_tail": [
-  "[2026-10-22T12:45:30.138Z] [ERROR] Agent loop error at step 5: 429 Rate limit reached: output token limit exceeded",
-  "[2026-10-22T12:46:02.322Z] [ERROR] Agent loop error at step 6: 429 Rate limit reached: output token limit exceeded",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T12:50:00.027Z] [CRON] Starting management cycle",
   "[2026-10-22T12:50:00.597Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T12:50:01.151Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T12:50:01.152Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T12:50:10.920Z] [ERROR] Agent loop error at step 0: 429 Rate limit reached: output token limit exceeded",
   "[2026-10-22T12:50:54.895Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T12:55:33.972Z] [CRON] [Opportunity] CYBER-USDC degen 98.5 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T12:55:34.300Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T12:55:34.300Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

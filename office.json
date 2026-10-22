@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T07:24:48.917120+00:00",
+ "generated_at": "2026-10-22T07:27:46.269172+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 71
+  "decisions_mentioning": 70
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 590,
-  "today": 60,
-  "today_real": 89,
+  "total_real": 591,
+  "today": 61,
+  "today_real": 90,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T07:27:13.101Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Au-SOL WHY SKIPPED Wallet SOL balance is 0, so 0.5 SOL cannot be deployed. The only bin-step-valid pool (Au-SOL, 125) still requires capital you don't have. The other two candidates fail the hard bin_step rule (50 < 80). REJECTED"
+   },
    {
     "ts": "2026-10-22T07:20:46.748Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The deploy_position tool returned a tool error on the first attempt. The second attempt was blocked as retries are not permitted within the same session. Despite this technical failure, PANGEA-SOL was the s"
-   },
-   {
-    "ts": "2026-10-22T06:06:09.700Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet is empty (0 SOL available), so no capital to deploy. Additionally, candidate lacks smart wallet support and the narrative is still generating/unknown. 1h price is down ~20%. REJECTED PHP-SOL - Zero bala"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "07:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T07:20:02.172",
+  "last_screening": "2026-10-22T07:27:03.447",
   "last_management": "2026-10-22T07:20:00.924"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T07:15:03.369Z] [CRON] [Opportunity] Pok\u00e9mon-SOL degen 99.5 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T07:15:03.478Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T07:15:03.478Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-22T07:20:00.924Z] [CRON] Starting management cycle",
   "[2026-10-22T07:20:01.606Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T07:20:02.172Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T07:20:02.173Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T07:27:03.354Z] [CRON] [Opportunity] Au-SOL degen 97.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T07:27:03.447Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T07:27:03.448Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

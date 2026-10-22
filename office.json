@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T10:57:48.108708+00:00",
+ "generated_at": "2026-10-22T11:02:50.607227+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 633,
-  "today": 89,
-  "today_real": 132,
+  "total_real": 634,
+  "today": 90,
+  "today_real": 133,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T11:00:13.287Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The tool execution resulted in a dry run only, with no actual transaction confirmed. Since we cannot confirm a real on-chain execution, we must skip this cycle and report no deploy. REJECTED PANGEA-SOL (dry"
+   },
    {
     "ts": "2026-10-22T10:55:39.958Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Deploy attempt failed due to parameter misconfiguration (bins_below was mistakenly passed as bin_step). After the error, the system blocked further deploy atte"
-   },
-   {
-    "ts": "2026-10-22T09:40:11.871Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL had the strongest fundamentals with a smart wallet signal and the highest organic score, but the system flagged the pool as unverified at deploy time. The deploy tool explicitly rejected the addr"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "23:00",
-    "count": 6
-   },
    {
     "hour": "00:00",
     "count": 9
@@ -227,23 +223,27 @@
    {
     "hour": "10:00",
     "count": 9
+   },
+   {
+    "hour": "11:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T10:55:33.658",
-  "last_management": "2026-10-22T10:50:00.676"
+  "last_screening": "2026-10-22T11:00:00.712",
+  "last_management": "2026-10-22T11:00:00.199"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T10:50:00.676Z] [CRON] Starting management cycle",
-  "[2026-10-22T10:50:01.250Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T10:50:01.719Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T10:50:01.720Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
   "[2026-10-22T10:55:33.584Z] [CRON] [Opportunity] Macca-SOL degen 52.9 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T10:55:33.658Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T10:55:33.658Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T11:00:00.199Z] [CRON] Starting management cycle",
+  "[2026-10-22T11:00:00.712Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T11:00:00.712Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T11:00:00.801Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T11:00:00.801Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

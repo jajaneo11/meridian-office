@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T19:32:39.491751+00:00",
+ "generated_at": "2026-10-22T19:37:39.665537+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 736,
+  "total_real": 737,
   "today": 100,
-  "today_real": 235,
+  "today_real": 236,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T19:35:46.719Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE onboard-SOL WHY SKIPPED onboard-SOL met our volatility and smart wallet standards, but the deploy tool blocked the entry due to a safety check on the fee/active-TVL ratio falling below the configured minimum threshold. REJECTED C"
+   },
    {
     "ts": "2026-10-22T19:30:15.499Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL WHY SKIPPED Wallet balance is 0 SOL; deploying 0.5 SOL is impossible. Even if funds were available, this cycle is effectively blocked due to lack of capital for on-chain transactions. REJECTED All other candidates (SI-"
-   },
-   {
-    "ts": "2026-10-22T18:25:41.515Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL WHY SKIPPED Wallet balance is 0 SOL. I cannot deploy 0.5 SOL without available funds. REJECTED Pepper-SOL (Insufficient funds)"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "19:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T19:30:01.083",
+  "last_screening": "2026-10-22T19:35:19.008",
   "last_management": "2026-10-22T19:30:00.539"
  },
  "log_tail": [
-  "[2026-10-22T19:30:00.539Z] [CRON] Starting management cycle",
-  "[2026-10-22T19:30:01.066Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T19:30:01.066Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T19:30:01.083Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T19:30:01.084Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T19:30:03.647Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.80% > 30%",
   "[2026-10-22T19:30:03.647Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
   "[2026-10-22T19:30:15.173Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY",
-  "Multiple deployment attempts failed due to system errors. The deploy_position tool returned failures indicating the pool could not be verified or the function is blocked for this session. This appears to be an infrastructure issue rather than a fundamental problem with the candidates."
+  "Multiple deployment attempts failed due to system errors. The deploy_position tool returned failures indicating the pool could not be verified or the function is blocked for this session. This appears to be an infrastructure issue rather than a fundamental problem with the candidates.",
+  "[2026-10-22T19:35:18.925Z] [CRON] [Opportunity] MRNA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T19:35:19.008Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T19:35:19.008Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T19:35:21.538Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.09% > 30%",
+  "[2026-10-22T19:35:21.538Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.94% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

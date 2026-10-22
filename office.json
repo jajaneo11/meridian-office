@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T22:27:40.227747+00:00",
+ "generated_at": "2026-10-22T22:32:40.083995+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 771,
+  "total_real": 772,
   "today": 100,
-  "today_real": 270,
+  "today_real": 271,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T22:30:12.070Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The deployment attempt was blocked by the session limit (only one deploy attempt allowed per cycle). PANGEA-SOL had the strongest fundamentals: highest organic score (80), one smart wallet present for confi"
+   },
    {
     "ts": "2026-10-22T22:10:29.888Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None (wallet balance empty) WHY SKIPPED Wallet has 0 SOL, so no deployment is possible. Additionally, pill-SOL has bin_step=50 (invalid) and the remaining pools lack smart wallets and have weak or missing narratives with negative"
-   },
-   {
-    "ts": "2026-10-22T20:40:13.779Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED All candidate pools show \"generating\" narrative status with zero smart wallet presence. Per protocol rules, no confirmed narrative + no smart wallets requires skipping. High fees and volume alone aren't suffi"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "22:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T22:26:19.225",
-  "last_management": "2026-10-22T22:20:00.278"
+  "last_screening": "2026-10-22T22:30:01.388",
+  "last_management": "2026-10-22T22:30:00.798"
  },
  "log_tail": [
-  "[2026-10-22T22:20:00.798Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T22:20:01.322Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T22:20:01.322Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T22:20:04.001Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
-  "[2026-10-22T22:20:04.002Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.82% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T22:26:19.107Z] [CRON] [Opportunity] PHP-SOL degen 49.8 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T22:26:19.225Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T22:26:19.225Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "[2026-10-22T22:30:01.324Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T22:30:01.324Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T22:30:01.388Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T22:30:01.388Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T22:30:04.058Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.93% > 30%",
+  "[2026-10-22T22:30:04.059Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.93% > 30%",
+  "[2026-10-22T22:30:04.059Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 43.93% > 30%",
+  "[2026-10-22T22:30:04.059Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
+  "[2026-10-22T22:30:11.273Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

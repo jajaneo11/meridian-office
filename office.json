@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T13:22:41.754817+00:00",
+ "generated_at": "2026-10-22T13:27:40.146731+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 662,
+  "total_real": 663,
   "today": 100,
-  "today_real": 161,
+  "today_real": 162,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T13:25:39.775Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None qualified WHY SKIPPED YAPROACH violates the hard fee rule (25.49 SOL < 30 threshold). CLAUDIA violates the hard bin step rule (50 < 80-125 range). Neither meets the critical safety gates required for deployment. REJECTED YAP"
+   },
    {
     "ts": "2026-10-22T13:21:00.915Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry due to DRY RUN mode. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED DRY RUN mode prevents actual on-chain deployment. Selected for strong smart wallet signal (1 present), healthy organic score (75), and compliant bin step (100). No other candidate offere"
-   },
-   {
-    "ts": "2026-10-22T12:15:19.836Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is 0 SOL, but deploy goal requires 0.5 SOL. I cannot execute a deploy without capital. REJECTED PHP-SOL (0 SOL balance) RAT-USDC (bin_step < 80, fees < 30) baton-SOL (bin_step < 80) CLAUDIA-SOL "
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "13:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T13:20:01.977",
+  "last_screening": "2026-10-22T13:25:33.766",
   "last_management": "2026-10-22T13:20:00.844"
  },
  "log_tail": [
-  "[2026-10-22T13:15:04.388Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T13:15:04.510Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T13:15:04.510Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "The top candidate (CYBER-SOL) with smart wallets, high organic score, and positive momentum blocked during deployment due to a pool validation error. The other strong candidate (SHAV-SOL) also failed verification, and no other pools met the fee/bot thresholds with comparable conviction.",
   "[2026-10-22T13:20:00.844Z] [CRON] Starting management cycle",
   "[2026-10-22T13:20:01.457Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T13:20:01.977Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T13:20:01.977Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T13:25:33.644Z] [CRON] [Opportunity] YAPROACH-SOL degen 94.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T13:25:33.766Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T13:25:33.766Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T11:07:40.066251+00:00",
+ "generated_at": "2026-10-22T11:12:37.858195+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 635,
-  "today": 91,
-  "today_real": 134,
+  "total_real": 636,
+  "today": 92,
+  "today_real": 135,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T11:10:32.343Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED PANGEA-SOL was blocked due to low fee/TVL ratio (0.0019 < 0.005%). The retry for PHP-SOL failed due to session deployment limit. Both were strong organic candidates but the safety rules prevented execution. RE"
+   },
    {
     "ts": "2026-10-22T11:06:04.848Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance shows 0 SOL. Cannot deploy with zero capital. PHP-SOL was the strongest candidate: smart wallet signal (Degen #8), solid fees (219 SOL), high organic score (81), and clean bin_step (100). But de"
-   },
-   {
-    "ts": "2026-10-22T09:50:14.641Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (ELnpdJeWer4xsHUff93WPnmECYpDXE4GW1y2QmXtzFBm) WHY SKIPPED Wallet balance is 0 SOL, but deployment requires 0.5 SOL. No funds available to execute the position. REJECTED PHP-SOL (no funds) LUKE-SOL (no funds) Macca-SOL (n"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "11:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T11:05:18.943",
-  "last_management": "2026-10-22T11:00:00.199"
+  "last_screening": "2026-10-22T11:10:01.942",
+  "last_management": "2026-10-22T11:10:00.733"
  },
  "log_tail": [
-  "[2026-10-22T11:00:00.199Z] [CRON] Starting management cycle",
-  "[2026-10-22T11:00:00.712Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T11:00:00.712Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T11:00:00.801Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T11:00:00.801Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T11:05:18.833Z] [CRON] [Opportunity] WEFT-SOL degen 98.6 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T11:05:18.943Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T11:05:18.943Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T11:10:00.733Z] [CRON] Starting management cycle",
+  "[2026-10-22T11:10:01.352Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T11:10:01.942Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T11:10:01.942Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T11:10:30.368Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

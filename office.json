@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T02:47:41.381387+00:00",
+ "generated_at": "2026-10-22T02:52:41.120245+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 535,
+  "total_real": 536,
   "today": 21,
-  "today_real": 34,
+  "today_real": 35,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T02:45:03.433",
-  "last_management": "2026-10-22T02:40:00.356"
+  "last_screening": "2026-10-22T02:50:01.956",
+  "last_management": "2026-10-22T02:50:00.853"
  },
  "log_tail": [
-  "[2026-10-22T02:40:00.356Z] [CRON] Starting management cycle",
-  "[2026-10-22T02:40:00.953Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T02:40:01.511Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T02:40:01.511Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T02:40:03.457Z] [SCREENING] Bot-holder filter: dropped Normie-SOL \u2014 bots 31.85% > 30%",
   "\u26d4 NO DEPLOY",
   "[2026-10-22T02:45:03.341Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T02:45:03.433Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T02:45:03.433Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-22T02:50:00.853Z] [CRON] Starting management cycle",
+  "[2026-10-22T02:50:01.466Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T02:50:01.956Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T02:50:01.956Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

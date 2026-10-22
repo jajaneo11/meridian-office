@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T19:12:45.192032+00:00",
+ "generated_at": "2026-10-22T19:17:46.371382+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 67
+  "decisions_mentioning": 66
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 732,
+  "total_real": 733,
   "today": 100,
-  "today_real": 231,
+  "today_real": 232,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T19:15:56.676Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE onboard-SOL WHY SKIPPED The system blocked the deploy due to fee/active-TVL ratio (0.000015%) being below the configured threshold (0.005%), despite strong candidate metrics. Subsequent candidates could not be deployed in this se"
+   },
    {
     "ts": "2026-10-22T19:10:15.068Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED OTC-SOL had 2 smart wallets and strong fee volume, but deploy failed due to fee/active-TVL ratio being below minimum threshold. Additionally, the wallet currently shows 0 SOL balance which blocks all further d"
-   },
-   {
-    "ts": "2026-10-22T17:55:35.201Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- BTC-SOL: bot holders 58.72% > 30%"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "19:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T19:10:01.562",
+  "last_screening": "2026-10-22T19:15:04.155",
   "last_management": "2026-10-22T19:10:00.431"
  },
  "log_tail": [
-  "[2026-10-22T19:05:19.195Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T19:05:21.562Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
-  "[2026-10-22T19:05:21.562Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.60% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T19:10:00.431Z] [CRON] Starting management cycle",
-  "[2026-10-22T19:10:01.055Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T19:10:01.562Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T19:10:01.562Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T19:10:03.983Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T19:15:04.038Z] [CRON] [Opportunity] Pepper-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T19:15:04.155Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T19:15:04.156Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T19:15:06.719Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.73% > 30%",
+  "[2026-10-22T19:15:06.719Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

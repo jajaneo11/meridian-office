@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T12:32:38.303782+00:00",
+ "generated_at": "2026-10-22T12:37:38.887910+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 69
+  "decisions_mentioning": 68
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 652,
+  "total_real": 653,
   "today": 100,
-  "today_real": 151,
+  "today_real": 152,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T12:35:32.721Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Insufficient wallet balance. Required 0.5 SOL deploy but wallet shows 0 SOL. Without funds, no liquidity position can be opened regardless of pool quality. REJECTED PANGEA-SOL (no capital) PHP-SOL (no capit"
+   },
    {
     "ts": "2026-10-22T12:20:33.392Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED PANGEA-SOL was blocked due to low fee/TVL ratio (0.0019 < 0.005%). The retry for PHP-SOL failed due to session deployment limit. Both were strong organic candidates but the safety rules prevented execution. RE"
-   },
-   {
-    "ts": "2026-10-22T11:06:04.848Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (or KWH-SOL) WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient funds to deploy. Even if funds were available, both top candidates lack active smart wallet positions and have narratives still generating. REJECTED - KWH-S"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "12:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T12:30:01.553",
+  "last_screening": "2026-10-22T12:35:19.500",
   "last_management": "2026-10-22T12:30:00.937"
  },
  "log_tail": [
-  "[2026-10-22T12:27:49.990Z] [CRON] [Opportunity] PANGEA-SOL degen 84.8 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T12:27:50.142Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T12:27:50.142Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
   "[2026-10-22T12:30:00.937Z] [CRON] Starting management cycle",
   "[2026-10-22T12:30:01.553Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T12:30:01.553Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T12:30:01.572Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T12:30:01.573Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-22T12:35:19.360Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T12:35:19.500Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T12:35:19.501Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

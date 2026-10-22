@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T09:22:40.127165+00:00",
+ "generated_at": "2026-10-22T09:27:38.647291+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 69
+  "decisions_mentioning": 68
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 614,
-  "today": 74,
-  "today_real": 113,
+  "total_real": 615,
+  "today": 75,
+  "today_real": 114,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T09:26:23.897Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ANTHROPIC-USDC WHY SKIPPED The pool fails the hard bin_step rule: 50 is outside the required 80\u2013125 range. Despite strong fees (5,175 SOL), organic score (85), and healthy holder concentration, the bin configuration does not meet"
+   },
    {
     "ts": "2026-10-22T09:20:27.725Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED No available SOL balance to deploy. The wallet has 0 SOL remaining after prior trades. REJECTED OTC-SOL (0 SOL balance) PHP-SOL (0 SOL balance)"
-   },
-   {
-    "ts": "2026-10-22T07:40:08.524Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED Wallet balance is 0 SOL; unable to deploy the required 0.5 SOL. No liquidity positions are currently active. REJECTED ANTHROPIC-USDC (bin_step too low) PANGEA-USDC (very new) PHP-SOL (volatile, price drop) Po"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "09:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T09:20:01.694",
+  "last_screening": "2026-10-22T09:26:18.550",
   "last_management": "2026-10-22T09:20:00.541"
  },
  "log_tail": [
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T09:15:04.375Z] [CRON] [Opportunity] LUKE-SOL degen 99.2 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T09:15:04.552Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T09:15:04.553Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\ud83d\ude80 DEPLOYED",
   "[2026-10-22T09:20:00.541Z] [CRON] Starting management cycle",
   "[2026-10-22T09:20:01.196Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T09:20:01.694Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T09:20:01.695Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T09:26:18.449Z] [CRON] [Opportunity] ANTHROPIC-USDC degen 41.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T09:26:18.550Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T09:26:18.550Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

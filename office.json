@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T00:37:41.384034+00:00",
+ "generated_at": "2026-10-22T00:59:36.394675+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 35,
+  "active_24h": 33,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 65
+  "decisions_mentioning": 66
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 509,
-  "today": 6,
-  "today_real": 8,
+  "total_real": 513,
+  "today": 9,
+  "today_real": 12,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,30 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T00:56:33.562Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL (HmNQrpfMZLmqvsP1JAf9beHBDkW1wEZ1By4Azx7YCcmm) WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient funds to deploy the required 0.5 SOL. Additionally, all candidates share identical audit scores and organic ratings, with"
+   },
+   {
+    "ts": "2026-10-22T00:50:23.920Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL (0.0160) WHY SKIPPED Wallet balance is zero; deployed deployment requires 0.5 SOL in capital. REJECTED CYBER-SOL: Insufficient funds for deployment (wallet balance = 0 SOL)"
+   },
+   {
+    "ts": "2026-10-22T00:40:27.095Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL was the strongest pool (smart wallet Degen #9, high organic 81, bin step 100) but was blocked at deploy time because the pool's fee/active-TVL ratio was below the configured minimum of 0.005%. Th"
+   },
    {
     "ts": "2026-10-22T00:36:20.130Z",
     "type": "no_deploy",
@@ -151,30 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The deployment was executed in DRY RUN mode for testing purposes. No on-chain transaction was sent. REJECTED PANGEA-SOL (dry run, simulated) CYBER-SOL (smart wallet present but price crash risk) Note: This "
-   },
-   {
-    "ts": "2026-10-21T23:43:57.942Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry due to technical error. BEST LOOKING CANDIDATE CYBER-SOL (HmNQrpfMZLmqvsP1JAf9beHBDkW1wEZ1By4Azx7YCcmm) WHY SKIPPED Deploy failed during validation step. The SDK rejected the configuration before any on-chain execution. This pool had strong signals (sma"
-   },
-   {
-    "ts": "2026-10-21T23:41:48.751Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL (HmNQrpfMZLmqvsP1JAf9beHBDkW1wEZ1By4Azx7YCcmm) WHY SKIPPED The only high-conviction candidate failed on-chain due to pool not found error. Smart wallet presence and high fee/TVL were strong, but deployment infrastructur"
-   },
-   {
-    "ts": "2026-10-21T23:14:49.152Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Zero SOL balance in wallet prevents any deployment. Even though this pool had strong signals (2 smart wallets, highest fees), it cannot be funded. The deploym"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "00:00",
-    "count": 6
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T00:36:04.051",
-  "last_management": "2026-10-22T00:30:00.353"
+  "last_screening": "2026-10-22T00:56:18.157",
+  "last_management": "2026-10-22T00:50:00.340"
  },
  "log_tail": [
-  "[2026-10-22T00:30:00.353Z] [CRON] Starting management cycle",
-  "[2026-10-22T00:30:00.876Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T00:30:00.877Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T00:30:00.908Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T00:30:00.908Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T00:50:00.340Z] [CRON] Starting management cycle",
+  "[2026-10-22T00:50:00.881Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T00:50:01.379Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T00:50:01.379Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
-  "[2026-10-22T00:36:03.907Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T00:36:04.051Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T00:36:04.051Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T00:56:18.059Z] [CRON] [Opportunity] CYBER-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T00:56:18.157Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T00:56:18.157Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-21T01:00:00.719Z"

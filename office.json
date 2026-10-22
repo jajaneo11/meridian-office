@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T03:57:40.897076+00:00",
+ "generated_at": "2026-10-22T04:02:42.110938+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 549,
+  "total_real": 550,
   "today": 31,
-  "today_real": 48,
+  "today_real": 49,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "16:00",
-    "count": 9
-   },
-   {
     "hour": "17:00",
     "count": 9
    },
@@ -227,24 +223,28 @@
    {
     "hour": "03:00",
     "count": 9
+   },
+   {
+    "hour": "04:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T03:56:18.380",
-  "last_management": "2026-10-22T03:50:00.053"
+  "last_screening": "2026-10-22T04:00:01.090",
+  "last_management": "2026-10-22T04:00:00.518"
  },
  "log_tail": [
-  "[2026-10-22T03:50:01.118Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T03:50:01.118Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T03:50:03.188Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 37.59% > 30%",
-  "[2026-10-22T03:50:03.188Z] [SCREENING] Bot-holder filter: dropped Au-USDT \u2014 bots 37.59% > 30%",
-  "[2026-10-22T03:50:03.189Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.23% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T03:56:18.268Z] [CRON] [Opportunity] RETAIL-SOL degen 99.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T03:56:18.380Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T03:56:18.380Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED [DRY RUN]"
+  "\ud83d\ude80 DEPLOYED [DRY RUN]",
+  "[2026-10-22T04:00:00.518Z] [CRON] Starting management cycle",
+  "[2026-10-22T04:00:01.090Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T04:00:01.090Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T04:00:01.099Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T04:00:01.099Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T04:00:03.312Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 37.31% > 30%",
+  "[2026-10-22T04:00:03.312Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.22% > 30%",
+  "\ud83d\ude80 DEPLOYED",
+  "This pool had the highest fee/TVL ratio (1.26%) among all candidates, indicating strong fee efficiency. Bins below (63) was calculated from volatility and falls within the 35-69 range. No smart wallets were present, but fee metrics were superior to alternatives like PHP-SOL and GTA6-SOL. DRY_RUN confirmed no errors."
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

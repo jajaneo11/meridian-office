@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T04:42:41.915905+00:00",
+ "generated_at": "2026-10-22T04:47:38.528409+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 63
+  "decisions_mentioning": 64
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 558,
-  "today": 35,
-  "today_real": 57,
+  "total_real": 559,
+  "today": 36,
+  "today_real": 58,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T04:45:22.430Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED First deploy attempt failed with pool verification error. System prevented retry attempts this session. This pool had smart wallet presence and solid organic score (82) but couldn't be validated on-chain. R"
+   },
    {
     "ts": "2026-10-22T04:41:04.792Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Au-SOL: bot holders 40.79% > 30%"
-   },
-   {
-    "ts": "2026-10-22T03:15:19.965Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Available wallet balance is 0 SOL, making the 0.5 SOL deploy impossible. PHP-SOL was the strongest candidate by smart wallet presence (2) and organic score (81). REJECTED RETAIL-SOL (no smart wallets) PANGEA-S"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "04:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T04:40:01.959",
+  "last_screening": "2026-10-22T04:45:04.770",
   "last_management": "2026-10-22T04:40:00.843"
  },
  "log_tail": [
-  "[2026-10-22T04:35:19.782Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T04:35:22.939Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 44.39% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T04:40:00.843Z] [CRON] Starting management cycle",
-  "[2026-10-22T04:40:01.472Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T04:40:01.959Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T04:40:01.960Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T04:40:04.654Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 41.32% > 30%",
   "[2026-10-22T04:40:04.654Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 31.00% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T04:45:04.690Z] [CRON] [Opportunity] SURY-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T04:45:04.770Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T04:45:04.770Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T04:45:07.210Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 41.76% > 30%",
+  "[2026-10-22T04:45:07.210Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 30.84% > 30%",
+  "[2026-10-22T04:45:07.210Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.72% > 30%",
+  "\u26d4 NO DEPLOY",
+  "First deploy attempt failed with pool verification error. System prevented retry attempts this session. This pool had smart wallet presence and solid organic score (82) but couldn't be validated on-chain."
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

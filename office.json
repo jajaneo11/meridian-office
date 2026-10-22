@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T16:08:02.113475+00:00",
+ "generated_at": "2026-10-22T16:12:57.503208+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 695,
+  "total_real": 696,
   "today": 100,
-  "today_real": 194,
+  "today_real": 195,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T16:05:19.010",
-  "last_management": "2026-10-22T16:00:00.737"
+  "last_screening": "2026-10-22T16:10:01.340",
+  "last_management": "2026-10-22T16:10:00.297"
  },
  "log_tail": [
-  "[2026-10-22T16:00:01.358Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T16:00:01.430Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T16:00:01.431Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-22T16:00:07.468Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.80% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T16:05:18.874Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T16:05:19.010Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T16:05:19.010Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T16:05:21.909Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.79% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T16:10:00.297Z] [CRON] Starting management cycle",
+  "[2026-10-22T16:10:00.849Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T16:10:01.340Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T16:10:01.340Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T16:10:04.353Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.97% > 30%",
+  "\ud83d\ude80 DEPLOYED (DRY_RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

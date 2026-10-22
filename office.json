@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T19:57:41.682498+00:00",
+ "generated_at": "2026-10-22T20:02:39.815147+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 67
+  "decisions_mentioning": 68
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 741,
+  "total_real": 742,
   "today": 100,
-  "today_real": 240,
+  "today_real": 241,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T20:00:54.576Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Wallet balance is 0 SOL (must have at least 0.5 SOL to deploy). Even though this pool had strong signals (2 smart wallets present, fee > 30 SOL, bin step 125)"
+   },
    {
     "ts": "2026-10-22T19:50:11.624Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL WHY SKIPPED All candidates were evaluated; Pepper-SOL had the strongest fundamentals (smart wallets, fee/TVL, volume), but the deploy_position tool executed in DRY_RUN mode, so no transaction was submitted. REJECTED Pe"
-   },
-   {
-    "ts": "2026-10-22T18:50:51.841Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Deployment verification error blocked the entry despite strong signals. The pool verification thresholds could not be confirmed during the transaction attempt. REJECTED Chrome-SOL: Fees 26.6 SOL below 30 SOL t"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "08:00",
-    "count": 6
-   },
    {
     "hour": "09:00",
     "count": 9
@@ -227,24 +223,28 @@
    {
     "hour": "19:00",
     "count": 11
+   },
+   {
+    "hour": "20:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T19:55:34.278",
-  "last_management": "2026-10-22T19:50:00.575"
+  "last_screening": "2026-10-22T20:00:00.673",
+  "last_management": "2026-10-22T20:00:00.026"
  },
  "log_tail": [
-  "[2026-10-22T19:50:01.810Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T19:50:01.810Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T19:50:04.171Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.97% > 30%",
-  "[2026-10-22T19:50:04.171Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.94% > 30%",
-  "[2026-10-22T19:50:11.136Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T19:55:34.212Z] [CRON] [Opportunity] PANGEA-SOL degen 46.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T19:55:34.278Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T19:55:34.278Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T20:00:00.026Z] [CRON] Starting management cycle",
+  "[2026-10-22T20:00:00.622Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T20:00:00.622Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T20:00:00.673Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T20:00:00.673Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T20:00:04.588Z] [SCREENING] PVP guard: McRib-SOL has active rival The McRib Indicator (8idEA8Qo)",
+  "[2026-10-22T20:00:06.388Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 37.14% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

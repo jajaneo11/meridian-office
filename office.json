@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T23:52:43.124941+00:00",
+ "generated_at": "2026-10-22T23:57:40.560491+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 788,
+  "total_real": 789,
   "today": 100,
-  "today_real": 287,
+  "today_real": 288,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T23:55:41.334Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE ANDURIL-USDC (Gug9Trr...) WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available to deploy. Even with funds, this token lacks a real narrative and has no smart wallets backing it, which is risky despite the healthy fees_sol s"
+   },
    {
     "ts": "2026-10-22T23:50:16.712Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The deployment attempt was blocked by the session limit (only one deploy attempt allowed per cycle). PANGEA-SOL had the strongest fundamentals: highest organic score (80), one smart wallet present for confi"
-   },
-   {
-    "ts": "2026-10-22T22:10:29.888Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Wallet balance shows 0.000 SOL available, so no capital exists to fund a 0.5 SOL deployment. Even if McRib's metrics are strongest among candidates, execution is impossible without funds. REJECTED McRib-SOL,"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "23:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T23:50:01.322",
+  "last_screening": "2026-10-22T23:55:34.195",
   "last_management": "2026-10-22T23:50:00.335"
  },
  "log_tail": [
-  "[2026-10-22T23:45:06.732Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.92% > 30%",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
-  "[2026-10-22T23:50:00.335Z] [CRON] Starting management cycle",
-  "[2026-10-22T23:50:00.833Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T23:50:01.322Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T23:50:01.323Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T23:50:03.565Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 31.24% > 30%",
   "[2026-10-22T23:50:03.565Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.91% > 30%",
   "[2026-10-22T23:50:03.565Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 38.58% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T23:55:34.086Z] [CRON] [Opportunity] ANDURIL-USDC degen 93.1 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T23:55:34.195Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T23:55:34.195Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

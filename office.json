@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T19:17:46.371382+00:00",
+ "generated_at": "2026-10-22T19:22:42.186854+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 733,
+  "total_real": 734,
   "today": 100,
-  "today_real": 232,
+  "today_real": 233,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T19:20:16.884Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED DRY_RUN mode is enabled \u2014 no transaction can be sent. While PANGEA-SOL had strong conviction (2 smart wallets present, valid volatility and fee thresholds), the system cannot execute on-chain actions in dry"
+   },
    {
     "ts": "2026-10-22T19:15:56.676Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL WHY SKIPPED Wallet balance is 0 SOL; insufficient capital for 0.5 SOL deployment. Pepper had strong fee/TVL and a smart wallet signal, but we cannot proceed without funds. REJECTED - ANTHROPIC-USDC (bin_step < 80) - JE"
-   },
-   {
-    "ts": "2026-10-22T18:00:49.206Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED OTC-SOL had 2 smart wallets and strong fee volume, but deploy failed due to fee/active-TVL ratio being below minimum threshold. Additionally, the wallet currently shows 0 SOL balance which blocks all further d"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "19:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T19:15:04.155",
-  "last_management": "2026-10-22T19:10:00.431"
+  "last_screening": "2026-10-22T19:20:02.048",
+  "last_management": "2026-10-22T19:20:00.940"
  },
  "log_tail": [
-  "[2026-10-22T19:10:01.562Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T19:10:01.562Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T19:10:03.983Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T19:15:04.038Z] [CRON] [Opportunity] Pepper-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T19:15:04.155Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T19:15:04.156Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T19:15:06.719Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.73% > 30%",
   "[2026-10-22T19:15:06.719Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T19:20:00.940Z] [CRON] Starting management cycle",
+  "[2026-10-22T19:20:01.468Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T19:20:02.048Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T19:20:02.049Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T19:20:05.835Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.27% > 30%",
+  "[2026-10-22T19:20:05.835Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

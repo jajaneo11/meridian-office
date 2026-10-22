@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T14:02:42.641519+00:00",
+ "generated_at": "2026-10-22T14:07:41.910141+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 670,
+  "total_real": 671,
   "today": 100,
-  "today_real": 169,
+  "today_real": 170,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T14:00:01.029",
+  "last_screening": "2026-10-22T14:06:04.447",
   "last_management": "2026-10-22T14:00:00.431"
  },
  "log_tail": [
-  "[2026-10-22T13:55:34.367Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T13:55:35.501Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 62.88% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T14:00:00.431Z] [CRON] Starting management cycle",
   "[2026-10-22T14:00:01.029Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T14:00:01.030Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T14:00:01.044Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T14:00:01.044Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T14:00:03.946Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 60.78% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T14:06:04.273Z] [CRON] [Opportunity] LASTCALL-SOL degen 92.2 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T14:06:04.447Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T14:06:04.452Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

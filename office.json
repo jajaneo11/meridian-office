@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T15:02:42.086377+00:00",
+ "generated_at": "2026-10-22T15:07:46.572456+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 682,
+  "total_real": 683,
   "today": 100,
-  "today_real": 181,
+  "today_real": 182,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T15:06:58.593Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DOPE-SOL WHY SKIPPED No clear narrative signal and zero smart wallets tracking this pool. While metrics are acceptable (fees, organic score), we require stronger conviction before deploying capital. REJECTED DOPE-SOL: weak narrat"
+   },
    {
     "ts": "2026-10-22T15:00:23.568Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED No SOL available in wallet (0.000 balance). Cannot deploy 0.5 SOL with insufficient funds. REJECTED PANGEA-SOL (smart wallet signal, but 0 SOL balance) PHP-SOL (high fee/tvl, but 0 SOL balance) ENA-USDC (hi"
-   },
-   {
-    "ts": "2026-10-22T13:55:41.016Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The system returned a dry-run response without executing the on-chain transaction, and no range_coverage percentages were provided to populate the deploy report. Without confirmed transaction completion and"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "15:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T15:00:01.342",
+  "last_screening": "2026-10-22T15:06:49.732",
   "last_management": "2026-10-22T15:00:00.710"
  },
  "log_tail": [
-  "[2026-10-22T14:55:34.167Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T14:55:35.259Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.15% > 30%",
-  "[2026-10-22T15:00:00.710Z] [CRON] Starting management cycle",
-  "[2026-10-22T15:00:01.342Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T15:00:01.346Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T15:00:01.365Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T15:00:01.370Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T15:00:04.974Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.24% > 30%",
   "[2026-10-22T15:00:22.785Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T15:06:49.486Z] [CRON] [Opportunity] DOPE-SOL degen 44.1 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T15:06:49.732Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T15:06:49.732Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

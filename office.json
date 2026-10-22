@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T01:17:59.546654+00:00",
+ "generated_at": "2026-10-22T01:23:40.209297+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 30,
+  "active_24h": 29,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 517,
+  "total_real": 518,
   "today": 13,
-  "today_real": 16,
+  "today_real": 17,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T01:15:03.470",
-  "last_management": "2026-10-22T01:10:00.357"
+  "last_screening": "2026-10-22T01:20:02.173",
+  "last_management": "2026-10-22T01:20:00.935"
  },
  "log_tail": [
-  "[2026-10-22T01:10:01.393Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T01:10:36.093Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 5\",\"parameters\":{\"retry_after\":5}}",
-  "[2026-10-22T01:10:42.048Z] [TELEGRAM_ERROR] sendChatAction 502: {\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
-  "[2026-10-22T01:10:46.228Z] [TELEGRAM_ERROR] sendChatAction 502: {\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T01:10:46.809Z] [TELEGRAM_ERROR] editMessageText 502: {\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
   "[2026-10-22T01:15:03.346Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T01:15:03.470Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T01:15:03.470Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T01:20:00.935Z] [CRON] Starting management cycle",
+  "[2026-10-22T01:20:01.640Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T01:20:02.173Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T01:20:02.173Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T18:37:50.395268+00:00",
+ "generated_at": "2026-10-22T18:42:39.820313+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 65
+  "decisions_mentioning": 66
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 725,
+  "total_real": 726,
   "today": 100,
-  "today_real": 224,
+  "today_real": 225,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T18:41:07.163Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL (blocked on fee/active-TVL) / Pepper-SOL (deployment attempted, not retryable) WHY SKIPPED PHP-SOL was blocked due to fee/active-TVL ratio below system minimum. Pepper-SOL was the next best (smart wallet present, strong 1"
+   },
    {
     "ts": "2026-10-22T18:35:52.833Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA passed all static checks (high organic score 85, smart wallets present, strong fees), but the live on-chain check blocked it: the fee/active-TVL ratio was 0.0003% vs the 0.005% minimum. Dynamic activ"
-   },
-   {
-    "ts": "2026-10-22T17:10:48.626Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance shows 0 SOL available. Cannot deploy the required 0.5 SOL position without available funds. This is a hard constraint that cannot be overridden. REJECTED PANGEA-SOL: 0 SOL balance LUKE-SOL: 0"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "18:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T18:35:19.398",
-  "last_management": "2026-10-22T18:30:00.343"
+  "last_screening": "2026-10-22T18:40:02.058",
+  "last_management": "2026-10-22T18:40:00.827"
  },
  "log_tail": [
-  "[2026-10-22T18:30:04.700Z] [SCREENING] Bot-holder filter: dropped CHROME-SOL \u2014 bots 32.38% > 30%",
-  "[2026-10-22T18:30:04.700Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.78% > 30%",
-  "[2026-10-22T18:30:04.700Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.25% > 30%",
-  "[2026-10-22T18:30:04.700Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.45% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T18:35:19.265Z] [CRON] [Opportunity] CHROME-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T18:35:19.398Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T18:35:19.398Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T18:35:22.015Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.77% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T18:40:00.827Z] [CRON] Starting management cycle",
+  "[2026-10-22T18:40:01.446Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T18:40:02.058Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T18:40:02.058Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T18:40:04.481Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.74% > 30%",
+  "[2026-10-22T18:40:04.481Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.45% > 30%",
+  "[2026-10-22T18:40:04.481Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.34% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

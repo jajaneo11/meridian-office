@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T05:22:43.394496+00:00",
+ "generated_at": "2026-10-22T05:27:38.942949+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 14,
+  "active_24h": 12,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 62
+  "decisions_mentioning": 63
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 566,
-  "today": 40,
-  "today_real": 65,
+  "total_real": 567,
+  "today": 41,
+  "today_real": 66,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T05:26:57.391Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED My wallet balance is 0 SOL, so I cannot fund any positions. Even if I had capital, both pools lack narratives and smart wallets, which reduces conviction. REJECTED PHP-SOL (no capital), PANGEA-USDT (no capital"
+   },
    {
     "ts": "2026-10-22T05:10:20.271Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL had strong conviction with a smart wallet present and the highest organic score (83). However, the system rejected the deploy because the pool's fee/active-TVL ratio was 0%, below the required 0."
-   },
-   {
-    "ts": "2026-10-22T03:40:17.101Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RETAIL-SOL (9UTJ...) WHY SKIPPED All pools lack concrete narrative and have zero smart wallet presence, violating the core conviction rule. Additionally, wallet SOL balance is 0 which prevents any on-chain transaction. REJECTED R"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "05:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T05:20:01.913",
+  "last_screening": "2026-10-22T05:26:18.435",
   "last_management": "2026-10-22T05:20:00.796"
  },
  "log_tail": [
-  "[2026-10-22T05:15:03.717Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T05:15:06.834Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 37.86% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T05:20:00.796Z] [CRON] Starting management cycle",
   "[2026-10-22T05:20:01.394Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T05:20:01.913Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T05:20:01.914Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T05:20:04.049Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 37.82% > 30%",
   "[2026-10-22T05:20:04.049Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 31.57% > 30%",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-22T05:26:18.338Z] [CRON] [Opportunity] PHP-SOL degen 66.3 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T05:26:18.435Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T05:26:18.435Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

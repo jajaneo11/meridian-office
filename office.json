@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T14:27:41.157010+00:00",
+ "generated_at": "2026-10-22T14:32:41.889440+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 675,
+  "total_real": 676,
   "today": 100,
-  "today_real": 174,
+  "today_real": 175,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T14:30:38.915Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED First deploy was rejected due to active fee/TVL ratio below system threshold. Subsequent attempts were blocked by session retry limits. REJECTED PANGEA-SOL \u2013 Blocked by active fee/TVL ratio check LUKE-SOL \u2013"
+   },
    {
     "ts": "2026-10-22T14:26:26.389Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0 SOL; cannot fund the required 0.5 SOL deploy. All other candidates were disqualified due to lack of smart wallet signals or bin-step violations (EMBER, CLAUDIA duplicate). REJECTED LUKE-SO"
-   },
-   {
-    "ts": "2026-10-22T12:55:57.411Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-USDC WHY SKIPPED Wallet balance shows 0 SOL. Without deployable capital, I cannot open a position despite the pool's solid fundamentals (high fees, clean audit). REJECTED CYBER-USDC (wallet empty) CYBER-SOL (wallet empty)"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "14:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T14:26:18.978",
-  "last_management": "2026-10-22T14:20:00.532"
+  "last_screening": "2026-10-22T14:30:00.850",
+  "last_management": "2026-10-22T14:30:00.242"
  },
  "log_tail": [
-  "[2026-10-22T14:20:01.648Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T14:20:04.429Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 48.82% > 30%",
-  "[2026-10-22T14:20:40.987Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-22T14:20:42.291Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T14:26:18.816Z] [CRON] [Opportunity] BTC-SOL degen 98.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T14:26:18.978Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T14:26:18.978Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T14:26:20.862Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.82% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T14:30:00.242Z] [CRON] Starting management cycle",
+  "[2026-10-22T14:30:00.850Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T14:30:00.850Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T14:30:00.904Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T14:30:00.904Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T14:30:03.892Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.81% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

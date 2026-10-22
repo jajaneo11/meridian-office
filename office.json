@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T04:57:43.126293+00:00",
+ "generated_at": "2026-10-22T05:02:39.806019+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 15,
+  "active_24h": 14,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 64
+  "decisions_mentioning": 63
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 561,
-  "today": 37,
-  "today_real": 60,
+  "total_real": 562,
+  "today": 38,
+  "today_real": 61,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T05:01:09.969Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Deploy attempt did not succeed",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-22T04:51:15.916Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Smart wallets were present, but the deploy failed due to active fee/TVL ratio below minimum threshold (0% vs 0.005%). Without active fee generation, providing liquidity would be inefficient. Other pools lac"
-   },
-   {
-    "ts": "2026-10-22T03:25:43.809Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Smart wallets present and high organic score (83) made PANGEA-SOL the strongest candidate. However, the deploy tool blocked the requested range as being below the 35-bin minimum, preventing execution. Alter"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "17:00",
-    "count": 9
-   },
    {
     "hour": "18:00",
     "count": 8
@@ -227,24 +223,28 @@
    {
     "hour": "04:00",
     "count": 6
+   },
+   {
+    "hour": "05:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T04:56:18.756",
-  "last_management": "2026-10-22T04:50:00.288"
+  "last_screening": "2026-10-22T05:00:01.332",
+  "last_management": "2026-10-22T05:00:00.776"
  },
  "log_tail": [
-  "[2026-10-22T04:50:00.886Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T04:50:01.411Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T04:50:01.412Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T04:50:05.037Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 39.84% > 30%",
-  "[2026-10-22T04:50:05.037Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 30.67% > 30%",
-  "[2026-10-22T04:56:18.676Z] [CRON] [Opportunity] simulator-SOL degen 93.5 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T04:56:18.756Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T04:56:18.756Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T04:56:21.143Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.46% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T05:00:00.776Z] [CRON] Starting management cycle",
+  "[2026-10-22T05:00:01.332Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T05:00:01.332Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T05:00:01.423Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T05:00:01.423Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T05:00:04.014Z] [SCREENING] Bot-holder filter: dropped SURY-SOL \u2014 bots 38.99% > 30%",
+  "[2026-10-22T05:00:04.015Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.25% > 30%",
+  "[2026-10-22T05:01:08.751Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

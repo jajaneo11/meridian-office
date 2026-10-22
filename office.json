@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T14:42:40.392161+00:00",
+ "generated_at": "2026-10-22T14:47:43.292274+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 678,
+  "total_real": 679,
   "today": 100,
-  "today_real": 177,
+  "today_real": 178,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T14:46:44.579Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-22T14:40:39.438Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL WHY SKIPPED The top candidate (CYBER-SOL) with smart wallets, high organic score, and positive momentum blocked during deployment due to a pool validation error. The other strong candidate (SHAV-SOL) also failed verific"
-   },
-   {
-    "ts": "2026-10-22T13:11:03.798Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL WHY SKIPPED CYBER-SOL had the best fundamentals (smart wallets, highest fee/TVL, strong 1h momentum) but was blocked by the system's fee/active-TVL ratio check. The CYBER pools appear to have artificially low active TVL"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "14:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T14:40:01.980",
+  "last_screening": "2026-10-22T14:45:04.084",
   "last_management": "2026-10-22T14:40:00.689"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T14:40:00.689Z] [CRON] Starting management cycle",
-  "[2026-10-22T14:40:01.443Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T14:40:01.980Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T14:40:01.981Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T14:40:05.044Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.10% > 30%",
   "[2026-10-22T14:40:34.920Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-22T14:40:37.556Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "[2026-10-22T14:40:38.620Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T14:45:03.931Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T14:45:04.084Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T14:45:04.084Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T14:45:06.758Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 49.16% > 30%",
+  "[2026-10-22T14:45:06.758Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.09% > 30%"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

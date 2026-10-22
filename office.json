@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T12:47:40.678085+00:00",
+ "generated_at": "2026-10-22T12:52:45.668629+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 655,
+  "total_real": 656,
   "today": 100,
-  "today_real": 154,
+  "today_real": 155,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T12:51:03.722Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL was the strongest candidate with a smart wallet present, high fee/TVL (0.1537), and solid volume ($30k+), but deploy_position blocked it because the pool's active fee-TVL ratio was 0%, below the "
+   },
    {
     "ts": "2026-10-22T12:46:33.700Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL. Cannot deploy 0.5 SOL with insufficient funds. Pools pass fees and bin_step checks but lack capital for execution. REJECTED LUKE-SOL (smart wallets present but no funds) KWH-SOL (hi"
-   },
-   {
-    "ts": "2026-10-22T11:26:26.679Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED LUKE-SOL passed all screens with smart wallet presence and positive momentum, but the deploy_position executed in DRY_RUN mode. No on-chain transaction was sent, so no actual position was created. REJECTED LU"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "12:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T12:45:04.998",
-  "last_management": "2026-10-22T12:40:00.495"
+  "last_screening": "2026-10-22T12:50:01.151",
+  "last_management": "2026-10-22T12:50:00.027"
  },
  "log_tail": [
-  "[2026-10-22T12:40:06.600Z] [ERROR] Agent loop error at step 0: 429 Rate limit reached: output token limit exceeded",
-  "[2026-10-22T12:40:45.253Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-22T12:40:46.215Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T12:45:04.849Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T12:45:04.998Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T12:45:04.998Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T12:45:30.138Z] [ERROR] Agent loop error at step 5: 429 Rate limit reached: output token limit exceeded",
   "[2026-10-22T12:46:02.322Z] [ERROR] Agent loop error at step 6: 429 Rate limit reached: output token limit exceeded",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T12:50:00.027Z] [CRON] Starting management cycle",
+  "[2026-10-22T12:50:00.597Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T12:50:01.151Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T12:50:01.152Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T12:50:10.920Z] [ERROR] Agent loop error at step 0: 429 Rate limit reached: output token limit exceeded",
+  "[2026-10-22T12:50:54.895Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

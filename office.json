@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T11:12:37.858195+00:00",
+ "generated_at": "2026-10-22T11:17:43.386775+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 636,
+  "total_real": 637,
   "today": 92,
-  "today_real": 135,
+  "today_real": 136,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T11:10:01.942",
+  "last_screening": "2026-10-22T11:15:03.795",
   "last_management": "2026-10-22T11:10:00.733"
  },
  "log_tail": [
-  "[2026-10-22T11:05:18.833Z] [CRON] [Opportunity] WEFT-SOL degen 98.6 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T11:05:18.943Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T11:05:18.943Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T11:10:00.733Z] [CRON] Starting management cycle",
   "[2026-10-22T11:10:01.352Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T11:10:01.942Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T11:10:01.942Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T11:10:30.368Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T11:15:03.669Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T11:15:03.795Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T11:15:03.795Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

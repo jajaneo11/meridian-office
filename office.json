@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T21:57:43.117811+00:00",
+ "generated_at": "2026-10-22T22:02:40.542458+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 765,
+  "total_real": 766,
   "today": 100,
-  "today_real": 264,
+  "today_real": 265,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T22:00:36.655Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Failed server-side validation (fee/active-TVL ratio check). Retry blocked after first attempt. The pool met all manual screening rules (smart wallets, fee_tvl, bins) but was rejected by platform constraints."
+   },
    {
     "ts": "2026-10-22T21:55:41.645Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED The deploy was blocked due to a fee/active-TVL ratio constraint despite screening data showing adequate fees. This indicates an on-chain discrepancy where the active bin is not generating sufficient fee data f"
-   },
-   {
-    "ts": "2026-10-22T20:25:48.637Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry due to test mode. BEST LOOKING CANDIDATE swordcat-SOL (2YaGc2iYZt44B5zn5Tvk59APbAn51xGekzNQAPF2PGn1) WHY SKIPPED DRY_RUN mode prevented actual on-chain deployment. Tool confirmed position parameters are valid (0.5 SOL, bid_ask strategy, 49 bins below ac"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "10:00",
-    "count": 8
-   },
    {
     "hour": "11:00",
     "count": 8
@@ -227,23 +223,27 @@
    {
     "hour": "21:00",
     "count": 5
+   },
+   {
+    "hour": "22:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T21:55:34.024",
-  "last_management": "2026-10-22T21:50:00.562"
+  "last_screening": "2026-10-22T22:00:00.674",
+  "last_management": "2026-10-22T22:00:00.079"
  },
  "log_tail": [
-  "[2026-10-22T21:50:00.562Z] [CRON] Starting management cycle",
-  "[2026-10-22T21:50:01.112Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T21:50:01.670Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T21:50:01.670Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T21:50:04.106Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T21:55:33.945Z] [CRON] [Opportunity] SAPLING-SOL degen 88.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T21:55:34.024Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T21:55:34.024Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T22:00:00.079Z] [CRON] Starting management cycle",
+  "[2026-10-22T22:00:00.674Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T22:00:00.676Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T22:00:00.719Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T22:00:00.726Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-22T22:00:03.509Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.72% > 30%",
+  "[2026-10-22T22:00:03.509Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.95% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T03:37:42.963343+00:00",
+ "generated_at": "2026-10-22T03:42:41.527344+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 20,
+  "active_24h": 19,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 63
+  "decisions_mentioning": 64
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 545,
-  "today": 28,
-  "today_real": 44,
+  "total_real": 546,
+  "today": 29,
+  "today_real": 45,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T03:40:17.101Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RETAIL-SOL (9UTJ...) WHY SKIPPED All pools lack concrete narrative and have zero smart wallet presence, violating the core conviction rule. Additionally, wallet SOL balance is 0 which prevents any on-chain transaction. REJECTED R"
+   },
    {
     "ts": "2026-10-22T03:35:34.533Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RETAIL-SOL WHY SKIPPED DRY_RUN mode was active, preventing real on-chain transactions. All candidates met hard criteria (fees >30 SOL, valid bin step, positive volatility), but no position could be opened. The system is in dry-ru"
-   },
-   {
-    "ts": "2026-10-22T02:10:24.625Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Deployed in DRY_RUN mode \u2014 no real transaction sent. Selected due to strong smart wallet signal (2 wallets present) and valid bin_step (125), but system didn'"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "03:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T03:35:19.186",
-  "last_management": "2026-10-22T03:30:00.999"
+  "last_screening": "2026-10-22T03:40:01.573",
+  "last_management": "2026-10-22T03:40:00.485"
  },
  "log_tail": [
-  "[2026-10-22T03:30:02.099Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T03:30:02.099Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T03:30:04.519Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 40.19% > 30%",
-  "[2026-10-22T03:30:04.520Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.97% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T03:35:19.098Z] [CRON] [Opportunity] RETAIL-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T03:35:19.186Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T03:35:19.187Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T03:35:21.618Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 41.02% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T03:40:00.485Z] [CRON] Starting management cycle",
+  "[2026-10-22T03:40:01.075Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T03:40:01.573Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T03:40:01.574Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T03:40:03.815Z] [SCREENING] Bot-holder filter: dropped Au-SOL \u2014 bots 39.83% > 30%",
+  "[2026-10-22T03:40:03.815Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 31.36% > 30%",
+  "[2026-10-22T03:40:03.815Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.42% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

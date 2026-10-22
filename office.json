@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T12:22:38.880105+00:00",
+ "generated_at": "2026-10-22T12:32:38.303782+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 650,
+  "total_real": 652,
   "today": 100,
-  "today_real": 149,
+  "today_real": 151,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T12:20:01.271",
-  "last_management": "2026-10-22T12:20:00.480"
+  "last_screening": "2026-10-22T12:30:01.553",
+  "last_management": "2026-10-22T12:30:00.937"
  },
  "log_tail": [
-  "[2026-10-22T12:15:03.953Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T12:15:03.953Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T12:20:00.480Z] [CRON] Starting management cycle",
-  "[2026-10-22T12:20:01.052Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T12:20:01.271Z] [TELEGRAM_ERROR] sendChatAction failed: fetch failed",
-  "[2026-10-22T12:20:01.271Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
-  "[2026-10-22T12:20:01.271Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T12:20:01.279Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "[2026-10-22T12:27:49.990Z] [CRON] [Opportunity] PANGEA-SOL degen 84.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T12:27:50.142Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T12:27:50.142Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-22T12:30:00.937Z] [CRON] Starting management cycle",
+  "[2026-10-22T12:30:01.553Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T12:30:01.553Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T12:30:01.572Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T12:30:01.573Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

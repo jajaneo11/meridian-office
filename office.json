@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T01:23:40.209297+00:00",
+ "generated_at": "2026-10-22T01:43:22.052564+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 29,
+  "active_24h": 27,
   "total_value_usd": 136893,
   "total_activity": 390,
   "top": [
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 518,
+  "total_real": 522,
   "today": 13,
-  "today_real": 17,
+  "today_real": 21,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,19 +231,19 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T01:20:02.173",
-  "last_management": "2026-10-22T01:20:00.935"
+  "last_screening": "2026-10-22T01:40:01.145",
+  "last_management": "2026-10-22T01:40:00.112"
  },
  "log_tail": [
-  "[2026-10-22T01:10:46.809Z] [TELEGRAM_ERROR] editMessageText 502: {\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
-  "[2026-10-22T01:15:03.346Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T01:15:03.470Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T01:15:03.470Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T01:20:00.935Z] [CRON] Starting management cycle",
-  "[2026-10-22T01:20:01.640Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T01:20:02.173Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T01:20:02.173Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T01:38:18.309Z] [CRON] [Opportunity] PHP-SOL degen 99.6 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T01:38:18.440Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T01:38:18.441Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T01:40:00.112Z] [CRON] Starting management cycle",
+  "[2026-10-22T01:40:00.660Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T01:40:01.145Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T01:40:01.145Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T01:40:03.252Z] [SCREENING] Bot-holder filter: dropped MERCURY-SOL \u2014 bots 42.82% > 30%",
   "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

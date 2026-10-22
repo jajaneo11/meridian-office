@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T11:27:42.682629+00:00",
+ "generated_at": "2026-10-22T11:32:39.267490+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 639,
+  "total_real": 640,
   "today": 94,
-  "today_real": 138,
+  "today_real": 139,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T11:26:18.967",
-  "last_management": "2026-10-22T11:20:00.195"
+  "last_screening": "2026-10-22T11:30:01.338",
+  "last_management": "2026-10-22T11:30:00.761"
  },
  "log_tail": [
-  "[2026-10-22T11:20:00.375Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
-  "[2026-10-22T11:20:00.541Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T11:20:01.432Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T11:20:01.432Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T11:20:03.618Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.58% > 30%",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T11:26:18.879Z] [CRON] [Opportunity] WEFT-SOL degen 98.7 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T11:26:18.967Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T11:26:18.968Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T11:30:00.761Z] [CRON] Starting management cycle",
+  "[2026-10-22T11:30:01.338Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T11:30:01.339Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T11:30:01.376Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T11:30:01.376Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

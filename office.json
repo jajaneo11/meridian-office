@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T13:37:40.625489+00:00",
+ "generated_at": "2026-10-22T13:42:49.188813+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 665,
+  "total_real": 666,
   "today": 100,
-  "today_real": 164,
+  "today_real": 165,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T13:35:19.051",
-  "last_management": "2026-10-22T13:30:00.384"
+  "last_screening": "2026-10-22T13:40:01.292",
+  "last_management": "2026-10-22T13:40:00.175"
  },
  "log_tail": [
-  "[2026-10-22T13:30:01.007Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T13:30:01.007Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T13:30:01.054Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T13:30:01.054Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
-  "[2026-10-22T13:35:18.954Z] [CRON] [Opportunity] LUKE-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T13:35:19.051Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T13:35:19.051Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T13:35:21.598Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 65.82% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T13:40:00.175Z] [CRON] Starting management cycle",
+  "[2026-10-22T13:40:00.756Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T13:40:01.292Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T13:40:01.292Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T13:40:04.170Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 65.89% > 30%",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

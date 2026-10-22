@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T12:07:39.877116+00:00",
+ "generated_at": "2026-10-22T12:12:40.421201+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 647,
-  "today": 99,
-  "today_real": 146,
+  "total_real": 648,
+  "today": 100,
+  "today_real": 147,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T12:10:53.859Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0 SOL (required 0.5 SOL for deployment). Even though LUKE-SOL had strong smart wallet signals (2 present), insufficient capital blocks all action. No other candidate can proceed without fund"
+   },
    {
     "ts": "2026-10-22T12:05:38.125Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED Balance is 0 SOL \u2014 insufficient capital to deploy. Additionally, this candidate lacks smart wallet presence and has a generic/near-empty narrative, which are key risk signals. REJECTED Macca-SOL (0 SOL balan"
-   },
-   {
-    "ts": "2026-10-22T10:45:23.358Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is 0 SOL, insufficient for the 0.5 SOL deployment requirement. REJECTED baton-SOL, EMBER-SOL (bin_step out of range) TIB-SOL, LUKE-SOL, CYBER-USDC, STRK-SOL (no smart wallets, weaker conviction)"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "12:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T12:05:18.988",
-  "last_management": "2026-10-22T12:00:00.396"
+  "last_screening": "2026-10-22T12:10:02.208",
+  "last_management": "2026-10-22T12:10:00.899"
  },
  "log_tail": [
-  "[2026-10-22T12:00:00.940Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T12:00:00.941Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T12:00:00.996Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T12:00:00.997Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T12:05:18.872Z] [CRON] [Opportunity] PHP-SOL degen 99.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T12:05:18.988Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T12:05:18.988Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T12:05:21.786Z] [SCREENING] Bot-holder filter: dropped BACKERS-SOL \u2014 bots 32.82% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T12:10:00.899Z] [CRON] Starting management cycle",
+  "[2026-10-22T12:10:01.682Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T12:10:02.208Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T12:10:02.210Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T12:10:53.714Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

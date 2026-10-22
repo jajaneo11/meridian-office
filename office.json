@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T18:22:49.189783+00:00",
+ "generated_at": "2026-10-22T18:27:50.861016+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 66
+  "decisions_mentioning": 65
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 722,
+  "total_real": 723,
   "today": 100,
-  "today_real": 221,
+  "today_real": 222,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T18:25:41.515Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Pepper-SOL WHY SKIPPED Wallet balance is 0 SOL. I cannot deploy 0.5 SOL without available funds. REJECTED Pepper-SOL (Insufficient funds)"
+   },
    {
     "ts": "2026-10-22T18:20:52.716Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED My SOL balance is 0. I cannot deploy the required 0.5 SOL into any pool. This is a capital shortage, not a candidate quality issue. REJECTED BORDR-SOL (smart wallet present, strong volume, low bots) PANGEA-S"
-   },
-   {
-    "ts": "2026-10-22T16:45:19.501Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL; required deploy amount is 0.5 SOL. Even if balance existed, several pools had invalid bin_step (<80) or lacked smart wallet conviction. REJECTED CLAUDIA-SOL (bin_step 50), JEANPHIL-"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "18:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T18:20:01.792",
+  "last_screening": "2026-10-22T18:25:34.023",
   "last_management": "2026-10-22T18:20:00.790"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T18:20:00.790Z] [CRON] Starting management cycle",
-  "[2026-10-22T18:20:01.304Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T18:20:01.792Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T18:20:01.792Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T18:20:07.018Z] [SCREENING] Bot-holder filter: dropped CHROME-SOL \u2014 bots 35.61% > 30%",
-  "[2026-10-22T18:20:07.019Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.75% > 30%",
   "[2026-10-22T18:20:07.019Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.18% > 30%",
   "\u26d4 NO DEPLOY",
-  "Initial deploy call failed due to pool verification error on-chain. The tool blocks retries after a failed attempt in this session."
+  "Initial deploy call failed due to pool verification error on-chain. The tool blocks retries after a failed attempt in this session.",
+  "[2026-10-22T18:25:33.940Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T18:25:34.023Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T18:25:34.024Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T18:25:35.425Z] [SCREENING] Bot-holder filter: dropped CHROME-SOL \u2014 bots 33.08% > 30%",
+  "[2026-10-22T18:25:35.425Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.77% > 30%",
+  "[2026-10-22T18:25:35.425Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.12% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

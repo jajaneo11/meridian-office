@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T15:17:40.897175+00:00",
+ "generated_at": "2026-10-22T15:22:38.748805+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 685,
+  "total_real": 686,
   "today": 100,
-  "today_real": 184,
+  "today_real": 185,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T15:21:00.935Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL, insufficient to deploy the required 0.5 SOL. PANGEA otherwise qualified on bin_step, fees, and smart wallet presence. REJECTED CLAUDIA-SOL (bin_step 50) RAT-USDC (bin_step 50, fees "
+   },
    {
     "ts": "2026-10-22T15:15:33.096Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-SOL WHY SKIPPED Both candidates fail hard deployment rules. HOOKED has an invalid bin_step (50) below the required 80. LASTCALL fails the minimum fee threshold (25.62 SOL < 30). Neither pool qualifies for deployment. REJEC"
-   },
-   {
-    "ts": "2026-10-22T14:20:42.967Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OTC-SOL WHY SKIPPED OTC-SOL had the strongest signals with 2 smart wallets and very high fees (2,498 SOL), but the pool failed on-chain verification. PANGEA-SOL was next best with 1 smart wallet and good metrics, but the deploy s"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "15:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T15:15:03.947",
-  "last_management": "2026-10-22T15:10:00.183"
+  "last_screening": "2026-10-22T15:20:02.098",
+  "last_management": "2026-10-22T15:20:00.720"
  },
  "log_tail": [
-  "[2026-10-22T15:10:00.862Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T15:10:01.420Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T15:10:01.421Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T15:10:03.782Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.31% > 30%",
-  "[2026-10-22T15:10:36.877Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
   "[2026-10-22T15:15:03.802Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-22T15:15:03.947Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T15:15:03.947Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T15:20:00.720Z] [CRON] Starting management cycle",
+  "[2026-10-22T15:20:01.396Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T15:20:02.098Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T15:20:02.098Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T15:20:05.424Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.31% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

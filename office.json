@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T16:18:06.788467+00:00",
+ "generated_at": "2026-10-22T16:23:25.195766+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 697,
+  "total_real": 698,
   "today": 100,
-  "today_real": 196,
+  "today_real": 197,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T16:20:45.616Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The system blocked deployment because the real-time fee/active-TVL ratio fell below the minimum required threshold. Even though PANGEA had strong smart wallet signals, the on-chain fee generation didn't mee"
+   },
    {
     "ts": "2026-10-22T16:05:29.715Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- BTC-SOL: bot holders 59.15% > 30%"
-   },
-   {
-    "ts": "2026-10-22T14:51:21.716Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "16:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T16:15:04.386",
-  "last_management": "2026-10-22T16:10:00.297"
+  "last_screening": "2026-10-22T16:20:01.848",
+  "last_management": "2026-10-22T16:20:00.797"
  },
  "log_tail": [
-  "[2026-10-22T16:10:01.340Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T16:10:01.340Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T16:10:04.353Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.97% > 30%",
-  "\ud83d\ude80 DEPLOYED (DRY_RUN)",
-  "[2026-10-22T16:15:04.304Z] [CRON] [Opportunity] PHP-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T16:15:04.386Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T16:15:04.386Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T16:15:07.169Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.15% > 30%",
   "[2026-10-22T16:15:07.169Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.10% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T16:20:00.797Z] [CRON] Starting management cycle",
+  "[2026-10-22T16:20:01.376Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-22T16:20:01.848Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T16:20:01.848Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T16:20:06.125Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.66% > 30%",
+  "[2026-10-22T16:20:06.125Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.05% > 30%",
+  "[2026-10-22T16:20:06.126Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.31% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

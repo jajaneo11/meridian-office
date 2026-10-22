@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T01:12:39.992291+00:00",
+ "generated_at": "2026-10-22T01:17:59.546654+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 65
+  "decisions_mentioning": 64
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 516,
-  "today": 12,
-  "today_real": 15,
+  "total_real": 517,
+  "today": 13,
+  "today_real": 16,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T01:15:29.048Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CYBER-SOL (HmNQrpfMZLmqvsP1JAf9beHBDkW1wEZ1By4Azx7YCcmm) WHY SKIPPED Top candidate failed on-chain pool verification (pool not found). The next best option (Pok\u00e9mon-SOL) was blocked by session state. Without a verified active poo"
+   },
    {
     "ts": "2026-10-22T01:10:46.627Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-22T00:01:31.657Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL had the strongest setup (smart wallet + organic 80 + positive 10% 1h momentum), but the deploy tool returned \"pool not found\" during threshold verification. The session can only attempt one deplo"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "01:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T01:10:01.393",
+  "last_screening": "2026-10-22T01:15:03.470",
   "last_management": "2026-10-22T01:10:00.357"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T01:10:00.357Z] [CRON] Starting management cycle",
-  "[2026-10-22T01:10:00.910Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-22T01:10:01.393Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T01:10:01.393Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T01:10:36.093Z] [TELEGRAM_ERROR] sendChatAction 429: {\"ok\":false,\"error_code\":429,\"description\":\"Too Many Requests: retry after 5\",\"parameters\":{\"retry_after\":5}}",
   "[2026-10-22T01:10:42.048Z] [TELEGRAM_ERROR] sendChatAction 502: {\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
   "[2026-10-22T01:10:46.228Z] [TELEGRAM_ERROR] sendChatAction 502: {\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
   "\u26d4 NO DEPLOY",
-  "[2026-10-22T01:10:46.809Z] [TELEGRAM_ERROR] editMessageText 502: {\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}"
+  "[2026-10-22T01:10:46.809Z] [TELEGRAM_ERROR] editMessageText 502: {\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
+  "[2026-10-22T01:15:03.346Z] [CRON] [Opportunity] PANGEA-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T01:15:03.470Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T01:15:03.470Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

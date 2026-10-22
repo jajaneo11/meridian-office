@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T11:32:39.267490+00:00",
+ "generated_at": "2026-10-22T11:37:41.140638+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 640,
-  "today": 94,
-  "today_real": 139,
+  "total_real": 641,
+  "today": 95,
+  "today_real": 140,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T11:35:34.576Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL. Cannot deploy 0.5 SOL with insufficient funds. Pools pass fees and bin_step checks but lack capital for execution. REJECTED LUKE-SOL (smart wallets present but no funds) KWH-SOL (hi"
+   },
    {
     "ts": "2026-10-22T11:26:26.679Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry (DRY_RUN mode active). BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Selected as best conviction due to smart wallet confidence (Degen #8) and highest fee volume (220 SOL). TIB-SOL had high 1h volatility and no smart wallets. LUKE-SOL had no smart wallets "
-   },
-   {
-    "ts": "2026-10-22T10:15:18.982Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Deployment was blocked by the system because the pool's fee/active-TVL ratio (0%) was below the configured minimum of 0.005%. The candidate looked strong on paper with smart wallet activity and good organic"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "11:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T11:30:01.338",
+  "last_screening": "2026-10-22T11:35:19.192",
   "last_management": "2026-10-22T11:30:00.761"
  },
  "log_tail": [
-  "[2026-10-22T11:26:18.879Z] [CRON] [Opportunity] WEFT-SOL degen 98.7 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T11:26:18.967Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T11:26:18.968Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T11:30:00.761Z] [CRON] Starting management cycle",
   "[2026-10-22T11:30:01.338Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T11:30:01.339Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T11:30:01.376Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T11:30:01.376Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T11:35:19.067Z] [CRON] [Opportunity] LUKE-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T11:35:19.192Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T11:35:19.193Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T11:35:21.736Z] [SCREENING] Bot-holder filter: dropped simulator-SOL \u2014 bots 40.92% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

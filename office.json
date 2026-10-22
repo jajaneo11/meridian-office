@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T13:02:39.291607+00:00",
+ "generated_at": "2026-10-22T13:07:39.540796+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 658,
+  "total_real": 659,
   "today": 100,
-  "today_real": 157,
+  "today_real": 158,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T13:06:17.779Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The system is in DRY_RUN mode, so no actual transaction was sent. The candidate passed all hard gates (fees_sol > 30, bin_step 80-125, positive volatility) and had smart wallet confidence boost, but the dep"
+   },
    {
     "ts": "2026-10-22T13:01:47.563Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is zero; insufficient capital to execute the 0.5 SOL deployment. REJECTED PHP-SOL, PANGEA-SOL, CYBER-USDC, Macca-SOL"
-   },
-   {
-    "ts": "2026-10-22T11:57:14.450Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet SOL balance is 0.000 but deployment requires 0.5 SOL. No funds available to execute position. REJECTED PANGEA-SOL - insufficient funds"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "13:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T13:00:01.827",
+  "last_screening": "2026-10-22T13:06:03.830",
   "last_management": "2026-10-22T13:00:00.760"
  },
  "log_tail": [
-  "[2026-10-22T12:55:34.300Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T13:00:00.760Z] [CRON] Starting management cycle",
-  "[2026-10-22T13:00:01.777Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T13:00:01.778Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-22T13:00:01.827Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T13:00:01.828Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T13:00:23.358Z] [ERROR] Agent loop error at step 3: 429 Rate limit reached: output token limit exceeded",
   "[2026-10-22T13:00:55.673Z] [ERROR] Agent loop error at step 4: 429 Rate limit reached: output token limit exceeded",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T13:06:03.651Z] [CRON] [Opportunity] PANGEA-SOL degen 41.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T13:06:03.830Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T13:06:03.831Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

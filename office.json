@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T13:52:41.845734+00:00",
+ "generated_at": "2026-10-22T13:57:40.253441+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 71
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 668,
+  "total_real": 669,
   "today": 100,
-  "today_real": 167,
+  "today_real": 168,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T13:55:41.016Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The system returned a dry-run response without executing the on-chain transaction, and no range_coverage percentages were provided to populate the deploy report. Without confirmed transaction completion and"
+   },
    {
     "ts": "2026-10-22T13:25:39.775Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Insufficient wallet balance. Required 0.5 SOL deploy but wallet shows 0 SOL. Without funds, no liquidity position can be opened regardless of pool quality. REJECTED PANGEA-SOL (no capital) PHP-SOL (no capit"
-   },
-   {
-    "ts": "2026-10-22T12:20:33.392Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry due to DRY RUN mode. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED DRY RUN mode prevents actual on-chain deployment. Selected for strong smart wallet signal (1 present), healthy organic score (75), and compliant bin step (100). No other candidate offere"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "13:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T13:50:02.075",
+  "last_screening": "2026-10-22T13:55:34.367",
   "last_management": "2026-10-22T13:50:00.945"
  },
  "log_tail": [
-  "[2026-10-22T13:45:04.134Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T13:45:04.135Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T13:45:07.117Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 65.71% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-22T13:50:00.945Z] [CRON] Starting management cycle",
   "[2026-10-22T13:50:01.532Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T13:50:02.075Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T13:50:02.077Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-22T13:50:07.373Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 65.62% > 30%",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-22T13:55:34.251Z] [CRON] [Opportunity] VECTOR-SOL degen 98.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T13:55:34.367Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T13:55:34.367Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-22T13:55:35.501Z] [SCREENING] Bot-holder filter: dropped VECTOR-SOL \u2014 bots 62.88% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

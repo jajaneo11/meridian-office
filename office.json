@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T10:42:39.456933+00:00",
+ "generated_at": "2026-10-22T10:47:40.557111+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 630,
-  "today": 87,
-  "today_real": 129,
+  "total_real": 631,
+  "today": 88,
+  "today_real": 130,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-22T10:45:23.358Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet balance is 0 SOL, insufficient for the 0.5 SOL deployment requirement. REJECTED baton-SOL, EMBER-SOL (bin_step out of range) TIB-SOL, LUKE-SOL, CYBER-USDC, STRK-SOL (no smart wallets, weaker conviction)"
+   },
    {
     "ts": "2026-10-22T10:40:16.524Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Wallet SOL balance is 0. The deploy requires 0.5 SOL, but no funds are available. Without capital, no position can be opened regardless of candidate quality. REJECTED PHP-SOL - insufficient balance PANGEA-SOL "
-   },
-   {
-    "ts": "2026-10-22T09:30:37.474Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL, PANGEA-SOL WHY SKIPPED Both candidates with smart wallets (PHP and PANGEA) were blocked by the system's fee/active-TVL ratio check\u2014live on-chain fees are below the 0.005% minimum. Remaining candidates lack smart wallet s"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "10:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T10:40:01.325",
+  "last_screening": "2026-10-22T10:45:03.960",
   "last_management": "2026-10-22T10:40:00.186"
  },
  "log_tail": [
-  "[2026-10-22T10:35:18.793Z] [CRON] [Opportunity] LUKE-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T10:35:18.869Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T10:35:18.869Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T10:35:21.304Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 44.60% > 30%",
   "\u26d4 NO DEPLOY",
   "[2026-10-22T10:40:00.186Z] [CRON] Starting management cycle",
   "[2026-10-22T10:40:00.790Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-22T10:40:01.325Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T10:40:01.325Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-22T10:45:03.874Z] [CRON] [Opportunity] LUKE-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-22T10:45:03.960Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-22T10:45:03.960Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

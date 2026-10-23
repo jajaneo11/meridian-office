@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T23:12:43.823203+00:00",
+ "generated_at": "2026-10-23T23:22:55.145284+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 10
+  "decisions_mentioning": 9
  },
  "mode": {
   "dry_run": false,
@@ -93,9 +93,9 @@
   "today": 100,
   "today_real": 202,
   "by_type": {
-   "no_deploy": 34,
+   "no_deploy": 33,
    "deploy": 13,
-   "skip": 42,
+   "skip": 43,
    "close": 11
   },
   "by_actor": {
@@ -103,6 +103,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-23T23:20:01.605Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.180 < 0.74)"
+   },
    {
     "ts": "2026-10-23T23:10:02.286Z",
     "type": "skip",
@@ -190,14 +198,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OPENAI-SOL WHY SKIPPED The single candidate fails the conviction bar. It has no usable narrative (the only narrative available is a placeholder, still generating, no identification story), and 0/30 tracked smart wallets are in th"
-   },
-   {
-    "ts": "2026-10-23T21:41:23.674Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- TRUTH-SOL: bot holders 35.72% > 30%"
    }
   ]
  },
@@ -205,7 +205,7 @@
   "per_hour": [
    {
     "hour": "12:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "13:00",
@@ -249,25 +249,25 @@
    },
    {
     "hour": "23:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-23T22:05:23.076",
-  "last_management": "2026-10-23T23:10:00.957"
+  "last_management": "2026-10-23T23:20:00.344"
  },
  "log_tail": [
-  "[2026-10-23T22:50:00.728Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T22:50:00.952Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T22:50:01.220Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T23:00:00.600Z] [CRON] Starting management cycle",
   "[2026-10-23T23:00:00.990Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
   "[2026-10-23T23:00:01.267Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T23:10:00.957Z] [CRON] Starting management cycle",
   "[2026-10-23T23:10:01.723Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T23:10:02.027Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T23:10:02.282Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T23:10:02.282Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T23:20:00.344Z] [CRON] Starting management cycle",
+  "[2026-10-23T23:20:01.061Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-23T23:20:01.322Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
+  "[2026-10-23T23:20:01.601Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)"
  ],
  "state_last_updated": "2026-10-23T23:05:52.804Z"
 }

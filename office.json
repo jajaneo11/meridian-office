@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T03:07:39.685765+00:00",
+ "generated_at": "2026-10-23T03:12:42.814844+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 71
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 827,
-  "today": 28,
-  "today_real": 38,
+  "total_real": 828,
+  "today": 29,
+  "today_real": 39,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T03:10:29.064Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (FDvrk...) WHY SKIPPED Failed on-chain fee/active-TVL check (0% < 0.005% threshold) \u2014 pool appears inactive despite high static fee/TVL ratio. Subsequent candidates blocked due to session limits after first failure. REJ"
+   },
    {
     "ts": "2026-10-23T03:05:36.976Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (FDvrkkgGZe2xjeAuPpNvZb2BLfegvYFEfYS9xqYc6HC2) WHY SKIPPED Wallet balance is 0 SOL. No capital available to deploy the required 0.5 SOL position. REJECTED All other candidates were also blocked by insufficient wallet ba"
-   },
-   {
-    "ts": "2026-10-23T02:01:53.597Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "03:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T03:05:19.640",
-  "last_management": "2026-10-23T03:00:00.347"
+  "last_screening": "2026-10-23T03:10:02.052",
+  "last_management": "2026-10-23T03:10:00.843"
  },
  "log_tail": [
-  "[2026-10-23T03:00:00.899Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T03:00:00.899Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-23T03:00:00.938Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T03:00:00.938Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T03:05:19.536Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T03:05:19.640Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T03:05:19.640Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T03:05:22.197Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.91% > 30%",
   "[2026-10-23T03:05:22.198Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.49% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T03:10:00.843Z] [CRON] Starting management cycle",
+  "[2026-10-23T03:10:01.463Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T03:10:02.052Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T03:10:02.052Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T03:10:04.406Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.94% > 30%",
+  "[2026-10-23T03:10:28.327Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

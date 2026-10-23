@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T02:07:45.971586+00:00",
+ "generated_at": "2026-10-23T02:12:42.362476+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 69
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 815,
-  "today": 17,
-  "today_real": 26,
+  "total_real": 816,
+  "today": 18,
+  "today_real": 27,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T02:10:20.048Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (FDvrkkgGZe2xjeAuPpNvZb2BLfegvYFEfYS9xqYc6HC2) WHY SKIPPED Wallet balance is 0 SOL. No capital available to deploy the required 0.5 SOL position. REJECTED All other candidates were also blocked by insufficient wallet ba"
+   },
    {
     "ts": "2026-10-23T02:01:53.597Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED McRib-SOL was the strongest candidate (high fee/TVL, smart wallet present, valid bin_step) but was blocked by a real-time active-TVL fee ratio check. The system requires active fee generation to be above thr"
-   },
-   {
-    "ts": "2026-10-23T00:35:48.990Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED McRib had the strongest fundamentals (highest fee/TVL, smart wallet signal, and volatility) but was system-blocked due to fee/active-TVL ratio falling below 0.005% threshold. This is a hard safety gate that "
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "02:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T02:05:19.623",
-  "last_management": "2026-10-23T02:00:00.103"
+  "last_screening": "2026-10-23T02:10:02.085",
+  "last_management": "2026-10-23T02:10:00.641"
  },
  "log_tail": [
-  "[2026-10-23T02:00:00.684Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T02:00:00.684Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-23T02:00:03.735Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.08% > 30%",
-  "[2026-10-23T02:00:03.735Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.92% > 30%",
-  "[2026-10-23T02:00:54.963Z] [ERROR] Agent loop error at step 12: 429 Rate limit reached: output token limit exceeded",
   "[2026-10-23T02:05:19.515Z] [CRON] [Opportunity] McRib-SOL degen 78.1 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T02:05:19.623Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T02:05:19.623Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T02:05:22.811Z] [ERROR] Agent loop error at step 0: 429 Rate limit reached: output token limit exceeded",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-23T02:10:00.641Z] [CRON] Starting management cycle",
+  "[2026-10-23T02:10:01.490Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T02:10:02.085Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T02:10:02.085Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

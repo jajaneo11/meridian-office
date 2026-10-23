@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T02:42:47.590932+00:00",
+ "generated_at": "2026-10-23T02:47:40.843640+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 69
+  "decisions_mentioning": 68
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 822,
-  "today": 24,
-  "today_real": 33,
+  "total_real": 823,
+  "today": 25,
+  "today_real": 34,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T02:45:16.325Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (FDvrk...) WHY SKIPPED Wallet balance shows 0 SOL available. Cannot deploy 0.5 SOL without funds. REJECTED McRib-SOL (FDvrk...) - Zero SOL balance OTC-SOL - Zero SOL balance BORDR-SOL - Zero SOL balance All other candid"
+   },
    {
     "ts": "2026-10-23T02:40:20.512Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED Insufficient SOL balance (0.000). Deploy requires 0.5 SOL. REJECTED McRib-SOL (FDvrkkgGZe2xjeAuPpNvZb2BLfegvYFEfYS9xqYc6HC2) - no smart wallets JEANPHIL-SOL (5u"
-   },
-   {
-    "ts": "2026-10-23T01:40:30.042Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED Attempted deploy to McRib-SOL pool with 3 smart wallets, $94k volume, and 100 bin_step. However, the deploy_position tool blocked deployment due to SDK pool ver"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "02:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T02:40:01.369",
+  "last_screening": "2026-10-23T02:45:04.509",
   "last_management": "2026-10-23T02:40:00.308"
  },
  "log_tail": [
-  "[2026-10-23T02:35:19.838Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T02:35:22.357Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.83% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T02:40:00.308Z] [CRON] Starting management cycle",
   "[2026-10-23T02:40:00.876Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T02:40:01.369Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T02:40:01.369Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T02:40:04.378Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.05% > 30%",
   "[2026-10-23T02:40:04.379Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.86% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T02:45:04.385Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T02:45:04.509Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T02:45:04.509Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

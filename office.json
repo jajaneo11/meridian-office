@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T06:57:39.499673+00:00",
+ "generated_at": "2026-10-23T07:02:38.873156+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 873,
+  "total_real": 874,
   "today": 60,
-  "today_real": 84,
+  "today_real": 85,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "19:00",
-    "count": 9
-   },
-   {
     "hour": "20:00",
     "count": 11
    },
@@ -227,23 +223,27 @@
    {
     "hour": "06:00",
     "count": 10
+   },
+   {
+    "hour": "07:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T06:56:19.873",
-  "last_management": "2026-10-23T06:50:00.823"
+  "last_screening": "2026-10-23T07:00:00.907",
+  "last_management": "2026-10-23T07:00:00.373"
  },
  "log_tail": [
-  "[2026-10-23T06:50:00.823Z] [CRON] Starting management cycle",
-  "[2026-10-23T06:50:01.462Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T06:50:01.960Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T06:50:01.960Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T06:50:04.123Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.29% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T06:56:19.744Z] [CRON] [Opportunity] LUKE-SOL degen 42.2 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T06:56:19.873Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T06:56:19.873Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-23T07:00:00.373Z] [CRON] Starting management cycle",
+  "[2026-10-23T07:00:00.907Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T07:00:00.907Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T07:00:00.936Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T07:00:00.936Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T07:00:04.227Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.25% > 30%",
   "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

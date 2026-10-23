@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T00:57:39.607550+00:00",
+ "generated_at": "2026-10-23T01:02:42.076898+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 801,
+  "total_real": 802,
   "today": 10,
-  "today_real": 12,
+  "today_real": 13,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "13:00",
-    "count": 7
-   },
-   {
     "hour": "14:00",
     "count": 10
    },
@@ -227,24 +223,28 @@
    {
     "hour": "00:00",
     "count": 10
+   },
+   {
+    "hour": "01:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T00:55:34.199",
-  "last_management": "2026-10-23T00:50:00.459"
+  "last_screening": "2026-10-23T01:00:01.552",
+  "last_management": "2026-10-23T01:00:00.908"
  },
  "log_tail": [
-  "[2026-10-23T00:50:00.994Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T00:50:01.502Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T00:50:01.503Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T00:50:03.900Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.79% > 30%",
-  "[2026-10-23T00:50:03.900Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.81% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T00:55:34.077Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T00:55:34.199Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T00:55:34.199Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "[2026-10-23T01:00:00.908Z] [CRON] Starting management cycle",
+  "[2026-10-23T01:00:00.958Z] [CRON] Starting morning briefing",
+  "[2026-10-23T01:00:01.480Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T01:00:01.481Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T01:00:01.552Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T01:00:01.552Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T01:00:03.366Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.95% > 30%",
+  "[2026-10-23T01:00:03.366Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.29% > 30%",
+  "[2026-10-23T01:00:03.366Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.91% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-22T01:00:01.352Z"
+ "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T10:47:38.997605+00:00",
+ "generated_at": "2026-10-23T10:52:39.943988+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 922,
+  "total_real": 925,
   "today": 99,
-  "today_real": 133,
+  "today_real": 136,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -232,20 +232,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T10:47:38.048",
-  "last_management": "2026-10-23T10:40:00.639"
+  "last_screening": "2026-10-23T10:50:01.429",
+  "last_management": "2026-10-23T10:50:00.763"
  },
  "log_tail": [
-  "[2026-10-23T10:45:04.883Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T10:45:04.883Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0.755285 SOL)",
-  "# \ud83d\ude80 DEPLOYED",
-  "[2026-10-23T10:47:37.935Z] [SCREENING] Volume spike check rejected BORDR-SOL: 1.61x",
-  "[2026-10-23T10:47:37.936Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T10:47:37.938Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T10:47:38.048Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T10:47:38.048Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T10:47:38.143Z] [SCREENING] Volume spike check rejected BORDR-SOL: 1.61x",
-  "[2026-10-23T10:47:38.144Z] [SCREENING] Volume spike filter removed 1 candidate(s)"
+  "[2026-10-23T10:50:01.732Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
+  "[2026-10-23T10:50:01.868Z] [SCREENING] Volume spike check rejected BORDR-SOL: 1.83x",
+  "[2026-10-23T10:50:01.868Z] [SCREENING] Volume spike check rejected GTA6-SOL: 1.68x",
+  "[2026-10-23T10:50:01.868Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
+  "[2026-10-23T10:50:02.880Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
+  "[2026-10-23T10:50:02.880Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
+  "[2026-10-23T10:50:03.055Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-23T10:50:03.165Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
+  "[2026-10-23T10:50:03.166Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
+  "[2026-10-23T10:50:03.342Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

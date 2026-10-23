@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:12:39.140819+00:00",
+ "generated_at": "2026-10-23T11:17:41.391695+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 58
+  "decisions_mentioning": 57
  },
  "mode": {
   "dry_run": false,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 930,
-  "today": 99,
-  "today_real": 141,
+  "total_real": 932,
+  "today": 100,
+  "today_real": 143,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -81,6 +81,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T11:15:28.884Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-23T10:45:26.988Z",
     "type": "no_deploy",
@@ -168,14 +176,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL (9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY) WHY SKIPPED The strongest candidate had 4 smart wallets and solid fees, but the deployment failed during the pool screening verification step. The system returned an error sta"
-   },
-   {
-    "ts": "2026-10-23T09:50:20.405Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED Deploy failed on fee/active-TVL runtime check (0% < min 0.005%). Top candidate disqualified despite strong smart wallet signals. No retries allowed in same session. REJECTED - ANTHROPIC-USDC, CLAUDIA-SOL: bin_s"
    }
   ]
  },
@@ -227,25 +227,25 @@
    },
    {
     "hour": "11:00",
-    "count": 0
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T11:10:01.925",
+  "last_screening": "2026-10-23T11:15:28.777",
   "last_management": "2026-10-23T11:10:00.773"
  },
  "log_tail": [
-  "[2026-10-23T11:10:01.926Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:10:02.846Z] [SCREENING] Volume spike check rejected McRib-SOL: 2.45x",
-  "[2026-10-23T11:10:02.846Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.93x",
-  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike check rejected EMBER-SOL: 1.51x",
-  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike check rejected GTA6-SOL: 2.70x",
-  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike check rejected CLAUDIA-SOL: 1.31x",
-  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike check rejected GTA6-SOL: 1.35x",
-  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike filter removed 6 candidate(s)",
-  "[2026-10-23T11:10:03.947Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-23T11:10:03.948Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header"
+  "[2026-10-23T11:14:33.481Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:14:33.882Z] [SCREENING] Volume spike check rejected JEANPHIL-SOL: 1.58x",
+  "[2026-10-23T11:14:33.882Z] [SCREENING] Volume spike check rejected DOPE-SOL: 0.79x",
+  "[2026-10-23T11:14:33.882Z] [SCREENING] Volume spike check rejected Macca-SOL: 1.02x",
+  "[2026-10-23T11:14:33.882Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
+  "[2026-10-23T11:14:35.673Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
+  "[2026-10-23T11:14:35.673Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
+  "[2026-10-23T11:15:27.576Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-23T11:15:28.777Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T11:15:28.778Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

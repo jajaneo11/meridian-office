@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T22:57:41.085778+00:00",
+ "generated_at": "2026-10-23T23:02:39.935434+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 11
+  "decisions_mentioning": 10
  },
  "mode": {
   "dry_run": false,
@@ -93,9 +93,9 @@
   "today": 100,
   "today_real": 202,
   "by_type": {
-   "no_deploy": 36,
+   "no_deploy": 35,
    "deploy": 13,
-   "skip": 40,
+   "skip": 41,
    "close": 11
   },
   "by_actor": {
@@ -103,6 +103,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-23T23:00:00.996Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.180 < 0.74)"
+   },
    {
     "ts": "2026-10-23T22:50:01.223Z",
     "type": "skip",
@@ -190,26 +198,14 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- TRUTH-SOL: bot holders 36.80% > 30% - YMB-SOL: bot holders 38.89% > 30%"
-   },
-   {
-    "ts": "2026-10-23T21:31:32.311Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "Macca-SOL",
-    "summary": "Closed at -0.29%",
-    "reason_short": "Out of range for 30m (limit: 30m)"
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "11:00",
-    "count": 0
-   },
-   {
     "hour": "12:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "13:00",
@@ -250,24 +246,28 @@
    {
     "hour": "22:00",
     "count": 6
+   },
+   {
+    "hour": "23:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-23T22:05:23.076",
-  "last_management": "2026-10-23T22:50:00.066"
+  "last_management": "2026-10-23T23:00:00.600"
  },
  "log_tail": [
-  "[2026-10-23T22:30:00.577Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T22:30:00.998Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T22:40:00.614Z] [CRON] Starting management cycle",
   "[2026-10-23T22:40:01.295Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T22:40:01.582Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
   "[2026-10-23T22:40:01.845Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
   "[2026-10-23T22:50:00.066Z] [CRON] Starting management cycle",
   "[2026-10-23T22:50:00.728Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T22:50:00.952Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T22:50:01.220Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T22:50:01.220Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T23:00:00.600Z] [CRON] Starting management cycle",
+  "[2026-10-23T23:00:00.990Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T23:00:01.267Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-23T22:57:13.640Z"
+ "state_last_updated": "2026-10-23T23:01:58.746Z"
 }

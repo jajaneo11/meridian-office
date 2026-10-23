@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T12:12:39.111563+00:00",
+ "generated_at": "2026-10-23T12:17:38.528029+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 944,
+  "total_real": 945,
   "today": 100,
-  "today_real": 155,
+  "today_real": 156,
   "by_type": {
    "no_deploy": 94,
    "skip": 4,
@@ -84,6 +84,14 @@
    "MANAGER": 1
   },
   "recent": [
+   {
+    "ts": "2026-10-23T12:16:45.661Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "Based on my review, GUST-SOL is the only survivor, but it fails the conviction bar. Let me report my findings. \u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GUST-SOL (5TfrKFkySxzqGrr65PED4TkwwYEHBy8AvsqTtKiLo1ek) WHY SKIPPED This pool fails the hard risk gate: there is no na"
+   },
    {
     "ts": "2026-10-23T12:10:41.683Z",
     "type": "no_deploy",
@@ -171,14 +179,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Narrative is empty/generating and no smart wallets are present. Per guidelines, this combination requires skipping regardless of other metrics. REJECTED McRib-SOL (weak narrative, no smart wallets)"
-   },
-   {
-    "ts": "2026-10-23T11:20:53.777Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED Both McRib pools were blocked: one due to fee/active-TVL below threshold, the other due to session deploy limit. GUST-SOL was rejected because fees were 28.23 S"
    }
   ]
  },
@@ -186,7 +186,7 @@
   "per_hour": [
    {
     "hour": "01:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "02:00",
@@ -230,25 +230,25 @@
    },
    {
     "hour": "12:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T12:10:41.438",
+  "last_screening": "2026-10-23T12:16:40.401",
   "last_management": "2026-10-23T12:10:00.589"
  },
  "log_tail": [
-  "[2026-10-23T12:10:02.154Z] [SCREENING] Volume spike check rejected DOPE-SOL: 0.56x",
-  "[2026-10-23T12:10:02.154Z] [SCREENING] Volume spike check rejected PANGEA-SOL: 1.64x",
-  "[2026-10-23T12:10:02.154Z] [SCREENING] Volume spike check rejected Macca-SOL: 2.14x",
-  "[2026-10-23T12:10:02.154Z] [SCREENING] Volume spike filter removed 7 candidate(s)",
-  "[2026-10-23T12:10:09.006Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-23T12:10:39.914Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
   "[2026-10-23T12:10:41.438Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-23T12:10:41.439Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
   "[2026-10-23T12:10:41.681Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 1.11x",
-  "[2026-10-23T12:10:41.682Z] [SCREENING] Volume spike filter removed 1 candidate(s)"
+  "[2026-10-23T12:10:41.682Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T12:15:55.405Z] [SCREENING] Volume spike check rejected GUST-SOL: 1.80x",
+  "[2026-10-23T12:15:55.408Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T12:16:40.297Z] [CRON] [Opportunity] GUST-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T12:16:40.401Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T12:16:40.401Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T12:03:26.499Z"
 }

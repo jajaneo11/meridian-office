@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T20:47:39.644209+00:00",
+ "generated_at": "2026-10-23T20:52:47.984791+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
+  "open_count": 2,
   "open": [
    {
     "id": "2raHmEJCZ1WXBBohcr7YzffhMjT7v7PEHVU5hR1aiioK",
@@ -67,9 +67,18 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": 0.69
+   },
+   {
+    "id": "AQS3PYFvhUzE86dowLyL34aVtW2avWg6124oihnux7RT",
+    "pool": "Macca-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-23T20:52:08.711Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 0.69
    }
   ],
-  "total_tracked": 12
+  "total_tracked": 13
  },
  "pnl": {
   "last24h_usd": 12.18,
@@ -80,13 +89,13 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 983,
+  "total_real": 984,
   "today": 100,
-  "today_real": 194,
+  "today_real": 195,
   "by_type": {
-   "skip": 36,
+   "skip": 35,
    "no_deploy": 41,
-   "deploy": 12,
+   "deploy": 13,
    "close": 11
   },
   "by_actor": {
@@ -94,6 +103,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-23T20:52:08.712Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "Macca-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -504\u2192-463 around active bin -463"
+   },
    {
     "ts": "2026-10-23T20:46:38.861Z",
     "type": "no_deploy",
@@ -181,14 +198,6 @@
     "pool_name": null,
     "summary": "Deploy attempt did not succeed",
     "reason_short": "\u26a0\ufe0f **DEPLOY BLOCKED \u2014 NOT DEPLOYED** **McRib-SOL** (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) The `deploy_position` tool call failed and was rejected \u2014 my first attempt was submitted without the positive SOL amount (`amount_y`), and the session then hard-blocked any retry: - Attempt 1/2: `blocke"
-   },
-   {
-    "ts": "2026-10-23T19:58:45.587Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry (tool-level failure). BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED - McRib-SOL was the clear top pick: bin_step=100, volatility 4.00, fee_tvl 0.0799, organic 86, fees 226 SOL, top10 only 15.89%, 2 smart wallets present, and a strong pool memory (avg PnL"
    }
   ]
  },
@@ -200,7 +209,7 @@
    },
    {
     "hour": "10:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "11:00",
@@ -240,25 +249,25 @@
    },
    {
     "hour": "20:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T20:46:37.718",
-  "last_management": "2026-10-23T20:40:00.507"
+  "last_screening": "2026-10-23T20:51:53.075",
+  "last_management": "2026-10-23T20:50:00.008"
  },
  "log_tail": [
-  "[2026-10-23T20:41:22.771Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912296 SOL)",
-  "[2026-10-23T20:41:24.080Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 39.52% > 30%",
-  "[2026-10-23T20:41:24.080Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 39.52% > 30%",
-  "[2026-10-23T20:41:24.080Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 39.52% > 30%",
-  "[2026-10-23T20:46:37.496Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T20:46:37.718Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T20:46:37.719Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912296 SOL)",
-  "[2026-10-23T20:46:38.860Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.01% > 30%",
-  "[2026-10-23T20:46:38.860Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.01% > 30%",
-  "[2026-10-23T20:46:38.860Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.01% > 30%"
+  "[2026-10-23T20:51:53.076Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912296 SOL)",
+  "[2026-10-23T20:51:54.449Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 41.52% > 30%",
+  "[2026-10-23T20:51:54.449Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 41.52% > 30%",
+  "[2026-10-23T20:51:54.449Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 41.52% > 30%",
+  "[2026-10-23T20:52:07.051Z] [DEPLOY] Pool: 5zbcXagpc7XBnDMUVak4Qo2hYh8pRJo2exq43Lpf5Aj5",
+  "[2026-10-23T20:52:07.051Z] [DEPLOY] Strategy: bid_ask, Bins: -504 to -463 (41 bins)",
+  "[2026-10-23T20:52:07.051Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-23T20:52:07.051Z] [DEPLOY] Position: AQS3PYFvhUzE86dowLyL34aVtW2avWg6124oihnux7RT",
+  "[2026-10-23T20:52:08.709Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5Vn4ofkCKbqUvLxrgXXCvm4i1yQd6H5WDH3ANvd4TDHUFVv66Fh4yXbDyvWw1AwAAR3eDVYF37mnN9tSDWJo9aiS",
+  "[2026-10-23T20:52:10.384Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-23T20:47:39.069Z"
+ "state_last_updated": "2026-10-23T20:52:27.175Z"
 }

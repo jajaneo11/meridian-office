@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:22:39.191429+00:00",
+ "generated_at": "2026-10-23T11:27:39.057423+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 56
+  "decisions_mentioning": 57
  },
  "mode": {
   "dry_run": false,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 933,
+  "total_real": 934,
   "today": 100,
-  "today_real": 144,
+  "today_real": 145,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -81,6 +81,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T11:25:18.494Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Narrative is empty/generating and no smart wallets are present. Per guidelines, this combination requires skipping regardless of other metrics. REJECTED McRib-SOL (weak narrative, no smart wallets)"
+   },
    {
     "ts": "2026-10-23T11:20:53.777Z",
     "type": "no_deploy",
@@ -168,14 +176,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL (9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY) WHY SKIPPED Wallet balance is 0 SOL; no capital available to fund the 0.5 SOL deploy requirement. Even though this pool had smart wallet signals, the deployment cannot proceed"
-   },
-   {
-    "ts": "2026-10-23T10:07:03.491Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Dry run safety mode prevented actual deployment. Candidate passed all hard filters with strong organic score (84), healthy fees (176 SOL), and low concentration. No live capital was moved due to system restr"
    }
   ]
  },
@@ -183,7 +183,7 @@
   "per_hour": [
    {
     "hour": "00:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "01:00",
@@ -227,24 +227,24 @@
    },
    {
     "hour": "11:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T11:20:01.843",
+  "last_screening": "2026-10-23T11:25:13.149",
   "last_management": "2026-10-23T11:20:00.774"
  },
  "log_tail": [
-  "[2026-10-23T11:15:28.777Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T11:15:28.778Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:20:00.774Z] [CRON] Starting management cycle",
-  "[2026-10-23T11:20:01.332Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T11:20:01.843Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T11:20:01.844Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:20:02.131Z] [SCREENING] Volume spike check rejected GTA6-SOL: 0.79x",
-  "[2026-10-23T11:20:02.131Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
   "[2026-10-23T11:20:52.247Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T11:25:13.058Z] [SCREENING] Volume spike check rejected PANGEA-SOL: 1.30x",
+  "[2026-10-23T11:25:13.059Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T11:25:13.059Z] [CRON] [Opportunity] McRib-SOL degen 99.2 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T11:25:13.149Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T11:25:13.149Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:25:13.316Z] [SCREENING] Volume spike check rejected PANGEA-SOL: 1.30x",
+  "[2026-10-23T11:25:13.316Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T16:57:47.143438+00:00",
+ "generated_at": "2026-10-23T17:02:45.785297+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 36
+  "decisions_mentioning": 34
  },
  "mode": {
   "dry_run": false,
@@ -57,25 +57,15 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "VLzvbq6FZF9Bq9K3Zhcns4SYhcMM6Q8JFExXi39X5QE",
-    "pool": "\u30e4\u30ae-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-23T13:50:10.933Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 4
  },
  "pnl": {
-  "last24h_usd": 3.72,
-  "fees24h_usd": 7.91,
-  "all_time_usd": 3.72,
-  "closed_total": 3,
+  "last24h_usd": 5.24,
+  "fees24h_usd": 13.46,
+  "all_time_usd": 5.24,
+  "closed_total": 4,
   "win_rate_pct": 100
  },
  "decisions": {
@@ -84,16 +74,32 @@
   "today": 100,
   "today_real": 163,
   "by_type": {
-   "no_deploy": 65,
-   "skip": 28,
+   "no_deploy": 63,
+   "skip": 29,
    "deploy": 4,
-   "close": 3
+   "close": 4
   },
   "by_actor": {
-   "SCREENER": 97,
-   "MANAGER": 3
+   "SCREENER": 96,
+   "MANAGER": 4
   },
   "recent": [
+   {
+    "ts": "2026-10-23T17:00:18.199Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "\u30e4\u30ae-SOL",
+    "summary": "Closed at 2.10%",
+    "reason_short": "Trailing TP: peak 4.11% \u2192 current -5.51% (dropped 9.62% >= 1.5%)"
+   },
+   {
+    "ts": "2026-10-23T17:00:00.550Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.045 < 0.74)"
+   },
    {
     "ts": "2026-10-23T16:50:02.272Z",
     "type": "skip",
@@ -173,31 +179,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.045 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T15:10:01.890Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.045 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T15:00:00.540Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.045 < 0.74)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "05:00",
-    "count": 4
-   },
    {
     "hour": "06:00",
     "count": 10
@@ -241,24 +227,28 @@
    {
     "hour": "16:00",
     "count": 6
+   },
+   {
+    "hour": "17:00",
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": null,
-  "last_management": "2026-10-23T16:50:00.907"
+  "last_management": "2026-10-23T17:00:00.426"
  },
  "log_tail": [
-  "[2026-10-23T16:30:00.232Z] [CRON] Screening skipped \u2014 insufficient SOL (0.045 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T16:30:00.923Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T16:40:00.465Z] [CRON] Starting management cycle",
-  "[2026-10-23T16:40:01.172Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T16:40:01.549Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
   "[2026-10-23T16:40:01.866Z] [CRON] Screening skipped \u2014 insufficient SOL (0.045 < 0.74 needed for deploy + gas)",
   "[2026-10-23T16:50:00.907Z] [CRON] Starting management cycle",
   "[2026-10-23T16:50:01.650Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T16:50:01.954Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
-  "[2026-10-23T16:50:02.266Z] [CRON] Screening skipped \u2014 insufficient SOL (0.045 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T16:50:02.266Z] [CRON] Screening skipped \u2014 insufficient SOL (0.045 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T17:00:00.426Z] [CRON] Starting management cycle",
+  "[2026-10-23T17:00:00.548Z] [CRON] Screening skipped \u2014 insufficient SOL (0.045 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T17:00:01.161Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-23T17:00:09.525Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-23T16:57:33.425Z"
+ "state_last_updated": "2026-10-23T17:00:17.955Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T21:52:39.810738+00:00",
+ "generated_at": "2026-10-23T21:57:40.855435+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 988,
+  "total_real": 989,
   "today": 100,
-  "today_real": 199,
+  "today_real": 200,
   "by_type": {
    "no_deploy": 38,
    "deploy": 13,
@@ -94,6 +94,14 @@
    "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-23T21:57:15.790Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Deploy attempt on **\u30e4\u30ae-SOL** failed. WHY FAILED The first `deploy_position` call was blocked by the tool because no positive SOL amount was passed (`amount_y` required). When I retried with `amount_y=0.69`, the session block triggered: \"deploy_position already attempted this session \u2014 do"
+   },
    {
     "ts": "2026-10-23T21:51:53.983Z",
     "type": "no_deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- YMB-SOL: bot holders 42.01% > 30% - YMB-USDC: bot holders 42.01% > 30% - YMB-SOL: bot holders 42.01% > 30%"
-   },
-   {
-    "ts": "2026-10-23T20:41:24.081Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": "LOAD-SOL",
-    "summary": "Single candidate skipped",
-    "reason_short": "top10 concentration 69.35% above maximum 60%"
    }
   ]
  },
@@ -200,7 +200,7 @@
    },
    {
     "hour": "11:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "12:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "21:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T21:51:52.986",
+  "last_screening": "2026-10-23T21:57:07.961",
   "last_management": "2026-10-23T21:50:00.496"
  },
  "log_tail": [
-  "[2026-10-23T21:46:37.990Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T21:46:38.821Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 34.29% > 30%",
-  "[2026-10-23T21:46:46.732Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-23T21:50:00.496Z] [CRON] Starting management cycle",
-  "[2026-10-23T21:50:01.195Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T21:51:52.747Z] [CRON] [Opportunity] TRUTH-SOL degen 99.6 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T21:51:52.986Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T21:51:52.990Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
   "[2026-10-23T21:51:53.975Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 31.97% > 30%",
-  "[2026-10-23T21:51:53.977Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 39.20% > 30%"
+  "[2026-10-23T21:51:53.977Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 39.20% > 30%",
+  "[2026-10-23T21:57:07.707Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T21:57:07.961Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T21:57:07.962Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
+  "[2026-10-23T21:57:09.617Z] [SCREENING] Bot-holder filter: dropped Moustache-SOL \u2014 bots 34.40% > 30%",
+  "[2026-10-23T21:57:09.618Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 33.41% > 30%",
+  "[2026-10-23T21:57:09.618Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.83% > 30%",
+  "[2026-10-23T21:57:09.618Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.83% > 30%",
+  "[2026-10-23T21:57:15.789Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T21:39:09.687Z"
 }

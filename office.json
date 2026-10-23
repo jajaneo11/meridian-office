@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T18:22:43.083337+00:00",
+ "generated_at": "2026-10-23T18:27:40.459848+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 39,
+  "active_24h": 38,
   "total_value_usd": 139437,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 29
+  "decisions_mentioning": 28
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.896333
+  "sol": 1.633016
  },
  "limits": {
   "max_positions": 3,
@@ -57,43 +57,49 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "9kbqLHQqXLr4PFCEx2Bvj5frerFPxQrb2aJLU4PwTA9g",
-    "pool": "McRib-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-23T17:10:16.446Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 0.69
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 8
  },
  "pnl": {
-  "last24h_usd": 9.14,
-  "fees24h_usd": 18.47,
-  "all_time_usd": 9.14,
-  "closed_total": 7,
-  "win_rate_pct": 86
+  "last24h_usd": 9.44,
+  "fees24h_usd": 18.96,
+  "all_time_usd": 9.44,
+  "closed_total": 8,
+  "win_rate_pct": 88
  },
  "decisions": {
   "total": 100,
-  "total_real": 962,
+  "total_real": 963,
   "today": 100,
-  "today_real": 173,
+  "today_real": 174,
   "by_type": {
-   "no_deploy": 53,
+   "no_deploy": 52,
    "skip": 32,
    "deploy": 8,
-   "close": 7
+   "close": 8
   },
   "by_actor": {
-   "SCREENER": 93,
-   "MANAGER": 7
+   "SCREENER": 92,
+   "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-23T18:26:23.363Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- Tiggien-SOL: bot holders 50.00% > 30%"
+   },
+   {
+    "ts": "2026-10-23T18:24:32.912Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "McRib-SOL",
+    "summary": "Closed at 0.41%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-23T18:21:08.479Z",
     "type": "no_deploy",
@@ -173,22 +179,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.129 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T17:30:13.984Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "Macca-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -514\u2192-462 around active bin -462"
-   },
-   {
-    "ts": "2026-10-23T17:27:17.744Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE SQUADS-SOL (CSv3ixznHbM341uUUyuBwVY9yksujoq8qSrmJHjhCira) WHY SKIPPED SQUADS passes every hard gate (fees 42.9 SOL \u226530, bots 17.9% <30, top10 19.7% <60, bin_step 100, volatility 8.74 positive), but it fails the two qualitative co"
    }
   ]
  },
@@ -196,7 +186,7 @@
   "per_hour": [
    {
     "hour": "07:00",
-    "count": 3
+    "count": 1
    },
    {
     "hour": "08:00",
@@ -240,25 +230,25 @@
    },
    {
     "hour": "18:00",
-    "count": 6
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T18:21:07.783",
+  "last_screening": "2026-10-23T18:26:22.733",
   "last_management": "2026-10-23T18:20:00.350"
  },
  "log_tail": [
-  "[2026-10-23T18:15:52.705Z] [CRON] [Opportunity] Tiggien-SOL degen 95.7 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T18:15:52.983Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T18:15:52.985Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.896333 SOL)",
-  "[2026-10-23T18:15:53.594Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 50.85% > 30%",
-  "[2026-10-23T18:20:00.350Z] [CRON] Starting management cycle",
   "[2026-10-23T18:20:01.098Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T18:21:07.478Z] [CRON] [Opportunity] Tiggien-SOL degen 96.6 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T18:21:07.783Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-23T18:21:07.783Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.896333 SOL)",
-  "[2026-10-23T18:21:08.478Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 45.77% > 30%"
+  "[2026-10-23T18:21:08.478Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 45.77% > 30%",
+  "[2026-10-23T18:24:19.472Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-23T18:26:22.606Z] [CRON] [Opportunity] Tiggien-SOL degen 97.1 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T18:26:22.733Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T18:26:22.733Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
+  "[2026-10-23T18:26:23.362Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 50.00% > 30%"
  ],
- "state_last_updated": "2026-10-23T18:15:43.017Z"
+ "state_last_updated": "2026-10-23T18:24:32.666Z"
 }

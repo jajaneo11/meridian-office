@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T03:27:43.140824+00:00",
+ "generated_at": "2026-10-23T03:32:39.598047+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 69
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 831,
-  "today": 31,
-  "today_real": 42,
+  "total_real": 832,
+  "today": 32,
+  "today_real": 43,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T03:30:54.933Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Wallet balance is 0 SOL; insufficient capital to fund the 0.5 SOL deploy requirement. Without liquidity, no position can be opened regardless of candidate quality. REJECTED BORDR-SOL (no funds), PANGEA-SOL ("
+   },
    {
     "ts": "2026-10-23T03:21:19.866Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Despite strong fundamentals (81 organic, safe bot ratio, low concentration), this pool has zero smart wallet presence and no confirmed narrative. The rules require narrative or smart wallets for conviction; "
-   },
-   {
-    "ts": "2026-10-23T02:20:19.694Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED This candidate had strong fee/TVL (0.99) and one smart wallet presence, but the deploy_position call was blocked on the first attempt and cannot be retried per session rules. REJECTED McRib-SOL (FDvrk...): D"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "03:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T03:26:19.491",
-  "last_management": "2026-10-23T03:20:00.362"
+  "last_screening": "2026-10-23T03:30:01.436",
+  "last_management": "2026-10-23T03:30:00.868"
  },
  "log_tail": [
-  "[2026-10-23T03:20:00.362Z] [CRON] Starting management cycle",
-  "[2026-10-23T03:20:00.932Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T03:20:01.473Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T03:20:01.473Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T03:20:04.928Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.74% > 30%",
-  "[2026-10-23T03:26:19.401Z] [CRON] [Opportunity] BLACKTOBER-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T03:26:19.491Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T03:26:19.492Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T03:26:20.931Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.86% > 30%",
-  "\ud83d\ude80 DEPLOYED (Dry Run)"
+  "\ud83d\ude80 DEPLOYED (Dry Run)",
+  "[2026-10-23T03:30:00.868Z] [CRON] Starting management cycle",
+  "[2026-10-23T03:30:01.436Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T03:30:01.437Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T03:30:01.523Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T03:30:01.523Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T03:30:03.721Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.03% > 30%",
+  "[2026-10-23T03:30:03.722Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.95% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

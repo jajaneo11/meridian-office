@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T04:42:40.364759+00:00",
+ "generated_at": "2026-10-23T04:47:38.924504+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 845,
-  "today": 38,
-  "today_real": 56,
+  "total_real": 846,
+  "today": 39,
+  "today_real": 57,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T04:46:07.660Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0.000 SOL \u2014 no funds available to deploy. Even the strongest candidate (LUKE-SOL, smart wallet present) cannot be opened without capital. REJECTED LUKE-SOL (0 SOL balance) McRib-SOL variants"
+   },
    {
     "ts": "2026-10-23T04:42:39.102Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Deployment failed on PANGEA due to fee/active-TVL ratio check (reported 0%). After a failed attempt, the system blocks further deploys in this cycle to prevent repeated losses. Even though smart wallets and"
-   },
-   {
-    "ts": "2026-10-23T02:56:35.552Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED The deployment validation returned dry-run with wide_range=false, indicating the calculated bin range (56 bins) still failed the system's internal \"wide range\" check for this pool's volatility/fee structure."
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "04:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T04:36:04.602",
+  "last_screening": "2026-10-23T04:42:49.651",
   "last_management": "2026-10-23T04:40:00.739"
  },
  "log_tail": [
-  "[2026-10-23T04:39:22.403Z] [ERROR] Agent loop error at step 6: 429 Rate limit reached: too many requests per minute",
-  "[2026-10-23T04:39:54.563Z] [ERROR] Agent loop error at step 7: 429 Rate limit reached: too many requests per minute",
-  "[2026-10-23T04:40:00.739Z] [CRON] Starting management cycle",
-  "[2026-10-23T04:40:01.297Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T04:40:01.298Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-23T04:40:27.653Z] [ERROR] Agent loop error at step 8: 429 Rate limit reached: too many requests per minute",
-  "[2026-10-23T04:40:59.878Z] [ERROR] Agent loop error at step 9: 429 Rate limit reached: too many requests per minute",
-  "[2026-10-23T04:41:34.804Z] [ERROR] Agent loop error at step 11: 429 Rate limit reached: too many requests per minute",
-  "[2026-10-23T04:42:06.936Z] [ERROR] Agent loop error at step 12: 429 Rate limit reached: too many requests per minute",
+  "[2026-10-23T04:42:49.651Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T04:42:49.651Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T04:42:52.617Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.10% > 30%",
+  "[2026-10-23T04:42:52.618Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
+  "[2026-10-23T04:42:55.116Z] [ERROR] Agent loop error at step 0: 429 Rate limit reached: too many requests per minute",
+  "[2026-10-23T04:43:52.195Z] [ERROR] Agent loop error at step 6: 429 Rate limit reached: too many requests per minute",
+  "[2026-10-23T04:44:24.408Z] [ERROR] Agent loop error at step 7: 429 Rate limit reached: too many requests per minute",
+  "[2026-10-23T04:44:59.941Z] [ERROR] Agent loop error at step 9: 429 Rate limit reached: too many requests per minute",
+  "[2026-10-23T04:45:32.346Z] [ERROR] Agent loop error at step 10: 429 Rate limit reached: too many requests per minute",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

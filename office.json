@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T20:12:41.430592+00:00",
+ "generated_at": "2026-10-23T20:17:41.854763+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 18
+  "decisions_mentioning": 17
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.913705
+  "sol": 1.64572
  },
  "limits": {
   "max_positions": 3,
@@ -57,9 +57,19 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 11
+  "open_count": 1,
+  "open": [
+   {
+    "id": "2raHmEJCZ1WXBBohcr7YzffhMjT7v7PEHVU5hR1aiioK",
+    "pool": "PANGEA-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-23T20:16:44.958Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 0.69
+   }
+  ],
+  "total_tracked": 12
  },
  "pnl": {
   "last24h_usd": 12.18,
@@ -70,13 +80,13 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 976,
+  "total_real": 977,
   "today": 100,
-  "today_real": 187,
+  "today_real": 188,
   "by_type": {
-   "no_deploy": 42,
+   "no_deploy": 41,
    "skip": 36,
-   "deploy": 11,
+   "deploy": 12,
    "close": 11
   },
   "by_actor": {
@@ -84,6 +94,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-23T20:16:44.959Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "PANGEA-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -1252\u2192-1203 around active bin -1203"
+   },
    {
     "ts": "2026-10-23T20:12:28.463Z",
     "type": "close",
@@ -171,14 +189,6 @@
     "pool_name": "\u30e4\u30ae-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -563\u2192-504 around active bin -504"
-   },
-   {
-    "ts": "2026-10-23T19:06:53.872Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": "RAT-USDC",
-    "summary": "Single candidate skipped",
-    "reason_short": "token fees 4.07 SOL below minimum 30 SOL"
    }
   ]
  },
@@ -186,7 +196,7 @@
   "per_hour": [
    {
     "hour": "09:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "10:00",
@@ -230,25 +240,25 @@
    },
    {
     "hour": "20:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T20:11:22.932",
+  "last_screening": "2026-10-23T20:16:38.059",
   "last_management": "2026-10-23T20:10:00.276"
  },
  "log_tail": [
-  "[2026-10-23T20:06:09.930Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.46% > 30%",
-  "[2026-10-23T20:06:09.930Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.46% > 30%",
-  "[2026-10-23T20:10:00.276Z] [CRON] Starting management cycle",
-  "[2026-10-23T20:10:01.008Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T20:11:22.691Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T20:11:22.932Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T20:11:22.932Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.913705 SOL)",
-  "[2026-10-23T20:11:23.744Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.43% > 30%",
-  "[2026-10-23T20:11:23.745Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.43% > 30%",
-  "[2026-10-23T20:12:17.775Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-23T20:16:39.609Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.42% > 30%",
+  "[2026-10-23T20:16:39.610Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.42% > 30%",
+  "[2026-10-23T20:16:39.610Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.42% > 30%",
+  "[2026-10-23T20:16:39.610Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.42% > 30%",
+  "[2026-10-23T20:16:43.636Z] [DEPLOY] Pool: H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX",
+  "[2026-10-23T20:16:43.637Z] [DEPLOY] Strategy: bid_ask, Bins: -1252 to -1203 (49 bins)",
+  "[2026-10-23T20:16:43.637Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-23T20:16:43.637Z] [DEPLOY] Position: 2raHmEJCZ1WXBBohcr7YzffhMjT7v7PEHVU5hR1aiioK",
+  "[2026-10-23T20:16:44.956Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5dxsERkBVcGXYff3TTJmZ1PtSD7D3m6ajoHDciFyXWC4zKztmypAbNe6Fmc47S3Q5WGt4wCsaXg2xrSbxzhp7jVe",
+  "[2026-10-23T20:16:46.254Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-23T20:12:28.169Z"
+ "state_last_updated": "2026-10-23T20:17:11.801Z"
 }

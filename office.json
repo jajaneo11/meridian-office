@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T04:52:40.174639+00:00",
+ "generated_at": "2026-10-23T04:57:41.888591+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 848,
+  "total_real": 849,
   "today": 40,
-  "today_real": 59,
+  "today_real": 60,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,19 +231,19 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T04:50:01.310",
+  "last_screening": "2026-10-23T04:57:04.623",
   "last_management": "2026-10-23T04:50:00.223"
  },
  "log_tail": [
-  "[2026-10-23T04:48:46.268Z] [ERROR] Agent loop error at step 3: 429 Rate limit reached: too many requests per minute",
-  "[2026-10-23T04:49:18.546Z] [ERROR] Agent loop error at step 4: 429 Rate limit reached: too many requests per minute",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T04:50:00.223Z] [CRON] Starting management cycle",
   "[2026-10-23T04:50:00.756Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T04:50:01.310Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T04:50:01.310Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T04:50:04.050Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.08% > 30%",
   "[2026-10-23T04:50:04.051Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.98% > 30%",
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-23T04:57:04.539Z] [CRON] [Opportunity] McRib-SOL degen 91.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T04:57:04.623Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T04:57:04.623Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

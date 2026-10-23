@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T22:22:41.917803+00:00",
+ "generated_at": "2026-10-23T22:32:41.198801+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -93,16 +93,24 @@
   "today": 100,
   "today_real": 202,
   "by_type": {
-   "skip": 38,
    "close": 12,
    "no_deploy": 37,
-   "deploy": 13
+   "deploy": 13,
+   "skip": 38
   },
   "by_actor": {
-   "SCREENER": 88,
-   "MANAGER": 12
+   "MANAGER": 12,
+   "SCREENER": 88
   },
   "recent": [
+   {
+    "ts": "2026-10-23T22:30:00.583Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.180 < 0.74)"
+   },
    {
     "ts": "2026-10-23T22:20:01.956Z",
     "type": "skip",
@@ -190,14 +198,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.180 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T21:10:01.968Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.180 < 0.74)"
    }
   ]
  },
@@ -209,7 +209,7 @@
    },
    {
     "hour": "12:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "13:00",
@@ -249,25 +249,25 @@
    },
    {
     "hour": "22:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-23T22:05:23.076",
-  "last_management": "2026-10-23T22:20:00.689"
+  "last_management": "2026-10-23T22:30:00.295"
  },
  "log_tail": [
-  "[2026-10-23T22:05:31.020Z] [DEPLOY] Amount: 0 X, 0.69 Y",
-  "[2026-10-23T22:05:31.020Z] [DEPLOY] Position: 3KqgZCqELao1U6u7e3DS4xSwzQzXPRY1rxwFopREzZv9",
-  "[2026-10-23T22:05:35.375Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4wL2WLxR75TeJfyaWVmWqHhSNwv3qsnf6qzQkSJFw2hMfEz7jNVjkXVA9js3Xpijgt9WBh3SfbUnpiQ4PWb2aU3J",
   "[2026-10-23T22:05:36.863Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-23T22:10:00.283Z] [CRON] Starting management cycle",
   "[2026-10-23T22:10:00.985Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T22:20:00.689Z] [CRON] Starting management cycle",
   "[2026-10-23T22:20:01.391Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T22:20:01.685Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T22:20:01.953Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T22:20:01.953Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T22:30:00.295Z] [CRON] Starting management cycle",
+  "[2026-10-23T22:30:00.577Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T22:30:00.998Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-23T22:05:43.059Z"
 }

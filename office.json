@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T19:57:40.400143+00:00",
+ "generated_at": "2026-10-23T20:02:44.154852+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 21
+  "decisions_mentioning": 20
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.90162
+  "sol": 0.913705
  },
  "limits": {
   "max_positions": 3,
@@ -57,17 +57,8 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
+  "open_count": 1,
   "open": [
-   {
-    "id": "4j2hfLCERrhbXKiAjvkvTNTPVvjVnzcJH5NoAY4qWtCA",
-    "pool": "McRib-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-23T19:00:07.266Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 100
-   },
    {
     "id": "4zBozNcNGngTS6qSy58VRkeM7xVbWHcDiNyiEnMFXCdQ",
     "pool": "\u30e4\u30ae-SOL",
@@ -81,28 +72,52 @@
   "total_tracked": 11
  },
  "pnl": {
-  "last24h_usd": 9.65,
-  "fees24h_usd": 19.08,
-  "all_time_usd": 9.65,
-  "closed_total": 9,
-  "win_rate_pct": 89
+  "last24h_usd": 12.35,
+  "fees24h_usd": 22.65,
+  "all_time_usd": 12.35,
+  "closed_total": 10,
+  "win_rate_pct": 90
  },
  "decisions": {
   "total": 100,
-  "total_real": 972,
+  "total_real": 974,
   "today": 100,
-  "today_real": 183,
+  "today_real": 185,
   "by_type": {
-   "no_deploy": 44,
+   "no_deploy": 43,
    "skip": 36,
    "deploy": 11,
-   "close": 9
+   "close": 10
   },
   "by_actor": {
-   "SCREENER": 91,
-   "MANAGER": 9
+   "SCREENER": 90,
+   "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-23T20:00:09.608Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Deploy attempt did not succeed",
+    "reason_short": "\u26a0\ufe0f **DEPLOY BLOCKED \u2014 NOT DEPLOYED** **McRib-SOL** (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) The `deploy_position` tool call failed and was rejected \u2014 my first attempt was submitted without the positive SOL amount (`amount_y`), and the session then hard-blocked any retry: - Attempt 1/2: `blocke"
+   },
+   {
+    "ts": "2026-10-23T19:58:45.587Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry (tool-level failure). BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED - McRib-SOL was the clear top pick: bin_step=100, volatility 4.00, fee_tvl 0.0799, organic 86, fees 226 SOL, top10 only 15.89%, 2 smart wallets present, and a strong pool memory (avg PnL"
+   },
+   {
+    "ts": "2026-10-23T19:58:23.154Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "McRib-SOL",
+    "summary": "Closed at 3.78%",
+    "reason_short": "Trailing TP: peak 5.10% \u2192 current 3.38% (dropped 1.72% >= 1.5%)"
+   },
    {
     "ts": "2026-10-23T19:50:01.768Z",
     "type": "skip",
@@ -174,42 +189,14 @@
     "pool_name": "SQUADS-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -709\u2192-640 around active bin -640"
-   },
-   {
-    "ts": "2026-10-23T18:50:17.958Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry \u2014 deployment tool did not execute. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED McRib-SOL was the top-conviction pick (3 smart wallets, $37.9K volume, organic 86, $1.32M mcap, +61% 1h momentum, fees 211 SOL), but the on-chain deploy call was blocked/fai"
-   },
-   {
-    "ts": "2026-10-23T18:45:15.000Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED The deploy tool call failed and could not be completed. My first deploy_position attempt was rejected because the SOL amount (amount_y) was not passed, and the retry was blocked by the system (\"deploy_positi"
-   },
-   {
-    "ts": "2026-10-23T18:40:08.723Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED McRib-SOL was the top conviction pick (2 smart wallets, organic=86, highest volume, low top10 concentration), but the deploy_position tool call failed in this session \u2014 it was blocked after the initial call "
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "08:00",
-    "count": 0
-   },
-   {
     "hour": "09:00",
-    "count": 8
+    "count": 5
    },
    {
     "hour": "10:00",
@@ -249,25 +236,29 @@
    },
    {
     "hour": "19:00",
-    "count": 7
+    "count": 9
+   },
+   {
+    "hour": "20:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T19:12:07.986",
-  "last_management": "2026-10-23T19:50:00.521"
+  "last_screening": "2026-10-23T20:00:01.545",
+  "last_management": "2026-10-23T20:00:00.856"
  },
  "log_tail": [
-  "[2026-10-23T19:30:01.439Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T19:40:00.040Z] [CRON] Starting management cycle",
-  "[2026-10-23T19:40:00.230Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
-  "[2026-10-23T19:40:00.491Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T19:40:00.760Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T19:40:01.006Z] [CRON] Screening skipped \u2014 insufficient SOL (0.170 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T19:50:00.521Z] [CRON] Starting management cycle",
-  "[2026-10-23T19:50:01.229Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T19:50:01.498Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T19:50:01.768Z] [CRON] Screening skipped \u2014 insufficient SOL (0.170 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T19:58:45.587Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-23T20:00:00.856Z] [CRON] Starting management cycle",
+  "[2026-10-23T20:00:01.497Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-23T20:00:01.545Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T20:00:01.545Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.913705 SOL)",
+  "[2026-10-23T20:00:03.784Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 43.58% > 30%",
+  "[2026-10-23T20:00:03.784Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 43.58% > 30%",
+  "[2026-10-23T20:00:03.784Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 43.58% > 30%",
+  "[2026-10-23T20:00:03.784Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 43.58% > 30%",
+  "[2026-10-23T20:00:09.607Z] [AGENT] \u26a0\ufe0f **DEPLOY BLOCKED \u2014 NOT DEPLOYED**"
  ],
- "state_last_updated": "2026-10-23T19:55:50.652Z"
+ "state_last_updated": "2026-10-23T19:58:17.792Z"
 }

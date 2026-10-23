@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T18:52:38.929591+00:00",
+ "generated_at": "2026-10-23T18:57:40.049863+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 27
+  "decisions_mentioning": 26
  },
  "mode": {
   "dry_run": false,
@@ -57,9 +57,19 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 8
+  "open_count": 1,
+  "open": [
+   {
+    "id": "7kVM6L3Y1vQtGGHsUfEXLCsQorNE2uYsbc7asRcxBxYy",
+    "pool": "SQUADS-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-23T18:57:13.414Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 0.69
+   }
+  ],
+  "total_tracked": 9
  },
  "pnl": {
   "last24h_usd": 9.44,
@@ -70,13 +80,13 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 968,
+  "total_real": 969,
   "today": 100,
-  "today_real": 179,
+  "today_real": 180,
   "by_type": {
-   "no_deploy": 52,
+   "no_deploy": 51,
    "skip": 32,
-   "deploy": 8,
+   "deploy": 9,
    "close": 8
   },
   "by_actor": {
@@ -84,6 +94,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-23T18:57:13.416Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "SQUADS-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -709\u2192-640 around active bin -640"
+   },
    {
     "ts": "2026-10-23T18:50:17.958Z",
     "type": "no_deploy",
@@ -171,14 +189,6 @@
     "pool_name": "SQUADS-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -767\u2192-698 around active bin -698"
-   },
-   {
-    "ts": "2026-10-23T18:09:32.299Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "SQUADS-SOL",
-    "summary": "Closed at 5.13%",
-    "reason_short": "Trailing TP: peak 8.03% \u2192 current 5.21% (dropped 2.82% >= 1.5%)"
    }
   ]
  },
@@ -190,7 +200,7 @@
    },
    {
     "hour": "08:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "09:00",
@@ -230,25 +240,25 @@
    },
    {
     "hour": "18:00",
-    "count": 13
+    "count": 14
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T18:50:01.900",
+  "last_screening": "2026-10-23T18:57:07.538",
   "last_management": "2026-10-23T18:50:00.829"
  },
  "log_tail": [
-  "[2026-10-23T18:45:09.399Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 42.76% > 30%",
-  "[2026-10-23T18:45:09.399Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.21% > 30%",
-  "[2026-10-23T18:45:14.999Z] [AGENT] \u26d4 NO DEPLOY",
-  "- McRib-SOL \u2014 deploy tool errored + blocked on retry; no real on-chain transaction executed",
-  "[2026-10-23T18:50:00.829Z] [CRON] Starting management cycle",
-  "[2026-10-23T18:50:01.386Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T18:50:01.900Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T18:50:01.900Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
-  "[2026-10-23T18:50:05.019Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 38.03% > 30%",
-  "[2026-10-23T18:50:17.952Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-23T18:57:07.428Z] [CRON] [Opportunity] SQUADS-SOL degen 83.3 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T18:57:07.538Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T18:57:07.538Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
+  "[2026-10-23T18:57:12.365Z] [DEPLOY] Pool: CSv3ixznHbM341uUUyuBwVY9yksujoq8qSrmJHjhCira",
+  "[2026-10-23T18:57:12.365Z] [DEPLOY] Strategy: bid_ask, Bins: -709 to -640 (69 bins)",
+  "[2026-10-23T18:57:12.366Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-23T18:57:12.366Z] [DEPLOY] Position: 7kVM6L3Y1vQtGGHsUfEXLCsQorNE2uYsbc7asRcxBxYy",
+  "[2026-10-23T18:57:13.412Z] [DEPLOY] SUCCESS \u2014 1 tx(s): CAhyQm7rhvXMvo84wxE1JnzPWgFm5KkjBPNhaPbVMqR8HJh9pGh9AKn29bJHbWnxjVYvgVj6DKM8TyhzMrfEqD6",
+  "[2026-10-23T18:57:15.007Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-23T18:57:34.838Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-23T18:24:32.666Z"
+ "state_last_updated": "2026-10-23T18:57:34.837Z"
 }

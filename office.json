@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T19:47:40.347869+00:00",
+ "generated_at": "2026-10-23T19:52:39.203572+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 22
+  "decisions_mentioning": 21
  },
  "mode": {
   "dry_run": false,
@@ -93,8 +93,8 @@
   "today": 100,
   "today_real": 183,
   "by_type": {
-   "no_deploy": 45,
-   "skip": 35,
+   "no_deploy": 44,
+   "skip": 36,
    "deploy": 11,
    "close": 9
   },
@@ -103,6 +103,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-23T19:50:01.768Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.170 < 0.74)"
+   },
    {
     "ts": "2026-10-23T19:40:01.009Z",
     "type": "skip",
@@ -190,14 +198,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED McRib-SOL was the top conviction pick (2 smart wallets, organic=86, highest volume, low top10 concentration), but the deploy_position tool call failed in this session \u2014 it was blocked after the initial call "
-   },
-   {
-    "ts": "2026-10-23T18:36:08.822Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Tiggien-SOL: bot holders 47.29% > 30%"
    }
   ]
  },
@@ -209,7 +209,7 @@
    },
    {
     "hour": "09:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "10:00",
@@ -249,25 +249,25 @@
    },
    {
     "hour": "19:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-23T19:12:07.986",
-  "last_management": "2026-10-23T19:40:00.040"
+  "last_management": "2026-10-23T19:50:00.521"
  },
  "log_tail": [
-  "[2026-10-23T19:20:01.250Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T19:20:01.564Z] [CRON] Screening skipped \u2014 insufficient SOL (0.170 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T19:30:00.577Z] [CRON] Starting management cycle",
-  "[2026-10-23T19:30:00.814Z] [CRON] Screening skipped \u2014 insufficient SOL (0.170 < 0.74 needed for deploy + gas)",
   "[2026-10-23T19:30:01.439Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T19:40:00.040Z] [CRON] Starting management cycle",
   "[2026-10-23T19:40:00.230Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
   "[2026-10-23T19:40:00.491Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T19:40:00.760Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T19:40:01.006Z] [CRON] Screening skipped \u2014 insufficient SOL (0.170 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T19:40:01.006Z] [CRON] Screening skipped \u2014 insufficient SOL (0.170 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T19:50:00.521Z] [CRON] Starting management cycle",
+  "[2026-10-23T19:50:01.229Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-23T19:50:01.498Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
+  "[2026-10-23T19:50:01.768Z] [CRON] Screening skipped \u2014 insufficient SOL (0.170 < 0.74 needed for deploy + gas)"
  ],
  "state_last_updated": "2026-10-23T19:46:32.449Z"
 }

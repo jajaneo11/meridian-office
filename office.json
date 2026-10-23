@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T02:52:39.564596+00:00",
+ "generated_at": "2026-10-23T02:57:38.986455+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 824,
-  "today": 26,
-  "today_real": 35,
+  "total_real": 825,
+  "today": 27,
+  "today_real": 36,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T02:56:35.552Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED The deployment validation returned dry-run with wide_range=false, indicating the calculated bin range (56 bins) still failed the system's internal \"wide range\" check for this pool's volatility/fee structure."
+   },
    {
     "ts": "2026-10-23T02:50:16.959Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. **BEST LOOKING CANDIDATE** McRib-SOL **WHY SKIPPED** The deploy tool executed in DRY_RUN mode and did not send an on-chain transaction. No actual position was opened. In a live cycle, McRib-SOL would have been the top candidate due to smart wallet pres"
-   },
-   {
-    "ts": "2026-10-23T01:50:25.379Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED Deploy attempt failed: pool not found in SDK verification step. Session-level deploy lock prevents retry. No alternative candidate with both smart wallet signal"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "02:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T02:50:01.886",
+  "last_screening": "2026-10-23T02:56:19.419",
   "last_management": "2026-10-23T02:50:00.859"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T02:50:00.859Z] [CRON] Starting management cycle",
-  "[2026-10-23T02:50:01.402Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T02:50:01.886Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T02:50:01.886Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T02:50:04.433Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.47% > 30%",
   "[2026-10-23T02:50:04.433Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.87% > 30%",
   "\u26d4 NO DEPLOY",
   "The deploy tool failed with \"Pool undefined not found\" error when attempting to create a position. This suggests either an SDK connectivity issue or the pool address changed after the screening data was captured. Without a valid deploy confirmation, proceeding would risk loss of funds.",
-  "- McRib-SOL (FDvrkkg...) \u2014 1 smart wallet, but deploy would hit same SDK error"
+  "- McRib-SOL (FDvrkkg...) \u2014 1 smart wallet, but deploy would hit same SDK error",
+  "[2026-10-23T02:56:19.308Z] [CRON] [Opportunity] PANGEA-SOL degen 49.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T02:56:19.419Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T02:56:19.419Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T12:17:38.528029+00:00",
+ "generated_at": "2026-10-23T12:22:41.094465+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 54
+  "decisions_mentioning": 53
  },
  "mode": {
   "dry_run": false,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 945,
+  "total_real": 946,
   "today": 100,
-  "today_real": 156,
+  "today_real": 157,
   "by_type": {
    "no_deploy": 94,
    "skip": 4,
@@ -84,6 +84,14 @@
    "MANAGER": 1
   },
   "recent": [
+   {
+    "ts": "2026-10-23T12:20:19.261Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "I've screened all 6 candidates. Let me apply the hard rules and filter. **Screening analysis:** | Pool | Bin Step | Fees (SOL) | Verdict | |---|---|---|---| | RAT-USDC (BJnn) | 50 \u274c | 3.4 \u274c | SKIP (bin_step, fees <30) | | RAT-USDC (Dry9) | 50 \u274c | 3.4 \u274c | SKIP (bin_step, fees <30) | | CLAUDIA-SOL | 5"
+   },
    {
     "ts": "2026-10-23T12:16:45.661Z",
     "type": "no_deploy",
@@ -171,14 +179,6 @@
     "pool_name": null,
     "summary": "Deploy attempt did not succeed",
     "reason_short": "\u26d4 DEPLOY FAILED Pool verification error during deploy_position execution. POOL ISSUE PHP-SOL WHY IT FAILED The deploy_position tool could not verify pool screening thresholds and returned an error. The agent session flagged a prior attempt, blocking retries. Without a successful deploy confirmation,"
-   },
-   {
-    "ts": "2026-10-23T11:25:18.494Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Narrative is empty/generating and no smart wallets are present. Per guidelines, this combination requires skipping regardless of other metrics. REJECTED McRib-SOL (weak narrative, no smart wallets)"
    }
   ]
  },
@@ -186,7 +186,7 @@
   "per_hour": [
    {
     "hour": "01:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "02:00",
@@ -230,25 +230,25 @@
    },
    {
     "hour": "12:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T12:16:40.401",
-  "last_management": "2026-10-23T12:10:00.589"
+  "last_screening": "2026-10-23T12:20:01.532",
+  "last_management": "2026-10-23T12:20:00.274"
  },
  "log_tail": [
-  "[2026-10-23T12:10:41.438Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T12:10:41.439Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
-  "[2026-10-23T12:10:41.681Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 1.11x",
-  "[2026-10-23T12:10:41.682Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T12:15:55.405Z] [SCREENING] Volume spike check rejected GUST-SOL: 1.80x",
-  "[2026-10-23T12:15:55.408Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
   "[2026-10-23T12:16:40.297Z] [CRON] [Opportunity] GUST-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T12:16:40.401Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-23T12:16:40.401Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T12:20:00.274Z] [CRON] Starting management cycle",
+  "[2026-10-23T12:20:00.885Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T12:20:01.532Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T12:20:01.532Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
+  "[2026-10-23T12:20:02.099Z] [SCREENING] Volume spike check rejected LARPCHECK-SOL: 2.51x",
+  "[2026-10-23T12:20:02.099Z] [SCREENING] Volume spike filter removed 1 candidate(s)"
  ],
  "state_last_updated": "2026-10-23T12:03:26.499Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T18:12:40.134813+00:00",
+ "generated_at": "2026-10-23T18:17:41.446264+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.894099
+  "sol": 0.896333
  },
  "limits": {
   "max_positions": 3,
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
+  "open_count": 1,
   "open": [
    {
     "id": "9kbqLHQqXLr4PFCEx2Bvj5frerFPxQrb2aJLU4PwTA9g",
@@ -67,42 +67,49 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": 0.69
-   },
-   {
-    "id": "GdyHB5scDJgYMtQ9yR3PoaJ9zM1pD2s3eNs4GqAy43L",
-    "pool": "SQUADS-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-23T18:10:11.297Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 0.69
    }
   ],
   "total_tracked": 8
  },
  "pnl": {
-  "last24h_usd": 8.89,
-  "fees24h_usd": 18.24,
-  "all_time_usd": 8.89,
-  "closed_total": 6,
-  "win_rate_pct": 83
+  "last24h_usd": 9.14,
+  "fees24h_usd": 18.47,
+  "all_time_usd": 9.14,
+  "closed_total": 7,
+  "win_rate_pct": 86
  },
  "decisions": {
   "total": 100,
-  "total_real": 960,
+  "total_real": 961,
   "today": 100,
-  "today_real": 171,
+  "today_real": 172,
   "by_type": {
-   "no_deploy": 54,
+   "no_deploy": 53,
    "skip": 32,
    "deploy": 8,
-   "close": 6
+   "close": 7
   },
   "by_actor": {
-   "SCREENER": 94,
-   "MANAGER": 6
+   "SCREENER": 93,
+   "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-23T18:15:53.597Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- Tiggien-SOL: bot holders 50.85% > 30%"
+   },
+   {
+    "ts": "2026-10-23T18:15:43.292Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "SQUADS-SOL",
+    "summary": "Closed at 0.34%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-23T18:10:11.298Z",
     "type": "deploy",
@@ -182,22 +189,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED PHP-SOL was the top candidate (fee/TVL 0.296, volatility 3.38, organic 72, 1 smart wallet, fee 243 SOL, bots 8.6%). But the actual deploy_position call was BLOCKED by the hard config gate: pool fee/active-TVL "
-   },
-   {
-    "ts": "2026-10-23T17:15:19.182Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE SQUADS-SOL (CSv3ixznHbM341uUUyuBwVY9yksujoq8qSrmJHjhCira) WHY SKIPPED The deploy tool call actually failed: my first call went out without a positive amount_y (I omitted it), and the system blocked any retry for this session (\"de"
-   },
-   {
-    "ts": "2026-10-23T17:10:16.448Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "McRib-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -536\u2192-482 around active bin -482"
    }
   ]
  },
@@ -205,7 +196,7 @@
   "per_hour": [
    {
     "hour": "07:00",
-    "count": 6
+    "count": 4
    },
    {
     "hour": "08:00",
@@ -249,25 +240,25 @@
    },
    {
     "hour": "18:00",
-    "count": 3
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T18:09:52.733",
+  "last_screening": "2026-10-23T18:15:52.983",
   "last_management": "2026-10-23T18:10:00.858"
  },
  "log_tail": [
-  "[2026-10-23T18:09:52.733Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T18:09:52.735Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.894099 SOL)",
-  "[2026-10-23T18:10:00.858Z] [CRON] Starting management cycle",
-  "[2026-10-23T18:10:01.738Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T18:10:09.404Z] [DEPLOY] Pool: CSv3ixznHbM341uUUyuBwVY9yksujoq8qSrmJHjhCira",
   "[2026-10-23T18:10:09.404Z] [DEPLOY] Strategy: bid_ask, Bins: -767 to -698 (69 bins)",
   "[2026-10-23T18:10:09.404Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-23T18:10:09.404Z] [DEPLOY] Position: GdyHB5scDJgYMtQ9yR3PoaJ9zM1pD2s3eNs4GqAy43L",
   "[2026-10-23T18:10:11.295Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3JHstNa7fsoAD37tTm1tDPNcKVcjULrUg7hq5J243eUY22oBmqEsGcCiUoq59KL39GGnwSXkmrnKzHb4ijWLf3C1",
-  "[2026-10-23T18:10:12.394Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-23T18:10:12.394Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-23T18:15:22.284Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-23T18:15:52.705Z] [CRON] [Opportunity] Tiggien-SOL degen 95.7 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T18:15:52.983Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T18:15:52.985Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.896333 SOL)",
+  "[2026-10-23T18:15:53.594Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 50.85% > 30%"
  ],
- "state_last_updated": "2026-10-23T18:12:16.321Z"
+ "state_last_updated": "2026-10-23T18:15:43.017Z"
 }

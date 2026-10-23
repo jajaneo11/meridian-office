@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T05:57:38.370467+00:00",
+ "generated_at": "2026-10-23T06:02:41.067827+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 68
+  "decisions_mentioning": 67
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 861,
-  "today": 50,
-  "today_real": 72,
+  "total_real": 862,
+  "today": 51,
+  "today_real": 73,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T06:00:40.164Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED The deployment tool failed because the pool screening thresholds could not be verified before deploy \u2014 the system returned \"Pool not found\" when the position wa"
+   },
    {
     "ts": "2026-10-23T05:55:40.732Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL (FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ) WHY SKIPPED Wallet balance is 0 SOL. Cannot deploy 0.5 SOL with no available capital. REJECTED All pools skipped due to zero wallet balance. Funds are required before deplo"
-   },
-   {
-    "ts": "2026-10-23T04:46:07.660Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0.000 SOL \u2014 no funds available to deploy. Even the strongest candidate (LUKE-SOL, smart wallet present) cannot be opened without capital. REJECTED LUKE-SOL (0 SOL balance) McRib-SOL variants"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "18:00",
-    "count": 8
-   },
    {
     "hour": "19:00",
     "count": 11
@@ -227,23 +223,27 @@
    {
     "hour": "05:00",
     "count": 10
+   },
+   {
+    "hour": "06:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T05:55:34.984",
-  "last_management": "2026-10-23T05:50:00.589"
+  "last_screening": "2026-10-23T06:00:00.592",
+  "last_management": "2026-10-23T06:00:00.070"
  },
  "log_tail": [
-  "[2026-10-23T05:50:01.883Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T05:50:01.885Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T05:50:05.499Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.77% > 30%",
-  "[2026-10-23T05:50:05.499Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.01% > 30%",
-  "[2026-10-23T05:50:39.534Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
   "[2026-10-23T05:55:34.900Z] [CRON] [Opportunity] McRib-SOL degen 70.6 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T05:55:34.984Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T05:55:34.985Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T06:00:00.070Z] [CRON] Starting management cycle",
+  "[2026-10-23T06:00:00.592Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T06:00:00.593Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T06:00:00.641Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T06:00:00.641Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

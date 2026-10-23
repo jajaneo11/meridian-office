@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T21:37:39.724096+00:00",
+ "generated_at": "2026-10-23T21:42:41.910226+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 985,
+  "total_real": 986,
   "today": 100,
-  "today_real": 196,
+  "today_real": 197,
   "by_type": {
    "no_deploy": 38,
    "deploy": 13,
@@ -94,6 +94,14 @@
    "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-23T21:41:23.674Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- TRUTH-SOL: bot holders 35.72% > 30%"
+   },
    {
     "ts": "2026-10-23T21:36:09.094Z",
     "type": "no_deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "Deploy attempt did not succeed",
     "reason_short": "\u26d4 **NO DEPLOY** **Cycle finished with no valid entry.** **BEST LOOKING CANDIDATE** GUST-SOL (`5TfrKFkySxzqGrr65PED4TkwwYEHBy8AvsqTtKiLo1ek`) **WHY SKIPPED** The deployment attempt for GUST-SOL was blocked by the system: `Could not verify pool screening thresholds before deploy: Pool undefined not fo"
-   },
-   {
-    "ts": "2026-10-23T20:27:14.031Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Himmel-SOL (2FEkN6uYmyFiWRQfBfczxtKvYPABWhs7nGiy9UdBKAHG) WHY SKIPPED Only one candidate survived pre-screening, but it fails the core conviction gate: it has **no narrative** (narrative still being generated/unavailable) and **n"
    }
   ]
  },
@@ -200,7 +200,7 @@
    },
    {
     "hour": "11:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "12:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "21:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T21:36:07.935",
-  "last_management": "2026-10-23T21:30:00.692"
+  "last_screening": "2026-10-23T21:41:22.994",
+  "last_management": "2026-10-23T21:40:00.038"
  },
  "log_tail": [
-  "[2026-10-23T21:20:01.396Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T21:30:00.692Z] [CRON] Starting management cycle",
-  "[2026-10-23T21:30:00.985Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T21:30:01.411Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T21:31:06.621Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-23T21:36:07.655Z] [CRON] [Opportunity] TRUTH-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T21:36:07.935Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-23T21:36:07.937Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
   "[2026-10-23T21:36:09.083Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 36.80% > 30%",
-  "[2026-10-23T21:36:09.083Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.89% > 30%"
+  "[2026-10-23T21:36:09.083Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.89% > 30%",
+  "[2026-10-23T21:40:00.038Z] [CRON] Starting management cycle",
+  "[2026-10-23T21:40:00.645Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-23T21:41:22.789Z] [CRON] [Opportunity] TRUTH-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T21:41:22.994Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T21:41:22.995Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
+  "[2026-10-23T21:41:23.670Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 35.72% > 30%"
  ],
- "state_last_updated": "2026-10-23T21:31:32.070Z"
+ "state_last_updated": "2026-10-23T21:39:09.687Z"
 }

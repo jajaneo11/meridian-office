@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T03:02:40.033239+00:00",
+ "generated_at": "2026-10-23T03:07:39.685765+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 69
+  "decisions_mentioning": 70
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 826,
-  "today": 27,
-  "today_real": 37,
+  "total_real": 827,
+  "today": 28,
+  "today_real": 38,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T03:05:36.976Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Deployment failed on PANGEA due to fee/active-TVL ratio check (reported 0%). After a failed attempt, the system blocks further deploys in this cycle to prevent repeated losses. Even though smart wallets and"
+   },
    {
     "ts": "2026-10-23T02:56:35.552Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-23T01:56:17.172Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. **BEST LOOKING CANDIDATE** McRib-SOL **WHY SKIPPED** The deploy tool executed in DRY_RUN mode and did not send an on-chain transaction. No actual position was opened. In a live cycle, McRib-SOL would have been the top candidate due to smart wallet pres"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "03:00",
-    "count": 0
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T03:00:00.938",
+  "last_screening": "2026-10-23T03:05:19.640",
   "last_management": "2026-10-23T03:00:00.347"
  },
  "log_tail": [
-  "- McRib-SOL (FDvrkkg...) \u2014 1 smart wallet, but deploy would hit same SDK error",
-  "[2026-10-23T02:56:19.308Z] [CRON] [Opportunity] PANGEA-SOL degen 49.4 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T02:56:19.419Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T02:56:19.419Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T03:00:00.347Z] [CRON] Starting management cycle",
   "[2026-10-23T03:00:00.899Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T03:00:00.899Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-23T03:00:00.938Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T03:00:00.938Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
+  "[2026-10-23T03:00:00.938Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T03:05:19.536Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T03:05:19.640Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T03:05:19.640Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T03:05:22.197Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.91% > 30%",
+  "[2026-10-23T03:05:22.198Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.49% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

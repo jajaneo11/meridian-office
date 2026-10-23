@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T03:57:39.954441+00:00",
+ "generated_at": "2026-10-23T04:02:39.993265+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 837,
+  "total_real": 838,
   "today": 35,
-  "today_real": 48,
+  "today_real": 49,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "16:00",
-    "count": 6
-   },
-   {
     "hour": "17:00",
     "count": 8
    },
@@ -227,24 +223,28 @@
    {
     "hour": "03:00",
     "count": 8
+   },
+   {
+    "hour": "04:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T03:56:19.658",
-  "last_management": "2026-10-23T03:50:00.017"
+  "last_screening": "2026-10-23T04:00:00.971",
+  "last_management": "2026-10-23T04:00:00.474"
  },
  "log_tail": [
-  "[2026-10-23T03:50:01.140Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T03:50:01.140Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T03:50:02.763Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.28% > 30%",
-  "[2026-10-23T03:50:02.763Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 36.50% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T03:56:19.545Z] [CRON] [Opportunity] BTC-SOL degen 64.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T03:56:19.658Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T03:56:19.659Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T03:56:20.469Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.02% > 30%",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-23T04:00:00.474Z] [CRON] Starting management cycle",
+  "[2026-10-23T04:00:00.971Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T04:00:00.972Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T04:00:01.080Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T04:00:01.080Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T04:00:03.723Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.59% > 30%",
+  "[2026-10-23T04:00:03.723Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.02% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

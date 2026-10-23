@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T06:12:39.789168+00:00",
+ "generated_at": "2026-10-23T06:17:40.301440+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 864,
-  "today": 53,
-  "today_real": 75,
+  "total_real": 865,
+  "today": 54,
+  "today_real": 76,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T06:15:18.857Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GTA6-SOL WHY SKIPPED Wallet balance is 0 SOL. Cannot deploy any positions without capital. REJECTED GTA6-SOL (no funds), McRib-SOL (no funds), swordcat-SOL (no funds), Macca-SOL (no funds)"
+   },
    {
     "ts": "2026-10-23T06:10:28.557Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (FDvr...) WHY SKIPPED Wallet balance is 0 SOL, making it impossible to fund the required 0.5 SOL deploy. Even though this pool had strong metrics (fees > 30 SOL, smart wallet present, good volatility), capital availabil"
-   },
-   {
-    "ts": "2026-10-23T05:05:33.115Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED No verified narrative available and no smart wallet presence to validate the thesis. Per hard rules, candidates lacking both signals must be skipped regardless of other metrics. REJECTED McRib-SOL (no narrat"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "06:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T06:10:01.753",
+  "last_screening": "2026-10-23T06:15:04.902",
   "last_management": "2026-10-23T06:10:00.681"
  },
  "log_tail": [
-  "[2026-10-23T06:06:05.225Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T06:06:05.226Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T06:10:00.681Z] [CRON] Starting management cycle",
   "[2026-10-23T06:10:01.271Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T06:10:01.753Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T06:10:01.753Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T06:10:04.571Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.68% > 30%",
   "[2026-10-23T06:10:04.572Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.22% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T06:15:04.786Z] [CRON] [Opportunity] GTA6-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T06:15:04.902Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T06:15:04.902Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

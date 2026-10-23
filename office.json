@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T13:17:47.046278+00:00",
+ "generated_at": "2026-10-23T13:23:00.108534+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -84,8 +84,8 @@
   "today": 100,
   "today_real": 159,
   "by_type": {
-   "no_deploy": 87,
-   "skip": 8,
+   "no_deploy": 86,
+   "skip": 9,
    "deploy": 3,
    "close": 2
   },
@@ -94,6 +94,14 @@
    "MANAGER": 2
   },
   "recent": [
+   {
+    "ts": "2026-10-23T13:20:01.560Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.021 < 0.74)"
+   },
    {
     "ts": "2026-10-23T13:10:02.238Z",
     "type": "skip",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GUST-SOL WHY SKIPPED The only surviving candidate fails the conviction bar. GUST has an unavailable narrative (status \"generating\", no usable origin/catalyst) and 0/30 smart wallets in the pool \u2014 the \"no narrative + no smart wall"
-   },
-   {
-    "ts": "2026-10-23T12:07:15.893Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GUST-SOL WHY SKIPPED GUST-SOL fails the minimum conviction bar: it has no usable narrative (still generating) and zero smart wallets in the pool \u2014 this directly triggers the required \"no narrative + no smart wallets\" skip rule. I"
    }
   ]
  },
@@ -196,7 +196,7 @@
   "per_hour": [
    {
     "hour": "02:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "03:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "13:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-23T12:46:40.707",
-  "last_management": "2026-10-23T13:10:00.597"
+  "last_management": "2026-10-23T13:20:00.069"
  },
  "log_tail": [
-  "[2026-10-23T12:46:54.223Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-23T12:50:00.773Z] [CRON] Starting management cycle",
-  "[2026-10-23T12:50:01.692Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T13:00:00.156Z] [CRON] Starting management cycle",
   "[2026-10-23T13:00:00.474Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
   "[2026-10-23T13:00:01.060Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T13:10:00.597Z] [CRON] Starting management cycle",
   "[2026-10-23T13:10:01.460Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T13:10:01.850Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
-  "[2026-10-23T13:10:02.237Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T13:10:02.237Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T13:20:00.069Z] [CRON] Starting management cycle",
+  "[2026-10-23T13:20:00.822Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-23T13:20:01.179Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
+  "[2026-10-23T13:20:01.559Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)"
  ],
- "state_last_updated": "2026-10-23T13:16:50.104Z"
+ "state_last_updated": "2026-10-23T13:18:41.112Z"
 }

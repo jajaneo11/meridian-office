@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T12:07:38.788062+00:00",
+ "generated_at": "2026-10-23T12:12:39.111563+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 942,
+  "total_real": 944,
   "today": 100,
-  "today_real": 153,
+  "today_real": 155,
   "by_type": {
    "no_deploy": 94,
    "skip": 4,
@@ -84,6 +84,22 @@
    "MANAGER": 1
   },
   "recent": [
+   {
+    "ts": "2026-10-23T12:10:41.683Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- \u30e4\u30ae-SOL: volume spike: 1.11x < 3x"
+   },
+   {
+    "ts": "2026-10-23T12:10:09.015Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GUST-SOL WHY SKIPPED The only surviving candidate fails the conviction bar. GUST has an unavailable narrative (status \"generating\", no usable origin/catalyst) and 0/30 smart wallets in the pool \u2014 the \"no narrative + no smart wall"
+   },
    {
     "ts": "2026-10-23T12:07:15.893Z",
     "type": "no_deploy",
@@ -163,22 +179,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED Both McRib pools were blocked: one due to fee/active-TVL below threshold, the other due to session deploy limit. GUST-SOL was rejected because fees were 28.23 S"
-   },
-   {
-    "ts": "2026-10-23T11:15:28.884Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
-   },
-   {
-    "ts": "2026-10-23T10:45:26.988Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Deploy attempt did not succeed",
-    "reason_short": "# \ud83d\ude80 DEPLOYED BORDR-SOL FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ \u25ce 0.5 SOL | bid_ask | bin -419 Range: -468 \u2192 -419 Range cover: 49% downside | 0% upside | 49% total ## MARKET Fee/TVL: 3.96% Volume: $10,119 TVL: $253,429 Volatility: 2.07 Organic: 78 Mcap: $1,654,641 Age: 369h ## AUDIT Top10: 15.38"
    }
   ]
  },
@@ -186,7 +186,7 @@
   "per_hour": [
    {
     "hour": "01:00",
-    "count": 6
+    "count": 4
    },
    {
     "hour": "02:00",
@@ -230,25 +230,25 @@
    },
    {
     "hour": "12:00",
-    "count": 3
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T12:07:10.240",
-  "last_management": "2026-10-23T12:00:00.107"
+  "last_screening": "2026-10-23T12:10:41.438",
+  "last_management": "2026-10-23T12:10:00.589"
  },
  "log_tail": [
-  "[2026-10-23T12:07:10.065Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.42x",
-  "[2026-10-23T12:07:10.065Z] [SCREENING] Volume spike check rejected DOPE-SOL: 2.13x",
-  "[2026-10-23T12:07:10.065Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
-  "[2026-10-23T12:07:10.066Z] [CRON] [Opportunity] GUST-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T12:07:10.240Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T12:07:10.241Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
-  "[2026-10-23T12:07:10.354Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.42x",
-  "[2026-10-23T12:07:10.354Z] [SCREENING] Volume spike check rejected DOPE-SOL: 2.13x",
-  "[2026-10-23T12:07:10.354Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
-  "[2026-10-23T12:07:15.887Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-23T12:10:02.154Z] [SCREENING] Volume spike check rejected DOPE-SOL: 0.56x",
+  "[2026-10-23T12:10:02.154Z] [SCREENING] Volume spike check rejected PANGEA-SOL: 1.64x",
+  "[2026-10-23T12:10:02.154Z] [SCREENING] Volume spike check rejected Macca-SOL: 2.14x",
+  "[2026-10-23T12:10:02.154Z] [SCREENING] Volume spike filter removed 7 candidate(s)",
+  "[2026-10-23T12:10:09.006Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-23T12:10:39.914Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-23T12:10:41.438Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T12:10:41.439Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
+  "[2026-10-23T12:10:41.681Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 1.11x",
+  "[2026-10-23T12:10:41.682Z] [SCREENING] Volume spike filter removed 1 candidate(s)"
  ],
  "state_last_updated": "2026-10-23T12:03:26.499Z"
 }

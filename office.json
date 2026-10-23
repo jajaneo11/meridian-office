@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T08:32:40.263717+00:00",
+ "generated_at": "2026-10-23T08:37:42.461914+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 63
+  "decisions_mentioning": 62
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 892,
-  "today": 74,
-  "today_real": 103,
+  "total_real": 893,
+  "today": 75,
+  "today_real": 104,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T08:35:20.575Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": "Kimchi-SOL",
+    "summary": "Single candidate skipped",
+    "reason_short": "top10 concentration 79% above maximum 60%"
+   },
    {
     "ts": "2026-10-23T08:31:03.542Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 cannot execute the 0.5 SOL deploy without funds. Even if funded, BORDR-SOL was the strongest metrics-wise (bin_step 100, smart wallet present, good fees) but capital is the blocker."
-   },
-   {
-    "ts": "2026-10-23T07:20:32.927Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED McRib had the best fundamentals (high organic, low concentration), but fee/active-TVL ratio hit 0% \u2014 below the hard minimum of 0.005%. All other viable candidates were blocked from retry attempts during this"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "08:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T08:30:00.831",
+  "last_screening": "2026-10-23T08:35:19.811",
   "last_management": "2026-10-23T08:30:00.278"
  },
  "log_tail": [
-  "[2026-10-23T08:25:34.707Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T08:25:34.707Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T08:25:35.493Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.59% > 30%",
   "[2026-10-23T08:30:00.278Z] [CRON] Starting management cycle",
   "[2026-10-23T08:30:00.831Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T08:30:00.831Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T08:30:00.889Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T08:30:00.889Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-23T08:30:03.619Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 30.45% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T08:35:19.727Z] [CRON] [Opportunity] Kimchi-SOL degen 78.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T08:35:19.811Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T08:35:19.812Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

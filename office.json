@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T12:42:40.137894+00:00",
+ "generated_at": "2026-10-23T12:47:40.434507+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 51
+  "decisions_mentioning": 50
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.754126
+  "sol": 0.752597
  },
  "limits": {
   "max_positions": 3,
@@ -57,9 +57,19 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 2
+  "open_count": 1,
+  "open": [
+   {
+    "id": "4xNQVyLBbh6M9wDNKzMbLsqxF4NxVe4BJp1riTKZwPZE",
+    "pool": "GUST-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-23T12:46:52.072Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 100
+   }
+  ],
+  "total_tracked": 3
  },
  "pnl": {
   "last24h_usd": 0.07,
@@ -70,13 +80,13 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 947,
+  "total_real": 948,
   "today": 100,
-  "today_real": 158,
+  "today_real": 159,
   "by_type": {
-   "no_deploy": 90,
+   "no_deploy": 89,
    "skip": 6,
-   "deploy": 2,
+   "deploy": 3,
    "close": 2
   },
   "by_actor": {
@@ -84,6 +94,14 @@
    "MANAGER": 2
   },
   "recent": [
+   {
+    "ts": "2026-10-23T12:46:52.073Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "GUST-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -511\u2192-442 around active bin -442"
+   },
    {
     "ts": "2026-10-23T12:41:39.971Z",
     "type": "close",
@@ -171,14 +189,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.022 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T11:49:24.926Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "GUST-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -515\u2192-446 around active bin -446"
    }
   ]
  },
@@ -190,7 +200,7 @@
    },
    {
     "hour": "02:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "03:00",
@@ -230,25 +240,25 @@
    },
    {
     "hour": "12:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T12:29:25.851",
+  "last_screening": "2026-10-23T12:46:40.707",
   "last_management": "2026-10-23T12:40:00.323"
  },
  "log_tail": [
-  "[2026-10-23T12:29:42.744Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5F3HpRXub2N2XCjATPUd6FZqyNHrmf7djU3xCq7kgEyJKFe1WcqVu2nuPnKLFanDg93MhpbK1CgxUwA3vCsSXCe",
-  "[2026-10-23T12:29:44.160Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-23T12:30:00.785Z] [CRON] Starting management cycle",
-  "[2026-10-23T12:30:01.092Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T12:30:01.544Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T12:40:00.323Z] [CRON] Starting management cycle",
-  "[2026-10-23T12:40:01.054Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T12:40:01.358Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
-  "[2026-10-23T12:40:01.651Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T12:41:25.500Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-23T12:46:40.903Z] [SCREENING] Volume spike check rejected McRib-SOL: 1.88x",
+  "[2026-10-23T12:46:40.904Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 1.11x",
+  "[2026-10-23T12:46:40.904Z] [SCREENING] Volume spike check rejected DOPE-SOL: 1.73x",
+  "[2026-10-23T12:46:40.904Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
+  "[2026-10-23T12:46:49.570Z] [DEPLOY] Pool: 5TfrKFkySxzqGrr65PED4TkwwYEHBy8AvsqTtKiLo1ek",
+  "[2026-10-23T12:46:49.570Z] [DEPLOY] Strategy: bid_ask, Bins: -511 to -442 (69 bins)",
+  "[2026-10-23T12:46:49.571Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-23T12:46:49.571Z] [DEPLOY] Position: 4xNQVyLBbh6M9wDNKzMbLsqxF4NxVe4BJp1riTKZwPZE",
+  "[2026-10-23T12:46:52.071Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3BKTopoU7qdRbxf5DYerrf8Z6AW1FaBT3YWDtHSMwRhcebnUWK88eMj7Utgy81XX4HA3iTkpjKdR2QqDkmCkPJUD",
+  "[2026-10-23T12:46:54.223Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-23T12:41:34.637Z"
+ "state_last_updated": "2026-10-23T12:46:52.072Z"
 }

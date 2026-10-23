@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T06:47:38.960204+00:00",
+ "generated_at": "2026-10-23T06:52:39.796733+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 871,
-  "today": 59,
-  "today_real": 82,
+  "total_real": 872,
+  "today": 60,
+  "today_real": 83,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T06:50:13.706Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Wallet balance shows 0 SOL available \u2014 no capital to execute any deploy. BORDR-SOL was the highest-conviction pick (1 smart wallet present, clean audit: low bots/top10), but deployment cannot proceed without"
+   },
    {
     "ts": "2026-10-23T06:45:17.122Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (FDvrkkgGZe2xjeAuPpNvZb2BLfegvYFEfYS9xqYc6HC2) WHY SKIPPED This candidate has the highest organic score (83), strong fee/TVL ratio (0.2289), and valid bin step (125). However, the deploy tool blocked the transaction due"
-   },
-   {
-    "ts": "2026-10-23T05:45:29.958Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Top candidate McRib-SOL was blocked by the fee/active-TVL ratio hard gate (< 0.005%). Although it had the highest organic score and low concentration, the on-chain fee metrics did not meet the minimum profit"
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "19:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "20:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "06:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T06:45:04.772",
-  "last_management": "2026-10-23T06:40:00.326"
+  "last_screening": "2026-10-23T06:50:01.960",
+  "last_management": "2026-10-23T06:50:00.823"
  },
  "log_tail": [
-  "[2026-10-23T06:40:01.609Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T06:40:03.971Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.79% > 30%",
-  "[2026-10-23T06:40:03.971Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.91% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T06:45:04.682Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T06:45:04.772Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T06:45:04.772Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T06:45:07.241Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.57% > 30%",
   "\u26d4 NO DEPLOY",
-  "The system rejected the deploy attempt mid-cycle with a pool verification error. All other top candidates failed bin_step or smart wallet checks (BIN step under 80, or no smart wallet presence to override weak narrative). Without a confirmed valid pool, no safe entry remains."
+  "The system rejected the deploy attempt mid-cycle with a pool verification error. All other top candidates failed bin_step or smart wallet checks (BIN step under 80, or no smart wallet presence to override weak narrative). Without a confirmed valid pool, no safe entry remains.",
+  "[2026-10-23T06:50:00.823Z] [CRON] Starting management cycle",
+  "[2026-10-23T06:50:01.462Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T06:50:01.960Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T06:50:01.960Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T06:50:04.123Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.29% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

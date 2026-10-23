@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T05:32:39.585580+00:00",
+ "generated_at": "2026-10-23T05:37:39.176423+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 856,
-  "today": 46,
-  "today_real": 67,
+  "total_real": 857,
+  "today": 47,
+  "today_real": 68,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T05:35:31.111Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED Wallet balance is 0 SOL, insufficient to deploy the required 0.5 SOL. The best candidate had strong metrics (high organic score, fee/TVL) and smart wallet prese"
+   },
    {
     "ts": "2026-10-23T05:31:23.292Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED This was a DRY_RUN simulation only; no real on-chain transaction was executed. The deploy configuration was validated (bin step 100, fees 97.98 SOL, volatility 1.85), but actual capital deployment was not tr"
-   },
-   {
-    "ts": "2026-10-23T03:50:18.625Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED Deploy attempts failed because fee/active-TVL ratio was below 0.005% threshold, and wallet SOL balance was 0. Even if metrics looked strong, the on-chain fee ra"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "05:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T05:30:00.991",
+  "last_screening": "2026-10-23T05:35:19.720",
   "last_management": "2026-10-23T05:30:00.342"
  },
  "log_tail": [
-  "[2026-10-23T05:25:34.485Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T05:25:35.293Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.95% > 30%",
-  "[2026-10-23T05:30:00.342Z] [CRON] Starting management cycle",
-  "[2026-10-23T05:30:00.991Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T05:30:00.991Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T05:30:01.042Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T05:30:01.043Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-23T05:30:02.935Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.65% > 30%",
   "[2026-10-23T05:30:02.935Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.97% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T05:35:19.562Z] [CRON] [Opportunity] \u30e4\u30ae-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T05:35:19.720Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T05:35:19.720Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T05:35:21.577Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.46% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

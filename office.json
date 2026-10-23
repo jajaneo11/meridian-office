@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T00:27:40.270155+00:00",
+ "generated_at": "2026-10-23T00:32:39.588468+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 795,
+  "total_real": 796,
   "today": 5,
-  "today_real": 6,
+  "today_real": 7,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T00:25:34.408",
-  "last_management": "2026-10-23T00:20:00.889"
+  "last_screening": "2026-10-23T00:30:00.634",
+  "last_management": "2026-10-23T00:30:00.414"
  },
  "log_tail": [
-  "[2026-10-23T00:20:01.964Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T00:20:04.672Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 31.40% > 30%",
-  "[2026-10-23T00:20:04.672Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 37.11% > 30%",
-  "[2026-10-23T00:20:04.672Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.00% > 30%",
-  "[2026-10-23T00:20:04.672Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.90% > 30%",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
-  "[2026-10-23T00:25:34.287Z] [CRON] [Opportunity] BLACKTOBER-SOL degen 71.7 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T00:25:34.408Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T00:25:34.409Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T00:25:35.454Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.15% > 30%"
+  "[2026-10-23T00:30:00.634Z] [TELEGRAM_ERROR] sendChatAction failed: fetch failed",
+  "[2026-10-23T00:30:00.634Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
+  "[2026-10-23T00:30:00.634Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T00:30:00.634Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T00:30:00.717Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T00:30:00.717Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T00:30:03.431Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 37.07% > 30%",
+  "[2026-10-23T00:30:03.431Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.24% > 30%",
+  "[2026-10-23T00:30:03.431Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.89% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

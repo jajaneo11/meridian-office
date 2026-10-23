@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:32:41.571707+00:00",
+ "generated_at": "2026-10-23T11:37:39.469575+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 935,
+  "total_real": 936,
   "today": 100,
-  "today_real": 146,
+  "today_real": 147,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -232,20 +232,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T11:30:00.815",
+  "last_screening": "2026-10-23T11:36:28.145",
   "last_management": "2026-10-23T11:30:00.269"
  },
  "log_tail": [
-  "[2026-10-23T11:30:00.816Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:30:00.843Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T11:30:00.844Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-23T11:30:01.264Z] [SCREENING] Volume spike check rejected McRib-SOL: 2.97x",
-  "[2026-10-23T11:30:01.266Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.83x",
-  "[2026-10-23T11:30:01.266Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
-  "[2026-10-23T11:30:02.198Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.01% > 30%",
-  "\u26d4 DEPLOY FAILED",
-  "Pool verification error during deploy_position execution.",
-  "The deploy_position tool could not verify pool screening thresholds and returned an error. The agent session flagged a prior attempt, blocking retries. Without a successful deploy confirmation, this cycle cannot proceed."
+  "[2026-10-23T11:36:27.998Z] [SCREENING] Volume spike check rejected McRib-SOL: 0.83x",
+  "[2026-10-23T11:36:27.999Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T11:36:27.999Z] [CRON] [Opportunity] PHP-SOL degen 99.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T11:36:28.145Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T11:36:28.146Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:36:28.288Z] [SCREENING] Volume spike check rejected McRib-SOL: 0.83x",
+  "[2026-10-23T11:36:28.288Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T11:36:29.279Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.91% > 30%",
+  "[2026-10-23T11:36:29.949Z] [ERROR] Agent loop error at step 0: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1937. To increase, visit https://openrouter.ai/settings/credits and add more credits",
+  "[2026-10-23T11:36:29.949Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1937. To increase, visit https://openrouter.ai/settings/credits and add more credits"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

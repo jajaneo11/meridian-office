@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T23:57:40.560491+00:00",
+ "generated_at": "2026-10-23T00:02:39.381681+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 70
+  "decisions_mentioning": 71
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 789,
-  "today": 100,
-  "today_real": 288,
+  "total_real": 790,
+  "today": 1,
+  "today_real": 1,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T00:00:09.825Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED The agent wallet holds 0 SOL. Deployment requires 0.5 SOL capital. Without available funds, no positions can be opened regardless of candidate quality. REJECTED BORDR-SOL: Smart wallet present and valid bin_"
+   },
    {
     "ts": "2026-10-22T23:55:41.334Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The system only executed a dry-run attempt for PANGEA-SOL, meaning no real on-chain transaction was sent. A second attempt was blocked by the tool to prevent duplicate deployments in the same session. REJEC"
-   },
-   {
-    "ts": "2026-10-22T22:30:12.070Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The deployment attempt was blocked by the session limit (only one deploy attempt allowed per cycle). PANGEA-SOL had the strongest fundamentals: highest organic score (80), one smart wallet present for confi"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "12:00",
-    "count": 10
-   },
    {
     "hour": "13:00",
     "count": 7
@@ -227,23 +223,27 @@
    {
     "hour": "23:00",
     "count": 8
+   },
+   {
+    "hour": "00:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-22T23:55:34.195",
-  "last_management": "2026-10-22T23:50:00.335"
+  "last_screening": "2026-10-23T00:00:01.382",
+  "last_management": "2026-10-23T00:00:00.878"
  },
  "log_tail": [
-  "[2026-10-22T23:50:01.322Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-22T23:50:01.323Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-22T23:50:03.565Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 31.24% > 30%",
-  "[2026-10-22T23:50:03.565Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.91% > 30%",
-  "[2026-10-22T23:50:03.565Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 38.58% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-22T23:55:34.086Z] [CRON] [Opportunity] ANDURIL-USDC degen 93.1 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-22T23:55:34.195Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-22T23:55:34.195Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T00:00:00.878Z] [CRON] Starting management cycle",
+  "[2026-10-23T00:00:01.382Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T00:00:01.383Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T00:00:01.459Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T00:00:01.459Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T00:00:03.511Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 38.33% > 30%",
+  "[2026-10-23T00:00:03.511Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.91% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

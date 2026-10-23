@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T12:22:41.094465+00:00",
+ "generated_at": "2026-10-23T12:32:40.697749+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 53
+  "decisions_mentioning": 51
  },
  "mode": {
   "dry_run": false,
@@ -57,9 +57,19 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 1
+  "open_count": 1,
+  "open": [
+   {
+    "id": "BGUfdKujXnyFp51A9PRjJPmvLPwPikkAQdnZgy5Xy9YG",
+    "pool": "McRib-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-23T12:29:42.747Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 0.69
+   }
+  ],
+  "total_tracked": 2
  },
  "pnl": {
   "last24h_usd": 0.02,
@@ -70,13 +80,13 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 946,
+  "total_real": 947,
   "today": 100,
-  "today_real": 157,
+  "today_real": 158,
   "by_type": {
-   "no_deploy": 94,
-   "skip": 4,
-   "deploy": 1,
+   "no_deploy": 92,
+   "skip": 5,
+   "deploy": 2,
    "close": 1
   },
   "by_actor": {
@@ -84,6 +94,22 @@
    "MANAGER": 1
   },
   "recent": [
+   {
+    "ts": "2026-10-23T12:30:01.093Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.021 < 0.74)"
+   },
+   {
+    "ts": "2026-10-23T12:29:42.750Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "McRib-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -444\u2192-394 around active bin -394"
+   },
    {
     "ts": "2026-10-23T12:20:19.261Z",
     "type": "no_deploy",
@@ -163,22 +189,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- McRib-SOL: volume spike: 2.28x < 3x - GUST-SOL: volume spike: 2.98x < 3x - CLAUDIA-SOL: volume spike: 1.74x < 3x"
-   },
-   {
-    "ts": "2026-10-23T11:40:57.290Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- McRib-SOL: volume spike: 1.50x < 3x - GUST-SOL: volume spike: 1.22x < 3x"
-   },
-   {
-    "ts": "2026-10-23T11:30:11.568Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Deploy attempt did not succeed",
-    "reason_short": "\u26d4 DEPLOY FAILED Pool verification error during deploy_position execution. POOL ISSUE PHP-SOL WHY IT FAILED The deploy_position tool could not verify pool screening thresholds and returned an error. The agent session flagged a prior attempt, blocking retries. Without a successful deploy confirmation,"
    }
   ]
  },
@@ -186,7 +196,7 @@
   "per_hour": [
    {
     "hour": "01:00",
-    "count": 2
+    "count": 0
    },
    {
     "hour": "02:00",
@@ -230,25 +240,25 @@
    },
    {
     "hour": "12:00",
-    "count": 7
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T12:20:01.532",
-  "last_management": "2026-10-23T12:20:00.274"
+  "last_screening": "2026-10-23T12:29:25.851",
+  "last_management": "2026-10-23T12:30:00.785"
  },
  "log_tail": [
-  "[2026-10-23T12:16:40.297Z] [CRON] [Opportunity] GUST-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T12:16:40.401Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T12:16:40.401Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T12:20:00.274Z] [CRON] Starting management cycle",
-  "[2026-10-23T12:20:00.885Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T12:20:01.532Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T12:20:01.532Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.754126 SOL)",
-  "[2026-10-23T12:20:02.099Z] [SCREENING] Volume spike check rejected LARPCHECK-SOL: 2.51x",
-  "[2026-10-23T12:20:02.099Z] [SCREENING] Volume spike filter removed 1 candidate(s)"
+  "[2026-10-23T12:29:25.969Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
+  "[2026-10-23T12:29:36.940Z] [DEPLOY] Pool: FDvrkkgGZe2xjeAuPpNvZb2BLfegvYFEfYS9xqYc6HC2",
+  "[2026-10-23T12:29:36.940Z] [DEPLOY] Strategy: bid_ask, Bins: -444 to -394 (50 bins)",
+  "[2026-10-23T12:29:36.940Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-23T12:29:36.940Z] [DEPLOY] Position: BGUfdKujXnyFp51A9PRjJPmvLPwPikkAQdnZgy5Xy9YG",
+  "[2026-10-23T12:29:42.744Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5F3HpRXub2N2XCjATPUd6FZqyNHrmf7djU3xCq7kgEyJKFe1WcqVu2nuPnKLFanDg93MhpbK1CgxUwA3vCsSXCe",
+  "[2026-10-23T12:29:44.160Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-23T12:30:00.785Z] [CRON] Starting management cycle",
+  "[2026-10-23T12:30:01.092Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T12:30:01.544Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-23T12:03:26.499Z"
+ "state_last_updated": "2026-10-23T12:29:46.663Z"
 }

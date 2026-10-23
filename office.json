@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T09:47:39.720900+00:00",
+ "generated_at": "2026-10-23T09:52:40.251750+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 61
+  "decisions_mentioning": 62
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 907,
-  "today": 87,
-  "today_real": 118,
+  "total_real": 908,
+  "today": 88,
+  "today_real": 119,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T09:50:20.405Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED Deploy failed on fee/active-TVL runtime check (0% < min 0.005%). Top candidate disqualified despite strong smart wallet signals. No retries allowed in same session. REJECTED - ANTHROPIC-USDC, CLAUDIA-SOL: bin_s"
+   },
    {
     "ts": "2026-10-23T09:45:14.195Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is $0 (no capital). Even with 2 smart wallets and a strong fee/TVL ratio, I have no funds to deploy liquidity. The system shows 0 SOL available. REJECTED PANGEA-SOL (best signal), Ya gi-SOL, "
-   },
-   {
-    "ts": "2026-10-23T08:40:09.781Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED The deploy tool rejected the transaction due to a failed pool screening verification (\"Pool undefined not found\"), blocking the transaction before it could execute on-chain. REJECTED \u30e4\u30ae-SOL (pool screening veri"
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "22:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "23:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "09:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T09:45:04.904",
-  "last_management": "2026-10-23T09:40:00.257"
+  "last_screening": "2026-10-23T09:50:02.007",
+  "last_management": "2026-10-23T09:50:00.722"
  },
  "log_tail": [
-  "[2026-10-23T09:40:01.247Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T09:40:01.248Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T09:40:03.789Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.03% > 30%",
-  "\ud83d\ude80 DRY RUN - DEPLOY WOULD OCCUR",
-  "[2026-10-23T09:45:04.781Z] [CRON] [Opportunity] BTC-SOL degen 71.1 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T09:45:04.904Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T09:45:04.904Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T09:45:06.667Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.03% > 30%",
   "\u26d4 NO DEPLOY",
-  "Deploy tool execution failed (pool lookup error). The candidate had strong signals (5 smart wallets, solid fees, positive price action), but the technical deploy path was blocked."
+  "Deploy tool execution failed (pool lookup error). The candidate had strong signals (5 smart wallets, solid fees, positive price action), but the technical deploy path was blocked.",
+  "[2026-10-23T09:50:00.722Z] [CRON] Starting management cycle",
+  "[2026-10-23T09:50:01.387Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T09:50:02.007Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T09:50:02.007Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T09:50:18.642Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

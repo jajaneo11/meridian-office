@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T00:22:40.300252+00:00",
+ "generated_at": "2026-10-23T00:27:40.270155+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 794,
-  "today": 4,
-  "today_real": 5,
+  "total_real": 795,
+  "today": 5,
+  "today_real": 6,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T00:25:35.460Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- BLACKTOBER-SOL: bot holders 32.15% > 30%"
+   },
    {
     "ts": "2026-10-23T00:15:12.169Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Wallet balance is 0 SOL, which prevents any deployment. No amount of conviction can override the lack of capital. REJECTED McRib-SOL (no wallet funds) BORDR-SOL (no wallet funds) baton-SOL (bin_step < 80) JE"
-   },
-   {
-    "ts": "2026-10-22T23:06:06.166Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- BTC-SOL: bot holders 58.90% > 30%"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "00:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T00:20:01.962",
+  "last_screening": "2026-10-23T00:25:34.408",
   "last_management": "2026-10-23T00:20:00.889"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T00:20:00.889Z] [CRON] Starting management cycle",
-  "[2026-10-23T00:20:01.371Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T00:20:01.962Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T00:20:01.964Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T00:20:04.672Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 31.40% > 30%",
   "[2026-10-23T00:20:04.672Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 37.11% > 30%",
   "[2026-10-23T00:20:04.672Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.00% > 30%",
   "[2026-10-23T00:20:04.672Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.90% > 30%",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-23T00:25:34.287Z] [CRON] [Opportunity] BLACKTOBER-SOL degen 71.7 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T00:25:34.408Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T00:25:34.409Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T00:25:35.454Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.15% > 30%"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"
 }

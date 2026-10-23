@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T18:32:40.059769+00:00",
+ "generated_at": "2026-10-23T18:37:40.360207+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 964,
+  "total_real": 965,
   "today": 100,
-  "today_real": 175,
+  "today_real": 176,
   "by_type": {
    "no_deploy": 52,
    "skip": 32,
@@ -84,6 +84,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-23T18:36:08.822Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- Tiggien-SOL: bot holders 47.29% > 30%"
+   },
    {
     "ts": "2026-10-23T18:30:01.905Z",
     "type": "no_deploy",
@@ -171,14 +179,6 @@
     "pool_name": "Macca-SOL",
     "summary": "Closed at -0.07%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-23T17:50:01.448Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.129 < 0.74)"
    }
   ]
  },
@@ -190,7 +190,7 @@
    },
    {
     "hour": "08:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "09:00",
@@ -230,25 +230,25 @@
    },
    {
     "hour": "18:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T18:30:01.297",
+  "last_screening": "2026-10-23T18:36:07.599",
   "last_management": "2026-10-23T18:30:00.774"
  },
  "log_tail": [
-  "[2026-10-23T18:26:22.606Z] [CRON] [Opportunity] Tiggien-SOL degen 97.1 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T18:26:22.733Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T18:26:22.733Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
-  "[2026-10-23T18:26:23.362Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 50.00% > 30%",
   "[2026-10-23T18:30:00.774Z] [CRON] Starting management cycle",
   "[2026-10-23T18:30:01.259Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T18:30:01.260Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-23T18:30:01.297Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-23T18:30:01.297Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
-  "[2026-10-23T18:30:01.905Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 50.85% > 30%"
+  "[2026-10-23T18:30:01.905Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 50.85% > 30%",
+  "[2026-10-23T18:36:07.467Z] [CRON] [Opportunity] Tiggien-SOL degen 95.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T18:36:07.599Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T18:36:07.600Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
+  "[2026-10-23T18:36:08.821Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 47.29% > 30%"
  ],
  "state_last_updated": "2026-10-23T18:24:32.666Z"
 }

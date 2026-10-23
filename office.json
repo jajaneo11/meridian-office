@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T10:12:40.244545+00:00",
+ "generated_at": "2026-10-23T10:17:38.845537+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 912,
+  "total_real": 913,
   "today": 91,
-  "today_real": 123,
+  "today_real": 124,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T10:10:01.808",
+  "last_screening": "2026-10-23T10:15:05.028",
   "last_management": "2026-10-23T10:10:00.761"
  },
  "log_tail": [
-  "The strongest candidate had 4 smart wallets and solid fees, but the deployment failed during the pool screening verification step. The system returned an error stating the pool could not be verified on-chain for this specific deploy attempt, preventing the transaction from going through.",
-  "[2026-10-23T10:06:49.700Z] [CRON] [Opportunity] WEFT-SOL degen 80.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T10:06:49.842Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T10:06:49.843Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-23T10:10:00.761Z] [CRON] Starting management cycle",
   "[2026-10-23T10:10:01.308Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T10:10:01.808Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T10:10:01.808Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T10:15:04.893Z] [CRON] [Opportunity] GTA6-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T10:15:05.028Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T10:15:05.029Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

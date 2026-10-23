@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T21:02:41.036158+00:00",
+ "generated_at": "2026-10-23T21:07:40.754778+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -269,5 +269,5 @@
   "[2026-10-23T21:00:00.687Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
   "[2026-10-23T21:00:01.038Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-23T21:01:03.285Z"
+ "state_last_updated": "2026-10-23T21:06:57.374Z"
 }

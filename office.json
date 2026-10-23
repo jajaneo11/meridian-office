@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T02:57:38.986455+00:00",
+ "generated_at": "2026-10-23T03:02:40.033239+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 825,
+  "total_real": 826,
   "today": 27,
-  "today_real": 36,
+  "today_real": 37,
   "by_type": {
    "no_deploy": 100
   },
@@ -181,10 +181,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "15:00",
-    "count": 8
-   },
-   {
     "hour": "16:00",
     "count": 6
    },
@@ -227,24 +223,28 @@
    {
     "hour": "02:00",
     "count": 11
+   },
+   {
+    "hour": "03:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T02:56:19.419",
-  "last_management": "2026-10-23T02:50:00.859"
+  "last_screening": "2026-10-23T03:00:00.938",
+  "last_management": "2026-10-23T03:00:00.347"
  },
  "log_tail": [
-  "[2026-10-23T02:50:01.886Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T02:50:04.433Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.47% > 30%",
-  "[2026-10-23T02:50:04.433Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.87% > 30%",
-  "\u26d4 NO DEPLOY",
-  "The deploy tool failed with \"Pool undefined not found\" error when attempting to create a position. This suggests either an SDK connectivity issue or the pool address changed after the screening data was captured. Without a valid deploy confirmation, proceeding would risk loss of funds.",
   "- McRib-SOL (FDvrkkg...) \u2014 1 smart wallet, but deploy would hit same SDK error",
   "[2026-10-23T02:56:19.308Z] [CRON] [Opportunity] PANGEA-SOL degen 49.4 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T02:56:19.419Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T02:56:19.419Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T03:00:00.347Z] [CRON] Starting management cycle",
+  "[2026-10-23T03:00:00.899Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T03:00:00.899Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T03:00:00.938Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T03:00:00.938Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

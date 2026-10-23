@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T09:52:40.251750+00:00",
+ "generated_at": "2026-10-23T09:57:39.575893+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 908,
+  "total_real": 909,
   "today": 88,
-  "today_real": 119,
+  "today_real": 120,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T09:50:02.007",
+  "last_screening": "2026-10-23T09:56:19.797",
   "last_management": "2026-10-23T09:50:00.722"
  },
  "log_tail": [
-  "[2026-10-23T09:45:04.904Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T09:45:06.667Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.03% > 30%",
-  "\u26d4 NO DEPLOY",
-  "Deploy tool execution failed (pool lookup error). The candidate had strong signals (5 smart wallets, solid fees, positive price action), but the technical deploy path was blocked.",
   "[2026-10-23T09:50:00.722Z] [CRON] Starting management cycle",
   "[2026-10-23T09:50:01.387Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T09:50:02.007Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T09:50:02.007Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T09:50:18.642Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T09:56:19.681Z] [CRON] [Opportunity] \u30e4\u30ae-SOL degen 56.2 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T09:56:19.797Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T09:56:19.797Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

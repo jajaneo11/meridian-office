@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T09:57:39.575893+00:00",
+ "generated_at": "2026-10-23T10:02:39.552005+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 909,
-  "today": 88,
-  "today_real": 120,
+  "total_real": 910,
+  "today": 89,
+  "today_real": 121,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T10:00:11.016Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL (9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY) WHY SKIPPED The strongest candidate had 4 smart wallets and solid fees, but the deployment failed during the pool screening verification step. The system returned an error sta"
+   },
    {
     "ts": "2026-10-23T09:50:20.405Z",
     "type": "no_deploy",
@@ -167,23 +175,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHE...) WHY SKIPPED Wallet balance is 0 SOL; no funds available to deploy. Even the strongest candidate cannot be funded at this time. REJECTED CLAUDIA-SOL (DfHE...) \u2013 smart wallet present, high fees, but no deploya"
-   },
-   {
-    "ts": "2026-10-23T08:45:17.334Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is $0 (no capital). Even with 2 smart wallets and a strong fee/TVL ratio, I have no funds to deploy liquidity. The system shows 0 SOL available. REJECTED PANGEA-SOL (best signal), Ya gi-SOL, "
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "22:00",
-    "count": 4
-   },
    {
     "hour": "23:00",
     "count": 8
@@ -227,24 +223,28 @@
    {
     "hour": "09:00",
     "count": 9
+   },
+   {
+    "hour": "10:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T09:56:19.797",
-  "last_management": "2026-10-23T09:50:00.722"
+  "last_screening": "2026-10-23T10:00:00.831",
+  "last_management": "2026-10-23T10:00:00.279"
  },
  "log_tail": [
-  "[2026-10-23T09:50:00.722Z] [CRON] Starting management cycle",
-  "[2026-10-23T09:50:01.387Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T09:50:02.007Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T09:50:02.007Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T09:50:18.642Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T09:56:19.681Z] [CRON] [Opportunity] \u30e4\u30ae-SOL degen 56.2 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T09:56:19.797Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T09:56:19.797Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)"
+  "\ud83d\ude80 DEPLOYED (DRY RUN)",
+  "[2026-10-23T10:00:00.279Z] [CRON] Starting management cycle",
+  "[2026-10-23T10:00:00.831Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T10:00:00.832Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T10:00:00.867Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T10:00:00.867Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "The strongest candidate had 4 smart wallets and solid fees, but the deployment failed during the pool screening verification step. The system returned an error stating the pool could not be verified on-chain for this specific deploy attempt, preventing the transaction from going through."
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

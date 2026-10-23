@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T19:02:40.011012+00:00",
+ "generated_at": "2026-10-23T19:07:41.708754+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.63353
+  "sol": 0.90162
  },
  "limits": {
   "max_positions": 3,
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 970,
+  "total_real": 971,
   "today": 100,
-  "today_real": 181,
+  "today_real": 182,
   "by_type": {
    "no_deploy": 49,
    "skip": 32,
@@ -94,6 +94,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-23T19:06:53.872Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": "RAT-USDC",
+    "summary": "Single candidate skipped",
+    "reason_short": "token fees 4.07 SOL below minimum 30 SOL"
+   },
    {
     "ts": "2026-10-23T19:00:07.267Z",
     "type": "deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Tiggien-SOL: bot holders 45.77% > 30%"
-   },
-   {
-    "ts": "2026-10-23T18:15:53.597Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Tiggien-SOL: bot holders 50.85% > 30%"
    }
   ]
  },
@@ -196,7 +196,7 @@
   "per_hour": [
    {
     "hour": "08:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "09:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "19:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T19:00:00.876",
+  "last_screening": "2026-10-23T19:06:52.905",
   "last_management": "2026-10-23T19:00:00.305"
  },
  "log_tail": [
-  "[2026-10-23T19:00:00.877Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.63353 SOL)",
-  "[2026-10-23T19:00:01.008Z] [SCREENING] Filtered cooldown token SQUADS (CokrQHPj)",
-  "[2026-10-23T19:00:01.102Z] [SCREENING] Volume spike check rejected EXFIL-SOL: 2.65x",
-  "[2026-10-23T19:00:01.102Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T19:00:06.128Z] [DEPLOY] Pool: 9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g",
-  "[2026-10-23T19:00:06.129Z] [DEPLOY] Strategy: bid_ask, Bins: -484 to -448 (36 bins)",
-  "[2026-10-23T19:00:06.129Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-23T19:00:06.129Z] [DEPLOY] Position: 4j2hfLCERrhbXKiAjvkvTNTPVvjVnzcJH5NoAY4qWtCA",
   "[2026-10-23T19:00:07.265Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4uES4xE7ZxSirjE5CjdyvqrGyGyqtaFT9aa6JKp42M679Bntj53xPrSSFaZEzrXJ3Zo4qfpFgSQ7LF5kh7hin7h6",
-  "[2026-10-23T19:00:08.578Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-23T19:00:08.578Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-23T19:05:22.447Z] [SCREENING] Filtered cooldown token SQUADS (CokrQHPj)",
+  "[2026-10-23T19:06:52.537Z] [SCREENING] Filtered cooldown token SQUADS (CokrQHPj)",
+  "[2026-10-23T19:06:52.672Z] [CRON] [Opportunity] BLACKTOBER-SOL degen 93.1 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T19:06:52.905Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T19:06:52.906Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.90162 SOL)",
+  "[2026-10-23T19:06:52.969Z] [SCREENING] Filtered cooldown token SQUADS (CokrQHPj)",
+  "[2026-10-23T19:06:53.871Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 30.70% > 30%"
  ],
- "state_last_updated": "2026-10-23T19:02:37.886Z"
+ "state_last_updated": "2026-10-23T19:06:58.974Z"
 }

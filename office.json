@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T06:02:41.067827+00:00",
+ "generated_at": "2026-10-23T06:07:40.296895+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 862,
-  "today": 51,
-  "today_real": 73,
+  "total_real": 863,
+  "today": 52,
+  "today_real": 74,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T06:06:12.859Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient capital to execute any deploy. Even with strong fees and smart wallet signals, no deployment can proceed without funds. REJECTED BORDR-SOL (0 SOL balance, cannot fund p"
+   },
    {
     "ts": "2026-10-23T06:00:40.164Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL (FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ) WHY SKIPPED Wallet balance is 0 SOL; unable to fund any deployment. All qualified candidates failed for the same reason. Several others were ineligible due to bin_step cons"
-   },
-   {
-    "ts": "2026-10-23T04:49:49.467Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL (FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ) WHY SKIPPED Wallet balance is 0 SOL. Cannot deploy 0.5 SOL with no available capital. REJECTED All pools skipped due to zero wallet balance. Funds are required before deplo"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "06:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T06:00:00.592",
+  "last_screening": "2026-10-23T06:06:05.225",
   "last_management": "2026-10-23T06:00:00.070"
  },
  "log_tail": [
-  "[2026-10-23T05:55:34.900Z] [CRON] [Opportunity] McRib-SOL degen 70.6 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T05:55:34.984Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T05:55:34.985Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-23T06:00:00.070Z] [CRON] Starting management cycle",
   "[2026-10-23T06:00:00.592Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T06:00:00.593Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T06:00:00.641Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T06:00:00.641Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T06:06:05.016Z] [CRON] [Opportunity] BORDR-SOL degen 41.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T06:06:05.225Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T06:06:05.226Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

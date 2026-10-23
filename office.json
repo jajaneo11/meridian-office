@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T21:57:40.855435+00:00",
+ "generated_at": "2026-10-23T22:02:40.408799+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 989,
+  "total_real": 990,
   "today": 100,
-  "today_real": 200,
+  "today_real": 201,
   "by_type": {
    "no_deploy": 38,
    "deploy": 13,
@@ -94,6 +94,14 @@
    "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-23T22:00:19.595Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY \u2014 TRANSACTION FAILED Attempted entry: BLACKTOBER-SOL (FJdrgoAy4K57EzC9YG8uvXdNE3F81HZA9bcC3V3zm6KY) \u25ce 0.69 SOL | bid_ask | bins_below 45 | bins_above 0 FAILURE deploy_position simulation failed: \"Blockhash not found\" (SendTransactionError). The on-chain transaction did not execute \u2014 no p"
+   },
    {
     "ts": "2026-10-23T21:57:15.790Z",
     "type": "no_deploy",
@@ -181,26 +189,14 @@
     "pool_name": "Macca-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -504\u2192-463 around active bin -463"
-   },
-   {
-    "ts": "2026-10-23T20:46:38.861Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- YMB-SOL: bot holders 42.01% > 30% - YMB-USDC: bot holders 42.01% > 30% - YMB-SOL: bot holders 42.01% > 30%"
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "10:00",
-    "count": 0
-   },
-   {
     "hour": "11:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "12:00",
@@ -241,24 +237,28 @@
    {
     "hour": "21:00",
     "count": 10
+   },
+   {
+    "hour": "22:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T21:57:07.961",
-  "last_management": "2026-10-23T21:50:00.496"
+  "last_screening": "2026-10-23T22:00:01.412",
+  "last_management": "2026-10-23T22:00:00.956"
  },
  "log_tail": [
-  "[2026-10-23T21:51:53.975Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 31.97% > 30%",
-  "[2026-10-23T21:51:53.977Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 39.20% > 30%",
-  "[2026-10-23T21:57:07.707Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T21:57:07.961Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T21:57:07.962Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
-  "[2026-10-23T21:57:09.617Z] [SCREENING] Bot-holder filter: dropped Moustache-SOL \u2014 bots 34.40% > 30%",
-  "[2026-10-23T21:57:09.618Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 33.41% > 30%",
-  "[2026-10-23T21:57:09.618Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.83% > 30%",
-  "[2026-10-23T21:57:09.618Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.83% > 30%",
-  "[2026-10-23T21:57:15.789Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-23T22:00:06.605Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 33.97% > 30%",
+  "[2026-10-23T22:00:06.605Z] [SCREENING] Bot-holder filter: dropped Moustache-SOL \u2014 bots 35.87% > 30%",
+  "[2026-10-23T22:00:06.605Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.68% > 30%",
+  "[2026-10-23T22:00:06.605Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.68% > 30%",
+  "[2026-10-23T22:00:16.815Z] [DEPLOY] Pool: FJdrgoAy4K57EzC9YG8uvXdNE3F81HZA9bcC3V3zm6KY",
+  "[2026-10-23T22:00:16.815Z] [DEPLOY] Strategy: bid_ask, Bins: -603 to -558 (45 bins)",
+  "[2026-10-23T22:00:16.815Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-23T22:00:16.815Z] [DEPLOY] Position: Gyzkf6wFEf6P6RU8EaSij1mPcik7GJp4tWPDCdYcfyRS",
+  "[2026-10-23T22:00:17.040Z] [DEPLOY_ERROR] Simulation failed.",
+  "[2026-10-23T22:00:19.594Z] [AGENT] \u26d4 NO DEPLOY \u2014 TRANSACTION FAILED"
  ],
  "state_last_updated": "2026-10-23T21:39:09.687Z"
 }

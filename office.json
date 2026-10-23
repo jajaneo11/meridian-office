@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T03:22:40.694692+00:00",
+ "generated_at": "2026-10-23T03:27:43.140824+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 830,
+  "total_real": 831,
   "today": 31,
-  "today_real": 41,
+  "today_real": 42,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T03:20:01.473",
+  "last_screening": "2026-10-23T03:26:19.491",
   "last_management": "2026-10-23T03:20:00.362"
  },
  "log_tail": [
-  "[2026-10-23T03:15:04.736Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T03:15:04.819Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T03:15:04.819Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T03:15:07.235Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.76% > 30%",
-  "\u26d4 NO DEPLOY",
   "[2026-10-23T03:20:00.362Z] [CRON] Starting management cycle",
   "[2026-10-23T03:20:00.932Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T03:20:01.473Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T03:20:01.473Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T03:20:04.928Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.74% > 30%"
+  "[2026-10-23T03:20:04.928Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 35.74% > 30%",
+  "[2026-10-23T03:26:19.401Z] [CRON] [Opportunity] BLACKTOBER-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T03:26:19.491Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T03:26:19.492Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T03:26:20.931Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.86% > 30%",
+  "\ud83d\ude80 DEPLOYED (Dry Run)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

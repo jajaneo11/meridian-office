@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:42:40.528259+00:00",
+ "generated_at": "2026-10-23T11:47:40.026126+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 939,
+  "total_real": 940,
   "today": 100,
-  "today_real": 150,
+  "today_real": 151,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -81,6 +81,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T11:47:20.143Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GUST-SOL WHY SKIPPED Only one candidate survived the hard pre-filters, and it fails my conviction bar. The narrative is null (still \"being generated\"), and there are 0 smart wallets present \u2014 per the risk signals, \"no narrative +"
+   },
    {
     "ts": "2026-10-23T11:42:17.487Z",
     "type": "no_deploy",
@@ -168,14 +176,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.000 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T10:35:47.571Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.000 < 0.8899999999999999)"
    }
   ]
  },
@@ -183,7 +183,7 @@
   "per_hour": [
    {
     "hour": "00:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "01:00",
@@ -227,25 +227,25 @@
    },
    {
     "hour": "11:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T11:42:17.203",
+  "last_screening": "2026-10-23T11:47:13.960",
   "last_management": "2026-10-23T11:40:00.881"
  },
  "log_tail": [
-  "[2026-10-23T11:40:57.289Z] [SCREENING] Volume spike check rejected McRib-SOL: 1.50x",
-  "[2026-10-23T11:40:57.289Z] [SCREENING] Volume spike check rejected GUST-SOL: 1.22x",
-  "[2026-10-23T11:40:57.289Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
-  "[2026-10-23T11:42:15.994Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-23T11:42:17.203Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T11:42:17.203Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike check rejected McRib-SOL: 2.28x",
   "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike check rejected GUST-SOL: 2.98x",
   "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike check rejected CLAUDIA-SOL: 1.74x",
-  "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike filter removed 3 candidate(s)"
+  "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
+  "[2026-10-23T11:47:12.593Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-23T11:47:13.960Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T11:47:13.960Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:47:14.369Z] [SCREENING] Volume spike check rejected McRib-SOL: 0.75x",
+  "[2026-10-23T11:47:14.370Z] [SCREENING] Volume spike check rejected EMBER-SOL: 2.13x",
+  "[2026-10-23T11:47:14.370Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
+  "[2026-10-23T11:47:20.142Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T23:32:41.463298+00:00",
+ "generated_at": "2026-10-23T23:42:42.872154+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -93,9 +93,9 @@
   "today": 100,
   "today_real": 202,
   "by_type": {
-   "deploy": 13,
-   "skip": 44,
+   "skip": 45,
    "close": 11,
+   "deploy": 12,
    "no_deploy": 32
   },
   "by_actor": {
@@ -103,6 +103,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-23T23:40:01.850Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.207 < 0.74)"
+   },
    {
     "ts": "2026-10-23T23:30:01.058Z",
     "type": "skip",
@@ -190,14 +198,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Deploy attempt on **\u30e4\u30ae-SOL** failed. WHY FAILED The first `deploy_position` call was blocked by the tool because no positive SOL amount was passed (`amount_y` required). When I retried with `amount_y=0.69`, the session block triggered: \"deploy_position already attempted this session \u2014 do"
-   },
-   {
-    "ts": "2026-10-23T21:51:53.983Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- TRUTH-SOL: bot holders 31.97% > 30% - YMB-SOL: bot holders 39.20% > 30%"
    }
   ]
  },
@@ -205,7 +205,7 @@
   "per_hour": [
    {
     "hour": "12:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "13:00",
@@ -249,25 +249,25 @@
    },
    {
     "hour": "23:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-23T22:05:23.076",
-  "last_management": "2026-10-23T23:30:00.834"
+  "last_management": "2026-10-23T23:40:00.221"
  },
  "log_tail": [
-  "[2026-10-23T23:10:01.723Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T23:10:02.027Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T23:10:02.282Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T23:20:00.344Z] [CRON] Starting management cycle",
   "[2026-10-23T23:20:01.061Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T23:20:01.322Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
   "[2026-10-23T23:20:01.601Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
   "[2026-10-23T23:30:00.834Z] [CRON] Starting management cycle",
   "[2026-10-23T23:30:01.057Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T23:30:01.496Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-23T23:30:01.496Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-23T23:40:00.221Z] [CRON] Starting management cycle",
+  "[2026-10-23T23:40:01.324Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-23T23:40:01.636Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
+  "[2026-10-23T23:40:01.848Z] [CRON] Screening skipped \u2014 insufficient SOL (0.207 < 0.74 needed for deploy + gas)"
  ],
- "state_last_updated": "2026-10-23T23:30:04.717Z"
+ "state_last_updated": "2026-10-23T23:42:14.157Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T12:47:40.434507+00:00",
+ "generated_at": "2026-10-23T12:52:45.048876+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -246,11 +246,9 @@
  },
  "cycles": {
   "last_screening": "2026-10-23T12:46:40.707",
-  "last_management": "2026-10-23T12:40:00.323"
+  "last_management": "2026-10-23T12:50:00.773"
  },
  "log_tail": [
-  "[2026-10-23T12:46:40.903Z] [SCREENING] Volume spike check rejected McRib-SOL: 1.88x",
-  "[2026-10-23T12:46:40.904Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 1.11x",
   "[2026-10-23T12:46:40.904Z] [SCREENING] Volume spike check rejected DOPE-SOL: 1.73x",
   "[2026-10-23T12:46:40.904Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
   "[2026-10-23T12:46:49.570Z] [DEPLOY] Pool: 5TfrKFkySxzqGrr65PED4TkwwYEHBy8AvsqTtKiLo1ek",
@@ -258,7 +256,9 @@
   "[2026-10-23T12:46:49.571Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-23T12:46:49.571Z] [DEPLOY] Position: 4xNQVyLBbh6M9wDNKzMbLsqxF4NxVe4BJp1riTKZwPZE",
   "[2026-10-23T12:46:52.071Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3BKTopoU7qdRbxf5DYerrf8Z6AW1FaBT3YWDtHSMwRhcebnUWK88eMj7Utgy81XX4HA3iTkpjKdR2QqDkmCkPJUD",
-  "[2026-10-23T12:46:54.223Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-23T12:46:54.223Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-23T12:50:00.773Z] [CRON] Starting management cycle",
+  "[2026-10-23T12:50:01.692Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-23T12:46:52.072Z"
+ "state_last_updated": "2026-10-23T12:52:28.789Z"
 }

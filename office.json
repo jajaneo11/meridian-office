@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T18:57:40.049863+00:00",
+ "generated_at": "2026-10-23T19:02:40.011012+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 26
+  "decisions_mentioning": 25
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.633016
+  "sol": 1.63353
  },
  "limits": {
   "max_positions": 3,
@@ -60,40 +60,56 @@
   "open_count": 1,
   "open": [
    {
-    "id": "7kVM6L3Y1vQtGGHsUfEXLCsQorNE2uYsbc7asRcxBxYy",
-    "pool": "SQUADS-SOL",
+    "id": "4j2hfLCERrhbXKiAjvkvTNTPVvjVnzcJH5NoAY4qWtCA",
+    "pool": "McRib-SOL",
     "closed": false,
-    "deployed_at": "2026-10-23T18:57:13.414Z",
+    "deployed_at": "2026-10-23T19:00:07.266Z",
     "closed_at": null,
     "pnl_usd": null,
-    "value_usd": 0.69
+    "value_usd": 100
    }
   ],
-  "total_tracked": 9
+  "total_tracked": 10
  },
  "pnl": {
-  "last24h_usd": 9.44,
-  "fees24h_usd": 18.96,
-  "all_time_usd": 9.44,
-  "closed_total": 8,
-  "win_rate_pct": 88
+  "last24h_usd": 9.65,
+  "fees24h_usd": 19.08,
+  "all_time_usd": 9.65,
+  "closed_total": 9,
+  "win_rate_pct": 89
  },
  "decisions": {
   "total": 100,
-  "total_real": 969,
+  "total_real": 970,
   "today": 100,
-  "today_real": 180,
+  "today_real": 181,
   "by_type": {
-   "no_deploy": 51,
+   "no_deploy": 49,
    "skip": 32,
-   "deploy": 9,
-   "close": 8
+   "deploy": 10,
+   "close": 9
   },
   "by_actor": {
-   "SCREENER": 92,
-   "MANAGER": 8
+   "SCREENER": 91,
+   "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-23T19:00:07.267Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "McRib-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -484\u2192-448 around active bin -448"
+   },
+   {
+    "ts": "2026-10-23T18:58:26.342Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "SQUADS-SOL",
+    "summary": "Closed at 0.29%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-23T18:57:13.416Z",
     "type": "deploy",
@@ -173,34 +189,14 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Tiggien-SOL: bot holders 50.85% > 30%"
-   },
-   {
-    "ts": "2026-10-23T18:15:43.292Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "SQUADS-SOL",
-    "summary": "Closed at 0.34%",
-    "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-23T18:10:11.298Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "SQUADS-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -767\u2192-698 around active bin -698"
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "07:00",
-    "count": 0
-   },
-   {
     "hour": "08:00",
-    "count": 7
+    "count": 5
    },
    {
     "hour": "09:00",
@@ -240,25 +236,29 @@
    },
    {
     "hour": "18:00",
-    "count": 14
+    "count": 15
+   },
+   {
+    "hour": "19:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T18:57:07.538",
-  "last_management": "2026-10-23T18:50:00.829"
+  "last_screening": "2026-10-23T19:00:00.876",
+  "last_management": "2026-10-23T19:00:00.305"
  },
  "log_tail": [
-  "[2026-10-23T18:57:07.428Z] [CRON] [Opportunity] SQUADS-SOL degen 83.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T18:57:07.538Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T18:57:07.538Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
-  "[2026-10-23T18:57:12.365Z] [DEPLOY] Pool: CSv3ixznHbM341uUUyuBwVY9yksujoq8qSrmJHjhCira",
-  "[2026-10-23T18:57:12.365Z] [DEPLOY] Strategy: bid_ask, Bins: -709 to -640 (69 bins)",
-  "[2026-10-23T18:57:12.366Z] [DEPLOY] Amount: 0 X, 0.69 Y",
-  "[2026-10-23T18:57:12.366Z] [DEPLOY] Position: 7kVM6L3Y1vQtGGHsUfEXLCsQorNE2uYsbc7asRcxBxYy",
-  "[2026-10-23T18:57:13.412Z] [DEPLOY] SUCCESS \u2014 1 tx(s): CAhyQm7rhvXMvo84wxE1JnzPWgFm5KkjBPNhaPbVMqR8HJh9pGh9AKn29bJHbWnxjVYvgVj6DKM8TyhzMrfEqD6",
-  "[2026-10-23T18:57:15.007Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-23T18:57:34.838Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-23T19:00:00.877Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.63353 SOL)",
+  "[2026-10-23T19:00:01.008Z] [SCREENING] Filtered cooldown token SQUADS (CokrQHPj)",
+  "[2026-10-23T19:00:01.102Z] [SCREENING] Volume spike check rejected EXFIL-SOL: 2.65x",
+  "[2026-10-23T19:00:01.102Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T19:00:06.128Z] [DEPLOY] Pool: 9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g",
+  "[2026-10-23T19:00:06.129Z] [DEPLOY] Strategy: bid_ask, Bins: -484 to -448 (36 bins)",
+  "[2026-10-23T19:00:06.129Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-23T19:00:06.129Z] [DEPLOY] Position: 4j2hfLCERrhbXKiAjvkvTNTPVvjVnzcJH5NoAY4qWtCA",
+  "[2026-10-23T19:00:07.265Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4uES4xE7ZxSirjE5CjdyvqrGyGyqtaFT9aa6JKp42M679Bntj53xPrSSFaZEzrXJ3Zo4qfpFgSQ7LF5kh7hin7h6",
+  "[2026-10-23T19:00:08.578Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-23T18:57:34.837Z"
+ "state_last_updated": "2026-10-23T19:02:37.886Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T05:52:40.150126+00:00",
+ "generated_at": "2026-10-23T05:57:38.370467+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 67
+  "decisions_mentioning": 68
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 860,
-  "today": 49,
-  "today_real": 71,
+  "total_real": 861,
+  "today": 50,
+  "today_real": 72,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T05:55:40.732Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Wallet balance is 0 SOL, insufficient for the required 0.5 SOL deployment. No capital available to enter a position despite valid candidate metrics and smart wallet presence. REJECTED McRib-SOL (insufficient"
+   },
    {
     "ts": "2026-10-23T05:50:40.591Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LUKE-SOL WHY SKIPPED Wallet balance is 0.000 SOL \u2014 no funds available to deploy. Even the strongest candidate (LUKE-SOL, smart wallet present) cannot be opened without capital. REJECTED LUKE-SOL (0 SOL balance) McRib-SOL variants"
-   },
-   {
-    "ts": "2026-10-23T04:42:39.102Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Deploy blocked due to fee/active-TVL ratio below configured threshold (0.0017% < 0.005% min). Even with smart wallet presence and low concentration, this hard gate prevents entry. REJECTED BORDR-SOL - Fee/ac"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "05:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T05:50:01.883",
+  "last_screening": "2026-10-23T05:55:34.984",
   "last_management": "2026-10-23T05:50:00.589"
  },
  "log_tail": [
-  "[2026-10-23T05:45:07.106Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.43% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T05:50:00.589Z] [CRON] Starting management cycle",
-  "[2026-10-23T05:50:01.232Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T05:50:01.883Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T05:50:01.885Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T05:50:05.499Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.77% > 30%",
   "[2026-10-23T05:50:05.499Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.01% > 30%",
   "[2026-10-23T05:50:39.534Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T05:55:34.900Z] [CRON] [Opportunity] McRib-SOL degen 70.6 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T05:55:34.984Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T05:55:34.985Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

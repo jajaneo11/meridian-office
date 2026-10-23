@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T20:02:44.154852+00:00",
+ "generated_at": "2026-10-23T20:07:42.281201+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 20
+  "decisions_mentioning": 19
  },
  "mode": {
   "dry_run": false,
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 974,
+  "total_real": 975,
   "today": 100,
-  "today_real": 185,
+  "today_real": 186,
   "by_type": {
    "no_deploy": 43,
    "skip": 36,
@@ -94,6 +94,14 @@
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-23T20:06:09.938Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- YMB-SOL: bot holders 42.46% > 30% - YMB-SOL: bot holders 42.46% > 30% - YMB-USDC: bot holders 42.46% > 30%"
+   },
    {
     "ts": "2026-10-23T20:00:09.608Z",
     "type": "no_deploy",
@@ -181,14 +189,6 @@
     "pool_name": "SQUADS-SOL",
     "summary": "Closed at 0.29%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-23T18:57:13.416Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "SQUADS-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -709\u2192-640 around active bin -640"
    }
   ]
  },
@@ -196,7 +196,7 @@
   "per_hour": [
    {
     "hour": "09:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "10:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "20:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T20:00:01.545",
+  "last_screening": "2026-10-23T20:06:08.212",
   "last_management": "2026-10-23T20:00:00.856"
  },
  "log_tail": [
-  "[2026-10-23T19:58:45.587Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-23T20:00:00.856Z] [CRON] Starting management cycle",
-  "[2026-10-23T20:00:01.497Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T20:00:01.545Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T20:00:01.545Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.913705 SOL)",
-  "[2026-10-23T20:00:03.784Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 43.58% > 30%",
-  "[2026-10-23T20:00:03.784Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 43.58% > 30%",
   "[2026-10-23T20:00:03.784Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 43.58% > 30%",
   "[2026-10-23T20:00:03.784Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 43.58% > 30%",
-  "[2026-10-23T20:00:09.607Z] [AGENT] \u26a0\ufe0f **DEPLOY BLOCKED \u2014 NOT DEPLOYED**"
+  "[2026-10-23T20:00:09.607Z] [AGENT] \u26a0\ufe0f **DEPLOY BLOCKED \u2014 NOT DEPLOYED**",
+  "[2026-10-23T20:06:07.952Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T20:06:08.212Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T20:06:08.213Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.913705 SOL)",
+  "[2026-10-23T20:06:09.930Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.46% > 30%",
+  "[2026-10-23T20:06:09.930Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.46% > 30%",
+  "[2026-10-23T20:06:09.930Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.46% > 30%",
+  "[2026-10-23T20:06:09.930Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.46% > 30%"
  ],
  "state_last_updated": "2026-10-23T19:58:17.792Z"
 }

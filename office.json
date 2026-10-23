@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T20:42:39.738994+00:00",
+ "generated_at": "2026-10-23T20:47:39.644209+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 15
+  "decisions_mentioning": 14
  },
  "mode": {
   "dry_run": false,
@@ -80,12 +80,12 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 982,
+  "total_real": 983,
   "today": 100,
-  "today_real": 193,
+  "today_real": 194,
   "by_type": {
-   "no_deploy": 41,
    "skip": 36,
+   "no_deploy": 41,
    "deploy": 12,
    "close": 11
   },
@@ -94,6 +94,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-23T20:46:38.861Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- YMB-SOL: bot holders 42.01% > 30% - YMB-USDC: bot holders 42.01% > 30% - YMB-SOL: bot holders 42.01% > 30%"
+   },
    {
     "ts": "2026-10-23T20:41:24.081Z",
     "type": "no_deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry (tool-level failure). BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED - McRib-SOL was the clear top pick: bin_step=100, volatility 4.00, fee_tvl 0.0799, organic 86, fees 226 SOL, top10 only 15.89%, 2 smart wallets present, and a strong pool memory (avg PnL"
-   },
-   {
-    "ts": "2026-10-23T19:58:23.154Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "McRib-SOL",
-    "summary": "Closed at 3.78%",
-    "reason_short": "Trailing TP: peak 5.10% \u2192 current 3.38% (dropped 1.72% >= 1.5%)"
    }
   ]
  },
@@ -200,7 +200,7 @@
    },
    {
     "hour": "10:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "11:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "20:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T20:41:22.770",
+  "last_screening": "2026-10-23T20:46:37.718",
   "last_management": "2026-10-23T20:40:00.507"
  },
  "log_tail": [
-  "[2026-10-23T20:36:08.840Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 41.73% > 30%",
-  "[2026-10-23T20:36:08.840Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 41.73% > 30%",
-  "[2026-10-23T20:40:00.507Z] [CRON] Starting management cycle",
-  "[2026-10-23T20:40:01.200Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T20:41:22.566Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T20:41:22.770Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-23T20:41:22.771Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912296 SOL)",
   "[2026-10-23T20:41:24.080Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 39.52% > 30%",
   "[2026-10-23T20:41:24.080Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 39.52% > 30%",
-  "[2026-10-23T20:41:24.080Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 39.52% > 30%"
+  "[2026-10-23T20:41:24.080Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 39.52% > 30%",
+  "[2026-10-23T20:46:37.496Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T20:46:37.718Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T20:46:37.719Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912296 SOL)",
+  "[2026-10-23T20:46:38.860Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.01% > 30%",
+  "[2026-10-23T20:46:38.860Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.01% > 30%",
+  "[2026-10-23T20:46:38.860Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.01% > 30%"
  ],
- "state_last_updated": "2026-10-23T20:40:36.027Z"
+ "state_last_updated": "2026-10-23T20:47:39.069Z"
 }

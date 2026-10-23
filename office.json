@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T10:42:38.447447+00:00",
+ "generated_at": "2026-10-23T10:47:38.997605+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 920,
-  "today": 98,
-  "today_real": 131,
+  "total_real": 922,
+  "today": 99,
+  "today_real": 133,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -81,6 +81,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T10:45:26.988Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Deploy attempt did not succeed",
+    "reason_short": "# \ud83d\ude80 DEPLOYED BORDR-SOL FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ \u25ce 0.5 SOL | bid_ask | bin -419 Range: -468 \u2192 -419 Range cover: 49% downside | 0% upside | 49% total ## MARKET Fee/TVL: 3.96% Volume: $10,119 TVL: $253,429 Volatility: 2.07 Organic: 78 Mcap: $1,654,641 Age: 369h ## AUDIT Top10: 15.38"
+   },
    {
     "ts": "2026-10-23T10:42:23.870Z",
     "type": "no_deploy",
@@ -168,14 +176,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED Deploy failed on fee/active-TVL runtime check (0% < min 0.005%). Top candidate disqualified despite strong smart wallet signals. No retries allowed in same session. REJECTED - ANTHROPIC-USDC, CLAUDIA-SOL: bin_s"
-   },
-   {
-    "ts": "2026-10-23T09:45:14.195Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED Deploy tool execution failed (pool lookup error). The candidate had strong signals (5 smart wallets, solid fees, positive price action), but the technical deploy path was blocked. REJECTED Yagi-SOL (deploy fail"
    }
   ]
  },
@@ -183,7 +183,7 @@
   "per_hour": [
    {
     "hour": "23:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "00:00",
@@ -227,25 +227,25 @@
    },
    {
     "hour": "10:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T10:42:23.582",
+  "last_screening": "2026-10-23T10:47:38.048",
   "last_management": "2026-10-23T10:40:00.639"
  },
  "log_tail": [
-  "[2026-10-23T10:42:22.405Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-23T10:42:23.580Z] [TELEGRAM_ERROR] sendChatAction 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
-  "[2026-10-23T10:42:23.582Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
-  "[2026-10-23T10:42:23.582Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T10:42:23.582Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T10:42:23.869Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.66x",
-  "[2026-10-23T10:42:23.869Z] [SCREENING] Volume spike check rejected GTA6-SOL: 1.52x",
-  "[2026-10-23T10:42:23.869Z] [SCREENING] Volume spike check rejected LUKE-SOL: 1.53x",
-  "[2026-10-23T10:42:23.870Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
-  "[2026-10-23T10:42:24.047Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}"
+  "[2026-10-23T10:45:04.883Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T10:45:04.883Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0.755285 SOL)",
+  "# \ud83d\ude80 DEPLOYED",
+  "[2026-10-23T10:47:37.935Z] [SCREENING] Volume spike check rejected BORDR-SOL: 1.61x",
+  "[2026-10-23T10:47:37.936Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T10:47:37.938Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T10:47:38.048Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T10:47:38.048Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T10:47:38.143Z] [SCREENING] Volume spike check rejected BORDR-SOL: 1.61x",
+  "[2026-10-23T10:47:38.144Z] [SCREENING] Volume spike filter removed 1 candidate(s)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

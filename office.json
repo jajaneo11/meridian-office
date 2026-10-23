@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:37:39.469575+00:00",
+ "generated_at": "2026-10-23T11:42:40.528259+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,15 +37,15 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 56
+  "decisions_mentioning": 55
  },
  "mode": {
   "dry_run": false,
-  "model": "mercury-2.5",
-  "screener_model": "mercury-2.5",
-  "manager_model": "mercury-2.5",
-  "general_model": "mercury-2.5",
-  "fallback_model": "mercury-2.5"
+  "model": "mercury-3",
+  "screener_model": "mercury-3",
+  "manager_model": "mercury-3",
+  "general_model": "mercury-3",
+  "fallback_model": "mercury-3"
  },
  "wallet": {
   "sol": 0.755285
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 936,
+  "total_real": 939,
   "today": 100,
-  "today_real": 147,
+  "today_real": 150,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -81,6 +81,22 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T11:42:17.487Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- McRib-SOL: volume spike: 2.28x < 3x - GUST-SOL: volume spike: 2.98x < 3x - CLAUDIA-SOL: volume spike: 1.74x < 3x"
+   },
+   {
+    "ts": "2026-10-23T11:40:57.290Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- McRib-SOL: volume spike: 1.50x < 3x - GUST-SOL: volume spike: 1.22x < 3x"
+   },
    {
     "ts": "2026-10-23T11:30:11.568Z",
     "type": "no_deploy",
@@ -160,22 +176,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.000 < 0.8899999999999999)"
-   },
-   {
-    "ts": "2026-10-23T10:30:10.113Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED The deploy_position tool failed on the best candidate (pool address validation error) and the system blocked further retries for this session. The candidate was high-conviction with 4 smart wallets and positive"
-   },
-   {
-    "ts": "2026-10-23T10:20:13.615Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL (9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY) WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available to fund the 0.5 SOL deployment. Even though this pool had strong signals (4 smart wallets, valid bin step, healthy f"
    }
   ]
  },
@@ -183,7 +183,7 @@
   "per_hour": [
    {
     "hour": "00:00",
-    "count": 7
+    "count": 5
    },
    {
     "hour": "01:00",
@@ -227,25 +227,25 @@
    },
    {
     "hour": "11:00",
-    "count": 4
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T11:36:28.145",
-  "last_management": "2026-10-23T11:30:00.269"
+  "last_screening": "2026-10-23T11:42:17.203",
+  "last_management": "2026-10-23T11:40:00.881"
  },
  "log_tail": [
-  "[2026-10-23T11:36:27.998Z] [SCREENING] Volume spike check rejected McRib-SOL: 0.83x",
-  "[2026-10-23T11:36:27.999Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T11:36:27.999Z] [CRON] [Opportunity] PHP-SOL degen 99.9 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T11:36:28.145Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T11:36:28.146Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:36:28.288Z] [SCREENING] Volume spike check rejected McRib-SOL: 0.83x",
-  "[2026-10-23T11:36:28.288Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T11:36:29.279Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.91% > 30%",
-  "[2026-10-23T11:36:29.949Z] [ERROR] Agent loop error at step 0: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1937. To increase, visit https://openrouter.ai/settings/credits and add more credits",
-  "[2026-10-23T11:36:29.949Z] [CRON_ERROR] Screening cycle failed: 402 This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 1937. To increase, visit https://openrouter.ai/settings/credits and add more credits"
+  "[2026-10-23T11:40:57.289Z] [SCREENING] Volume spike check rejected McRib-SOL: 1.50x",
+  "[2026-10-23T11:40:57.289Z] [SCREENING] Volume spike check rejected GUST-SOL: 1.22x",
+  "[2026-10-23T11:40:57.289Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
+  "[2026-10-23T11:42:15.994Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-23T11:42:17.203Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T11:42:17.203Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike check rejected McRib-SOL: 2.28x",
+  "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike check rejected GUST-SOL: 2.98x",
+  "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike check rejected CLAUDIA-SOL: 1.74x",
+  "[2026-10-23T11:42:17.486Z] [SCREENING] Volume spike filter removed 3 candidate(s)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

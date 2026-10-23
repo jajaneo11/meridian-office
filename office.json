@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T17:12:40.352505+00:00",
+ "generated_at": "2026-10-23T17:17:40.855751+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.594217
+  "sol": 0.862307
  },
  "limits": {
   "max_positions": 3,
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 954,
+  "total_real": 955,
   "today": 100,
-  "today_real": 165,
+  "today_real": 166,
   "by_type": {
    "no_deploy": 62,
    "skip": 29,
@@ -94,6 +94,14 @@
    "MANAGER": 4
   },
   "recent": [
+   {
+    "ts": "2026-10-23T17:15:19.182Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE SQUADS-SOL (CSv3ixznHbM341uUUyuBwVY9yksujoq8qSrmJHjhCira) WHY SKIPPED The deploy tool call actually failed: my first call went out without a positive amount_y (I omitted it), and the system blocked any retry for this session (\"de"
+   },
    {
     "ts": "2026-10-23T17:10:16.448Z",
     "type": "deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.045 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T15:40:02.220Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.045 < 0.74)"
    }
   ]
  },
@@ -196,7 +196,7 @@
   "per_hour": [
    {
     "hour": "06:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "07:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "17:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T17:10:01.159",
+  "last_screening": "2026-10-23T17:15:07.600",
   "last_management": "2026-10-23T17:10:00.076"
  },
  "log_tail": [
-  "[2026-10-23T17:10:01.456Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.92x",
-  "[2026-10-23T17:10:01.457Z] [SCREENING] Volume spike check rejected BLACKTOBER-SOL: 1.23x",
-  "[2026-10-23T17:10:01.457Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
-  "[2026-10-23T17:10:02.725Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.05% > 30%",
-  "[2026-10-23T17:10:12.250Z] [DEPLOY] Pool: 9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g",
-  "[2026-10-23T17:10:12.250Z] [DEPLOY] Strategy: bid_ask, Bins: -536 to -482 (54 bins)",
-  "[2026-10-23T17:10:12.250Z] [DEPLOY] Amount: 0 X, 0.69 Y",
-  "[2026-10-23T17:10:12.250Z] [DEPLOY] Position: 9kbqLHQqXLr4PFCEx2Bvj5frerFPxQrb2aJLU4PwTA9g",
-  "[2026-10-23T17:10:16.445Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4JED5Wb9owiG88X2DFCWDT1DWZDY49tSD2Bx1aDyZdcYtbQEwFJ7RL4oFeyT1Xrha3LgVGgkUEeNebkuAeM6SsVv",
-  "[2026-10-23T17:10:17.728Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-23T17:15:07.366Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 1.09x",
+  "[2026-10-23T17:15:07.366Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
+  "[2026-10-23T17:15:07.367Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T17:15:07.600Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T17:15:07.600Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.862307 SOL)",
+  "[2026-10-23T17:15:07.794Z] [SCREENING] Volume spike check rejected BLACKTOBER-SOL: 1.57x",
+  "[2026-10-23T17:15:07.794Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 1.09x",
+  "[2026-10-23T17:15:07.794Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
+  "[2026-10-23T17:15:09.387Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.05% > 30%",
+  "[2026-10-23T17:15:19.179Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-23T17:12:39.573Z"
+ "state_last_updated": "2026-10-23T17:12:42.610Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T00:47:39.983129+00:00",
+ "generated_at": "2026-10-23T00:52:39.977735+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 72
+  "decisions_mentioning": 71
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 799,
-  "today": 8,
-  "today_real": 10,
+  "total_real": 800,
+  "today": 9,
+  "today_real": 11,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T00:50:30.739Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Wallet has 0 SOL available for deployment. REJECTED McRib-SOL (0 SOL balance)"
+   },
    {
     "ts": "2026-10-23T00:45:30.234Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED The top candidate (BORDR-SOL) had a smart wallet present and solid fundamentals, but the on-chain fee/active-TVL ratio checked out to 0% at deploy time\u2014below the minimum threshold. The second option (PUMPATA"
-   },
-   {
-    "ts": "2026-10-22T23:37:00.042Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available for deployment. Even if funds were present, all three candidates have generic/noisy narratives and no compelling catalysts to justify exposure. REJECTED PUMPAT"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "00:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T00:45:04.711",
-  "last_management": "2026-10-23T00:40:00.899"
+  "last_screening": "2026-10-23T00:50:01.502",
+  "last_management": "2026-10-23T00:50:00.459"
  },
  "log_tail": [
-  "[2026-10-23T00:40:02.198Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T00:40:05.087Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.82% > 30%",
-  "[2026-10-23T00:40:05.088Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 37.07% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T00:45:04.571Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T00:45:04.711Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T00:45:04.711Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T00:45:07.070Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.98% > 30%",
   "[2026-10-23T00:45:07.070Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 37.28% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T00:50:00.459Z] [CRON] Starting management cycle",
+  "[2026-10-23T00:50:00.994Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T00:50:01.502Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T00:50:01.503Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T00:50:03.900Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 34.79% > 30%",
+  "[2026-10-23T00:50:03.900Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.81% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

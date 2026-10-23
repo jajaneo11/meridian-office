@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T10:37:42.178425+00:00",
+ "generated_at": "2026-10-23T10:42:38.447447+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 61
+  "decisions_mentioning": 58
  },
  "mode": {
   "dry_run": false,
@@ -70,17 +70,41 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 917,
-  "today": 95,
-  "today_real": 128,
+  "total_real": 920,
+  "today": 98,
+  "today_real": 131,
   "by_type": {
-   "no_deploy": 98,
-   "skip": 2
+   "no_deploy": 97,
+   "skip": 3
   },
   "by_actor": {
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T10:42:23.870Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- BORDR-SOL: volatility 0 is unusable - MRNA-SOL: volatility 0 is unusable - \u30e4\u30ae-SOL: volume spike: 0.66x < 3x"
+   },
+   {
+    "ts": "2026-10-23T10:41:42.831Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- BORDR-SOL: volatility 0 is unusable - \u30e4\u30ae-SOL: volume spike: 0.64x < 3x"
+   },
+   {
+    "ts": "2026-10-23T10:40:01.202Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.000 < 0.74)"
+   },
    {
     "ts": "2026-10-23T10:36:58.536Z",
     "type": "skip",
@@ -152,30 +176,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED Deploy tool execution failed (pool lookup error). The candidate had strong signals (5 smart wallets, solid fees, positive price action), but the technical deploy path was blocked. REJECTED Yagi-SOL (deploy fail"
-   },
-   {
-    "ts": "2026-10-23T09:37:10.515Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Wallet balance is 0 SOL, making deployment impossible. The candidate also has a null narrative (generating) and 0 smart wallets, providing insufficient conviction for a directional LP position. REJECTED McRi"
-   },
-   {
-    "ts": "2026-10-23T09:30:22.407Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED Wallet balance is 0 SOL. Need 0.5 SOL to fund the position. All candidates are skipped because the wallet is empty. REJECTED BORDR-SOL (0 balance) PANGEA-SOL (0 balance) GTA6-SOL (0 balance)"
-   },
-   {
-    "ts": "2026-10-23T09:25:40.811Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The only screened candidate met all quality thresholds (smart wallets present, fees >30 SOL, bots <30%, bin_step valid) and had no bad memory history. However, the wallet has 0.000 SOL available, while the "
    }
   ]
  },
@@ -183,7 +183,7 @@
   "per_hour": [
    {
     "hour": "23:00",
-    "count": 5
+    "count": 2
    },
    {
     "hour": "00:00",
@@ -227,25 +227,25 @@
    },
    {
     "hour": "10:00",
-    "count": 7
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T10:36:50.086",
-  "last_management": "2026-10-23T10:30:00.820"
+  "last_screening": "2026-10-23T10:42:23.582",
+  "last_management": "2026-10-23T10:40:00.639"
  },
  "log_tail": [
-  "The deploy_position tool failed on the best candidate (pool address validation error) and the system blocked further retries for this session. The candidate was high-conviction with 4 smart wallets and positive momentum.",
-  "[2026-10-23T10:30:35.269Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-23T10:35:47.545Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-23T10:35:47.564Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 0.8899999999999999 needed for deploy + gas)",
-  "[2026-10-23T10:36:49.848Z] [CRON] [Opportunity] McRib-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T10:36:50.086Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T10:36:50.088Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T10:36:58.524Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-23T10:36:58.535Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 0.74 needed for deploy + gas)",
-  "\ud83d\ude80 DEPLOYED"
+  "[2026-10-23T10:42:22.405Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-23T10:42:23.580Z] [TELEGRAM_ERROR] sendChatAction 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-23T10:42:23.582Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
+  "[2026-10-23T10:42:23.582Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T10:42:23.582Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T10:42:23.869Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.66x",
+  "[2026-10-23T10:42:23.869Z] [SCREENING] Volume spike check rejected GTA6-SOL: 1.52x",
+  "[2026-10-23T10:42:23.869Z] [SCREENING] Volume spike check rejected LUKE-SOL: 1.53x",
+  "[2026-10-23T10:42:23.870Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
+  "[2026-10-23T10:42:24.047Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T04:32:39.110156+00:00",
+ "generated_at": "2026-10-23T04:37:41.854122+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 844,
+  "total_real": 845,
   "today": 37,
-  "today_real": 55,
+  "today_real": 56,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T04:30:00.711",
+  "last_screening": "2026-10-23T04:36:04.602",
   "last_management": "2026-10-23T04:30:00.201"
  },
  "log_tail": [
-  "[2026-10-23T04:26:19.398Z] [CRON] [Opportunity] LUKE-SOL degen 45.3 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T04:26:19.595Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T04:26:19.595Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-23T04:30:00.201Z] [CRON] Starting management cycle",
-  "[2026-10-23T04:30:00.711Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T04:30:00.712Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T04:30:00.787Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T04:30:00.788Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T04:36:04.478Z] [CRON] [Opportunity] BORDR-SOL degen 66.7 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T04:36:04.602Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T04:36:04.610Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T04:36:08.432Z] [ERROR] Agent loop error at step 0: 429 Rate limit reached: too many requests per minute",
+  "[2026-10-23T04:36:41.078Z] [ERROR] Agent loop error at step 1: 429 Rate limit reached: too many requests per minute",
+  "[2026-10-23T04:37:13.314Z] [ERROR] Agent loop error at step 2: 429 Rate limit reached: too many requests per minute"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

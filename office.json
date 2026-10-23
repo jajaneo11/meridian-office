@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:07:38.039746+00:00",
+ "generated_at": "2026-10-23T11:12:39.140819+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 929,
+  "total_real": 930,
   "today": 99,
-  "today_real": 140,
+  "today_real": 141,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -232,20 +232,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T11:06:29.031",
-  "last_management": "2026-10-23T11:00:00.299"
+  "last_screening": "2026-10-23T11:10:01.925",
+  "last_management": "2026-10-23T11:10:00.773"
  },
  "log_tail": [
-  "[2026-10-23T11:06:28.921Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
-  "[2026-10-23T11:06:28.925Z] [CRON] [Opportunity] GUST-SOL degen 98.1 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T11:06:29.031Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T11:06:29.032Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:06:29.223Z] [SCREENING] Volume spike check rejected EMBER-SOL: 1.10x",
-  "[2026-10-23T11:06:29.224Z] [SCREENING] Volume spike check rejected GTA6-SOL: 2.28x",
-  "[2026-10-23T11:06:29.224Z] [SCREENING] Volume spike check rejected GTA6-SOL: 1.34x",
-  "[2026-10-23T11:06:29.224Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
-  "[2026-10-23T11:06:31.298Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-23T11:06:31.298Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header"
+  "[2026-10-23T11:10:01.926Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:10:02.846Z] [SCREENING] Volume spike check rejected McRib-SOL: 2.45x",
+  "[2026-10-23T11:10:02.846Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.93x",
+  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike check rejected EMBER-SOL: 1.51x",
+  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike check rejected GTA6-SOL: 2.70x",
+  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike check rejected CLAUDIA-SOL: 1.31x",
+  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike check rejected GTA6-SOL: 1.35x",
+  "[2026-10-23T11:10:02.847Z] [SCREENING] Volume spike filter removed 6 candidate(s)",
+  "[2026-10-23T11:10:03.947Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
+  "[2026-10-23T11:10:03.948Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

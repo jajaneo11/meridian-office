@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T21:42:41.910226+00:00",
+ "generated_at": "2026-10-23T21:47:40.322849+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 986,
+  "total_real": 987,
   "today": 100,
-  "today_real": 197,
+  "today_real": 198,
   "by_type": {
    "no_deploy": 38,
    "deploy": 13,
@@ -94,6 +94,14 @@
    "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-23T21:46:46.733Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OPENAI-SOL WHY SKIPPED The single candidate fails the conviction bar. It has no usable narrative (the only narrative available is a placeholder, still generating, no identification story), and 0/30 tracked smart wallets are in th"
+   },
    {
     "ts": "2026-10-23T21:41:23.674Z",
     "type": "no_deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- YMB-SOL: bot holders 41.73% > 30% - YMB-USDC: bot holders 41.73% > 30%"
-   },
-   {
-    "ts": "2026-10-23T20:30:22.113Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Deploy attempt did not succeed",
-    "reason_short": "\u26d4 **NO DEPLOY** **Cycle finished with no valid entry.** **BEST LOOKING CANDIDATE** GUST-SOL (`5TfrKFkySxzqGrr65PED4TkwwYEHBy8AvsqTtKiLo1ek`) **WHY SKIPPED** The deployment attempt for GUST-SOL was blocked by the system: `Could not verify pool screening thresholds before deploy: Pool undefined not fo"
    }
   ]
  },
@@ -200,7 +200,7 @@
    },
    {
     "hour": "11:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "12:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "21:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T21:41:22.994",
+  "last_screening": "2026-10-23T21:46:37.902",
   "last_management": "2026-10-23T21:40:00.038"
  },
  "log_tail": [
-  "[2026-10-23T21:36:07.935Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T21:36:07.937Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
-  "[2026-10-23T21:36:09.083Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 36.80% > 30%",
-  "[2026-10-23T21:36:09.083Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.89% > 30%",
-  "[2026-10-23T21:40:00.038Z] [CRON] Starting management cycle",
-  "[2026-10-23T21:40:00.645Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T21:41:22.789Z] [CRON] [Opportunity] TRUTH-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T21:41:22.994Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T21:41:22.995Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
-  "[2026-10-23T21:41:23.670Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 35.72% > 30%"
+  "[2026-10-23T21:41:23.670Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 35.72% > 30%",
+  "[2026-10-23T21:46:37.658Z] [SCREENING] Volume spike check rejected YMB-SOL: 1.90x",
+  "[2026-10-23T21:46:37.658Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T21:46:37.658Z] [CRON] [Opportunity] TRUTH-SOL degen 99.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T21:46:37.902Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T21:46:37.903Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
+  "[2026-10-23T21:46:37.989Z] [SCREENING] Volume spike check rejected YMB-SOL: 1.90x",
+  "[2026-10-23T21:46:37.990Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T21:46:38.821Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 34.29% > 30%",
+  "[2026-10-23T21:46:46.732Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T21:39:09.687Z"
 }

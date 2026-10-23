@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T23:52:39.682156+00:00",
+ "generated_at": "2026-10-23T23:57:40.568925+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 9
+  "decisions_mentioning": 10
  },
  "mode": {
   "dry_run": false,
@@ -80,13 +80,13 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 993,
+  "total_real": 994,
   "today": 100,
-  "today_real": 204,
+  "today_real": 205,
   "by_type": {
-   "skip": 43,
+   "skip": 42,
    "close": 12,
-   "no_deploy": 33,
+   "no_deploy": 34,
    "deploy": 12
   },
   "by_actor": {
@@ -94,6 +94,14 @@
    "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-23T23:57:13.589Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "The deploy_position call failed, so no position was opened. Per rules I must not retry and must report the real result. \u26d4 NO DEPLOY Cycle finished with no valid entry (deploy tool failed). BEST LOOKING CANDIDATE Moustache-SOL (BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ) WHY SKIPPED Moustache-SOL w"
+   },
    {
     "ts": "2026-10-23T23:51:15.430Z",
     "type": "no_deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.180 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T22:30:00.583Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.180 < 0.74)"
    }
   ]
  },
@@ -200,7 +200,7 @@
    },
    {
     "hour": "13:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "14:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "23:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T23:51:08.037",
+  "last_screening": "2026-10-23T23:57:07.982",
   "last_management": "2026-10-23T23:50:00.646"
  },
  "log_tail": [
-  "[2026-10-23T23:46:04.232Z] [DEPLOY] Position: Cb1PiV3k6rCqfDM2c4T6fidDA4h2agopwMkFu26RwTs6",
-  "[2026-10-23T23:46:06.846Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4x8ZoZTpQNnr6ePZPFM56h69RUUCxY3TDrYVAAh3nBmHKifE5DADKNdknvdBvmDhLtVyKqtEUkMF47zP7ETD4wjz",
-  "[2026-10-23T23:46:08.254Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-23T23:49:47.266Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-23T23:50:00.646Z] [CRON] Starting management cycle",
-  "[2026-10-23T23:50:01.260Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T23:51:07.787Z] [CRON] [Opportunity] Moustache-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T23:51:08.037Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-23T23:51:08.038Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.956573 SOL)",
-  "[2026-10-23T23:51:15.429Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-23T23:51:15.429Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-23T23:56:22.801Z] [SCREENING] Volume spike check rejected Moustache-SOL: 2.56x",
+  "[2026-10-23T23:56:22.801Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T23:57:07.773Z] [CRON] [Opportunity] Moustache-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T23:57:07.982Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T23:57:07.983Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.956573 SOL)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T23:52:14.283Z"
 }

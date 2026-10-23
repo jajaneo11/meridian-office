@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T20:27:40.224900+00:00",
+ "generated_at": "2026-10-23T20:32:45.917133+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 38,
+  "active_24h": 37,
   "total_value_usd": 139437,
   "total_activity": 390,
   "top": [
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 979,
+  "total_real": 980,
   "today": 100,
-  "today_real": 190,
+  "today_real": 191,
   "by_type": {
    "no_deploy": 41,
    "skip": 36,
@@ -94,6 +94,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-23T20:30:22.113Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Deploy attempt did not succeed",
+    "reason_short": "\u26d4 **NO DEPLOY** **Cycle finished with no valid entry.** **BEST LOOKING CANDIDATE** GUST-SOL (`5TfrKFkySxzqGrr65PED4TkwwYEHBy8AvsqTtKiLo1ek`) **WHY SKIPPED** The deployment attempt for GUST-SOL was blocked by the system: `Could not verify pool screening thresholds before deploy: Pool undefined not fo"
+   },
    {
     "ts": "2026-10-23T20:27:14.031Z",
     "type": "no_deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.170 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T19:30:00.815Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.170 < 0.74)"
    }
   ]
  },
@@ -200,7 +200,7 @@
    },
    {
     "hour": "10:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "11:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "20:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T20:27:07.867",
-  "last_management": "2026-10-23T20:20:00.763"
+  "last_screening": "2026-10-23T20:30:00.739",
+  "last_management": "2026-10-23T20:30:00.111"
  },
  "log_tail": [
-  "[2026-10-23T20:27:07.660Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T20:27:07.660Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T20:27:07.867Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T20:27:07.867Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912296 SOL)",
-  "[2026-10-23T20:27:07.976Z] [SCREENING] Volume spike check rejected YMB-SOL: 2.12x",
-  "[2026-10-23T20:27:07.977Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T20:27:09.291Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 40.69% > 30%",
-  "[2026-10-23T20:27:09.291Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 40.69% > 30%",
-  "[2026-10-23T20:27:09.291Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 40.69% > 30%",
-  "[2026-10-23T20:27:14.031Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-23T20:30:00.111Z] [CRON] Starting management cycle",
+  "[2026-10-23T20:30:00.739Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T20:30:00.739Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912296 SOL)",
+  "[2026-10-23T20:30:00.758Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-23T20:30:00.998Z] [SCREENING] Filtered cooldown token SQUADS (CokrQHPj)",
+  "[2026-10-23T20:30:02.306Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.05% > 30%",
+  "[2026-10-23T20:30:02.306Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.05% > 30%",
+  "[2026-10-23T20:30:02.306Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.05% > 30%",
+  "[2026-10-23T20:30:02.306Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.05% > 30%",
+  "[2026-10-23T20:30:22.112Z] [AGENT] \u26d4 **NO DEPLOY**"
  ],
- "state_last_updated": "2026-10-23T20:24:32.878Z"
+ "state_last_updated": "2026-10-23T20:31:44.990Z"
 }

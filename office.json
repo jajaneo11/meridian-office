@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T09:17:39.432079+00:00",
+ "generated_at": "2026-10-23T09:22:39.097136+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 901,
-  "today": 82,
-  "today_real": 112,
+  "total_real": 902,
+  "today": 83,
+  "today_real": 113,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T09:21:00.492Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL (FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ) WHY SKIPPED Multiple deployment attempts were blocked due to session limits. The best candidate (BORDR-SOL with 3 smart wallets, 5.58% bots, and 412 SOL fees) failed due to"
+   },
    {
     "ts": "2026-10-23T09:17:20.017Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL was the best candidate due to smart wallet presence (Long #14) and solid fee/tvl metrics. However, the deploy attempt failed with a pool verification error, preventing a successful on-chain trans"
-   },
-   {
-    "ts": "2026-10-23T08:16:19.016Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED The strongest candidate had a smart wallet signal (Long #14) but failed the fee/active-TVL ratio validation during deployment. PHP-SOL was the next best option but deployment attempts were blocked by session"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "09:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T09:15:04.940",
-  "last_management": "2026-10-23T09:10:00.687"
+  "last_screening": "2026-10-23T09:20:01.274",
+  "last_management": "2026-10-23T09:20:00.180"
  },
  "log_tail": [
-  "[2026-10-23T09:10:00.687Z] [CRON] Starting management cycle",
-  "[2026-10-23T09:10:01.247Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T09:10:01.748Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T09:10:01.748Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY",
-  "[2026-10-23T09:15:04.781Z] [CRON] [Opportunity] GTA6-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T09:15:04.940Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T09:15:04.940Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T09:15:08.055Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.02% > 30%",
+  "[2026-10-23T09:20:00.180Z] [CRON] Starting management cycle",
+  "[2026-10-23T09:20:00.770Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T09:20:01.274Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T09:20:01.275Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T09:20:03.733Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.96% > 30%",
+  "[2026-10-23T09:20:57.024Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-23T09:20:58.348Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-23T09:20:59.517Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

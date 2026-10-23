@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:27:39.057423+00:00",
+ "generated_at": "2026-10-23T11:32:41.571707+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 57
+  "decisions_mentioning": 56
  },
  "mode": {
   "dry_run": false,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 934,
+  "total_real": 935,
   "today": 100,
-  "today_real": 145,
+  "today_real": 146,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -81,6 +81,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T11:30:11.568Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Deploy attempt did not succeed",
+    "reason_short": "\u26d4 DEPLOY FAILED Pool verification error during deploy_position execution. POOL ISSUE PHP-SOL WHY IT FAILED The deploy_position tool could not verify pool screening thresholds and returned an error. The agent session flagged a prior attempt, blocking retries. Without a successful deploy confirmation,"
+   },
    {
     "ts": "2026-10-23T11:25:18.494Z",
     "type": "no_deploy",
@@ -168,14 +176,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL (9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY) WHY SKIPPED Wallet balance is 0 SOL \u2014 no capital available to fund the 0.5 SOL deployment. Even though this pool had strong signals (4 smart wallets, valid bin step, healthy f"
-   },
-   {
-    "ts": "2026-10-23T10:10:13.327Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL (9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY) WHY SKIPPED Wallet balance is 0 SOL; no capital available to fund the 0.5 SOL deploy requirement. Even though this pool had smart wallet signals, the deployment cannot proceed"
    }
   ]
  },
@@ -183,7 +183,7 @@
   "per_hour": [
    {
     "hour": "00:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "01:00",
@@ -227,25 +227,25 @@
    },
    {
     "hour": "11:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T11:25:13.149",
-  "last_management": "2026-10-23T11:20:00.774"
+  "last_screening": "2026-10-23T11:30:00.815",
+  "last_management": "2026-10-23T11:30:00.269"
  },
  "log_tail": [
-  "[2026-10-23T11:20:52.247Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T11:25:13.058Z] [SCREENING] Volume spike check rejected PANGEA-SOL: 1.30x",
-  "[2026-10-23T11:25:13.059Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T11:25:13.059Z] [CRON] [Opportunity] McRib-SOL degen 99.2 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T11:25:13.149Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T11:25:13.149Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:25:13.316Z] [SCREENING] Volume spike check rejected PANGEA-SOL: 1.30x",
-  "[2026-10-23T11:25:13.316Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "\u26d4 NO DEPLOY"
+  "[2026-10-23T11:30:00.816Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:30:00.843Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T11:30:00.844Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T11:30:01.264Z] [SCREENING] Volume spike check rejected McRib-SOL: 2.97x",
+  "[2026-10-23T11:30:01.266Z] [SCREENING] Volume spike check rejected \u30e4\u30ae-SOL: 0.83x",
+  "[2026-10-23T11:30:01.266Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
+  "[2026-10-23T11:30:02.198Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.01% > 30%",
+  "\u26d4 DEPLOY FAILED",
+  "Pool verification error during deploy_position execution.",
+  "The deploy_position tool could not verify pool screening thresholds and returned an error. The agent session flagged a prior attempt, blocking retries. Without a successful deploy confirmation, this cycle cannot proceed."
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

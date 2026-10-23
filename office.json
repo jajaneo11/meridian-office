@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T06:52:39.796733+00:00",
+ "generated_at": "2026-10-23T06:57:39.499673+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 872,
+  "total_real": 873,
   "today": 60,
-  "today_real": 83,
+  "today_real": 84,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T06:50:01.960",
+  "last_screening": "2026-10-23T06:56:19.873",
   "last_management": "2026-10-23T06:50:00.823"
  },
  "log_tail": [
-  "[2026-10-23T06:45:04.772Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T06:45:07.241Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.57% > 30%",
-  "\u26d4 NO DEPLOY",
-  "The system rejected the deploy attempt mid-cycle with a pool verification error. All other top candidates failed bin_step or smart wallet checks (BIN step under 80, or no smart wallet presence to override weak narrative). Without a confirmed valid pool, no safe entry remains.",
   "[2026-10-23T06:50:00.823Z] [CRON] Starting management cycle",
   "[2026-10-23T06:50:01.462Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T06:50:01.960Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T06:50:01.960Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T06:50:04.123Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.29% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T06:56:19.744Z] [CRON] [Opportunity] LUKE-SOL degen 42.2 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T06:56:19.873Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T06:56:19.873Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:17:41.391695+00:00",
+ "generated_at": "2026-10-23T11:22:39.191429+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 57
+  "decisions_mentioning": 56
  },
  "mode": {
   "dry_run": false,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 932,
+  "total_real": 933,
   "today": 100,
-  "today_real": 143,
+  "today_real": 144,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -81,6 +81,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T11:20:53.777Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g) WHY SKIPPED Both McRib pools were blocked: one due to fee/active-TVL below threshold, the other due to session deploy limit. GUST-SOL was rejected because fees were 28.23 S"
+   },
    {
     "ts": "2026-10-23T11:15:28.884Z",
     "type": "no_deploy",
@@ -168,14 +176,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Dry run safety mode prevented actual deployment. Candidate passed all hard filters with strong organic score (84), healthy fees (176 SOL), and low concentration. No live capital was moved due to system restr"
-   },
-   {
-    "ts": "2026-10-23T10:00:11.016Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL (9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY) WHY SKIPPED The strongest candidate had 4 smart wallets and solid fees, but the deployment failed during the pool screening verification step. The system returned an error sta"
    }
   ]
  },
@@ -183,7 +183,7 @@
   "per_hour": [
    {
     "hour": "00:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "01:00",
@@ -227,25 +227,25 @@
    },
    {
     "hour": "11:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T11:15:28.777",
-  "last_management": "2026-10-23T11:10:00.773"
+  "last_screening": "2026-10-23T11:20:01.843",
+  "last_management": "2026-10-23T11:20:00.774"
  },
  "log_tail": [
-  "[2026-10-23T11:14:33.481Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T11:14:33.882Z] [SCREENING] Volume spike check rejected JEANPHIL-SOL: 1.58x",
-  "[2026-10-23T11:14:33.882Z] [SCREENING] Volume spike check rejected DOPE-SOL: 0.79x",
-  "[2026-10-23T11:14:33.882Z] [SCREENING] Volume spike check rejected Macca-SOL: 1.02x",
-  "[2026-10-23T11:14:33.882Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
-  "[2026-10-23T11:14:35.673Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-23T11:14:35.673Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
-  "[2026-10-23T11:15:27.576Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
   "[2026-10-23T11:15:28.777Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T11:15:28.778Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)"
+  "[2026-10-23T11:15:28.778Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:20:00.774Z] [CRON] Starting management cycle",
+  "[2026-10-23T11:20:01.332Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T11:20:01.843Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T11:20:01.844Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:20:02.131Z] [SCREENING] Volume spike check rejected GTA6-SOL: 0.79x",
+  "[2026-10-23T11:20:02.131Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T11:20:52.247Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

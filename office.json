@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T20:17:41.854763+00:00",
+ "generated_at": "2026-10-23T20:22:39.536873+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.64572
+  "sol": 0.912296
  },
  "limits": {
   "max_positions": 3,
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 977,
+  "total_real": 978,
   "today": 100,
-  "today_real": 188,
+  "today_real": 189,
   "by_type": {
    "no_deploy": 41,
    "skip": 36,
@@ -94,6 +94,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-23T20:21:58.408Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE FRONTIER-USDC WHY SKIPPED Only candidate survives, but it fails hard disqualifiers. bin_step=50 is outside the mandatory [80-125] bin-step range \u2014 deploying here would violate the hard deployment rule. Additionally, there are 0 s"
+   },
    {
     "ts": "2026-10-23T20:16:44.959Z",
     "type": "deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.170 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T19:12:14.991Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "\u30e4\u30ae-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -563\u2192-504 around active bin -504"
    }
   ]
  },
@@ -196,7 +196,7 @@
   "per_hour": [
    {
     "hour": "09:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "10:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "20:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T20:16:38.059",
-  "last_management": "2026-10-23T20:10:00.276"
+  "last_screening": "2026-10-23T20:21:53.010",
+  "last_management": "2026-10-23T20:20:00.763"
  },
  "log_tail": [
-  "[2026-10-23T20:16:39.609Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.42% > 30%",
-  "[2026-10-23T20:16:39.610Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 42.42% > 30%",
-  "[2026-10-23T20:16:39.610Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.42% > 30%",
-  "[2026-10-23T20:16:39.610Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 42.42% > 30%",
-  "[2026-10-23T20:16:43.636Z] [DEPLOY] Pool: H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX",
-  "[2026-10-23T20:16:43.637Z] [DEPLOY] Strategy: bid_ask, Bins: -1252 to -1203 (49 bins)",
-  "[2026-10-23T20:16:43.637Z] [DEPLOY] Amount: 0 X, 0.69 Y",
-  "[2026-10-23T20:16:43.637Z] [DEPLOY] Position: 2raHmEJCZ1WXBBohcr7YzffhMjT7v7PEHVU5hR1aiioK",
-  "[2026-10-23T20:16:44.956Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5dxsERkBVcGXYff3TTJmZ1PtSD7D3m6ajoHDciFyXWC4zKztmypAbNe6Fmc47S3Q5WGt4wCsaXg2xrSbxzhp7jVe",
-  "[2026-10-23T20:16:46.254Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-23T20:21:52.727Z] [SCREENING] Volume spike check rejected YMB-SOL: 2.28x",
+  "[2026-10-23T20:21:52.727Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T20:21:52.727Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T20:21:53.010Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T20:21:53.011Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912296 SOL)",
+  "[2026-10-23T20:21:53.098Z] [SCREENING] Volume spike check rejected YMB-SOL: 2.28x",
+  "[2026-10-23T20:21:53.099Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T20:21:54.093Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 41.08% > 30%",
+  "[2026-10-23T20:21:54.093Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 41.08% > 30%",
+  "[2026-10-23T20:21:58.403Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-23T20:17:11.801Z"
+ "state_last_updated": "2026-10-23T20:22:05.818Z"
 }

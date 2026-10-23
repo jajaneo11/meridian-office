@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T21:32:41.416045+00:00",
+ "generated_at": "2026-10-23T21:37:39.724096+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.912296
+  "sol": 0.912274
  },
  "limits": {
   "max_positions": 3,
@@ -80,9 +80,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 984,
+  "total_real": 985,
   "today": 100,
-  "today_real": 195,
+  "today_real": 196,
   "by_type": {
    "no_deploy": 38,
    "deploy": 13,
@@ -94,6 +94,14 @@
    "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-23T21:36:09.094Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- TRUTH-SOL: bot holders 36.80% > 30% - YMB-SOL: bot holders 38.89% > 30%"
+   },
    {
     "ts": "2026-10-23T21:31:32.311Z",
     "type": "close",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Himmel-SOL (2FEkN6uYmyFiWRQfBfczxtKvYPABWhs7nGiy9UdBKAHG) WHY SKIPPED Only one candidate survived pre-screening, but it fails the core conviction gate: it has **no narrative** (narrative still being generated/unavailable) and **n"
-   },
-   {
-    "ts": "2026-10-23T20:21:58.408Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE FRONTIER-USDC WHY SKIPPED Only candidate survives, but it fails hard disqualifiers. bin_step=50 is outside the mandatory [80-125] bin-step range \u2014 deploying here would violate the hard deployment rule. Additionally, there are 0 s"
    }
   ]
  },
@@ -200,7 +200,7 @@
    },
    {
     "hour": "11:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "12:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "21:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T20:51:53.075",
+  "last_screening": "2026-10-23T21:36:07.935",
   "last_management": "2026-10-23T21:30:00.692"
  },
  "log_tail": [
-  "[2026-10-23T21:10:01.711Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T21:10:01.968Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T21:20:00.290Z] [CRON] Starting management cycle",
-  "[2026-10-23T21:20:00.874Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T21:20:01.131Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
   "[2026-10-23T21:20:01.396Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
   "[2026-10-23T21:30:00.692Z] [CRON] Starting management cycle",
   "[2026-10-23T21:30:00.985Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
   "[2026-10-23T21:30:01.411Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T21:31:06.621Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-23T21:31:06.621Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-23T21:36:07.655Z] [CRON] [Opportunity] TRUTH-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T21:36:07.935Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T21:36:07.937Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.912274 SOL)",
+  "[2026-10-23T21:36:09.083Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 36.80% > 30%",
+  "[2026-10-23T21:36:09.083Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.89% > 30%"
  ],
  "state_last_updated": "2026-10-23T21:31:32.070Z"
 }

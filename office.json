@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T02:22:38.847494+00:00",
+ "generated_at": "2026-10-23T02:27:41.219714+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 818,
-  "today": 20,
-  "today_real": 29,
+  "total_real": 819,
+  "today": 21,
+  "today_real": 30,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T02:26:14.503Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Despite strong fundamentals (81 organic, safe bot ratio, low concentration), this pool has zero smart wallet presence and no confirmed narrative. The rules require narrative or smart wallets for conviction; "
+   },
    {
     "ts": "2026-10-23T02:20:19.694Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Wallet balance shows 0.000 SOL available. Cannot deploy 0.5 SOL as required by the goal. Both pools passed fundamental checks but capital is unavailable. REJECTED McRib-SOL (Insufficient SOL balance) PANGEA-"
-   },
-   {
-    "ts": "2026-10-23T00:50:30.739Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Wallet has 0 SOL available for deployment. REJECTED McRib-SOL (0 SOL balance)"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "02:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T02:20:01.338",
+  "last_screening": "2026-10-23T02:25:34.345",
   "last_management": "2026-10-23T02:20:00.300"
  },
  "log_tail": [
-  "[2026-10-23T02:15:04.633Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T02:15:07.319Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.53% > 30%",
-  "[2026-10-23T02:15:07.320Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.93% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T02:20:00.300Z] [CRON] Starting management cycle",
   "[2026-10-23T02:20:00.855Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T02:20:01.338Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T02:20:01.338Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T02:20:04.068Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 36.50% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T02:25:34.264Z] [CRON] [Opportunity] McRib-SOL degen 50.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T02:25:34.345Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T02:25:34.346Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T02:25:37.416Z] [ERROR] Agent loop error at step 0: 429 Rate limit reached: output token limit exceeded",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

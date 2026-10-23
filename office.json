@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T00:37:45.122747+00:00",
+ "generated_at": "2026-10-23T00:42:40.051254+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 71
+  "decisions_mentioning": 72
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 797,
-  "today": 6,
-  "today_real": 8,
+  "total_real": 798,
+  "today": 7,
+  "today_real": 9,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T00:40:27.715Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED McRib-SOL was the strongest candidate (high fee/TVL, smart wallet present, valid bin_step) but was blocked by a real-time active-TVL fee ratio check. The system requires active fee generation to be above thr"
+   },
    {
     "ts": "2026-10-23T00:35:48.990Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Deploy failed due to volatility validation (1.4759 was flagged as unusable by the SDK). This candidate had smart wallet presence and positive 1h momentum, but the volatility feed prevented execution. REJECTE"
-   },
-   {
-    "ts": "2026-10-22T23:20:15.784Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Dry run mode prevented actual on-chain transaction. Smart wallet present with positive momentum (+2.75%) and strong TVL ($264k), but real execution requires bypassing DRY_RUN. REJECTED INJ-SOL (bin_step 50 i"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "00:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T00:35:19.964",
-  "last_management": "2026-10-23T00:30:00.414"
+  "last_screening": "2026-10-23T00:40:02.197",
+  "last_management": "2026-10-23T00:40:00.899"
  },
  "log_tail": [
-  "[2026-10-23T00:30:03.431Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.24% > 30%",
-  "[2026-10-23T00:30:03.431Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.89% > 30%",
-  "\ud83d\ude80 DEPLOYED",
-  "[2026-10-23T00:35:19.842Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T00:35:19.964Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T00:35:19.965Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T00:35:22.469Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.60% > 30%",
   "[2026-10-23T00:35:22.469Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.21% > 30%",
   "[2026-10-23T00:35:22.469Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 37.08% > 30%",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T00:40:00.899Z] [CRON] Starting management cycle",
+  "[2026-10-23T00:40:01.652Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T00:40:02.197Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T00:40:02.198Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T00:40:05.087Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.82% > 30%",
+  "[2026-10-23T00:40:05.088Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 37.07% > 30%",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-22T01:00:01.352Z"

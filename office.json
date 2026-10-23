@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T23:42:42.872154+00:00",
+ "generated_at": "2026-10-23T23:47:41.211218+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.912274
+  "sol": 0.957477
  },
  "limits": {
   "max_positions": 3,
@@ -60,15 +60,6 @@
   "open_count": 2,
   "open": [
    {
-    "id": "2raHmEJCZ1WXBBohcr7YzffhMjT7v7PEHVU5hR1aiioK",
-    "pool": "PANGEA-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-23T20:16:44.958Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 0.69
-   },
-   {
     "id": "3KqgZCqELao1U6u7e3DS4xSwzQzXPRY1rxwFopREzZv9",
     "pool": "McRib-SOL",
     "closed": false,
@@ -76,33 +67,58 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": null
+   },
+   {
+    "id": "Cb1PiV3k6rCqfDM2c4T6fidDA4h2agopwMkFu26RwTs6",
+    "pool": "Moustache-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-23T23:46:06.847Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null
    }
   ],
-  "total_tracked": 14
+  "total_tracked": 15
  },
  "pnl": {
-  "last24h_usd": 11.97,
-  "fees24h_usd": 22.68,
-  "all_time_usd": 11.97,
-  "closed_total": 12,
-  "win_rate_pct": 75
+  "last24h_usd": 16.08,
+  "fees24h_usd": 30.46,
+  "all_time_usd": 16.08,
+  "closed_total": 13,
+  "win_rate_pct": 77
  },
  "decisions": {
   "total": 100,
-  "total_real": 991,
+  "total_real": 992,
   "today": 100,
-  "today_real": 202,
+  "today_real": 203,
   "by_type": {
-   "skip": 45,
-   "close": 11,
-   "deploy": 12,
+   "close": 12,
+   "deploy": 13,
+   "skip": 43,
    "no_deploy": 32
   },
   "by_actor": {
-   "SCREENER": 89,
-   "MANAGER": 11
+   "MANAGER": 12,
+   "SCREENER": 88
   },
   "recent": [
+   {
+    "ts": "2026-10-23T23:46:06.848Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "Moustache-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -583\u2192-514 around active bin -514"
+   },
+   {
+    "ts": "2026-10-23T23:45:17.996Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "PANGEA-SOL",
+    "summary": "Closed at 5.76%",
+    "reason_short": "Trailing TP: peak 9.18% \u2192 current 6.23% (dropped 2.95% >= 1.5%)"
+   },
    {
     "ts": "2026-10-23T23:40:01.850Z",
     "type": "skip",
@@ -182,22 +198,6 @@
     "pool_name": "McRib-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -557\u2192-511 around active bin -511"
-   },
-   {
-    "ts": "2026-10-23T22:00:19.595Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY \u2014 TRANSACTION FAILED Attempted entry: BLACKTOBER-SOL (FJdrgoAy4K57EzC9YG8uvXdNE3F81HZA9bcC3V3zm6KY) \u25ce 0.69 SOL | bid_ask | bins_below 45 | bins_above 0 FAILURE deploy_position simulation failed: \"Blockhash not found\" (SendTransactionError). The on-chain transaction did not execute \u2014 no p"
-   },
-   {
-    "ts": "2026-10-23T21:57:15.790Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Deploy attempt on **\u30e4\u30ae-SOL** failed. WHY FAILED The first `deploy_position` call was blocked by the tool because no positive SOL amount was passed (`amount_y` required). When I retried with `amount_y=0.69`, the session block triggered: \"deploy_position already attempted this session \u2014 do"
    }
   ]
  },
@@ -205,7 +205,7 @@
   "per_hour": [
    {
     "hour": "12:00",
-    "count": 4
+    "count": 2
    },
    {
     "hour": "13:00",
@@ -249,25 +249,25 @@
    },
    {
     "hour": "23:00",
-    "count": 5
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T22:05:23.076",
+  "last_screening": "2026-10-23T23:45:53.052",
   "last_management": "2026-10-23T23:40:00.221"
  },
  "log_tail": [
-  "[2026-10-23T23:20:01.061Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T23:20:01.322Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T23:20:01.601Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T23:30:00.834Z] [CRON] Starting management cycle",
-  "[2026-10-23T23:30:01.057Z] [CRON] Screening skipped \u2014 insufficient SOL (0.180 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T23:30:01.496Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-23T23:40:00.221Z] [CRON] Starting management cycle",
-  "[2026-10-23T23:40:01.324Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T23:40:01.636Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-23T23:40:01.848Z] [CRON] Screening skipped \u2014 insufficient SOL (0.207 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T23:45:05.169Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-23T23:45:52.840Z] [CRON] [Opportunity] Moustache-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T23:45:53.052Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T23:45:53.053Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.957477 SOL)",
+  "[2026-10-23T23:46:04.231Z] [DEPLOY] Pool: BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ",
+  "[2026-10-23T23:46:04.232Z] [DEPLOY] Strategy: bid_ask, Bins: -583 to -514 (69 bins)",
+  "[2026-10-23T23:46:04.232Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-23T23:46:04.232Z] [DEPLOY] Position: Cb1PiV3k6rCqfDM2c4T6fidDA4h2agopwMkFu26RwTs6",
+  "[2026-10-23T23:46:06.846Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4x8ZoZTpQNnr6ePZPFM56h69RUUCxY3TDrYVAAh3nBmHKifE5DADKNdknvdBvmDhLtVyKqtEUkMF47zP7ETD4wjz",
+  "[2026-10-23T23:46:08.254Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-23T23:42:14.157Z"
+ "state_last_updated": "2026-10-23T23:47:38.245Z"
 }

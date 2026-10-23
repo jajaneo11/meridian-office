@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T18:42:41.604910+00:00",
+ "generated_at": "2026-10-23T18:47:39.426865+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 28
+  "decisions_mentioning": 27
  },
  "mode": {
   "dry_run": false,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 966,
+  "total_real": 967,
   "today": 100,
-  "today_real": 177,
+  "today_real": 178,
   "by_type": {
    "no_deploy": 52,
    "skip": 32,
@@ -84,6 +84,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-23T18:45:15.000Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED The deploy tool call failed and could not be completed. My first deploy_position attempt was rejected because the SOL amount (amount_y) was not passed, and the retry was blocked by the system (\"deploy_positi"
+   },
    {
     "ts": "2026-10-23T18:40:08.723Z",
     "type": "no_deploy",
@@ -171,14 +179,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.127 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T17:58:52.990Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "SQUADS-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -741\u2192-672 around active bin -672"
    }
   ]
  },
@@ -190,7 +190,7 @@
    },
    {
     "hour": "08:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "09:00",
@@ -230,25 +230,25 @@
    },
    {
     "hour": "18:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T18:40:01.591",
+  "last_screening": "2026-10-23T18:45:07.524",
   "last_management": "2026-10-23T18:40:00.352"
  },
  "log_tail": [
-  "[2026-10-23T18:36:07.467Z] [CRON] [Opportunity] Tiggien-SOL degen 95.9 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T18:36:07.599Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T18:36:07.600Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
-  "[2026-10-23T18:36:08.821Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 47.29% > 30%",
-  "[2026-10-23T18:40:00.352Z] [CRON] Starting management cycle",
-  "[2026-10-23T18:40:00.946Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T18:40:01.591Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T18:40:01.591Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
-  "[2026-10-23T18:40:02.698Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 44.52% > 30%",
-  "[2026-10-23T18:40:08.720Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-23T18:45:07.446Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T18:45:07.446Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T18:45:07.524Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-23T18:45:07.524Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.633016 SOL)",
+  "[2026-10-23T18:45:07.633Z] [SCREENING] Volume spike check rejected McRib-SOL: 2.71x",
+  "[2026-10-23T18:45:07.634Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-23T18:45:09.399Z] [SCREENING] Bot-holder filter: dropped Tiggien-SOL \u2014 bots 42.76% > 30%",
+  "[2026-10-23T18:45:09.399Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 32.21% > 30%",
+  "[2026-10-23T18:45:14.999Z] [AGENT] \u26d4 NO DEPLOY",
+  "- McRib-SOL \u2014 deploy tool errored + blocked on retry; no real on-chain transaction executed"
  ],
  "state_last_updated": "2026-10-23T18:24:32.666Z"
 }

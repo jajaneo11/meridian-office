@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T06:17:40.301440+00:00",
+ "generated_at": "2026-10-23T06:22:41.863970+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 865,
+  "total_real": 866,
   "today": 54,
-  "today_real": 76,
+  "today_real": 77,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T06:15:04.902",
-  "last_management": "2026-10-23T06:10:00.681"
+  "last_screening": "2026-10-23T06:20:01.524",
+  "last_management": "2026-10-23T06:20:00.292"
  },
  "log_tail": [
-  "[2026-10-23T06:10:01.271Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T06:10:01.753Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T06:10:01.753Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T06:10:04.571Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.68% > 30%",
-  "[2026-10-23T06:10:04.572Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 35.22% > 30%",
-  "\u26d4 NO DEPLOY",
   "[2026-10-23T06:15:04.786Z] [CRON] [Opportunity] GTA6-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T06:15:04.902Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T06:15:04.902Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T06:20:00.292Z] [CRON] Starting management cycle",
+  "[2026-10-23T06:20:00.970Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T06:20:01.524Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T06:20:01.525Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T06:20:03.377Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.87% > 30%",
+  "\ud83d\ude80 DEPLOYED (DRY RUN)"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

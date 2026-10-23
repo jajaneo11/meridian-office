@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T13:57:51.774230+00:00",
+ "generated_at": "2026-10-23T14:02:41.308456+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 46
+  "decisions_mentioning": 45
  },
  "mode": {
   "dry_run": false,
@@ -84,8 +84,8 @@
   "today": 100,
   "today_real": 163,
   "by_type": {
-   "no_deploy": 83,
-   "skip": 10,
+   "no_deploy": 82,
+   "skip": 11,
    "deploy": 4,
    "close": 3
   },
@@ -94,6 +94,14 @@
    "MANAGER": 3
   },
   "recent": [
+   {
+    "ts": "2026-10-23T14:00:00.971Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.045 < 0.74)"
+   },
    {
     "ts": "2026-10-23T13:50:10.935Z",
     "type": "deploy",
@@ -181,26 +189,14 @@
     "pool_name": "McRib-SOL",
     "summary": "Closed at 0.08%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-23T12:40:01.652Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.021 < 0.74)"
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "02:00",
-    "count": 0
-   },
-   {
     "hour": "03:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "04:00",
@@ -241,24 +237,28 @@
    {
     "hour": "13:00",
     "count": 9
+   },
+   {
+    "hour": "14:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-23T13:50:01.818",
-  "last_management": "2026-10-23T13:50:00.263"
+  "last_management": "2026-10-23T14:00:00.645"
  },
  "log_tail": [
-  "[2026-10-23T13:50:01.818Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T13:50:01.820Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.778822 SOL)",
-  "[2026-10-23T13:50:02.728Z] [SCREENING] Volume spike check rejected CLAUDIA-SOL: 1.66x",
   "[2026-10-23T13:50:02.728Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
   "[2026-10-23T13:50:09.794Z] [DEPLOY] Pool: 9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY",
   "[2026-10-23T13:50:09.794Z] [DEPLOY] Strategy: bid_ask, Bins: -489 to -432 (57 bins)",
   "[2026-10-23T13:50:09.794Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-23T13:50:09.794Z] [DEPLOY] Position: VLzvbq6FZF9Bq9K3Zhcns4SYhcMM6Q8JFExXi39X5QE",
   "[2026-10-23T13:50:10.931Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2yvbsmJM6geHb969Dp5jmwe17oWBek5ak7iU5BZuhqsUCX9r1KXo3RZkKo6jEEaTKTQoai9EycjGUKmFBLge8JmZ",
-  "[2026-10-23T13:50:12.773Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-23T13:50:12.773Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-23T14:00:00.645Z] [CRON] Starting management cycle",
+  "[2026-10-23T14:00:00.970Z] [CRON] Screening skipped \u2014 insufficient SOL (0.045 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T14:00:01.389Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-23T13:53:58.313Z"
+ "state_last_updated": "2026-10-23T13:58:10.330Z"
 }

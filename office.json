@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T10:32:39.009204+00:00",
+ "generated_at": "2026-10-23T10:37:42.178425+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,10 +37,10 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 62
+  "decisions_mentioning": 61
  },
  "mode": {
-  "dry_run": true,
+  "dry_run": false,
   "model": "mercury-2.5",
   "screener_model": "mercury-2.5",
   "manager_model": "mercury-2.5",
@@ -70,16 +70,33 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 916,
-  "today": 93,
-  "today_real": 127,
+  "total_real": 917,
+  "today": 95,
+  "today_real": 128,
   "by_type": {
-   "no_deploy": 100
+   "no_deploy": 98,
+   "skip": 2
   },
   "by_actor": {
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T10:36:58.536Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.000 < 0.74)"
+   },
+   {
+    "ts": "2026-10-23T10:35:47.571Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.000 < 0.8899999999999999)"
+   },
    {
     "ts": "2026-10-23T10:30:10.113Z",
     "type": "no_deploy",
@@ -159,22 +176,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED The only screened candidate met all quality thresholds (smart wallets present, fees >30 SOL, bots <30%, bin_step valid) and had no bad memory history. However, the wallet has 0.000 SOL available, while the "
-   },
-   {
-    "ts": "2026-10-23T09:21:00.492Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL (FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ) WHY SKIPPED Multiple deployment attempts were blocked due to session limits. The best candidate (BORDR-SOL with 3 smart wallets, 5.58% bots, and 412 SOL fees) failed due to"
-   },
-   {
-    "ts": "2026-10-23T09:17:20.017Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE YAGI-SOL (4 smart wallets, strong signal) WHY SKIPPED The top candidate (YAGI-SOL) failed the fee/active-TVL ratio check (0.004% vs required 0.005% min). Other pools with good fundamentals had PVP symbol conflicts (McRib), failed"
    }
   ]
  },
@@ -182,7 +183,7 @@
   "per_hour": [
    {
     "hour": "23:00",
-    "count": 7
+    "count": 5
    },
    {
     "hour": "00:00",
@@ -226,25 +227,25 @@
    },
    {
     "hour": "10:00",
-    "count": 5
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T10:30:01.483",
+  "last_screening": "2026-10-23T10:36:50.086",
   "last_management": "2026-10-23T10:30:00.820"
  },
  "log_tail": [
-  "[2026-10-23T10:25:34.790Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED (DRY RUN)",
-  "[2026-10-23T10:30:00.820Z] [CRON] Starting management cycle",
-  "[2026-10-23T10:30:01.483Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T10:30:01.483Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T10:30:01.494Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T10:30:01.494Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "\u26d4 NO DEPLOY",
   "The deploy_position tool failed on the best candidate (pool address validation error) and the system blocked further retries for this session. The candidate was high-conviction with 4 smart wallets and positive momentum.",
-  "[2026-10-23T10:30:35.269Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa"
+  "[2026-10-23T10:30:35.269Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-23T10:35:47.545Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-23T10:35:47.564Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 0.8899999999999999 needed for deploy + gas)",
+  "[2026-10-23T10:36:49.848Z] [CRON] [Opportunity] McRib-SOL degen 99.4 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T10:36:50.086Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T10:36:50.088Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T10:36:58.524Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-23T10:36:58.535Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 0.74 needed for deploy + gas)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

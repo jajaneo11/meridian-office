@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T22:07:41.593181+00:00",
+ "generated_at": "2026-10-23T22:12:41.013648+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -255,11 +255,9 @@
  },
  "cycles": {
   "last_screening": "2026-10-23T22:05:23.076",
-  "last_management": "2026-10-23T22:00:00.956"
+  "last_management": "2026-10-23T22:10:00.283"
  },
  "log_tail": [
-  "[2026-10-23T22:05:25.035Z] [SCREENING] Bot-holder filter: dropped TRUTH-SOL \u2014 bots 33.99% > 30%",
-  "[2026-10-23T22:05:25.035Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.43% > 30%",
   "[2026-10-23T22:05:25.035Z] [SCREENING] Bot-holder filter: dropped YMB-SOL \u2014 bots 38.43% > 30%",
   "[2026-10-23T22:05:25.035Z] [SCREENING] Bot-holder filter: dropped YMB-USDC \u2014 bots 38.43% > 30%",
   "[2026-10-23T22:05:31.020Z] [DEPLOY] Pool: 9Ft5WAeBULPQgpexg7jtga19DuTtcVeshsSHaEAx7j4g",
@@ -267,7 +265,9 @@
   "[2026-10-23T22:05:31.020Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-23T22:05:31.020Z] [DEPLOY] Position: 3KqgZCqELao1U6u7e3DS4xSwzQzXPRY1rxwFopREzZv9",
   "[2026-10-23T22:05:35.375Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4wL2WLxR75TeJfyaWVmWqHhSNwv3qsnf6qzQkSJFw2hMfEz7jNVjkXVA9js3Xpijgt9WBh3SfbUnpiQ4PWb2aU3J",
-  "[2026-10-23T22:05:36.863Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-23T22:05:36.863Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-23T22:10:00.283Z] [CRON] Starting management cycle",
+  "[2026-10-23T22:10:00.985Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-23T22:05:43.059Z"
 }

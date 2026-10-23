@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T09:32:40.016442+00:00",
+ "generated_at": "2026-10-23T09:37:39.460813+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 904,
-  "today": 85,
-  "today_real": 115,
+  "total_real": 905,
+  "today": 86,
+  "today_real": 116,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T09:37:10.515Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL WHY SKIPPED Wallet balance is 0 SOL, making deployment impossible. The candidate also has a null narrative (generating) and 0 smart wallets, providing insufficient conviction for a directional LP position. REJECTED McRi"
+   },
    {
     "ts": "2026-10-23T09:30:22.407Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": "Kimchi-SOL",
     "summary": "Single candidate skipped",
     "reason_short": "top10 concentration 79% above maximum 60%"
-   },
-   {
-    "ts": "2026-10-23T08:31:03.542Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Smart wallet present and good metrics, but deployed block due to fee/active-TVL ratio below configured minimum. Other candidates lack strong conviction signal"
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "22:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "23:00",
@@ -226,24 +226,24 @@
    },
    {
     "hour": "09:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T09:30:01.224",
+  "last_screening": "2026-10-23T09:36:49.779",
   "last_management": "2026-10-23T09:30:00.709"
  },
  "log_tail": [
-  "[2026-10-23T09:25:34.913Z] [CRON] [Opportunity] PANGEA-SOL degen 47.2 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T09:25:35.003Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T09:25:35.004Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
   "[2026-10-23T09:30:00.709Z] [CRON] Starting management cycle",
   "[2026-10-23T09:30:01.224Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T09:30:01.224Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T09:30:01.289Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T09:30:01.289Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T09:36:49.666Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T09:36:49.779Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T09:36:49.780Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T10:52:39.943988+00:00",
+ "generated_at": "2026-10-23T10:57:40.631808+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 925,
+  "total_real": 927,
   "today": 99,
-  "today_real": 136,
+  "today_real": 138,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -232,20 +232,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T10:50:01.429",
+  "last_screening": "2026-10-23T10:57:29.426",
   "last_management": "2026-10-23T10:50:00.763"
  },
  "log_tail": [
-  "[2026-10-23T10:50:01.732Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
-  "[2026-10-23T10:50:01.868Z] [SCREENING] Volume spike check rejected BORDR-SOL: 1.83x",
-  "[2026-10-23T10:50:01.868Z] [SCREENING] Volume spike check rejected GTA6-SOL: 1.68x",
-  "[2026-10-23T10:50:01.868Z] [SCREENING] Volume spike filter removed 2 candidate(s)",
-  "[2026-10-23T10:50:02.880Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-23T10:50:02.880Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
-  "[2026-10-23T10:50:03.055Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}",
-  "[2026-10-23T10:50:03.165Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-23T10:50:03.166Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
-  "[2026-10-23T10:50:03.342Z] [TELEGRAM_ERROR] sendMessage 404: {\"ok\":false,\"error_code\":404,\"description\":\"Not Found\"}"
+  "[2026-10-23T10:55:21.012Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
+  "[2026-10-23T10:57:28.228Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
+  "[2026-10-23T10:57:29.426Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T10:57:29.426Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T10:57:29.798Z] [SCREENING] Volume spike check rejected McRib-SOL: 0.63x",
+  "[2026-10-23T10:57:29.798Z] [SCREENING] Volume spike check rejected EMBER-SOL: 2.70x",
+  "[2026-10-23T10:57:29.798Z] [SCREENING] Volume spike check rejected KNOTS-STONK: 2.97x",
+  "[2026-10-23T10:57:29.798Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
+  "[2026-10-23T10:57:30.906Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
+  "[2026-10-23T10:57:30.907Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

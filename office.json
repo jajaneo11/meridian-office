@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T10:57:40.631808+00:00",
+ "generated_at": "2026-10-23T11:02:38.506562+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 927,
+  "total_real": 928,
   "today": 99,
-  "today_real": 138,
+  "today_real": 139,
   "by_type": {
    "no_deploy": 97,
    "skip": 3
@@ -182,10 +182,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "23:00",
-    "count": 1
-   },
-   {
     "hour": "00:00",
     "count": 10
    },
@@ -228,24 +224,28 @@
    {
     "hour": "10:00",
     "count": 11
+   },
+   {
+    "hour": "11:00",
+    "count": 0
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T10:57:29.426",
-  "last_management": "2026-10-23T10:50:00.763"
+  "last_screening": "2026-10-23T11:00:01.033",
+  "last_management": "2026-10-23T11:00:00.299"
  },
  "log_tail": [
-  "[2026-10-23T10:55:21.012Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header",
-  "[2026-10-23T10:57:28.228Z] [CRON] Cycles started \u2014 management every 10m, screening every 30m, opportunity poll every 45s",
-  "[2026-10-23T10:57:29.426Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T10:57:29.426Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
-  "[2026-10-23T10:57:29.798Z] [SCREENING] Volume spike check rejected McRib-SOL: 0.63x",
-  "[2026-10-23T10:57:29.798Z] [SCREENING] Volume spike check rejected EMBER-SOL: 2.70x",
-  "[2026-10-23T10:57:29.798Z] [SCREENING] Volume spike check rejected KNOTS-STONK: 2.97x",
-  "[2026-10-23T10:57:29.798Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
-  "[2026-10-23T10:57:30.906Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
-  "[2026-10-23T10:57:30.907Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header"
+  "[2026-10-23T11:00:00.878Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T11:00:00.878Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T11:00:01.033Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T11:00:01.033Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.755285 SOL)",
+  "[2026-10-23T11:00:01.721Z] [SCREENING] Volume spike check rejected McRib-SOL: 1.59x",
+  "[2026-10-23T11:00:01.722Z] [SCREENING] Volume spike check rejected EMBER-SOL: 2.79x",
+  "[2026-10-23T11:00:01.722Z] [SCREENING] Volume spike check rejected PANGEA-SOL: 1.68x",
+  "[2026-10-23T11:00:01.722Z] [SCREENING] Volume spike filter removed 3 candidate(s)",
+  "[2026-10-23T11:00:02.795Z] [ERROR] Agent loop error at step 0: 401 Missing Authentication header",
+  "[2026-10-23T11:00:02.795Z] [CRON_ERROR] Screening cycle failed: 401 Missing Authentication header"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

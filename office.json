@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T07:22:39.376730+00:00",
+ "generated_at": "2026-10-23T07:27:40.865214+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 878,
+  "total_real": 879,
   "today": 63,
-  "today_real": 89,
+  "today_real": 90,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T07:20:01.606",
+  "last_screening": "2026-10-23T07:26:19.857",
   "last_management": "2026-10-23T07:20:00.403"
  },
  "log_tail": [
-  "[2026-10-23T07:15:05.066Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T07:15:07.582Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.57% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T07:20:00.403Z] [CRON] Starting management cycle",
   "[2026-10-23T07:20:01.122Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T07:20:01.606Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T07:20:01.606Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T07:20:03.289Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.55% > 30%",
   "[2026-10-23T07:20:32.352Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T07:26:19.729Z] [CRON] [Opportunity] PHP-SOL degen 69.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T07:26:19.857Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T07:26:19.857Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

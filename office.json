@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T16:12:39.954734+00:00",
+ "generated_at": "2026-10-23T16:17:41.168475+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.778822
+  "sol": null
  },
  "limits": {
   "max_positions": 3,
@@ -245,7 +245,7 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T13:50:01.818",
+  "last_screening": null,
   "last_management": "2026-10-23T16:10:00.196"
  },
  "log_tail": [

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T09:42:42.278651+00:00",
+ "generated_at": "2026-10-23T09:47:39.720900+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 906,
-  "today": 86,
-  "today_real": 117,
+  "total_real": 907,
+  "today": 87,
+  "today_real": 118,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T09:45:14.195Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED Deploy tool execution failed (pool lookup error). The candidate had strong signals (5 smart wallets, solid fees, positive price action), but the technical deploy path was blocked. REJECTED Yagi-SOL (deploy fail"
+   },
    {
     "ts": "2026-10-23T09:37:10.515Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED The deploy tool rejected the transaction due to a failed pool screening verification (\"Pool undefined not found\"), blocking the transaction before it could execute on-chain. REJECTED \u30e4\u30ae-SOL (pool screening veri"
-   },
-   {
-    "ts": "2026-10-23T08:35:20.575Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": "Kimchi-SOL",
-    "summary": "Single candidate skipped",
-    "reason_short": "top10 concentration 79% above maximum 60%"
    }
   ]
  },
@@ -182,7 +182,7 @@
   "per_hour": [
    {
     "hour": "22:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "23:00",
@@ -226,25 +226,25 @@
    },
    {
     "hour": "09:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T09:40:01.247",
+  "last_screening": "2026-10-23T09:45:04.904",
   "last_management": "2026-10-23T09:40:00.257"
  },
  "log_tail": [
-  "[2026-10-23T09:36:49.666Z] [CRON] [Opportunity] McRib-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T09:36:49.779Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T09:36:49.780Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T09:40:00.257Z] [CRON] Starting management cycle",
-  "[2026-10-23T09:40:00.761Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-23T09:40:01.247Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T09:40:01.248Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T09:40:03.789Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.03% > 30%",
-  "\ud83d\ude80 DRY RUN - DEPLOY WOULD OCCUR"
+  "\ud83d\ude80 DRY RUN - DEPLOY WOULD OCCUR",
+  "[2026-10-23T09:45:04.781Z] [CRON] [Opportunity] BTC-SOL degen 71.1 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-23T09:45:04.904Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T09:45:04.904Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T09:45:06.667Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.03% > 30%",
+  "\u26d4 NO DEPLOY",
+  "Deploy tool execution failed (pool lookup error). The candidate had strong signals (5 smart wallets, solid fees, positive price action), but the technical deploy path was blocked."
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

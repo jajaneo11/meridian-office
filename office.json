@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T20:52:47.984791+00:00",
+ "generated_at": "2026-10-23T20:57:39.886906+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -269,5 +269,5 @@
   "[2026-10-23T20:52:08.709Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5Vn4ofkCKbqUvLxrgXXCvm4i1yQd6H5WDH3ANvd4TDHUFVv66Fh4yXbDyvWw1AwAAR3eDVYF37mnN9tSDWJo9aiS",
   "[2026-10-23T20:52:10.384Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-23T20:52:27.175Z"
+ "state_last_updated": "2026-10-23T20:56:39.236Z"
 }

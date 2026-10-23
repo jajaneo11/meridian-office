@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T05:17:39.364927+00:00",
+ "generated_at": "2026-10-23T05:22:39.514200+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 853,
+  "total_real": 854,
   "today": 44,
-  "today_real": 64,
+  "today_real": 65,
   "by_type": {
    "no_deploy": 100
   },
@@ -231,20 +231,20 @@
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T05:15:04.682",
-  "last_management": "2026-10-23T05:10:00.253"
+  "last_screening": "2026-10-23T05:20:01.998",
+  "last_management": "2026-10-23T05:20:00.754"
  },
  "log_tail": [
-  "[2026-10-23T05:10:01.475Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T05:10:03.496Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 34.81% > 30%",
-  "[2026-10-23T05:10:03.497Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.08% > 30%",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T05:15:04.555Z] [CRON] [Opportunity] \u30e4\u30ae-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T05:15:04.682Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T05:15:04.682Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
   "[2026-10-23T05:15:06.592Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 34.23% > 30%",
   "[2026-10-23T05:15:06.593Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.09% > 30%",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T05:20:00.754Z] [CRON] Starting management cycle",
+  "[2026-10-23T05:20:01.442Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T05:20:01.998Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T05:20:01.998Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T05:20:03.680Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 33.41% > 30%",
+  "[2026-10-23T05:20:03.680Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.97% > 30%",
+  "\ud83d\ude80 DEPLOYED"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T07:27:40.865214+00:00",
+ "generated_at": "2026-10-23T07:32:39.062588+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 879,
-  "today": 63,
-  "today_real": 90,
+  "total_real": 880,
+  "today": 64,
+  "today_real": 91,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T07:30:40.757Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 cannot execute the 0.5 SOL deploy without funds. Even if funded, BORDR-SOL was the strongest metrics-wise (bin_step 100, smart wallet present, good fees) but capital is the blocker."
+   },
    {
     "ts": "2026-10-23T07:20:32.927Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED 1. Wallet balance is 0 SOL \u2014 insufficient capital for the 0.5 SOL deployment goal. 2. The pool verification failed (not found in current screening cache), indicating the pool is either no longer active or no"
-   },
-   {
-    "ts": "2026-10-23T06:06:12.859Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED Wallet balance is 0 SOL \u2014 insufficient capital to execute any deploy. Even with strong fees and smart wallet signals, no deployment can proceed without funds. REJECTED BORDR-SOL (0 SOL balance, cannot fund p"
    }
   ]
  },
@@ -226,25 +226,25 @@
    },
    {
     "hour": "07:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T07:26:19.857",
-  "last_management": "2026-10-23T07:20:00.403"
+  "last_screening": "2026-10-23T07:30:00.562",
+  "last_management": "2026-10-23T07:30:00.002"
  },
  "log_tail": [
-  "[2026-10-23T07:20:01.122Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-23T07:20:01.606Z] [CRON] Starting screening cycle [model: mercury-2.5]",
-  "[2026-10-23T07:20:01.606Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T07:20:03.289Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.55% > 30%",
-  "[2026-10-23T07:20:32.352Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-23T07:26:19.729Z] [CRON] [Opportunity] PHP-SOL degen 69.9 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T07:26:19.857Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T07:26:19.857Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "\ud83d\ude80 DEPLOYED"
+  "\ud83d\ude80 DEPLOYED",
+  "[2026-10-23T07:30:00.002Z] [CRON] Starting management cycle",
+  "[2026-10-23T07:30:00.500Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T07:30:00.501Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-23T07:30:00.562Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T07:30:00.562Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T07:30:05.171Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 31.60% > 30%",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"
 }

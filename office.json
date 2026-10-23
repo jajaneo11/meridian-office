@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T13:27:54.080578+00:00",
+ "generated_at": "2026-10-23T13:32:48.805013+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,25 +57,15 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "4xNQVyLBbh6M9wDNKzMbLsqxF4NxVe4BJp1riTKZwPZE",
-    "pool": "GUST-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-23T12:46:52.072Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 100
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 3
  },
  "pnl": {
-  "last24h_usd": 0.07,
-  "fees24h_usd": 0.08,
-  "all_time_usd": 0.07,
-  "closed_total": 2,
+  "last24h_usd": 3.72,
+  "fees24h_usd": 7.91,
+  "all_time_usd": 3.72,
+  "closed_total": 3,
   "win_rate_pct": 100
  },
  "decisions": {
@@ -84,16 +74,32 @@
   "today": 100,
   "today_real": 159,
   "by_type": {
-   "no_deploy": 86,
-   "skip": 9,
+   "no_deploy": 84,
+   "skip": 10,
    "deploy": 3,
-   "close": 2
+   "close": 3
   },
   "by_actor": {
-   "SCREENER": 98,
-   "MANAGER": 2
+   "SCREENER": 97,
+   "MANAGER": 3
   },
   "recent": [
+   {
+    "ts": "2026-10-23T13:30:22.834Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "GUST-SOL",
+    "summary": "Closed at 5.07%",
+    "reason_short": "Trailing TP: peak 5.18% \u2192 current 3.65% (dropped 1.53% >= 1.5%)"
+   },
+   {
+    "ts": "2026-10-23T13:30:00.780Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.021 < 0.74)"
+   },
    {
     "ts": "2026-10-23T13:20:01.560Z",
     "type": "skip",
@@ -173,22 +179,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "Based on my review, GUST-SOL is the only survivor, but it fails the conviction bar. Let me report my findings. \u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GUST-SOL (5TfrKFkySxzqGrr65PED4TkwwYEHBy8AvsqTtKiLo1ek) WHY SKIPPED This pool fails the hard risk gate: there is no na"
-   },
-   {
-    "ts": "2026-10-23T12:10:41.683Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- \u30e4\u30ae-SOL: volume spike: 1.11x < 3x"
-   },
-   {
-    "ts": "2026-10-23T12:10:09.015Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GUST-SOL WHY SKIPPED The only surviving candidate fails the conviction bar. GUST has an unavailable narrative (status \"generating\", no usable origin/catalyst) and 0/30 smart wallets in the pool \u2014 the \"no narrative + no smart wall"
    }
   ]
  },
@@ -196,7 +186,7 @@
   "per_hour": [
    {
     "hour": "02:00",
-    "count": 5
+    "count": 3
    },
    {
     "hour": "03:00",
@@ -240,25 +230,25 @@
    },
    {
     "hour": "13:00",
-    "count": 3
+    "count": 5
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-23T12:46:40.707",
-  "last_management": "2026-10-23T13:20:00.069"
+  "last_management": "2026-10-23T13:30:00.406"
  },
  "log_tail": [
-  "[2026-10-23T13:00:00.474Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
-  "[2026-10-23T13:00:01.060Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T13:10:00.597Z] [CRON] Starting management cycle",
-  "[2026-10-23T13:10:01.460Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-23T13:10:01.850Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
   "[2026-10-23T13:10:02.237Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
   "[2026-10-23T13:20:00.069Z] [CRON] Starting management cycle",
   "[2026-10-23T13:20:00.822Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-23T13:20:01.179Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
-  "[2026-10-23T13:20:01.559Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)"
+  "[2026-10-23T13:20:01.559Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T13:30:00.406Z] [CRON] Starting management cycle",
+  "[2026-10-23T13:30:00.778Z] [CRON] Screening skipped \u2014 insufficient SOL (0.021 < 0.74 needed for deploy + gas)",
+  "[2026-10-23T13:30:01.169Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-23T13:30:01.720Z] [CLAIM_ERROR] Simulation failed.",
+  "[2026-10-23T13:30:08.216Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-23T13:27:47.273Z"
+ "state_last_updated": "2026-10-23T13:30:22.541Z"
 }

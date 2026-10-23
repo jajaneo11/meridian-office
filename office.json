@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T09:27:38.708122+00:00",
+ "generated_at": "2026-10-23T09:32:40.016442+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7285
    }
   ],
-  "decisions_mentioning": 62
+  "decisions_mentioning": 61
  },
  "mode": {
   "dry_run": true,
@@ -70,9 +70,9 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 903,
-  "today": 84,
-  "today_real": 114,
+  "total_real": 904,
+  "today": 85,
+  "today_real": 115,
   "by_type": {
    "no_deploy": 100
   },
@@ -80,6 +80,14 @@
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-23T09:30:22.407Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED Wallet balance is 0 SOL. Need 0.5 SOL to fund the position. All candidates are skipped because the wallet is empty. REJECTED BORDR-SOL (0 balance) PANGEA-SOL (0 balance) GTA6-SOL (0 balance)"
+   },
    {
     "ts": "2026-10-23T09:25:40.811Z",
     "type": "no_deploy",
@@ -167,14 +175,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE CLAUDIA-SOL (DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU) WHY SKIPPED Smart wallet present and good metrics, but deployed block due to fee/active-TVL ratio below configured minimum. Other candidates lack strong conviction signal"
-   },
-   {
-    "ts": "2026-10-23T08:25:35.504Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- \u30e4\u30ae-SOL: bot holders 31.59% > 30%"
    }
   ]
  },
@@ -226,24 +226,24 @@
    },
    {
     "hour": "09:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-23T09:25:35.003",
-  "last_management": "2026-10-23T09:20:00.180"
+  "last_screening": "2026-10-23T09:30:01.224",
+  "last_management": "2026-10-23T09:30:00.709"
  },
  "log_tail": [
-  "[2026-10-23T09:20:01.275Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
-  "[2026-10-23T09:20:03.733Z] [SCREENING] Bot-holder filter: dropped BLACKTOBER-SOL \u2014 bots 33.96% > 30%",
-  "[2026-10-23T09:20:57.024Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-23T09:20:58.348Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-23T09:20:59.517Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "\u26d4 NO DEPLOY",
   "[2026-10-23T09:25:34.913Z] [CRON] [Opportunity] PANGEA-SOL degen 47.2 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-23T09:25:35.003Z] [CRON] Starting screening cycle [model: mercury-2.5]",
   "[2026-10-23T09:25:35.004Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "\u26d4 NO DEPLOY",
+  "[2026-10-23T09:30:00.709Z] [CRON] Starting management cycle",
+  "[2026-10-23T09:30:01.224Z] [CRON] Starting screening cycle [model: mercury-2.5]",
+  "[2026-10-23T09:30:01.224Z] [CRON] Computed deploy amount: 0.5 SOL (wallet: 0 SOL)",
+  "[2026-10-23T09:30:01.289Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-23T09:30:01.289Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-23T01:00:01.426Z"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T08:27:39.670093+00:00",
+ "generated_at": "2026-10-24T08:32:39.504952+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -352,20 +352,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1041,
+  "total_real": 1042,
   "today": 100,
-  "today_real": 47,
+  "today_real": 48,
   "by_type": {
-   "skip": 43,
+   "skip": 42,
    "close": 13,
    "deploy": 12,
-   "no_deploy": 32
+   "no_deploy": 33
   },
   "by_actor": {
    "SCREENER": 87,
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T08:30:01.038Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- Moustache-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-24T08:25:01.764Z",
     "type": "no_deploy",
@@ -453,14 +461,6 @@
     "pool_name": "YMB-SOL",
     "summary": "Closed at 3.99%",
     "reason_short": "Trailing TP: peak 5.87% \u2192 current 3.73% (dropped 2.14% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-24T07:40:01.096Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.108 < 0.74)"
    }
   ]
  },
@@ -480,7 +480,7 @@
    },
    {
     "hour": "00:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "01:00",
@@ -512,25 +512,25 @@
    },
    {
     "hour": "08:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T08:25:01.632",
-  "last_management": "2026-10-24T08:25:00.977"
+  "last_screening": "2026-10-24T08:30:00.887",
+  "last_management": "2026-10-24T08:30:00.191"
  },
  "log_tail": [
-  "[2026-10-24T08:15:01.207Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T08:20:00.718Z] [CRON] Starting management cycle",
-  "[2026-10-24T08:20:01.403Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T08:20:01.403Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T08:20:01.485Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T08:20:11.618Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-24T08:25:00.977Z] [CRON] Starting management cycle",
   "[2026-10-24T08:25:01.632Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T08:25:01.633Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T08:25:01.702Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T08:25:01.702Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T08:30:00.191Z] [CRON] Starting management cycle",
+  "[2026-10-24T08:30:00.887Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T08:30:00.890Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
+  "[2026-10-24T08:30:00.910Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T08:30:01.038Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)"
  ],
- "state_last_updated": "2026-10-24T08:12:26.100Z"
+ "state_last_updated": "2026-10-24T08:29:38.405Z"
 }

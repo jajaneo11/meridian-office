@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T13:57:40.788050+00:00",
+ "generated_at": "2026-10-24T14:02:40.622126+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "3ZBguzYd1HPRyk7YK5s7wo4X9nD8dBX4zuFZR7wnpWrN",
-    "pool": "DacityCoin-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T13:15:17.446Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 1.55
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 36
  },
  "pnl": {
-  "last24h_usd": 19.29,
-  "fees24h_usd": 67.5,
-  "all_time_usd": 23.01,
-  "closed_total": 35,
-  "win_rate_pct": 63
+  "last24h_usd": 25.01,
+  "fees24h_usd": 75.33,
+  "all_time_usd": 28.73,
+  "closed_total": 36,
+  "win_rate_pct": 64
  },
  "pnl_trades": [
   {
@@ -429,6 +418,16 @@
    "amount_sol": 1.55,
    "minutes_held": 10,
    "close_reason": "Trailing TP: peak 4.04% \u2192 current 2.17% (dropped 1.87% >= 1.5%)"
+  },
+  {
+   "pool": "DacityCoin-SOL",
+   "recorded_at": "2026-10-24T14:00:28.914Z",
+   "pnl_usd": 5.72,
+   "pnl_pct": 3.64,
+   "fees_usd": 7.833568968388262,
+   "amount_sol": 1.55,
+   "minutes_held": 45,
+   "close_reason": "Trailing TP: peak 3.75% \u2192 current -1.54% (dropped 5.29% >= 1.5%)"
   }
  ],
  "decisions": {
@@ -437,16 +436,32 @@
   "today": 100,
   "today_real": 83,
   "by_type": {
-   "skip": 45,
-   "close": 9,
+   "skip": 44,
+   "close": 10,
    "no_deploy": 38,
    "deploy": 8
   },
   "by_actor": {
-   "SCREENER": 91,
-   "MANAGER": 9
+   "SCREENER": 90,
+   "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-24T14:00:28.921Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "DacityCoin-SOL",
+    "summary": "Closed at 3.64%",
+    "reason_short": "Trailing TP: peak 3.75% \u2192 current -1.54% (dropped 5.29% >= 1.5%)"
+   },
+   {
+    "ts": "2026-10-24T14:00:00.459Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.124 < 1.58)"
+   },
    {
     "ts": "2026-10-24T13:55:01.319Z",
     "type": "skip",
@@ -526,31 +541,11 @@
     "pool_name": "DacityCoin-SOL",
     "summary": "Closed at 6.85%",
     "reason_short": "Trailing TP: peak 4.04% \u2192 current 2.17% (dropped 1.87% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-24T13:10:01.244Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.052 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T13:05:00.979Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.028 < 1.58)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "02:00",
-    "count": 0
-   },
    {
     "hour": "03:00",
     "count": 0
@@ -569,7 +564,7 @@
    },
    {
     "hour": "07:00",
-    "count": 11
+    "count": 9
    },
    {
     "hour": "08:00",
@@ -594,24 +589,28 @@
    {
     "hour": "13:00",
     "count": 13
+   },
+   {
+    "hour": "14:00",
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T13:15:00.767",
-  "last_management": "2026-10-24T13:55:00.937"
+  "last_management": "2026-10-24T14:00:00.095"
  },
  "log_tail": [
-  "[2026-10-24T13:40:01.034Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T13:45:00.484Z] [CRON] Starting management cycle",
-  "[2026-10-24T13:45:00.885Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T13:45:00.890Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T13:50:00.760Z] [CRON] Starting management cycle",
   "[2026-10-24T13:50:01.067Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.58 needed for deploy + gas)",
   "[2026-10-24T13:50:01.582Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T13:55:00.937Z] [CRON] Starting management cycle",
   "[2026-10-24T13:55:01.319Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T13:55:01.680Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T13:55:01.680Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T14:00:00.095Z] [CRON] Starting management cycle",
+  "[2026-10-24T14:00:00.458Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.58 needed for deploy + gas)",
+  "[2026-10-24T14:00:00.924Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T14:00:15.106Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-24T13:42:29.744Z"
+ "state_last_updated": "2026-10-24T14:00:28.506Z"
 }

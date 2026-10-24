@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T21:22:39.816045+00:00",
+ "generated_at": "2026-10-24T21:27:42.347187+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -488,6 +488,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-24T21:25:00.576Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.340 < 1.58)"
+   },
+   {
     "ts": "2026-10-24T21:20:17.257Z",
     "type": "deploy",
     "actor": "SCREENER",
@@ -574,14 +582,6 @@
     "pool_name": "Hercules-SOL",
     "summary": "Deployed 1.55 SOL with bid_ask",
     "reason_short": "Chosen range -645\u2192-576 around active bin -576"
-   },
-   {
-    "ts": "2026-10-24T20:35:20.943Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY **Cycle finished with no valid entry.** **BEST LOOKING CANDIDATE** Hercules-SOL **WHY SKIPPED** Hercules-SOL was my top conviction pick \u2014 it flagged the strongest fundamentals (fee/TVL 1.19, volatility 8.26, organic 71, $84K volume, and a tracked smart wallet \"Fast LP\" in the pool). But "
    }
   ]
  },
@@ -601,7 +601,7 @@
    },
    {
     "hour": "13:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "14:00",
@@ -633,25 +633,25 @@
    },
    {
     "hour": "21:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T21:20:00.667",
-  "last_management": "2026-10-24T21:20:00.144"
+  "last_management": "2026-10-24T21:25:00.325"
  },
  "log_tail": [
-  "[2026-10-24T21:20:00.596Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T21:20:00.667Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T21:20:00.667Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.933401 SOL)",
   "[2026-10-24T21:20:09.825Z] [SCREENING] Bot-holder filter: dropped BIBI-SOL \u2014 bots 38.01% > 30%",
   "[2026-10-24T21:20:15.619Z] [DEPLOY] Pool: 3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
   "[2026-10-24T21:20:15.620Z] [DEPLOY] Strategy: bid_ask, Bins: 282 to 351 (69 bins)",
   "[2026-10-24T21:20:15.620Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-24T21:20:15.620Z] [DEPLOY] Position: CLehqRUTJGsvYjpQ13DnmaP5FQXB12eYAs1udUcrx4kG",
   "[2026-10-24T21:20:17.254Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3pYwBVQA66QgNjTTS2pmTFvhKUk9fqwMV5oqwQgRy8bayMrqBWVz2jWCypWGHazFvUcEiD5Xz3AUJpH492DxpfKL",
-  "[2026-10-24T21:20:18.698Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-24T21:20:18.698Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-24T21:25:00.325Z] [CRON] Starting management cycle",
+  "[2026-10-24T21:25:00.575Z] [CRON] Screening skipped \u2014 insufficient SOL (0.340 < 1.58 needed for deploy + gas)",
+  "[2026-10-24T21:25:01.063Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T21:20:41.117Z"
+ "state_last_updated": "2026-10-24T21:26:47.149Z"
 }

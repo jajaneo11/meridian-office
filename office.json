@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T12:02:42.386519+00:00",
+ "generated_at": "2026-10-24T12:07:38.631772+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -83,8 +83,8 @@
   "total_tracked": 33
  },
  "pnl": {
-  "last24h_usd": 12.35,
-  "fees24h_usd": 62.95,
+  "last24h_usd": 12.33,
+  "fees24h_usd": 62.87,
   "all_time_usd": 12.35,
   "closed_total": 31,
   "win_rate_pct": 68
@@ -418,6 +418,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-24T12:05:00.985Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.078 < 0.76)"
+   },
+   {
     "ts": "2026-10-24T12:00:00.799Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -504,14 +512,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE MANLET-SOL (68C62WPYiiNZxprbuaMj2ULXpiTDKcs5xsX7kBGnyajR) WHY SKIPPED MANLET-SOL has acceptable hard metrics (bin_step=80, fee_tvl=0.0989, volatility=4.825, organic=53, fees=1595 SOL well above the 30 gate, bots=13.2%, top10=18.8"
-   },
-   {
-    "ts": "2026-10-24T11:05:01.616Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- mil-SOL: token cooldown active - Moustache-SOL: token cooldown active"
    }
   ]
  },
@@ -535,7 +535,7 @@
    },
    {
     "hour": "05:00",
-    "count": 13
+    "count": 12
    },
    {
     "hour": "06:00",
@@ -563,25 +563,25 @@
    },
    {
     "hour": "12:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T11:45:01.439",
-  "last_management": "2026-10-24T12:00:00.467"
+  "last_management": "2026-10-24T12:05:00.705"
  },
  "log_tail": [
-  "[2026-10-24T11:45:23.226Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-24T11:50:00.117Z] [CRON] Starting management cycle",
-  "[2026-10-24T11:50:00.476Z] [CRON] Screening skipped \u2014 insufficient SOL (0.078 < 0.76 needed for deploy + gas)",
   "[2026-10-24T11:50:00.889Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T11:55:00.287Z] [CRON] Starting management cycle",
   "[2026-10-24T11:55:00.643Z] [CRON] Screening skipped \u2014 insufficient SOL (0.078 < 0.76 needed for deploy + gas)",
   "[2026-10-24T11:55:01.027Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T12:00:00.467Z] [CRON] Starting management cycle",
   "[2026-10-24T12:00:00.798Z] [CRON] Screening skipped \u2014 insufficient SOL (0.078 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T12:00:01.313Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T12:00:01.313Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T12:05:00.705Z] [CRON] Starting management cycle",
+  "[2026-10-24T12:05:00.984Z] [CRON] Screening skipped \u2014 insufficient SOL (0.078 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T12:05:01.436Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T12:01:04.219Z"
+ "state_last_updated": "2026-10-24T12:04:10.329Z"
 }

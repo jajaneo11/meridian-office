@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:42:40.127171+00:00",
+ "generated_at": "2026-10-24T05:47:40.534289+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 33,
+  "active_24h": 32,
   "total_value_usd": 139437,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 12
+  "decisions_mentioning": 11
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.822508
+  "sol": 1.554398
  },
  "limits": {
   "max_positions": 3,
@@ -60,23 +60,23 @@
   "open_count": 1,
   "open": [
    {
-    "id": "fb6Ke92z3BLsRaWpHQbGNCML9kJNMCEYEbJruyj3bbA",
+    "id": "BfdhvU6vMhb73RLYoaVySZM3EnAc5xns4g1wixhYvKiP",
     "pool": "YMB-SOL",
     "closed": false,
-    "deployed_at": "2026-10-24T05:35:32.628Z",
+    "deployed_at": "2026-10-24T05:45:12.762Z",
     "closed_at": null,
     "pnl_usd": null,
-    "value_usd": 0.69
+    "value_usd": 120
    }
   ],
-  "total_tracked": 25
+  "total_tracked": 26
  },
  "pnl": {
-  "last24h_usd": 4.9,
+  "last24h_usd": 4.86,
   "fees24h_usd": 50.63,
-  "all_time_usd": 4.9,
-  "closed_total": 24,
-  "win_rate_pct": 67
+  "all_time_usd": 4.86,
+  "closed_total": 25,
+  "win_rate_pct": 64
  },
  "pnl_trades": [
   {
@@ -318,24 +318,50 @@
    "amount_sol": 0.69,
    "minutes_held": 186,
    "close_reason": "Trailing TP: peak 3.90% \u2192 current 2.33% (dropped 1.57% >= 1.5%)"
+  },
+  {
+   "pool": "YMB-SOL",
+   "recorded_at": "2026-10-24T05:43:40.078Z",
+   "pnl_usd": -0.04,
+   "pnl_pct": -0.06,
+   "fees_usd": 5.8133721198551e-05,
+   "amount_sol": 0.69,
+   "minutes_held": 8,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1025,
-  "today": 66,
-  "today_real": 31,
+  "total_real": 1026,
+  "today": 68,
+  "today_real": 32,
   "by_type": {
+   "no_deploy": 34,
    "deploy": 14,
-   "no_deploy": 35,
    "skip": 38,
-   "close": 13
+   "close": 14
   },
   "by_actor": {
-   "SCREENER": 87,
-   "MANAGER": 13
+   "SCREENER": 86,
+   "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T05:45:12.764Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "YMB-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -617\u2192-562 around active bin -562"
+   },
+   {
+    "ts": "2026-10-24T05:43:40.098Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "YMB-SOL",
+    "summary": "Closed at -0.06%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-24T05:40:07.485Z",
     "type": "no_deploy",
@@ -415,22 +441,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T05:00:01.240Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T04:55:01.076Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.073 < 0.74)"
    }
   ]
  },
@@ -446,7 +456,7 @@
    },
    {
     "hour": "20:00",
-    "count": 8
+    "count": 6
    },
    {
     "hour": "21:00",
@@ -482,25 +492,25 @@
    },
    {
     "hour": "05:00",
-    "count": 11
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T05:40:01.227",
-  "last_management": "2026-10-24T05:40:00.547"
+  "last_screening": "2026-10-24T05:45:01.314",
+  "last_management": "2026-10-24T05:45:00.759"
  },
  "log_tail": [
-  "[2026-10-24T05:35:08.146Z] [DEPLOY] Amount: 0 X, 0.69 Y",
-  "[2026-10-24T05:35:08.146Z] [DEPLOY] Position: fb6Ke92z3BLsRaWpHQbGNCML9kJNMCEYEbJruyj3bbA",
-  "[2026-10-24T05:35:32.627Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 65AkLEw6EjT62gwvEAbHqEgWY5bd9cAQdFQ6GTSBfBKYWBmXijc2t7BT2vqU6hw63fp7Z5wmfwMs4sqf6pEipaYP",
-  "[2026-10-24T05:35:34.393Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-24T05:40:00.547Z] [CRON] Starting management cycle",
-  "[2026-10-24T05:40:01.227Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T05:40:01.227Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.822508 SOL)",
-  "[2026-10-24T05:40:01.302Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:40:01.401Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T05:40:07.485Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T05:45:01.256Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T05:45:01.256Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T05:45:01.314Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T05:45:01.315Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.554398 SOL)",
+  "[2026-10-24T05:45:08.285Z] [DEPLOY] Pool: GA7aoowCQ5oVycYXte61C3kdri7oZ56HuJwNUGkygx3",
+  "[2026-10-24T05:45:08.285Z] [DEPLOY] Strategy: bid_ask, Bins: -617 to -562 (55 bins)",
+  "[2026-10-24T05:45:08.285Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-24T05:45:08.285Z] [DEPLOY] Position: BfdhvU6vMhb73RLYoaVySZM3EnAc5xns4g1wixhYvKiP",
+  "[2026-10-24T05:45:12.762Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 8VUBuiMd8JNzf4vNMijYYaDyXtZdzZJpTeZqohDDWr8QSREPUdGUG3SNWNHBMcZmFFAQ7pCWUF2JFfKXX5fGZkP",
+  "[2026-10-24T05:45:14.438Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T05:42:38.268Z"
+ "state_last_updated": "2026-10-24T05:46:53.272Z"
 }

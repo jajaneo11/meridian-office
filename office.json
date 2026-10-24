@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:42:38.651311+00:00",
+ "generated_at": "2026-10-24T01:47:40.667211+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 11
+  "decisions_mentioning": 12
  },
  "mode": {
   "dry_run": false,
@@ -242,13 +242,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1002,
-  "today": 16,
-  "today_real": 8,
+  "total_real": 1003,
+  "today": 17,
+  "today_real": 9,
   "by_type": {
-   "skip": 37,
+   "skip": 36,
    "close": 13,
-   "no_deploy": 37,
+   "no_deploy": 38,
    "deploy": 13
   },
   "by_actor": {
@@ -256,6 +256,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T01:46:44.893Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE fone-SOL WHY SKIPPED The only surviving candidate fails the two strongest conviction gates. Its narrative is empty (still \"generating\" \u2014 no identifiable origin, catalyst, or named subject), and there are zero tracked smart wallet"
+   },
    {
     "ts": "2026-10-24T01:41:28.774Z",
     "type": "no_deploy",
@@ -343,14 +351,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.223 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T00:30:00.779Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.223 < 0.74)"
    }
   ]
  },
@@ -362,7 +362,7 @@
    },
    {
     "hour": "15:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "16:00",
@@ -402,25 +402,25 @@
    },
    {
     "hour": "01:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T01:41:23.337",
+  "last_screening": "2026-10-24T01:46:38.518",
   "last_management": "2026-10-24T01:40:00.379"
  },
  "log_tail": [
-  "[2026-10-24T01:36:08.535Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T01:36:08.535Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
-  "[2026-10-24T01:36:09.231Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 36.73% > 30%",
-  "[2026-10-24T01:40:00.379Z] [CRON] Starting management cycle",
-  "[2026-10-24T01:40:00.981Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T01:41:23.118Z] [CRON] [Opportunity] YMB-SOL degen 96.8 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-24T01:41:23.337Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T01:41:23.338Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
   "[2026-10-24T01:41:24.111Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 37.17% > 30%",
-  "[2026-10-24T01:41:28.774Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T01:41:28.774Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T01:46:38.204Z] [SCREENING] Volume spike check rejected Moustache-SOL: 2.40x",
+  "[2026-10-24T01:46:38.204Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-24T01:46:38.204Z] [CRON] [Opportunity] fone-SOL degen 81.9 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T01:46:38.518Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T01:46:38.518Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
+  "[2026-10-24T01:46:38.630Z] [SCREENING] Volume spike check rejected Moustache-SOL: 2.40x",
+  "[2026-10-24T01:46:38.630Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-24T01:46:44.892Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T01:41:03.552Z"
 }

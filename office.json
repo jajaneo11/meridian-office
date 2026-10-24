@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:57:39.744775+00:00",
+ "generated_at": "2026-10-24T06:02:40.226008+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
+  "open_count": 2,
   "open": [
    {
     "id": "BfdhvU6vMhb73RLYoaVySZM3EnAc5xns4g1wixhYvKiP",
@@ -67,9 +67,18 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": 120
+   },
+   {
+    "id": "ArhoPoibuu4msGEBTmM5ePyka7KhXiXJUd9EbtQBvZCX",
+    "pool": "mil-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T06:00:18.626Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 0.69
    }
   ],
-  "total_tracked": 26
+  "total_tracked": 27
  },
  "pnl": {
   "last24h_usd": 4.86,
@@ -332,12 +341,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1028,
-  "today": 70,
-  "today_real": 34,
+  "total_real": 1029,
+  "today": 71,
+  "today_real": 35,
   "by_type": {
-   "no_deploy": 34,
-   "deploy": 14,
+   "no_deploy": 33,
+   "deploy": 15,
    "skip": 38,
    "close": 14
   },
@@ -346,6 +355,14 @@
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T06:00:18.627Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "mil-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -593\u2192-527 around active bin -527"
+   },
    {
     "ts": "2026-10-24T05:55:06.306Z",
     "type": "no_deploy",
@@ -433,30 +450,18 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T05:15:00.817Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.073 < 0.74)"
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "18:00",
-    "count": 0
-   },
-   {
     "hour": "19:00",
     "count": 0
    },
    {
     "hour": "20:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "21:00",
@@ -493,24 +498,28 @@
    {
     "hour": "05:00",
     "count": 15
+   },
+   {
+    "hour": "06:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T05:55:00.929",
-  "last_management": "2026-10-24T05:55:00.288"
+  "last_screening": "2026-10-24T06:00:01.130",
+  "last_management": "2026-10-24T06:00:00.500"
  },
  "log_tail": [
-  "[2026-10-24T05:50:00.814Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T05:50:00.814Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.822488 SOL)",
-  "[2026-10-24T05:50:00.879Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:50:02.060Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T05:50:10.570Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T05:55:00.288Z] [CRON] Starting management cycle",
-  "[2026-10-24T05:55:00.929Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T05:55:00.930Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.822488 SOL)",
-  "[2026-10-24T05:55:00.994Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:55:06.306Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T06:00:00.500Z] [CRON] Starting management cycle",
+  "[2026-10-24T06:00:01.130Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T06:00:01.130Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.822488 SOL)",
+  "[2026-10-24T06:00:01.249Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T06:00:09.802Z] [DEPLOY] Pool: FgJcpxAsqNH2dpQTYei3a7J22NyAuAniv6y81EZJGN9a",
+  "[2026-10-24T06:00:09.802Z] [DEPLOY] Strategy: bid_ask, Bins: -593 to -527 (66 bins)",
+  "[2026-10-24T06:00:09.802Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-24T06:00:09.802Z] [DEPLOY] Position: ArhoPoibuu4msGEBTmM5ePyka7KhXiXJUd9EbtQBvZCX",
+  "[2026-10-24T06:00:18.625Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5zu4GGXKPqdX7NrYuv8TbKVY8nqsG2Fwg84ShaD9dK2zJN6K7tHdMXc25btaqTYL7dETLtQmtTT3yePG5sCVS1qb",
+  "[2026-10-24T06:00:20.934Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T05:50:47.345Z"
+ "state_last_updated": "2026-10-24T06:00:47.541Z"
 }

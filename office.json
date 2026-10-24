@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T20:37:38.839464+00:00",
+ "generated_at": "2026-10-24T20:42:42.318970+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 37
+  "open_count": 1,
+  "open": [
+   {
+    "id": "CxAY9UEPq1iZhFCX8EZEvKPFYmyHH6TpmhR1jdum9jt",
+    "pool": "Hercules-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T20:40:21.342Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 1.55,
+    "amount_sol": 1.55
+   }
+  ],
+  "total_tracked": 38
  },
  "pnl": {
   "last24h_usd": 24.42,
@@ -442,13 +453,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1082,
+  "total_real": 1083,
   "today": 100,
-  "today_real": 88,
+  "today_real": 89,
   "by_type": {
-   "skip": 89,
+   "skip": 88,
    "close": 4,
-   "deploy": 3,
+   "deploy": 4,
    "no_deploy": 4
   },
   "by_actor": {
@@ -456,6 +467,14 @@
    "MANAGER": 4
   },
   "recent": [
+   {
+    "ts": "2026-10-24T20:40:21.343Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "Hercules-SOL",
+    "summary": "Deployed 1.55 SOL with bid_ask",
+    "reason_short": "Chosen range -645\u2192-576 around active bin -576"
+   },
    {
     "ts": "2026-10-24T20:35:20.943Z",
     "type": "no_deploy",
@@ -543,14 +562,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.192 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T19:45:01.267Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.192 < 1.58)"
    }
   ]
  },
@@ -570,7 +581,7 @@
    },
    {
     "hour": "12:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "13:00",
@@ -602,25 +613,25 @@
    },
    {
     "hour": "20:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T20:35:00.623",
-  "last_management": "2026-10-24T20:35:00.146"
+  "last_screening": "2026-10-24T20:40:00.873",
+  "last_management": "2026-10-24T20:40:00.392"
  },
  "log_tail": [
-  "[2026-10-24T20:25:01.252Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T20:29:37.447Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T20:30:00.923Z] [CRON] Screening skipped \u2014 insufficient SOL (1.498 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T20:35:00.146Z] [CRON] Starting management cycle",
-  "[2026-10-24T20:35:00.623Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T20:35:00.624Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.824351 SOL)",
-  "[2026-10-24T20:35:00.663Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T20:35:00.663Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T20:35:10.625Z] [SCREENING] Bot-holder filter: dropped BIBI-SOL \u2014 bots 49.84% > 30%",
-  "[2026-10-24T20:35:20.942Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T20:40:00.873Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T20:40:00.873Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.824351 SOL)",
+  "[2026-10-24T20:40:01.417Z] [SCREENING] Filtered cooldown token \u30e4\u30ae (EU1MHvQv)",
+  "[2026-10-24T20:40:03.467Z] [SCREENING] Bot-holder filter: dropped BIBI-SOL \u2014 bots 43.79% > 30%",
+  "[2026-10-24T20:40:11.590Z] [DEPLOY] Pool: Es8ZBYhvXRkAb7a8iEBRFy1nHJpiCiyiZ5b5RAKucFh1",
+  "[2026-10-24T20:40:11.590Z] [DEPLOY] Strategy: bid_ask, Bins: -645 to -576 (69 bins)",
+  "[2026-10-24T20:40:11.591Z] [DEPLOY] Amount: 0 X, 1.55 Y",
+  "[2026-10-24T20:40:11.591Z] [DEPLOY] Position: CxAY9UEPq1iZhFCX8EZEvKPFYmyHH6TpmhR1jdum9jt",
+  "[2026-10-24T20:40:21.341Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3TDPJ69nLdbG6B8PtWgAUNCM3ZQm2Zm534dwGYVxuyWsPCbzYY7LbJKvjTcSrCUTMWHcrMwRfM8X33K9aYu8prGo",
+  "[2026-10-24T20:40:22.415Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T20:30:00.555Z"
+ "state_last_updated": "2026-10-24T20:40:28.574Z"
 }

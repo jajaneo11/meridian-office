@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T14:12:43.137480+00:00",
+ "generated_at": "2026-10-24T14:17:40.602924+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8294
    }
   ],
-  "decisions_mentioning": 12
+  "decisions_mentioning": 13
  },
  "mode": {
   "dry_run": false,
@@ -432,13 +432,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1079,
+  "total_real": 1080,
   "today": 100,
-  "today_real": 85,
+  "today_real": 86,
   "by_type": {
-   "skip": 42,
+   "skip": 41,
    "close": 10,
-   "no_deploy": 40,
+   "no_deploy": 41,
    "deploy": 8
   },
   "by_actor": {
@@ -446,6 +446,14 @@
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-24T14:15:13.392Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PHP-SOL WHY SKIPPED Single candidate fails the core conviction gate: narrative is empty (only placeholder text \"narrative being generated\") and zero smart wallets are present in the pool \u2014 the \"no narrative + no smart wallets \u2192 s"
+   },
    {
     "ts": "2026-10-24T14:10:06.108Z",
     "type": "no_deploy",
@@ -533,14 +541,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.124 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T13:20:00.782Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.124 < 1.58)"
    }
   ]
  },
@@ -564,7 +564,7 @@
    },
    {
     "hour": "07:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "08:00",
@@ -592,25 +592,25 @@
    },
    {
     "hour": "14:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T14:10:01.192",
-  "last_management": "2026-10-24T14:10:00.633"
+  "last_screening": "2026-10-24T14:15:01.429",
+  "last_management": "2026-10-24T14:15:00.913"
  },
  "log_tail": [
-  "[2026-10-24T14:05:10.066Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 44.29% > 30%",
-  "[2026-10-24T14:10:00.633Z] [CRON] Starting management cycle",
-  "[2026-10-24T14:10:01.192Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T14:10:01.192Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.765113 SOL)",
-  "[2026-10-24T14:10:01.203Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T14:10:01.204Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T14:10:01.325Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
   "[2026-10-24T14:10:01.327Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
   "[2026-10-24T14:10:02.159Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.31% > 30%",
-  "[2026-10-24T14:10:06.106Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T14:10:06.106Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T14:15:00.913Z] [CRON] Starting management cycle",
+  "[2026-10-24T14:15:01.429Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T14:15:01.429Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.765113 SOL)",
+  "[2026-10-24T14:15:01.459Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T14:15:01.459Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T14:15:01.775Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-24T14:15:13.391Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T14:00:28.506Z"
 }

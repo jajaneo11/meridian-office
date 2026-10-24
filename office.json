@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T10:27:44.821309+00:00",
+ "generated_at": "2026-10-24T10:32:39.590162+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -387,16 +387,24 @@
   "today": 100,
   "today_real": 63,
   "by_type": {
-   "close": 9,
    "no_deploy": 38,
    "deploy": 9,
-   "skip": 44
+   "skip": 45,
+   "close": 8
   },
   "by_actor": {
-   "MANAGER": 9,
-   "SCREENER": 91
+   "SCREENER": 92,
+   "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-24T10:30:00.867Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.077 < 0.76)"
+   },
    {
     "ts": "2026-10-24T10:25:00.632Z",
     "type": "skip",
@@ -484,14 +492,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE JEANPHIL-SOL WHY SKIPPED The only surviving candidate fails a hard deploy rule: bin_step=50 is outside the required [80\u2013125] range, so it cannot be deployed regardless of other metrics. It also shows zero smart wallets present an"
-   },
-   {
-    "ts": "2026-10-24T09:40:08.859Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Deploy attempt failed with a real tool error. **BEST LOOKING CANDIDATE** mil-SOL **WHY SKIPPED** - Called `deploy_position` for mil-SOL (FgJcpxAsqNH2dpQTYei3a7J22NyAuAniv6y81EZJGN9a), but the tool errored with `\"getWalletBalances is not defined\"` before opening any position. - No transac"
    }
   ]
  },
@@ -515,7 +515,7 @@
    },
    {
     "hour": "03:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "04:00",
@@ -543,25 +543,25 @@
    },
    {
     "hour": "10:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T09:55:00.515",
-  "last_management": "2026-10-24T10:25:00.377"
+  "last_management": "2026-10-24T10:30:00.562"
  },
  "log_tail": [
-  "[2026-10-24T10:10:01.453Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T10:15:00.980Z] [CRON] Starting management cycle",
-  "[2026-10-24T10:15:01.284Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:15:01.781Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:20:00.186Z] [CRON] Starting management cycle",
   "[2026-10-24T10:20:00.432Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:20:00.904Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:25:00.377Z] [CRON] Starting management cycle",
   "[2026-10-24T10:25:00.631Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:25:01.142Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T10:25:01.142Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T10:30:00.562Z] [CRON] Starting management cycle",
+  "[2026-10-24T10:30:00.866Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T10:30:01.347Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T10:15:47.080Z"
+ "state_last_updated": "2026-10-24T10:32:23.293Z"
 }

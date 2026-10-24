@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T02:22:38.980053+00:00",
+ "generated_at": "2026-10-24T02:27:39.926255+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
+  "open_count": 2,
   "open": [
    {
     "id": "FZ3Qcr3bjQP2ohUuSEG3EEcx83ABQVLmHXk96JDLeoe1",
@@ -67,9 +67,18 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": 0.69
+   },
+   {
+    "id": "F8oitQi28CzkGN7cuGiPDWQPeTEWdnB3PwLizEE9pjnJ",
+    "pool": "YMB-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T02:25:29.738Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null
    }
   ],
-  "total_tracked": 19
+  "total_tracked": 20
  },
  "pnl": {
   "last24h_usd": -0.06,
@@ -262,20 +271,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1007,
-  "today": 25,
-  "today_real": 13,
+  "total_real": 1008,
+  "today": 26,
+  "today_real": 14,
   "by_type": {
-   "skip": 30,
+   "skip": 29,
    "close": 15,
    "no_deploy": 40,
-   "deploy": 15
+   "deploy": 16
   },
   "by_actor": {
    "SCREENER": 85,
    "MANAGER": 15
   },
   "recent": [
+   {
+    "ts": "2026-10-24T02:25:29.739Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "YMB-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -616\u2192-548 around active bin -548"
+   },
    {
     "ts": "2026-10-24T02:20:07.509Z",
     "type": "no_deploy",
@@ -363,14 +380,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- ELON-SOL: bot holders 36.73% > 30%"
-   },
-   {
-    "ts": "2026-10-24T01:30:15.889Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY \u2014 TOOL FAILURE The `deploy_position` call for the top candidate (Moustache-SOL) was blocked by the verification layer and did not execute a transaction: - **Attempt 1** returned: `\"Could not verify pool screening thresholds before deploy: Pool undefined not found\"` - **Attempt 2** was re"
    }
   ]
  },
@@ -382,7 +391,7 @@
    },
    {
     "hour": "16:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "17:00",
@@ -422,25 +431,25 @@
    },
    {
     "hour": "02:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T02:19:59.291",
+  "last_screening": "2026-10-24T02:25:14.457",
   "last_management": "2026-10-24T02:20:00.858"
  },
  "log_tail": [
-  "[2026-10-24T02:14:53.105Z] [DEPLOY] Position: 8hsYF9McZUasA9ebsqDeS3fwdUf6BFAnPtTzLhTdCmsj",
-  "[2026-10-24T02:14:54.271Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2CLa9zGUkLBimUMnhMX8geAgwzkELBsdDjjVK7YDR1h7Ta2zgqBYzyGyYZQTD7msiHqz3vvUsbTZy2XXJqactqqY",
-  "[2026-10-24T02:14:55.652Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-24T02:19:19.916Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T02:19:59.021Z] [CRON] [Opportunity] TRUTH-SOL degen 95.2 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-24T02:19:59.291Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T02:19:59.292Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.767369 SOL)",
-  "[2026-10-24T02:20:00.858Z] [CRON] Starting management cycle",
-  "[2026-10-24T02:20:01.522Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T02:20:07.507Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T02:25:14.457Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T02:25:14.458Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.767369 SOL)",
+  "[2026-10-24T02:25:14.514Z] [SCREENING] Filtered cooldown token McRib (8idEA8Qo)",
+  "[2026-10-24T02:25:14.515Z] [SCREENING] Filtered cooldown token McRib (8idEA8Qo)",
+  "[2026-10-24T02:25:22.084Z] [DEPLOY] Pool: GA7aoowCQ5oVycYXte61C3kdri7oZ56HuJwNUGkygx3",
+  "[2026-10-24T02:25:22.084Z] [DEPLOY] Strategy: bid_ask, Bins: -616 to -548 (68 bins)",
+  "[2026-10-24T02:25:22.084Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-24T02:25:22.084Z] [DEPLOY] Position: F8oitQi28CzkGN7cuGiPDWQPeTEWdnB3PwLizEE9pjnJ",
+  "[2026-10-24T02:25:29.737Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 44KwacWfmewVb3C3QwGRWfZEqAx7QfttjogqBxTgRFjzqNPXducKsmBak4AZsAQq6u4SVLCQtzvL7N8xNLCuTZPP",
+  "[2026-10-24T02:25:31.450Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T02:19:39.572Z"
+ "state_last_updated": "2026-10-24T02:25:29.738Z"
 }

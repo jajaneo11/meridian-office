@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T04:07:41.207047+00:00",
+ "generated_at": "2026-10-24T04:12:40.418943+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 10
+  "decisions_mentioning": 12
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.793994
+  "sol": 0.806649
  },
  "limits": {
   "max_positions": 3,
@@ -302,20 +302,36 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1017,
-  "today": 44,
-  "today_real": 23,
+  "total_real": 1019,
+  "today": 46,
+  "today_real": 25,
   "by_type": {
-   "close": 15,
-   "no_deploy": 40,
+   "no_deploy": 41,
    "deploy": 15,
+   "close": 14,
    "skip": 30
   },
   "by_actor": {
-   "MANAGER": 15,
-   "SCREENER": 85
+   "SCREENER": 86,
+   "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T04:10:12.106Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED The only candidate's fundamental numbers are strong (fee/TVL 0.33, fees paid 168 SOL, volatility 5.74, top10 26%), but it fails the conviction gates. There is no"
+   },
+   {
+    "ts": "2026-10-24T04:08:01.163Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL WHY SKIPPED The single surviving candidate fails key conviction gates. Its narrative is empty (still \"being generated\" \u2014 effectively no story), and it has 0 smart wallets present \u2014 which combined trips the hard skip rule"
+   },
    {
     "ts": "2026-10-24T04:00:00.973Z",
     "type": "no_deploy",
@@ -395,22 +411,6 @@
     "pool_name": "ELIZABETH-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -627\u2192-558 around active bin -558"
-   },
-   {
-    "ts": "2026-10-24T03:14:06.824Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle ended without a valid entry. BEST LOOKING CANDIDATE ELIZABETH-SOL WHY SKIPPED Deploy attempt on the top candidate (ELIZABETH-SOL) failed \u2014 the first call to `deploy_position` was rejected because no positive amount_y was supplied, and the retry was blocked by the session guard (\"de"
-   },
-   {
-    "ts": "2026-10-24T03:13:47.372Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "ELIZABETH-SOL",
-    "summary": "Closed at 0.25%",
-    "reason_short": "pumped far above range"
    }
   ]
  },
@@ -422,7 +422,7 @@
    },
    {
     "hour": "18:00",
-    "count": 9
+    "count": 7
    },
    {
     "hour": "19:00",
@@ -462,25 +462,25 @@
    },
    {
     "hour": "04:00",
-    "count": 1
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T04:00:00.712",
-  "last_management": "2026-10-24T04:00:00.044"
+  "last_screening": "2026-10-24T04:10:01.513",
+  "last_management": "2026-10-24T04:10:00.891"
  },
  "log_tail": [
-  "[2026-10-24T03:55:14.715Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T03:55:15.392Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.22% > 30%",
-  "[2026-10-24T04:00:00.044Z] [CRON] Starting management cycle",
-  "[2026-10-24T04:00:00.712Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T04:00:00.712Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.793994 SOL)",
-  "[2026-10-24T04:00:00.788Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T04:00:00.972Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T04:00:00.972Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T04:06:29.293Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T04:07:14.042Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)"
+  "[2026-10-24T04:07:56.273Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.806649 SOL)",
+  "[2026-10-24T04:07:56.407Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T04:08:01.162Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T04:10:00.891Z] [CRON] Starting management cycle",
+  "[2026-10-24T04:10:01.513Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T04:10:01.513Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.806649 SOL)",
+  "[2026-10-24T04:10:01.593Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T04:10:01.864Z] [SCREENING] Filtered cooldown token McRib (8idEA8Qo)",
+  "[2026-10-24T04:10:01.864Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T04:10:12.105Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T04:05:03.140Z"
 }

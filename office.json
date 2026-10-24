@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T07:47:41.828645+00:00",
+ "generated_at": "2026-10-24T07:52:40.065554+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.83997
+  "sol": 0.870589
  },
  "limits": {
   "max_positions": 3,
@@ -352,20 +352,36 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1032,
-  "today": 94,
-  "today_real": 38,
+  "total_real": 1034,
+  "today": 96,
+  "today_real": 40,
   "by_type": {
-   "skip": 44,
-   "close": 15,
    "deploy": 14,
-   "no_deploy": 27
+   "close": 14,
+   "no_deploy": 29,
+   "skip": 43
   },
   "by_actor": {
-   "SCREENER": 85,
-   "MANAGER": 15
+   "SCREENER": 86,
+   "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T07:50:01.371Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- mil-SOL: already have an open position in this pool - YMB-SOL: token cooldown active"
+   },
+   {
+    "ts": "2026-10-24T07:49:15.004Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- mil-SOL: already have an open position in this pool - YMB-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-24T07:45:01.304Z",
     "type": "skip",
@@ -445,22 +461,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.108 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T07:00:13.871Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "mil-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -618\u2192-558 around active bin -558"
-   },
-   {
-    "ts": "2026-10-24T06:55:06.565Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED This is the only candidate in the cycle and it fails the key conviction gates. The narrative field is empty (\"narrative is being generated\" \u2014 no identifiable origin, event, or community), and the pool has 0 s"
    }
   ]
  },
@@ -480,7 +480,7 @@
    },
    {
     "hour": "23:00",
-    "count": 6
+    "count": 4
    },
    {
     "hour": "00:00",
@@ -512,25 +512,25 @@
    },
    {
     "hour": "07:00",
-    "count": 11
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T07:00:00.579",
-  "last_management": "2026-10-24T07:40:00.751"
+  "last_screening": "2026-10-24T07:50:01.203",
+  "last_management": "2026-10-24T07:50:00.499"
  },
  "log_tail": [
-  "[2026-10-24T07:30:00.525Z] [CRON] Screening skipped \u2014 insufficient SOL (0.108 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T07:30:01.099Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T07:35:00.590Z] [CRON] Starting management cycle",
-  "[2026-10-24T07:35:00.710Z] [CRON] Screening skipped \u2014 insufficient SOL (0.108 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T07:35:01.353Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T07:40:00.751Z] [CRON] Starting management cycle",
-  "[2026-10-24T07:40:01.095Z] [CRON] Screening skipped \u2014 insufficient SOL (0.108 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T07:40:01.461Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T07:44:45.778Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T07:45:01.303Z] [CRON] Screening skipped \u2014 insufficient SOL (0.690 < 0.74 needed for deploy + gas)"
+  "[2026-10-24T07:45:01.303Z] [CRON] Screening skipped \u2014 insufficient SOL (0.690 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T07:49:13.457Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-24T07:49:14.864Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T07:49:14.864Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
+  "[2026-10-24T07:49:15.003Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
+  "[2026-10-24T07:50:00.499Z] [CRON] Starting management cycle",
+  "[2026-10-24T07:50:01.172Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T07:50:01.203Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T07:50:01.203Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
+  "[2026-10-24T07:50:01.371Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)"
  ],
  "state_last_updated": "2026-10-24T07:44:55.062Z"
 }

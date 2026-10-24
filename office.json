@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T03:47:39.041041+00:00",
+ "generated_at": "2026-10-24T03:52:38.648693+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.777657
+  "sol": 0.793994
  },
  "limits": {
   "max_positions": 3,
@@ -302,20 +302,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1014,
-  "today": 41,
-  "today_real": 20,
+  "total_real": 1015,
+  "today": 42,
+  "today_real": 21,
   "by_type": {
-   "close": 16,
-   "no_deploy": 39,
+   "no_deploy": 40,
+   "close": 15,
    "deploy": 15,
    "skip": 30
   },
   "by_actor": {
-   "MANAGER": 16,
-   "SCREENER": 84
+   "SCREENER": 85,
+   "MANAGER": 15
   },
   "recent": [
+   {
+    "ts": "2026-10-24T03:50:00.180Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- BTC-SOL: bot holders 59.21% > 30%"
+   },
    {
     "ts": "2026-10-24T03:43:41.195Z",
     "type": "close",
@@ -403,14 +411,6 @@
     "pool_name": "Moustache-SOL",
     "summary": "Closed at 2.96%",
     "reason_short": "Trailing TP: peak 4.08% \u2192 current 2.53% (dropped 1.55% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-24T03:00:00.799Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.035 < 0.74)"
    }
   ]
  },
@@ -426,7 +426,7 @@
    },
    {
     "hour": "18:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "19:00",
@@ -462,25 +462,25 @@
    },
    {
     "hour": "03:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T03:30:01.439",
-  "last_management": "2026-10-24T03:40:00.151"
+  "last_screening": "2026-10-24T03:49:59.603",
+  "last_management": "2026-10-24T03:50:00.615"
  },
  "log_tail": [
-  "[2026-10-24T03:30:15.799Z] [DEPLOY] Position: BKpJNFRPcEL29wXEEVeo4szBUyft4PSVVRaR5dDXWxu7",
-  "[2026-10-24T03:30:20.869Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4TQb1rxkvCnEuqwbJ6tcrSY17do9SxGyJNA2zFg5FoaKzUnhQHbZxPWmGiAeL7nqZanERgbgZW4RXW9LKscyexxp",
-  "[2026-10-24T03:30:22.515Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-24T03:40:00.151Z] [CRON] Starting management cycle",
-  "[2026-10-24T03:40:00.863Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T03:40:01.097Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-24T03:40:01.314Z] [CRON] Screening skipped \u2014 insufficient SOL (0.046 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T03:43:02.882Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T03:46:14.020Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T03:46:59.018Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)"
+  "[2026-10-24T03:48:29.056Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T03:49:14.226Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T03:49:59.219Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T03:49:59.329Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T03:49:59.603Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T03:49:59.603Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.793994 SOL)",
+  "[2026-10-24T03:49:59.663Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T03:50:00.179Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.21% > 30%",
+  "[2026-10-24T03:50:00.615Z] [CRON] Starting management cycle",
+  "[2026-10-24T03:50:01.431Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T03:43:40.940Z"
 }

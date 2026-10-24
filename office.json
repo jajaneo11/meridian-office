@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T11:32:39.466759+00:00",
+ "generated_at": "2026-10-24T11:37:45.327144+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -393,13 +393,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1066,
+  "total_real": 1067,
   "today": 100,
-  "today_real": 72,
+  "today_real": 73,
   "by_type": {
-   "skip": 45,
+   "skip": 44,
    "close": 9,
-   "no_deploy": 38,
+   "no_deploy": 39,
    "deploy": 8
   },
   "by_actor": {
@@ -407,6 +407,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-24T11:35:01.619Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- OpenSolana-SOL: bot holders 31.70% > 30%"
+   },
    {
     "ts": "2026-10-24T11:30:09.460Z",
     "type": "no_deploy",
@@ -494,14 +502,6 @@
     "pool_name": "mil-SOL",
     "summary": "Closed at 0.58%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-24T10:45:01.225Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.077 < 0.76)"
    }
   ]
  },
@@ -525,7 +525,7 @@
    },
    {
     "hour": "04:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "05:00",
@@ -553,25 +553,25 @@
    },
    {
     "hour": "11:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T11:30:00.890",
-  "last_management": "2026-10-24T11:30:00.211"
+  "last_screening": "2026-10-24T11:35:01.132",
+  "last_management": "2026-10-24T11:35:00.441"
  },
  "log_tail": [
-  "[2026-10-24T11:25:00.640Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.84971 SOL)",
-  "[2026-10-24T11:25:00.788Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T11:30:00.211Z] [CRON] Starting management cycle",
-  "[2026-10-24T11:30:00.890Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T11:30:00.891Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.84971 SOL)",
-  "[2026-10-24T11:30:00.940Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T11:30:09.162Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
   "[2026-10-24T11:30:09.163Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
   "[2026-10-24T11:30:09.165Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-24T11:30:09.459Z] [SCREENING] Bot-holder filter: dropped OpenSolana-SOL \u2014 bots 30.69% > 30%"
+  "[2026-10-24T11:30:09.459Z] [SCREENING] Bot-holder filter: dropped OpenSolana-SOL \u2014 bots 30.69% > 30%",
+  "[2026-10-24T11:35:00.441Z] [CRON] Starting management cycle",
+  "[2026-10-24T11:35:01.132Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T11:35:01.132Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.84971 SOL)",
+  "[2026-10-24T11:35:01.152Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T11:35:01.312Z] [SCREENING] Filtered cooldown token mil (3w67qwok)",
+  "[2026-10-24T11:35:01.618Z] [SCREENING] Bot-holder filter: dropped OpenSolana-SOL \u2014 bots 31.70% > 30%"
  ],
- "state_last_updated": "2026-10-24T11:28:48.833Z"
+ "state_last_updated": "2026-10-24T11:34:30.882Z"
 }

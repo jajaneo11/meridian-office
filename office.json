@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:12:41.954864+00:00",
+ "generated_at": "2026-10-24T05:17:39.161743+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 35,
+  "active_24h": 34,
   "total_value_usd": 139437,
   "total_activity": 390,
   "top": [
@@ -312,7 +312,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1021,
-  "today": 58,
+  "today": 59,
   "today_real": 27,
   "by_type": {
    "skip": 38,
@@ -325,6 +325,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T05:15:00.817Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.073 < 0.74)"
+   },
    {
     "ts": "2026-10-24T05:10:00.659Z",
     "type": "skip",
@@ -412,14 +420,6 @@
     "pool_name": "WEFT-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -739\u2192-670 around active bin -670"
-   },
-   {
-    "ts": "2026-10-24T04:15:06.446Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED WEFT is the only surviving candidate and it fails the core qualitative test: no narrative is available (still being generated) and 0/30 smart wallets are present"
    }
   ]
  },
@@ -431,7 +431,7 @@
    },
    {
     "hour": "19:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "20:00",
@@ -471,25 +471,25 @@
    },
    {
     "hour": "05:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T04:20:00.984",
-  "last_management": "2026-10-24T05:10:00.281"
+  "last_management": "2026-10-24T05:15:00.498"
  },
  "log_tail": [
-  "[2026-10-24T04:55:01.547Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:00:00.894Z] [CRON] Starting management cycle",
-  "[2026-10-24T05:00:01.239Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
   "[2026-10-24T05:00:01.652Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T05:05:00.063Z] [CRON] Starting management cycle",
   "[2026-10-24T05:05:00.403Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
   "[2026-10-24T05:05:00.858Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T05:10:00.281Z] [CRON] Starting management cycle",
   "[2026-10-24T05:10:00.658Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T05:10:01.041Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T05:10:01.041Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T05:15:00.498Z] [CRON] Starting management cycle",
+  "[2026-10-24T05:15:00.816Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T05:15:01.309Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T05:08:37.900Z"
+ "state_last_updated": "2026-10-24T05:15:01.307Z"
 }

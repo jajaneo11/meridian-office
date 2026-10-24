@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T06:17:40.953066+00:00",
+ "generated_at": "2026-10-24T06:22:40.168886+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -342,7 +342,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1029,
-  "today": 74,
+  "today": 75,
   "today_real": 35,
   "by_type": {
    "skip": 41,
@@ -355,6 +355,14 @@
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T06:20:00.677Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.089 < 0.74)"
+   },
    {
     "ts": "2026-10-24T06:15:00.425Z",
     "type": "skip",
@@ -442,14 +450,6 @@
     "pool_name": "YMB-SOL",
     "summary": "Closed at 2.69%",
     "reason_short": "Trailing TP: peak 3.90% \u2192 current 2.33% (dropped 1.57% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-24T05:30:07.435Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle ended with no completed entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Deployment failed at the tool level \u2014 my deploy_position call was blocked by the framework. The first attempt was rejected for missing a positive amount_y, an"
    }
   ]
  },
@@ -465,7 +465,7 @@
    },
    {
     "hour": "21:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "22:00",
@@ -501,25 +501,25 @@
    },
    {
     "hour": "06:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T06:00:01.130",
-  "last_management": "2026-10-24T06:15:00.087"
+  "last_management": "2026-10-24T06:20:00.347"
  },
  "log_tail": [
-  "[2026-10-24T06:00:20.934Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-24T06:05:00.676Z] [CRON] Starting management cycle",
-  "[2026-10-24T06:05:00.965Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
   "[2026-10-24T06:05:01.455Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T06:10:00.870Z] [CRON] Starting management cycle",
   "[2026-10-24T06:10:01.196Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
   "[2026-10-24T06:10:01.671Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T06:15:00.087Z] [CRON] Starting management cycle",
   "[2026-10-24T06:15:00.424Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T06:15:00.956Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T06:15:00.956Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T06:20:00.347Z] [CRON] Starting management cycle",
+  "[2026-10-24T06:20:00.676Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T06:20:01.080Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T06:17:26.762Z"
+ "state_last_updated": "2026-10-24T06:20:50.776Z"
 }

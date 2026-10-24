@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T04:12:40.418943+00:00",
+ "generated_at": "2026-10-24T04:17:40.715735+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 12
+  "decisions_mentioning": 13
  },
  "mode": {
   "dry_run": false,
@@ -302,9 +302,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1019,
-  "today": 46,
-  "today_real": 25,
+  "total_real": 1020,
+  "today": 47,
+  "today_real": 26,
   "by_type": {
    "no_deploy": 41,
    "deploy": 15,
@@ -316,6 +316,14 @@
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T04:15:06.446Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE WEFT-SOL (95zNQQ8juGpu8odzpbp63ZNtXuTnnBeBsHovUjpe32d8) WHY SKIPPED WEFT is the only surviving candidate and it fails the core qualitative test: no narrative is available (still being generated) and 0/30 smart wallets are present"
+   },
    {
     "ts": "2026-10-24T04:10:12.106Z",
     "type": "no_deploy",
@@ -403,14 +411,6 @@
     "pool_name": "ELIZABETH-SOL",
     "summary": "Closed at -0.01%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-24T03:19:29.931Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "ELIZABETH-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -627\u2192-558 around active bin -558"
    }
   ]
  },
@@ -422,7 +422,7 @@
    },
    {
     "hour": "18:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "19:00",
@@ -462,25 +462,25 @@
    },
    {
     "hour": "04:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T04:10:01.513",
-  "last_management": "2026-10-24T04:10:00.891"
+  "last_screening": "2026-10-24T04:15:00.835",
+  "last_management": "2026-10-24T04:15:00.109"
  },
  "log_tail": [
-  "[2026-10-24T04:07:56.273Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.806649 SOL)",
-  "[2026-10-24T04:07:56.407Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T04:08:01.162Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T04:10:00.891Z] [CRON] Starting management cycle",
-  "[2026-10-24T04:10:01.513Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T04:10:01.513Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.806649 SOL)",
-  "[2026-10-24T04:10:01.593Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T04:10:01.864Z] [SCREENING] Filtered cooldown token McRib (8idEA8Qo)",
   "[2026-10-24T04:10:01.864Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T04:10:12.105Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T04:10:12.105Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T04:15:00.109Z] [CRON] Starting management cycle",
+  "[2026-10-24T04:15:00.835Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T04:15:00.835Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.806649 SOL)",
+  "[2026-10-24T04:15:00.894Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T04:15:01.064Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T04:15:02.167Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.53% > 30%",
+  "[2026-10-24T04:15:02.167Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.53% > 30%",
+  "[2026-10-24T04:15:06.445Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T04:05:03.140Z"
 }

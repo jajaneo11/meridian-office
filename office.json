@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T10:32:39.590162+00:00",
+ "generated_at": "2026-10-24T10:37:38.916567+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -387,9 +387,9 @@
   "today": 100,
   "today_real": 63,
   "by_type": {
-   "no_deploy": 38,
+   "no_deploy": 37,
    "deploy": 9,
-   "skip": 45,
+   "skip": 46,
    "close": 8
   },
   "by_actor": {
@@ -397,6 +397,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-24T10:35:01.110Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.077 < 0.76)"
+   },
    {
     "ts": "2026-10-24T10:30:00.867Z",
     "type": "skip",
@@ -484,14 +492,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE JEANPHIL-SOL (5u7PMsDxbaALbV9viti9Y4pEBVJqWSSp69uEsXGtiANq) WHY SKIPPED Despite solid headline metrics (fee/TVL 0.15, vol $22K, TVL $182K, volatility 9.15, fees 1477SOL \u2265 30) and healthy audit (top10 22%, bots 5.7%), this candida"
-   },
-   {
-    "ts": "2026-10-24T09:42:37.938Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE JEANPHIL-SOL WHY SKIPPED The only surviving candidate fails a hard deploy rule: bin_step=50 is outside the required [80\u2013125] range, so it cannot be deployed regardless of other metrics. It also shows zero smart wallets present an"
    }
   ]
  },
@@ -515,7 +515,7 @@
    },
    {
     "hour": "03:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "04:00",
@@ -543,25 +543,25 @@
    },
    {
     "hour": "10:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T09:55:00.515",
-  "last_management": "2026-10-24T10:30:00.562"
+  "last_management": "2026-10-24T10:35:00.776"
  },
  "log_tail": [
-  "[2026-10-24T10:15:01.781Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T10:20:00.186Z] [CRON] Starting management cycle",
-  "[2026-10-24T10:20:00.432Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:20:00.904Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:25:00.377Z] [CRON] Starting management cycle",
   "[2026-10-24T10:25:00.631Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:25:01.142Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:30:00.562Z] [CRON] Starting management cycle",
   "[2026-10-24T10:30:00.866Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:30:01.347Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T10:30:01.347Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T10:35:00.776Z] [CRON] Starting management cycle",
+  "[2026-10-24T10:35:01.108Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T10:35:01.554Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T10:32:23.293Z"
+ "state_last_updated": "2026-10-24T10:34:20.275Z"
 }

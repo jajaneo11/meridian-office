@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T12:32:40.716947+00:00",
+ "generated_at": "2026-10-24T12:37:40.207337+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8294
    }
   ],
-  "decisions_mentioning": 16
+  "decisions_mentioning": 15
  },
  "mode": {
   "dry_run": false,
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 33
+  "open_count": 1,
+  "open": [
+   {
+    "id": "4XpPDp67brUtLeqZyFAjTt66dVSQrortuQJWngoLrDve",
+    "pool": "DacityCoin-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T12:35:09.516Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 0.73,
+    "amount_sol": 0.73
+   }
+  ],
+  "total_tracked": 34
  },
  "pnl": {
   "last24h_usd": 12.31,
@@ -402,20 +413,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1074,
+  "total_real": 1075,
   "today": 100,
-  "today_real": 80,
+  "today_real": 81,
   "by_type": {
-   "no_deploy": 43,
    "close": 9,
-   "deploy": 8,
+   "deploy": 9,
+   "no_deploy": 42,
    "skip": 40
   },
   "by_actor": {
-   "SCREENER": 91,
-   "MANAGER": 9
+   "MANAGER": 9,
+   "SCREENER": 91
   },
   "recent": [
+   {
+    "ts": "2026-10-24T12:35:09.517Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "DacityCoin-SOL",
+    "summary": "Deployed 0.73 SOL with bid_ask",
+    "reason_short": "Chosen range -477\u2192-408 around active bin -408"
+   },
    {
     "ts": "2026-10-24T12:30:14.603Z",
     "type": "no_deploy",
@@ -503,14 +522,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.078 < 0.76)"
-   },
-   {
-    "ts": "2026-10-24T11:45:21.854Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "PANGEA-SOL",
-    "summary": "Deployed 0.73 SOL with bid_ask",
-    "reason_short": "Chosen range -1226\u2192-1170 around active bin -1170"
    }
   ]
  },
@@ -534,7 +545,7 @@
    },
    {
     "hour": "05:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "06:00",
@@ -562,25 +573,25 @@
    },
    {
     "hour": "12:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T12:30:01.464",
-  "last_management": "2026-10-24T12:30:00.864"
+  "last_screening": "2026-10-24T12:35:00.674",
+  "last_management": "2026-10-24T12:35:00.138"
  },
  "log_tail": [
-  "[2026-10-24T12:30:00.864Z] [CRON] Starting management cycle",
-  "[2026-10-24T12:30:01.401Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T12:30:01.401Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T12:30:01.464Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T12:30:01.464Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.621605 SOL)",
-  "[2026-10-24T12:30:10.054Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-24T12:30:10.055Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-24T12:30:10.065Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-24T12:30:10.070Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-24T12:30:14.603Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T12:35:00.631Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T12:35:00.631Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T12:35:00.674Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T12:35:00.674Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.621605 SOL)",
+  "[2026-10-24T12:35:08.498Z] [DEPLOY] Pool: 5Dc4s9fxxQoPfaMUaxFKB5v1Nh6FPqest7usgyvGXwWw",
+  "[2026-10-24T12:35:08.498Z] [DEPLOY] Strategy: bid_ask, Bins: -477 to -408 (69 bins)",
+  "[2026-10-24T12:35:08.498Z] [DEPLOY] Amount: 0 X, 0.73 Y",
+  "[2026-10-24T12:35:08.498Z] [DEPLOY] Position: 4XpPDp67brUtLeqZyFAjTt66dVSQrortuQJWngoLrDve",
+  "[2026-10-24T12:35:09.515Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4BCYBxWPFd4jnWTYrA3kLeFkrqnfK7X2wiEKd5EWVe9bZ1jqcNqGcAbMyD4vncpKdcaTt7NtVxJ2HrqotEY4N1Zq",
+  "[2026-10-24T12:35:10.611Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T12:19:43.210Z"
+ "state_last_updated": "2026-10-24T12:35:19.635Z"
 }

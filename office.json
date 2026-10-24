@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T20:33:02.184178+00:00",
+ "generated_at": "2026-10-24T20:37:38.839464+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8294
    }
   ],
-  "decisions_mentioning": 2
+  "decisions_mentioning": 3
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": null
+  "sol": 1.824351
  },
  "limits": {
   "max_positions": 3,
@@ -442,20 +442,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1081,
+  "total_real": 1082,
   "today": 100,
-  "today_real": 87,
+  "today_real": 88,
   "by_type": {
-   "skip": 90,
+   "skip": 89,
    "close": 4,
    "deploy": 3,
-   "no_deploy": 3
+   "no_deploy": 4
   },
   "by_actor": {
    "SCREENER": 96,
    "MANAGER": 4
   },
   "recent": [
+   {
+    "ts": "2026-10-24T20:35:20.943Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY **Cycle finished with no valid entry.** **BEST LOOKING CANDIDATE** Hercules-SOL **WHY SKIPPED** Hercules-SOL was my top conviction pick \u2014 it flagged the strongest fundamentals (fee/TVL 1.19, volatility 8.26, organic 71, $84K volume, and a tracked smart wallet \"Fast LP\" in the pool). But "
+   },
    {
     "ts": "2026-10-24T20:30:00.923Z",
     "type": "skip",
@@ -543,14 +551,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.192 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T19:40:00.910Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.192 < 1.58)"
    }
   ]
  },
@@ -570,7 +570,7 @@
    },
    {
     "hour": "12:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "13:00",
@@ -602,25 +602,25 @@
    },
    {
     "hour": "20:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": null,
-  "last_management": "2026-10-24T20:25:00.618"
+  "last_screening": "2026-10-24T20:35:00.623",
+  "last_management": "2026-10-24T20:35:00.146"
  },
  "log_tail": [
-  "[2026-10-24T20:15:00.534Z] [CRON] Screening skipped \u2014 insufficient SOL (0.192 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T20:15:01.065Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T20:20:00.445Z] [CRON] Starting management cycle",
-  "[2026-10-24T20:20:00.764Z] [CRON] Screening skipped \u2014 insufficient SOL (0.192 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T20:20:01.095Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T20:25:00.618Z] [CRON] Starting management cycle",
-  "[2026-10-24T20:25:00.900Z] [CRON] Screening skipped \u2014 insufficient SOL (0.192 < 1.58 needed for deploy + gas)",
   "[2026-10-24T20:25:01.252Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T20:29:37.447Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T20:30:00.923Z] [CRON] Screening skipped \u2014 insufficient SOL (1.498 < 1.58 needed for deploy + gas)"
+  "[2026-10-24T20:30:00.923Z] [CRON] Screening skipped \u2014 insufficient SOL (1.498 < 1.58 needed for deploy + gas)",
+  "[2026-10-24T20:35:00.146Z] [CRON] Starting management cycle",
+  "[2026-10-24T20:35:00.623Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T20:35:00.624Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.824351 SOL)",
+  "[2026-10-24T20:35:00.663Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T20:35:00.663Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T20:35:10.625Z] [SCREENING] Bot-holder filter: dropped BIBI-SOL \u2014 bots 49.84% > 30%",
+  "[2026-10-24T20:35:20.942Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T20:30:00.555Z"
 }

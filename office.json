@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T09:37:43.411260+00:00",
+ "generated_at": "2026-10-24T09:42:39.215899+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.870569
+  "sol": 1.620675
  },
  "limits": {
   "max_positions": 3,
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "9VEWeKWK7gTyfaNW4hWnFZM5PBPdCEYmxbM8iJzC6Gs6",
-    "pool": "mil-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T07:00:13.870Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 100,
-    "amount_sol": 0.69
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 29
  },
  "pnl": {
-  "last24h_usd": 9.5,
-  "fees24h_usd": 58.11,
-  "all_time_usd": 9.5,
-  "closed_total": 28,
-  "win_rate_pct": 64
+  "last24h_usd": 11.47,
+  "fees24h_usd": 62.69,
+  "all_time_usd": 11.47,
+  "closed_total": 29,
+  "win_rate_pct": 66
  },
  "pnl_trades": [
   {
@@ -359,24 +348,58 @@
    "amount_sol": 0.69,
    "minutes_held": 16,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "mil-SOL",
+   "recorded_at": "2026-10-24T09:38:04.503Z",
+   "pnl_usd": 1.97,
+   "pnl_pct": 2.79,
+   "fees_usd": 4.578604034523464,
+   "amount_sol": 0.69,
+   "minutes_held": 157,
+   "close_reason": "Trailing TP: peak 4.63% \u2192 current 2.76% (dropped 1.87% >= 1.5%)"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1052,
+  "total_real": 1054,
   "today": 100,
-  "today_real": 58,
+  "today_real": 60,
   "by_type": {
-   "deploy": 11,
+   "deploy": 10,
+   "skip": 42,
    "close": 11,
-   "no_deploy": 36,
-   "skip": 42
+   "no_deploy": 37
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-24T09:42:37.938Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE JEANPHIL-SOL WHY SKIPPED The only surviving candidate fails a hard deploy rule: bin_step=50 is outside the required [80\u2013125] range, so it cannot be deployed regardless of other metrics. It also shows zero smart wallets present an"
+   },
+   {
+    "ts": "2026-10-24T09:40:08.859Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Deploy attempt failed with a real tool error. **BEST LOOKING CANDIDATE** mil-SOL **WHY SKIPPED** - Called `deploy_position` for mil-SOL (FgJcpxAsqNH2dpQTYei3a7J22NyAuAniv6y81EZJGN9a), but the tool errored with `\"getWalletBalances is not defined\"` before opening any position. - No transac"
+   },
+   {
+    "ts": "2026-10-24T09:38:04.509Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "mil-SOL",
+    "summary": "Closed at 2.79%",
+    "reason_short": "Trailing TP: peak 4.63% \u2192 current 2.76% (dropped 1.87% >= 1.5%)"
+   },
    {
     "ts": "2026-10-24T09:35:08.080Z",
     "type": "no_deploy",
@@ -448,30 +471,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.139 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T09:11:31.853Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.139 < 0.78)"
-   },
-   {
-    "ts": "2026-10-24T09:10:24.008Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "PANGEA-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -1266\u2192-1205 around active bin -1205"
-   },
-   {
-    "ts": "2026-10-24T09:05:06.215Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OND0-USDC WHY SKIPPED OND0-USDC fails the hard bin-step gate: bin_step=50 is outside the required 80\u2013125 band, so it is ineligible for deployment regardless of its metrics. Additionally, the candidate has no usable narrative (sti"
    }
   ]
  },
@@ -495,7 +494,7 @@
    },
    {
     "hour": "02:00",
-    "count": 7
+    "count": 4
    },
    {
     "hour": "03:00",
@@ -523,25 +522,25 @@
    },
    {
     "hour": "09:00",
-    "count": 13
+    "count": 16
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T09:35:01.420",
-  "last_management": "2026-10-24T09:35:00.705"
+  "last_screening": "2026-10-24T09:42:32.814",
+  "last_management": "2026-10-24T09:40:00.943"
  },
  "log_tail": [
-  "[2026-10-24T09:30:01.341Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.870569 SOL)",
-  "[2026-10-24T09:30:01.459Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T09:30:10.146Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T09:33:07.591Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-24T09:35:00.705Z] [CRON] Starting management cycle",
-  "[2026-10-24T09:35:01.420Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T09:35:01.420Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.870569 SOL)",
-  "[2026-10-24T09:35:01.524Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T09:35:01.878Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T09:35:08.080Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T09:40:01.600Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.620675 SOL)",
+  "[2026-10-24T09:40:01.767Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T09:40:08.857Z] [AGENT] \u26d4 NO DEPLOY",
+  "Deploy attempt failed with a real tool error.",
+  "- Called `deploy_position` for mil-SOL (FgJcpxAsqNH2dpQTYei3a7J22NyAuAniv6y81EZJGN9a), but the tool errored with `\"getWalletBalances is not defined\"` before opening any position.",
+  "- mil-SOL \u2014 deploy_position failed with internal SDK error (`getWalletBalances is not defined`); needs retry once tooling is healthy.",
+  "[2026-10-24T09:42:31.385Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-24T09:42:32.814Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T09:42:32.814Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.620675 SOL)",
+  "[2026-10-24T09:42:37.937Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-24T09:26:58.961Z"
+ "state_last_updated": "2026-10-24T09:38:04.262Z"
 }

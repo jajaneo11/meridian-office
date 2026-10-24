@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T21:07:40.289006+00:00",
+ "generated_at": "2026-10-24T21:12:40.931793+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 30,
+  "active_24h": 29,
   "total_value_usd": 145700,
   "total_activity": 390,
   "top": [
@@ -467,16 +467,24 @@
   "today": 100,
   "today_real": 90,
   "by_type": {
-   "skip": 88,
    "close": 4,
    "deploy": 4,
+   "skip": 88,
    "no_deploy": 4
   },
   "by_actor": {
-   "SCREENER": 96,
-   "MANAGER": 4
+   "MANAGER": 4,
+   "SCREENER": 96
   },
   "recent": [
+   {
+    "ts": "2026-10-24T21:10:00.954Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.282 < 1.58)"
+   },
    {
     "ts": "2026-10-24T21:05:16.705Z",
     "type": "deploy",
@@ -564,14 +572,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.192 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T20:20:00.765Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.192 < 1.58)"
    }
   ]
  },
@@ -591,7 +591,7 @@
    },
    {
     "hour": "13:00",
-    "count": 11
+    "count": 10
    },
    {
     "hour": "14:00",
@@ -623,25 +623,25 @@
    },
    {
     "hour": "21:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T21:05:00.888",
-  "last_management": "2026-10-24T21:05:00.409"
+  "last_management": "2026-10-24T21:10:00.645"
  },
  "log_tail": [
-  "[2026-10-24T21:05:00.888Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T21:05:00.889Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.873819 SOL)",
-  "[2026-10-24T21:05:09.979Z] [SCREENING] Bot-holder filter: dropped BIBI-SOL \u2014 bots 44.52% > 30%",
   "[2026-10-24T21:05:09.979Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
   "[2026-10-24T21:05:15.649Z] [DEPLOY] Pool: Es8ZBYhvXRkAb7a8iEBRFy1nHJpiCiyiZ5b5RAKucFh1",
   "[2026-10-24T21:05:15.649Z] [DEPLOY] Strategy: bid_ask, Bins: -689 to -620 (69 bins)",
   "[2026-10-24T21:05:15.649Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-24T21:05:15.649Z] [DEPLOY] Position: FuEpeZDgE32wwMNMpVeMo27QQu7xYPHjbSLi268g9wYw",
   "[2026-10-24T21:05:16.703Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2XDbmrUoTukf7yJrtnAwNgiNSoo7bCAcs6TQV4hqxQiTJYFeXFp2jQxTdTLwBWc2sPf3RaHSiTc4GTfn31WQPZ3K",
-  "[2026-10-24T21:05:18.902Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-24T21:05:18.902Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-24T21:10:00.645Z] [CRON] Starting management cycle",
+  "[2026-10-24T21:10:00.954Z] [CRON] Screening skipped \u2014 insufficient SOL (0.282 < 1.58 needed for deploy + gas)",
+  "[2026-10-24T21:10:01.318Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T21:05:16.704Z"
+ "state_last_updated": "2026-10-24T21:11:58.960Z"
 }

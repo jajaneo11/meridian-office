@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T10:17:43.398095+00:00",
+ "generated_at": "2026-10-24T10:22:39.238513+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -387,16 +387,24 @@
   "today": 100,
   "today_real": 63,
   "by_type": {
-   "no_deploy": 39,
    "deploy": 10,
    "close": 9,
-   "skip": 42
+   "no_deploy": 38,
+   "skip": 43
   },
   "by_actor": {
    "SCREENER": 91,
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-24T10:20:00.433Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.077 < 0.76)"
+   },
    {
     "ts": "2026-10-24T10:15:01.284Z",
     "type": "skip",
@@ -484,14 +492,6 @@
     "pool_name": "mil-SOL",
     "summary": "Closed at 2.79%",
     "reason_short": "Trailing TP: peak 4.63% \u2192 current 2.76% (dropped 1.87% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-24T09:35:08.080Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DacityCoin-SOL (5Dc4s9fxxQoPfaMUaxFKB5v1Nh6FPqest7usgyvGXwWw) WHY SKIPPED Only one candidate survived, and it does not clear conviction bar. The narrative is still being generated (unavailable), and there are 0 smart wallets pres"
    }
   ]
  },
@@ -515,7 +515,7 @@
    },
    {
     "hour": "03:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "04:00",
@@ -543,25 +543,25 @@
    },
    {
     "hour": "10:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T09:55:00.515",
-  "last_management": "2026-10-24T10:15:00.980"
+  "last_management": "2026-10-24T10:20:00.186"
  },
  "log_tail": [
-  "[2026-10-24T10:00:00.989Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T10:05:00.439Z] [CRON] Starting management cycle",
-  "[2026-10-24T10:05:00.732Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:05:01.220Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:10:00.716Z] [CRON] Starting management cycle",
   "[2026-10-24T10:10:00.977Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:10:01.453Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:15:00.980Z] [CRON] Starting management cycle",
   "[2026-10-24T10:15:01.284Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:15:01.781Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T10:15:01.781Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T10:20:00.186Z] [CRON] Starting management cycle",
+  "[2026-10-24T10:20:00.432Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T10:20:00.904Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T10:15:47.080Z"
 }

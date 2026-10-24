@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T03:02:39.817619+00:00",
+ "generated_at": "2026-10-24T03:07:38.326162+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 12
+  "decisions_mentioning": 11
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.767369
+  "sol": 0.776913
  },
  "limits": {
   "max_positions": 3,
@@ -60,15 +60,6 @@
   "open_count": 2,
   "open": [
    {
-    "id": "FZ3Qcr3bjQP2ohUuSEG3EEcx83ABQVLmHXk96JDLeoe1",
-    "pool": "Moustache-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T01:57:20.974Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 0.69
-   },
-   {
     "id": "F8oitQi28CzkGN7cuGiPDWQPeTEWdnB3PwLizEE9pjnJ",
     "pool": "YMB-SOL",
     "closed": false,
@@ -76,16 +67,25 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": null
+   },
+   {
+    "id": "D1C4LtT7R1Wn4xRR67VPUJktPYceSKR9TwYgXZ2LFcSd",
+    "pool": "ELIZABETH-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T03:07:28.852Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 0.69
    }
   ],
-  "total_tracked": 20
+  "total_tracked": 21
  },
  "pnl": {
-  "last24h_usd": -0.06,
-  "fees24h_usd": 39.76,
-  "all_time_usd": -0.06,
-  "closed_total": 18,
-  "win_rate_pct": 67
+  "last24h_usd": 2.03,
+  "fees24h_usd": 45.07,
+  "all_time_usd": 2.03,
+  "closed_total": 19,
+  "win_rate_pct": 68
  },
  "pnl_trades": [
   {
@@ -267,24 +267,50 @@
    "amount_sol": 0.69,
    "minutes_held": 4,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "Moustache-SOL",
+   "recorded_at": "2026-10-24T03:07:09.280Z",
+   "pnl_usd": 2.09,
+   "pnl_pct": 2.96,
+   "fees_usd": 5.317587519564392,
+   "amount_sol": 0.69,
+   "minutes_held": 69,
+   "close_reason": "Trailing TP: peak 4.08% \u2192 current 2.53% (dropped 1.55% >= 1.5%)"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1008,
-  "today": 30,
-  "today_real": 14,
+  "total_real": 1009,
+  "today": 32,
+  "today_real": 15,
   "by_type": {
-   "no_deploy": 39,
-   "deploy": 15,
+   "no_deploy": 37,
+   "deploy": 16,
    "skip": 32,
-   "close": 14
+   "close": 15
   },
   "by_actor": {
-   "SCREENER": 86,
-   "MANAGER": 14
+   "SCREENER": 85,
+   "MANAGER": 15
   },
   "recent": [
+   {
+    "ts": "2026-10-24T03:07:28.853Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "ELIZABETH-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -648\u2192-579 around active bin -579"
+   },
+   {
+    "ts": "2026-10-24T03:07:09.289Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "Moustache-SOL",
+    "summary": "Closed at 2.96%",
+    "reason_short": "Trailing TP: peak 4.08% \u2192 current 2.53% (dropped 1.55% >= 1.5%)"
+   },
    {
     "ts": "2026-10-24T03:00:00.799Z",
     "type": "skip",
@@ -364,22 +390,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.213 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T02:00:00.463Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.213 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T01:57:20.975Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "Moustache-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -559\u2192-490 around active bin -490"
    }
   ]
  },
@@ -391,7 +401,7 @@
    },
    {
     "hour": "17:00",
-    "count": 8
+    "count": 6
    },
    {
     "hour": "18:00",
@@ -431,25 +441,25 @@
    },
    {
     "hour": "03:00",
-    "count": 1
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T02:25:14.457",
+  "last_screening": "2026-10-24T03:07:14.405",
   "last_management": "2026-10-24T03:00:00.497"
  },
  "log_tail": [
-  "[2026-10-24T02:40:01.322Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T02:40:01.636Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-24T02:40:01.990Z] [CRON] Screening skipped \u2014 insufficient SOL (0.035 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T02:50:00.059Z] [CRON] Starting management cycle",
-  "[2026-10-24T02:50:01.007Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T02:50:01.343Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-24T02:50:01.704Z] [CRON] Screening skipped \u2014 insufficient SOL (0.035 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T03:00:00.497Z] [CRON] Starting management cycle",
-  "[2026-10-24T03:00:00.798Z] [CRON] Screening skipped \u2014 insufficient SOL (0.035 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T03:00:01.232Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T03:06:59.525Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T03:07:14.141Z] [CRON] [Opportunity] ELIZABETH-SOL degen 98.7 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T03:07:14.405Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T03:07:14.406Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.776913 SOL)",
+  "[2026-10-24T03:07:27.589Z] [DEPLOY] Pool: Er9YGWW3pKaKoVA5xwmcB9EBbhc6b9itNoTsBuP8tirj",
+  "[2026-10-24T03:07:27.589Z] [DEPLOY] Strategy: bid_ask, Bins: -648 to -579 (69 bins)",
+  "[2026-10-24T03:07:27.590Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-24T03:07:27.590Z] [DEPLOY] Position: D1C4LtT7R1Wn4xRR67VPUJktPYceSKR9TwYgXZ2LFcSd",
+  "[2026-10-24T03:07:28.851Z] [DEPLOY] SUCCESS \u2014 1 tx(s): AY53Rwx6aNj5BobaMf9zKLxRPXELQ2qoVE1JAZf72vWPLPSHgFhqqZZ81Wpp2Dk37Qm3AA9LKQMpBGDAJJ3Wepd",
+  "[2026-10-24T03:07:30.604Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T03:01:59.472Z"
+ "state_last_updated": "2026-10-24T03:07:28.852Z"
 }

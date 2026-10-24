@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T14:02:40.622126+00:00",
+ "generated_at": "2026-10-24T14:07:39.846188+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.716365
+  "sol": 1.765113
  },
  "limits": {
   "max_positions": 3,
@@ -432,13 +432,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1077,
+  "total_real": 1078,
   "today": 100,
-  "today_real": 83,
+  "today_real": 84,
   "by_type": {
-   "skip": 44,
+   "skip": 43,
    "close": 10,
-   "no_deploy": 38,
+   "no_deploy": 39,
    "deploy": 8
   },
   "by_actor": {
@@ -446,6 +446,14 @@
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-24T14:05:10.067Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- Dacity-USDT: bot holders 44.28% > 30% - Dacity-SOL: bot holders 44.29% > 30% - Dacity-USDC: bot holders 44.29% > 30%"
+   },
    {
     "ts": "2026-10-24T14:00:28.921Z",
     "type": "close",
@@ -533,14 +541,6 @@
     "pool_name": "DacityCoin-SOL",
     "summary": "Deployed 1.55 SOL with bid_ask",
     "reason_short": "Chosen range -398\u2192-329 around active bin -329"
-   },
-   {
-    "ts": "2026-10-24T13:10:39.844Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "DacityCoin-SOL",
-    "summary": "Closed at 6.85%",
-    "reason_short": "Trailing TP: peak 4.04% \u2192 current 2.17% (dropped 1.87% >= 1.5%)"
    }
   ]
  },
@@ -564,7 +564,7 @@
    },
    {
     "hour": "07:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "08:00",
@@ -592,25 +592,25 @@
    },
    {
     "hour": "14:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T13:15:00.767",
-  "last_management": "2026-10-24T14:00:00.095"
+  "last_screening": "2026-10-24T14:05:00.940",
+  "last_management": "2026-10-24T14:05:00.352"
  },
  "log_tail": [
-  "[2026-10-24T13:50:00.760Z] [CRON] Starting management cycle",
-  "[2026-10-24T13:50:01.067Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T13:50:01.582Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T13:55:00.937Z] [CRON] Starting management cycle",
-  "[2026-10-24T13:55:01.319Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T13:55:01.680Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T14:00:00.095Z] [CRON] Starting management cycle",
-  "[2026-10-24T14:00:00.458Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T14:00:00.924Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T14:00:15.106Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-24T14:05:00.352Z] [CRON] Starting management cycle",
+  "[2026-10-24T14:05:00.937Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T14:05:00.937Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T14:05:00.940Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T14:05:00.940Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.765113 SOL)",
+  "[2026-10-24T14:05:01.171Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-24T14:05:01.172Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T14:05:10.066Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.28% > 30%",
+  "[2026-10-24T14:05:10.066Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 44.29% > 30%",
+  "[2026-10-24T14:05:10.066Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 44.29% > 30%"
  ],
  "state_last_updated": "2026-10-24T14:00:28.506Z"
 }

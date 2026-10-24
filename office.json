@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T06:57:40.368376+00:00",
+ "generated_at": "2026-10-24T07:02:39.084857+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
+  "open_count": 2,
   "open": [
    {
     "id": "BfdhvU6vMhb73RLYoaVySZM3EnAc5xns4g1wixhYvKiP",
@@ -67,9 +67,18 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": 120
+   },
+   {
+    "id": "9VEWeKWK7gTyfaNW4hWnFZM5PBPdCEYmxbM8iJzC6Gs6",
+    "pool": "mil-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T07:00:13.870Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 100
    }
   ],
-  "total_tracked": 27
+  "total_tracked": 28
  },
  "pnl": {
   "last24h_usd": 6.86,
@@ -342,12 +351,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1031,
-  "today": 83,
-  "today_real": 37,
+  "total_real": 1032,
+  "today": 84,
+  "today_real": 38,
   "by_type": {
-   "no_deploy": 29,
-   "deploy": 14,
+   "no_deploy": 28,
+   "deploy": 15,
    "skip": 43,
    "close": 14
   },
@@ -356,6 +365,14 @@
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T07:00:13.871Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "mil-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -618\u2192-558 around active bin -558"
+   },
    {
     "ts": "2026-10-24T06:55:06.565Z",
     "type": "no_deploy",
@@ -443,30 +460,18 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.089 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T06:05:00.966Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.089 < 0.74)"
    }
   ]
  },
  "activity": {
   "per_hour": [
    {
-    "hour": "19:00",
-    "count": 0
-   },
-   {
     "hour": "20:00",
     "count": 0
    },
    {
     "hour": "21:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "22:00",
@@ -503,24 +508,28 @@
    {
     "hour": "06:00",
     "count": 13
+   },
+   {
+    "hour": "07:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T06:55:01.534",
-  "last_management": "2026-10-24T06:55:00.888"
+  "last_screening": "2026-10-24T07:00:00.579",
+  "last_management": "2026-10-24T07:00:00.109"
  },
  "log_tail": [
-  "[2026-10-24T06:50:01.311Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T06:50:01.312Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.83997 SOL)",
-  "[2026-10-24T06:50:08.825Z] [AGENT] \u26d4 NO DEPLOY",
-  "deploy_position was blocked this session \u2014 the first attempt errored because no SOL amount (amount_y) was supplied, and the system prohibits retrying after a blocked attempt. No on-chain transaction executed, so I will not report a deploy. The mil-SOL pool itself was the strong pick (volatility 6.44, organic 72, smart wallet present, 100% past win rate), but the deployment could not be completed.",
-  "[2026-10-24T06:55:00.888Z] [CRON] Starting management cycle",
-  "[2026-10-24T06:55:01.534Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T06:55:01.535Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.83997 SOL)",
-  "[2026-10-24T06:55:01.576Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T06:55:02.008Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T06:55:06.564Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T07:00:00.579Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T07:00:00.579Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.83997 SOL)",
+  "[2026-10-24T07:00:00.838Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T07:00:00.846Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T07:00:07.958Z] [DEPLOY] Pool: FgJcpxAsqNH2dpQTYei3a7J22NyAuAniv6y81EZJGN9a",
+  "[2026-10-24T07:00:07.959Z] [DEPLOY] Strategy: bid_ask, Bins: -618 to -558 (60 bins)",
+  "[2026-10-24T07:00:07.959Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-24T07:00:07.959Z] [DEPLOY] Position: 9VEWeKWK7gTyfaNW4hWnFZM5PBPdCEYmxbM8iJzC6Gs6",
+  "[2026-10-24T07:00:13.869Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4XzfLMtNbCwiCA37tNYMn2zk5LbjLNBj4jC4mRDD3tcUPyocuqtdXjzRWYg9ipRKMqA4ZTGDTC9XmXsTjrk9X7J9",
+  "[2026-10-24T07:00:16.268Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T06:56:57.083Z"
+ "state_last_updated": "2026-10-24T07:02:21.247Z"
 }

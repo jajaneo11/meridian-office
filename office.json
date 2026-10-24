@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T10:42:40.413130+00:00",
+ "generated_at": "2026-10-24T10:47:39.167404+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -387,16 +387,32 @@
   "today": 100,
   "today_real": 63,
   "by_type": {
-   "deploy": 9,
-   "skip": 47,
    "close": 8,
-   "no_deploy": 36
+   "no_deploy": 36,
+   "deploy": 8,
+   "skip": 48
   },
   "by_actor": {
-   "SCREENER": 92,
-   "MANAGER": 8
+   "MANAGER": 8,
+   "SCREENER": 92
   },
   "recent": [
+   {
+    "ts": "2026-10-24T10:45:01.225Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.077 < 0.76)"
+   },
+   {
+    "ts": "2026-10-24T10:43:06.986Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.077 < 0.76)"
+   },
    {
     "ts": "2026-10-24T10:40:00.255Z",
     "type": "skip",
@@ -476,22 +492,6 @@
     "pool_name": "mil-SOL",
     "summary": "Deployed 0.73 SOL with bid_ask",
     "reason_short": "Chosen range -681\u2192-612 around active bin -612"
-   },
-   {
-    "ts": "2026-10-24T09:55:18.932Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "mil-SOL",
-    "summary": "Deployed 0.73 SOL with bid_ask",
-    "reason_short": "Chosen range -681\u2192-612 around active bin -612"
-   },
-   {
-    "ts": "2026-10-24T09:50:01.514Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Moustache-SOL: token cooldown active"
    }
   ]
  },
@@ -515,7 +515,7 @@
    },
    {
     "hour": "03:00",
-    "count": 5
+    "count": 3
    },
    {
     "hour": "04:00",
@@ -543,25 +543,25 @@
    },
    {
     "hour": "10:00",
-    "count": 9
+    "count": 11
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T09:55:00.515",
-  "last_management": "2026-10-24T10:40:00.001"
+  "last_management": "2026-10-24T10:45:00.930"
  },
  "log_tail": [
-  "[2026-10-24T10:25:01.142Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T10:30:00.562Z] [CRON] Starting management cycle",
-  "[2026-10-24T10:30:00.866Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:30:01.347Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T10:35:00.776Z] [CRON] Starting management cycle",
   "[2026-10-24T10:35:01.108Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:35:01.554Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:40:00.001Z] [CRON] Starting management cycle",
   "[2026-10-24T10:40:00.254Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:40:00.845Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T10:40:00.845Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T10:43:05.935Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-24T10:43:06.986Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T10:45:00.930Z] [CRON] Starting management cycle",
+  "[2026-10-24T10:45:01.224Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T10:45:01.615Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T10:34:20.275Z"
 }

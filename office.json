@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T09:42:39.215899+00:00",
+ "generated_at": "2026-10-24T09:47:39.370818+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 14
+  "decisions_mentioning": 15
  },
  "mode": {
   "dry_run": false,
@@ -362,20 +362,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1054,
+  "total_real": 1055,
   "today": 100,
-  "today_real": 60,
+  "today_real": 61,
   "by_type": {
-   "deploy": 10,
    "skip": 42,
    "close": 11,
-   "no_deploy": 37
+   "deploy": 9,
+   "no_deploy": 38
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-24T09:45:18.649Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE JEANPHIL-SOL (5u7PMsDxbaALbV9viti9Y4pEBVJqWSSp69uEsXGtiANq) WHY SKIPPED Despite solid headline metrics (fee/TVL 0.15, vol $22K, TVL $182K, volatility 9.15, fees 1477SOL \u2265 30) and healthy audit (top10 22%, bots 5.7%), this candida"
+   },
    {
     "ts": "2026-10-24T09:42:37.938Z",
     "type": "no_deploy",
@@ -463,14 +471,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.139 < 0.76)"
-   },
-   {
-    "ts": "2026-10-24T09:13:07.270Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.139 < 0.74)"
    }
   ]
  },
@@ -494,7 +494,7 @@
    },
    {
     "hour": "02:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "03:00",
@@ -522,25 +522,25 @@
    },
    {
     "hour": "09:00",
-    "count": 16
+    "count": 17
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T09:42:32.814",
-  "last_management": "2026-10-24T09:40:00.943"
+  "last_screening": "2026-10-24T09:45:01.051",
+  "last_management": "2026-10-24T09:45:00.489"
  },
  "log_tail": [
-  "[2026-10-24T09:40:01.600Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.620675 SOL)",
-  "[2026-10-24T09:40:01.767Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T09:40:08.857Z] [AGENT] \u26d4 NO DEPLOY",
-  "Deploy attempt failed with a real tool error.",
-  "- Called `deploy_position` for mil-SOL (FgJcpxAsqNH2dpQTYei3a7J22NyAuAniv6y81EZJGN9a), but the tool errored with `\"getWalletBalances is not defined\"` before opening any position.",
-  "- mil-SOL \u2014 deploy_position failed with internal SDK error (`getWalletBalances is not defined`); needs retry once tooling is healthy.",
   "[2026-10-24T09:42:31.385Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
   "[2026-10-24T09:42:32.814Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T09:42:32.814Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.620675 SOL)",
-  "[2026-10-24T09:42:37.937Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T09:42:37.937Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T09:45:00.489Z] [CRON] Starting management cycle",
+  "[2026-10-24T09:45:00.995Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T09:45:00.995Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T09:45:01.051Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T09:45:01.051Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.620675 SOL)",
+  "[2026-10-24T09:45:18.648Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T09:38:04.262Z"
 }

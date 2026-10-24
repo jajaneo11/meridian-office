@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T03:17:40.945909+00:00",
+ "generated_at": "2026-10-24T03:22:38.283169+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
+  "open_count": 2,
   "open": [
    {
     "id": "F8oitQi28CzkGN7cuGiPDWQPeTEWdnB3PwLizEE9pjnJ",
@@ -67,9 +67,18 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": null
+   },
+   {
+    "id": "7Gf4y1tridCgkZc58rucyr3ANg9cEf91dZJ2VCqT3Tbe",
+    "pool": "ELIZABETH-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T03:19:29.930Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null
    }
   ],
-  "total_tracked": 21
+  "total_tracked": 22
  },
  "pnl": {
   "last24h_usd": 2.21,
@@ -282,13 +291,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1010,
-  "today": 34,
-  "today_real": 16,
+  "total_real": 1011,
+  "today": 35,
+  "today_real": 17,
   "by_type": {
-   "skip": 32,
+   "skip": 31,
    "close": 16,
-   "deploy": 15,
+   "deploy": 16,
    "no_deploy": 37
   },
   "by_actor": {
@@ -296,6 +305,14 @@
    "MANAGER": 16
   },
   "recent": [
+   {
+    "ts": "2026-10-24T03:19:29.931Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "ELIZABETH-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -627\u2192-558 around active bin -558"
+   },
    {
     "ts": "2026-10-24T03:14:06.824Z",
     "type": "no_deploy",
@@ -383,14 +400,6 @@
     "pool_name": "TRUTH-SOL",
     "summary": "Closed at -0.23%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-24T02:14:54.274Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "TRUTH-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -700\u2192-631 around active bin -631"
    }
   ]
  },
@@ -402,7 +411,7 @@
    },
    {
     "hour": "17:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "18:00",
@@ -442,25 +451,25 @@
    },
    {
     "hour": "03:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T03:13:59.393",
-  "last_management": "2026-10-24T03:10:00.883"
+  "last_screening": "2026-10-24T03:19:14.893",
+  "last_management": "2026-10-24T03:20:00.364"
  },
  "log_tail": [
-  "[2026-10-24T03:07:30.604Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-24T03:10:00.883Z] [CRON] Starting management cycle",
-  "[2026-10-24T03:10:01.568Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T03:13:35.541Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T03:13:59.064Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T03:13:59.136Z] [CRON] [Opportunity] TRUTH-SOL degen 97.1 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-24T03:13:59.393Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T03:13:59.394Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.777642 SOL)",
-  "[2026-10-24T03:13:59.485Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T03:14:06.823Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T03:19:14.893Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.777642 SOL)",
+  "[2026-10-24T03:19:14.956Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T03:19:28.682Z] [DEPLOY] Pool: Er9YGWW3pKaKoVA5xwmcB9EBbhc6b9itNoTsBuP8tirj",
+  "[2026-10-24T03:19:28.682Z] [DEPLOY] Strategy: bid_ask, Bins: -627 to -558 (69 bins)",
+  "[2026-10-24T03:19:28.682Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-24T03:19:28.682Z] [DEPLOY] Position: 7Gf4y1tridCgkZc58rucyr3ANg9cEf91dZJ2VCqT3Tbe",
+  "[2026-10-24T03:19:29.929Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3NQqSQdenBWDvr6FiMKh6if2eBWSKyJLx41CNeT5hGkm3SSArTADKsgadDfYoy7Rnb5J1YqbkjtKxrWeNSjFFCsP",
+  "[2026-10-24T03:19:31.543Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-24T03:20:00.364Z] [CRON] Starting management cycle",
+  "[2026-10-24T03:20:01.036Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T03:16:59.552Z"
+ "state_last_updated": "2026-10-24T03:21:44.640Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T12:22:40.599034+00:00",
+ "generated_at": "2026-10-24T12:27:39.586707+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8294
    }
   ],
-  "decisions_mentioning": 14
+  "decisions_mentioning": 15
  },
  "mode": {
   "dry_run": false,
@@ -402,20 +402,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1072,
+  "total_real": 1073,
   "today": 100,
-  "today_real": 78,
+  "today_real": 79,
   "by_type": {
-   "close": 10,
    "deploy": 9,
-   "no_deploy": 41,
+   "no_deploy": 42,
+   "close": 9,
    "skip": 40
   },
   "by_actor": {
-   "MANAGER": 10,
-   "SCREENER": 90
+   "SCREENER": 91,
+   "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-24T12:25:10.386Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL (98zuZBUCvRJk4XCnA9G9ADzUehmfrGJdDL3bQ29ytKUv) WHY SKIPPED The single candidate fails three independent conviction gates at once: (1) no narrative \u2014 ChainInsight returns status \"generating\" with zero actual story, "
+   },
    {
     "ts": "2026-10-24T12:20:09.908Z",
     "type": "no_deploy",
@@ -503,14 +511,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- OpenSolana-SOL: bot holders 31.11% > 30%"
-   },
-   {
-    "ts": "2026-10-24T11:35:01.619Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- OpenSolana-SOL: bot holders 31.70% > 30%"
    }
   ]
  },
@@ -534,7 +534,7 @@
    },
    {
     "hour": "05:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "06:00",
@@ -562,25 +562,25 @@
    },
    {
     "hour": "12:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T12:20:00.930",
-  "last_management": "2026-10-24T12:20:00.352"
+  "last_screening": "2026-10-24T12:25:01.111",
+  "last_management": "2026-10-24T12:25:00.601"
  },
  "log_tail": [
-  "[2026-10-24T12:15:01.589Z] [SCREENING] Filtered cooldown token mil (3w67qwok)",
-  "[2026-10-24T12:15:35.319Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T12:19:34.418Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T12:20:00.352Z] [CRON] Starting management cycle",
-  "[2026-10-24T12:20:00.885Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T12:20:00.885Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-24T12:20:00.930Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T12:20:00.930Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.621605 SOL)",
   "[2026-10-24T12:20:01.098Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T12:20:09.908Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T12:20:09.908Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T12:25:00.601Z] [CRON] Starting management cycle",
+  "[2026-10-24T12:25:01.111Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T12:25:01.112Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.621605 SOL)",
+  "[2026-10-24T12:25:01.136Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T12:25:01.136Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T12:25:10.385Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T12:19:43.210Z"
 }

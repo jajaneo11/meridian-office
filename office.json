@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T02:07:43.046573+00:00",
+ "generated_at": "2026-10-24T02:12:39.646628+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,17 +57,8 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
+  "open_count": 1,
   "open": [
-   {
-    "id": "3KqgZCqELao1U6u7e3DS4xSwzQzXPRY1rxwFopREzZv9",
-    "pool": "McRib-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-23T22:05:35.379Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null
-   },
    {
     "id": "FZ3Qcr3bjQP2ohUuSEG3EEcx83ABQVLmHXk96JDLeoe1",
     "pool": "Moustache-SOL",
@@ -81,11 +72,11 @@
   "total_tracked": 18
  },
  "pnl": {
-  "last24h_usd": 15.79,
-  "fees24h_usd": 34.42,
-  "all_time_usd": 15.79,
-  "closed_total": 16,
-  "win_rate_pct": 75
+  "last24h_usd": 0.1,
+  "fees24h_usd": 39.75,
+  "all_time_usd": 0.1,
+  "closed_total": 17,
+  "win_rate_pct": 71
  },
  "pnl_trades": [
   {
@@ -247,24 +238,50 @@
    "amount_sol": 0.69,
    "minutes_held": 9,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "McRib-SOL",
+   "recorded_at": "2026-10-24T02:11:18.242Z",
+   "pnl_usd": -15.69,
+   "pnl_pct": -21.92,
+   "fees_usd": 5.338452449046993,
+   "amount_sol": 0.69,
+   "minutes_held": 245,
+   "close_reason": "Out of range for 30m (limit: 30m)"
   }
  ],
  "decisions": {
   "total": 100,
   "total_real": 1005,
-  "today": 20,
+  "today": 22,
   "today_real": 11,
   "by_type": {
-   "skip": 34,
-   "close": 13,
+   "skip": 33,
+   "close": 14,
    "no_deploy": 39,
    "deploy": 14
   },
   "by_actor": {
-   "SCREENER": 87,
-   "MANAGER": 13
+   "SCREENER": 86,
+   "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T02:11:18.250Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "McRib-SOL",
+    "summary": "Closed at -21.92%",
+    "reason_short": "Out of range for 30m (limit: 30m)"
+   },
+   {
+    "ts": "2026-10-24T02:10:01.780Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.213 < 0.74)"
+   },
    {
     "ts": "2026-10-24T02:00:00.463Z",
     "type": "skip",
@@ -344,22 +361,6 @@
     "pool_name": "Moustache-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -583\u2192-522 around active bin -522"
-   },
-   {
-    "ts": "2026-10-24T01:10:15.066Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "YMB-SOL",
-    "summary": "Closed at -0.86%",
-    "reason_short": "Trailing TP: peak 4.61% \u2192 current -0.55% (dropped 5.16% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-24T01:10:01.551Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.223 < 0.74)"
    }
   ]
  },
@@ -371,7 +372,7 @@
    },
    {
     "hour": "16:00",
-    "count": 6
+    "count": 4
    },
    {
     "hour": "17:00",
@@ -411,25 +412,25 @@
    },
    {
     "hour": "02:00",
-    "count": 1
+    "count": 3
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T01:57:08.429",
-  "last_management": "2026-10-24T02:00:00.170"
+  "last_management": "2026-10-24T02:10:00.642"
  },
  "log_tail": [
-  "[2026-10-24T01:57:08.429Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
-  "[2026-10-24T01:57:19.803Z] [DEPLOY] Pool: BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ",
-  "[2026-10-24T01:57:19.803Z] [DEPLOY] Strategy: bid_ask, Bins: -559 to -490 (69 bins)",
-  "[2026-10-24T01:57:19.804Z] [DEPLOY] Amount: 0 X, 0.69 Y",
-  "[2026-10-24T01:57:19.804Z] [DEPLOY] Position: FZ3Qcr3bjQP2ohUuSEG3EEcx83ABQVLmHXk96JDLeoe1",
   "[2026-10-24T01:57:20.973Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2DEQduqLPYp1NUqA7MPx8V4zQmEvQw57kHHKFsDt7xXTQMy8iZcwhCPrzSAG53L8dtuGsnRAqNnNMLkDx4McGgFP",
   "[2026-10-24T01:57:21.991Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-24T02:00:00.170Z] [CRON] Starting management cycle",
   "[2026-10-24T02:00:00.462Z] [CRON] Screening skipped \u2014 insufficient SOL (0.213 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T02:00:00.795Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T02:00:00.795Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T02:10:00.642Z] [CRON] Starting management cycle",
+  "[2026-10-24T02:10:01.272Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T02:10:01.498Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
+  "[2026-10-24T02:10:01.779Z] [CRON] Screening skipped \u2014 insufficient SOL (0.213 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T02:11:06.896Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-24T02:06:39.846Z"
+ "state_last_updated": "2026-10-24T02:12:36.936Z"
 }

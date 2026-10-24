@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T23:27:38.877637+00:00",
+ "generated_at": "2026-10-24T23:32:41.210919+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,26 +57,15 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "6KxdSH6YWducrnSxkEww4z2SNBEKKwJmSvLNQvjUQY4p",
-    "pool": "\u2588\u2588\u2588-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T23:20:17.530Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 250,
-    "amount_sol": 1.55
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 41
  },
  "pnl": {
-  "last24h_usd": 40.48,
-  "fees24h_usd": 100.78,
-  "all_time_usd": 52.45,
-  "closed_total": 40,
+  "last24h_usd": 40.79,
+  "fees24h_usd": 100.82,
+  "all_time_usd": 52.76,
+  "closed_total": 41,
   "win_rate_pct": 68
  },
  "pnl_trades": [
@@ -479,6 +468,16 @@
    "amount_sol": 1.55,
    "minutes_held": 117,
    "close_reason": "Trailing TP: peak 4.56% \u2192 current 3.03% (dropped 1.53% >= 1.5%)"
+  },
+  {
+   "pool": "\u2588\u2588\u2588-SOL",
+   "recorded_at": "2026-10-24T23:30:14.958Z",
+   "pnl_usd": 0.31,
+   "pnl_pct": 0.2,
+   "fees_usd": 0.04193833508154169,
+   "amount_sol": 1.55,
+   "minutes_held": 9,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
@@ -487,16 +486,32 @@
   "today": 100,
   "today_real": 92,
   "by_type": {
-   "skip": 91,
-   "close": 4,
+   "skip": 90,
+   "close": 5,
    "no_deploy": 1,
    "deploy": 4
   },
   "by_actor": {
-   "SCREENER": 96,
-   "MANAGER": 4
+   "SCREENER": 95,
+   "MANAGER": 5
   },
   "recent": [
+   {
+    "ts": "2026-10-24T23:30:14.963Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "\u2588\u2588\u2588-SOL",
+    "summary": "Closed at 0.20%",
+    "reason_short": "pumped far above range"
+   },
+   {
+    "ts": "2026-10-24T23:30:00.868Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.373 < 1.58)"
+   },
    {
     "ts": "2026-10-24T23:25:00.519Z",
     "type": "skip",
@@ -576,22 +591,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.340 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T22:40:00.693Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.340 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T22:35:00.469Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.340 < 1.58)"
    }
   ]
  },
@@ -611,7 +610,7 @@
    },
    {
     "hour": "15:00",
-    "count": 6
+    "count": 4
    },
    {
     "hour": "16:00",
@@ -643,7 +642,7 @@
    },
    {
     "hour": "23:00",
-    "count": 7
+    "count": 9
    }
   ]
  },
@@ -652,8 +651,6 @@
   "last_management": "2026-10-24T23:25:00.381"
  },
  "log_tail": [
-  "[2026-10-24T23:20:10.170Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.98% > 30%",
-  "[2026-10-24T23:20:16.294Z] [DEPLOY] Pool: HgEJs5LSjd3da5LTsTJXa3nXjT1oucdLemeUq6V1gbsS",
   "[2026-10-24T23:20:16.294Z] [DEPLOY] Strategy: bid_ask, Bins: -601 to -532 (69 bins)",
   "[2026-10-24T23:20:16.294Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-24T23:20:16.294Z] [DEPLOY] Position: 6KxdSH6YWducrnSxkEww4z2SNBEKKwJmSvLNQvjUQY4p",
@@ -661,7 +658,9 @@
   "[2026-10-24T23:20:19.200Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-24T23:25:00.381Z] [CRON] Starting management cycle",
   "[2026-10-24T23:25:00.519Z] [CRON] Screening skipped \u2014 insufficient SOL (0.373 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T23:25:01.008Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T23:25:01.008Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T23:30:00.564Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T23:30:00.867Z] [CRON] Screening skipped \u2014 insufficient SOL (0.373 < 1.58 needed for deploy + gas)"
  ],
- "state_last_updated": "2026-10-24T23:27:33.557Z"
+ "state_last_updated": "2026-10-24T23:30:14.715Z"
 }

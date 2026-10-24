@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T09:02:38.684926+00:00",
+ "generated_at": "2026-10-24T09:07:39.849731+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 13
+  "decisions_mentioning": 14
  },
  "mode": {
   "dry_run": false,
@@ -352,20 +352,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1048,
+  "total_real": 1049,
   "today": 100,
-  "today_real": 54,
+  "today_real": 55,
   "by_type": {
-   "deploy": 12,
    "close": 12,
-   "no_deploy": 39,
+   "no_deploy": 40,
+   "deploy": 11,
    "skip": 37
   },
   "by_actor": {
-   "SCREENER": 88,
-   "MANAGER": 12
+   "MANAGER": 12,
+   "SCREENER": 88
   },
   "recent": [
+   {
+    "ts": "2026-10-24T09:05:06.215Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OND0-USDC WHY SKIPPED OND0-USDC fails the hard bin-step gate: bin_step=50 is outside the required 80\u2013125 band, so it is ineligible for deployment regardless of its metrics. Additionally, the candidate has no usable narrative (sti"
+   },
    {
     "ts": "2026-10-24T09:00:01.648Z",
     "type": "no_deploy",
@@ -453,14 +461,6 @@
     "pool_name": "RAT-USDC",
     "summary": "Single candidate skipped",
     "reason_short": "token fees 4.35 SOL below minimum 30 SOL"
-   },
-   {
-    "ts": "2026-10-24T08:05:00.970Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
    }
   ]
  },
@@ -480,7 +480,7 @@
    },
    {
     "hour": "01:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "02:00",
@@ -512,25 +512,25 @@
    },
    {
     "hour": "09:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T09:00:01.247",
-  "last_management": "2026-10-24T09:00:00.464"
+  "last_screening": "2026-10-24T09:05:01.387",
+  "last_management": "2026-10-24T09:05:00.695"
  },
  "log_tail": [
-  "[2026-10-24T08:55:00.221Z] [CRON] Starting management cycle",
-  "[2026-10-24T08:55:00.922Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T08:55:00.922Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T08:55:00.957Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T08:55:01.089Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
   "[2026-10-24T08:55:01.091Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
   "[2026-10-24T09:00:00.464Z] [CRON] Starting management cycle",
   "[2026-10-24T09:00:01.247Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T09:00:01.248Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T09:00:01.310Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T09:00:01.310Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T09:05:00.695Z] [CRON] Starting management cycle",
+  "[2026-10-24T09:05:01.387Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T09:05:01.388Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
+  "[2026-10-24T09:05:01.533Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T09:05:06.215Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-24T08:29:38.405Z"
+ "state_last_updated": "2026-10-24T09:06:05.769Z"
 }

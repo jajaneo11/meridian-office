@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T04:42:38.981547+00:00",
+ "generated_at": "2026-10-24T04:47:55.070707+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -312,19 +312,27 @@
  "decisions": {
   "total": 100,
   "total_real": 1021,
-  "today": 52,
+  "today": 53,
   "today_real": 27,
   "by_type": {
-   "close": 14,
    "deploy": 15,
    "no_deploy": 37,
-   "skip": 34
+   "skip": 35,
+   "close": 13
   },
   "by_actor": {
-   "MANAGER": 14,
-   "SCREENER": 86
+   "SCREENER": 87,
+   "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T04:45:00.595Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.073 < 0.74)"
+   },
    {
     "ts": "2026-10-24T04:40:00.407Z",
     "type": "skip",
@@ -412,14 +420,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- BTC-SOL: bot holders 59.21% > 30%"
-   },
-   {
-    "ts": "2026-10-24T03:43:41.195Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "ELIZABETH-SOL",
-    "summary": "Closed at 1.17%",
-    "reason_short": "Trailing TP: peak 3.22% \u2192 current 0.94% (dropped 2.28% >= 1.5%)"
    }
   ]
  },
@@ -431,7 +431,7 @@
    },
    {
     "hour": "18:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "19:00",
@@ -471,25 +471,25 @@
    },
    {
     "hour": "04:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T04:20:00.984",
-  "last_management": "2026-10-24T04:40:00.058"
+  "last_management": "2026-10-24T04:45:00.318"
  },
  "log_tail": [
-  "[2026-10-24T04:25:01.199Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T04:30:00.637Z] [CRON] Starting management cycle",
-  "[2026-10-24T04:30:00.932Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
   "[2026-10-24T04:30:01.367Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T04:35:00.844Z] [CRON] Starting management cycle",
   "[2026-10-24T04:35:01.134Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
   "[2026-10-24T04:35:01.666Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T04:40:00.058Z] [CRON] Starting management cycle",
   "[2026-10-24T04:40:00.406Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T04:40:00.873Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T04:40:00.873Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T04:45:00.318Z] [CRON] Starting management cycle",
+  "[2026-10-24T04:45:00.595Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T04:45:01.057Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T04:40:49.535Z"
 }

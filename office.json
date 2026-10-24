@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T12:47:40.393274+00:00",
+ "generated_at": "2026-10-24T12:52:41.931964+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -417,16 +417,24 @@
   "today": 100,
   "today_real": 81,
   "by_type": {
-   "deploy": 8,
-   "skip": 44,
+   "skip": 45,
    "close": 8,
-   "no_deploy": 40
+   "no_deploy": 40,
+   "deploy": 7
   },
   "by_actor": {
    "SCREENER": 92,
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-24T12:50:00.406Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.848 < 1.58)"
+   },
    {
     "ts": "2026-10-24T12:45:01.205Z",
     "type": "skip",
@@ -514,14 +522,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL WHY SKIPPED This is the only candidate and it fails multiple conviction gates. The token has no narrative (still generating, 1m wait) and zero smart wallets present \u2014 that combination is a hard skip signal. Worse, "
-   },
-   {
-    "ts": "2026-10-24T12:08:18.096Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "PANGEA-SOL",
-    "summary": "Closed at -0.02%",
-    "reason_short": "pumped far above range"
    }
   ]
  },
@@ -549,7 +549,7 @@
    },
    {
     "hour": "06:00",
-    "count": 13
+    "count": 12
    },
    {
     "hour": "07:00",
@@ -573,25 +573,25 @@
    },
    {
     "hour": "12:00",
-    "count": 14
+    "count": 15
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T12:35:00.674",
-  "last_management": "2026-10-24T12:45:00.963"
+  "last_management": "2026-10-24T12:50:00.125"
  },
  "log_tail": [
-  "[2026-10-24T12:38:22.840Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-24T12:38:23.968Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.53 needed for deploy + gas)",
-  "[2026-10-24T12:39:01.670Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
   "[2026-10-24T12:39:02.542Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
   "[2026-10-24T12:40:00.718Z] [CRON] Starting management cycle",
   "[2026-10-24T12:40:00.996Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
   "[2026-10-24T12:40:01.416Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T12:45:00.963Z] [CRON] Starting management cycle",
   "[2026-10-24T12:45:01.204Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T12:45:01.666Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T12:45:01.666Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T12:50:00.125Z] [CRON] Starting management cycle",
+  "[2026-10-24T12:50:00.405Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
+  "[2026-10-24T12:50:00.780Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T12:47:20.072Z"
 }

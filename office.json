@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T12:17:39.969235+00:00",
+ "generated_at": "2026-10-24T12:22:40.599034+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.849715
+  "sol": 1.621605
  },
  "limits": {
   "max_positions": 3,
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "3MnUzyvTmrSKXyEFvrKRaYSxj5BACABie1ZrwrpshPDs",
-    "pool": "LARPCHECK-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T11:20:15.720Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 0.73,
-    "amount_sol": 0.73
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 33
  },
  "pnl": {
   "last24h_usd": 12.31,
   "fees24h_usd": 62.87,
   "all_time_usd": 12.33,
-  "closed_total": 32,
-  "win_rate_pct": 66
+  "closed_total": 33,
+  "win_rate_pct": 64
  },
  "pnl_trades": [
   {
@@ -399,24 +388,50 @@
    "amount_sol": 0.73,
    "minutes_held": 22,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "LARPCHECK-SOL",
+   "recorded_at": "2026-10-24T12:19:43.465Z",
+   "pnl_usd": 0,
+   "pnl_pct": -0.01,
+   "fees_usd": 4.3467533419252e-05,
+   "amount_sol": 0.73,
+   "minutes_held": 59,
+   "close_reason": "Out of range for 45m (limit: 45m)"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1071,
+  "total_real": 1072,
   "today": 100,
-  "today_real": 77,
+  "today_real": 78,
   "by_type": {
-   "no_deploy": 42,
-   "close": 9,
+   "close": 10,
    "deploy": 9,
+   "no_deploy": 41,
    "skip": 40
   },
   "by_actor": {
-   "SCREENER": 91,
-   "MANAGER": 9
+   "MANAGER": 10,
+   "SCREENER": 90
   },
   "recent": [
+   {
+    "ts": "2026-10-24T12:20:09.908Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL (98zuZBUCvRJk4XCnA9G9ADzUehmfrGJdDL3bQ29ytKUv) WHY SKIPPED This is the only surviving candidate, and it fails the core conviction gates. The narrative is null (still \"being generated\" = effectively no identifiable "
+   },
+   {
+    "ts": "2026-10-24T12:19:43.473Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "LARPCHECK-SOL",
+    "summary": "Closed at -0.01%",
+    "reason_short": "Out of range for 45m (limit: 45m)"
+   },
    {
     "ts": "2026-10-24T12:15:35.320Z",
     "type": "no_deploy",
@@ -496,22 +511,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- OpenSolana-SOL: bot holders 31.70% > 30%"
-   },
-   {
-    "ts": "2026-10-24T11:30:09.460Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- OpenSolana-SOL: bot holders 30.69% > 30%"
-   },
-   {
-    "ts": "2026-10-24T11:25:00.808Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
    }
   ]
  },
@@ -535,7 +534,7 @@
    },
    {
     "hour": "05:00",
-    "count": 9
+    "count": 7
    },
    {
     "hour": "06:00",
@@ -563,25 +562,25 @@
    },
    {
     "hour": "12:00",
-    "count": 5
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T12:15:00.807",
-  "last_management": "2026-10-24T12:15:00.161"
+  "last_screening": "2026-10-24T12:20:00.930",
+  "last_management": "2026-10-24T12:20:00.352"
  },
  "log_tail": [
-  "[2026-10-24T12:10:01.782Z] [SCREENING] Filtered cooldown token PANGEA (JAFqCQSp)",
-  "[2026-10-24T12:10:17.305Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T12:15:00.161Z] [CRON] Starting management cycle",
-  "[2026-10-24T12:15:00.807Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T12:15:00.807Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.849715 SOL)",
-  "[2026-10-24T12:15:00.948Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T12:15:01.584Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
-  "[2026-10-24T12:15:01.587Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
   "[2026-10-24T12:15:01.589Z] [SCREENING] Filtered cooldown token mil (3w67qwok)",
-  "[2026-10-24T12:15:35.319Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T12:15:35.319Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T12:19:34.418Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T12:20:00.352Z] [CRON] Starting management cycle",
+  "[2026-10-24T12:20:00.885Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T12:20:00.885Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T12:20:00.930Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T12:20:00.930Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.621605 SOL)",
+  "[2026-10-24T12:20:01.098Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T12:20:09.908Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-24T12:08:17.806Z"
+ "state_last_updated": "2026-10-24T12:19:43.210Z"
 }

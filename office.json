@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T14:17:40.602924+00:00",
+ "generated_at": "2026-10-24T14:22:40.828463+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 36
+  "open_count": 1,
+  "open": [
+   {
+    "id": "k8cv7W98gT3xZcjosqC82N3sQWwyX5jsDQdhg7Vzj6Z",
+    "pool": "\u30e4\u30ae-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T14:20:24.227Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.55
+   }
+  ],
+  "total_tracked": 37
  },
  "pnl": {
   "last24h_usd": 25.01,
@@ -432,20 +443,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1080,
+  "total_real": 1081,
   "today": 100,
-  "today_real": 86,
+  "today_real": 87,
   "by_type": {
-   "skip": 41,
    "close": 10,
+   "skip": 40,
    "no_deploy": 41,
-   "deploy": 8
+   "deploy": 9
   },
   "by_actor": {
-   "SCREENER": 90,
-   "MANAGER": 10
+   "MANAGER": 10,
+   "SCREENER": 90
   },
   "recent": [
+   {
+    "ts": "2026-10-24T14:20:24.229Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "\u30e4\u30ae-SOL",
+    "summary": "Deployed 1.55 SOL with bid_ask",
+    "reason_short": "Chosen range -577\u2192-521 around active bin -521"
+   },
    {
     "ts": "2026-10-24T14:15:13.392Z",
     "type": "no_deploy",
@@ -533,14 +552,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.124 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T13:25:00.946Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.124 < 1.58)"
    }
   ]
  },
@@ -564,7 +575,7 @@
    },
    {
     "hour": "07:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "08:00",
@@ -592,25 +603,25 @@
    },
    {
     "hour": "14:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T14:15:01.429",
-  "last_management": "2026-10-24T14:15:00.913"
+  "last_screening": "2026-10-24T14:20:00.686",
+  "last_management": "2026-10-24T14:20:00.165"
  },
  "log_tail": [
-  "[2026-10-24T14:10:01.327Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
-  "[2026-10-24T14:10:02.159Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.31% > 30%",
-  "[2026-10-24T14:10:06.106Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T14:15:00.913Z] [CRON] Starting management cycle",
-  "[2026-10-24T14:15:01.429Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T14:15:01.429Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.765113 SOL)",
-  "[2026-10-24T14:15:01.459Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T14:15:01.459Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T14:15:01.775Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
-  "[2026-10-24T14:15:13.391Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T14:20:00.686Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.765113 SOL)",
+  "[2026-10-24T14:20:00.843Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-24T14:20:00.845Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-24T14:20:00.850Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
+  "[2026-10-24T14:20:19.691Z] [DEPLOY] Pool: 9fm4XNjiNUXVQqu7d4X2iqjkhgftptcUvD2XbgheexAY",
+  "[2026-10-24T14:20:19.692Z] [DEPLOY] Strategy: bid_ask, Bins: -577 to -521 (56 bins)",
+  "[2026-10-24T14:20:19.692Z] [DEPLOY] Amount: 0 X, 1.55 Y",
+  "[2026-10-24T14:20:19.692Z] [DEPLOY] Position: k8cv7W98gT3xZcjosqC82N3sQWwyX5jsDQdhg7Vzj6Z",
+  "[2026-10-24T14:20:24.226Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 55YSj29zi8rCFqtUSQpFoF3wdvkXKZWrzqfFwx9ELarGoed9FHuk3JZcXgJrW75vGBjYH7UApDhFKZkRaiuZMbSp",
+  "[2026-10-24T14:20:25.635Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T14:00:28.506Z"
+ "state_last_updated": "2026-10-24T14:20:24.227Z"
 }

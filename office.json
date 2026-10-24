@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T00:57:39.376189+00:00",
+ "generated_at": "2026-10-24T01:02:42.620050+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -232,19 +232,27 @@
  "decisions": {
   "total": 100,
   "total_real": 997,
-  "today": 7,
+  "today": 8,
   "today_real": 3,
   "by_type": {
-   "deploy": 13,
-   "skip": 43,
+   "skip": 44,
    "close": 11,
-   "no_deploy": 33
+   "no_deploy": 33,
+   "deploy": 12
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-24T01:00:00.989Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.223 < 0.74)"
+   },
    {
     "ts": "2026-10-24T00:50:01.531Z",
     "type": "skip",
@@ -332,23 +340,11 @@
     "pool_name": "Moustache-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -583\u2192-514 around active bin -514"
-   },
-   {
-    "ts": "2026-10-23T23:45:17.996Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "PANGEA-SOL",
-    "summary": "Closed at 5.76%",
-    "reason_short": "Trailing TP: peak 9.18% \u2192 current 6.23% (dropped 2.95% >= 1.5%)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "13:00",
-    "count": 1
-   },
    {
     "hour": "14:00",
     "count": 6
@@ -392,24 +388,28 @@
    {
     "hour": "00:00",
     "count": 7
+   },
+   {
+    "hour": "01:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T00:11:23.224",
-  "last_management": "2026-10-24T00:50:00.245"
+  "last_management": "2026-10-24T01:00:00.661"
  },
  "log_tail": [
-  "[2026-10-24T00:30:00.779Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T00:30:01.326Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T00:40:00.885Z] [CRON] Starting management cycle",
-  "[2026-10-24T00:40:01.633Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T00:40:01.934Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
   "[2026-10-24T00:40:02.187Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
   "[2026-10-24T00:50:00.245Z] [CRON] Starting management cycle",
   "[2026-10-24T00:50:00.962Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T00:50:01.269Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-24T00:50:01.530Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)"
+  "[2026-10-24T00:50:01.530Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T01:00:00.661Z] [CRON] Starting management cycle",
+  "[2026-10-24T01:00:00.679Z] [CRON] Starting morning briefing",
+  "[2026-10-24T01:00:00.988Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T01:00:01.445Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T00:55:51.085Z"
+ "state_last_updated": "2026-10-24T01:00:12.119Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T07:57:39.748006+00:00",
+ "generated_at": "2026-10-24T08:02:39.716422+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -352,20 +352,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1035,
-  "today": 97,
-  "today_real": 41,
+  "total_real": 1036,
+  "today": 98,
+  "today_real": 42,
   "by_type": {
-   "close": 14,
-   "no_deploy": 30,
+   "no_deploy": 31,
    "deploy": 13,
-   "skip": 43
+   "skip": 43,
+   "close": 13
   },
   "by_actor": {
-   "MANAGER": 14,
-   "SCREENER": 86
+   "SCREENER": 87,
+   "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T08:00:12.774Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GP-SOL (8S2XFMPBNnUNBuzKTb1ZFC1B2DMJSRUFZQsbpSwFXhkx) WHY SKIPPED The only surviving candidate passes all hard gates (fee_tvl=0.107 above the 0.09 floor, volatility 8.44, bots 3.69%, bin_step 100), but it fails the judgment-based"
+   },
    {
     "ts": "2026-10-24T07:55:01.554Z",
     "type": "no_deploy",
@@ -453,23 +461,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.108 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T07:10:00.829Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.108 < 0.74)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "20:00",
-    "count": 0
-   },
    {
     "hour": "21:00",
     "count": 0
@@ -480,7 +476,7 @@
    },
    {
     "hour": "23:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "00:00",
@@ -513,24 +509,28 @@
    {
     "hour": "07:00",
     "count": 14
+   },
+   {
+    "hour": "08:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T07:55:01.406",
-  "last_management": "2026-10-24T07:55:00.734"
+  "last_screening": "2026-10-24T08:00:01.618",
+  "last_management": "2026-10-24T08:00:00.921"
  },
  "log_tail": [
-  "[2026-10-24T07:50:00.499Z] [CRON] Starting management cycle",
-  "[2026-10-24T07:50:01.172Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T07:50:01.203Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T07:50:01.203Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T07:50:01.371Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
-  "[2026-10-24T07:55:00.734Z] [CRON] Starting management cycle",
-  "[2026-10-24T07:55:01.406Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T07:55:01.407Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
   "[2026-10-24T07:55:01.415Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T07:55:01.554Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)"
+  "[2026-10-24T07:55:01.554Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
+  "[2026-10-24T08:00:00.921Z] [CRON] Starting management cycle",
+  "[2026-10-24T08:00:01.618Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T08:00:01.618Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
+  "[2026-10-24T08:00:01.639Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T08:00:02.712Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
+  "[2026-10-24T08:00:02.715Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
+  "[2026-10-24T08:00:02.888Z] [SCREENING] PVP guard: GP-SOL has active rival Graphite (31k88G5M)",
+  "[2026-10-24T08:00:12.773Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T07:44:55.062Z"
 }

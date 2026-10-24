@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T12:27:39.586707+00:00",
+ "generated_at": "2026-10-24T12:32:40.716947+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8294
    }
   ],
-  "decisions_mentioning": 15
+  "decisions_mentioning": 16
  },
  "mode": {
   "dry_run": false,
@@ -402,13 +402,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1073,
+  "total_real": 1074,
   "today": 100,
-  "today_real": 79,
+  "today_real": 80,
   "by_type": {
-   "deploy": 9,
-   "no_deploy": 42,
+   "no_deploy": 43,
    "close": 9,
+   "deploy": 8,
    "skip": 40
   },
   "by_actor": {
@@ -416,6 +416,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-24T12:30:14.603Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL WHY SKIPPED Only one candidate survived, and it fails the two-signal conviction test. The narrative is unavailable (still generating) and there are 0 smart wallets in the pool \u2014 per risk signals, \"no narrative + no"
+   },
    {
     "ts": "2026-10-24T12:25:10.386Z",
     "type": "no_deploy",
@@ -503,14 +511,6 @@
     "pool_name": "PANGEA-SOL",
     "summary": "Deployed 0.73 SOL with bid_ask",
     "reason_short": "Chosen range -1226\u2192-1170 around active bin -1170"
-   },
-   {
-    "ts": "2026-10-24T11:40:09.989Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- OpenSolana-SOL: bot holders 31.11% > 30%"
    }
   ]
  },
@@ -534,7 +534,7 @@
    },
    {
     "hour": "05:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "06:00",
@@ -562,25 +562,25 @@
    },
    {
     "hour": "12:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T12:25:01.111",
-  "last_management": "2026-10-24T12:25:00.601"
+  "last_screening": "2026-10-24T12:30:01.464",
+  "last_management": "2026-10-24T12:30:00.864"
  },
  "log_tail": [
-  "[2026-10-24T12:20:00.930Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T12:20:00.930Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.621605 SOL)",
-  "[2026-10-24T12:20:01.098Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T12:20:09.908Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T12:25:00.601Z] [CRON] Starting management cycle",
-  "[2026-10-24T12:25:01.111Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T12:25:01.112Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.621605 SOL)",
-  "[2026-10-24T12:25:01.136Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T12:25:01.136Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T12:25:10.385Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T12:30:00.864Z] [CRON] Starting management cycle",
+  "[2026-10-24T12:30:01.401Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T12:30:01.401Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T12:30:01.464Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T12:30:01.464Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.621605 SOL)",
+  "[2026-10-24T12:30:10.054Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T12:30:10.055Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T12:30:10.065Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T12:30:10.070Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T12:30:14.603Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T12:19:43.210Z"
 }

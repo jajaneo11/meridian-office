@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:47:40.534289+00:00",
+ "generated_at": "2026-10-24T05:52:38.761238+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.554398
+  "sol": 0.822488
  },
  "limits": {
   "max_positions": 3,
@@ -332,9 +332,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1026,
-  "today": 68,
-  "today_real": 32,
+  "total_real": 1027,
+  "today": 69,
+  "today_real": 33,
   "by_type": {
    "no_deploy": 34,
    "deploy": 14,
@@ -346,6 +346,14 @@
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T05:50:10.571Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mil-SOL WHY SKIPPED mil-SOL has strong raw mechanics \u2014 fee/TVL at 1.21, positive volatility (4.53), low top10 concentration (18.65%), healthy 53.5 SOL in network fees, and explosive 1h momentum (+110%). But it fails both hard ris"
+   },
    {
     "ts": "2026-10-24T05:45:12.764Z",
     "type": "deploy",
@@ -433,14 +441,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T05:05:00.404Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.073 < 0.74)"
    }
   ]
  },
@@ -456,7 +456,7 @@
    },
    {
     "hour": "20:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "21:00",
@@ -492,25 +492,25 @@
    },
    {
     "hour": "05:00",
-    "count": 13
+    "count": 14
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T05:45:01.314",
-  "last_management": "2026-10-24T05:45:00.759"
+  "last_screening": "2026-10-24T05:50:00.814",
+  "last_management": "2026-10-24T05:50:00.004"
  },
  "log_tail": [
-  "[2026-10-24T05:45:01.256Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T05:45:01.256Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T05:45:01.314Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T05:45:01.315Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 1.554398 SOL)",
-  "[2026-10-24T05:45:08.285Z] [DEPLOY] Pool: GA7aoowCQ5oVycYXte61C3kdri7oZ56HuJwNUGkygx3",
-  "[2026-10-24T05:45:08.285Z] [DEPLOY] Strategy: bid_ask, Bins: -617 to -562 (55 bins)",
   "[2026-10-24T05:45:08.285Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-24T05:45:08.285Z] [DEPLOY] Position: BfdhvU6vMhb73RLYoaVySZM3EnAc5xns4g1wixhYvKiP",
   "[2026-10-24T05:45:12.762Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 8VUBuiMd8JNzf4vNMijYYaDyXtZdzZJpTeZqohDDWr8QSREPUdGUG3SNWNHBMcZmFFAQ7pCWUF2JFfKXX5fGZkP",
-  "[2026-10-24T05:45:14.438Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-24T05:45:14.438Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-24T05:50:00.004Z] [CRON] Starting management cycle",
+  "[2026-10-24T05:50:00.814Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T05:50:00.814Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.822488 SOL)",
+  "[2026-10-24T05:50:00.879Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T05:50:02.060Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T05:50:10.570Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-24T05:46:53.272Z"
+ "state_last_updated": "2026-10-24T05:50:47.345Z"
 }

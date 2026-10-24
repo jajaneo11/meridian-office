@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T11:17:39.524303+00:00",
+ "generated_at": "2026-10-24T11:22:40.182562+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 31
+  "open_count": 1,
+  "open": [
+   {
+    "id": "3MnUzyvTmrSKXyEFvrKRaYSxj5BACABie1ZrwrpshPDs",
+    "pool": "LARPCHECK-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T11:20:15.720Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 0.73,
+    "amount_sol": 0.73
+   }
+  ],
+  "total_tracked": 32
  },
  "pnl": {
   "last24h_usd": 12.35,
@@ -382,20 +393,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1063,
+  "total_real": 1064,
   "today": 100,
-  "today_real": 69,
+  "today_real": 70,
   "by_type": {
-   "skip": 48,
+   "skip": 47,
    "close": 9,
    "no_deploy": 36,
-   "deploy": 7
+   "deploy": 8
   },
   "by_actor": {
    "SCREENER": 91,
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-24T11:20:15.722Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "LARPCHECK-SOL",
+    "summary": "Deployed 0.73 SOL with bid_ask",
+    "reason_short": "Chosen range -578\u2192-510 around active bin -510"
+   },
    {
     "ts": "2026-10-24T11:15:01.287Z",
     "type": "no_deploy",
@@ -483,14 +502,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.077 < 0.76)"
-   },
-   {
-    "ts": "2026-10-24T10:35:01.110Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.077 < 0.76)"
    }
   ]
  },
@@ -514,7 +525,7 @@
    },
    {
     "hour": "04:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "05:00",
@@ -542,25 +553,25 @@
    },
    {
     "hour": "11:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T11:15:01.109",
-  "last_management": "2026-10-24T11:15:00.536"
+  "last_screening": "2026-10-24T11:20:01.323",
+  "last_management": "2026-10-24T11:20:00.809"
  },
  "log_tail": [
-  "[2026-10-24T11:10:00.799Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.623134 SOL)",
-  "[2026-10-24T11:10:00.802Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T11:10:00.802Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T11:10:00.991Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T11:10:13.575Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T11:15:00.536Z] [CRON] Starting management cycle",
-  "[2026-10-24T11:15:01.109Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T11:15:01.109Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.623134 SOL)",
-  "[2026-10-24T11:15:01.132Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T11:15:01.132Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-24T11:20:09.430Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T11:20:09.430Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T11:20:09.441Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T11:20:09.462Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T11:20:14.450Z] [DEPLOY] Pool: CFUQ2B52zM65UkNr7ZVr12TfwuNbmgmMwzfT8R7Xn3ZG",
+  "[2026-10-24T11:20:14.451Z] [DEPLOY] Strategy: bid_ask, Bins: -578 to -510 (68 bins)",
+  "[2026-10-24T11:20:14.451Z] [DEPLOY] Amount: 0 X, 0.73 Y",
+  "[2026-10-24T11:20:14.451Z] [DEPLOY] Position: 3MnUzyvTmrSKXyEFvrKRaYSxj5BACABie1ZrwrpshPDs",
+  "[2026-10-24T11:20:15.719Z] [DEPLOY] SUCCESS \u2014 1 tx(s): T93tthRnUHu28Kk2rZGBH6QmmtGStfTEwSLwR8PxDw61L5hPh7WPgNLHqJeqjKaKPTTDn3Lr32H5x6bpfoa1E2f",
+  "[2026-10-24T11:20:17.941Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T10:48:22.391Z"
+ "state_last_updated": "2026-10-24T11:20:15.720Z"
 }

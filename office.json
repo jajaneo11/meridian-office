@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T09:47:39.370818+00:00",
+ "generated_at": "2026-10-24T09:52:40.061422+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,24 +7,24 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 27,
-  "total_value_usd": 139437,
+  "active_24h": 39,
+  "total_value_usd": 145700,
   "total_activity": 390,
   "top": [
    {
     "name": "Multihours Long LP",
     "category": "Multihours",
-    "value_usd": 24230
+    "value_usd": 24208
    },
    {
     "name": "Multihours Long LP",
     "category": "Multihours",
-    "value_usd": 15675
+    "value_usd": 16109
    },
    {
     "name": "Long #6",
     "category": "alpha",
-    "value_usd": 8987
+    "value_usd": 10334
    },
    {
     "name": "Multihours Long LP",
@@ -34,7 +34,7 @@
    {
     "name": "Degen Fast LP",
     "category": "Degen",
-    "value_usd": 7580
+    "value_usd": 8294
    }
   ],
   "decisions_mentioning": 15
@@ -362,20 +362,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1055,
+  "total_real": 1056,
   "today": 100,
-  "today_real": 61,
+  "today_real": 62,
   "by_type": {
-   "skip": 42,
+   "skip": 41,
    "close": 11,
    "deploy": 9,
-   "no_deploy": 38
+   "no_deploy": 39
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-24T09:50:01.514Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- Moustache-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-24T09:45:18.649Z",
     "type": "no_deploy",
@@ -463,14 +471,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.139 < 0.76)"
-   },
-   {
-    "ts": "2026-10-24T09:13:54.243Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.139 < 0.76)"
    }
   ]
  },
@@ -494,7 +494,7 @@
    },
    {
     "hour": "02:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "03:00",
@@ -522,25 +522,25 @@
    },
    {
     "hour": "09:00",
-    "count": 17
+    "count": 18
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T09:45:01.051",
-  "last_management": "2026-10-24T09:45:00.489"
+  "last_screening": "2026-10-24T09:50:01.285",
+  "last_management": "2026-10-24T09:50:00.732"
  },
  "log_tail": [
-  "[2026-10-24T09:42:31.385Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-24T09:42:32.814Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T09:42:32.814Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.620675 SOL)",
-  "[2026-10-24T09:42:37.937Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T09:45:00.489Z] [CRON] Starting management cycle",
-  "[2026-10-24T09:45:00.995Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-24T09:45:00.995Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-24T09:45:01.051Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T09:45:01.051Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.620675 SOL)",
-  "[2026-10-24T09:45:18.648Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T09:45:18.648Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T09:50:00.732Z] [CRON] Starting management cycle",
+  "[2026-10-24T09:50:01.217Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T09:50:01.217Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T09:50:01.285Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T09:50:01.285Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.620675 SOL)",
+  "[2026-10-24T09:50:01.513Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)"
  ],
  "state_last_updated": "2026-10-24T09:38:04.262Z"
 }

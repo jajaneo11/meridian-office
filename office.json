@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:02:42.620050+00:00",
+ "generated_at": "2026-10-24T01:12:40.503245+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
+  "open_count": 1,
   "open": [
    {
     "id": "3KqgZCqELao1U6u7e3DS4xSwzQzXPRY1rxwFopREzZv9",
@@ -67,25 +67,16 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": null
-   },
-   {
-    "id": "UUj2VjEJmKGfrwfj2bfD4GTgwLSSrbg2SqiDgeHQhSK",
-    "pool": "YMB-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T00:12:07.906Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 0.69
    }
   ],
   "total_tracked": 16
  },
  "pnl": {
-  "last24h_usd": 16.3,
-  "fees24h_usd": 30.53,
-  "all_time_usd": 16.3,
-  "closed_total": 14,
-  "win_rate_pct": 79
+  "last24h_usd": 15.69,
+  "fees24h_usd": 34.39,
+  "all_time_usd": 15.69,
+  "closed_total": 15,
+  "win_rate_pct": 73
  },
  "pnl_trades": [
   {
@@ -227,24 +218,50 @@
    "amount_sol": 0.69,
    "minutes_held": 3,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "YMB-SOL",
+   "recorded_at": "2026-10-24T01:10:15.052Z",
+   "pnl_usd": -0.61,
+   "pnl_pct": -0.86,
+   "fees_usd": 3.8629879557633706,
+   "amount_sol": 0.69,
+   "minutes_held": 58,
+   "close_reason": "Trailing TP: peak 4.61% \u2192 current -0.55% (dropped 5.16% >= 1.5%)"
   }
  ],
  "decisions": {
   "total": 100,
   "total_real": 997,
-  "today": 8,
+  "today": 10,
   "today_real": 3,
   "by_type": {
-   "skip": 44,
-   "close": 11,
+   "skip": 43,
+   "close": 12,
    "no_deploy": 33,
    "deploy": 12
   },
   "by_actor": {
-   "SCREENER": 89,
-   "MANAGER": 11
+   "SCREENER": 88,
+   "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-24T01:10:15.066Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "YMB-SOL",
+    "summary": "Closed at -0.86%",
+    "reason_short": "Trailing TP: peak 4.61% \u2192 current -0.55% (dropped 5.16% >= 1.5%)"
+   },
+   {
+    "ts": "2026-10-24T01:10:01.551Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.223 < 0.74)"
+   },
    {
     "ts": "2026-10-24T01:00:00.989Z",
     "type": "skip",
@@ -324,22 +341,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Moustache-SOL (BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ) WHY SKIPPED The screening selected Moustache-SOL as the highest-conviction candidate (bin_step=100, volatility 6.72, fees 55.96 SOL > 30 gate, fee_tvl 0.38 > 0.06 floor"
-   },
-   {
-    "ts": "2026-10-23T23:49:57.202Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "Moustache-SOL",
-    "summary": "Closed at 0.30%",
-    "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-23T23:46:06.848Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "Moustache-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -583\u2192-514 around active bin -514"
    }
   ]
  },
@@ -347,7 +348,7 @@
   "per_hour": [
    {
     "hour": "14:00",
-    "count": 6
+    "count": 4
    },
    {
     "hour": "15:00",
@@ -391,25 +392,25 @@
    },
    {
     "hour": "01:00",
-    "count": 1
+    "count": 3
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T00:11:23.224",
-  "last_management": "2026-10-24T01:00:00.661"
+  "last_management": "2026-10-24T01:10:00.164"
  },
  "log_tail": [
-  "[2026-10-24T00:40:01.934Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-24T00:40:02.187Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T00:50:00.245Z] [CRON] Starting management cycle",
-  "[2026-10-24T00:50:00.962Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T00:50:01.269Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
   "[2026-10-24T00:50:01.530Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
   "[2026-10-24T01:00:00.661Z] [CRON] Starting management cycle",
   "[2026-10-24T01:00:00.679Z] [CRON] Starting morning briefing",
   "[2026-10-24T01:00:00.988Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T01:00:01.445Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T01:00:01.445Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T01:10:00.164Z] [CRON] Starting management cycle",
+  "[2026-10-24T01:10:00.994Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T01:10:01.278Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
+  "[2026-10-24T01:10:01.551Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T01:10:06.199Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-24T01:00:12.119Z"
+ "state_last_updated": "2026-10-24T01:10:14.806Z"
 }

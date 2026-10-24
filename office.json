@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T13:07:39.613118+00:00",
+ "generated_at": "2026-10-24T13:12:40.719534+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "5uE9MxGmEgnzs41Tnm6AUEUfSzji2VNPEeWd9apTB9jJ",
-    "pool": "DacityCoin-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T13:00:33.727Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 1.55
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 35
  },
  "pnl": {
-  "last24h_usd": 12.17,
-  "fees24h_usd": 62.89,
-  "all_time_usd": 12.24,
-  "closed_total": 34,
-  "win_rate_pct": 62
+  "last24h_usd": 22.94,
+  "fees24h_usd": 75.32,
+  "all_time_usd": 23.01,
+  "closed_total": 35,
+  "win_rate_pct": 63
  },
  "pnl_trades": [
   {
@@ -419,6 +408,16 @@
    "amount_sol": 0.73,
    "minutes_held": 22,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "DacityCoin-SOL",
+   "recorded_at": "2026-10-24T13:10:39.834Z",
+   "pnl_usd": 10.77,
+   "pnl_pct": 6.85,
+   "fees_usd": 12.436281016976631,
+   "amount_sol": 1.55,
+   "minutes_held": 10,
+   "close_reason": "Trailing TP: peak 4.04% \u2192 current 2.17% (dropped 1.87% >= 1.5%)"
   }
  ],
  "decisions": {
@@ -427,16 +426,32 @@
   "today": 100,
   "today_real": 82,
   "by_type": {
-   "skip": 43,
-   "close": 9,
+   "skip": 42,
+   "close": 10,
    "no_deploy": 40,
    "deploy": 8
   },
   "by_actor": {
-   "SCREENER": 91,
-   "MANAGER": 9
+   "SCREENER": 90,
+   "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-24T13:10:39.844Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "DacityCoin-SOL",
+    "summary": "Closed at 6.85%",
+    "reason_short": "Trailing TP: peak 4.04% \u2192 current 2.17% (dropped 1.87% >= 1.5%)"
+   },
+   {
+    "ts": "2026-10-24T13:10:01.244Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.052 < 1.58)"
+   },
    {
     "ts": "2026-10-24T13:05:00.979Z",
     "type": "skip",
@@ -516,22 +531,6 @@
     "pool_name": "DacityCoin-SOL",
     "summary": "Deployed 0.73 SOL with bid_ask",
     "reason_short": "Chosen range -477\u2192-408 around active bin -408"
-   },
-   {
-    "ts": "2026-10-24T12:30:14.603Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL WHY SKIPPED Only one candidate survived, and it fails the two-signal conviction test. The narrative is unavailable (still generating) and there are 0 smart wallets in the pool \u2014 per risk signals, \"no narrative + no"
-   },
-   {
-    "ts": "2026-10-24T12:25:10.386Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL (98zuZBUCvRJk4XCnA9G9ADzUehmfrGJdDL3bQ29ytKUv) WHY SKIPPED The single candidate fails three independent conviction gates at once: (1) no narrative \u2014 ChainInsight returns status \"generating\" with zero actual story, "
    }
   ]
  },
@@ -555,7 +554,7 @@
    },
    {
     "hour": "06:00",
-    "count": 8
+    "count": 6
    },
    {
     "hour": "07:00",
@@ -583,25 +582,25 @@
    },
    {
     "hour": "13:00",
-    "count": 2
+    "count": 4
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T13:00:01.085",
-  "last_management": "2026-10-24T13:05:00.711"
+  "last_management": "2026-10-24T13:10:00.954"
  },
  "log_tail": [
-  "[2026-10-24T13:00:11.135Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 43.15% > 30%",
-  "[2026-10-24T13:00:23.748Z] [DEPLOY] Pool: 5Dc4s9fxxQoPfaMUaxFKB5v1Nh6FPqest7usgyvGXwWw",
-  "[2026-10-24T13:00:23.748Z] [DEPLOY] Strategy: bid_ask, Bins: -392 to -323 (69 bins)",
-  "[2026-10-24T13:00:23.748Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-24T13:00:23.748Z] [DEPLOY] Position: 5uE9MxGmEgnzs41Tnm6AUEUfSzji2VNPEeWd9apTB9jJ",
   "[2026-10-24T13:00:33.725Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5kuz88Ys6F4knuRjD3XLhTVbjKL3rU4LbbGjsRpBifWGjrp3JkjnUN1daADjvztpXN6NFfLa4riEa1inn4aoK9nf",
   "[2026-10-24T13:00:35.739Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-24T13:05:00.711Z] [CRON] Starting management cycle",
   "[2026-10-24T13:05:00.979Z] [CRON] Screening skipped \u2014 insufficient SOL (0.028 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T13:05:01.449Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-24T13:05:01.449Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T13:10:00.954Z] [CRON] Starting management cycle",
+  "[2026-10-24T13:10:01.243Z] [CRON] Screening skipped \u2014 insufficient SOL (0.052 < 1.58 needed for deploy + gas)",
+  "[2026-10-24T13:10:01.706Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T13:10:26.317Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-24T13:05:02.372Z"
+ "state_last_updated": "2026-10-24T13:10:39.534Z"
 }

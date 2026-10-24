@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T09:07:39.849731+00:00",
+ "generated_at": "2026-10-24T09:12:39.801400+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
+  "open_count": 2,
   "open": [
    {
     "id": "9VEWeKWK7gTyfaNW4hWnFZM5PBPdCEYmxbM8iJzC6Gs6",
@@ -67,9 +67,18 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": 100
+   },
+   {
+    "id": "ASKMUFBCFesxUd8uE8Abe5sHFpE4o83Q1YRVoCbEEh3b",
+    "pool": "PANGEA-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T09:10:24.006Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 100
    }
   ],
-  "total_tracked": 28
+  "total_tracked": 29
  },
  "pnl": {
   "last24h_usd": 9.67,
@@ -352,20 +361,36 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1049,
+  "total_real": 1050,
   "today": 100,
-  "today_real": 55,
+  "today_real": 56,
   "by_type": {
-   "close": 12,
-   "no_deploy": 40,
-   "deploy": 11,
-   "skip": 37
+   "no_deploy": 39,
+   "deploy": 12,
+   "skip": 38,
+   "close": 11
   },
   "by_actor": {
-   "MANAGER": 12,
-   "SCREENER": 88
+   "SCREENER": 89,
+   "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-24T09:11:31.853Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.139 < 0.78)"
+   },
+   {
+    "ts": "2026-10-24T09:10:24.008Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "PANGEA-SOL",
+    "summary": "Deployed 0.69 SOL with bid_ask",
+    "reason_short": "Chosen range -1266\u2192-1205 around active bin -1205"
+   },
    {
     "ts": "2026-10-24T09:05:06.215Z",
     "type": "no_deploy",
@@ -445,22 +470,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE fone-SOL WHY SKIPPED All three candidates fail the core conviction gate: every pool has zero smart wallets present and no usable narrative (all returned \"Narrative is being generated\" \u2014 no real story, catalyst, or named entity). "
-   },
-   {
-    "ts": "2026-10-24T08:15:01.385Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
-   },
-   {
-    "ts": "2026-10-24T08:10:02.014Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": "RAT-USDC",
-    "summary": "Single candidate skipped",
-    "reason_short": "token fees 4.35 SOL below minimum 30 SOL"
    }
   ]
  },
@@ -480,7 +489,7 @@
    },
    {
     "hour": "01:00",
-    "count": 8
+    "count": 6
    },
    {
     "hour": "02:00",
@@ -512,25 +521,25 @@
    },
    {
     "hour": "09:00",
-    "count": 2
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T09:05:01.387",
-  "last_management": "2026-10-24T09:05:00.695"
+  "last_screening": "2026-10-24T09:10:01.763",
+  "last_management": "2026-10-24T09:10:00.854"
  },
  "log_tail": [
-  "[2026-10-24T08:55:01.091Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
-  "[2026-10-24T09:00:00.464Z] [CRON] Starting management cycle",
-  "[2026-10-24T09:00:01.247Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T09:00:01.248Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T09:00:01.310Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T09:05:00.695Z] [CRON] Starting management cycle",
-  "[2026-10-24T09:05:01.387Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T09:05:01.388Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T09:05:01.533Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T09:05:06.215Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T09:10:01.763Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
+  "[2026-10-24T09:10:01.929Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T09:10:20.329Z] [DEPLOY] Pool: H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX",
+  "[2026-10-24T09:10:20.329Z] [DEPLOY] Strategy: bid_ask, Bins: -1266 to -1205 (61 bins)",
+  "[2026-10-24T09:10:20.329Z] [DEPLOY] Amount: 0 X, 0.69 Y",
+  "[2026-10-24T09:10:20.329Z] [DEPLOY] Position: ASKMUFBCFesxUd8uE8Abe5sHFpE4o83Q1YRVoCbEEh3b",
+  "[2026-10-24T09:10:24.005Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5kYTZB4WHhD2fZfgakGRrbCzN1TCDnKe84LFxipiHu71AG1Ze1xGPaMRbh2x3zQ7oatTHnbD8RaF615YstJ42pWh",
+  "[2026-10-24T09:10:25.352Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-24T09:11:30.861Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-24T09:11:31.852Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.78 needed for deploy + gas)"
  ],
- "state_last_updated": "2026-10-24T09:06:05.769Z"
+ "state_last_updated": "2026-10-24T09:12:17.291Z"
 }

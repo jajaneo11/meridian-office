@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T09:32:40.252868+00:00",
+ "generated_at": "2026-10-24T09:37:43.411260+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 29,
+  "active_24h": 27,
   "total_value_usd": 139437,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 13
+  "decisions_mentioning": 14
  },
  "mode": {
   "dry_run": false,
@@ -52,7 +52,7 @@
  },
  "limits": {
   "max_positions": 3,
-  "deploy_sol": 0.5,
+  "deploy_sol": 0.73,
   "screening_min": 30,
   "management_min": 10
  },
@@ -66,7 +66,8 @@
     "deployed_at": "2026-10-24T07:00:13.870Z",
     "closed_at": null,
     "pnl_usd": null,
-    "value_usd": 100
+    "value_usd": 100,
+    "amount_sol": 0.69
    }
   ],
   "total_tracked": 29
@@ -362,20 +363,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1051,
+  "total_real": 1052,
   "today": 100,
-  "today_real": 57,
+  "today_real": 58,
   "by_type": {
-   "close": 12,
    "deploy": 11,
-   "no_deploy": 35,
+   "close": 11,
+   "no_deploy": 36,
    "skip": 42
   },
   "by_actor": {
-   "MANAGER": 12,
-   "SCREENER": 88
+   "SCREENER": 89,
+   "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-24T09:35:08.080Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DacityCoin-SOL (5Dc4s9fxxQoPfaMUaxFKB5v1Nh6FPqest7usgyvGXwWw) WHY SKIPPED Only one candidate survived, and it does not clear conviction bar. The narrative is still being generated (unavailable), and there are 0 smart wallets pres"
+   },
    {
     "ts": "2026-10-24T09:30:10.147Z",
     "type": "no_deploy",
@@ -463,14 +472,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OND0-USDC WHY SKIPPED OND0-USDC fails the hard bin-step gate: bin_step=50 is outside the required 80\u2013125 band, so it is ineligible for deployment regardless of its metrics. Additionally, the candidate has no usable narrative (sti"
-   },
-   {
-    "ts": "2026-10-24T09:00:01.648Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
    }
   ]
  },
@@ -494,7 +495,7 @@
    },
    {
     "hour": "02:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "03:00",
@@ -522,25 +523,25 @@
    },
    {
     "hour": "09:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T09:30:01.341",
-  "last_management": "2026-10-24T09:30:00.713"
+  "last_screening": "2026-10-24T09:35:01.420",
+  "last_management": "2026-10-24T09:35:00.705"
  },
  "log_tail": [
-  "[2026-10-24T09:20:00.987Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T09:25:00.529Z] [CRON] Starting management cycle",
-  "[2026-10-24T09:25:00.775Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T09:25:01.199Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T09:26:45.432Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T09:30:00.713Z] [CRON] Starting management cycle",
-  "[2026-10-24T09:30:01.341Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T09:30:01.341Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.870569 SOL)",
   "[2026-10-24T09:30:01.459Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T09:30:10.146Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T09:30:10.146Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T09:33:07.591Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-24T09:35:00.705Z] [CRON] Starting management cycle",
+  "[2026-10-24T09:35:01.420Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T09:35:01.420Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.870569 SOL)",
+  "[2026-10-24T09:35:01.524Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T09:35:01.878Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T09:35:08.080Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T09:26:58.961Z"
 }

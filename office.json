@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T13:12:40.719534+00:00",
+ "generated_at": "2026-10-24T13:17:39.394915+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.620132
+  "sol": 1.716365
  },
  "limits": {
   "max_positions": 3,
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 35
+  "open_count": 1,
+  "open": [
+   {
+    "id": "3ZBguzYd1HPRyk7YK5s7wo4X9nD8dBX4zuFZR7wnpWrN",
+    "pool": "DacityCoin-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-24T13:15:17.446Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.55
+   }
+  ],
+  "total_tracked": 36
  },
  "pnl": {
   "last24h_usd": 22.94,
@@ -422,20 +433,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1076,
+  "total_real": 1077,
   "today": 100,
-  "today_real": 82,
+  "today_real": 83,
   "by_type": {
-   "skip": 42,
+   "skip": 41,
    "close": 10,
    "no_deploy": 40,
-   "deploy": 8
+   "deploy": 9
   },
   "by_actor": {
    "SCREENER": 90,
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-24T13:15:17.447Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "DacityCoin-SOL",
+    "summary": "Deployed 1.55 SOL with bid_ask",
+    "reason_short": "Chosen range -398\u2192-329 around active bin -329"
+   },
    {
     "ts": "2026-10-24T13:10:39.844Z",
     "type": "close",
@@ -523,14 +542,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.848 < 1.53)"
-   },
-   {
-    "ts": "2026-10-24T12:35:09.517Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "DacityCoin-SOL",
-    "summary": "Deployed 0.73 SOL with bid_ask",
-    "reason_short": "Chosen range -477\u2192-408 around active bin -408"
    }
   ]
  },
@@ -554,7 +565,7 @@
    },
    {
     "hour": "06:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "07:00",
@@ -582,25 +593,25 @@
    },
    {
     "hour": "13:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T13:00:01.085",
-  "last_management": "2026-10-24T13:10:00.954"
+  "last_screening": "2026-10-24T13:15:00.767",
+  "last_management": "2026-10-24T13:15:00.205"
  },
  "log_tail": [
-  "[2026-10-24T13:00:23.748Z] [DEPLOY] Position: 5uE9MxGmEgnzs41Tnm6AUEUfSzji2VNPEeWd9apTB9jJ",
-  "[2026-10-24T13:00:33.725Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5kuz88Ys6F4knuRjD3XLhTVbjKL3rU4LbbGjsRpBifWGjrp3JkjnUN1daADjvztpXN6NFfLa4riEa1inn4aoK9nf",
-  "[2026-10-24T13:00:35.739Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-24T13:05:00.711Z] [CRON] Starting management cycle",
-  "[2026-10-24T13:05:00.979Z] [CRON] Screening skipped \u2014 insufficient SOL (0.028 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T13:05:01.449Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T13:10:00.954Z] [CRON] Starting management cycle",
-  "[2026-10-24T13:10:01.243Z] [CRON] Screening skipped \u2014 insufficient SOL (0.052 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T13:10:01.706Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T13:10:26.317Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-24T13:15:01.274Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-24T13:15:09.326Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T13:15:09.331Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-24T13:15:10.339Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 43.89% > 30%",
+  "[2026-10-24T13:15:14.909Z] [DEPLOY] Pool: 5Dc4s9fxxQoPfaMUaxFKB5v1Nh6FPqest7usgyvGXwWw",
+  "[2026-10-24T13:15:14.910Z] [DEPLOY] Strategy: bid_ask, Bins: -398 to -329 (69 bins)",
+  "[2026-10-24T13:15:14.910Z] [DEPLOY] Amount: 0 X, 1.55 Y",
+  "[2026-10-24T13:15:14.910Z] [DEPLOY] Position: 3ZBguzYd1HPRyk7YK5s7wo4X9nD8dBX4zuFZR7wnpWrN",
+  "[2026-10-24T13:15:17.445Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4va5qh84pmUoW8bmHzZP1s3WELCWZLPnqafCyX96BDuaHyzi81RwGyXgWYLFajVCtaGiQnuobFhdgv2u3GpeocRE",
+  "[2026-10-24T13:15:19.126Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-24T13:10:39.534Z"
+ "state_last_updated": "2026-10-24T13:17:11.536Z"
 }

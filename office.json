@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:27:40.158806+00:00",
+ "generated_at": "2026-10-24T01:32:40.527190+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -242,13 +242,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 999,
-  "today": 13,
-  "today_real": 5,
+  "total_real": 1000,
+  "today": 14,
+  "today_real": 6,
   "by_type": {
-   "skip": 40,
+   "skip": 39,
    "close": 13,
-   "no_deploy": 34,
+   "no_deploy": 35,
    "deploy": 13
   },
   "by_actor": {
@@ -256,6 +256,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T01:30:15.889Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY \u2014 TOOL FAILURE The `deploy_position` call for the top candidate (Moustache-SOL) was blocked by the verification layer and did not execute a transaction: - **Attempt 1** returned: `\"Could not verify pool screening thresholds before deploy: Pool undefined not found\"` - **Attempt 2** was re"
+   },
    {
     "ts": "2026-10-24T01:25:02.123Z",
     "type": "no_deploy",
@@ -343,14 +351,6 @@
     "pool_name": "YMB-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -568\u2192-503 around active bin -503"
-   },
-   {
-    "ts": "2026-10-24T00:06:15.201Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "The deploy_position tool did not execute a real on-chain deployment \u2014 it returned blocked errors on every attempt and my retry was rejected as a duplicate session attempt. No actual position was opened, so I cannot report success. To be fully transparent, here is the outcome: \u26d4 NO DEPLOY Cycle finis"
    }
   ]
  },
@@ -358,7 +358,7 @@
   "per_hour": [
    {
     "hour": "14:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "15:00",
@@ -402,25 +402,25 @@
    },
    {
     "hour": "01:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T01:24:53.796",
-  "last_management": "2026-10-24T01:20:00.485"
+  "last_screening": "2026-10-24T01:30:01.508",
+  "last_management": "2026-10-24T01:30:00.863"
  },
  "log_tail": [
-  "[2026-10-24T01:20:00.485Z] [CRON] Starting management cycle",
-  "[2026-10-24T01:20:01.308Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T01:24:30.429Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T01:24:53.497Z] [CRON] [Opportunity] Moustache-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-24T01:24:53.796Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T01:24:53.796Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.926214 SOL)",
-  "[2026-10-24T01:24:56.715Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 37.88% > 30%",
-  "[2026-10-24T01:25:02.123Z] [AGENT] \u26a0\ufe0f DEPLOY BLOCKED \u2014 NO DEPLOY EXECUTED",
   "\u26d4 NO DEPLOY",
-  "- Moustache-SOL \u2014 blocked by tool error (missing amount_y on first call; session guard prevented retry). No deploy executed."
+  "- Moustache-SOL \u2014 blocked by tool error (missing amount_y on first call; session guard prevented retry). No deploy executed.",
+  "[2026-10-24T01:30:00.863Z] [CRON] Starting management cycle",
+  "[2026-10-24T01:30:01.508Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T01:30:01.509Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.926214 SOL)",
+  "[2026-10-24T01:30:01.603Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T01:30:03.558Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 36.51% > 30%",
+  "[2026-10-24T01:30:15.889Z] [AGENT] \u26d4 NO DEPLOY \u2014 TOOL FAILURE",
+  "The candidate itself screened well \u2014 bin_step=100, fee/tvl 0.2708, volatility 4.01, organic 78, fees 83 SOL (>30 gate), top10 18% (<60), bots 23% (<30), 1 smart wallet present (Degen #15), and positive pool memory (last outcome profit). However, the deploy tool returned a hard verification error (pool identity not passed through to the screening check) and then blocked any retry. Since the transaction never executed, I will not report a deploy.",
+  "- Moustache-SOL \u2014 deploy blocked by tool verification error (failed, not a candidate rejection)"
  ],
- "state_last_updated": "2026-10-24T01:24:42.738Z"
+ "state_last_updated": "2026-10-24T01:30:05.002Z"
 }

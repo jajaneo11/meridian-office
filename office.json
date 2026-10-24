@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T09:22:40.400376+00:00",
+ "generated_at": "2026-10-24T09:27:39.600858+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
+  "open_count": 1,
   "open": [
    {
     "id": "9VEWeKWK7gTyfaNW4hWnFZM5PBPdCEYmxbM8iJzC6Gs6",
@@ -67,25 +67,16 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": 100
-   },
-   {
-    "id": "ASKMUFBCFesxUd8uE8Abe5sHFpE4o83Q1YRVoCbEEh3b",
-    "pool": "PANGEA-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T09:10:24.006Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 100
    }
   ],
   "total_tracked": 29
  },
  "pnl": {
-  "last24h_usd": 9.67,
+  "last24h_usd": 9.5,
   "fees24h_usd": 58.11,
-  "all_time_usd": 9.67,
-  "closed_total": 27,
-  "win_rate_pct": 67
+  "all_time_usd": 9.5,
+  "closed_total": 28,
+  "win_rate_pct": 64
  },
  "pnl_trades": [
   {
@@ -357,6 +348,16 @@
    "amount_sol": 0.69,
    "minutes_held": 119,
    "close_reason": "Trailing TP: peak 5.87% \u2192 current 3.73% (dropped 2.14% >= 1.5%)"
+  },
+  {
+   "pool": "PANGEA-SOL",
+   "recorded_at": "2026-10-24T09:26:59.308Z",
+   "pnl_usd": -0.17,
+   "pnl_pct": -0.25,
+   "fees_usd": 0.000570737865649151,
+   "amount_sol": 0.69,
+   "minutes_held": 16,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
@@ -365,16 +366,32 @@
   "today": 100,
   "today_real": 56,
   "by_type": {
-   "deploy": 12,
    "skip": 43,
-   "close": 11,
+   "close": 12,
+   "deploy": 11,
    "no_deploy": 34
   },
   "by_actor": {
-   "SCREENER": 89,
-   "MANAGER": 11
+   "SCREENER": 88,
+   "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-24T09:26:59.314Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "PANGEA-SOL",
+    "summary": "Closed at -0.25%",
+    "reason_short": "pumped far above range"
+   },
+   {
+    "ts": "2026-10-24T09:25:00.776Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.139 < 0.76)"
+   },
    {
     "ts": "2026-10-24T09:20:00.406Z",
     "type": "skip",
@@ -454,22 +471,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Moustache-SOL: token cooldown active - mil-SOL: already have an open position in this pool - YMB-SOL: token cooldown active"
-   },
-   {
-    "ts": "2026-10-24T08:50:02.303Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Moustache-SOL: token cooldown active - mil-SOL: already have an open position in this pool"
-   },
-   {
-    "ts": "2026-10-24T08:45:02.589Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": "Kimchi-SOL",
-    "summary": "Single candidate skipped",
-    "reason_short": "top10 concentration 79.02% above maximum 60%"
    }
   ]
  },
@@ -489,11 +490,11 @@
    },
    {
     "hour": "01:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "02:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "03:00",
@@ -521,25 +522,25 @@
    },
    {
     "hour": "09:00",
-    "count": 9
+    "count": 11
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T09:10:01.763",
-  "last_management": "2026-10-24T09:20:00.307"
+  "last_management": "2026-10-24T09:25:00.529"
  },
  "log_tail": [
-  "[2026-10-24T09:13:53.404Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-24T09:13:54.242Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T09:15:00.451Z] [CRON] Starting management cycle",
-  "[2026-10-24T09:15:00.797Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
   "[2026-10-24T09:15:01.304Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T09:15:18.033Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
   "[2026-10-24T09:15:18.834Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
   "[2026-10-24T09:20:00.307Z] [CRON] Starting management cycle",
   "[2026-10-24T09:20:00.406Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T09:20:00.987Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T09:20:00.987Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T09:25:00.529Z] [CRON] Starting management cycle",
+  "[2026-10-24T09:25:00.775Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T09:25:01.199Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T09:26:45.432Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-24T09:15:51.365Z"
+ "state_last_updated": "2026-10-24T09:26:58.961Z"
 }

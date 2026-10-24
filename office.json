@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:17:40.622854+00:00",
+ "generated_at": "2026-10-24T01:22:40.607534+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -407,11 +407,9 @@
  },
  "cycles": {
   "last_screening": "2026-10-24T01:15:08.330",
-  "last_management": "2026-10-24T01:10:00.164"
+  "last_management": "2026-10-24T01:20:00.485"
  },
  "log_tail": [
-  "[2026-10-24T01:15:08.116Z] [CRON] [Opportunity] Moustache-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-24T01:15:08.330Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T01:15:08.330Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.926015 SOL)",
   "[2026-10-24T01:15:09.640Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 43.77% > 30%",
   "[2026-10-24T01:15:17.632Z] [DEPLOY] Pool: BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ",
@@ -419,7 +417,9 @@
   "[2026-10-24T01:15:17.632Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-24T01:15:17.632Z] [DEPLOY] Position: 5PynbGiNQRMgAbCx39aba1FiE4ZiAhEmx4z3BdL2tMU7",
   "[2026-10-24T01:15:20.865Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3KS5HMUgw5FfqM9yfaoyVbarpt4HwohBruXy9EzXPtBVrXMDvQDu3NK9mSMTBhUW4N6HzJYYQFadGrvpS44XjfPi",
-  "[2026-10-24T01:15:22.389Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-24T01:15:22.389Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-24T01:20:00.485Z] [CRON] Starting management cycle",
+  "[2026-10-24T01:20:01.308Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T01:17:03.304Z"
+ "state_last_updated": "2026-10-24T01:20:30.364Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T12:12:39.479564+00:00",
+ "generated_at": "2026-10-24T12:17:39.969235+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -403,20 +403,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1070,
+  "total_real": 1071,
   "today": 100,
-  "today_real": 76,
+  "today_real": 77,
   "by_type": {
-   "close": 10,
-   "no_deploy": 41,
+   "no_deploy": 42,
+   "close": 9,
    "deploy": 9,
    "skip": 40
   },
   "by_actor": {
-   "MANAGER": 10,
-   "SCREENER": 90
+   "SCREENER": 91,
+   "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-24T12:15:35.320Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL (98zuZBUCvRJk4XCnA9G9ADzUehmfrGJdDL3bQ29ytKUv) WHY SKIPPED OpenSolana-SOL was the clear fundamental winner \u2014 highest volatility (9.5), huge fee/TVL (1.09), strong volume, and low top10 concentration (13.5%) \u2014 but t"
+   },
    {
     "ts": "2026-10-24T12:10:17.305Z",
     "type": "no_deploy",
@@ -504,14 +512,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "All candidates filtered before deploy"
-   },
-   {
-    "ts": "2026-10-24T11:20:15.722Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "LARPCHECK-SOL",
-    "summary": "Deployed 0.73 SOL with bid_ask",
-    "reason_short": "Chosen range -578\u2192-510 around active bin -510"
    }
   ]
  },
@@ -535,7 +535,7 @@
    },
    {
     "hour": "05:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "06:00",
@@ -563,25 +563,25 @@
    },
    {
     "hour": "12:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T12:10:01.609",
-  "last_management": "2026-10-24T12:10:00.954"
+  "last_screening": "2026-10-24T12:15:00.807",
+  "last_management": "2026-10-24T12:15:00.161"
  },
  "log_tail": [
-  "[2026-10-24T12:05:00.705Z] [CRON] Starting management cycle",
-  "[2026-10-24T12:05:00.984Z] [CRON] Screening skipped \u2014 insufficient SOL (0.078 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T12:05:01.436Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T12:08:10.246Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T12:10:00.954Z] [CRON] Starting management cycle",
-  "[2026-10-24T12:10:01.609Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T12:10:01.609Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.849715 SOL)",
-  "[2026-10-24T12:10:01.653Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T12:10:01.782Z] [SCREENING] Filtered cooldown token PANGEA (JAFqCQSp)",
-  "[2026-10-24T12:10:17.305Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T12:10:17.305Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T12:15:00.161Z] [CRON] Starting management cycle",
+  "[2026-10-24T12:15:00.807Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T12:15:00.807Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 0.849715 SOL)",
+  "[2026-10-24T12:15:00.948Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T12:15:01.584Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
+  "[2026-10-24T12:15:01.587Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T12:15:01.589Z] [SCREENING] Filtered cooldown token mil (3w67qwok)",
+  "[2026-10-24T12:15:35.319Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T12:08:17.806Z"
 }

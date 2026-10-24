@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T10:22:39.238513+00:00",
+ "generated_at": "2026-10-24T10:27:44.821309+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -387,16 +387,24 @@
   "today": 100,
   "today_real": 63,
   "by_type": {
-   "deploy": 10,
    "close": 9,
    "no_deploy": 38,
-   "skip": 43
+   "deploy": 9,
+   "skip": 44
   },
   "by_actor": {
-   "SCREENER": 91,
-   "MANAGER": 9
+   "MANAGER": 9,
+   "SCREENER": 91
   },
   "recent": [
+   {
+    "ts": "2026-10-24T10:25:00.632Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.077 < 0.76)"
+   },
    {
     "ts": "2026-10-24T10:20:00.433Z",
     "type": "skip",
@@ -484,14 +492,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Deploy attempt failed with a real tool error. **BEST LOOKING CANDIDATE** mil-SOL **WHY SKIPPED** - Called `deploy_position` for mil-SOL (FgJcpxAsqNH2dpQTYei3a7J22NyAuAniv6y81EZJGN9a), but the tool errored with `\"getWalletBalances is not defined\"` before opening any position. - No transac"
-   },
-   {
-    "ts": "2026-10-24T09:38:04.509Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "mil-SOL",
-    "summary": "Closed at 2.79%",
-    "reason_short": "Trailing TP: peak 4.63% \u2192 current 2.76% (dropped 1.87% >= 1.5%)"
    }
   ]
  },
@@ -515,7 +515,7 @@
    },
    {
     "hour": "03:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "04:00",
@@ -543,25 +543,25 @@
    },
    {
     "hour": "10:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T09:55:00.515",
-  "last_management": "2026-10-24T10:20:00.186"
+  "last_management": "2026-10-24T10:25:00.377"
  },
  "log_tail": [
-  "[2026-10-24T10:05:01.220Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T10:10:00.716Z] [CRON] Starting management cycle",
-  "[2026-10-24T10:10:00.977Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:10:01.453Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:15:00.980Z] [CRON] Starting management cycle",
   "[2026-10-24T10:15:01.284Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:15:01.781Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:20:00.186Z] [CRON] Starting management cycle",
   "[2026-10-24T10:20:00.432Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:20:00.904Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T10:20:00.904Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T10:25:00.377Z] [CRON] Starting management cycle",
+  "[2026-10-24T10:25:00.631Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T10:25:01.142Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T10:15:47.080Z"
 }

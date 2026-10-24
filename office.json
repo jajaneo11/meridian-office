@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:22:40.607534+00:00",
+ "generated_at": "2026-10-24T01:27:40.158806+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.926015
+  "sol": 0.926214
  },
  "limits": {
   "max_positions": 3,
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
+  "open_count": 1,
   "open": [
    {
     "id": "3KqgZCqELao1U6u7e3DS4xSwzQzXPRY1rxwFopREzZv9",
@@ -67,25 +67,16 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": null
-   },
-   {
-    "id": "5PynbGiNQRMgAbCx39aba1FiE4ZiAhEmx4z3BdL2tMU7",
-    "pool": "Moustache-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T01:15:20.866Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null
    }
   ],
   "total_tracked": 17
  },
  "pnl": {
-  "last24h_usd": 15.69,
-  "fees24h_usd": 34.39,
-  "all_time_usd": 15.69,
-  "closed_total": 15,
-  "win_rate_pct": 73
+  "last24h_usd": 15.79,
+  "fees24h_usd": 34.42,
+  "all_time_usd": 15.79,
+  "closed_total": 16,
+  "win_rate_pct": 75
  },
  "pnl_trades": [
   {
@@ -237,24 +228,50 @@
    "amount_sol": 0.69,
    "minutes_held": 58,
    "close_reason": "Trailing TP: peak 4.61% \u2192 current -0.55% (dropped 5.16% >= 1.5%)"
+  },
+  {
+   "pool": "Moustache-SOL",
+   "recorded_at": "2026-10-24T01:24:42.976Z",
+   "pnl_usd": 0.1,
+   "pnl_pct": 0.14,
+   "fees_usd": 0.022722456658089345,
+   "amount_sol": 0.69,
+   "minutes_held": 9,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 998,
-  "today": 11,
-  "today_real": 4,
+  "total_real": 999,
+  "today": 13,
+  "today_real": 5,
   "by_type": {
-   "skip": 42,
-   "close": 12,
-   "no_deploy": 33,
+   "skip": 40,
+   "close": 13,
+   "no_deploy": 34,
    "deploy": 13
   },
   "by_actor": {
-   "SCREENER": 88,
-   "MANAGER": 12
+   "SCREENER": 87,
+   "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T01:25:02.123Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26a0\ufe0f DEPLOY BLOCKED \u2014 NO DEPLOY EXECUTED The first `deploy_position` call was blocked because the SOL amount (`amount_y`) was missing. The retry was then blocked by the session guard: *\"deploy_position already attempted this session \u2014 do not retry.\"* This means no on-chain transaction was placed. The "
+   },
+   {
+    "ts": "2026-10-24T01:24:42.980Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "Moustache-SOL",
+    "summary": "Closed at 0.14%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-24T01:15:20.867Z",
     "type": "deploy",
@@ -334,22 +351,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "The deploy_position tool did not execute a real on-chain deployment \u2014 it returned blocked errors on every attempt and my retry was rejected as a duplicate session attempt. No actual position was opened, so I cannot report success. To be fully transparent, here is the outcome: \u26d4 NO DEPLOY Cycle finis"
-   },
-   {
-    "ts": "2026-10-24T00:01:05.851Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-23T23:57:13.589Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "The deploy_position call failed, so no position was opened. Per rules I must not retry and must report the real result. \u26d4 NO DEPLOY Cycle finished with no valid entry (deploy tool failed). BEST LOOKING CANDIDATE Moustache-SOL (BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ) WHY SKIPPED Moustache-SOL w"
    }
   ]
  },
@@ -357,7 +358,7 @@
   "per_hour": [
    {
     "hour": "14:00",
-    "count": 3
+    "count": 1
    },
    {
     "hour": "15:00",
@@ -401,25 +402,25 @@
    },
    {
     "hour": "01:00",
-    "count": 4
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T01:15:08.330",
+  "last_screening": "2026-10-24T01:24:53.796",
   "last_management": "2026-10-24T01:20:00.485"
  },
  "log_tail": [
-  "[2026-10-24T01:15:08.330Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.926015 SOL)",
-  "[2026-10-24T01:15:09.640Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 43.77% > 30%",
-  "[2026-10-24T01:15:17.632Z] [DEPLOY] Pool: BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ",
-  "[2026-10-24T01:15:17.632Z] [DEPLOY] Strategy: bid_ask, Bins: -583 to -522 (61 bins)",
-  "[2026-10-24T01:15:17.632Z] [DEPLOY] Amount: 0 X, 0.69 Y",
-  "[2026-10-24T01:15:17.632Z] [DEPLOY] Position: 5PynbGiNQRMgAbCx39aba1FiE4ZiAhEmx4z3BdL2tMU7",
-  "[2026-10-24T01:15:20.865Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3KS5HMUgw5FfqM9yfaoyVbarpt4HwohBruXy9EzXPtBVrXMDvQDu3NK9mSMTBhUW4N6HzJYYQFadGrvpS44XjfPi",
-  "[2026-10-24T01:15:22.389Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-24T01:20:00.485Z] [CRON] Starting management cycle",
-  "[2026-10-24T01:20:01.308Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T01:20:01.308Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T01:24:30.429Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T01:24:53.497Z] [CRON] [Opportunity] Moustache-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T01:24:53.796Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T01:24:53.796Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.926214 SOL)",
+  "[2026-10-24T01:24:56.715Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 37.88% > 30%",
+  "[2026-10-24T01:25:02.123Z] [AGENT] \u26a0\ufe0f DEPLOY BLOCKED \u2014 NO DEPLOY EXECUTED",
+  "\u26d4 NO DEPLOY",
+  "- Moustache-SOL \u2014 blocked by tool error (missing amount_y on first call; session guard prevented retry). No deploy executed."
  ],
- "state_last_updated": "2026-10-24T01:20:30.364Z"
+ "state_last_updated": "2026-10-24T01:24:42.738Z"
 }

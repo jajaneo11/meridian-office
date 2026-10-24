@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T07:07:40.237940+00:00",
+ "generated_at": "2026-10-24T07:12:39.145141+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -352,12 +352,12 @@
  "decisions": {
   "total": 100,
   "total_real": 1032,
-  "today": 85,
+  "today": 86,
   "today_real": 38,
   "by_type": {
-   "deploy": 15,
-   "skip": 44,
+   "skip": 45,
    "close": 14,
+   "deploy": 14,
    "no_deploy": 27
   },
   "by_actor": {
@@ -365,6 +365,14 @@
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T07:10:00.829Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.108 < 0.74)"
+   },
    {
     "ts": "2026-10-24T07:05:00.595Z",
     "type": "skip",
@@ -452,14 +460,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.089 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T06:15:00.425Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.089 < 0.74)"
    }
   ]
  },
@@ -475,7 +475,7 @@
    },
    {
     "hour": "22:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "23:00",
@@ -511,25 +511,25 @@
    },
    {
     "hour": "07:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T07:00:00.579",
-  "last_management": "2026-10-24T07:05:00.323"
+  "last_management": "2026-10-24T07:10:00.492"
  },
  "log_tail": [
-  "[2026-10-24T07:00:00.846Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T07:00:07.958Z] [DEPLOY] Pool: FgJcpxAsqNH2dpQTYei3a7J22NyAuAniv6y81EZJGN9a",
-  "[2026-10-24T07:00:07.959Z] [DEPLOY] Strategy: bid_ask, Bins: -618 to -558 (60 bins)",
   "[2026-10-24T07:00:07.959Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-24T07:00:07.959Z] [DEPLOY] Position: 9VEWeKWK7gTyfaNW4hWnFZM5PBPdCEYmxbM8iJzC6Gs6",
   "[2026-10-24T07:00:13.869Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4XzfLMtNbCwiCA37tNYMn2zk5LbjLNBj4jC4mRDD3tcUPyocuqtdXjzRWYg9ipRKMqA4ZTGDTC9XmXsTjrk9X7J9",
   "[2026-10-24T07:00:16.268Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-24T07:05:00.323Z] [CRON] Starting management cycle",
   "[2026-10-24T07:05:00.594Z] [CRON] Screening skipped \u2014 insufficient SOL (0.108 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T07:05:01.054Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T07:05:01.054Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T07:10:00.492Z] [CRON] Starting management cycle",
+  "[2026-10-24T07:10:00.829Z] [CRON] Screening skipped \u2014 insufficient SOL (0.108 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T07:10:01.791Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T07:04:33.250Z"
+ "state_last_updated": "2026-10-24T07:12:06.333Z"
 }

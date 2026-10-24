@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:27:39.914581+00:00",
+ "generated_at": "2026-10-24T05:32:39.878944+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,26 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "F8oitQi28CzkGN7cuGiPDWQPeTEWdnB3PwLizEE9pjnJ",
-    "pool": "YMB-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T02:25:29.738Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 24
  },
  "pnl": {
-  "last24h_usd": 3.0,
-  "fees24h_usd": 47.99,
-  "all_time_usd": 3.0,
-  "closed_total": 23,
-  "win_rate_pct": 65
+  "last24h_usd": 4.9,
+  "fees24h_usd": 50.63,
+  "all_time_usd": 4.9,
+  "closed_total": 24,
+  "win_rate_pct": 67
  },
  "pnl_trades": [
   {
@@ -308,24 +298,50 @@
    "amount_sol": 0.69,
    "minutes_held": 60,
    "close_reason": "Low yield: fee/TVL 4.59% < min 7% (age: 60m)"
+  },
+  {
+   "pool": "YMB-SOL",
+   "recorded_at": "2026-10-24T05:32:00.813Z",
+   "pnl_usd": 1.9,
+   "pnl_pct": 2.69,
+   "fees_usd": 2.642873416661893,
+   "amount_sol": 0.69,
+   "minutes_held": 186,
+   "close_reason": "Trailing TP: peak 3.90% \u2192 current 2.33% (dropped 1.57% >= 1.5%)"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1022,
-  "today": 62,
-  "today_real": 28,
+  "total_real": 1023,
+  "today": 64,
+  "today_real": 29,
   "by_type": {
-   "no_deploy": 36,
-   "close": 13,
+   "no_deploy": 35,
+   "close": 14,
    "deploy": 13,
    "skip": 38
   },
   "by_actor": {
-   "SCREENER": 87,
-   "MANAGER": 13
+   "SCREENER": 86,
+   "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T05:32:00.820Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "YMB-SOL",
+    "summary": "Closed at 2.69%",
+    "reason_short": "Trailing TP: peak 3.90% \u2192 current 2.33% (dropped 1.57% >= 1.5%)"
+   },
+   {
+    "ts": "2026-10-24T05:30:07.435Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle ended with no completed entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Deployment failed at the tool level \u2014 my deploy_position call was blocked by the framework. The first attempt was rejected for missing a positive amount_y, an"
+   },
    {
     "ts": "2026-10-24T05:25:06.299Z",
     "type": "no_deploy",
@@ -405,22 +421,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T04:40:00.407Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T04:35:01.135Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.073 < 0.74)"
    }
   ]
  },
@@ -436,7 +436,7 @@
    },
    {
     "hour": "20:00",
-    "count": 12
+    "count": 10
    },
    {
     "hour": "21:00",
@@ -472,25 +472,25 @@
    },
    {
     "hour": "05:00",
-    "count": 7
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T05:25:01.694",
-  "last_management": "2026-10-24T05:25:00.954"
+  "last_screening": "2026-10-24T05:30:00.777",
+  "last_management": "2026-10-24T05:30:00.137"
  },
  "log_tail": [
-  "[2026-10-24T05:20:00.740Z] [CRON] Starting management cycle",
-  "[2026-10-24T05:20:01.043Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T05:20:01.514Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:20:13.986Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T05:25:00.954Z] [CRON] Starting management cycle",
-  "[2026-10-24T05:25:01.663Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:25:01.694Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T05:25:01.695Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.806246 SOL)",
   "[2026-10-24T05:25:01.905Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T05:25:06.297Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T05:25:06.297Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T05:30:00.137Z] [CRON] Starting management cycle",
+  "[2026-10-24T05:30:00.777Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T05:30:00.777Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.806246 SOL)",
+  "[2026-10-24T05:30:00.813Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T05:30:01.186Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T05:30:07.435Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T05:31:50.097Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-24T05:20:33.015Z"
+ "state_last_updated": "2026-10-24T05:32:00.575Z"
 }

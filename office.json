@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T06:42:40.447878+00:00",
+ "generated_at": "2026-10-24T06:47:39.553293+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 32,
+  "active_24h": 31,
   "total_value_usd": 139437,
   "total_activity": 390,
   "top": [
@@ -342,12 +342,12 @@
  "decisions": {
   "total": 100,
   "total_real": 1029,
-  "today": 79,
+  "today": 80,
   "today_real": 35,
   "by_type": {
-   "no_deploy": 31,
+   "no_deploy": 30,
    "deploy": 14,
-   "skip": 42,
+   "skip": 43,
    "close": 13
   },
   "by_actor": {
@@ -355,6 +355,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T06:45:00.756Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.089 < 0.74)"
+   },
    {
     "ts": "2026-10-24T06:40:00.557Z",
     "type": "skip",
@@ -442,14 +450,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mil-SOL WHY SKIPPED mil-SOL has strong raw mechanics \u2014 fee/TVL at 1.21, positive volatility (4.53), low top10 concentration (18.65%), healthy 53.5 SOL in network fees, and explosive 1h momentum (+110%). But it fails both hard ris"
-   },
-   {
-    "ts": "2026-10-24T05:45:12.764Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "YMB-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -617\u2192-562 around active bin -562"
    }
   ]
  },
@@ -465,7 +465,7 @@
    },
    {
     "hour": "21:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "22:00",
@@ -501,25 +501,25 @@
    },
    {
     "hour": "06:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T06:00:01.130",
-  "last_management": "2026-10-24T06:40:00.198"
+  "last_management": "2026-10-24T06:45:00.387"
  },
  "log_tail": [
-  "[2026-10-24T06:25:01.322Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T06:30:00.847Z] [CRON] Starting management cycle",
-  "[2026-10-24T06:30:01.199Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
   "[2026-10-24T06:30:01.643Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T06:35:00.024Z] [CRON] Starting management cycle",
   "[2026-10-24T06:35:00.372Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
   "[2026-10-24T06:35:00.802Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T06:40:00.198Z] [CRON] Starting management cycle",
   "[2026-10-24T06:40:00.557Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T06:40:01.064Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T06:40:01.064Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T06:45:00.387Z] [CRON] Starting management cycle",
+  "[2026-10-24T06:45:00.755Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T06:45:01.193Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T06:42:30.051Z"
+ "state_last_updated": "2026-10-24T06:47:39.038Z"
 }

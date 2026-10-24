@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T08:12:38.869272+00:00",
+ "generated_at": "2026-10-24T08:17:39.985014+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -352,9 +352,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1038,
+  "total_real": 1039,
   "today": 100,
-  "today_real": 44,
+  "today_real": 45,
   "by_type": {
    "no_deploy": 31,
    "deploy": 13,
@@ -366,6 +366,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T08:15:01.385Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-24T08:10:02.014Z",
     "type": "no_deploy",
@@ -453,14 +461,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.108 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T07:25:00.444Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.108 < 0.74)"
    }
   ]
  },
@@ -480,7 +480,7 @@
    },
    {
     "hour": "00:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "01:00",
@@ -512,25 +512,25 @@
    },
    {
     "hour": "08:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T08:10:01.044",
-  "last_management": "2026-10-24T08:10:00.291"
+  "last_screening": "2026-10-24T08:15:01.206",
+  "last_management": "2026-10-24T08:15:00.486"
  },
  "log_tail": [
-  "[2026-10-24T08:00:02.888Z] [SCREENING] PVP guard: GP-SOL has active rival Graphite (31k88G5M)",
-  "[2026-10-24T08:00:12.773Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T08:05:00.095Z] [CRON] Starting management cycle",
-  "[2026-10-24T08:05:00.771Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T08:05:00.864Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T08:05:00.864Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
   "[2026-10-24T08:10:00.291Z] [CRON] Starting management cycle",
   "[2026-10-24T08:10:01.044Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T08:10:01.045Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T08:10:01.103Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T08:10:01.103Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T08:15:00.486Z] [CRON] Starting management cycle",
+  "[2026-10-24T08:15:01.193Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T08:15:01.206Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T08:15:01.207Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)"
  ],
  "state_last_updated": "2026-10-24T08:12:26.100Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T06:52:39.271564+00:00",
+ "generated_at": "2026-10-24T06:57:40.368376+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 12
+  "decisions_mentioning": 13
  },
  "mode": {
   "dry_run": false,
@@ -342,9 +342,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1030,
-  "today": 82,
-  "today_real": 36,
+  "total_real": 1031,
+  "today": 83,
+  "today_real": 37,
   "by_type": {
    "no_deploy": 29,
    "deploy": 14,
@@ -356,6 +356,14 @@
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T06:55:06.565Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED This is the only candidate in the cycle and it fails the key conviction gates. The narrative field is empty (\"narrative is being generated\" \u2014 no identifiable origin, event, or community), and the pool has 0 s"
+   },
    {
     "ts": "2026-10-24T06:50:08.825Z",
     "type": "no_deploy",
@@ -443,14 +451,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.089 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T06:00:18.627Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "mil-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -593\u2192-527 around active bin -527"
    }
   ]
  },
@@ -466,7 +466,7 @@
    },
    {
     "hour": "21:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "22:00",
@@ -502,25 +502,25 @@
    },
    {
     "hour": "06:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T06:50:01.311",
-  "last_management": "2026-10-24T06:50:00.619"
+  "last_screening": "2026-10-24T06:55:01.534",
+  "last_management": "2026-10-24T06:55:00.888"
  },
  "log_tail": [
-  "[2026-10-24T06:45:00.387Z] [CRON] Starting management cycle",
-  "[2026-10-24T06:45:00.755Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T06:45:01.193Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T06:49:03.076Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T06:50:00.619Z] [CRON] Starting management cycle",
-  "[2026-10-24T06:50:01.284Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T06:50:01.311Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T06:50:01.312Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.83997 SOL)",
   "[2026-10-24T06:50:08.825Z] [AGENT] \u26d4 NO DEPLOY",
-  "deploy_position was blocked this session \u2014 the first attempt errored because no SOL amount (amount_y) was supplied, and the system prohibits retrying after a blocked attempt. No on-chain transaction executed, so I will not report a deploy. The mil-SOL pool itself was the strong pick (volatility 6.44, organic 72, smart wallet present, 100% past win rate), but the deployment could not be completed."
+  "deploy_position was blocked this session \u2014 the first attempt errored because no SOL amount (amount_y) was supplied, and the system prohibits retrying after a blocked attempt. No on-chain transaction executed, so I will not report a deploy. The mil-SOL pool itself was the strong pick (volatility 6.44, organic 72, smart wallet present, 100% past win rate), but the deployment could not be completed.",
+  "[2026-10-24T06:55:00.888Z] [CRON] Starting management cycle",
+  "[2026-10-24T06:55:01.534Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T06:55:01.535Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.83997 SOL)",
+  "[2026-10-24T06:55:01.576Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T06:55:02.008Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T06:55:06.564Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-24T06:52:09.069Z"
+ "state_last_updated": "2026-10-24T06:56:57.083Z"
 }

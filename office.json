@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:47:40.667211+00:00",
+ "generated_at": "2026-10-24T01:52:39.463005+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -242,13 +242,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1003,
-  "today": 17,
-  "today_real": 9,
+  "total_real": 1004,
+  "today": 18,
+  "today_real": 10,
   "by_type": {
-   "skip": 36,
+   "skip": 35,
    "close": 13,
-   "no_deploy": 38,
+   "no_deploy": 39,
    "deploy": 13
   },
   "by_actor": {
@@ -256,6 +256,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T01:52:06.999Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with **no valid entry opened** \u2014 the deploy call was blocked and did not execute on-chain. **BEST LOOKING CANDIDATE** Moustache-SOL (BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ) **WHY SKIPPED** The candidate itself cleared screening (bin_step=100, volatility 6.14, fee/TVL"
+   },
    {
     "ts": "2026-10-24T01:46:44.893Z",
     "type": "no_deploy",
@@ -343,14 +351,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.223 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T00:40:02.188Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.223 < 0.74)"
    }
   ]
  },
@@ -362,7 +362,7 @@
    },
    {
     "hour": "15:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "16:00",
@@ -402,25 +402,25 @@
    },
    {
     "hour": "01:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T01:46:38.518",
-  "last_management": "2026-10-24T01:40:00.379"
+  "last_screening": "2026-10-24T01:51:53.111",
+  "last_management": "2026-10-24T01:50:00.763"
  },
  "log_tail": [
-  "[2026-10-24T01:41:24.111Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 37.17% > 30%",
-  "[2026-10-24T01:41:28.774Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-24T01:46:38.204Z] [SCREENING] Volume spike check rejected Moustache-SOL: 2.40x",
-  "[2026-10-24T01:46:38.204Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-24T01:46:38.204Z] [CRON] [Opportunity] fone-SOL degen 81.9 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-24T01:46:38.518Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T01:46:38.518Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
   "[2026-10-24T01:46:38.630Z] [SCREENING] Volume spike check rejected Moustache-SOL: 2.40x",
   "[2026-10-24T01:46:38.630Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-24T01:46:44.892Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T01:46:44.892Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T01:50:00.763Z] [CRON] Starting management cycle",
+  "[2026-10-24T01:50:01.410Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T01:51:52.899Z] [CRON] [Opportunity] Moustache-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T01:51:53.111Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T01:51:53.111Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
+  "[2026-10-24T01:52:06.998Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T01:41:03.552Z"
 }

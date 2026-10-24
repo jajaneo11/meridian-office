@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T03:07:38.326162+00:00",
+ "generated_at": "2026-10-24T03:12:40.088889+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -447,11 +447,9 @@
  },
  "cycles": {
   "last_screening": "2026-10-24T03:07:14.405",
-  "last_management": "2026-10-24T03:00:00.497"
+  "last_management": "2026-10-24T03:10:00.883"
  },
  "log_tail": [
-  "[2026-10-24T03:06:59.525Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T03:07:14.141Z] [CRON] [Opportunity] ELIZABETH-SOL degen 98.7 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-24T03:07:14.405Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T03:07:14.406Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.776913 SOL)",
   "[2026-10-24T03:07:27.589Z] [DEPLOY] Pool: Er9YGWW3pKaKoVA5xwmcB9EBbhc6b9itNoTsBuP8tirj",
@@ -459,7 +457,9 @@
   "[2026-10-24T03:07:27.590Z] [DEPLOY] Amount: 0 X, 0.69 Y",
   "[2026-10-24T03:07:27.590Z] [DEPLOY] Position: D1C4LtT7R1Wn4xRR67VPUJktPYceSKR9TwYgXZ2LFcSd",
   "[2026-10-24T03:07:28.851Z] [DEPLOY] SUCCESS \u2014 1 tx(s): AY53Rwx6aNj5BobaMf9zKLxRPXELQ2qoVE1JAZf72vWPLPSHgFhqqZZ81Wpp2Dk37Qm3AA9LKQMpBGDAJJ3Wepd",
-  "[2026-10-24T03:07:30.604Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-24T03:07:30.604Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-24T03:10:00.883Z] [CRON] Starting management cycle",
+  "[2026-10-24T03:10:01.568Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T03:07:28.852Z"
+ "state_last_updated": "2026-10-24T03:12:11.543Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T10:47:39.167404+00:00",
+ "generated_at": "2026-10-24T10:52:38.334323+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.620675
+  "sol": 1.623134
  },
  "limits": {
   "max_positions": 3,
@@ -57,37 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
-  "open": [
-   {
-    "id": "71JJSoioeKZLrsAFBZZi7JVxirAevC58K9KMN9rUkJad",
-    "pool": "mil-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T09:55:18.931Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 0.73
-   },
-   {
-    "id": "HP3BoLrWYARex6J3PMJbYBwqK6Dby6V3CdtPKzXuD5ak",
-    "pool": "mil-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T09:55:18.935Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 0.73
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 31
  },
  "pnl": {
-  "last24h_usd": 11.47,
-  "fees24h_usd": 62.69,
-  "all_time_usd": 11.47,
-  "closed_total": 29,
-  "win_rate_pct": 66
+  "last24h_usd": 12.35,
+  "fees24h_usd": 62.95,
+  "all_time_usd": 12.35,
+  "closed_total": 31,
+  "win_rate_pct": 68
  },
  "pnl_trades": [
   {
@@ -379,24 +358,68 @@
    "amount_sol": 0.69,
    "minutes_held": 157,
    "close_reason": "Trailing TP: peak 4.63% \u2192 current 2.76% (dropped 1.87% >= 1.5%)"
+  },
+  {
+   "pool": "mil-SOL",
+   "recorded_at": "2026-10-24T10:48:09.808Z",
+   "pnl_usd": 0.43,
+   "pnl_pct": 0.58,
+   "fees_usd": 0.1316579430019961,
+   "amount_sol": 0.73,
+   "minutes_held": 52,
+   "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "mil-SOL",
+   "recorded_at": "2026-10-24T10:48:22.598Z",
+   "pnl_usd": 0.45,
+   "pnl_pct": 0.61,
+   "fees_usd": 0.1316866515720783,
+   "amount_sol": 0.73,
+   "minutes_held": 53,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1057,
+  "total_real": 1058,
   "today": 100,
-  "today_real": 63,
+  "today_real": 64,
   "by_type": {
-   "close": 8,
-   "no_deploy": 36,
+   "no_deploy": 35,
    "deploy": 8,
-   "skip": 48
+   "skip": 48,
+   "close": 9
   },
   "by_actor": {
-   "MANAGER": 8,
-   "SCREENER": 92
+   "SCREENER": 91,
+   "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-24T10:50:00.905Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- mil-SOL: token cooldown active - Moustache-SOL: token cooldown active"
+   },
+   {
+    "ts": "2026-10-24T10:48:22.602Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "mil-SOL",
+    "summary": "Closed at 0.61%",
+    "reason_short": "pumped far above range"
+   },
+   {
+    "ts": "2026-10-24T10:48:09.817Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "mil-SOL",
+    "summary": "Closed at 0.58%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-24T10:45:01.225Z",
     "type": "skip",
@@ -468,30 +491,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.077 < 0.76)"
-   },
-   {
-    "ts": "2026-10-24T10:05:00.732Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.077 < 0.76)"
-   },
-   {
-    "ts": "2026-10-24T10:00:00.496Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.077 < 0.76)"
-   },
-   {
-    "ts": "2026-10-24T09:55:18.935Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "mil-SOL",
-    "summary": "Deployed 0.73 SOL with bid_ask",
-    "reason_short": "Chosen range -681\u2192-612 around active bin -612"
    }
   ]
  },
@@ -515,7 +514,7 @@
    },
    {
     "hour": "03:00",
-    "count": 3
+    "count": 0
    },
    {
     "hour": "04:00",
@@ -543,25 +542,25 @@
    },
    {
     "hour": "10:00",
-    "count": 11
+    "count": 14
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T09:55:00.515",
-  "last_management": "2026-10-24T10:45:00.930"
+  "last_screening": "2026-10-24T10:50:00.743",
+  "last_management": "2026-10-24T10:50:00.174"
  },
  "log_tail": [
-  "[2026-10-24T10:35:01.108Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:35:01.554Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T10:40:00.001Z] [CRON] Starting management cycle",
-  "[2026-10-24T10:40:00.254Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:40:00.845Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T10:43:05.935Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-24T10:43:06.986Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:45:00.930Z] [CRON] Starting management cycle",
-  "[2026-10-24T10:45:01.224Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:45:01.615Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T10:45:01.615Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T10:48:00.243Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T10:48:12.351Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T10:50:00.174Z] [CRON] Starting management cycle",
+  "[2026-10-24T10:50:00.680Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T10:50:00.680Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T10:50:00.743Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T10:50:00.743Z] [CRON] Computed deploy amount: 0.73 SOL (wallet: 1.623134 SOL)",
+  "[2026-10-24T10:50:00.904Z] [SCREENING] Filtered cooldown token mil (3w67qwok)",
+  "[2026-10-24T10:50:00.905Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)"
  ],
- "state_last_updated": "2026-10-24T10:34:20.275Z"
+ "state_last_updated": "2026-10-24T10:48:22.391Z"
 }

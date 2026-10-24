@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T08:02:39.716422+00:00",
+ "generated_at": "2026-10-24T08:07:38.769580+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 31,
+  "active_24h": 30,
   "total_value_usd": 139437,
   "total_activity": 390,
   "top": [
@@ -352,9 +352,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1036,
-  "today": 98,
-  "today_real": 42,
+  "total_real": 1037,
+  "today": 99,
+  "today_real": 43,
   "by_type": {
    "no_deploy": 31,
    "deploy": 13,
@@ -366,6 +366,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T08:05:00.970Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-24T08:00:12.774Z",
     "type": "no_deploy",
@@ -453,14 +461,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.108 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T07:15:00.970Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.108 < 0.74)"
    }
   ]
  },
@@ -476,7 +476,7 @@
    },
    {
     "hour": "23:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "00:00",
@@ -512,25 +512,25 @@
    },
    {
     "hour": "08:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T08:00:01.618",
-  "last_management": "2026-10-24T08:00:00.921"
+  "last_screening": "2026-10-24T08:05:00.864",
+  "last_management": "2026-10-24T08:05:00.095"
  },
  "log_tail": [
-  "[2026-10-24T07:55:01.415Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T07:55:01.554Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
-  "[2026-10-24T08:00:00.921Z] [CRON] Starting management cycle",
-  "[2026-10-24T08:00:01.618Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T08:00:01.618Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
   "[2026-10-24T08:00:01.639Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T08:00:02.712Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
   "[2026-10-24T08:00:02.715Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)",
   "[2026-10-24T08:00:02.888Z] [SCREENING] PVP guard: GP-SOL has active rival Graphite (31k88G5M)",
-  "[2026-10-24T08:00:12.773Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-24T08:00:12.773Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-24T08:05:00.095Z] [CRON] Starting management cycle",
+  "[2026-10-24T08:05:00.771Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T08:05:00.864Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T08:05:00.864Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)"
  ],
  "state_last_updated": "2026-10-24T07:44:55.062Z"
 }

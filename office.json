@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T03:52:38.648693+00:00",
+ "generated_at": "2026-10-24T03:57:45.959338+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -302,9 +302,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1015,
-  "today": 42,
-  "today_real": 21,
+  "total_real": 1016,
+  "today": 43,
+  "today_real": 22,
   "by_type": {
    "no_deploy": 40,
    "close": 15,
@@ -316,6 +316,14 @@
    "MANAGER": 15
   },
   "recent": [
+   {
+    "ts": "2026-10-24T03:55:15.393Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- BTC-SOL: bot holders 59.22% > 30%"
+   },
    {
     "ts": "2026-10-24T03:50:00.180Z",
     "type": "no_deploy",
@@ -403,14 +411,6 @@
     "pool_name": "ELIZABETH-SOL",
     "summary": "Deployed 0.69 SOL with bid_ask",
     "reason_short": "Chosen range -648\u2192-579 around active bin -579"
-   },
-   {
-    "ts": "2026-10-24T03:07:09.289Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "Moustache-SOL",
-    "summary": "Closed at 2.96%",
-    "reason_short": "Trailing TP: peak 4.08% \u2192 current 2.53% (dropped 1.55% >= 1.5%)"
    }
   ]
  },
@@ -426,7 +426,7 @@
    },
    {
     "hour": "18:00",
-    "count": 11
+    "count": 10
    },
    {
     "hour": "19:00",
@@ -462,25 +462,25 @@
    },
    {
     "hour": "03:00",
-    "count": 13
+    "count": 14
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T03:49:59.603",
+  "last_screening": "2026-10-24T03:55:14.643",
   "last_management": "2026-10-24T03:50:00.615"
  },
  "log_tail": [
-  "[2026-10-24T03:48:29.056Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T03:49:14.226Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T03:49:59.219Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
-  "[2026-10-24T03:49:59.329Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-24T03:49:59.603Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T03:49:59.603Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.793994 SOL)",
   "[2026-10-24T03:49:59.663Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
   "[2026-10-24T03:50:00.179Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.21% > 30%",
   "[2026-10-24T03:50:00.615Z] [CRON] Starting management cycle",
-  "[2026-10-24T03:50:01.431Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T03:50:01.431Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T03:55:14.265Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T03:55:14.380Z] [CRON] [Opportunity] BTC-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T03:55:14.643Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T03:55:14.643Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.793994 SOL)",
+  "[2026-10-24T03:55:14.715Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T03:55:15.392Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.22% > 30%"
  ],
- "state_last_updated": "2026-10-24T03:43:40.940Z"
+ "state_last_updated": "2026-10-24T03:56:33.031Z"
 }

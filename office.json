@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T06:12:39.825912+00:00",
+ "generated_at": "2026-10-24T06:17:40.953066+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -342,19 +342,27 @@
  "decisions": {
   "total": 100,
   "total_real": 1029,
-  "today": 73,
+  "today": 74,
   "today_real": 35,
   "by_type": {
-   "deploy": 15,
-   "skip": 40,
+   "skip": 41,
    "close": 14,
-   "no_deploy": 31
+   "no_deploy": 31,
+   "deploy": 14
   },
   "by_actor": {
    "SCREENER": 86,
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T06:15:00.425Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.089 < 0.74)"
+   },
    {
     "ts": "2026-10-24T06:10:01.197Z",
     "type": "skip",
@@ -442,14 +450,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle ended with no completed entry. BEST LOOKING CANDIDATE PANGEA-SOL (H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX) WHY SKIPPED Deployment failed at the tool level \u2014 my deploy_position call was blocked by the framework. The first attempt was rejected for missing a positive amount_y, an"
-   },
-   {
-    "ts": "2026-10-24T05:25:06.299Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE TRUTH-SOL WHY SKIPPED The single candidate fails the conviction bar on multiple independent axes. Narrative is missing (still \"being generated\" \u2014 no specific origin or catalyst), and there are 0 tracked smart wallets present \u2014 th"
    }
   ]
  },
@@ -461,7 +461,7 @@
    },
    {
     "hour": "20:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "21:00",
@@ -501,25 +501,25 @@
    },
    {
     "hour": "06:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T06:00:01.130",
-  "last_management": "2026-10-24T06:10:00.870"
+  "last_management": "2026-10-24T06:15:00.087"
  },
  "log_tail": [
-  "[2026-10-24T06:00:09.802Z] [DEPLOY] Amount: 0 X, 0.69 Y",
-  "[2026-10-24T06:00:09.802Z] [DEPLOY] Position: ArhoPoibuu4msGEBTmM5ePyka7KhXiXJUd9EbtQBvZCX",
-  "[2026-10-24T06:00:18.625Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5zu4GGXKPqdX7NrYuv8TbKVY8nqsG2Fwg84ShaD9dK2zJN6K7tHdMXc25btaqTYL7dETLtQmtTT3yePG5sCVS1qb",
   "[2026-10-24T06:00:20.934Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-24T06:05:00.676Z] [CRON] Starting management cycle",
   "[2026-10-24T06:05:00.965Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
   "[2026-10-24T06:05:01.455Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T06:10:00.870Z] [CRON] Starting management cycle",
   "[2026-10-24T06:10:01.196Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T06:10:01.671Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T06:10:01.671Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T06:15:00.087Z] [CRON] Starting management cycle",
+  "[2026-10-24T06:15:00.424Z] [CRON] Screening skipped \u2014 insufficient SOL (0.089 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T06:15:00.956Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-24T06:11:26.694Z"
+ "state_last_updated": "2026-10-24T06:17:26.762Z"
 }

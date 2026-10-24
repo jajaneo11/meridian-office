@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T10:07:42.721062+00:00",
+ "generated_at": "2026-10-24T10:12:41.136072+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -387,16 +387,24 @@
   "today": 100,
   "today_real": 63,
   "by_type": {
-   "deploy": 11,
    "close": 10,
    "no_deploy": 39,
-   "skip": 40
+   "deploy": 10,
+   "skip": 41
   },
   "by_actor": {
-   "SCREENER": 90,
-   "MANAGER": 10
+   "MANAGER": 10,
+   "SCREENER": 90
   },
   "recent": [
+   {
+    "ts": "2026-10-24T10:10:00.978Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.077 < 0.76)"
+   },
    {
     "ts": "2026-10-24T10:05:00.732Z",
     "type": "skip",
@@ -484,14 +492,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-SOL WHY SKIPPED PANGEA-SOL passed all hard gates cleanly (fees 229.69 SOL \u2265 30, bin_step 100, volatility 3.14 positive, fee/TVL 0.174, top10 32.31%, bots 17.68%), but it fails every soft-conviction signal. Narrative is una"
-   },
-   {
-    "ts": "2026-10-24T09:26:59.314Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "PANGEA-SOL",
-    "summary": "Closed at -0.25%",
-    "reason_short": "pumped far above range"
    }
   ]
  },
@@ -515,7 +515,7 @@
    },
    {
     "hour": "03:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "04:00",
@@ -543,25 +543,25 @@
    },
    {
     "hour": "10:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T09:55:00.515",
-  "last_management": "2026-10-24T10:05:00.439"
+  "last_management": "2026-10-24T10:10:00.716"
  },
  "log_tail": [
-  "[2026-10-24T09:55:15.779Z] [DEPLOY] Position: 71JJSoioeKZLrsAFBZZi7JVxirAevC58K9KMN9rUkJad",
-  "[2026-10-24T09:55:18.927Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2oLn3XwaefSczEzSZtkQaMGRr7hVYsCL48bhLZT5ae86x6d65zj4th8jyhLTHMX8KgxtYQZQGaXoXKtLKPzPi6o6",
-  "[2026-10-24T09:55:18.934Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5dikYM1nceTv7aVVzBikWoSy5vQ6Hzcf7xvwE35cykRF5cUevqGddVJneTbjbso1bqR4tVGjkBz7WWrUKLBF6HU1",
   "[2026-10-24T09:55:21.340Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-24T10:00:00.207Z] [CRON] Starting management cycle",
   "[2026-10-24T10:00:00.495Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
   "[2026-10-24T10:00:00.989Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T10:05:00.439Z] [CRON] Starting management cycle",
   "[2026-10-24T10:05:00.732Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
-  "[2026-10-24T10:05:01.220Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T10:05:01.220Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T10:10:00.716Z] [CRON] Starting management cycle",
+  "[2026-10-24T10:10:00.977Z] [CRON] Screening skipped \u2014 insufficient SOL (0.077 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T10:10:01.453Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T10:04:20.006Z"
 }

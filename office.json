@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T12:52:41.931964+00:00",
+ "generated_at": "2026-10-24T12:57:39.398374+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -428,6 +428,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-24T12:55:00.519Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.848 < 1.58)"
+   },
+   {
     "ts": "2026-10-24T12:50:00.406Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -514,14 +522,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL (98zuZBUCvRJk4XCnA9G9ADzUehmfrGJdDL3bQ29ytKUv) WHY SKIPPED OpenSolana-SOL was the clear fundamental winner \u2014 highest volatility (9.5), huge fee/TVL (1.09), strong volume, and low top10 concentration (13.5%) \u2014 but t"
-   },
-   {
-    "ts": "2026-10-24T12:10:17.305Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE OpenSolana-SOL WHY SKIPPED This is the only candidate and it fails multiple conviction gates. The token has no narrative (still generating, 1m wait) and zero smart wallets present \u2014 that combination is a hard skip signal. Worse, "
    }
   ]
  },
@@ -549,7 +549,7 @@
    },
    {
     "hour": "06:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "07:00",
@@ -573,25 +573,25 @@
    },
    {
     "hour": "12:00",
-    "count": 15
+    "count": 16
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T12:35:00.674",
-  "last_management": "2026-10-24T12:50:00.125"
+  "last_management": "2026-10-24T12:55:00.288"
  },
  "log_tail": [
-  "[2026-10-24T12:39:02.542Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T12:40:00.718Z] [CRON] Starting management cycle",
-  "[2026-10-24T12:40:00.996Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T12:40:01.416Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T12:45:00.963Z] [CRON] Starting management cycle",
   "[2026-10-24T12:45:01.204Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
   "[2026-10-24T12:45:01.666Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T12:50:00.125Z] [CRON] Starting management cycle",
   "[2026-10-24T12:50:00.405Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T12:50:00.780Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T12:50:00.780Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T12:55:00.288Z] [CRON] Starting management cycle",
+  "[2026-10-24T12:55:00.519Z] [CRON] Screening skipped \u2014 insufficient SOL (0.848 < 1.58 needed for deploy + gas)",
+  "[2026-10-24T12:55:00.921Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T12:57:23.196Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-24T12:47:20.072Z"
+ "state_last_updated": "2026-10-24T12:57:23.195Z"
 }

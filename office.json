@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:32:40.527190+00:00",
+ "generated_at": "2026-10-24T01:37:40.684864+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.926214
+  "sol": 0.944507
  },
  "limits": {
   "max_positions": 3,
@@ -242,13 +242,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1000,
-  "today": 14,
-  "today_real": 6,
+  "total_real": 1001,
+  "today": 15,
+  "today_real": 7,
   "by_type": {
-   "skip": 39,
+   "skip": 38,
    "close": 13,
-   "no_deploy": 35,
+   "no_deploy": 36,
    "deploy": 13
   },
   "by_actor": {
@@ -256,6 +256,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T01:36:09.232Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- ELON-SOL: bot holders 36.73% > 30%"
+   },
    {
     "ts": "2026-10-24T01:30:15.889Z",
     "type": "no_deploy",
@@ -343,14 +351,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.223 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T00:12:07.907Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "YMB-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -568\u2192-503 around active bin -503"
    }
   ]
  },
@@ -362,7 +362,7 @@
    },
    {
     "hour": "15:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "16:00",
@@ -402,25 +402,25 @@
    },
    {
     "hour": "01:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T01:30:01.508",
+  "last_screening": "2026-10-24T01:36:08.535",
   "last_management": "2026-10-24T01:30:00.863"
  },
  "log_tail": [
-  "\u26d4 NO DEPLOY",
-  "- Moustache-SOL \u2014 blocked by tool error (missing amount_y on first call; session guard prevented retry). No deploy executed.",
-  "[2026-10-24T01:30:00.863Z] [CRON] Starting management cycle",
-  "[2026-10-24T01:30:01.508Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T01:30:01.509Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.926214 SOL)",
   "[2026-10-24T01:30:01.603Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
   "[2026-10-24T01:30:03.558Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 36.51% > 30%",
   "[2026-10-24T01:30:15.889Z] [AGENT] \u26d4 NO DEPLOY \u2014 TOOL FAILURE",
   "The candidate itself screened well \u2014 bin_step=100, fee/tvl 0.2708, volatility 4.01, organic 78, fees 83 SOL (>30 gate), top10 18% (<60), bots 23% (<30), 1 smart wallet present (Degen #15), and positive pool memory (last outcome profit). However, the deploy tool returned a hard verification error (pool identity not passed through to the screening check) and then blocked any retry. Since the transaction never executed, I will not report a deploy.",
-  "- Moustache-SOL \u2014 deploy blocked by tool verification error (failed, not a candidate rejection)"
+  "- Moustache-SOL \u2014 deploy blocked by tool verification error (failed, not a candidate rejection)",
+  "[2026-10-24T01:36:08.323Z] [CRON] [Opportunity] ELON-SOL degen 92.5 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T01:36:08.535Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T01:36:08.535Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
+  "[2026-10-24T01:36:09.231Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 36.73% > 30%"
  ],
  "state_last_updated": "2026-10-24T01:30:05.002Z"
 }

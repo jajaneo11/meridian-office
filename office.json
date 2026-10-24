@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T15:02:40.147406+00:00",
+ "generated_at": "2026-10-24T15:07:41.223705+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -447,9 +447,9 @@
   "today": 100,
   "today_real": 87,
   "by_type": {
-   "no_deploy": 35,
+   "no_deploy": 34,
    "deploy": 9,
-   "skip": 47,
+   "skip": 48,
    "close": 9
   },
   "by_actor": {
@@ -457,6 +457,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-24T15:05:00.299Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.173 < 1.58)"
+   },
    {
     "ts": "2026-10-24T15:00:01.002Z",
     "type": "skip",
@@ -544,14 +552,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE SAPLING-SOL WHY SKIPPED SAPLING passes all numeric gates (bin_step=100, volatility=2.40, fees=279 SOL, bots=24%, top10=25%), and no pool memory red flags. But it fails the qualitative bar: the narrative is unavailable (\"Narrative"
-   },
-   {
-    "ts": "2026-10-24T14:05:10.067Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Dacity-USDT: bot holders 44.28% > 30% - Dacity-SOL: bot holders 44.29% > 30% - Dacity-USDC: bot holders 44.29% > 30%"
    }
   ]
  },
@@ -575,7 +575,7 @@
    },
    {
     "hour": "08:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "09:00",
@@ -603,25 +603,25 @@
    },
    {
     "hour": "15:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T14:20:00.686",
-  "last_management": "2026-10-24T15:00:00.835"
+  "last_management": "2026-10-24T15:05:00.022"
  },
  "log_tail": [
-  "[2026-10-24T14:45:01.026Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T14:50:00.512Z] [CRON] Starting management cycle",
-  "[2026-10-24T14:50:00.595Z] [CRON] Screening skipped \u2014 insufficient SOL (0.173 < 1.58 needed for deploy + gas)",
   "[2026-10-24T14:50:01.209Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T14:55:00.668Z] [CRON] Starting management cycle",
   "[2026-10-24T14:55:00.768Z] [CRON] Screening skipped \u2014 insufficient SOL (0.173 < 1.58 needed for deploy + gas)",
   "[2026-10-24T14:55:01.419Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T15:00:00.835Z] [CRON] Starting management cycle",
   "[2026-10-24T15:00:01.002Z] [CRON] Screening skipped \u2014 insufficient SOL (0.173 < 1.58 needed for deploy + gas)",
-  "[2026-10-24T15:00:01.591Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T15:00:01.591Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T15:05:00.022Z] [CRON] Starting management cycle",
+  "[2026-10-24T15:05:00.298Z] [CRON] Screening skipped \u2014 insufficient SOL (0.173 < 1.58 needed for deploy + gas)",
+  "[2026-10-24T15:05:00.663Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T14:31:33.287Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:22:39.637458+00:00",
+ "generated_at": "2026-10-24T05:27:39.914581+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 34,
+  "active_24h": 33,
   "total_value_usd": 139437,
   "total_activity": 390,
   "top": [
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 0.806649
+  "sol": 0.806246
  },
  "limits": {
   "max_positions": 3,
@@ -312,9 +312,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1021,
-  "today": 61,
-  "today_real": 27,
+  "total_real": 1022,
+  "today": 62,
+  "today_real": 28,
   "by_type": {
    "no_deploy": 36,
    "close": 13,
@@ -326,6 +326,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T05:25:06.299Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE TRUTH-SOL WHY SKIPPED The single candidate fails the conviction bar on multiple independent axes. Narrative is missing (still \"being generated\" \u2014 no specific origin or catalyst), and there are 0 tracked smart wallets present \u2014 th"
+   },
    {
     "ts": "2026-10-24T05:20:33.274Z",
     "type": "close",
@@ -413,14 +421,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T04:30:00.933Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.073 < 0.74)"
    }
   ]
  },
@@ -432,7 +432,7 @@
    },
    {
     "hour": "19:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "20:00",
@@ -472,25 +472,25 @@
    },
    {
     "hour": "05:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T04:20:00.984",
-  "last_management": "2026-10-24T05:20:00.740"
+  "last_screening": "2026-10-24T05:25:01.694",
+  "last_management": "2026-10-24T05:25:00.954"
  },
  "log_tail": [
-  "[2026-10-24T05:10:00.281Z] [CRON] Starting management cycle",
-  "[2026-10-24T05:10:00.658Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T05:10:01.041Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:15:00.498Z] [CRON] Starting management cycle",
-  "[2026-10-24T05:15:00.816Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T05:15:01.309Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T05:20:00.740Z] [CRON] Starting management cycle",
   "[2026-10-24T05:20:01.043Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
   "[2026-10-24T05:20:01.514Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:20:13.986Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-24T05:20:13.986Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-24T05:25:00.954Z] [CRON] Starting management cycle",
+  "[2026-10-24T05:25:01.663Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T05:25:01.694Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T05:25:01.695Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.806246 SOL)",
+  "[2026-10-24T05:25:01.905Z] [SCREENING] Filtered cooldown token ELIZABETH (Biiv46yB)",
+  "[2026-10-24T05:25:06.297Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T05:20:33.015Z"
 }

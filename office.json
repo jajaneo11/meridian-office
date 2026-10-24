@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T14:07:39.846188+00:00",
+ "generated_at": "2026-10-24T14:12:43.137480+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8294
    }
   ],
-  "decisions_mentioning": 11
+  "decisions_mentioning": 12
  },
  "mode": {
   "dry_run": false,
@@ -432,13 +432,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1078,
+  "total_real": 1079,
   "today": 100,
-  "today_real": 84,
+  "today_real": 85,
   "by_type": {
-   "skip": 43,
+   "skip": 42,
    "close": 10,
-   "no_deploy": 39,
+   "no_deploy": 40,
    "deploy": 8
   },
   "by_actor": {
@@ -446,6 +446,14 @@
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-24T14:10:06.108Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE SAPLING-SOL WHY SKIPPED SAPLING passes all numeric gates (bin_step=100, volatility=2.40, fees=279 SOL, bots=24%, top10=25%), and no pool memory red flags. But it fails the qualitative bar: the narrative is unavailable (\"Narrative"
+   },
    {
     "ts": "2026-10-24T14:05:10.067Z",
     "type": "no_deploy",
@@ -533,14 +541,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.124 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T13:15:17.447Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "DacityCoin-SOL",
-    "summary": "Deployed 1.55 SOL with bid_ask",
-    "reason_short": "Chosen range -398\u2192-329 around active bin -329"
    }
   ]
  },
@@ -564,7 +564,7 @@
    },
    {
     "hour": "07:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "08:00",
@@ -592,25 +592,25 @@
    },
    {
     "hour": "14:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T14:05:00.940",
-  "last_management": "2026-10-24T14:05:00.352"
+  "last_screening": "2026-10-24T14:10:01.192",
+  "last_management": "2026-10-24T14:10:00.633"
  },
  "log_tail": [
-  "[2026-10-24T14:05:00.352Z] [CRON] Starting management cycle",
-  "[2026-10-24T14:05:00.937Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-24T14:05:00.937Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-24T14:05:00.940Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T14:05:00.940Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.765113 SOL)",
-  "[2026-10-24T14:05:01.171Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
-  "[2026-10-24T14:05:01.172Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T14:05:10.066Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.28% > 30%",
-  "[2026-10-24T14:05:10.066Z] [SCREENING] Bot-holder filter: dropped Dacity-SOL \u2014 bots 44.29% > 30%",
-  "[2026-10-24T14:05:10.066Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 44.29% > 30%"
+  "[2026-10-24T14:05:10.066Z] [SCREENING] Bot-holder filter: dropped Dacity-USDC \u2014 bots 44.29% > 30%",
+  "[2026-10-24T14:10:00.633Z] [CRON] Starting management cycle",
+  "[2026-10-24T14:10:01.192Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T14:10:01.192Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.765113 SOL)",
+  "[2026-10-24T14:10:01.203Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-24T14:10:01.204Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-24T14:10:01.325Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-24T14:10:01.327Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-24T14:10:02.159Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.31% > 30%",
+  "[2026-10-24T14:10:06.106Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-24T14:00:28.506Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T09:17:39.844327+00:00",
+ "generated_at": "2026-10-24T09:22:40.400376+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -365,16 +365,24 @@
   "today": 100,
   "today_real": 56,
   "by_type": {
-   "no_deploy": 35,
    "deploy": 12,
-   "skip": 42,
-   "close": 11
+   "skip": 43,
+   "close": 11,
+   "no_deploy": 34
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-24T09:20:00.406Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.139 < 0.76)"
+   },
    {
     "ts": "2026-10-24T09:15:18.835Z",
     "type": "skip",
@@ -462,14 +470,6 @@
     "pool_name": "Kimchi-SOL",
     "summary": "Single candidate skipped",
     "reason_short": "top10 concentration 79.02% above maximum 60%"
-   },
-   {
-    "ts": "2026-10-24T08:40:01.394Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- mil-SOL: already have an open position in this pool"
    }
   ]
  },
@@ -489,7 +489,7 @@
    },
    {
     "hour": "01:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "02:00",
@@ -521,25 +521,25 @@
    },
    {
     "hour": "09:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T09:10:01.763",
-  "last_management": "2026-10-24T09:15:00.451"
+  "last_management": "2026-10-24T09:20:00.307"
  },
  "log_tail": [
-  "[2026-10-24T09:11:31.852Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.78 needed for deploy + gas)",
-  "[2026-10-24T09:13:06.379Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-24T09:13:07.269Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.74 needed for deploy + gas)",
   "[2026-10-24T09:13:53.404Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
   "[2026-10-24T09:13:54.242Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
   "[2026-10-24T09:15:00.451Z] [CRON] Starting management cycle",
   "[2026-10-24T09:15:00.797Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
   "[2026-10-24T09:15:01.304Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T09:15:18.033Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-24T09:15:18.834Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)"
+  "[2026-10-24T09:15:18.834Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T09:20:00.307Z] [CRON] Starting management cycle",
+  "[2026-10-24T09:20:00.406Z] [CRON] Screening skipped \u2014 insufficient SOL (0.139 < 0.76 needed for deploy + gas)",
+  "[2026-10-24T09:20:00.987Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-24T09:15:51.365Z"
 }

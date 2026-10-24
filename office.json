@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:17:39.161743+00:00",
+ "generated_at": "2026-10-24T05:22:39.637458+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
+  "open_count": 1,
   "open": [
    {
     "id": "F8oitQi28CzkGN7cuGiPDWQPeTEWdnB3PwLizEE9pjnJ",
@@ -67,25 +67,16 @@
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": null
-   },
-   {
-    "id": "HQUYVuytUFm7N4n6PNZ1HuNjX3cfsjiVGnY6fJqKWt4G",
-    "pool": "WEFT-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-24T04:20:10.219Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null
    }
   ],
   "total_tracked": 24
  },
  "pnl": {
-  "last24h_usd": 3.03,
-  "fees24h_usd": 47.86,
-  "all_time_usd": 3.03,
-  "closed_total": 22,
-  "win_rate_pct": 68
+  "last24h_usd": 3.0,
+  "fees24h_usd": 47.99,
+  "all_time_usd": 3.0,
+  "closed_total": 23,
+  "win_rate_pct": 65
  },
  "pnl_trades": [
   {
@@ -307,24 +298,50 @@
    "amount_sol": 0.69,
    "minutes_held": 13,
    "close_reason": "Trailing TP: peak 3.22% \u2192 current 0.94% (dropped 2.28% >= 1.5%)"
+  },
+  {
+   "pool": "WEFT-SOL",
+   "recorded_at": "2026-10-24T05:20:33.267Z",
+   "pnl_usd": -0.03,
+   "pnl_pct": -0.04,
+   "fees_usd": 0.13286177829933607,
+   "amount_sol": 0.69,
+   "minutes_held": 60,
+   "close_reason": "Low yield: fee/TVL 4.59% < min 7% (age: 60m)"
   }
  ],
  "decisions": {
   "total": 100,
   "total_real": 1021,
-  "today": 59,
+  "today": 61,
   "today_real": 27,
   "by_type": {
-   "skip": 38,
-   "close": 13,
    "no_deploy": 36,
-   "deploy": 13
+   "close": 13,
+   "deploy": 13,
+   "skip": 38
   },
   "by_actor": {
    "SCREENER": 87,
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T05:20:33.274Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "WEFT-SOL",
+    "summary": "Closed at -0.04%",
+    "reason_short": "Low yield: fee/TVL 4.59% < min 7% (age: 60m)"
+   },
+   {
+    "ts": "2026-10-24T05:20:01.043Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.073 < 0.74)"
+   },
    {
     "ts": "2026-10-24T05:15:00.817Z",
     "type": "skip",
@@ -404,22 +421,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T04:25:00.788Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.073 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T04:20:10.220Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "WEFT-SOL",
-    "summary": "Deployed 0.69 SOL with bid_ask",
-    "reason_short": "Chosen range -739\u2192-670 around active bin -670"
    }
   ]
  },
@@ -431,7 +432,7 @@
    },
    {
     "hour": "19:00",
-    "count": 3
+    "count": 1
    },
    {
     "hour": "20:00",
@@ -471,25 +472,25 @@
    },
    {
     "hour": "05:00",
-    "count": 4
+    "count": 6
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T04:20:00.984",
-  "last_management": "2026-10-24T05:15:00.498"
+  "last_management": "2026-10-24T05:20:00.740"
  },
  "log_tail": [
-  "[2026-10-24T05:00:01.652Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T05:05:00.063Z] [CRON] Starting management cycle",
-  "[2026-10-24T05:05:00.403Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T05:05:00.858Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T05:10:00.281Z] [CRON] Starting management cycle",
   "[2026-10-24T05:10:00.658Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
   "[2026-10-24T05:10:01.041Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T05:15:00.498Z] [CRON] Starting management cycle",
   "[2026-10-24T05:15:00.816Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T05:15:01.309Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T05:15:01.309Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T05:20:00.740Z] [CRON] Starting management cycle",
+  "[2026-10-24T05:20:01.043Z] [CRON] Screening skipped \u2014 insufficient SOL (0.073 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T05:20:01.514Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T05:20:13.986Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-24T05:15:01.307Z"
+ "state_last_updated": "2026-10-24T05:20:33.015Z"
 }

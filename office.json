@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:37:40.684864+00:00",
+ "generated_at": "2026-10-24T01:42:38.651311+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 10
+  "decisions_mentioning": 11
  },
  "mode": {
   "dry_run": false,
@@ -242,13 +242,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1001,
-  "today": 15,
-  "today_real": 7,
+  "total_real": 1002,
+  "today": 16,
+  "today_real": 8,
   "by_type": {
-   "skip": 38,
+   "skip": 37,
    "close": 13,
-   "no_deploy": 36,
+   "no_deploy": 37,
    "deploy": 13
   },
   "by_actor": {
@@ -256,6 +256,14 @@
    "MANAGER": 13
   },
   "recent": [
+   {
+    "ts": "2026-10-24T01:41:28.774Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE YMB-SOL WHY SKIPPED Only one candidate survived screening, and it fails the conviction bar. YMB-SOL has no usable narrative (narrative still \"generating\" = effectively null) and zero smart wallets present \u2014 the exact \"no narrativ"
+   },
    {
     "ts": "2026-10-24T01:36:09.232Z",
     "type": "no_deploy",
@@ -343,14 +351,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.223 < 0.74)"
-   },
-   {
-    "ts": "2026-10-24T00:20:02.262Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.223 < 0.74)"
    }
   ]
  },
@@ -362,7 +362,7 @@
    },
    {
     "hour": "15:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "16:00",
@@ -402,25 +402,25 @@
    },
    {
     "hour": "01:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T01:36:08.535",
-  "last_management": "2026-10-24T01:30:00.863"
+  "last_screening": "2026-10-24T01:41:23.337",
+  "last_management": "2026-10-24T01:40:00.379"
  },
  "log_tail": [
-  "[2026-10-24T01:30:01.509Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.926214 SOL)",
-  "[2026-10-24T01:30:01.603Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-24T01:30:03.558Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 36.51% > 30%",
-  "[2026-10-24T01:30:15.889Z] [AGENT] \u26d4 NO DEPLOY \u2014 TOOL FAILURE",
-  "The candidate itself screened well \u2014 bin_step=100, fee/tvl 0.2708, volatility 4.01, organic 78, fees 83 SOL (>30 gate), top10 18% (<60), bots 23% (<30), 1 smart wallet present (Degen #15), and positive pool memory (last outcome profit). However, the deploy tool returned a hard verification error (pool identity not passed through to the screening check) and then blocked any retry. Since the transaction never executed, I will not report a deploy.",
-  "- Moustache-SOL \u2014 deploy blocked by tool verification error (failed, not a candidate rejection)",
-  "[2026-10-24T01:36:08.323Z] [CRON] [Opportunity] ELON-SOL degen 92.5 >= 40 \u2014 triggering screening deploy decision",
   "[2026-10-24T01:36:08.535Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T01:36:08.535Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
-  "[2026-10-24T01:36:09.231Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 36.73% > 30%"
+  "[2026-10-24T01:36:09.231Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 36.73% > 30%",
+  "[2026-10-24T01:40:00.379Z] [CRON] Starting management cycle",
+  "[2026-10-24T01:40:00.981Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T01:41:23.118Z] [CRON] [Opportunity] YMB-SOL degen 96.8 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T01:41:23.337Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T01:41:23.338Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.944507 SOL)",
+  "[2026-10-24T01:41:24.111Z] [SCREENING] Bot-holder filter: dropped ELON-SOL \u2014 bots 37.17% > 30%",
+  "[2026-10-24T01:41:28.774Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-24T01:30:05.002Z"
+ "state_last_updated": "2026-10-24T01:41:03.552Z"
 }

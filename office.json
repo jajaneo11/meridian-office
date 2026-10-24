@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T00:47:39.416285+00:00",
+ "generated_at": "2026-10-24T00:51:55.232229+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -87,22 +87,172 @@
   "closed_total": 14,
   "win_rate_pct": 79
  },
+ "pnl_trades": [
+  {
+   "pool": "GUST-SOL",
+   "recorded_at": "2026-10-23T12:03:26.742Z",
+   "pnl_usd": 0.02,
+   "pnl_pct": 0.03,
+   "fees_usd": 0.0845472262369124,
+   "amount_sol": 0.69,
+   "minutes_held": 14,
+   "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "McRib-SOL",
+   "recorded_at": "2026-10-23T12:41:39.962Z",
+   "pnl_usd": 0.05,
+   "pnl_pct": 0.08,
+   "fees_usd": 0,
+   "amount_sol": 0.69,
+   "minutes_held": 11,
+   "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "GUST-SOL",
+   "recorded_at": "2026-10-23T13:30:22.824Z",
+   "pnl_usd": 3.65,
+   "pnl_pct": 5.07,
+   "fees_usd": 7.824832997346813,
+   "amount_sol": 0.69,
+   "minutes_held": 43,
+   "close_reason": "Trailing TP: peak 5.18% \u2192 current 3.65% (dropped 1.53% >= 1.5%)"
+  },
+  {
+   "pool": "\u30e4\u30ae-SOL",
+   "recorded_at": "2026-10-23T17:00:18.190Z",
+   "pnl_usd": 1.52,
+   "pnl_pct": 2.1,
+   "fees_usd": 5.551685172956436,
+   "amount_sol": 0.69,
+   "minutes_held": 190,
+   "close_reason": "Trailing TP: peak 4.11% \u2192 current -5.51% (dropped 9.62% >= 1.5%)"
+  },
+  {
+   "pool": "Macca-SOL",
+   "recorded_at": "2026-10-23T17:58:04.521Z",
+   "pnl_usd": -0.05,
+   "pnl_pct": -0.07,
+   "fees_usd": 0.00500385305500668,
+   "amount_sol": 0.69,
+   "minutes_held": 27,
+   "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "SQUADS-SOL",
+   "recorded_at": "2026-10-23T18:09:32.289Z",
+   "pnl_usd": 3.7,
+   "pnl_pct": 5.13,
+   "fees_usd": 4.7781151481012385,
+   "amount_sol": 0.69,
+   "minutes_held": 10,
+   "close_reason": "Trailing TP: peak 8.03% \u2192 current 5.21% (dropped 2.82% >= 1.5%)"
+  },
+  {
+   "pool": "SQUADS-SOL",
+   "recorded_at": "2026-10-23T18:15:43.281Z",
+   "pnl_usd": 0.25,
+   "pnl_pct": 0.34,
+   "fees_usd": 0.2303385971055663,
+   "amount_sol": 0.69,
+   "minutes_held": 5,
+   "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "McRib-SOL",
+   "recorded_at": "2026-10-23T18:24:32.908Z",
+   "pnl_usd": 0.3,
+   "pnl_pct": 0.41,
+   "fees_usd": 0.4865839799947618,
+   "amount_sol": 0.69,
+   "minutes_held": 74,
+   "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "SQUADS-SOL",
+   "recorded_at": "2026-10-23T18:58:26.336Z",
+   "pnl_usd": 0.21,
+   "pnl_pct": 0.29,
+   "fees_usd": 0.12235244471703413,
+   "amount_sol": 0.69,
+   "minutes_held": 1,
+   "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "McRib-SOL",
+   "recorded_at": "2026-10-23T19:58:23.132Z",
+   "pnl_usd": 2.7,
+   "pnl_pct": 3.78,
+   "fees_usd": 3.5698685427203585,
+   "amount_sol": 0.69,
+   "minutes_held": 58,
+   "close_reason": "Trailing TP: peak 5.10% \u2192 current 3.38% (dropped 1.72% >= 1.5%)"
+  },
+  {
+   "pool": "\u30e4\u30ae-SOL",
+   "recorded_at": "2026-10-23T20:12:28.458Z",
+   "pnl_usd": -0.17,
+   "pnl_pct": -0.23,
+   "fees_usd": 0.02765856370492316,
+   "amount_sol": 0.69,
+   "minutes_held": 60,
+   "close_reason": "Low yield: fee/TVL 0.98% < min 7% (age: 60m)"
+  },
+  {
+   "pool": "Macca-SOL",
+   "recorded_at": "2026-10-23T21:31:32.303Z",
+   "pnl_usd": -0.21,
+   "pnl_pct": -0.29,
+   "fees_usd": 0.001387959202657385,
+   "amount_sol": 0.69,
+   "minutes_held": 39,
+   "close_reason": "Out of range for 30m (limit: 30m)"
+  },
+  {
+   "pool": "PANGEA-SOL",
+   "recorded_at": "2026-10-23T23:45:17.988Z",
+   "pnl_usd": 4.11,
+   "pnl_pct": 5.76,
+   "fees_usd": 7.7824026836535705,
+   "amount_sol": 0.69,
+   "minutes_held": 208,
+   "close_reason": "Trailing TP: peak 9.18% \u2192 current 6.23% (dropped 2.95% >= 1.5%)"
+  },
+  {
+   "pool": "Moustache-SOL",
+   "recorded_at": "2026-10-23T23:49:57.198Z",
+   "pnl_usd": 0.22,
+   "pnl_pct": 0.3,
+   "fees_usd": 0.06510643617782384,
+   "amount_sol": 0.69,
+   "minutes_held": 3,
+   "close_reason": "pumped far above range"
+  }
+ ],
  "decisions": {
   "total": 100,
   "total_real": 997,
-  "today": 6,
+  "today": 7,
   "today_real": 3,
   "by_type": {
-   "no_deploy": 34,
    "deploy": 13,
-   "skip": 42,
-   "close": 11
+   "skip": 43,
+   "close": 11,
+   "no_deploy": 33
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-24T00:50:01.531Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.223 < 0.74)"
+   },
    {
     "ts": "2026-10-24T00:40:02.188Z",
     "type": "skip",
@@ -190,14 +340,6 @@
     "pool_name": "PANGEA-SOL",
     "summary": "Closed at 5.76%",
     "reason_short": "Trailing TP: peak 9.18% \u2192 current 6.23% (dropped 2.95% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-23T23:40:01.850Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.207 < 0.74)"
    }
   ]
  },
@@ -205,7 +347,7 @@
   "per_hour": [
    {
     "hour": "13:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "14:00",
@@ -249,25 +391,25 @@
    },
    {
     "hour": "00:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T00:11:23.224",
-  "last_management": "2026-10-24T00:40:00.885"
+  "last_management": "2026-10-24T00:50:00.245"
  },
  "log_tail": [
-  "[2026-10-24T00:20:01.669Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T00:20:01.969Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-24T00:20:02.261Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
-  "[2026-10-24T00:30:00.473Z] [CRON] Starting management cycle",
   "[2026-10-24T00:30:00.779Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
   "[2026-10-24T00:30:01.326Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T00:40:00.885Z] [CRON] Starting management cycle",
   "[2026-10-24T00:40:01.633Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T00:40:01.934Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-24T00:40:02.187Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)"
+  "[2026-10-24T00:40:02.187Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T00:50:00.245Z] [CRON] Starting management cycle",
+  "[2026-10-24T00:50:00.962Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T00:50:01.269Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
+  "[2026-10-24T00:50:01.530Z] [CRON] Screening skipped \u2014 insufficient SOL (0.223 < 0.74 needed for deploy + gas)"
  ],
- "state_last_updated": "2026-10-24T00:45:41.958Z"
+ "state_last_updated": "2026-10-24T00:51:39.025Z"
 }

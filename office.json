@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T02:47:39.868603+00:00",
+ "generated_at": "2026-10-24T02:52:39.022772+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7580
    }
   ],
-  "decisions_mentioning": 13
+  "decisions_mentioning": 12
  },
  "mode": {
   "dry_run": false,
@@ -272,12 +272,12 @@
  "decisions": {
   "total": 100,
   "total_real": 1008,
-  "today": 28,
+  "today": 29,
   "today_real": 14,
   "by_type": {
-   "no_deploy": 40,
    "deploy": 16,
-   "skip": 30,
+   "no_deploy": 39,
+   "skip": 31,
    "close": 14
   },
   "by_actor": {
@@ -285,6 +285,14 @@
    "MANAGER": 14
   },
   "recent": [
+   {
+    "ts": "2026-10-24T02:50:01.705Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.035 < 0.74)"
+   },
    {
     "ts": "2026-10-24T02:40:01.993Z",
     "type": "skip",
@@ -372,14 +380,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with **no valid entry opened** \u2014 the deploy call was blocked and did not execute on-chain. **BEST LOOKING CANDIDATE** Moustache-SOL (BFmXMeQxC28jUGmSB7A4AQRuDqc1RgYz2J6GW8H1YkSJ) **WHY SKIPPED** The candidate itself cleared screening (bin_step=100, volatility 6.14, fee/TVL"
-   },
-   {
-    "ts": "2026-10-24T01:46:44.893Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE fone-SOL WHY SKIPPED The only surviving candidate fails the two strongest conviction gates. Its narrative is empty (still \"generating\" \u2014 no identifiable origin, catalyst, or named subject), and there are zero tracked smart wallet"
    }
   ]
  },
@@ -395,7 +395,7 @@
    },
    {
     "hour": "17:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "18:00",
@@ -431,25 +431,25 @@
    },
    {
     "hour": "02:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-24T02:25:14.457",
-  "last_management": "2026-10-24T02:40:00.584"
+  "last_management": "2026-10-24T02:50:00.059"
  },
  "log_tail": [
-  "[2026-10-24T02:25:22.084Z] [DEPLOY] Position: F8oitQi28CzkGN7cuGiPDWQPeTEWdnB3PwLizEE9pjnJ",
-  "[2026-10-24T02:25:29.737Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 44KwacWfmewVb3C3QwGRWfZEqAx7QfttjogqBxTgRFjzqNPXducKsmBak4AZsAQq6u4SVLCQtzvL7N8xNLCuTZPP",
-  "[2026-10-24T02:25:31.450Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-24T02:30:00.199Z] [CRON] Starting management cycle",
   "[2026-10-24T02:30:00.485Z] [CRON] Screening skipped \u2014 insufficient SOL (0.035 < 0.74 needed for deploy + gas)",
   "[2026-10-24T02:30:00.960Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T02:40:00.584Z] [CRON] Starting management cycle",
   "[2026-10-24T02:40:01.322Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-24T02:40:01.636Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
-  "[2026-10-24T02:40:01.990Z] [CRON] Screening skipped \u2014 insufficient SOL (0.035 < 0.74 needed for deploy + gas)"
+  "[2026-10-24T02:40:01.990Z] [CRON] Screening skipped \u2014 insufficient SOL (0.035 < 0.74 needed for deploy + gas)",
+  "[2026-10-24T02:50:00.059Z] [CRON] Starting management cycle",
+  "[2026-10-24T02:50:01.007Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T02:50:01.343Z] [CRON] Post-management: 2/3 positions \u2014 triggering screening",
+  "[2026-10-24T02:50:01.704Z] [CRON] Screening skipped \u2014 insufficient SOL (0.035 < 0.74 needed for deploy + gas)"
  ],
- "state_last_updated": "2026-10-24T02:46:41.273Z"
+ "state_last_updated": "2026-10-24T02:49:56.310Z"
 }

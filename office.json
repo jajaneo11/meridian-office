@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T08:52:40.065264+00:00",
+ "generated_at": "2026-10-24T08:57:38.521953+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -352,20 +352,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1046,
+  "total_real": 1047,
   "today": 100,
-  "today_real": 52,
+  "today_real": 53,
   "by_type": {
-   "skip": 38,
    "close": 13,
    "deploy": 12,
-   "no_deploy": 37
+   "no_deploy": 38,
+   "skip": 37
   },
   "by_actor": {
-   "SCREENER": 87,
-   "MANAGER": 13
+   "MANAGER": 13,
+   "SCREENER": 87
   },
   "recent": [
+   {
+    "ts": "2026-10-24T08:55:01.091Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- Moustache-SOL: token cooldown active - mil-SOL: already have an open position in this pool - YMB-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-24T08:50:02.303Z",
     "type": "no_deploy",
@@ -453,14 +461,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GP-SOL (8S2XFMPBNnUNBuzKTb1ZFC1B2DMJSRUFZQsbpSwFXhkx) WHY SKIPPED The only surviving candidate passes all hard gates (fee_tvl=0.107 above the 0.09 floor, volatility 8.44, bots 3.69%, bin_step 100), but it fails the judgment-based"
-   },
-   {
-    "ts": "2026-10-24T07:55:01.554Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- YMB-SOL: token cooldown active"
    }
   ]
  },
@@ -484,7 +484,7 @@
    },
    {
     "hour": "01:00",
-    "count": 11
+    "count": 10
    },
    {
     "hour": "02:00",
@@ -512,25 +512,25 @@
    },
    {
     "hour": "08:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T08:50:02.029",
-  "last_management": "2026-10-24T08:50:00.961"
+  "last_screening": "2026-10-24T08:55:00.922",
+  "last_management": "2026-10-24T08:55:00.221"
  },
  "log_tail": [
-  "[2026-10-24T08:45:00.750Z] [CRON] Starting management cycle",
-  "[2026-10-24T08:45:01.430Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-24T08:45:01.430Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
-  "[2026-10-24T08:45:01.503Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T08:45:01.725Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-24T08:50:00.961Z] [CRON] Starting management cycle",
   "[2026-10-24T08:50:02.029Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T08:50:02.029Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
   "[2026-10-24T08:50:02.099Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-24T08:50:02.302Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)"
+  "[2026-10-24T08:50:02.302Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T08:55:00.221Z] [CRON] Starting management cycle",
+  "[2026-10-24T08:55:00.922Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T08:55:00.922Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.870589 SOL)",
+  "[2026-10-24T08:55:00.957Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T08:55:01.089Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-24T08:55:01.091Z] [SCREENING] Filtered cooldown token YMB (2TKDNLwV)"
  ],
  "state_last_updated": "2026-10-24T08:29:38.405Z"
 }

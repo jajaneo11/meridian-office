@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T00:02:40.469815+00:00",
+ "generated_at": "2026-10-24T00:07:47.839452+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -80,13 +80,13 @@
  },
  "decisions": {
   "total": 100,
-  "total_real": 995,
-  "today": 1,
-  "today_real": 1,
+  "total_real": 996,
+  "today": 2,
+  "today_real": 2,
   "by_type": {
-   "skip": 41,
+   "skip": 40,
    "close": 12,
-   "no_deploy": 35,
+   "no_deploy": 36,
    "deploy": 12
   },
   "by_actor": {
@@ -94,6 +94,14 @@
    "MANAGER": 12
   },
   "recent": [
+   {
+    "ts": "2026-10-24T00:06:15.201Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "The deploy_position tool did not execute a real on-chain deployment \u2014 it returned blocked errors on every attempt and my retry was rejected as a duplicate session attempt. No actual position was opened, so I cannot report success. To be fully transparent, here is the outcome: \u26d4 NO DEPLOY Cycle finis"
+   },
    {
     "ts": "2026-10-24T00:01:05.851Z",
     "type": "no_deploy",
@@ -181,14 +189,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.180 < 0.74)"
-   },
-   {
-    "ts": "2026-10-23T22:50:01.223Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.180 < 0.74)"
    }
   ]
  },
@@ -196,7 +196,7 @@
   "per_hour": [
    {
     "hour": "13:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "14:00",
@@ -240,25 +240,25 @@
    },
    {
     "hour": "00:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-24T00:00:00.785",
+  "last_screening": "2026-10-24T00:06:08.176",
   "last_management": "2026-10-24T00:00:00.159"
  },
  "log_tail": [
-  "[2026-10-23T23:56:22.801Z] [SCREENING] Volume spike check rejected Moustache-SOL: 2.56x",
-  "[2026-10-23T23:56:22.801Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-23T23:57:07.773Z] [CRON] [Opportunity] Moustache-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
-  "[2026-10-23T23:57:07.982Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-23T23:57:07.983Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.956573 SOL)",
   "\u26d4 NO DEPLOY",
   "[2026-10-24T00:00:00.159Z] [CRON] Starting management cycle",
   "[2026-10-24T00:00:00.785Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-24T00:00:00.785Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.956573 SOL)",
-  "[2026-10-24T00:00:00.795Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-24T00:00:00.795Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-24T00:06:07.890Z] [CRON] [Opportunity] YMB-SOL degen 100.0 >= 40 \u2014 triggering screening deploy decision",
+  "[2026-10-24T00:06:08.176Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-24T00:06:08.176Z] [CRON] Computed deploy amount: 0.69 SOL (wallet: 0.956573 SOL)",
+  "[2026-10-24T00:06:15.201Z] [AGENT] The deploy_position tool did not execute a real on-chain deployment \u2014 it returned blocked errors on every attempt and my retry was rejected as a duplicate session attempt. No actual position was opened, so I cannot report success.",
+  "\u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-23T23:52:14.283Z"
+ "state_last_updated": "2026-10-24T00:07:47.522Z"
 }

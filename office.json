@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T00:22:39.221415+00:00",
+ "generated_at": "2026-10-25T00:27:42.378471+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -492,13 +492,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1088,
-  "today": 6,
-  "today_real": 1,
+  "total_real": 1089,
+  "today": 7,
+  "today_real": 2,
   "by_type": {
-   "skip": 87,
+   "skip": 86,
    "close": 6,
-   "no_deploy": 2,
+   "no_deploy": 3,
    "deploy": 5
   },
   "by_actor": {
@@ -506,6 +506,14 @@
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T00:26:04.318Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-25T00:20:20.885Z",
     "type": "no_deploy",
@@ -593,14 +601,6 @@
     "pool_name": "HgEJs5LSjd3da5LTsTJXa3nXjT1oucdLemeUq6V1gbsS",
     "summary": "Deployed 1.55 SOL with bid_ask",
     "reason_short": "Chosen range -600\u2192-531 around active bin -531"
-   },
-   {
-    "ts": "2026-10-24T23:30:14.963Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "\u2588\u2588\u2588-SOL",
-    "summary": "Closed at 0.20%",
-    "reason_short": "pumped far above range"
    }
   ]
  },
@@ -620,7 +620,7 @@
    },
    {
     "hour": "16:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "17:00",
@@ -652,25 +652,25 @@
    },
    {
     "hour": "00:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T00:20:01.402",
-  "last_management": "2026-10-25T00:20:00.859"
+  "last_screening": "2026-10-25T00:25:00.616",
+  "last_management": "2026-10-25T00:25:00.103"
  },
  "log_tail": [
-  "[2026-10-25T00:17:40.090Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T00:20:00.859Z] [CRON] Starting management cycle",
-  "[2026-10-25T00:20:01.325Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T00:20:01.325Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T00:20:01.402Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T00:20:01.402Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.99592 SOL)",
   "[2026-10-25T00:20:09.554Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
   "[2026-10-25T00:20:09.555Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
   "[2026-10-25T00:20:09.560Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T00:20:20.884Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T00:20:20.884Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T00:25:00.103Z] [CRON] Starting management cycle",
+  "[2026-10-25T00:25:00.616Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T00:25:00.616Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.99592 SOL)",
+  "[2026-10-25T00:25:00.670Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T00:25:00.670Z] [CRON] Screening skipped \u2014 previous cycle still running"
  ],
  "state_last_updated": "2026-10-25T00:17:59.240Z"
 }

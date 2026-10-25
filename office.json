@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T06:47:39.806384+00:00",
+ "generated_at": "2026-10-25T06:52:39.870570+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 37,
+  "active_24h": 36,
   "total_value_usd": 144941,
   "total_activity": 390,
   "top": [
@@ -37,7 +37,7 @@
     "value_usd": 6997
    }
   ],
-  "decisions_mentioning": 13
+  "decisions_mentioning": 14
  },
  "mode": {
   "dry_run": false,
@@ -62,8 +62,8 @@
   "total_tracked": 49
  },
  "pnl": {
-  "last24h_usd": 68.5,
-  "fees24h_usd": 120.32,
+  "last24h_usd": 66.5,
+  "fees24h_usd": 117.31,
   "all_time_usd": 73.36,
   "closed_total": 49,
   "win_rate_pct": 67
@@ -562,20 +562,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1115,
-  "today": 90,
-  "today_real": 28,
+  "total_real": 1116,
+  "today": 91,
+  "today_real": 29,
   "by_type": {
-   "close": 10,
    "deploy": 9,
    "skip": 60,
-   "no_deploy": 21
+   "close": 9,
+   "no_deploy": 22
   },
   "by_actor": {
-   "MANAGER": 10,
-   "SCREENER": 90
+   "SCREENER": 91,
+   "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T06:50:30.282Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Gato-SOL WHY SKIPPED All three candidates share the same fatal gap: no usable narrative (all \"being generated\") and 0 smart wallets present \u2014 the combination the screening rules treat as a skip signal. None has an exceptional met"
+   },
    {
     "ts": "2026-10-25T06:45:05.734Z",
     "type": "no_deploy",
@@ -663,14 +671,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.358 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T06:00:01.000Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.358 < 1.58)"
    }
   ]
  },
@@ -694,7 +694,7 @@
    },
    {
     "hour": "23:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "00:00",
@@ -722,25 +722,25 @@
    },
    {
     "hour": "06:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T06:45:01.405",
-  "last_management": "2026-10-25T06:45:00.850"
+  "last_screening": "2026-10-25T06:50:00.677",
+  "last_management": "2026-10-25T06:50:00.134"
  },
  "log_tail": [
-  "[2026-10-25T06:40:01.168Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T06:40:01.168Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T06:40:01.171Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T06:40:01.171Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.120471 SOL)",
-  "[2026-10-25T06:45:00.850Z] [CRON] Starting management cycle",
-  "[2026-10-25T06:45:01.405Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T06:45:01.405Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.120471 SOL)",
   "[2026-10-25T06:45:01.414Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T06:45:01.415Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T06:45:01.530Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)"
+  "[2026-10-25T06:45:01.530Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T06:50:00.134Z] [CRON] Starting management cycle",
+  "[2026-10-25T06:50:00.677Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T06:50:00.677Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.120471 SOL)",
+  "[2026-10-25T06:50:00.685Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T06:50:00.685Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T06:50:30.282Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T06:23:37.283Z"
 }

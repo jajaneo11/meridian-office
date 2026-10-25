@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T22:22:46.014501+00:00",
+ "generated_at": "2026-10-25T22:27:40.011385+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.888351
+  "sol": 1.959825
  },
  "limits": {
   "max_positions": 3,
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 67
+  "open_count": 1,
+  "open": [
+   {
+    "id": "HuBTveXDHi9LQM5KFc6XTrYKTPuVFNC7k2wL8PUVK3PT",
+    "pool": "3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
+    "closed": false,
+    "deployed_at": "2026-10-25T22:25:15.837Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.6
+   }
+  ],
+  "total_tracked": 68
  },
  "pnl": {
   "last24h_usd": -2.43,
@@ -742,12 +753,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1205,
+  "total_real": 1206,
   "today": 100,
-  "today_real": 118,
+  "today_real": 119,
   "by_type": {
-   "no_deploy": 27,
-   "deploy": 9,
+   "no_deploy": 26,
+   "deploy": 10,
    "close": 9,
    "skip": 55
   },
@@ -756,6 +767,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T22:25:15.838Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
+    "summary": "Deployed 1.6 SOL with bid_ask",
+    "reason_short": "Chosen range 230\u2192299 around active bin 299"
+   },
    {
     "ts": "2026-10-25T22:20:16.240Z",
     "type": "close",
@@ -843,14 +862,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.246 < 1.6300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T21:30:01.201Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.246 < 1.6300000000000001)"
    }
   ]
  },
@@ -874,7 +885,7 @@
    },
    {
     "hour": "15:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "16:00",
@@ -902,25 +913,25 @@
    },
    {
     "hour": "22:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T21:25:00.802",
-  "last_management": "2026-10-25T22:20:00.669"
+  "last_screening": "2026-10-25T22:25:01.518",
+  "last_management": "2026-10-25T22:25:00.976"
  },
  "log_tail": [
-  "[2026-10-25T22:10:00.125Z] [CRON] Starting management cycle",
-  "[2026-10-25T22:10:00.400Z] [CRON] Screening skipped \u2014 insufficient SOL (0.246 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-25T22:10:00.811Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T22:15:00.378Z] [CRON] Starting management cycle",
-  "[2026-10-25T22:15:00.634Z] [CRON] Screening skipped \u2014 insufficient SOL (0.246 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-25T22:15:00.979Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T22:20:00.669Z] [CRON] Starting management cycle",
-  "[2026-10-25T22:20:00.904Z] [CRON] Screening skipped \u2014 insufficient SOL (0.246 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-25T22:20:01.282Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T22:20:08.773Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T22:25:01.519Z] [CRON] Computed deploy amount: 1.6 SOL (wallet: 1.959825 SOL)",
+  "[2026-10-25T22:25:02.094Z] [SCREENING] PVP guard: KIMCHI-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-25T22:25:05.642Z] [SCREENING] Bot-holder filter: dropped KIMCHI-SOL \u2014 bots 33.88% > 30%",
+  "[2026-10-25T22:25:05.643Z] [SCREENING] Bot-holder filter: dropped PRESIDENT-SOL \u2014 bots 37.44% > 30%",
+  "[2026-10-25T22:25:12.765Z] [DEPLOY] Pool: 3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
+  "[2026-10-25T22:25:12.765Z] [DEPLOY] Strategy: bid_ask, Bins: 230 to 299 (69 bins)",
+  "[2026-10-25T22:25:12.765Z] [DEPLOY] Amount: 0 X, 1.6 Y",
+  "[2026-10-25T22:25:12.765Z] [DEPLOY] Position: HuBTveXDHi9LQM5KFc6XTrYKTPuVFNC7k2wL8PUVK3PT",
+  "[2026-10-25T22:25:15.836Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 571z89KKZqYxJFpAkwMCRfpn7YEkmm769Vr5nUVUTYSfJqvXpFTBbesWFYeVnzZGjHCCSjwZE3Jx3Sux7hH1o5w8",
+  "[2026-10-25T22:25:17.354Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-25T22:20:16.008Z"
+ "state_last_updated": "2026-10-25T22:27:38.900Z"
 }

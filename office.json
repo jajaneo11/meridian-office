@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T11:32:40.188420+00:00",
+ "generated_at": "2026-10-25T11:37:39.344278+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -592,20 +592,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1150,
+  "total_real": 1151,
   "today": 100,
-  "today_real": 63,
+  "today_real": 64,
   "by_type": {
-   "skip": 42,
    "close": 7,
-   "no_deploy": 45,
-   "deploy": 6
+   "no_deploy": 46,
+   "deploy": 6,
+   "skip": 41
   },
   "by_actor": {
-   "SCREENER": 93,
-   "MANAGER": 7
+   "MANAGER": 7,
+   "SCREENER": 93
   },
   "recent": [
+   {
+    "ts": "2026-10-25T11:35:09.862Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- RARI-SOL: bot holders 34.09% > 30%"
+   },
    {
     "ts": "2026-10-25T11:30:05.106Z",
     "type": "no_deploy",
@@ -693,14 +701,6 @@
     "pool_name": "BTC-SOL",
     "summary": "Single candidate skipped",
     "reason_short": "token fees 10.77 SOL below minimum 30 SOL"
-   },
-   {
-    "ts": "2026-10-25T10:45:09.499Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": "BTC-SOL",
-    "summary": "Single candidate skipped",
-    "reason_short": "token fees 10.53 SOL below minimum 30 SOL"
    }
   ]
  },
@@ -720,7 +720,7 @@
    },
    {
     "hour": "03:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "04:00",
@@ -752,25 +752,25 @@
    },
    {
     "hour": "11:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T11:30:00.965",
-  "last_management": "2026-10-25T11:30:00.459"
+  "last_screening": "2026-10-25T11:35:01.279",
+  "last_management": "2026-10-25T11:35:00.749"
  },
  "log_tail": [
-  "[2026-10-25T11:25:25.325Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T11:25:25.327Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T11:25:28.264Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T11:30:00.459Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:30:00.944Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T11:30:00.944Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T11:30:00.965Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T11:30:00.965Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
-  "[2026-10-25T11:30:01.173Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T11:30:05.106Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T11:30:05.106Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T11:35:00.749Z] [CRON] Starting management cycle",
+  "[2026-10-25T11:35:01.249Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T11:35:01.250Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T11:35:01.279Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T11:35:01.279Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
+  "[2026-10-25T11:35:01.448Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T11:35:09.457Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:35:09.463Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:35:09.861Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.09% > 30%"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

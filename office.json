@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T06:57:39.524304+00:00",
+ "generated_at": "2026-10-25T07:02:39.337295+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -574,7 +574,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1117,
-  "today": 92,
+  "today": 93,
   "today_real": 30,
   "by_type": {
    "skip": 60,
@@ -587,6 +587,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T07:00:01.014Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.527 < 1.58)"
+   },
    {
     "ts": "2026-10-25T06:55:16.058Z",
     "type": "deploy",
@@ -674,23 +682,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BILLIONS-SOL 3PH1oFKmzXdEQDe9y8cqXvJo3ag8sv4CS3ZXivGkqT8E WHY SKIPPED BILLIONS passes the hard gates (fees 36.95 SOL > 30, bots 27.8% < 30, bin_step 100, positive volatility 4.03), but it has no usable narrative (narrative still "
-   },
-   {
-    "ts": "2026-10-25T06:05:28.284Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "DacityCoin-SOL",
-    "summary": "Closed at -0.74%",
-    "reason_short": "Low yield: fee/TVL 2.66% < min 7% (age: 60m)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "19:00",
-    "count": 0
-   },
    {
     "hour": "20:00",
     "count": 0
@@ -705,7 +701,7 @@
    },
    {
     "hour": "23:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "00:00",
@@ -734,24 +730,28 @@
    {
     "hour": "06:00",
     "count": 14
+   },
+   {
+    "hour": "07:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T06:55:00.980",
-  "last_management": "2026-10-25T06:55:00.420"
+  "last_management": "2026-10-25T07:00:00.709"
  },
  "log_tail": [
-  "[2026-10-25T06:55:00.980Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T06:55:00.981Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.120471 SOL)",
-  "[2026-10-25T06:55:00.987Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T06:55:00.987Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T06:55:09.845Z] [DEPLOY] Pool: G6eJgyVdupYx23TD3auEr9PFtv2q98jk3pbg5nP58rdh",
   "[2026-10-25T06:55:09.849Z] [DEPLOY] Strategy: bid_ask, Bins: -74 to -25 (49 bins)",
   "[2026-10-25T06:55:09.849Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-25T06:55:09.849Z] [DEPLOY] Position: Hw5kWCjDUuj9M6hAe5E7jwPf8ZgQd8Sq3fyhK18S62z8",
   "[2026-10-25T06:55:16.056Z] [DEPLOY] SUCCESS \u2014 1 tx(s): VoNsn1EzZkywCYn4Vo6ocem5TTJ4fqkWMJYRWwemNESKr5Gpo6bDg9JG8GpRs3UD5qdYGXsFm7PWUG5fffSpYsw",
-  "[2026-10-25T06:55:17.727Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-25T06:55:17.727Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-25T07:00:00.709Z] [CRON] Starting management cycle",
+  "[2026-10-25T07:00:01.014Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
+  "[2026-10-25T07:00:01.460Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T06:57:39.035Z"
+ "state_last_updated": "2026-10-25T07:01:09.010Z"
 }

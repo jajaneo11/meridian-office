@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T21:07:39.773737+00:00",
+ "generated_at": "2026-10-25T21:12:41.304519+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -12,27 +12,27 @@
   "total_activity": 225,
   "top": [
    {
-    "name": "lp",
+    "name": "Whale #2 (GMGN)",
     "category": "alpha",
     "value_usd": 64516
    },
    {
-    "name": "lp",
+    "name": "Whale #4 (GMGN)",
     "category": "alpha",
     "value_usd": 35772
    },
    {
-    "name": "lp",
+    "name": "Multihours #6",
     "category": "Multihours",
     "value_usd": 21559
    },
    {
-    "name": "lp",
+    "name": "Degen #11",
     "category": "Degen",
     "value_usd": 13860
    },
    {
-    "name": "lp",
+    "name": "Degen #12",
     "category": "Degen",
     "value_usd": 10901
    }
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.87905
+  "sol": 1.879105
  },
  "limits": {
   "max_positions": 3,
@@ -57,26 +57,15 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "2DxmuwsdaiCvH4X7aXph5ovgVrDvHvddGnLQRbqqUD3G",
-    "pool": "mint-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-25T20:40:16.462Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 1.1
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 65
  },
  "pnl": {
-  "last24h_usd": -7.59,
-  "fees24h_usd": 87.81,
-  "all_time_usd": 35.09,
-  "closed_total": 64,
+  "last24h_usd": -7.52,
+  "fees24h_usd": 87.83,
+  "all_time_usd": 35.16,
+  "closed_total": 65,
   "win_rate_pct": 66
  },
  "pnl_trades": [
@@ -719,24 +708,50 @@
    "amount_sol": 1.1,
    "minutes_held": 12,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "mint-SOL",
+   "recorded_at": "2026-10-25T21:08:31.807Z",
+   "pnl_usd": 0.07,
+   "pnl_pct": 0.06,
+   "fees_usd": 0.018115641082492164,
+   "amount_sol": 1.1,
+   "minutes_held": 28,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1202,
+  "total_real": 1204,
   "today": 100,
-  "today_real": 115,
+  "today_real": 117,
   "by_type": {
-   "no_deploy": 30,
    "deploy": 11,
-   "close": 10,
-   "skip": 49
+   "close": 11,
+   "skip": 49,
+   "no_deploy": 29
   },
   "by_actor": {
-   "SCREENER": 90,
-   "MANAGER": 10
+   "SCREENER": 89,
+   "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T21:10:49.365Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-USDC WHY SKIPPED The strongest candidate (LAUNCH-USDC) was blocked at execution by a hard fee gate \u2014 the pool's fee/active-TVL was 0%, below the 0.09% minimum, so no position was opened. The runner-up LAUNCH-SOL pools show"
+   },
+   {
+    "ts": "2026-10-25T21:08:31.827Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "mint-SOL",
+    "summary": "Closed at 0.06%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-25T21:05:00.590Z",
     "type": "skip",
@@ -816,22 +831,6 @@
     "pool_name": "mint-SOL",
     "summary": "Deployed 1.1 SOL with bid_ask",
     "reason_short": "Chosen range 176\u2192245 around active bin 245"
-   },
-   {
-    "ts": "2026-10-25T20:36:16.417Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-25T20:33:05.079Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "PANGEA-SOL",
-    "summary": "Closed at 0.03%",
-    "reason_short": "pumped far above range"
    }
   ]
  },
@@ -855,7 +854,7 @@
    },
    {
     "hour": "14:00",
-    "count": 10
+    "count": 8
    },
    {
     "hour": "15:00",
@@ -883,25 +882,25 @@
    },
    {
     "hour": "21:00",
-    "count": 2
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T20:40:00.625",
-  "last_management": "2026-10-25T21:05:00.488"
+  "last_screening": "2026-10-25T21:12:33.071",
+  "last_management": "2026-10-25T21:10:00.701"
  },
  "log_tail": [
-  "[2026-10-25T20:57:56.795Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-25T20:57:58.021Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T20:58:42.179Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-25T20:58:43.087Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-25T21:00:00.246Z] [CRON] Starting management cycle",
-  "[2026-10-25T21:00:00.546Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-25T21:00:00.971Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T21:05:00.488Z] [CRON] Starting management cycle",
-  "[2026-10-25T21:05:00.589Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-25T21:05:01.101Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T21:08:24.605Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T21:10:00.701Z] [CRON] Starting management cycle",
+  "[2026-10-25T21:10:01.219Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T21:10:01.221Z] [CRON] Computed deploy amount: 1.6 SOL (wallet: 1.879105 SOL)",
+  "[2026-10-25T21:10:01.277Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T21:10:01.277Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T21:10:49.363Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T21:12:31.669Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-25T21:12:33.071Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T21:12:33.071Z] [CRON] Computed deploy amount: 1.6 SOL (wallet: 1.879105 SOL)"
  ],
- "state_last_updated": "2026-10-25T20:59:57.482Z"
+ "state_last_updated": "2026-10-25T21:08:31.500Z"
 }

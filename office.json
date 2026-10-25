@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T03:02:39.984599+00:00",
+ "generated_at": "2026-10-25T03:07:40.409331+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -73,8 +73,8 @@
   "total_tracked": 45
  },
  "pnl": {
-  "last24h_usd": 59.08,
-  "fees24h_usd": 98.5,
+  "last24h_usd": 56.99,
+  "fees24h_usd": 93.18,
   "all_time_usd": 59.02,
   "closed_total": 44,
   "win_rate_pct": 68
@@ -524,7 +524,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1094,
-  "today": 40,
+  "today": 41,
   "today_real": 7,
   "by_type": {
    "skip": 79,
@@ -537,6 +537,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T03:05:00.552Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.412 < 1.58)"
+   },
    {
     "ts": "2026-10-25T03:00:12.521Z",
     "type": "deploy",
@@ -624,14 +632,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.425 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T02:10:01.004Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.425 < 1.58)"
    }
   ]
  },
@@ -651,7 +651,7 @@
    },
    {
     "hour": "19:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "20:00",
@@ -683,25 +683,25 @@
    },
    {
     "hour": "03:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T03:00:00.587",
-  "last_management": "2026-10-25T03:00:00.095"
+  "last_management": "2026-10-25T03:05:00.274"
  },
  "log_tail": [
-  "[2026-10-25T03:00:00.626Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T03:00:01.194Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T03:00:02.294Z] [SCREENING] Bot-holder filter: dropped Marvin-SOL \u2014 bots 43.62% > 30%",
   "[2026-10-25T03:00:02.295Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.96% > 30%",
   "[2026-10-25T03:00:09.163Z] [DEPLOY] Pool: HgEJs5LSjd3da5LTsTJXa3nXjT1oucdLemeUq6V1gbsS",
   "[2026-10-25T03:00:09.164Z] [DEPLOY] Strategy: bid_ask, Bins: -637 to -568 (69 bins)",
   "[2026-10-25T03:00:09.164Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-25T03:00:09.164Z] [DEPLOY] Position: EB3s1vQFMEQMf2AdEmCjNXkqbxUkt3SM6BAg1vshh3Hz",
   "[2026-10-25T03:00:12.519Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 41F6qTCLgCdhbhgPYYH7oQRmL41EDepkgMPdawzTBEkfsAwzH5QiSGTFBoiAgg5pMEs2jFGKJSr3oQ4Z8mcjrr9",
-  "[2026-10-25T03:00:14.146Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-25T03:00:14.146Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-25T03:05:00.274Z] [CRON] Starting management cycle",
+  "[2026-10-25T03:05:00.552Z] [CRON] Screening skipped \u2014 insufficient SOL (0.412 < 1.58 needed for deploy + gas)",
+  "[2026-10-25T03:05:01.001Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T03:01:36.137Z"
+ "state_last_updated": "2026-10-25T03:03:06.162Z"
 }

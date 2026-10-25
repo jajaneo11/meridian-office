@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T15:47:39.461167+00:00",
+ "generated_at": "2026-10-25T15:52:39.880110+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -52,7 +52,7 @@
  },
  "limits": {
   "max_positions": 3,
-  "deploy_sol": 1.8,
+  "deploy_sol": 1.1,
   "screening_min": 30,
   "management_min": 10
  },
@@ -652,13 +652,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1173,
+  "total_real": 1175,
   "today": 100,
-  "today_real": 86,
+  "today_real": 88,
   "by_type": {
-   "skip": 39,
+   "skip": 37,
    "close": 8,
-   "no_deploy": 46,
+   "no_deploy": 48,
    "deploy": 7
   },
   "by_actor": {
@@ -666,6 +666,22 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T15:50:01.994Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- GME-SOL: token cooldown active - DacityCoin-SOL: token cooldown active - mint-SOL: token cooldown active"
+   },
+   {
+    "ts": "2026-10-25T15:48:34.044Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- GME-SOL: token cooldown active - mint-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-25T15:47:06.437Z",
     "type": "no_deploy",
@@ -745,22 +761,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL (3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja) WHY SKIPPED This is the only surviving candidate, but it fails the conviction bar. The narrative is unavailable (\"Narrative is being generated\") and there are 0/24 smart wal"
-   },
-   {
-    "ts": "2026-10-25T15:06:45.975Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "GME-SOL",
-    "summary": "Closed at 1.62%",
-    "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-25T15:05:00.624Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.532 < 1.83)"
    }
   ]
  },
@@ -784,7 +784,7 @@
    },
    {
     "hour": "08:00",
-    "count": 9
+    "count": 7
    },
    {
     "hour": "09:00",
@@ -812,25 +812,25 @@
    },
    {
     "hour": "15:00",
-    "count": 13
+    "count": 15
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T15:47:06.298",
-  "last_management": "2026-10-25T15:45:00.189"
+  "last_screening": "2026-10-25T15:50:01.297",
+  "last_management": "2026-10-25T15:50:00.760"
  },
  "log_tail": [
-  "[2026-10-25T15:45:00.685Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T15:45:00.739Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T15:45:00.739Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.397816 SOL)",
-  "[2026-10-25T15:45:01.018Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
-  "[2026-10-25T15:45:01.020Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T15:47:04.928Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-25T15:47:06.298Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T15:47:06.298Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.397816 SOL)",
-  "[2026-10-25T15:47:06.434Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
-  "[2026-10-25T15:47:06.437Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)"
+  "[2026-10-25T15:48:34.043Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T15:50:00.760Z] [CRON] Starting management cycle",
+  "[2026-10-25T15:50:01.297Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T15:50:01.297Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 2.397816 SOL)",
+  "[2026-10-25T15:50:01.322Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T15:50:01.322Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T15:50:01.982Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
+  "[2026-10-25T15:50:01.985Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-25T15:50:01.989Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T15:50:01.993Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)"
  ],
  "state_last_updated": "2026-10-25T15:26:48.661Z"
 }

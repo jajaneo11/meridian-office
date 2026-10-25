@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T00:17:39.930943+00:00",
+ "generated_at": "2026-10-25T00:22:39.221415+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8294
    }
   ],
-  "decisions_mentioning": 1
+  "decisions_mentioning": 2
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": null
+  "sol": 1.99592
  },
  "limits": {
   "max_positions": 3,
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "AyCXu9R9e4JPWh4F4PZRKWfaXW3YiLY7LeF3oWMJADrY",
-    "pool": "HgEJs5LSjd3da5LTsTJXa3nXjT1oucdLemeUq6V1gbsS",
-    "closed": false,
-    "deployed_at": "2026-10-24T23:35:25.376Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 1.55
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 42
  },
  "pnl": {
-  "last24h_usd": 36.46,
-  "fees24h_usd": 92.97,
-  "all_time_usd": 52.76,
-  "closed_total": 41,
-  "win_rate_pct": 68
+  "last24h_usd": 39.39,
+  "fees24h_usd": 96.06,
+  "all_time_usd": 55.69,
+  "closed_total": 42,
+  "win_rate_pct": 69
  },
  "pnl_trades": [
   {
@@ -489,24 +478,50 @@
    "amount_sol": 1.55,
    "minutes_held": 9,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "\u2588\u2588\u2588-SOL",
+   "recorded_at": "2026-10-25T00:17:59.459Z",
+   "pnl_usd": 2.93,
+   "pnl_pct": 1.85,
+   "fees_usd": 3.089313396187461,
+   "amount_sol": 1.55,
+   "minutes_held": 42,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1087,
-  "today": 4,
-  "today_real": 0,
+  "total_real": 1088,
+  "today": 6,
+  "today_real": 1,
   "by_type": {
-   "skip": 89,
-   "close": 5,
-   "no_deploy": 1,
+   "skip": 87,
+   "close": 6,
+   "no_deploy": 2,
    "deploy": 5
   },
   "by_actor": {
-   "SCREENER": 95,
-   "MANAGER": 5
+   "SCREENER": 94,
+   "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T00:20:20.885Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED mint-SOL was the strongest pick \u2014 it had a smart wallet present (Fast LP), strong positive pool memory (avg PnL +3.41%, 100% win rate), solid volatility (5.80), and healthy volume/1h momentum with net buyers."
+   },
+   {
+    "ts": "2026-10-25T00:17:59.464Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "\u2588\u2588\u2588-SOL",
+    "summary": "Closed at 1.85%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-25T00:15:00.842Z",
     "type": "skip",
@@ -586,22 +601,6 @@
     "pool_name": "\u2588\u2588\u2588-SOL",
     "summary": "Closed at 0.20%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-24T23:30:00.868Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.373 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T23:25:00.519Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.373 < 1.58)"
    }
   ]
  },
@@ -621,7 +620,7 @@
    },
    {
     "hour": "16:00",
-    "count": 7
+    "count": 5
    },
    {
     "hour": "17:00",
@@ -653,25 +652,25 @@
    },
    {
     "hour": "00:00",
-    "count": 4
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": null,
-  "last_management": "2026-10-25T00:15:00.589"
+  "last_screening": "2026-10-25T00:20:01.402",
+  "last_management": "2026-10-25T00:20:00.859"
  },
  "log_tail": [
-  "[2026-10-25T00:00:01.635Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T00:05:00.169Z] [CRON] Starting management cycle",
-  "[2026-10-25T00:05:00.436Z] [CRON] Screening skipped \u2014 insufficient SOL (0.374 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T00:05:00.892Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T00:10:00.348Z] [CRON] Starting management cycle",
-  "[2026-10-25T00:10:00.572Z] [CRON] Screening skipped \u2014 insufficient SOL (0.374 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T00:10:00.954Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T00:15:00.589Z] [CRON] Starting management cycle",
-  "[2026-10-25T00:15:00.841Z] [CRON] Screening skipped \u2014 insufficient SOL (0.374 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T00:15:01.228Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T00:17:40.090Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T00:20:00.859Z] [CRON] Starting management cycle",
+  "[2026-10-25T00:20:01.325Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T00:20:01.325Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T00:20:01.402Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T00:20:01.402Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.99592 SOL)",
+  "[2026-10-25T00:20:09.554Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T00:20:09.555Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T00:20:09.560Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T00:20:20.884Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-25T00:17:37.127Z"
+ "state_last_updated": "2026-10-25T00:17:59.240Z"
 }

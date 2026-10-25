@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T03:32:38.357725+00:00",
+ "generated_at": "2026-10-25T03:37:42.074272+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7552
    }
   ],
-  "decisions_mentioning": 2
+  "decisions_mentioning": 3
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.004166
+  "sol": 2.004297
  },
  "limits": {
   "max_positions": 3,
@@ -522,13 +522,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1094,
-  "today": 47,
-  "today_real": 7,
+  "total_real": 1095,
+  "today": 48,
+  "today_real": 8,
   "by_type": {
-   "skip": 78,
+   "skip": 77,
    "close": 9,
-   "no_deploy": 5,
+   "no_deploy": 6,
    "deploy": 8
   },
   "by_actor": {
@@ -536,6 +536,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T03:35:18.546Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PVE-SOL (3oXbUwiDxWGisDGcinLW6c1ANmWG93ZLoFd3H7xpT2XT) WHY SKIPPED PVE-SOL clears the mechanical gates (fees 113.85 SOL > 30, bots 26.4% < 30, top10 19% low, volatility 4.48 positive, bin_step 100). But it fails the narrative + s"
+   },
    {
     "ts": "2026-10-25T03:30:30.719Z",
     "type": "close",
@@ -623,14 +631,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.450 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T02:45:00.624Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.425 < 1.58)"
    }
   ]
  },
@@ -654,7 +654,7 @@
    },
    {
     "hour": "20:00",
-    "count": 13
+    "count": 12
    },
    {
     "hour": "21:00",
@@ -682,25 +682,25 @@
    },
    {
     "hour": "03:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T03:00:00.587",
-  "last_management": "2026-10-25T03:30:00.444"
+  "last_screening": "2026-10-25T03:35:01.231",
+  "last_management": "2026-10-25T03:35:00.698"
  },
  "log_tail": [
-  "[2026-10-25T03:20:00.941Z] [CRON] Starting management cycle",
-  "[2026-10-25T03:20:01.250Z] [CRON] Screening skipped \u2014 insufficient SOL (0.412 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T03:20:01.690Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T03:25:00.198Z] [CRON] Starting management cycle",
-  "[2026-10-25T03:25:00.353Z] [CRON] Screening skipped \u2014 insufficient SOL (0.412 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T03:25:00.900Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T03:30:00.444Z] [CRON] Starting management cycle",
-  "[2026-10-25T03:30:00.533Z] [CRON] Screening skipped \u2014 insufficient SOL (0.412 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T03:30:01.250Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T03:30:21.422Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T03:35:01.231Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T03:35:01.231Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.004297 SOL)",
+  "[2026-10-25T03:35:01.511Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T03:35:01.519Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T03:35:09.469Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T03:35:09.556Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T03:35:10.456Z] [SCREENING] Bot-holder filter: dropped Marvin-SOL \u2014 bots 34.08% > 30%",
+  "[2026-10-25T03:35:10.456Z] [SCREENING] Bot-holder filter: dropped Marvin-SOL \u2014 bots 34.08% > 30%",
+  "[2026-10-25T03:35:10.456Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.01% > 30%",
+  "[2026-10-25T03:35:18.545Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T03:30:30.431Z"
 }

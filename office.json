@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T01:22:40.700270+00:00",
+ "generated_at": "2026-10-25T01:27:40.858391+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -73,8 +73,8 @@
   "total_tracked": 44
  },
  "pnl": {
-  "last24h_usd": 39.73,
-  "fees24h_usd": 92.39,
+  "last24h_usd": 39.63,
+  "fees24h_usd": 92.37,
   "all_time_usd": 55.42,
   "closed_total": 43,
   "win_rate_pct": 67
@@ -514,7 +514,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1092,
-  "today": 19,
+  "today": 20,
   "today_real": 5,
   "by_type": {
    "skip": 82,
@@ -527,6 +527,14 @@
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T01:25:01.220Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.405 < 1.58)"
+   },
    {
     "ts": "2026-10-25T01:20:01.002Z",
     "type": "skip",
@@ -614,14 +622,6 @@
     "pool_name": "mint-SOL",
     "summary": "Deployed 1.55 SOL with bid_ask",
     "reason_short": "Chosen range 268\u2192337 around active bin 337"
-   },
-   {
-    "ts": "2026-10-25T00:30:44.577Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA-USDC was the standout by metrics \u2014 highest fee/TVL (1.06), highest volume ($36.8K), strong 30m volatility (7.8), healthy 249 SOL fees, organic 68, clean pool memory. However, the deploy_position too"
    }
   ]
  },
@@ -641,7 +641,7 @@
    },
    {
     "hour": "17:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "18:00",
@@ -673,25 +673,25 @@
    },
    {
     "hour": "01:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T01:15:00.941",
-  "last_management": "2026-10-25T01:20:00.709"
+  "last_management": "2026-10-25T01:25:00.928"
  },
  "log_tail": [
-  "[2026-10-25T01:15:10.251Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.92% > 30%",
-  "[2026-10-25T01:15:20.517Z] [DEPLOY] Pool: 3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
-  "[2026-10-25T01:15:20.517Z] [DEPLOY] Strategy: bid_ask, Bins: 283 to 351 (68 bins)",
   "[2026-10-25T01:15:20.517Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-25T01:15:20.517Z] [DEPLOY] Position: 3LghTJkZotzY4CYRyvF2V6oGpbBsAj1swUoMxP1JsVRQ",
   "[2026-10-25T01:15:22.635Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 18UBEbN9P4z6TRo47X9GMV8zFKADXLiC4zm4kj8SoNFwsprH3z9xYHUaFG3YhkU1iPj8ZcCwBnzDHmeoUHXmxpj",
   "[2026-10-25T01:15:24.259Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-25T01:20:00.709Z] [CRON] Starting management cycle",
   "[2026-10-25T01:20:01.002Z] [CRON] Screening skipped \u2014 insufficient SOL (0.405 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T01:20:01.479Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T01:20:01.479Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T01:25:00.928Z] [CRON] Starting management cycle",
+  "[2026-10-25T01:25:01.220Z] [CRON] Screening skipped \u2014 insufficient SOL (0.405 < 1.58 needed for deploy + gas)",
+  "[2026-10-25T01:25:01.581Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T01:20:58.901Z"
+ "state_last_updated": "2026-10-25T01:27:04.964Z"
 }

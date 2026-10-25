@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T18:57:40.341326+00:00",
+ "generated_at": "2026-10-25T19:02:38.451225+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 10901
    }
   ],
-  "decisions_mentioning": 8
+  "decisions_mentioning": 7
  },
  "mode": {
   "dry_run": false,
@@ -702,9 +702,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1183,
+  "total_real": 1184,
   "today": 100,
-  "today_real": 96,
+  "today_real": 97,
   "by_type": {
    "no_deploy": 21,
    "deploy": 11,
@@ -716,6 +716,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T19:01:55.925Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-25T18:56:17.974Z",
     "type": "no_deploy",
@@ -803,23 +811,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.774 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T18:05:00.507Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.774 < 1.1300000000000001)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "07:00",
-    "count": 0
-   },
    {
     "hour": "08:00",
     "count": 0
@@ -834,7 +830,7 @@
    },
    {
     "hour": "11:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "12:00",
@@ -863,24 +859,28 @@
    {
     "hour": "18:00",
     "count": 13
+   },
+   {
+    "hour": "19:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T18:55:01.048",
-  "last_management": "2026-10-25T18:55:00.499"
+  "last_screening": "2026-10-25T19:00:01.417",
+  "last_management": "2026-10-25T19:00:00.791"
  },
  "log_tail": [
-  "[2026-10-25T18:50:00.811Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T18:50:00.812Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
-  "[2026-10-25T18:50:04.033Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 32.12% > 30%",
-  "[2026-10-25T18:50:46.642Z] [AGENT] \u26d4 NO DEPLOY",
-  "No position was opened \u2014 the deploy tool returned a real blocking error and no transaction completed.",
-  "[2026-10-25T18:55:00.499Z] [CRON] Starting management cycle",
   "[2026-10-25T18:55:01.048Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T18:55:01.048Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
   "[2026-10-25T18:55:01.053Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T18:55:01.053Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-25T18:55:01.053Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T19:00:00.791Z] [CRON] Starting management cycle",
+  "[2026-10-25T19:00:01.331Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T19:00:01.331Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T19:00:01.417Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T19:00:01.417Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
+  "[2026-10-25T19:01:22.343Z] [ERROR] Agent loop error at step 18: 429 Rate limit reached: too many requests per minute"
  ],
  "state_last_updated": "2026-10-25T18:46:57.895Z"
 }

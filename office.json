@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T22:32:43.917186+00:00",
+ "generated_at": "2026-10-25T22:37:39.505531+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.959825
+  "sol": 1.959845
  },
  "limits": {
   "max_positions": 3,
@@ -60,24 +60,24 @@
   "open_count": 1,
   "open": [
    {
-    "id": "HuBTveXDHi9LQM5KFc6XTrYKTPuVFNC7k2wL8PUVK3PT",
-    "pool": "3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
+    "id": "AJdhYqdV1rZ2QktKtTFcCg7nUMSR1ZDiziG4hQ55Hjc3",
+    "pool": "mint-SOL",
     "closed": false,
-    "deployed_at": "2026-10-25T22:25:15.837Z",
+    "deployed_at": "2026-10-25T22:35:13.766Z",
     "closed_at": null,
     "pnl_usd": null,
-    "value_usd": null,
+    "value_usd": 240,
     "amount_sol": 1.6
    }
   ],
-  "total_tracked": 68
+  "total_tracked": 69
  },
  "pnl": {
-  "last24h_usd": -2.43,
-  "fees24h_usd": 89.79,
-  "all_time_usd": 44.68,
-  "closed_total": 67,
-  "win_rate_pct": 67
+  "last24h_usd": -2.21,
+  "fees24h_usd": 89.8,
+  "all_time_usd": 44.9,
+  "closed_total": 68,
+  "win_rate_pct": 68
  },
  "pnl_trades": [
   {
@@ -749,24 +749,50 @@
    "amount_sol": 1.6,
    "minutes_held": 54,
    "close_reason": "Trailing TP: peak 5.29% \u2192 current -0.02% (dropped 5.31% >= 1.5%)"
+  },
+  {
+   "pool": "mint-SOL",
+   "recorded_at": "2026-10-25T22:32:45.736Z",
+   "pnl_usd": 0.22,
+   "pnl_pct": 0.13,
+   "fees_usd": 0.00971907443105812,
+   "amount_sol": 1.6,
+   "minutes_held": 7,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1206,
+  "total_real": 1207,
   "today": 100,
-  "today_real": 119,
+  "today_real": 120,
   "by_type": {
-   "no_deploy": 25,
-   "deploy": 10,
-   "close": 9,
+   "no_deploy": 23,
+   "deploy": 11,
+   "close": 10,
    "skip": 56
   },
   "by_actor": {
-   "SCREENER": 91,
-   "MANAGER": 9
+   "SCREENER": 90,
+   "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-25T22:35:13.767Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "mint-SOL",
+    "summary": "Deployed 1.6 SOL with bid_ask",
+    "reason_short": "Chosen range 274\u2192343 around active bin 343"
+   },
+   {
+    "ts": "2026-10-25T22:32:45.745Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "mint-SOL",
+    "summary": "Closed at 0.13%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-25T22:30:00.491Z",
     "type": "skip",
@@ -846,22 +872,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.246 < 1.6300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T21:45:00.436Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.246 < 1.6300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T21:40:01.297Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.246 < 1.6300000000000001)"
    }
   ]
  },
@@ -885,7 +895,7 @@
    },
    {
     "hour": "15:00",
-    "count": 7
+    "count": 5
    },
    {
     "hour": "16:00",
@@ -913,25 +923,25 @@
    },
    {
     "hour": "22:00",
-    "count": 8
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T22:25:01.518",
-  "last_management": "2026-10-25T22:30:00.182"
+  "last_screening": "2026-10-25T22:35:00.951",
+  "last_management": "2026-10-25T22:35:00.424"
  },
  "log_tail": [
-  "[2026-10-25T22:25:12.765Z] [DEPLOY] Pool: 3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
-  "[2026-10-25T22:25:12.765Z] [DEPLOY] Strategy: bid_ask, Bins: 230 to 299 (69 bins)",
-  "[2026-10-25T22:25:12.765Z] [DEPLOY] Amount: 0 X, 1.6 Y",
-  "[2026-10-25T22:25:12.765Z] [DEPLOY] Position: HuBTveXDHi9LQM5KFc6XTrYKTPuVFNC7k2wL8PUVK3PT",
-  "[2026-10-25T22:25:15.836Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 571z89KKZqYxJFpAkwMCRfpn7YEkmm769Vr5nUVUTYSfJqvXpFTBbesWFYeVnzZGjHCCSjwZE3Jx3Sux7hH1o5w8",
-  "[2026-10-25T22:25:17.354Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T22:30:00.182Z] [CRON] Starting management cycle",
-  "[2026-10-25T22:30:00.491Z] [CRON] Screening skipped \u2014 insufficient SOL (0.318 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-25T22:30:00.821Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T22:32:29.881Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T22:35:01.297Z] [SCREENING] PVP guard: KIMCHI-SOL has active rival Aura Final Boss (CSocnzcR)",
+  "[2026-10-25T22:35:04.559Z] [SCREENING] Bot-holder filter: dropped KIMCHI-SOL \u2014 bots 33.27% > 30%",
+  "[2026-10-25T22:35:04.559Z] [SCREENING] Bot-holder filter: dropped PRESIDENT-SOL \u2014 bots 35.52% > 30%",
+  "[2026-10-25T22:35:11.128Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-25T22:35:12.589Z] [DEPLOY] Pool: 3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
+  "[2026-10-25T22:35:12.589Z] [DEPLOY] Strategy: bid_ask, Bins: 274 to 343 (69 bins)",
+  "[2026-10-25T22:35:12.589Z] [DEPLOY] Amount: 0 X, 1.6 Y",
+  "[2026-10-25T22:35:12.589Z] [DEPLOY] Position: AJdhYqdV1rZ2QktKtTFcCg7nUMSR1ZDiziG4hQ55Hjc3",
+  "[2026-10-25T22:35:13.765Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2U5giWsSef7ygcWog96iU79L2fPmyytqwVrjhySpws5FMhgbTvEtwVskaJveEUpJQvCi2JZtyzV4ie9Wu5AVpLfA",
+  "[2026-10-25T22:35:15.873Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-25T22:32:29.880Z"
+ "state_last_updated": "2026-10-25T22:37:20.928Z"
 }

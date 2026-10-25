@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T07:42:39.024549+00:00",
+ "generated_at": "2026-10-25T07:47:39.519021+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.120471
+  "sol": 2.119246
  },
  "limits": {
   "max_positions": 3,
@@ -62,8 +62,8 @@
   "total_tracked": 50
  },
  "pnl": {
-  "last24h_usd": 67.19,
-  "fees24h_usd": 117.34,
+  "last24h_usd": 64.38,
+  "fees24h_usd": 112.88,
   "all_time_usd": 74.05,
   "closed_total": 50,
   "win_rate_pct": 68
@@ -572,13 +572,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1117,
+  "total_real": 1118,
   "today": 100,
-  "today_real": 30,
+  "today_real": 31,
   "by_type": {
-   "skip": 61,
+   "skip": 60,
    "close": 9,
-   "no_deploy": 22,
+   "no_deploy": 23,
    "deploy": 8
   },
   "by_actor": {
@@ -586,6 +586,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T07:45:10.135Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": "RUSH-SOL",
+    "summary": "Single candidate skipped",
+    "reason_short": "top10 concentration 64.44% above maximum 60%"
+   },
    {
     "ts": "2026-10-25T07:42:29.346Z",
     "type": "close",
@@ -673,14 +681,6 @@
     "pool_name": "RUSH-SOL",
     "summary": "Deployed 1.55 SOL with bid_ask",
     "reason_short": "Chosen range -74\u2192-25 around active bin -25"
-   },
-   {
-    "ts": "2026-10-25T06:50:30.282Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Gato-SOL WHY SKIPPED All three candidates share the same fatal gap: no usable narrative (all \"being generated\") and 0 smart wallets present \u2014 the combination the screening rules treat as a skip signal. None has an exceptional met"
    }
   ]
  },
@@ -704,7 +704,7 @@
    },
    {
     "hour": "00:00",
-    "count": 11
+    "count": 10
    },
    {
     "hour": "01:00",
@@ -732,25 +732,25 @@
    },
    {
     "hour": "07:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T06:55:00.980",
-  "last_management": "2026-10-25T07:40:00.478"
+  "last_screening": "2026-10-25T07:45:01.324",
+  "last_management": "2026-10-25T07:45:00.713"
  },
  "log_tail": [
-  "[2026-10-25T07:30:00.997Z] [CRON] Starting management cycle",
-  "[2026-10-25T07:30:01.287Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T07:30:01.867Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T07:35:00.250Z] [CRON] Starting management cycle",
-  "[2026-10-25T07:35:00.440Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T07:35:00.972Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T07:40:00.478Z] [CRON] Starting management cycle",
   "[2026-10-25T07:40:00.597Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
   "[2026-10-25T07:40:01.161Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T07:42:12.510Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T07:42:12.510Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T07:45:00.713Z] [CRON] Starting management cycle",
+  "[2026-10-25T07:45:01.280Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T07:45:01.280Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T07:45:01.324Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T07:45:01.325Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.119246 SOL)",
+  "[2026-10-25T07:45:09.623Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T07:45:09.641Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests"
  ],
  "state_last_updated": "2026-10-25T07:42:29.126Z"
 }

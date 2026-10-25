@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T14:47:39.878610+00:00",
+ "generated_at": "2026-10-25T14:52:41.800860+00:00",
  "smart_wallets": {
   "total": 100,
   "by_category": {
@@ -648,6 +648,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-25T14:50:00.875Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.509 < 1.83)"
+   },
+   {
     "ts": "2026-10-25T14:45:00.432Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -734,14 +742,6 @@
     "pool_name": "GME-SOL",
     "summary": "Single candidate skipped",
     "reason_short": "token fees 21.74 SOL below minimum 30 SOL"
-   },
-   {
-    "ts": "2026-10-25T13:55:14.378Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GME-SOL WHY SKIPPED GME-SOL has the strongest metrics (fee_tvl 5.51, vol $16.5K, volatility 14.84, top10 only 16.8%) but fails the hard fee gate: only 18.37 SOL in fees < the 30 SOL floor, which flags bundled/scam activity regard"
    }
   ]
  },
@@ -765,7 +765,7 @@
    },
    {
     "hour": "07:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "08:00",
@@ -793,25 +793,25 @@
    },
    {
     "hour": "14:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T14:35:01.201",
-  "last_management": "2026-10-25T14:45:00.136"
+  "last_management": "2026-10-25T14:50:00.406"
  },
  "log_tail": [
-  "[2026-10-25T14:35:05.905Z] [DEPLOY] Amount: 0 X, 1.8 Y",
-  "[2026-10-25T14:35:05.905Z] [DEPLOY] Position: CnAdGsEpLxuR4UMs49fLBLKMZgq3pop1NLV688hoeUN8",
-  "[2026-10-25T14:35:07.609Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3RL7Jo14o5DKjc3FrkDjfM7mLfS6QcgYn9R847n4pTwjQBi7KwuUpGMHiT2ohMCTSLUpgYnNZHuMSrFFz1yswwFu",
   "[2026-10-25T14:35:09.468Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-25T14:40:00.874Z] [CRON] Starting management cycle",
   "[2026-10-25T14:40:01.148Z] [CRON] Screening skipped \u2014 insufficient SOL (0.509 < 1.83 needed for deploy + gas)",
   "[2026-10-25T14:40:01.640Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T14:45:00.136Z] [CRON] Starting management cycle",
   "[2026-10-25T14:45:00.432Z] [CRON] Screening skipped \u2014 insufficient SOL (0.509 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T14:45:00.838Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T14:45:00.838Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T14:50:00.406Z] [CRON] Starting management cycle",
+  "[2026-10-25T14:50:00.875Z] [CRON] Screening skipped \u2014 insufficient SOL (0.509 < 1.83 needed for deploy + gas)",
+  "[2026-10-25T14:50:00.882Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T14:46:48.562Z"
+ "state_last_updated": "2026-10-25T14:51:36.772Z"
 }

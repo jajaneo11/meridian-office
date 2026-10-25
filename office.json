@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T14:22:39.121952+00:00",
+ "generated_at": "2026-10-25T14:27:39.338721+00:00",
  "smart_wallets": {
   "total": 87,
   "by_category": {
@@ -612,9 +612,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1162,
+  "total_real": 1163,
   "today": 100,
-  "today_real": 75,
+  "today_real": 76,
   "by_type": {
    "no_deploy": 44,
    "deploy": 5,
@@ -626,6 +626,14 @@
    "MANAGER": 5
   },
   "recent": [
+   {
+    "ts": "2026-10-25T14:25:11.180Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GME-SOL (Gigantic Milker Enjoyers) WHY SKIPPED GME passes every hard gate (fees 33 SOL \u2265 30, bots 17%, bin_step 100, volatility 8.66), but it fails the soft conviction checks that matter. It has no usable narrative (still \"being "
+   },
    {
     "ts": "2026-10-25T14:20:06.109Z",
     "type": "no_deploy",
@@ -713,14 +721,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.303 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T13:30:34.083Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "PANGEA-SOL",
-    "summary": "Deployed 1.8 SOL with bid_ask",
-    "reason_short": "Chosen range -1130\u2192-1071 around active bin -1071"
    }
   ]
  },
@@ -740,7 +740,7 @@
    },
    {
     "hour": "06:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "07:00",
@@ -772,25 +772,25 @@
    },
    {
     "hour": "14:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T14:20:01.524",
-  "last_management": "2026-10-25T14:20:00.885"
+  "last_screening": "2026-10-25T14:25:00.681",
+  "last_management": "2026-10-25T14:25:00.156"
  },
  "log_tail": [
-  "[2026-10-25T14:15:01.119Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T14:15:01.762Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T14:15:01.799Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
-  "\u26d4 NO DEPLOY",
-  "[2026-10-25T14:20:00.885Z] [CRON] Starting management cycle",
-  "[2026-10-25T14:20:01.407Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T14:20:01.407Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T14:20:01.524Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T14:20:01.524Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.35083 SOL)",
-  "[2026-10-25T14:20:01.804Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)"
+  "[2026-10-25T14:20:01.804Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T14:25:00.156Z] [CRON] Starting management cycle",
+  "[2026-10-25T14:25:00.671Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T14:25:00.671Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T14:25:00.681Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T14:25:00.681Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.35083 SOL)",
+  "[2026-10-25T14:25:01.317Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T14:25:01.320Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T14:25:11.179Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T13:54:30.959Z"
 }

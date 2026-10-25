@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T11:22:39.710733+00:00",
+ "generated_at": "2026-10-25T11:27:40.563592+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7005
    }
   ],
-  "decisions_mentioning": 23
+  "decisions_mentioning": 24
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.11799
+  "sol": null
  },
  "limits": {
   "max_positions": 3,
@@ -592,20 +592,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1148,
+  "total_real": 1149,
   "today": 100,
-  "today_real": 61,
+  "today_real": 62,
   "by_type": {
-   "no_deploy": 44,
    "deploy": 7,
    "skip": 42,
-   "close": 7
+   "close": 7,
+   "no_deploy": 44
   },
   "by_actor": {
    "SCREENER": 93,
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T11:25:28.265Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (FDvrkkgGZe2xjeAuPpNvZb2BLfegvYFEfYS9xqYc6HC2) WHY SKIPPED Both candidates are the same token (McRib, same mint) and share the same core weaknesses: no narrative exists yet (narrative_untrusted is still \"being generated"
+   },
    {
     "ts": "2026-10-25T11:20:10.227Z",
     "type": "no_deploy",
@@ -693,14 +701,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- mint-SOL: token cooldown active"
-   },
-   {
-    "ts": "2026-10-25T10:35:13.451Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-USDC WHY SKIPPED HOOKED-USDC fails the hard bin-step gate \u2014 bin_step=50 sits outside the required 80\u2013125 band, so it is not eligible for deployment regardless of other metrics. It also shows no narrative (narrative still g"
    }
   ]
  },
@@ -720,7 +720,7 @@
    },
    {
     "hour": "03:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "04:00",
@@ -752,25 +752,25 @@
    },
    {
     "hour": "11:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T11:20:01.439",
-  "last_management": "2026-10-25T11:20:00.895"
+  "last_screening": null,
+  "last_management": null
  },
  "log_tail": [
-  "[2026-10-25T11:15:01.112Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T11:15:01.112Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
-  "[2026-10-25T11:15:01.191Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T11:15:01.191Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T11:20:00.895Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:20:01.428Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T11:20:01.428Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T11:20:01.439Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T11:20:01.440Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
-  "[2026-10-25T11:20:02.037Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)"
+  "[2026-10-25T11:25:25.306Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:25.310Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:25.312Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:25.313Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:25.315Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:25.316Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:25.320Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:25.325Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:25.327Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:25:28.264Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

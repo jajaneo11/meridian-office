@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T15:52:39.880110+00:00",
+ "generated_at": "2026-10-25T15:57:40.478723+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.397816
+  "sol": 1.255906
  },
  "limits": {
   "max_positions": 3,
@@ -57,9 +57,30 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 58
+  "open_count": 2,
+  "open": [
+   {
+    "id": "FoHHepQpk5i9o5LhxHxsYpugZ7hjgiiM8eaY3dZmQfzN",
+    "pool": "mint-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-25T15:54:40.194Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.1
+   },
+   {
+    "id": "3cWqc8TC3uxrtFyErKZTPRV8x6mLuQTpKau2NzRyUR7P",
+    "pool": "GME-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-25T15:55:35.884Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.1
+   }
+  ],
+  "total_tracked": 60
  },
  "pnl": {
   "last24h_usd": 52.29,
@@ -652,20 +673,36 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1175,
+  "total_real": 1177,
   "today": 100,
-  "today_real": 88,
+  "today_real": 90,
   "by_type": {
-   "skip": 37,
+   "skip": 35,
    "close": 8,
    "no_deploy": 48,
-   "deploy": 7
+   "deploy": 9
   },
   "by_actor": {
    "SCREENER": 92,
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T15:55:35.886Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "GME-SOL",
+    "summary": "Deployed 1.1 SOL with bid_ask",
+    "reason_short": "Chosen range -606\u2192-556 around active bin -556"
+   },
+   {
+    "ts": "2026-10-25T15:54:40.196Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "mint-SOL",
+    "summary": "Deployed 1.1 SOL with bid_ask",
+    "reason_short": "Chosen range 258\u2192327 around active bin 327"
+   },
    {
     "ts": "2026-10-25T15:50:01.994Z",
     "type": "no_deploy",
@@ -745,22 +782,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.556 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T15:15:15.552Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "mint-SOL",
-    "summary": "Deployed 1.8 SOL with bid_ask",
-    "reason_short": "Chosen range 213\u2192282 around active bin 282"
-   },
-   {
-    "ts": "2026-10-25T15:10:09.736Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL (3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja) WHY SKIPPED This is the only surviving candidate, but it fails the conviction bar. The narrative is unavailable (\"Narrative is being generated\") and there are 0/24 smart wal"
    }
   ]
  },
@@ -784,7 +805,7 @@
    },
    {
     "hour": "08:00",
-    "count": 7
+    "count": 5
    },
    {
     "hour": "09:00",
@@ -812,25 +833,25 @@
    },
    {
     "hour": "15:00",
-    "count": 15
+    "count": 17
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T15:50:01.297",
-  "last_management": "2026-10-25T15:50:00.760"
+  "last_screening": "2026-10-25T15:55:01.490",
+  "last_management": "2026-10-25T15:55:00.844"
  },
  "log_tail": [
-  "[2026-10-25T15:48:34.043Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T15:50:00.760Z] [CRON] Starting management cycle",
-  "[2026-10-25T15:50:01.297Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T15:50:01.297Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 2.397816 SOL)",
-  "[2026-10-25T15:50:01.322Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T15:50:01.322Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T15:50:01.982Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
-  "[2026-10-25T15:50:01.985Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
-  "[2026-10-25T15:50:01.989Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T15:50:01.993Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)"
+  "[2026-10-25T15:55:01.490Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T15:55:01.490Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.255906 SOL)",
+  "[2026-10-25T15:55:01.522Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T15:55:02.605Z] [SCREENING] PVP guard: 1-SOL has active rival 1 coin can change your life (GMvCfcZg)",
+  "[2026-10-25T15:55:15.031Z] [DEPLOY] Pool: CvPyH4tJvUSk3cZ33zfMsT2DEbSanYJkJVJsBDVm4oAc",
+  "[2026-10-25T15:55:15.032Z] [DEPLOY] Strategy: bid_ask, Bins: -606 to -556 (50 bins)",
+  "[2026-10-25T15:55:15.032Z] [DEPLOY] Amount: 0 X, 1.1 Y",
+  "[2026-10-25T15:55:15.032Z] [DEPLOY] Position: 3cWqc8TC3uxrtFyErKZTPRV8x6mLuQTpKau2NzRyUR7P",
+  "[2026-10-25T15:55:35.883Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4vYZUX7gWf6wrmKXkW3bX5nA6iDFZdbkWUSopuWRHA4gtYH9BcLnRqfHdfcgvgAJGcrTpSDGt4nawPYkpDhvjJ6d",
+  "[2026-10-25T15:55:37.436Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-25T15:26:48.661Z"
+ "state_last_updated": "2026-10-25T15:56:30.111Z"
 }

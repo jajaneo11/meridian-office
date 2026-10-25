@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T10:07:40.463325+00:00",
+ "generated_at": "2026-10-25T10:12:39.521794+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7005
    }
   ],
-  "decisions_mentioning": 19
+  "decisions_mentioning": 20
  },
  "mode": {
   "dry_run": false,
@@ -593,13 +593,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1135,
+  "total_real": 1136,
   "today": 100,
-  "today_real": 48,
+  "today_real": 49,
   "by_type": {
-   "skip": 50,
+   "skip": 49,
    "close": 8,
-   "no_deploy": 34,
+   "no_deploy": 35,
    "deploy": 8
   },
   "by_actor": {
@@ -607,6 +607,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T10:10:13.941Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None (both disqualified by hard rules) WHY SKIPPED Both candidates fail non-negotiable hard gates, so there is no real deployable entry this cycle. Chubby-SOL fails the fees hard rule (27.45 SOL < 30 SOL), which indicates bundled"
+   },
    {
     "ts": "2026-10-25T10:05:01.720Z",
     "type": "no_deploy",
@@ -694,14 +702,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Chubby-SOL: bot holders 33.69% > 30%"
-   },
-   {
-    "ts": "2026-10-25T09:10:02.274Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Chubby-SOL: bot holders 33.43% > 30%"
    }
   ]
  },
@@ -721,7 +721,7 @@
    },
    {
     "hour": "02:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "03:00",
@@ -753,25 +753,25 @@
    },
    {
     "hour": "10:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T10:05:01.230",
-  "last_management": "2026-10-25T10:05:00.568"
+  "last_screening": "2026-10-25T10:10:01.400",
+  "last_management": "2026-10-25T10:10:00.729"
  },
  "log_tail": [
-  "[2026-10-25T10:00:14.233Z] [DEPLOY] Amount: 0 X, 1 Y",
-  "[2026-10-25T10:00:14.233Z] [DEPLOY] Position: 7TJMGZ6f83SpsNWdx1mzagM1WR1Jc66Eg3jidMZy4nVS",
-  "[2026-10-25T10:00:15.520Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4tcvmVzefPDhqkhCgB5k2iCf2cCZP3XhtGFEL7a8w6qapQpEq9CWVd9KwyzpAdRFgjAip93St914eyMPQBeuMUbG",
-  "[2026-10-25T10:00:16.538Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T10:05:00.568Z] [CRON] Starting management cycle",
-  "[2026-10-25T10:05:01.230Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T10:05:01.233Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
   "[2026-10-25T10:05:01.274Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T10:05:01.398Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
-  "[2026-10-25T10:05:01.720Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 31.13% > 30%"
+  "[2026-10-25T10:05:01.720Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 31.13% > 30%",
+  "[2026-10-25T10:10:00.729Z] [CRON] Starting management cycle",
+  "[2026-10-25T10:10:01.400Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T10:10:01.400Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
+  "[2026-10-25T10:10:01.455Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T10:10:10.407Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 33.70% > 30%",
+  "[2026-10-25T10:10:13.940Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T10:00:34.452Z"
 }

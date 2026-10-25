@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T14:12:41.252582+00:00",
+ "generated_at": "2026-10-25T14:17:41.652836+00:00",
  "smart_wallets": {
   "total": 87,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8561
    }
   ],
-  "decisions_mentioning": 20
+  "decisions_mentioning": 21
  },
  "mode": {
   "dry_run": false,
@@ -612,9 +612,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1160,
+  "total_real": 1161,
   "today": 100,
-  "today_real": 73,
+  "today_real": 74,
   "by_type": {
    "no_deploy": 44,
    "deploy": 5,
@@ -626,6 +626,14 @@
    "MANAGER": 5
   },
   "recent": [
+   {
+    "ts": "2026-10-25T14:15:08.327Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "Based on screening both pre-loaded candidates against the hard gates and risk signals: **GME-SOL** \u2014 Metrics look strong (fee/TVL 2.17, vol $128K, volatility 8.9, smart wallet present) but it **fails the HARD fee gate**: fees = 28.72 SOL < 30. That's an explicit disqualifier regardless of how good e"
+   },
    {
     "ts": "2026-10-25T14:10:15.712Z",
     "type": "no_deploy",
@@ -713,14 +721,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.106 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T13:20:01.420Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.110 < 1.83)"
    }
   ]
  },
@@ -740,7 +740,7 @@
    },
    {
     "hour": "06:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "07:00",
@@ -772,25 +772,25 @@
    },
    {
     "hour": "14:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T14:10:00.818",
-  "last_management": "2026-10-25T14:10:00.259"
+  "last_screening": "2026-10-25T14:15:01.095",
+  "last_management": "2026-10-25T14:15:00.601"
  },
  "log_tail": [
-  "[2026-10-25T14:10:00.819Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.35083 SOL)",
-  "[2026-10-25T14:10:01.056Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T14:10:01.061Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
-  "[2026-10-25T14:10:09.308Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T14:10:09.316Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T14:10:09.323Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T14:10:09.338Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
   "[2026-10-25T14:10:09.344Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T14:10:09.344Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T14:10:15.712Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T14:10:15.712Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T14:15:00.601Z] [CRON] Starting management cycle",
+  "[2026-10-25T14:15:01.095Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T14:15:01.095Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.35083 SOL)",
+  "[2026-10-25T14:15:01.119Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T14:15:01.119Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T14:15:01.762Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T14:15:01.799Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T13:54:30.959Z"
 }

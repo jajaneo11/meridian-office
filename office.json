@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T14:07:40.180262+00:00",
+ "generated_at": "2026-10-25T14:12:41.252582+00:00",
  "smart_wallets": {
   "total": 87,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8561
    }
   ],
-  "decisions_mentioning": 19
+  "decisions_mentioning": 20
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.193918
+  "sol": 2.35083
  },
  "limits": {
   "max_positions": 3,
@@ -612,20 +612,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1159,
+  "total_real": 1160,
   "today": 100,
-  "today_real": 72,
+  "today_real": 73,
   "by_type": {
-   "close": 6,
-   "no_deploy": 43,
+   "no_deploy": 44,
    "deploy": 5,
-   "skip": 46
+   "skip": 46,
+   "close": 5
   },
   "by_actor": {
-   "MANAGER": 6,
-   "SCREENER": 94
+   "SCREENER": 95,
+   "MANAGER": 5
   },
   "recent": [
+   {
+    "ts": "2026-10-25T14:10:15.712Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GME-SOL WHY SKIPPED GME was the strongest on paper \u2014 huge volume ($107K), high fee/TVL (1.92), high volatility (13.5), 1 smart wallet, clean top10 (17%). But it fails the HARD fee gate: total fees paid = 27.04 SOL, which is below"
+   },
    {
     "ts": "2026-10-25T14:05:00.419Z",
     "type": "skip",
@@ -713,14 +721,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.110 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T13:15:00.998Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.110 < 1.83)"
    }
   ]
  },
@@ -740,7 +740,7 @@
    },
    {
     "hour": "06:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "07:00",
@@ -772,25 +772,25 @@
    },
    {
     "hour": "14:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T14:00:01.262",
-  "last_management": "2026-10-25T14:05:00.004"
+  "last_screening": "2026-10-25T14:10:00.818",
+  "last_management": "2026-10-25T14:10:00.259"
  },
  "log_tail": [
-  "[2026-10-25T13:55:14.377Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T14:00:00.754Z] [CRON] Starting management cycle",
-  "[2026-10-25T14:00:01.253Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T14:00:01.254Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T14:00:01.262Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T14:00:01.262Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.193918 SOL)",
-  "[2026-10-25T14:00:01.682Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T14:05:00.004Z] [CRON] Starting management cycle",
-  "[2026-10-25T14:05:00.418Z] [CRON] Screening skipped \u2014 insufficient SOL (0.156 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T14:05:00.428Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T14:10:00.819Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.35083 SOL)",
+  "[2026-10-25T14:10:01.056Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T14:10:01.061Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T14:10:09.308Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T14:10:09.316Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T14:10:09.323Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T14:10:09.338Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T14:10:09.344Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T14:10:09.344Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T14:10:15.712Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T13:54:30.959Z"
 }

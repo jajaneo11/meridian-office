@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T11:12:41.420234+00:00",
+ "generated_at": "2026-10-25T11:17:40.445464+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7005
    }
   ],
-  "decisions_mentioning": 24
+  "decisions_mentioning": 23
  },
  "mode": {
   "dry_run": false,
@@ -592,9 +592,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1146,
+  "total_real": 1147,
   "today": 100,
-  "today_real": 59,
+  "today_real": 60,
   "by_type": {
    "no_deploy": 44,
    "deploy": 7,
@@ -606,6 +606,14 @@
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T11:15:01.252Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- BLACKTOBER-SOL: volatility 0 is unusable"
+   },
    {
     "ts": "2026-10-25T11:10:05.165Z",
     "type": "no_deploy",
@@ -693,14 +701,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED The sole surviving candidate carries no usable narrative (narrative generation is pending/incomplete) and has zero smart wallets in the pool \u2014 the combination is an explicit hard skip signal. The on-chain "
-   },
-   {
-    "ts": "2026-10-25T10:25:19.072Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA passed all hard gates (fees=255 SOL, bots=15.5%, bin_step=100, volatility positive) and was the only surviving candidate after BTC-SOL was disqualified, but the actual deploy_position transaction FA"
    }
   ]
  },
@@ -720,7 +720,7 @@
    },
    {
     "hour": "03:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "04:00",
@@ -752,25 +752,25 @@
    },
    {
     "hour": "11:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T11:10:00.805",
-  "last_management": "2026-10-25T11:10:00.296"
+  "last_screening": "2026-10-25T11:15:01.112",
+  "last_management": "2026-10-25T11:15:00.608"
  },
  "log_tail": [
-  "[2026-10-25T11:05:09.230Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T11:05:09.591Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T11:05:09.600Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T11:10:00.296Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:10:00.805Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T11:10:00.805Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
   "[2026-10-25T11:10:00.852Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T11:10:00.853Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T11:10:01.151Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
-  "[2026-10-25T11:10:05.165Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T11:10:05.165Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T11:15:00.608Z] [CRON] Starting management cycle",
+  "[2026-10-25T11:15:01.112Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T11:15:01.112Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
+  "[2026-10-25T11:15:01.191Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T11:15:01.191Z] [CRON] Screening skipped \u2014 previous cycle still running"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

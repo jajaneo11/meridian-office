@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T12:47:43.594323+00:00",
+ "generated_at": "2026-10-25T12:52:38.487709+00:00",
  "smart_wallets": {
   "total": 87,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 8561
    }
   ],
-  "decisions_mentioning": 20
+  "decisions_mentioning": 19
  },
  "mode": {
   "dry_run": false,
@@ -607,16 +607,24 @@
   "today": 100,
   "today_real": 69,
   "by_type": {
-   "no_deploy": 43,
    "deploy": 6,
-   "skip": 46,
-   "close": 5
+   "skip": 47,
+   "close": 5,
+   "no_deploy": 42
   },
   "by_actor": {
    "SCREENER": 95,
    "MANAGER": 5
   },
   "recent": [
+   {
+    "ts": "2026-10-25T12:50:00.665Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.273 < 1.83)"
+   },
    {
     "ts": "2026-10-25T12:45:00.505Z",
     "type": "skip",
@@ -704,14 +712,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-USDC WHY SKIPPED Only one candidate survived and it fails multiple hard gates. Its bin_step=50 is far outside the required [80\u2013125] range, which is a hard disqualifier for DLMM deployments. Additionally, there is no usable"
-   },
-   {
-    "ts": "2026-10-25T11:50:00.903Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.575 < 1.83)"
    }
   ]
  },
@@ -735,7 +735,7 @@
    },
    {
     "hour": "05:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "06:00",
@@ -763,25 +763,25 @@
    },
    {
     "hour": "12:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T12:15:01.505",
-  "last_management": "2026-10-25T12:45:00.235"
+  "last_management": "2026-10-25T12:50:00.400"
  },
  "log_tail": [
-  "[2026-10-25T12:30:01.368Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T12:35:00.879Z] [CRON] Starting management cycle",
-  "[2026-10-25T12:35:01.123Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
   "[2026-10-25T12:35:01.635Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T12:40:00.062Z] [CRON] Starting management cycle",
   "[2026-10-25T12:40:00.339Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
   "[2026-10-25T12:40:00.785Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T12:45:00.235Z] [CRON] Starting management cycle",
   "[2026-10-25T12:45:00.505Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T12:45:00.985Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T12:45:00.985Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T12:50:00.400Z] [CRON] Starting management cycle",
+  "[2026-10-25T12:50:00.664Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
+  "[2026-10-25T12:50:01.179Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-25T12:37:44.070Z"
 }

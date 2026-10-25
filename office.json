@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T07:57:39.433620+00:00",
+ "generated_at": "2026-10-25T08:02:41.357492+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 6997
    }
   ],
-  "decisions_mentioning": 14
+  "decisions_mentioning": 13
  },
  "mode": {
   "dry_run": false,
@@ -587,9 +587,9 @@
   "today": 100,
   "today_real": 32,
   "by_type": {
-   "no_deploy": 23,
+   "no_deploy": 22,
    "deploy": 9,
-   "skip": 60,
+   "skip": 61,
    "close": 8
   },
   "by_actor": {
@@ -597,6 +597,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T08:00:00.699Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.527 < 1.58)"
+   },
    {
     "ts": "2026-10-25T07:55:00.536Z",
     "type": "skip",
@@ -684,23 +692,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.527 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T07:05:01.270Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.527 < 1.58)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "20:00",
-    "count": 0
-   },
    {
     "hour": "21:00",
     "count": 0
@@ -715,7 +711,7 @@
    },
    {
     "hour": "00:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "01:00",
@@ -744,24 +740,28 @@
    {
     "hour": "07:00",
     "count": 13
+   },
+   {
+    "hour": "08:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T07:50:02.249",
-  "last_management": "2026-10-25T07:55:00.228"
+  "last_management": "2026-10-25T08:00:00.498"
  },
  "log_tail": [
-  "[2026-10-25T07:50:10.029Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
-  "[2026-10-25T07:50:15.369Z] [DEPLOY] Pool: G6eJgyVdupYx23TD3auEr9PFtv2q98jk3pbg5nP58rdh",
-  "[2026-10-25T07:50:15.369Z] [DEPLOY] Strategy: bid_ask, Bins: -61 to -15 (46 bins)",
   "[2026-10-25T07:50:15.369Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-25T07:50:15.370Z] [DEPLOY] Position: HjSggErP47SN9Wb3Cvy3X19sNCpvEj7DsRxBHNvJFH9B",
   "[2026-10-25T07:50:19.696Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 45kFGcHYqUWuJYCQcHebw8GoG9cCSRWW1XkQvyuaAWsrfta6AKMvgtwMcA6fxb2yDbwEdLopLgjMzVU3bMdW4xso",
   "[2026-10-25T07:50:21.263Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-25T07:55:00.228Z] [CRON] Starting management cycle",
   "[2026-10-25T07:55:00.536Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T07:55:00.876Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T07:55:00.876Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T08:00:00.498Z] [CRON] Starting management cycle",
+  "[2026-10-25T08:00:00.699Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
+  "[2026-10-25T08:00:01.264Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-25T07:50:54.605Z"
 }

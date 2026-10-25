@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T00:27:42.378471+00:00",
+ "generated_at": "2026-10-25T00:32:39.420528+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -492,13 +492,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1089,
-  "today": 7,
-  "today_real": 2,
+  "total_real": 1090,
+  "today": 8,
+  "today_real": 3,
   "by_type": {
-   "skip": 86,
+   "skip": 85,
    "close": 6,
-   "no_deploy": 3,
+   "no_deploy": 4,
    "deploy": 5
   },
   "by_actor": {
@@ -506,6 +506,14 @@
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T00:30:44.577Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA-USDC was the standout by metrics \u2014 highest fee/TVL (1.06), highest volume ($36.8K), strong 30m volatility (7.8), healthy 249 SOL fees, organic 68, clean pool memory. However, the deploy_position too"
+   },
    {
     "ts": "2026-10-25T00:26:04.318Z",
     "type": "no_deploy",
@@ -593,14 +601,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.374 < 1.58)"
-   },
-   {
-    "ts": "2026-10-24T23:35:25.377Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "HgEJs5LSjd3da5LTsTJXa3nXjT1oucdLemeUq6V1gbsS",
-    "summary": "Deployed 1.55 SOL with bid_ask",
-    "reason_short": "Chosen range -600\u2192-531 around active bin -531"
    }
   ]
  },
@@ -620,7 +620,7 @@
    },
    {
     "hour": "16:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "17:00",
@@ -652,25 +652,25 @@
    },
    {
     "hour": "00:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T00:25:00.616",
-  "last_management": "2026-10-25T00:25:00.103"
+  "last_screening": "2026-10-25T00:30:00.907",
+  "last_management": "2026-10-25T00:30:00.354"
  },
  "log_tail": [
-  "[2026-10-25T00:20:01.402Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.99592 SOL)",
-  "[2026-10-25T00:20:09.554Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T00:20:09.555Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T00:20:09.560Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T00:20:20.884Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T00:25:00.103Z] [CRON] Starting management cycle",
-  "[2026-10-25T00:25:00.616Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T00:25:00.616Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.99592 SOL)",
   "[2026-10-25T00:25:00.670Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T00:25:00.670Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-25T00:25:00.670Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T00:30:00.354Z] [CRON] Starting management cycle",
+  "[2026-10-25T00:30:00.862Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T00:30:00.862Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T00:30:00.907Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T00:30:00.907Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.99592 SOL)",
+  "[2026-10-25T00:30:09.974Z] [SCREENING] Bot-holder filter: dropped Dacity-USDT \u2014 bots 44.72% > 30%",
+  "[2026-10-25T00:30:42.759Z] [TELEGRAM_ERROR] editMessageText 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the messa",
+  "[2026-10-25T00:30:44.577Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T00:17:59.240Z"
 }

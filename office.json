@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T20:27:41.089065+00:00",
+ "generated_at": "2026-10-25T20:32:41.805899+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -73,8 +73,8 @@
   "total_tracked": 64
  },
  "pnl": {
-  "last24h_usd": 6.33,
-  "fees24h_usd": 111.73,
+  "last24h_usd": -1.54,
+  "fees24h_usd": 102.52,
   "all_time_usd": 35.06,
   "closed_total": 63,
   "win_rate_pct": 65
@@ -728,6 +728,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-25T20:30:00.790Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.736 < 1.1300000000000001)"
+   },
+   {
     "ts": "2026-10-25T20:25:00.528Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -814,14 +822,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-25T19:30:12.810Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-USDC / LAUNCH-SOL WHY SKIPPED I picked LAUNCH-USDC (smart wallet present, fees 111.56 SOL, organic 89, vol ~$152K, volatility 4.31) as the highest-conviction candidate. The deploy_position call was executed but the on-chai"
    }
   ]
  },
@@ -845,7 +845,7 @@
    },
    {
     "hour": "13:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "14:00",
@@ -873,25 +873,25 @@
    },
    {
     "hour": "20:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T20:20:00.576",
-  "last_management": "2026-10-25T20:25:00.272"
+  "last_management": "2026-10-25T20:30:00.458"
  },
  "log_tail": [
-  "[2026-10-25T20:20:02.420Z] [SCREENING] Bot-holder filter: dropped NMS-SOL \u2014 bots 35.72% > 30%",
-  "[2026-10-25T20:20:06.154Z] [DEPLOY] Pool: H37FsZxA5TzoMxXzwMe1HgsPB2FHyuDzK34UiXtfLhFX",
-  "[2026-10-25T20:20:06.154Z] [DEPLOY] Strategy: bid_ask, Bins: -1125 to -1056 (69 bins)",
-  "[2026-10-25T20:20:06.154Z] [DEPLOY] Amount: 0 X, 1.1 Y",
   "[2026-10-25T20:20:06.154Z] [DEPLOY] Position: 4LmSpP6pFJQDgmERSvsXamoKRM2n28S3dguHeo5X1Naq",
   "[2026-10-25T20:20:10.410Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4F9WUXouTutbgk5Z6EjybB7sJyBPnaewwcMYbefAnC3qjPPkx6aLRZotpehydxd3W6C53c3KCiGxUTmqdEj7ARQo",
   "[2026-10-25T20:20:11.894Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-25T20:25:00.272Z] [CRON] Starting management cycle",
   "[2026-10-25T20:25:00.527Z] [CRON] Screening skipped \u2014 insufficient SOL (0.736 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T20:25:00.913Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T20:25:00.913Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T20:30:00.458Z] [CRON] Starting management cycle",
+  "[2026-10-25T20:30:00.789Z] [CRON] Screening skipped \u2014 insufficient SOL (0.736 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-25T20:30:01.104Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T20:32:40.327Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-25T20:24:40.166Z"
+ "state_last_updated": "2026-10-25T20:32:40.326Z"
 }

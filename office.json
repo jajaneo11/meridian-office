@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T20:02:43.530324+00:00",
+ "generated_at": "2026-10-25T20:07:42.844629+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -702,20 +702,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1196,
+  "total_real": 1197,
   "today": 100,
-  "today_real": 109,
+  "today_real": 110,
   "by_type": {
-   "skip": 49,
+   "skip": 48,
    "close": 11,
    "deploy": 10,
-   "no_deploy": 30
+   "no_deploy": 31
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T20:06:14.412Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-25T20:01:09.965Z",
     "type": "no_deploy",
@@ -803,14 +811,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-25T19:05:45.767Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. Deploy attempted but blocked by the pool's live fee gate. BEST LOOKING CANDIDATE LAUNCH-SOL (FZWxV7C4JKKe3wX54MM6QpcVAHtyGrtnPFmihysWfiDB) WHY SKIPPED Selected LAUNCH-SOL as highest conviction (organic 88, fees 106.6 SOL, 1 smart wallet `lp` present, +"
    }
   ]
  },
@@ -834,7 +834,7 @@
    },
    {
     "hour": "13:00",
-    "count": 14
+    "count": 13
    },
    {
     "hour": "14:00",
@@ -862,25 +862,25 @@
    },
    {
     "hour": "20:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T20:00:01.522",
-  "last_management": "2026-10-25T20:00:00.953"
+  "last_screening": "2026-10-25T20:05:00.712",
+  "last_management": "2026-10-25T20:05:00.218"
  },
  "log_tail": [
-  "[2026-10-25T19:55:01.207Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T19:55:01.207Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T19:55:01.208Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T19:55:01.208Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
-  "[2026-10-25T20:00:00.953Z] [CRON] Starting management cycle",
-  "[2026-10-25T20:00:01.522Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T20:00:01.525Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
   "[2026-10-25T20:00:01.547Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T20:00:01.555Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T20:00:06.184Z] [SCREENING] Bot-holder filter: dropped NMS-SOL \u2014 bots 40.47% > 30%"
+  "[2026-10-25T20:00:06.184Z] [SCREENING] Bot-holder filter: dropped NMS-SOL \u2014 bots 40.47% > 30%",
+  "[2026-10-25T20:05:00.218Z] [CRON] Starting management cycle",
+  "[2026-10-25T20:05:00.712Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T20:05:00.713Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
+  "[2026-10-25T20:05:00.721Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T20:05:00.721Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T20:05:03.017Z] [SCREENING] Bot-holder filter: dropped NMS-SOL \u2014 bots 40.42% > 30%"
  ],
  "state_last_updated": "2026-10-25T18:46:57.895Z"
 }

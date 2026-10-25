@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T19:22:39.636821+00:00",
+ "generated_at": "2026-10-25T19:27:39.776886+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -702,20 +702,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1188,
+  "total_real": 1189,
   "today": 100,
-  "today_real": 101,
+  "today_real": 102,
   "by_type": {
-   "skip": 57,
+   "skip": 56,
    "close": 11,
    "deploy": 10,
-   "no_deploy": 22
+   "no_deploy": 23
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T19:26:19.482Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-25T19:20:28.566Z",
     "type": "no_deploy",
@@ -803,14 +811,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.794 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T18:30:00.586Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.794 < 1.1300000000000001)"
    }
   ]
  },
@@ -834,7 +834,7 @@
    },
    {
     "hour": "12:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "13:00",
@@ -862,25 +862,25 @@
    },
    {
     "hour": "19:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T19:20:01.366",
-  "last_management": "2026-10-25T19:20:00.817"
+  "last_screening": "2026-10-25T19:25:00.770",
+  "last_management": "2026-10-25T19:25:00.133"
  },
  "log_tail": [
-  "[2026-10-25T19:15:01.449Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T19:15:01.449Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T19:15:01.477Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T19:15:01.478Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
-  "[2026-10-25T19:20:00.817Z] [CRON] Starting management cycle",
   "[2026-10-25T19:20:01.299Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T19:20:01.299Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T19:20:01.366Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T19:20:01.366Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
-  "[2026-10-25T19:20:28.566Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T19:20:28.566Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T19:25:00.133Z] [CRON] Starting management cycle",
+  "[2026-10-25T19:25:00.658Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T19:25:00.659Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T19:25:00.770Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T19:25:00.770Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)"
  ],
  "state_last_updated": "2026-10-25T18:46:57.895Z"
 }

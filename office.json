@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T20:32:41.805899+00:00",
+ "generated_at": "2026-10-25T20:37:44.271170+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.87834
+  "sol": 1.87905
  },
  "limits": {
   "max_positions": 3,
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "4LmSpP6pFJQDgmERSvsXamoKRM2n28S3dguHeo5X1Naq",
-    "pool": "PANGEA-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-25T20:20:10.412Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 1.1
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 64
  },
  "pnl": {
-  "last24h_usd": -1.54,
-  "fees24h_usd": 102.52,
-  "all_time_usd": 35.06,
-  "closed_total": 63,
-  "win_rate_pct": 65
+  "last24h_usd": -1.51,
+  "fees24h_usd": 102.68,
+  "all_time_usd": 35.09,
+  "closed_total": 64,
+  "win_rate_pct": 66
  },
  "pnl_trades": [
   {
@@ -709,24 +698,50 @@
    "amount_sol": 1.1,
    "minutes_held": 101,
    "close_reason": "Trailing TP: peak 3.49% \u2192 current 0.10% (dropped 3.39% >= 1.5%)"
+  },
+  {
+   "pool": "PANGEA-SOL",
+   "recorded_at": "2026-10-25T20:33:05.064Z",
+   "pnl_usd": 0.03,
+   "pnl_pct": 0.03,
+   "fees_usd": 0.1614734867144781,
+   "amount_sol": 1.1,
+   "minutes_held": 12,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1200,
+  "total_real": 1201,
   "today": 100,
-  "today_real": 113,
+  "today_real": 114,
   "by_type": {
-   "skip": 46,
-   "deploy": 11,
-   "close": 10,
-   "no_deploy": 33
+   "skip": 45,
+   "close": 11,
+   "no_deploy": 34,
+   "deploy": 10
   },
   "by_actor": {
-   "SCREENER": 90,
-   "MANAGER": 10
+   "SCREENER": 89,
+   "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T20:36:16.417Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
+   {
+    "ts": "2026-10-25T20:33:05.079Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "PANGEA-SOL",
+    "summary": "Closed at 0.03%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-25T20:30:00.790Z",
     "type": "skip",
@@ -806,22 +821,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-25T19:41:11.308Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-25T19:36:23.514Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -845,7 +844,7 @@
    },
    {
     "hour": "13:00",
-    "count": 8
+    "count": 6
    },
    {
     "hour": "14:00",
@@ -873,25 +872,25 @@
    },
    {
     "hour": "20:00",
-    "count": 7
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T20:20:00.576",
-  "last_management": "2026-10-25T20:30:00.458"
+  "last_screening": "2026-10-25T20:35:01.201",
+  "last_management": "2026-10-25T20:35:00.721"
  },
  "log_tail": [
-  "[2026-10-25T20:20:06.154Z] [DEPLOY] Position: 4LmSpP6pFJQDgmERSvsXamoKRM2n28S3dguHeo5X1Naq",
-  "[2026-10-25T20:20:10.410Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4F9WUXouTutbgk5Z6EjybB7sJyBPnaewwcMYbefAnC3qjPPkx6aLRZotpehydxd3W6C53c3KCiGxUTmqdEj7ARQo",
-  "[2026-10-25T20:20:11.894Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T20:25:00.272Z] [CRON] Starting management cycle",
-  "[2026-10-25T20:25:00.527Z] [CRON] Screening skipped \u2014 insufficient SOL (0.736 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T20:25:00.913Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T20:30:00.458Z] [CRON] Starting management cycle",
   "[2026-10-25T20:30:00.789Z] [CRON] Screening skipped \u2014 insufficient SOL (0.736 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-25T20:30:01.104Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T20:32:40.327Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T20:32:40.327Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T20:35:00.721Z] [CRON] Starting management cycle",
+  "[2026-10-25T20:35:01.173Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T20:35:01.173Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T20:35:01.201Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T20:35:01.201Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87905 SOL)",
+  "[2026-10-25T20:35:04.852Z] [SCREENING] Bot-holder filter: dropped NMS-SOL \u2014 bots 32.44% > 30%",
+  "[2026-10-25T20:35:04.852Z] [SCREENING] Bot-holder filter: dropped ONECOIN-SOL \u2014 bots 43.50% > 30%"
  ],
- "state_last_updated": "2026-10-25T20:32:40.326Z"
+ "state_last_updated": "2026-10-25T20:33:04.726Z"
 }

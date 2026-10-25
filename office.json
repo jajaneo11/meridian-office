@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T11:57:40.112043+00:00",
+ "generated_at": "2026-10-25T12:02:43.004200+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -592,9 +592,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1152,
+  "total_real": 1153,
   "today": 100,
-  "today_real": 65,
+  "today_real": 66,
   "by_type": {
    "no_deploy": 44,
    "deploy": 6,
@@ -606,6 +606,14 @@
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T12:00:14.140Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DOPE-USDC (Doge Pepe) WHY SKIPPED Only one candidate survived screening, and it does not clear the conviction bar. DOPE-USDC has a solid fundamentals floor (fee/TVL 0.37, fees 665.97 SOL, bots 14%, top10 18.9%) but fails the two "
+   },
    {
     "ts": "2026-10-25T11:55:13.548Z",
     "type": "no_deploy",
@@ -693,23 +701,11 @@
     "pool_name": "BTC-SOL",
     "summary": "Single candidate skipped",
     "reason_short": "token fees 12.41 SOL below minimum 30 SOL"
-   },
-   {
-    "ts": "2026-10-25T11:00:33.415Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "BORDR-SOL",
-    "summary": "Closed at -0.05%",
-    "reason_short": "Low yield: fee/TVL 0.07% < min 7% (age: 60m)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "00:00",
-    "count": 0
-   },
    {
     "hour": "01:00",
     "count": 0
@@ -724,7 +720,7 @@
    },
    {
     "hour": "04:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "05:00",
@@ -753,24 +749,28 @@
    {
     "hour": "11:00",
     "count": 13
+   },
+   {
+    "hour": "12:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T11:55:01.369",
-  "last_management": "2026-10-25T11:55:00.845"
+  "last_screening": "2026-10-25T12:00:00.813",
+  "last_management": "2026-10-25T12:00:00.154"
  },
  "log_tail": [
-  "[2026-10-25T11:50:00.557Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:50:00.902Z] [CRON] Screening skipped \u2014 insufficient SOL (0.575 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T11:50:01.362Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T11:55:00.845Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:55:01.369Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T11:55:01.370Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11653 SOL)",
   "[2026-10-25T11:55:01.390Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T11:55:01.390Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T11:55:10.431Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.01% > 30%",
-  "[2026-10-25T11:55:13.548Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T11:55:13.548Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T12:00:00.154Z] [CRON] Starting management cycle",
+  "[2026-10-25T12:00:00.813Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T12:00:00.813Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11653 SOL)",
+  "[2026-10-25T12:00:00.831Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T12:00:00.831Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T12:00:14.139Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

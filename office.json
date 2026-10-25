@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T04:22:39.033439+00:00",
+ "generated_at": "2026-10-25T04:27:39.486328+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7552
    }
   ],
-  "decisions_mentioning": 7
+  "decisions_mentioning": 8
  },
  "mode": {
   "dry_run": false,
@@ -532,20 +532,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1103,
-  "today": 58,
-  "today_real": 16,
+  "total_real": 1104,
+  "today": 59,
+  "today_real": 17,
   "by_type": {
-   "skip": 71,
+   "skip": 70,
    "close": 9,
    "deploy": 8,
-   "no_deploy": 12
+   "no_deploy": 13
   },
   "by_actor": {
    "SCREENER": 91,
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T04:25:14.241Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Marvin-SOL WHY SKIPPED Marvin passes the hard gates (fees=131 SOL > 30, bots<30%, bin_step=100, volatility=8.0 positive), but fails all qualitative judgment checks: narrative is still generating (no story/catalyst available), zer"
+   },
    {
     "ts": "2026-10-25T04:20:04.893Z",
     "type": "no_deploy",
@@ -633,14 +641,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PVE-SOL (3oXbUwiDxWGisDGcinLW6c1ANmWG93ZLoFd3H7xpT2XT) WHY SKIPPED PVE-SOL clears the mechanical gates (fees 113.85 SOL > 30, bots 26.4% < 30, top10 19% low, volatility 4.48 positive, bin_step 100). But it fails the narrative + s"
-   },
-   {
-    "ts": "2026-10-25T03:30:30.719Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "\u2588\u2588\u2588-SOL",
-    "summary": "Closed at 0.04%",
-    "reason_short": "pumped far above range"
    }
   ]
  },
@@ -660,7 +660,7 @@
    },
    {
     "hour": "20:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "21:00",
@@ -692,25 +692,25 @@
    },
    {
     "hour": "04:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T04:20:00.545",
-  "last_management": "2026-10-25T04:20:00.048"
+  "last_screening": "2026-10-25T04:25:00.819",
+  "last_management": "2026-10-25T04:25:00.317"
  },
  "log_tail": [
-  "[2026-10-25T04:15:01.381Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T04:15:16.510Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T04:20:00.048Z] [CRON] Starting management cycle",
-  "[2026-10-25T04:20:00.545Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T04:20:00.545Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.949612 SOL)",
-  "[2026-10-25T04:20:00.601Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T04:20:00.604Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T04:20:00.827Z] [SCREENING] Volume spike check rejected DacityCoin-SOL: 2.96x",
   "[2026-10-25T04:20:00.827Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
-  "[2026-10-25T04:20:04.892Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T04:20:04.892Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T04:25:00.317Z] [CRON] Starting management cycle",
+  "[2026-10-25T04:25:00.819Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T04:25:00.819Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.949612 SOL)",
+  "[2026-10-25T04:25:00.894Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T04:25:00.894Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T04:25:01.002Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T04:25:01.006Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T04:25:14.240Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T03:56:16.306Z"
 }

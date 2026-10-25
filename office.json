@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T11:07:39.351417+00:00",
+ "generated_at": "2026-10-25T11:12:41.420234+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7005
    }
   ],
-  "decisions_mentioning": 23
+  "decisions_mentioning": 24
  },
  "mode": {
   "dry_run": false,
@@ -592,20 +592,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1145,
+  "total_real": 1146,
   "today": 100,
-  "today_real": 58,
+  "today_real": 59,
   "by_type": {
-   "close": 8,
-   "no_deploy": 43,
+   "no_deploy": 44,
    "deploy": 7,
-   "skip": 42
+   "skip": 42,
+   "close": 7
   },
   "by_actor": {
-   "MANAGER": 8,
-   "SCREENER": 92
+   "SCREENER": 93,
+   "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T11:10:05.165Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BTC-SOL WHY SKIPPED BTC-SOL fails the hard fee gate \u2014 only 13.6 SOL in total fees paid, well under the 30 SOL minimum, which signals bundled/scam activity. It's also a 4h-old pump.fun launch with a HIGH PVP conflict: a rival Big "
+   },
    {
     "ts": "2026-10-25T11:05:09.770Z",
     "type": "no_deploy",
@@ -693,14 +701,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA passed all hard gates (fees=255 SOL, bots=15.5%, bin_step=100, volatility positive) and was the only surviving candidate after BTC-SOL was disqualified, but the actual deploy_position transaction FA"
-   },
-   {
-    "ts": "2026-10-25T10:20:05.305Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA-USDC is the only surviving candidate, but it fails the core risk guideline: the narrative is still a placeholder (\"being generated\" \u2014 no identifiable origin, event, or named entity), and there are 0"
    }
   ]
  },
@@ -720,7 +720,7 @@
    },
    {
     "hour": "03:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "04:00",
@@ -752,25 +752,25 @@
    },
    {
     "hour": "11:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T11:05:00.569",
-  "last_management": "2026-10-25T11:05:00.014"
+  "last_screening": "2026-10-25T11:10:00.805",
+  "last_management": "2026-10-25T11:10:00.296"
  },
  "log_tail": [
-  "[2026-10-25T11:00:18.851Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T11:05:00.014Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:05:00.510Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T11:05:00.510Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T11:05:00.569Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T11:05:00.570Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
-  "[2026-10-25T11:05:01.249Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
   "[2026-10-25T11:05:09.230Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
   "[2026-10-25T11:05:09.591Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T11:05:09.600Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests"
+  "[2026-10-25T11:05:09.600Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:10:00.296Z] [CRON] Starting management cycle",
+  "[2026-10-25T11:10:00.805Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T11:10:00.805Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
+  "[2026-10-25T11:10:00.852Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T11:10:00.853Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T11:10:01.151Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
+  "[2026-10-25T11:10:05.165Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

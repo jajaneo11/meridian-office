@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T01:12:45.405313+00:00",
+ "generated_at": "2026-10-25T01:17:44.389016+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.99592
+  "sol": 1.996788
  },
  "limits": {
   "max_positions": 3,
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 43
+  "open_count": 1,
+  "open": [
+   {
+    "id": "3LghTJkZotzY4CYRyvF2V6oGpbBsAj1swUoMxP1JsVRQ",
+    "pool": "mint-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-25T01:15:22.636Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 1.55,
+    "amount_sol": 1.55
+   }
+  ],
+  "total_tracked": 44
  },
  "pnl": {
   "last24h_usd": 39.73,
@@ -502,20 +513,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1091,
-  "today": 17,
-  "today_real": 4,
+  "total_real": 1092,
+  "today": 18,
+  "today_real": 5,
   "by_type": {
-   "skip": 83,
+   "skip": 82,
    "close": 7,
    "no_deploy": 4,
-   "deploy": 6
+   "deploy": 7
   },
   "by_actor": {
    "SCREENER": 93,
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T01:15:22.637Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "mint-SOL",
+    "summary": "Deployed 1.55 SOL with bid_ask",
+    "reason_short": "Chosen range 283\u2192351 around active bin 351"
+   },
    {
     "ts": "2026-10-25T01:11:39.362Z",
     "type": "close",
@@ -603,14 +622,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-25T00:20:20.885Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED mint-SOL was the strongest pick \u2014 it had a smart wallet present (Fast LP), strong positive pool memory (avg PnL +3.41%, 100% win rate), solid volatility (5.80), and healthy volume/1h momentum with net buyers."
    }
   ]
  },
@@ -630,7 +641,7 @@
    },
    {
     "hour": "17:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "18:00",
@@ -662,25 +673,25 @@
    },
    {
     "hour": "01:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T00:35:01.148",
-  "last_management": "2026-10-25T01:10:00.192"
+  "last_screening": "2026-10-25T01:15:00.941",
+  "last_management": "2026-10-25T01:15:00.458"
  },
  "log_tail": [
-  "[2026-10-25T01:00:00.808Z] [CRON] Starting morning briefing",
-  "[2026-10-25T01:00:01.054Z] [CRON] Screening skipped \u2014 insufficient SOL (0.404 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T01:00:01.467Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T01:05:00.970Z] [CRON] Starting management cycle",
-  "[2026-10-25T01:05:01.233Z] [CRON] Screening skipped \u2014 insufficient SOL (0.404 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T01:05:01.692Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T01:10:00.192Z] [CRON] Starting management cycle",
-  "[2026-10-25T01:10:00.492Z] [CRON] Screening skipped \u2014 insufficient SOL (0.404 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T01:10:00.875Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T01:11:25.768Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T01:15:00.965Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T01:15:09.383Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T01:15:09.446Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T01:15:10.251Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.92% > 30%",
+  "[2026-10-25T01:15:20.517Z] [DEPLOY] Pool: 3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
+  "[2026-10-25T01:15:20.517Z] [DEPLOY] Strategy: bid_ask, Bins: 283 to 351 (68 bins)",
+  "[2026-10-25T01:15:20.517Z] [DEPLOY] Amount: 0 X, 1.55 Y",
+  "[2026-10-25T01:15:20.517Z] [DEPLOY] Position: 3LghTJkZotzY4CYRyvF2V6oGpbBsAj1swUoMxP1JsVRQ",
+  "[2026-10-25T01:15:22.635Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 18UBEbN9P4z6TRo47X9GMV8zFKADXLiC4zm4kj8SoNFwsprH3z9xYHUaFG3YhkU1iPj8ZcCwBnzDHmeoUHXmxpj",
+  "[2026-10-25T01:15:24.259Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-25T01:11:39.130Z"
+ "state_last_updated": "2026-10-25T01:17:37.803Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T06:27:39.600234+00:00",
+ "generated_at": "2026-10-25T06:32:40.152986+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 6997
    }
   ],
-  "decisions_mentioning": 11
+  "decisions_mentioning": 12
  },
  "mode": {
   "dry_run": false,
@@ -562,20 +562,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1111,
-  "today": 86,
-  "today_real": 24,
+  "total_real": 1112,
+  "today": 87,
+  "today_real": 25,
   "by_type": {
-   "skip": 64,
+   "skip": 63,
    "close": 10,
    "deploy": 9,
-   "no_deploy": 17
+   "no_deploy": 18
   },
   "by_actor": {
    "SCREENER": 90,
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-25T06:30:13.188Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE KNOTS-SOL (BcAaxXZZ16t4emqCqsN81QvkvWNwSMhQUYcs5JoU5uRa) WHY SKIPPED The single surviving candidate fails the hard risk gates. There is no real narrative \u2014 the untrusted narrative field is only a placeholder (\"Narrative is being "
+   },
    {
     "ts": "2026-10-25T06:25:02.437Z",
     "type": "no_deploy",
@@ -663,14 +671,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.358 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T05:40:01.139Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.358 < 1.58)"
    }
   ]
  },
@@ -694,7 +694,7 @@
    },
    {
     "hour": "23:00",
-    "count": 14
+    "count": 13
    },
    {
     "hour": "00:00",
@@ -722,25 +722,25 @@
    },
    {
     "hour": "06:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T06:25:01.239",
-  "last_management": "2026-10-25T06:25:00.738"
+  "last_screening": "2026-10-25T06:30:00.582",
+  "last_management": "2026-10-25T06:30:00.028"
  },
  "log_tail": [
-  "[2026-10-25T06:15:10.669Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T06:20:00.538Z] [CRON] Starting management cycle",
-  "[2026-10-25T06:20:00.791Z] [CRON] Screening skipped \u2014 insufficient SOL (0.357 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T06:20:01.153Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T06:23:26.561Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T06:25:00.738Z] [CRON] Starting management cycle",
-  "[2026-10-25T06:25:01.239Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T06:25:01.240Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.120471 SOL)",
   "[2026-10-25T06:25:01.243Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T06:25:01.243Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-25T06:25:01.243Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T06:30:00.028Z] [CRON] Starting management cycle",
+  "[2026-10-25T06:30:00.582Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T06:30:00.582Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.120471 SOL)",
+  "[2026-10-25T06:30:00.647Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T06:30:00.648Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T06:30:00.711Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T06:30:08.931Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T06:30:13.187Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T06:23:37.283Z"
 }

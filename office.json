@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T05:12:42.993487+00:00",
+ "generated_at": "2026-10-25T05:17:40.317263+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -554,7 +554,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1108,
-  "today": 69,
+  "today": 70,
   "today_real": 21,
   "by_type": {
    "skip": 69,
@@ -567,6 +567,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T05:15:01.333Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.358 < 1.58)"
+   },
    {
     "ts": "2026-10-25T05:10:01.014Z",
     "type": "skip",
@@ -654,14 +662,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Marvin-SOL WHY SKIPPED Marvin passes the hard gates (fees=131 SOL > 30, bots<30%, bin_step=100, volatility=8.0 positive), but fails all qualitative judgment checks: narrative is still generating (no story/catalyst available), zer"
-   },
-   {
-    "ts": "2026-10-25T04:20:04.893Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Marvin-SOL WHY SKIPPED Despite strong technicals (volatility 10.8, fixed 130.7 SOL, top10 16.3% clean distribution), this candidate fails the core conviction checks. Narrative is still being generated \u2014 there is no identifiable s"
    }
   ]
  },
@@ -681,7 +681,7 @@
    },
    {
     "hour": "21:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "22:00",
@@ -713,25 +713,25 @@
    },
    {
     "hour": "05:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T05:05:00.756",
-  "last_management": "2026-10-25T05:10:00.502"
+  "last_management": "2026-10-25T05:15:00.741"
  },
  "log_tail": [
-  "[2026-10-25T05:05:00.822Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T05:05:05.250Z] [DEPLOY] Pool: 5Dc4s9fxxQoPfaMUaxFKB5v1Nh6FPqest7usgyvGXwWw",
-  "[2026-10-25T05:05:05.250Z] [DEPLOY] Strategy: bid_ask, Bins: -431 to -362 (69 bins)",
   "[2026-10-25T05:05:05.250Z] [DEPLOY] Amount: 0 X, 1.55 Y",
   "[2026-10-25T05:05:05.250Z] [DEPLOY] Position: G9bgKZtcZagHoL3KvVxtKmp9PN1JX4iRVPzJ5pd1d33U",
   "[2026-10-25T05:05:08.336Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2sDCH5izr9SunmT9EFu26yPRyKhwgLC99xE2k5yXRskwXh8dgapSGerZpa1WLBCpjSG3qBqThc4NWu9a2BAKCTqD",
   "[2026-10-25T05:05:09.799Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-25T05:10:00.502Z] [CRON] Starting management cycle",
   "[2026-10-25T05:10:01.014Z] [CRON] Screening skipped \u2014 insufficient SOL (0.358 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T05:10:01.020Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T05:10:01.020Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T05:15:00.741Z] [CRON] Starting management cycle",
+  "[2026-10-25T05:15:01.332Z] [CRON] Screening skipped \u2014 insufficient SOL (0.358 < 1.58 needed for deploy + gas)",
+  "[2026-10-25T05:15:01.341Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T05:12:01.771Z"
+ "state_last_updated": "2026-10-25T05:17:37.834Z"
 }

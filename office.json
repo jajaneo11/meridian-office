@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T11:02:39.522173+00:00",
+ "generated_at": "2026-10-25T11:07:39.351417+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.076089
+  "sol": 2.11799
  },
  "limits": {
   "max_positions": 3,
@@ -592,20 +592,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1144,
+  "total_real": 1145,
   "today": 100,
-  "today_real": 57,
+  "today_real": 58,
   "by_type": {
-   "skip": 43,
    "close": 8,
-   "no_deploy": 42,
-   "deploy": 7
+   "no_deploy": 43,
+   "deploy": 7,
+   "skip": 42
   },
   "by_actor": {
-   "SCREENER": 92,
-   "MANAGER": 8
+   "MANAGER": 8,
+   "SCREENER": 92
   },
   "recent": [
+   {
+    "ts": "2026-10-25T11:05:09.770Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": "BTC-SOL",
+    "summary": "Single candidate skipped",
+    "reason_short": "token fees 12.41 SOL below minimum 30 SOL"
+   },
    {
     "ts": "2026-10-25T11:00:33.415Z",
     "type": "close",
@@ -693,14 +701,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA-USDC is the only surviving candidate, but it fails the core risk guideline: the narrative is still a placeholder (\"being generated\" \u2014 no identifiable origin, event, or named entity), and there are 0"
-   },
-   {
-    "ts": "2026-10-25T10:15:20.286Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA-USDC cleared all screening (bin_step=100, volatility 4.22, fees 255 SOL, top10 33%) but was blocked by the system's on-chain pool check: fee/active-TVL is 0%, below the minimum 0.09% threshold \u2014 so "
    }
   ]
  },
@@ -720,7 +720,7 @@
    },
    {
     "hour": "03:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "04:00",
@@ -752,25 +752,25 @@
    },
    {
     "hour": "11:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T10:50:01.066",
-  "last_management": "2026-10-25T11:00:00.751"
+  "last_screening": "2026-10-25T11:05:00.569",
+  "last_management": "2026-10-25T11:05:00.014"
  },
  "log_tail": [
-  "[2026-10-25T10:50:01.446Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
-  "[2026-10-25T10:52:57.448Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-25T10:52:58.467Z] [CRON] Screening skipped \u2014 insufficient SOL (1.076 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T10:55:00.500Z] [CRON] Starting management cycle",
-  "[2026-10-25T10:55:00.744Z] [CRON] Screening skipped \u2014 insufficient SOL (1.076 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T10:55:01.172Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T11:00:00.751Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:00:00.869Z] [CRON] Screening skipped \u2014 insufficient SOL (1.076 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T11:00:01.496Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T11:00:18.851Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T11:00:18.851Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T11:05:00.014Z] [CRON] Starting management cycle",
+  "[2026-10-25T11:05:00.510Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T11:05:00.510Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T11:05:00.569Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T11:05:00.570Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11799 SOL)",
+  "[2026-10-25T11:05:01.249Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
+  "[2026-10-25T11:05:09.230Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:05:09.591Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T11:05:09.600Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

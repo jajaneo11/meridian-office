@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T16:07:40.678718+00:00",
+ "generated_at": "2026-10-25T16:12:39.572299+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 10901
    }
   ],
-  "decisions_mentioning": 20
+  "decisions_mentioning": 19
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.255924
+  "sol": 1.260412
  },
  "limits": {
   "max_positions": 3,
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
+  "open_count": 2,
   "open": [
    {
     "id": "3LUjENAghEPbgWFUF9nZkaHEMSwNKEX2pUeNjkW9TjP7",
@@ -68,9 +68,19 @@
     "pnl_usd": null,
     "value_usd": 1.1,
     "amount_sol": 1.1
+   },
+   {
+    "id": "CuYdA3ttJPMoCNv8GbisdMWiUC1ZLJXBfLPXtduQj2x2",
+    "pool": "mint-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-25T16:10:20.553Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.1
    }
   ],
-  "total_tracked": 61
+  "total_tracked": 62
  },
  "pnl": {
   "last24h_usd": 52.65,
@@ -683,12 +693,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1179,
+  "total_real": 1180,
   "today": 100,
-  "today_real": 92,
+  "today_real": 93,
   "by_type": {
-   "no_deploy": 48,
-   "deploy": 10,
+   "no_deploy": 47,
+   "deploy": 11,
    "skip": 33,
    "close": 9
   },
@@ -697,6 +707,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T16:10:20.555Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "mint-SOL",
+    "summary": "Deployed 1.1 SOL with bid_ask",
+    "reason_short": "Chosen range 264\u2192333 around active bin 333"
+   },
    {
     "ts": "2026-10-25T16:07:33.892Z",
     "type": "close",
@@ -784,14 +802,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- GME-SOL: token cooldown active - mint-SOL: token cooldown active"
-   },
-   {
-    "ts": "2026-10-25T15:40:02.255Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- GME-SOL: token cooldown active - mint-SOL: token cooldown active"
    }
   ]
  },
@@ -815,7 +825,7 @@
    },
    {
     "hour": "09:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "10:00",
@@ -843,25 +853,25 @@
    },
    {
     "hour": "16:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T16:03:50.171",
-  "last_management": "2026-10-25T16:05:00.980"
+  "last_screening": "2026-10-25T16:10:00.922",
+  "last_management": "2026-10-25T16:10:00.217"
  },
  "log_tail": [
-  "[2026-10-25T16:03:57.419Z] [DEPLOY] Pool: CvPyH4tJvUSk3cZ33zfMsT2DEbSanYJkJVJsBDVm4oAc",
-  "[2026-10-25T16:03:57.420Z] [DEPLOY] Strategy: bid_ask, Bins: -572 to -503 (69 bins)",
-  "[2026-10-25T16:03:57.420Z] [DEPLOY] Amount: 0 X, 1.1 Y",
-  "[2026-10-25T16:03:57.420Z] [DEPLOY] Position: 3LUjENAghEPbgWFUF9nZkaHEMSwNKEX2pUeNjkW9TjP7",
-  "[2026-10-25T16:03:58.529Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 24vq3NTQKQ6nimsnKjY5npwmmWoXi88u54pnrSGZ3obfxY86gLdgVV1MvMv4kDKV7VU8hcCGLVTdsTZr7ZDpfTXt",
-  "[2026-10-25T16:03:59.904Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T16:05:00.980Z] [CRON] Starting management cycle",
-  "[2026-10-25T16:05:01.234Z] [CRON] Screening skipped \u2014 insufficient SOL (0.114 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T16:05:01.691Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T16:07:25.220Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T16:10:00.217Z] [CRON] Starting management cycle",
+  "[2026-10-25T16:10:00.908Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T16:10:00.922Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T16:10:00.922Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.260412 SOL)",
+  "[2026-10-25T16:10:09.196Z] [DEPLOY] Pool: 3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
+  "[2026-10-25T16:10:09.196Z] [DEPLOY] Strategy: bid_ask, Bins: 264 to 333 (69 bins)",
+  "[2026-10-25T16:10:09.196Z] [DEPLOY] Amount: 0 X, 1.1 Y",
+  "[2026-10-25T16:10:09.196Z] [DEPLOY] Position: CuYdA3ttJPMoCNv8GbisdMWiUC1ZLJXBfLPXtduQj2x2",
+  "[2026-10-25T16:10:20.550Z] [DEPLOY] SUCCESS \u2014 1 tx(s): WjtzxNETmaY6EfsiPScLNQn3htVU4Y8V9Kt7Qdcu2Nk6rTRXLk5vYFTr3R5kFY2aiz7xRjRKU76VgkPu9fXcowx",
+  "[2026-10-25T16:10:22.691Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-25T16:07:37.260Z"
+ "state_last_updated": "2026-10-25T16:12:04.356Z"
 }

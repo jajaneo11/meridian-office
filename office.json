@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T14:57:40.951547+00:00",
+ "generated_at": "2026-10-25T15:02:40.529560+00:00",
  "smart_wallets": {
   "total": 24,
   "by_category": {
@@ -47,7 +47,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.350811
+  "sol": 2.37383
  },
  "limits": {
   "max_positions": 3,
@@ -59,24 +59,24 @@
   "open_count": 1,
   "open": [
    {
-    "id": "CnAdGsEpLxuR4UMs49fLBLKMZgq3pop1NLV688hoeUN8",
+    "id": "GsR82T3xaEWB29pc3EVb7T27AugLkhhXSNeUB8W5QpSR",
     "pool": "GME-SOL",
     "closed": false,
-    "deployed_at": "2026-10-25T14:35:07.610Z",
+    "deployed_at": "2026-10-25T15:00:17.545Z",
     "closed_at": null,
     "pnl_usd": null,
     "value_usd": null,
     "amount_sol": 1.8
    }
   ],
-  "total_tracked": 56
+  "total_tracked": 57
  },
  "pnl": {
-  "last24h_usd": 44.92,
-  "fees24h_usd": 88.13,
-  "all_time_usd": 73.65,
-  "closed_total": 55,
-  "win_rate_pct": 65
+  "last24h_usd": 49.84,
+  "fees24h_usd": 95.34,
+  "all_time_usd": 78.57,
+  "closed_total": 56,
+  "win_rate_pct": 66
  },
  "pnl_trades": [
   {
@@ -628,24 +628,50 @@
    "amount_sol": 1.8,
    "minutes_held": 0,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "GME-SOL",
+   "recorded_at": "2026-10-25T14:58:17.638Z",
+   "pnl_usd": 4.92,
+   "pnl_pct": 2.71,
+   "fees_usd": 7.2056607157063235,
+   "amount_sol": 1.8,
+   "minutes_held": 23,
+   "close_reason": "Trailing TP: peak 4.46% \u2192 current 2.76% (dropped 1.70% >= 1.5%)"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1165,
+  "total_real": 1166,
   "today": 100,
-  "today_real": 78,
+  "today_real": 79,
   "by_type": {
-   "skip": 47,
-   "close": 6,
+   "skip": 45,
+   "close": 7,
    "no_deploy": 41,
-   "deploy": 6
+   "deploy": 7
   },
   "by_actor": {
-   "SCREENER": 94,
-   "MANAGER": 6
+   "SCREENER": 93,
+   "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T15:00:17.547Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "GME-SOL",
+    "summary": "Deployed 1.8 SOL with bid_ask",
+    "reason_short": "Chosen range -650\u2192-581 around active bin -581"
+   },
+   {
+    "ts": "2026-10-25T14:58:17.645Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "GME-SOL",
+    "summary": "Closed at 2.71%",
+    "reason_short": "Trailing TP: peak 4.46% \u2192 current 2.76% (dropped 1.70% >= 1.5%)"
+   },
    {
     "ts": "2026-10-25T14:55:00.745Z",
     "type": "skip",
@@ -725,31 +751,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "Based on screening both pre-loaded candidates against the hard gates and risk signals: **GME-SOL** \u2014 Metrics look strong (fee/TVL 2.17, vol $128K, volatility 8.9, smart wallet present) but it **fails the HARD fee gate**: fees = 28.72 SOL < 30. That's an explicit disqualifier regardless of how good e"
-   },
-   {
-    "ts": "2026-10-25T14:10:15.712Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GME-SOL WHY SKIPPED GME was the strongest on paper \u2014 huge volume ($107K), high fee/TVL (1.92), high volatility (13.5), 1 smart wallet, clean top10 (17%). But it fails the HARD fee gate: total fees paid = 27.04 SOL, which is below"
-   },
-   {
-    "ts": "2026-10-25T14:05:00.419Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.156 < 1.83)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "03:00",
-    "count": 0
-   },
    {
     "hour": "04:00",
     "count": 0
@@ -764,7 +770,7 @@
    },
    {
     "hour": "07:00",
-    "count": 10
+    "count": 8
    },
    {
     "hour": "08:00",
@@ -792,25 +798,29 @@
    },
    {
     "hour": "14:00",
-    "count": 13
+    "count": 14
+   },
+   {
+    "hour": "15:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T14:35:01.201",
-  "last_management": "2026-10-25T14:55:00.647"
+  "last_screening": "2026-10-25T15:00:01.498",
+  "last_management": "2026-10-25T15:00:00.935"
  },
  "log_tail": [
-  "[2026-10-25T14:40:01.640Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T14:45:00.136Z] [CRON] Starting management cycle",
-  "[2026-10-25T14:45:00.432Z] [CRON] Screening skipped \u2014 insufficient SOL (0.509 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T14:45:00.838Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T14:50:00.406Z] [CRON] Starting management cycle",
-  "[2026-10-25T14:50:00.875Z] [CRON] Screening skipped \u2014 insufficient SOL (0.509 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T14:50:00.882Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T14:55:00.647Z] [CRON] Starting management cycle",
-  "[2026-10-25T14:55:00.745Z] [CRON] Screening skipped \u2014 insufficient SOL (0.509 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T14:55:01.786Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T15:00:01.498Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T15:00:01.498Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.37383 SOL)",
+  "[2026-10-25T15:00:01.663Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-25T15:00:01.665Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
+  "[2026-10-25T15:00:16.309Z] [DEPLOY] Pool: CvPyH4tJvUSk3cZ33zfMsT2DEbSanYJkJVJsBDVm4oAc",
+  "[2026-10-25T15:00:16.309Z] [DEPLOY] Strategy: bid_ask, Bins: -650 to -581 (69 bins)",
+  "[2026-10-25T15:00:16.309Z] [DEPLOY] Amount: 0 X, 1.8 Y",
+  "[2026-10-25T15:00:16.309Z] [DEPLOY] Position: GsR82T3xaEWB29pc3EVb7T27AugLkhhXSNeUB8W5QpSR",
+  "[2026-10-25T15:00:17.544Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2c7xQLKSQBBW6HjfcFSGf8cq9zifpDsqgf7fQzWg9iz85Uk6pRbmiX8A5dZUMkoa2X7ugWGeBdkXJz8UGSjJdA1K",
+  "[2026-10-25T15:00:19.298Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-25T14:57:39.701Z"
+ "state_last_updated": "2026-10-25T15:02:39.803Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T15:27:40.292053+00:00",
+ "generated_at": "2026-10-25T15:32:43.149428+00:00",
  "smart_wallets": {
   "total": 24,
   "by_category": {
@@ -47,7 +47,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.39925
+  "sol": 2.397816
  },
  "limits": {
   "max_positions": 3,
@@ -651,13 +651,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1168,
+  "total_real": 1169,
   "today": 100,
-  "today_real": 81,
+  "today_real": 82,
   "by_type": {
-   "skip": 44,
+   "skip": 43,
    "close": 8,
-   "no_deploy": 41,
+   "no_deploy": 42,
    "deploy": 7
   },
   "by_actor": {
@@ -665,6 +665,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T15:30:01.314Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- \u2588\u2588\u2588-SOL: token cooldown active - mint-SOL: token cooldown active - GME-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-25T15:26:48.967Z",
     "type": "close",
@@ -752,14 +760,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.509 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T14:45:00.432Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.509 < 1.83)"
    }
   ]
  },
@@ -779,7 +779,7 @@
    },
    {
     "hour": "07:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "08:00",
@@ -811,25 +811,25 @@
    },
    {
     "hour": "15:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T15:15:01.245",
-  "last_management": "2026-10-25T15:25:00.117"
+  "last_screening": "2026-10-25T15:30:00.937",
+  "last_management": "2026-10-25T15:30:00.361"
  },
  "log_tail": [
-  "[2026-10-25T15:15:12.043Z] [DEPLOY] Position: GaHbGLJXREAX26KafSqeGR7cf1xB7F8nA1yEcBDFDQ6E",
-  "[2026-10-25T15:15:15.550Z] [DEPLOY] SUCCESS \u2014 1 tx(s): q9sv63329ZhHrnHS2WhTVXkiWUMDjkUVJxLEFhyo8nUzTiQmfCZCZCaKG3jxczy3Y2zh5xWBmCX8dSusz6STU6P",
-  "[2026-10-25T15:15:17.484Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T15:20:00.945Z] [CRON] Starting management cycle",
-  "[2026-10-25T15:20:01.026Z] [CRON] Screening skipped \u2014 insufficient SOL (0.556 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T15:20:01.752Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T15:25:00.117Z] [CRON] Starting management cycle",
-  "[2026-10-25T15:25:00.396Z] [CRON] Screening skipped \u2014 insufficient SOL (0.556 < 1.83 needed for deploy + gas)",
   "[2026-10-25T15:25:00.799Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T15:26:40.017Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T15:26:40.017Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T15:30:00.361Z] [CRON] Starting management cycle",
+  "[2026-10-25T15:30:00.855Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T15:30:00.855Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T15:30:00.937Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T15:30:00.937Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.397816 SOL)",
+  "[2026-10-25T15:30:01.309Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T15:30:01.311Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T15:30:01.314Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)"
  ],
  "state_last_updated": "2026-10-25T15:26:48.661Z"
 }

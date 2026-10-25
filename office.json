@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T03:37:42.074272+00:00",
+ "generated_at": "2026-10-25T03:42:41.996238+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 25,
    "Multihours": 23
   },
-  "active_24h": 38,
+  "active_24h": 37,
   "total_value_usd": 139503,
   "total_activity": 390,
   "top": [
@@ -522,13 +522,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1095,
-  "today": 48,
-  "today_real": 8,
+  "total_real": 1096,
+  "today": 49,
+  "today_real": 9,
   "by_type": {
-   "skip": 77,
+   "skip": 76,
    "close": 9,
-   "no_deploy": 6,
+   "no_deploy": 7,
    "deploy": 8
   },
   "by_actor": {
@@ -536,6 +536,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T03:40:03.315Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- BTC-SOL: bot holders 58.99% > 30% - Marvin-SOL: bot holders 33.09% > 30% - Marvin-SOL: bot holders 33.09% > 30%"
+   },
    {
     "ts": "2026-10-25T03:35:18.546Z",
     "type": "no_deploy",
@@ -623,14 +631,6 @@
     "pool_name": "mint-SOL",
     "summary": "Closed at 2.28%",
     "reason_short": "Trailing TP: peak 3.57% \u2192 current 1.52% (dropped 2.05% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-25T02:50:00.833Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.450 < 1.58)"
    }
   ]
  },
@@ -654,7 +654,7 @@
    },
    {
     "hour": "20:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "21:00",
@@ -682,25 +682,25 @@
    },
    {
     "hour": "03:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T03:35:01.231",
-  "last_management": "2026-10-25T03:35:00.698"
+  "last_screening": "2026-10-25T03:40:01.510",
+  "last_management": "2026-10-25T03:40:00.961"
  },
  "log_tail": [
-  "[2026-10-25T03:35:01.231Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T03:35:01.231Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.004297 SOL)",
-  "[2026-10-25T03:35:01.511Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T03:35:01.519Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
-  "[2026-10-25T03:35:09.469Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T03:35:09.556Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T03:35:10.456Z] [SCREENING] Bot-holder filter: dropped Marvin-SOL \u2014 bots 34.08% > 30%",
-  "[2026-10-25T03:35:10.456Z] [SCREENING] Bot-holder filter: dropped Marvin-SOL \u2014 bots 34.08% > 30%",
-  "[2026-10-25T03:35:10.456Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 59.01% > 30%",
-  "[2026-10-25T03:35:18.545Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T03:40:00.961Z] [CRON] Starting management cycle",
+  "[2026-10-25T03:40:01.510Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T03:40:01.510Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.004297 SOL)",
+  "[2026-10-25T03:40:01.565Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T03:40:01.566Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T03:40:01.961Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T03:40:01.963Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T03:40:03.314Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.99% > 30%",
+  "[2026-10-25T03:40:03.314Z] [SCREENING] Bot-holder filter: dropped Marvin-SOL \u2014 bots 33.09% > 30%",
+  "[2026-10-25T03:40:03.314Z] [SCREENING] Bot-holder filter: dropped Marvin-SOL \u2014 bots 33.09% > 30%"
  ],
  "state_last_updated": "2026-10-25T03:30:30.431Z"
 }

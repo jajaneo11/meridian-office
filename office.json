@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T11:52:41.217281+00:00",
+ "generated_at": "2026-10-25T11:57:40.112043+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.11799
+  "sol": 2.11653
  },
  "limits": {
   "max_positions": 3,
@@ -592,9 +592,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1151,
+  "total_real": 1152,
   "today": 100,
-  "today_real": 64,
+  "today_real": 65,
   "by_type": {
    "no_deploy": 44,
    "deploy": 6,
@@ -606,6 +606,14 @@
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T11:55:13.548Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-USDC WHY SKIPPED Only one candidate survived and it fails multiple hard gates. Its bin_step=50 is far outside the required [80\u2013125] range, which is a hard disqualifier for DLMM deployments. Additionally, there is no usable"
+   },
    {
     "ts": "2026-10-25T11:50:00.903Z",
     "type": "skip",
@@ -693,14 +701,6 @@
     "pool_name": "BORDR-SOL",
     "summary": "Closed at -0.05%",
     "reason_short": "Low yield: fee/TVL 0.07% < min 7% (age: 60m)"
-   },
-   {
-    "ts": "2026-10-25T11:00:00.870Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (1.076 < 1.83)"
    }
   ]
  },
@@ -724,7 +724,7 @@
    },
    {
     "hour": "04:00",
-    "count": 11
+    "count": 10
    },
    {
     "hour": "05:00",
@@ -752,25 +752,25 @@
    },
    {
     "hour": "11:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T11:35:01.279",
-  "last_management": "2026-10-25T11:50:00.557"
+  "last_screening": "2026-10-25T11:55:01.369",
+  "last_management": "2026-10-25T11:55:00.845"
  },
  "log_tail": [
-  "[2026-10-25T11:35:09.861Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.09% > 30%",
-  "[2026-10-25T11:40:00.034Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:40:00.427Z] [CRON] Screening skipped \u2014 insufficient SOL (0.575 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T11:40:00.712Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T11:45:00.292Z] [CRON] Starting management cycle",
-  "[2026-10-25T11:45:00.921Z] [CRON] Screening skipped \u2014 insufficient SOL (0.575 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T11:45:00.928Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T11:50:00.557Z] [CRON] Starting management cycle",
   "[2026-10-25T11:50:00.902Z] [CRON] Screening skipped \u2014 insufficient SOL (0.575 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T11:50:01.362Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T11:50:01.362Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T11:55:00.845Z] [CRON] Starting management cycle",
+  "[2026-10-25T11:55:01.369Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T11:55:01.370Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11653 SOL)",
+  "[2026-10-25T11:55:01.390Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T11:55:01.390Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T11:55:10.431Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.01% > 30%",
+  "[2026-10-25T11:55:13.548Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

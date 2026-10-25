@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T18:47:40.238849+00:00",
+ "generated_at": "2026-10-25T18:52:39.160211+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.266266
+  "sol": 1.87834
  },
  "limits": {
   "max_positions": 3,
@@ -702,12 +702,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1181,
+  "total_real": 1182,
   "today": 100,
-  "today_real": 94,
+  "today_real": 95,
   "by_type": {
-   "skip": 59,
-   "no_deploy": 19,
+   "skip": 58,
+   "no_deploy": 20,
    "deploy": 11,
    "close": 11
   },
@@ -716,6 +716,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T18:50:46.644Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-USDC (5Ey2p65wMh1KMBB1MkiUGenRegei9mAKvFm9urShnpuU) WHY SKIPPED The highest-conviction candidate, LAUNCH-USDC, was HARD REJECTED by the deploy gate: its fee/active-TVL ratio (0.0084%) sits far below the configured minimum "
+   },
    {
     "ts": "2026-10-25T18:46:58.363Z",
     "type": "close",
@@ -803,14 +811,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.774 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T17:55:01.024Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.774 < 1.1300000000000001)"
    }
   ]
  },
@@ -834,7 +834,7 @@
    },
    {
     "hour": "11:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "12:00",
@@ -862,25 +862,25 @@
    },
    {
     "hour": "18:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T17:05:01.274",
-  "last_management": "2026-10-25T18:45:00.997"
+  "last_screening": "2026-10-25T18:50:00.811",
+  "last_management": "2026-10-25T18:50:00.220"
  },
  "log_tail": [
-  "[2026-10-25T18:35:00.491Z] [CRON] Starting management cycle",
-  "[2026-10-25T18:35:00.755Z] [CRON] Screening skipped \u2014 insufficient SOL (0.794 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T18:35:01.160Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T18:40:00.765Z] [CRON] Starting management cycle",
-  "[2026-10-25T18:40:01.094Z] [CRON] Screening skipped \u2014 insufficient SOL (0.794 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T18:40:01.618Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T18:45:00.997Z] [CRON] Starting management cycle",
-  "[2026-10-25T18:45:01.265Z] [CRON] Screening skipped \u2014 insufficient SOL (0.794 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-25T18:45:01.693Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T18:46:36.019Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T18:46:36.019Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T18:50:00.220Z] [CRON] Starting management cycle",
+  "[2026-10-25T18:50:00.769Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T18:50:00.770Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T18:50:00.811Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T18:50:00.812Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
+  "[2026-10-25T18:50:04.033Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 32.12% > 30%",
+  "[2026-10-25T18:50:46.642Z] [AGENT] \u26d4 NO DEPLOY",
+  "No position was opened \u2014 the deploy tool returned a real blocking error and no transaction completed."
  ],
  "state_last_updated": "2026-10-25T18:46:57.895Z"
 }

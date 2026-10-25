@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T06:32:40.152986+00:00",
+ "generated_at": "2026-10-25T06:37:39.885290+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 6997
    }
   ],
-  "decisions_mentioning": 12
+  "decisions_mentioning": 13
  },
  "mode": {
   "dry_run": false,
@@ -562,20 +562,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1112,
-  "today": 87,
-  "today_real": 25,
+  "total_real": 1113,
+  "today": 88,
+  "today_real": 26,
   "by_type": {
-   "skip": 63,
+   "skip": 62,
    "close": 10,
    "deploy": 9,
-   "no_deploy": 18
+   "no_deploy": 19
   },
   "by_actor": {
    "SCREENER": 90,
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-25T06:35:08.036Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE MADE-SOL (FxPPZGPiTNYzgdMkNgAkA8QRZjNxurjBo7JgPt9z4T5X) WHY SKIPPED MADE-SOL fails the core conviction gates: there is no usable narrative (narrative field still generating/empty) and zero of 78 tracked smart wallets hold a posit"
+   },
    {
     "ts": "2026-10-25T06:30:13.188Z",
     "type": "no_deploy",
@@ -663,14 +671,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.358 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T05:45:00.388Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.358 < 1.58)"
    }
   ]
  },
@@ -694,7 +694,7 @@
    },
    {
     "hour": "23:00",
-    "count": 13
+    "count": 12
    },
    {
     "hour": "00:00",
@@ -722,25 +722,25 @@
    },
    {
     "hour": "06:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T06:30:00.582",
-  "last_management": "2026-10-25T06:30:00.028"
+  "last_screening": "2026-10-25T06:35:01.156",
+  "last_management": "2026-10-25T06:35:00.320"
  },
  "log_tail": [
-  "[2026-10-25T06:25:01.243Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T06:25:01.243Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T06:30:00.028Z] [CRON] Starting management cycle",
-  "[2026-10-25T06:30:00.582Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T06:30:00.582Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.120471 SOL)",
-  "[2026-10-25T06:30:00.647Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T06:30:00.648Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T06:30:00.711Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
   "[2026-10-25T06:30:08.931Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T06:30:13.187Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T06:30:13.187Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T06:35:00.320Z] [CRON] Starting management cycle",
+  "[2026-10-25T06:35:01.156Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T06:35:01.156Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.120471 SOL)",
+  "[2026-10-25T06:35:01.252Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T06:35:01.252Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T06:35:01.381Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T06:35:08.035Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T06:23:37.283Z"
 }

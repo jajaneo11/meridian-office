@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T13:52:38.991178+00:00",
+ "generated_at": "2026-10-25T13:57:42.103069+00:00",
  "smart_wallets": {
   "total": 87,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.146539
+  "sol": 2.149416
  },
  "limits": {
   "max_positions": 3,
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "AoCcShqn97rxJatUuiZxMxmn2LdRFPQDvmzKW3qFn8pA",
-    "pool": "PANGEA-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-25T13:30:34.082Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 1.8
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 54
  },
  "pnl": {
-  "last24h_usd": 50.21,
-  "fees24h_usd": 95.64,
-  "all_time_usd": 73.22,
-  "closed_total": 53,
-  "win_rate_pct": 66
+  "last24h_usd": 50.68,
+  "fees24h_usd": 95.97,
+  "all_time_usd": 73.69,
+  "closed_total": 54,
+  "win_rate_pct": 67
  },
  "pnl_trades": [
   {
@@ -609,24 +598,50 @@
    "amount_sol": 1.8,
    "minutes_held": 56,
    "close_reason": "agent decision"
+  },
+  {
+   "pool": "PANGEA-SOL",
+   "recorded_at": "2026-10-25T13:54:31.195Z",
+   "pnl_usd": 0.47,
+   "pnl_pct": 0.26,
+   "fees_usd": 0.3302943715461268,
+   "amount_sol": 1.8,
+   "minutes_held": 23,
+   "close_reason": "User initiated close"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1157,
+  "total_real": 1158,
   "today": 100,
-  "today_real": 70,
+  "today_real": 71,
   "by_type": {
-   "close": 6,
-   "no_deploy": 42,
    "deploy": 6,
-   "skip": 46
+   "skip": 46,
+   "close": 6,
+   "no_deploy": 42
   },
   "by_actor": {
-   "MANAGER": 6,
-   "SCREENER": 94
+   "SCREENER": 94,
+   "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T13:55:14.378Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GME-SOL WHY SKIPPED GME-SOL has the strongest metrics (fee_tvl 5.51, vol $16.5K, volatility 14.84, top10 only 16.8%) but fails the hard fee gate: only 18.37 SOL in fees < the 30 SOL floor, which flags bundled/scam activity regard"
+   },
+   {
+    "ts": "2026-10-25T13:54:31.202Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "PANGEA-SOL",
+    "summary": "Closed at 0.26%",
+    "reason_short": "User initiated close"
+   },
    {
     "ts": "2026-10-25T13:50:00.498Z",
     "type": "skip",
@@ -706,22 +721,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.273 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T13:05:00.386Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.273 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T13:00:01.149Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.273 < 1.83)"
    }
   ]
  },
@@ -745,7 +744,7 @@
    },
    {
     "hour": "06:00",
-    "count": 12
+    "count": 10
    },
    {
     "hour": "07:00",
@@ -773,25 +772,25 @@
    },
    {
     "hour": "13:00",
-    "count": 12
+    "count": 14
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T13:30:00.983",
-  "last_management": "2026-10-25T13:50:00.239"
+  "last_screening": "2026-10-25T13:55:01.031",
+  "last_management": "2026-10-25T13:55:00.481"
  },
  "log_tail": [
-  "[2026-10-25T13:35:01.405Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T13:40:00.856Z] [CRON] Starting management cycle",
-  "[2026-10-25T13:40:01.134Z] [CRON] Screening skipped \u2014 insufficient SOL (0.303 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T13:40:01.537Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T13:45:00.030Z] [CRON] Starting management cycle",
-  "[2026-10-25T13:45:00.337Z] [CRON] Screening skipped \u2014 insufficient SOL (0.307 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T13:45:00.724Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T13:50:00.239Z] [CRON] Starting management cycle",
-  "[2026-10-25T13:50:00.497Z] [CRON] Screening skipped \u2014 insufficient SOL (0.307 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T13:50:00.942Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T13:55:00.986Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T13:55:01.031Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T13:55:01.031Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.149416 SOL)",
+  "[2026-10-25T13:55:01.219Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T13:55:09.326Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T13:55:09.333Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T13:55:09.333Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T13:55:09.337Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T13:55:09.338Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T13:55:14.377Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-25T13:41:26.815Z"
+ "state_last_updated": "2026-10-25T13:54:30.959Z"
 }

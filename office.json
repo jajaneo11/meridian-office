@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T20:12:39.883698+00:00",
+ "generated_at": "2026-10-25T20:17:39.995403+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 10901
    }
   ],
-  "decisions_mentioning": 9
+  "decisions_mentioning": 10
  },
  "mode": {
   "dry_run": false,
@@ -702,20 +702,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1198,
+  "total_real": 1199,
   "today": 100,
-  "today_real": 111,
+  "today_real": 112,
   "by_type": {
-   "skip": 47,
    "close": 11,
+   "skip": 46,
    "deploy": 10,
-   "no_deploy": 32
+   "no_deploy": 33
   },
   "by_actor": {
-   "SCREENER": 89,
-   "MANAGER": 11
+   "MANAGER": 11,
+   "SCREENER": 89
   },
   "recent": [
+   {
+    "ts": "2026-10-25T20:15:26.649Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL (3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja) WHY SKIPPED mint-SOL was the highest-conviction pick \u2014 strong pool memory (7 deploys, 71% win rate, 0/6 OOR), a present smart wallet, and healthy metrics (organic 70, top10 "
+   },
    {
     "ts": "2026-10-25T20:11:26.168Z",
     "type": "no_deploy",
@@ -803,14 +811,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry \u2014 deploy tool failed. WHY SKIPPED The deployment call failed at execution: my first attempt returned `Pool undefined not found` (screening verification could not resolve the pool), and the system blocked the retry \u2014 `deploy_position already attempted th"
-   },
-   {
-    "ts": "2026-10-25T19:16:25.883Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -834,7 +834,7 @@
    },
    {
     "hour": "13:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "14:00",
@@ -862,25 +862,25 @@
    },
    {
     "hour": "20:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T20:10:01.244",
-  "last_management": "2026-10-25T20:10:00.500"
+  "last_screening": "2026-10-25T20:15:01.320",
+  "last_management": "2026-10-25T20:15:00.839"
  },
  "log_tail": [
-  "[2026-10-25T20:05:00.721Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T20:05:00.721Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T20:05:03.017Z] [SCREENING] Bot-holder filter: dropped NMS-SOL \u2014 bots 40.42% > 30%",
-  "[2026-10-25T20:10:00.500Z] [CRON] Starting management cycle",
-  "[2026-10-25T20:10:01.107Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T20:10:01.107Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T20:10:01.244Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T20:10:01.245Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
   "[2026-10-25T20:10:05.826Z] [SCREENING] Bot-holder filter: dropped NMS-SOL \u2014 bots 36.45% > 30%",
-  "[2026-10-25T20:11:26.168Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T20:11:26.168Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T20:15:00.839Z] [CRON] Starting management cycle",
+  "[2026-10-25T20:15:01.320Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T20:15:01.320Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
+  "[2026-10-25T20:15:01.345Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T20:15:01.345Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T20:15:04.772Z] [SCREENING] Bot-holder filter: dropped NMS-SOL \u2014 bots 34.01% > 30%",
+  "[2026-10-25T20:15:04.772Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 32.20% > 30%",
+  "[2026-10-25T20:15:26.649Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T18:46:57.895Z"
 }

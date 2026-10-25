@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T10:12:39.521794+00:00",
+ "generated_at": "2026-10-25T10:17:40.983914+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -593,13 +593,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1136,
+  "total_real": 1137,
   "today": 100,
-  "today_real": 49,
+  "today_real": 50,
   "by_type": {
-   "skip": 49,
+   "skip": 48,
    "close": 8,
-   "no_deploy": 35,
+   "no_deploy": 36,
    "deploy": 8
   },
   "by_actor": {
@@ -607,6 +607,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T10:15:20.286Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA-USDC cleared all screening (bin_step=100, volatility 4.22, fees 255 SOL, top10 33%) but was blocked by the system's on-chain pool check: fee/active-TVL is 0%, below the minimum 0.09% threshold \u2014 so "
+   },
    {
     "ts": "2026-10-25T10:10:13.941Z",
     "type": "no_deploy",
@@ -694,14 +702,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-USDC WHY SKIPPED The only surviving candidate fails the hard bin-step rule: bin_step=50 is outside the required 80\u2013125 window, which disqualifies it for deployment regardless of other metrics. On top of that, the narrative"
-   },
-   {
-    "ts": "2026-10-25T09:15:10.180Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Chubby-SOL: bot holders 33.69% > 30%"
    }
   ]
  },
@@ -721,7 +721,7 @@
    },
    {
     "hour": "02:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "03:00",
@@ -753,25 +753,25 @@
    },
    {
     "hour": "10:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T10:10:01.400",
-  "last_management": "2026-10-25T10:10:00.729"
+  "last_screening": "2026-10-25T10:15:01.596",
+  "last_management": "2026-10-25T10:15:00.903"
  },
  "log_tail": [
-  "[2026-10-25T10:05:01.233Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
-  "[2026-10-25T10:05:01.274Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T10:05:01.398Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
-  "[2026-10-25T10:05:01.720Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 31.13% > 30%",
-  "[2026-10-25T10:10:00.729Z] [CRON] Starting management cycle",
-  "[2026-10-25T10:10:01.400Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T10:10:01.400Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
   "[2026-10-25T10:10:01.455Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T10:10:10.407Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 33.70% > 30%",
-  "[2026-10-25T10:10:13.940Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T10:10:13.940Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T10:15:00.903Z] [CRON] Starting management cycle",
+  "[2026-10-25T10:15:01.596Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T10:15:01.596Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
+  "[2026-10-25T10:15:01.718Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T10:15:05.272Z] [SCREENING] Bot-holder filter: dropped \u30e4\u30ae-SOL \u2014 bots 33.73% > 30%",
+  "[2026-10-25T10:15:20.285Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-25T10:00:34.452Z"
+ "state_last_updated": "2026-10-25T10:13:55.631Z"
 }

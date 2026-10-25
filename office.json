@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T15:07:39.990370+00:00",
+ "generated_at": "2026-10-25T15:12:39.700105+00:00",
  "smart_wallets": {
   "total": 24,
   "by_category": {
@@ -36,7 +36,7 @@
     "value_usd": 5015
    }
   ],
-  "decisions_mentioning": 19
+  "decisions_mentioning": 20
  },
  "mode": {
   "dry_run": false,
@@ -47,7 +47,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.37383
+  "sol": 2.39925
  },
  "limits": {
   "max_positions": 3,
@@ -641,13 +641,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1166,
+  "total_real": 1167,
   "today": 100,
-  "today_real": 79,
+  "today_real": 80,
   "by_type": {
-   "skip": 44,
+   "skip": 43,
    "close": 8,
-   "no_deploy": 41,
+   "no_deploy": 42,
    "deploy": 7
   },
   "by_actor": {
@@ -655,6 +655,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T15:10:09.736Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL (3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja) WHY SKIPPED This is the only surviving candidate, but it fails the conviction bar. The narrative is unavailable (\"Narrative is being generated\") and there are 0/24 smart wal"
+   },
    {
     "ts": "2026-10-25T15:06:45.975Z",
     "type": "close",
@@ -742,14 +750,6 @@
     "pool_name": "GME-SOL",
     "summary": "Deployed 1.8 SOL with bid_ask",
     "reason_short": "Chosen range -630\u2192-561 around active bin -561"
-   },
-   {
-    "ts": "2026-10-25T14:25:11.180Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GME-SOL (Gigantic Milker Enjoyers) WHY SKIPPED GME passes every hard gate (fees 33 SOL \u2265 30, bots 17%, bin_step 100, volatility 8.66), but it fails the soft conviction checks that matter. It has no usable narrative (still \"being "
    }
   ]
  },
@@ -769,7 +769,7 @@
    },
    {
     "hour": "07:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "08:00",
@@ -801,25 +801,25 @@
    },
    {
     "hour": "15:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T15:00:01.498",
-  "last_management": "2026-10-25T15:05:00.146"
+  "last_screening": "2026-10-25T15:10:00.983",
+  "last_management": "2026-10-25T15:10:00.431"
  },
  "log_tail": [
-  "[2026-10-25T15:00:16.309Z] [DEPLOY] Pool: CvPyH4tJvUSk3cZ33zfMsT2DEbSanYJkJVJsBDVm4oAc",
-  "[2026-10-25T15:00:16.309Z] [DEPLOY] Strategy: bid_ask, Bins: -650 to -581 (69 bins)",
-  "[2026-10-25T15:00:16.309Z] [DEPLOY] Amount: 0 X, 1.8 Y",
-  "[2026-10-25T15:00:16.309Z] [DEPLOY] Position: GsR82T3xaEWB29pc3EVb7T27AugLkhhXSNeUB8W5QpSR",
-  "[2026-10-25T15:00:17.544Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2c7xQLKSQBBW6HjfcFSGf8cq9zifpDsqgf7fQzWg9iz85Uk6pRbmiX8A5dZUMkoa2X7ugWGeBdkXJz8UGSjJdA1K",
-  "[2026-10-25T15:00:19.298Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T15:05:00.146Z] [CRON] Starting management cycle",
-  "[2026-10-25T15:05:00.623Z] [CRON] Screening skipped \u2014 insufficient SOL (0.532 < 1.83 needed for deploy + gas)",
   "[2026-10-25T15:05:00.632Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T15:06:33.838Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-25T15:06:33.838Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T15:10:00.431Z] [CRON] Starting management cycle",
+  "[2026-10-25T15:10:00.964Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T15:10:00.964Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T15:10:00.983Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T15:10:00.983Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.39925 SOL)",
+  "[2026-10-25T15:10:02.293Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T15:10:02.297Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
+  "[2026-10-25T15:10:09.736Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T15:06:45.634Z"
 }

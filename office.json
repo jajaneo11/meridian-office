@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T20:52:42.778514+00:00",
+ "generated_at": "2026-10-25T20:57:41.069092+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 10901
    }
   ],
-  "decisions_mentioning": 10
+  "decisions_mentioning": 9
  },
  "mode": {
   "dry_run": false,
@@ -727,16 +727,32 @@
   "today": 100,
   "today_real": 115,
   "by_type": {
-   "close": 11,
-   "no_deploy": 34,
-   "skip": 44,
-   "deploy": 11
+   "no_deploy": 33,
+   "skip": 46,
+   "deploy": 11,
+   "close": 10
   },
   "by_actor": {
-   "MANAGER": 11,
-   "SCREENER": 89
+   "SCREENER": 90,
+   "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-25T20:55:00.802Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.737 < 1.1300000000000001)"
+   },
+   {
+    "ts": "2026-10-25T20:54:49.501Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.737 < 1.1300000000000001)"
+   },
    {
     "ts": "2026-10-25T20:52:33.693Z",
     "type": "skip",
@@ -816,22 +832,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL (3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja) WHY SKIPPED mint-SOL was the highest-conviction pick \u2014 strong pool memory (7 deploys, 71% win rate, 0/6 OOR), a present smart wallet, and healthy metrics (organic 70, top10 "
-   },
-   {
-    "ts": "2026-10-25T20:11:26.168Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL (FZWxV7C4JKKe3wX54MM6QpcVAHtyGrtnPFmihysWfiDB) WHY SKIPPED I attempted to deploy to the top candidate, LAUNCH-SOL (highest volatility among the LAUNCH pools, smart wallet present, organic 75, fees 121 SOL passing the h"
-   },
-   {
-    "ts": "2026-10-25T20:06:14.412Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -855,7 +855,7 @@
    },
    {
     "hour": "13:00",
-    "count": 2
+    "count": 0
    },
    {
     "hour": "14:00",
@@ -883,25 +883,25 @@
    },
    {
     "hour": "20:00",
-    "count": 13
+    "count": 15
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T20:40:00.625",
-  "last_management": "2026-10-25T20:50:00.486"
+  "last_management": "2026-10-25T20:55:00.556"
  },
  "log_tail": [
-  "[2026-10-25T20:40:16.459Z] [DEPLOY] SUCCESS \u2014 1 tx(s): r3kUN4AF3GW6mnGnpxKDn5n9tGgTuZcGpmZ8T4uVDbJ6fUZcKErfEhtkL3ukNva9UQaX45qQ9BrtHiNqgHrdwPB",
-  "[2026-10-25T20:40:18.531Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T20:45:00.305Z] [CRON] Starting management cycle",
-  "[2026-10-25T20:45:00.537Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T20:45:00.967Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T20:50:00.486Z] [CRON] Starting management cycle",
   "[2026-10-25T20:50:00.750Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-25T20:50:01.138Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T20:52:32.754Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-25T20:52:33.692Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.1300000000000001 needed for deploy + gas)"
+  "[2026-10-25T20:52:33.692Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-25T20:54:48.566Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-25T20:54:49.500Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-25T20:55:00.556Z] [CRON] Starting management cycle",
+  "[2026-10-25T20:55:00.801Z] [CRON] Screening skipped \u2014 insufficient SOL (0.737 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-25T20:55:01.203Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T20:51:16.485Z"
+ "state_last_updated": "2026-10-25T20:55:39.829Z"
 }

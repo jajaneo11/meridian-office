@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T02:52:39.166560+00:00",
+ "generated_at": "2026-10-25T02:57:48.177188+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": null
+  "sol": 2.004166
  },
  "limits": {
   "max_positions": 3,
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "3LghTJkZotzY4CYRyvF2V6oGpbBsAj1swUoMxP1JsVRQ",
-    "pool": "mint-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-25T01:15:22.636Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 1.55,
-    "amount_sol": 1.55
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 44
  },
  "pnl": {
-  "last24h_usd": 55.48,
-  "fees24h_usd": 87.03,
-  "all_time_usd": 55.42,
-  "closed_total": 43,
-  "win_rate_pct": 67
+  "last24h_usd": 59.08,
+  "fees24h_usd": 98.5,
+  "all_time_usd": 59.02,
+  "closed_total": 44,
+  "win_rate_pct": 68
  },
  "pnl_trades": [
   {
@@ -509,24 +498,50 @@
    "amount_sol": 1.55,
    "minutes_held": 36,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "mint-SOL",
+   "recorded_at": "2026-10-25T02:54:16.641Z",
+   "pnl_usd": 3.6,
+   "pnl_pct": 2.28,
+   "fees_usd": 11.471773803975156,
+   "amount_sol": 1.55,
+   "minutes_held": 98,
+   "close_reason": "Trailing TP: peak 3.57% \u2192 current 1.52% (dropped 2.05% >= 1.5%)"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1092,
-  "today": 37,
-  "today_real": 5,
+  "total_real": 1093,
+  "today": 39,
+  "today_real": 6,
   "by_type": {
-   "skip": 82,
-   "close": 7,
-   "no_deploy": 4,
+   "skip": 80,
+   "close": 8,
+   "no_deploy": 5,
    "deploy": 7
   },
   "by_actor": {
-   "SCREENER": 93,
-   "MANAGER": 7
+   "SCREENER": 92,
+   "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T02:55:10.239Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- Marvin-SOL: bot holders 45.85% > 30% - BTC-SOL: bot holders 58.97% > 30%"
+   },
+   {
+    "ts": "2026-10-25T02:54:16.651Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "mint-SOL",
+    "summary": "Closed at 2.28%",
+    "reason_short": "Trailing TP: peak 3.57% \u2192 current 1.52% (dropped 2.05% >= 1.5%)"
+   },
    {
     "ts": "2026-10-25T02:50:00.833Z",
     "type": "skip",
@@ -606,22 +621,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.425 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T02:00:00.647Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.425 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T01:55:00.515Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.425 < 1.58)"
    }
   ]
  },
@@ -645,7 +644,7 @@
    },
    {
     "hour": "19:00",
-    "count": 10
+    "count": 8
    },
    {
     "hour": "20:00",
@@ -673,25 +672,25 @@
    },
    {
     "hour": "02:00",
-    "count": 11
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": null,
-  "last_management": "2026-10-25T02:50:00.567"
+  "last_screening": "2026-10-25T02:55:01.369",
+  "last_management": "2026-10-25T02:55:00.832"
  },
  "log_tail": [
-  "[2026-10-25T02:35:01.664Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T02:40:00.108Z] [CRON] Starting management cycle",
-  "[2026-10-25T02:40:00.350Z] [CRON] Screening skipped \u2014 insufficient SOL (0.425 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T02:40:00.936Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T02:45:00.337Z] [CRON] Starting management cycle",
-  "[2026-10-25T02:45:00.623Z] [CRON] Screening skipped \u2014 insufficient SOL (0.425 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T02:45:01.054Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T02:50:00.567Z] [CRON] Starting management cycle",
-  "[2026-10-25T02:50:00.832Z] [CRON] Screening skipped \u2014 insufficient SOL (0.450 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T02:50:01.271Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T02:55:01.492Z] [SCREENING] Filtered cooldown token \u30e4\u30ae (EU1MHvQv)",
+  "[2026-10-25T02:55:09.621Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T02:55:09.634Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T02:55:09.635Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T02:55:09.637Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T02:55:09.637Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T02:55:09.639Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T02:55:09.640Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T02:55:10.238Z] [SCREENING] Bot-holder filter: dropped Marvin-SOL \u2014 bots 45.85% > 30%",
+  "[2026-10-25T02:55:10.238Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 58.97% > 30%"
  ],
- "state_last_updated": "2026-10-25T02:45:05.426Z"
+ "state_last_updated": "2026-10-25T02:54:16.346Z"
 }

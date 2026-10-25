@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T12:57:39.985123+00:00",
+ "generated_at": "2026-10-25T13:02:38.859983+00:00",
  "smart_wallets": {
   "total": 87,
   "by_category": {
@@ -73,8 +73,8 @@
   "total_tracked": 53
  },
  "pnl": {
-  "last24h_usd": 60.56,
-  "fees24h_usd": 108.06,
+  "last24h_usd": 60.65,
+  "fees24h_usd": 108.05,
   "all_time_usd": 72.89,
   "closed_total": 52,
   "win_rate_pct": 65
@@ -618,6 +618,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-25T13:00:01.149Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.273 < 1.83)"
+   },
+   {
     "ts": "2026-10-25T12:55:00.864Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -704,23 +712,11 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- RARI-SOL: bot holders 33.97% > 30%"
-   },
-   {
-    "ts": "2026-10-25T12:00:14.140Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DOPE-USDC (Doge Pepe) WHY SKIPPED Only one candidate survived screening, and it does not clear the conviction bar. DOPE-USDC has a solid fundamentals floor (fee/TVL 0.37, fees 665.97 SOL, bots 14%, top10 18.9%) but fails the two "
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "01:00",
-    "count": 0
-   },
    {
     "hour": "02:00",
     "count": 0
@@ -735,7 +731,7 @@
    },
    {
     "hour": "05:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "06:00",
@@ -764,24 +760,28 @@
    {
     "hour": "12:00",
     "count": 12
+   },
+   {
+    "hour": "13:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T12:15:01.505",
-  "last_management": "2026-10-25T12:55:00.608"
+  "last_management": "2026-10-25T13:00:00.850"
  },
  "log_tail": [
-  "[2026-10-25T12:40:00.785Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T12:45:00.235Z] [CRON] Starting management cycle",
-  "[2026-10-25T12:45:00.505Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
   "[2026-10-25T12:45:00.985Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T12:50:00.400Z] [CRON] Starting management cycle",
   "[2026-10-25T12:50:00.664Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
   "[2026-10-25T12:50:01.179Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T12:55:00.608Z] [CRON] Starting management cycle",
   "[2026-10-25T12:55:00.863Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T12:55:01.339Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T12:55:01.339Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T13:00:00.850Z] [CRON] Starting management cycle",
+  "[2026-10-25T13:00:01.149Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
+  "[2026-10-25T13:00:01.604Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-25T12:37:44.070Z"
 }

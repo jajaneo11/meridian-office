@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T08:57:39.507918+00:00",
+ "generated_at": "2026-10-25T09:02:38.257806+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 6997
    }
   ],
-  "decisions_mentioning": 14
+  "decisions_mentioning": 15
  },
  "mode": {
   "dry_run": false,
@@ -582,13 +582,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1120,
+  "total_real": 1121,
   "today": 100,
-  "today_real": 33,
+  "today_real": 34,
   "by_type": {
-   "skip": 64,
+   "skip": 63,
    "close": 8,
-   "no_deploy": 21,
+   "no_deploy": 22,
    "deploy": 7
   },
   "by_actor": {
@@ -596,6 +596,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T09:00:06.212Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Marvin-SOL WHY SKIPPED Marvin-SOL fails the conviction bar on three independent axes. There is no usable narrative (still generating \u2014 no origin story, entity, or catalyst), and 0/78 tracked smart wallets are in the pool, so the "
+   },
    {
     "ts": "2026-10-25T08:55:15.605Z",
     "type": "no_deploy",
@@ -683,23 +691,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.527 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T08:05:00.821Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.527 < 1.58)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "21:00",
-    "count": 0
-   },
    {
     "hour": "22:00",
     "count": 0
@@ -714,7 +710,7 @@
    },
    {
     "hour": "01:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "02:00",
@@ -743,24 +739,28 @@
    {
     "hour": "08:00",
     "count": 13
+   },
+   {
+    "hour": "09:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T08:55:01.314",
-  "last_management": "2026-10-25T08:55:00.770"
+  "last_screening": "2026-10-25T09:00:00.665",
+  "last_management": "2026-10-25T09:00:00.062"
  },
  "log_tail": [
-  "[2026-10-25T08:50:00.494Z] [CRON] Starting management cycle",
-  "[2026-10-25T08:50:00.798Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T08:50:01.155Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T08:50:22.328Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T08:55:00.770Z] [CRON] Starting management cycle",
-  "[2026-10-25T08:55:01.314Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T08:55:01.314Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.119488 SOL)",
   "[2026-10-25T08:55:01.347Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T08:55:01.347Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T08:55:15.604Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T08:55:15.604Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T09:00:00.062Z] [CRON] Starting management cycle",
+  "[2026-10-25T09:00:00.628Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T09:00:00.629Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T09:00:00.665Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T09:00:00.666Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.119488 SOL)",
+  "[2026-10-25T09:00:03.199Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 34.89% > 30%",
+  "[2026-10-25T09:00:06.212Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T08:50:32.972Z"
 }

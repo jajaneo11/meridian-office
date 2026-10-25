@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T10:42:42.365564+00:00",
+ "generated_at": "2026-10-25T10:47:39.020039+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -593,20 +593,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1142,
+  "total_real": 1143,
   "today": 100,
-  "today_real": 55,
+  "today_real": 56,
   "by_type": {
-   "deploy": 8,
    "skip": 45,
    "close": 7,
-   "no_deploy": 40
+   "no_deploy": 41,
+   "deploy": 7
   },
   "by_actor": {
    "SCREENER": 93,
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T10:45:09.499Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": "BTC-SOL",
+    "summary": "Single candidate skipped",
+    "reason_short": "token fees 10.53 SOL below minimum 30 SOL"
+   },
    {
     "ts": "2026-10-25T10:40:00.934Z",
     "type": "no_deploy",
@@ -694,14 +702,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- mint-SOL: token cooldown active"
-   },
-   {
-    "ts": "2026-10-25T09:45:09.726Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Chubby-SOL: bot holders 32.27% > 30%"
    }
   ]
  },
@@ -725,7 +725,7 @@
    },
    {
     "hour": "03:00",
-    "count": 14
+    "count": 13
    },
    {
     "hour": "04:00",
@@ -753,25 +753,25 @@
    },
    {
     "hour": "10:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T10:40:00.749",
-  "last_management": "2026-10-25T10:40:00.013"
+  "last_screening": "2026-10-25T10:45:00.979",
+  "last_management": "2026-10-25T10:45:00.185"
  },
  "log_tail": [
-  "[2026-10-25T10:35:01.548Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T10:35:01.834Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
-  "[2026-10-25T10:35:01.837Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T10:35:01.843Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-25T10:35:13.451Z] [AGENT] \u26d4 NO DEPLOY",
   "[2026-10-25T10:40:00.013Z] [CRON] Starting management cycle",
   "[2026-10-25T10:40:00.749Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T10:40:00.750Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
   "[2026-10-25T10:40:00.776Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T10:40:00.933Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)"
+  "[2026-10-25T10:40:00.933Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T10:45:00.185Z] [CRON] Starting management cycle",
+  "[2026-10-25T10:45:00.919Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T10:45:00.979Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T10:45:00.979Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
+  "[2026-10-25T10:45:01.251Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)"
  ],
  "state_last_updated": "2026-10-25T10:30:07.750Z"
 }

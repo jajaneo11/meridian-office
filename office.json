@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T05:02:41.343182+00:00",
+ "generated_at": "2026-10-25T05:07:38.747803+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 47
+  "open_count": 1,
+  "open": [
+   {
+    "id": "G9bgKZtcZagHoL3KvVxtKmp9PN1JX4iRVPzJ5pd1d33U",
+    "pool": "DacityCoin-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-25T05:05:08.337Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.55
+   }
+  ],
+  "total_tracked": 48
  },
  "pnl": {
   "last24h_usd": 52.98,
@@ -542,13 +553,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1107,
-  "today": 67,
-  "today_real": 20,
+  "total_real": 1108,
+  "today": 68,
+  "today_real": 21,
   "by_type": {
-   "skip": 70,
+   "skip": 69,
    "close": 8,
-   "deploy": 7,
+   "deploy": 8,
    "no_deploy": 15
   },
   "by_actor": {
@@ -556,6 +567,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T05:05:08.338Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "DacityCoin-SOL",
+    "summary": "Deployed 1.55 SOL with bid_ask",
+    "reason_short": "Chosen range -431\u2192-362 around active bin -362"
+   },
    {
     "ts": "2026-10-25T05:00:15.893Z",
     "type": "no_deploy",
@@ -643,14 +662,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE DacityCoin-SOL WHY SKIPPED The chosen candidate (DacityCoin-SOL) passed all screening gates \u2014 bin_step=100, fees=175.77 SOL (>30), bots=24.46% (<30), 2 smart wallets present, positive pool memory (avg PnL +3.46%, drift +3.06%, 0/"
-   },
-   {
-    "ts": "2026-10-25T04:10:14.336Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Marvin-SOL WHY SKIPPED Neither candidate cleared the bar. Bugmageddon-SOL fails the hard fee gate (23.68 SOL < 30 SOL floor \u2192 bundled/scam signal), so it's disqualified regardless of its +312% 1h move. Marvin-SOL technically pass"
    }
   ]
  },
@@ -670,7 +681,7 @@
    },
    {
     "hour": "21:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "22:00",
@@ -702,25 +713,25 @@
    },
    {
     "hour": "05:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T05:00:01.586",
-  "last_management": "2026-10-25T05:00:00.917"
+  "last_screening": "2026-10-25T05:05:00.756",
+  "last_management": "2026-10-25T05:05:00.208"
  },
  "log_tail": [
-  "[2026-10-25T04:55:00.704Z] [CRON] Starting management cycle",
-  "[2026-10-25T04:55:00.976Z] [CRON] Screening skipped \u2014 insufficient SOL (0.358 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T04:55:01.488Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T04:58:46.551Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T05:00:00.917Z] [CRON] Starting management cycle",
-  "[2026-10-25T05:00:01.502Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T05:00:01.503Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T05:00:01.586Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T05:00:01.586Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.94959 SOL)",
-  "[2026-10-25T05:00:15.892Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T05:05:00.756Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T05:05:00.756Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.94959 SOL)",
+  "[2026-10-25T05:05:00.822Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T05:05:00.822Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T05:05:05.250Z] [DEPLOY] Pool: 5Dc4s9fxxQoPfaMUaxFKB5v1Nh6FPqest7usgyvGXwWw",
+  "[2026-10-25T05:05:05.250Z] [DEPLOY] Strategy: bid_ask, Bins: -431 to -362 (69 bins)",
+  "[2026-10-25T05:05:05.250Z] [DEPLOY] Amount: 0 X, 1.55 Y",
+  "[2026-10-25T05:05:05.250Z] [DEPLOY] Position: G9bgKZtcZagHoL3KvVxtKmp9PN1JX4iRVPzJ5pd1d33U",
+  "[2026-10-25T05:05:08.336Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2sDCH5izr9SunmT9EFu26yPRyKhwgLC99xE2k5yXRskwXh8dgapSGerZpa1WLBCpjSG3qBqThc4NWu9a2BAKCTqD",
+  "[2026-10-25T05:05:09.799Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-25T04:58:56.073Z"
+ "state_last_updated": "2026-10-25T05:05:08.337Z"
 }

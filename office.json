@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T10:52:38.757119+00:00",
+ "generated_at": "2026-10-25T10:57:40.655422+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -52,7 +52,7 @@
  },
  "limits": {
   "max_positions": 3,
-  "deploy_sol": 1.0,
+  "deploy_sol": 1.8,
   "screening_min": 30,
   "management_min": 10
  },
@@ -608,6 +608,22 @@
   },
   "recent": [
    {
+    "ts": "2026-10-25T10:55:00.745Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (1.076 < 1.83)"
+   },
+   {
+    "ts": "2026-10-25T10:52:58.467Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (1.076 < 1.83)"
+   },
+   {
     "ts": "2026-10-25T10:50:01.710Z",
     "type": "no_deploy",
     "actor": "SCREENER",
@@ -686,22 +702,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Chubby-SOL: bot holders 31.13% > 30%"
-   },
-   {
-    "ts": "2026-10-25T10:00:15.523Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "BORDR-SOL",
-    "summary": "Deployed 1 SOL with bid_ask",
-    "reason_short": "Chosen range -458\u2192-414 around active bin -414"
-   },
-   {
-    "ts": "2026-10-25T09:55:09.437Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Chubby-SOL: bot holders 32.19% > 30%"
    }
   ]
  },
@@ -725,7 +725,7 @@
    },
    {
     "hour": "03:00",
-    "count": 12
+    "count": 10
    },
    {
     "hour": "04:00",
@@ -753,25 +753,25 @@
    },
    {
     "hour": "10:00",
-    "count": 11
+    "count": 13
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T10:50:01.066",
-  "last_management": "2026-10-25T10:50:00.402"
+  "last_management": "2026-10-25T10:55:00.500"
  },
  "log_tail": [
-  "[2026-10-25T10:45:00.919Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T10:45:00.979Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T10:45:00.979Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
-  "[2026-10-25T10:45:01.251Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
-  "[2026-10-25T10:50:00.402Z] [CRON] Starting management cycle",
   "[2026-10-25T10:50:01.066Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T10:50:01.066Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
   "[2026-10-25T10:50:01.113Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T10:50:01.321Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T10:50:01.446Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)"
+  "[2026-10-25T10:50:01.446Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
+  "[2026-10-25T10:52:57.448Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-25T10:52:58.467Z] [CRON] Screening skipped \u2014 insufficient SOL (1.076 < 1.83 needed for deploy + gas)",
+  "[2026-10-25T10:55:00.500Z] [CRON] Starting management cycle",
+  "[2026-10-25T10:55:00.744Z] [CRON] Screening skipped \u2014 insufficient SOL (1.076 < 1.83 needed for deploy + gas)",
+  "[2026-10-25T10:55:01.172Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-25T10:30:07.750Z"
 }

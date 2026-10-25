@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T10:57:40.655422+00:00",
+ "generated_at": "2026-10-25T11:02:39.522173+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,27 +57,16 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "7TJMGZ6f83SpsNWdx1mzagM1WR1Jc66Eg3jidMZy4nVS",
-    "pool": "BORDR-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-25T10:00:15.522Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 1,
-    "amount_sol": 1
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 52
  },
  "pnl": {
-  "last24h_usd": 60.59,
+  "last24h_usd": 60.54,
   "fees24h_usd": 108.07,
-  "all_time_usd": 72.94,
-  "closed_total": 51,
-  "win_rate_pct": 67
+  "all_time_usd": 72.89,
+  "closed_total": 52,
+  "win_rate_pct": 65
  },
  "pnl_trades": [
   {
@@ -589,6 +578,16 @@
    "amount_sol": 1.55,
    "minutes_held": 60,
    "close_reason": "Low yield: fee/TVL 0.48% < min 7% (age: 60m)"
+  },
+  {
+   "pool": "BORDR-SOL",
+   "recorded_at": "2026-10-25T11:00:33.408Z",
+   "pnl_usd": -0.05,
+   "pnl_pct": -0.05,
+   "fees_usd": 0.0043045254633468,
+   "amount_sol": 1,
+   "minutes_held": 60,
+   "close_reason": "Low yield: fee/TVL 0.07% < min 7% (age: 60m)"
   }
  ],
  "decisions": {
@@ -597,16 +596,32 @@
   "today": 100,
   "today_real": 57,
   "by_type": {
-   "skip": 44,
-   "close": 7,
+   "skip": 43,
+   "close": 8,
    "no_deploy": 42,
    "deploy": 7
   },
   "by_actor": {
-   "SCREENER": 93,
-   "MANAGER": 7
+   "SCREENER": 92,
+   "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T11:00:33.415Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "BORDR-SOL",
+    "summary": "Closed at -0.05%",
+    "reason_short": "Low yield: fee/TVL 0.07% < min 7% (age: 60m)"
+   },
+   {
+    "ts": "2026-10-25T11:00:00.870Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (1.076 < 1.83)"
+   },
    {
     "ts": "2026-10-25T10:55:00.745Z",
     "type": "skip",
@@ -686,31 +701,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED PANGEA-USDC cleared all screening (bin_step=100, volatility 4.22, fees 255 SOL, top10 33%) but was blocked by the system's on-chain pool check: fee/active-TVL is 0%, below the minimum 0.09% threshold \u2014 so "
-   },
-   {
-    "ts": "2026-10-25T10:10:13.941Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE None (both disqualified by hard rules) WHY SKIPPED Both candidates fail non-negotiable hard gates, so there is no real deployable entry this cycle. Chubby-SOL fails the fees hard rule (27.45 SOL < 30 SOL), which indicates bundled"
-   },
-   {
-    "ts": "2026-10-25T10:05:01.720Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Chubby-SOL: bot holders 31.13% > 30%"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "23:00",
-    "count": 0
-   },
    {
     "hour": "00:00",
     "count": 0
@@ -725,7 +720,7 @@
    },
    {
     "hour": "03:00",
-    "count": 10
+    "count": 8
    },
    {
     "hour": "04:00",
@@ -754,24 +749,28 @@
    {
     "hour": "10:00",
     "count": 13
+   },
+   {
+    "hour": "11:00",
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T10:50:01.066",
-  "last_management": "2026-10-25T10:55:00.500"
+  "last_management": "2026-10-25T11:00:00.751"
  },
  "log_tail": [
-  "[2026-10-25T10:50:01.066Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T10:50:01.066Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
-  "[2026-10-25T10:50:01.113Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T10:50:01.321Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
   "[2026-10-25T10:50:01.446Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
   "[2026-10-25T10:52:57.448Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
   "[2026-10-25T10:52:58.467Z] [CRON] Screening skipped \u2014 insufficient SOL (1.076 < 1.83 needed for deploy + gas)",
   "[2026-10-25T10:55:00.500Z] [CRON] Starting management cycle",
   "[2026-10-25T10:55:00.744Z] [CRON] Screening skipped \u2014 insufficient SOL (1.076 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T10:55:01.172Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T10:55:01.172Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T11:00:00.751Z] [CRON] Starting management cycle",
+  "[2026-10-25T11:00:00.869Z] [CRON] Screening skipped \u2014 insufficient SOL (1.076 < 1.83 needed for deploy + gas)",
+  "[2026-10-25T11:00:01.496Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T11:00:18.851Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
  ],
- "state_last_updated": "2026-10-25T10:30:07.750Z"
+ "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

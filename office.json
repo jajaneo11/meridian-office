@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T16:27:39.009328+00:00",
+ "generated_at": "2026-10-25T16:32:40.394833+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 10901
    }
   ],
-  "decisions_mentioning": 18
+  "decisions_mentioning": 17
  },
  "mode": {
   "dry_run": false,
@@ -697,9 +697,9 @@
   "today": 100,
   "today_real": 93,
   "by_type": {
-   "no_deploy": 44,
+   "no_deploy": 43,
    "deploy": 11,
-   "skip": 36,
+   "skip": 37,
    "close": 9
   },
   "by_actor": {
@@ -707,6 +707,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T16:30:00.406Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.119 < 1.1300000000000001)"
+   },
    {
     "ts": "2026-10-25T16:25:01.197Z",
     "type": "skip",
@@ -794,14 +802,6 @@
     "pool_name": "mint-SOL",
     "summary": "Deployed 1.1 SOL with bid_ask",
     "reason_short": "Chosen range 258\u2192327 around active bin 327"
-   },
-   {
-    "ts": "2026-10-25T15:50:01.994Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- GME-SOL: token cooldown active - DacityCoin-SOL: token cooldown active - mint-SOL: token cooldown active"
    }
   ]
  },
@@ -825,7 +825,7 @@
    },
    {
     "hour": "09:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "10:00",
@@ -853,25 +853,25 @@
    },
    {
     "hour": "16:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T16:10:00.922",
-  "last_management": "2026-10-25T16:25:00.860"
+  "last_management": "2026-10-25T16:30:00.069"
  },
  "log_tail": [
-  "[2026-10-25T16:10:22.691Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-25T16:15:00.437Z] [CRON] Starting management cycle",
-  "[2026-10-25T16:15:00.731Z] [CRON] Screening skipped \u2014 insufficient SOL (0.119 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-25T16:15:01.423Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T16:20:00.612Z] [CRON] Starting management cycle",
   "[2026-10-25T16:20:00.893Z] [CRON] Screening skipped \u2014 insufficient SOL (0.119 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-25T16:20:01.631Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T16:25:00.860Z] [CRON] Starting management cycle",
   "[2026-10-25T16:25:01.197Z] [CRON] Screening skipped \u2014 insufficient SOL (0.119 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T16:25:01.738Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T16:25:01.738Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T16:30:00.069Z] [CRON] Starting management cycle",
+  "[2026-10-25T16:30:00.405Z] [CRON] Screening skipped \u2014 insufficient SOL (0.119 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-25T16:30:01.006Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T16:22:52.392Z"
+ "state_last_updated": "2026-10-25T16:30:52.498Z"
 }

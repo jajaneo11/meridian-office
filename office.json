@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T16:47:39.690887+00:00",
+ "generated_at": "2026-10-25T16:52:39.491781+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -697,9 +697,9 @@
   "today": 100,
   "today_real": 93,
   "by_type": {
-   "no_deploy": 40,
+   "no_deploy": 39,
    "deploy": 11,
-   "skip": 40,
+   "skip": 41,
    "close": 9
   },
   "by_actor": {
@@ -707,6 +707,14 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T16:50:01.328Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.119 < 1.1300000000000001)"
+   },
    {
     "ts": "2026-10-25T16:45:01.117Z",
     "type": "skip",
@@ -794,14 +802,6 @@
     "pool_name": "GME-SOL",
     "summary": "Deployed 1.1 SOL with bid_ask",
     "reason_short": "Chosen range -572\u2192-503 around active bin -503"
-   },
-   {
-    "ts": "2026-10-25T16:00:09.485Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GME-SOL (CvPyH4tJvUSk3cZ33zfMsT2DEbSanYJkJVJsBDVm4oAc) WHY SKIPPED The pool passes all hard gates (fees 53.42 SOL, bots 15.6%, top10 18.7%) and has solid fundamentals (organic 73, fee/TVL 1.92, vol $72K), but it fails the convict"
    }
   ]
  },
@@ -825,7 +825,7 @@
    },
    {
     "hour": "09:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "10:00",
@@ -853,25 +853,25 @@
    },
    {
     "hour": "16:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T16:10:00.922",
-  "last_management": "2026-10-25T16:45:00.798"
+  "last_management": "2026-10-25T16:50:00.979"
  },
  "log_tail": [
-  "[2026-10-25T16:30:01.006Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T16:35:00.327Z] [CRON] Starting management cycle",
-  "[2026-10-25T16:35:00.634Z] [CRON] Screening skipped \u2014 insufficient SOL (0.119 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-25T16:35:01.148Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T16:40:00.581Z] [CRON] Starting management cycle",
   "[2026-10-25T16:40:00.847Z] [CRON] Screening skipped \u2014 insufficient SOL (0.119 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-25T16:40:01.340Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T16:45:00.798Z] [CRON] Starting management cycle",
   "[2026-10-25T16:45:01.116Z] [CRON] Screening skipped \u2014 insufficient SOL (0.119 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-25T16:45:01.556Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T16:45:01.556Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T16:50:00.979Z] [CRON] Starting management cycle",
+  "[2026-10-25T16:50:01.328Z] [CRON] Screening skipped \u2014 insufficient SOL (0.119 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-25T16:50:01.666Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T16:47:16.756Z"
+ "state_last_updated": "2026-10-25T16:52:25.778Z"
 }

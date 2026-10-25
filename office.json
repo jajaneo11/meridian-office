@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T15:37:39.734310+00:00",
+ "generated_at": "2026-10-25T15:42:39.823930+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -652,13 +652,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1170,
+  "total_real": 1171,
   "today": 100,
-  "today_real": 83,
+  "today_real": 84,
   "by_type": {
-   "skip": 42,
+   "skip": 41,
    "close": 8,
-   "no_deploy": 43,
+   "no_deploy": 44,
    "deploy": 7
   },
   "by_actor": {
@@ -666,6 +666,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T15:40:02.255Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- GME-SOL: token cooldown active - mint-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-25T15:36:39.196Z",
     "type": "no_deploy",
@@ -753,14 +761,6 @@
     "pool_name": "GME-SOL",
     "summary": "Closed at 2.71%",
     "reason_short": "Trailing TP: peak 4.46% \u2192 current 2.76% (dropped 1.70% >= 1.5%)"
-   },
-   {
-    "ts": "2026-10-25T14:55:00.745Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.509 < 1.83)"
    }
   ]
  },
@@ -784,7 +784,7 @@
    },
    {
     "hour": "08:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "09:00",
@@ -812,25 +812,25 @@
    },
    {
     "hour": "15:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T15:35:01.218",
-  "last_management": "2026-10-25T15:35:00.667"
+  "last_screening": "2026-10-25T15:40:01.468",
+  "last_management": "2026-10-25T15:40:00.940"
  },
  "log_tail": [
-  "[2026-10-25T15:30:01.311Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T15:30:01.314Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
-  "[2026-10-25T15:35:00.667Z] [CRON] Starting management cycle",
-  "[2026-10-25T15:35:01.176Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T15:35:01.176Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T15:35:01.218Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T15:35:01.218Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.397816 SOL)",
   "[2026-10-25T15:35:01.371Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
   "[2026-10-25T15:35:01.375Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T15:35:31.228Z] [ERROR] Agent loop error at step 8: 429 Rate limit reached: input token limit exceeded"
+  "[2026-10-25T15:35:31.228Z] [ERROR] Agent loop error at step 8: 429 Rate limit reached: input token limit exceeded",
+  "[2026-10-25T15:40:00.940Z] [CRON] Starting management cycle",
+  "[2026-10-25T15:40:01.468Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T15:40:01.468Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.397816 SOL)",
+  "[2026-10-25T15:40:01.472Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T15:40:01.472Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T15:40:02.251Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
+  "[2026-10-25T15:40:02.255Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)"
  ],
  "state_last_updated": "2026-10-25T15:26:48.661Z"
 }

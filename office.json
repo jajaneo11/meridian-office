@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T09:57:44.477430+00:00",
+ "generated_at": "2026-10-25T10:02:42.476005+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 51
+  "open_count": 1,
+  "open": [
+   {
+    "id": "7TJMGZ6f83SpsNWdx1mzagM1WR1Jc66Eg3jidMZy4nVS",
+    "pool": "BORDR-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-25T10:00:15.522Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 1,
+    "amount_sol": 1
+   }
+  ],
+  "total_tracked": 52
  },
  "pnl": {
   "last24h_usd": 61.47,
@@ -582,20 +593,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1133,
+  "total_real": 1134,
   "today": 100,
-  "today_real": 46,
+  "today_real": 47,
   "by_type": {
-   "skip": 52,
+   "skip": 51,
    "close": 8,
    "no_deploy": 33,
-   "deploy": 7
+   "deploy": 8
   },
   "by_actor": {
    "SCREENER": 92,
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T10:00:15.523Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "BORDR-SOL",
+    "summary": "Deployed 1 SOL with bid_ask",
+    "reason_short": "Chosen range -458\u2192-414 around active bin -414"
+   },
    {
     "ts": "2026-10-25T09:55:09.437Z",
     "type": "no_deploy",
@@ -683,23 +702,11 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-USDC WHY SKIPPED HOOKED-USDC fails a hard rule: bin_step=50 is outside the required 80\u2013125 band, so it can't be deployed regardless of other metrics. On top of that, the narrative is empty (\"Narrative is being generated\") "
-   },
-   {
-    "ts": "2026-10-25T09:00:06.212Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Marvin-SOL WHY SKIPPED Marvin-SOL fails the conviction bar on three independent axes. There is no usable narrative (still generating \u2014 no origin story, entity, or catalyst), and 0/78 tracked smart wallets are in the pool, so the "
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "22:00",
-    "count": 0
-   },
    {
     "hour": "23:00",
     "count": 0
@@ -714,7 +721,7 @@
    },
    {
     "hour": "02:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "03:00",
@@ -743,24 +750,28 @@
    {
     "hour": "09:00",
     "count": 12
+   },
+   {
+    "hour": "10:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T09:55:00.730",
-  "last_management": "2026-10-25T09:55:00.130"
+  "last_screening": "2026-10-25T10:00:00.905",
+  "last_management": "2026-10-25T10:00:00.386"
  },
  "log_tail": [
-  "[2026-10-25T09:50:01.421Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T09:50:01.474Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T09:50:01.474Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
-  "[2026-10-25T09:50:01.693Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T09:55:00.130Z] [CRON] Starting management cycle",
-  "[2026-10-25T09:55:00.725Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T09:55:00.725Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T09:55:00.730Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T09:55:00.730Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
-  "[2026-10-25T09:55:09.436Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 32.19% > 30%"
+  "[2026-10-25T10:00:00.995Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T10:00:00.996Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T10:00:02.181Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
+  "[2026-10-25T10:00:08.545Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 31.29% > 30%",
+  "[2026-10-25T10:00:14.233Z] [DEPLOY] Pool: FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ",
+  "[2026-10-25T10:00:14.233Z] [DEPLOY] Strategy: bid_ask, Bins: -458 to -414 (44 bins)",
+  "[2026-10-25T10:00:14.233Z] [DEPLOY] Amount: 0 X, 1 Y",
+  "[2026-10-25T10:00:14.233Z] [DEPLOY] Position: 7TJMGZ6f83SpsNWdx1mzagM1WR1Jc66Eg3jidMZy4nVS",
+  "[2026-10-25T10:00:15.520Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4tcvmVzefPDhqkhCgB5k2iCf2cCZP3XhtGFEL7a8w6qapQpEq9CWVd9KwyzpAdRFgjAip93St914eyMPQBeuMUbG",
+  "[2026-10-25T10:00:16.538Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-25T08:50:32.972Z"
+ "state_last_updated": "2026-10-25T10:00:34.452Z"
 }

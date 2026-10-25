@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T19:52:43.231645+00:00",
+ "generated_at": "2026-10-25T19:57:40.343469+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -702,20 +702,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1194,
+  "total_real": 1195,
   "today": 100,
-  "today_real": 107,
+  "today_real": 108,
   "by_type": {
-   "skip": 51,
+   "skip": 50,
    "close": 11,
    "deploy": 10,
-   "no_deploy": 28
+   "no_deploy": 29
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T19:56:08.249Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-25T19:51:04.489Z",
     "type": "no_deploy",
@@ -803,14 +811,6 @@
     "pool_name": null,
     "summary": "No successful deploy in screening cycle",
     "reason_short": "Max steps reached. Review logs for partial progress."
-   },
-   {
-    "ts": "2026-10-25T18:56:17.974Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No successful deploy in screening cycle",
-    "reason_short": "Max steps reached. Review logs for partial progress."
    }
   ]
  },
@@ -834,7 +834,7 @@
    },
    {
     "hour": "12:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "13:00",
@@ -862,25 +862,25 @@
    },
    {
     "hour": "19:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T19:50:00.986",
-  "last_management": "2026-10-25T19:50:00.445"
+  "last_screening": "2026-10-25T19:55:01.208",
+  "last_management": "2026-10-25T19:55:00.702"
  },
  "log_tail": [
-  "[2026-10-25T19:45:00.620Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T19:45:00.668Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T19:45:00.668Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
-  "[2026-10-25T19:50:00.445Z] [CRON] Starting management cycle",
-  "[2026-10-25T19:50:00.933Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T19:50:00.933Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T19:50:00.986Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T19:50:00.986Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
   "[2026-10-25T19:50:01.398Z] [SCREENING] Volume spike check rejected mint-SOL: 2.77x",
-  "[2026-10-25T19:50:01.398Z] [SCREENING] Volume spike filter removed 1 candidate(s)"
+  "[2026-10-25T19:50:01.398Z] [SCREENING] Volume spike filter removed 1 candidate(s)",
+  "[2026-10-25T19:55:00.702Z] [CRON] Starting management cycle",
+  "[2026-10-25T19:55:01.207Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T19:55:01.207Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T19:55:01.208Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T19:55:01.208Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)"
  ],
  "state_last_updated": "2026-10-25T18:46:57.895Z"
 }

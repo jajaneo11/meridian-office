@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T05:57:38.545617+00:00",
+ "generated_at": "2026-10-25T06:02:39.597074+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -554,7 +554,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1108,
-  "today": 78,
+  "today": 79,
   "today_real": 21,
   "by_type": {
    "skip": 69,
@@ -567,6 +567,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T06:00:01.000Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.358 < 1.58)"
+   },
    {
     "ts": "2026-10-25T05:55:00.771Z",
     "type": "skip",
@@ -654,23 +662,11 @@
     "pool_name": "DacityCoin-SOL",
     "summary": "Deployed 1.55 SOL with bid_ask",
     "reason_short": "Chosen range -431\u2192-362 around active bin -362"
-   },
-   {
-    "ts": "2026-10-25T05:00:15.893Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Marvin-SOL WHY SKIPPED Marvin-SOL passes the hard gates (fees 132.9 SOL, bots 21.3%, top10 17.3%, bin_step 100, volatility 5.27) but collapses on the qualitative judgment calls: the narrative is empty/null (\"being generated\"), th"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "18:00",
-    "count": 0
-   },
    {
     "hour": "19:00",
     "count": 0
@@ -685,7 +681,7 @@
    },
    {
     "hour": "22:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "23:00",
@@ -714,24 +710,28 @@
    {
     "hour": "05:00",
     "count": 12
+   },
+   {
+    "hour": "06:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T05:05:00.756",
-  "last_management": "2026-10-25T05:55:00.421"
+  "last_management": "2026-10-25T06:00:00.618"
  },
  "log_tail": [
-  "[2026-10-25T05:40:01.606Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T05:45:00.057Z] [CRON] Starting management cycle",
-  "[2026-10-25T05:45:00.388Z] [CRON] Screening skipped \u2014 insufficient SOL (0.358 < 1.58 needed for deploy + gas)",
   "[2026-10-25T05:45:00.829Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T05:50:00.255Z] [CRON] Starting management cycle",
   "[2026-10-25T05:50:00.544Z] [CRON] Screening skipped \u2014 insufficient SOL (0.358 < 1.58 needed for deploy + gas)",
   "[2026-10-25T05:50:00.949Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T05:55:00.421Z] [CRON] Starting management cycle",
   "[2026-10-25T05:55:00.770Z] [CRON] Screening skipped \u2014 insufficient SOL (0.358 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T05:55:01.268Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T05:55:01.268Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T06:00:00.618Z] [CRON] Starting management cycle",
+  "[2026-10-25T06:00:01.000Z] [CRON] Screening skipped \u2014 insufficient SOL (0.358 < 1.58 needed for deploy + gas)",
+  "[2026-10-25T06:00:01.451Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-25T05:53:17.239Z"
 }

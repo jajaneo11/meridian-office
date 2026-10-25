@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T09:47:39.520722+00:00",
+ "generated_at": "2026-10-25T09:52:39.048318+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -582,13 +582,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1131,
+  "total_real": 1132,
   "today": 100,
-  "today_real": 44,
+  "today_real": 45,
   "by_type": {
-   "skip": 54,
+   "skip": 53,
    "close": 8,
-   "no_deploy": 31,
+   "no_deploy": 32,
    "deploy": 7
   },
   "by_actor": {
@@ -596,6 +596,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T09:50:01.693Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- mint-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-25T09:45:09.726Z",
     "type": "no_deploy",
@@ -683,14 +691,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BLACKTOBER-SOL WHY SKIPPED Selected BLACKTOBER-SOL as the top conviction pick (2 smart wallets present, top10 concentration low at 18.56%, higher volatility of 4.55, 30%+ 1h momentum, fee gate passed at 208.54 SOL), but the deplo"
-   },
-   {
-    "ts": "2026-10-25T08:50:33.211Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "RUSH-SOL",
-    "summary": "Closed at -0.70%",
-    "reason_short": "Low yield: fee/TVL 0.48% < min 7% (age: 60m)"
    }
   ]
  },
@@ -714,7 +714,7 @@
    },
    {
     "hour": "02:00",
-    "count": 11
+    "count": 10
    },
    {
     "hour": "03:00",
@@ -742,25 +742,25 @@
    },
    {
     "hour": "09:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T09:45:01.087",
-  "last_management": "2026-10-25T09:45:00.557"
+  "last_screening": "2026-10-25T09:50:01.474",
+  "last_management": "2026-10-25T09:50:00.848"
  },
  "log_tail": [
-  "[2026-10-25T09:40:00.797Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T09:40:00.809Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T09:40:00.809Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
-  "[2026-10-25T09:45:00.557Z] [CRON] Starting management cycle",
-  "[2026-10-25T09:45:01.087Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T09:45:01.087Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
   "[2026-10-25T09:45:01.134Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T09:45:01.134Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T09:45:01.230Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T09:45:09.724Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 32.27% > 30%"
+  "[2026-10-25T09:45:09.724Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 32.27% > 30%",
+  "[2026-10-25T09:50:00.848Z] [CRON] Starting management cycle",
+  "[2026-10-25T09:50:01.421Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T09:50:01.421Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T09:50:01.474Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T09:50:01.474Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
+  "[2026-10-25T09:50:01.693Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)"
  ],
  "state_last_updated": "2026-10-25T08:50:32.972Z"
 }

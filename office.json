@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T15:57:40.478723+00:00",
+ "generated_at": "2026-10-25T16:02:38.843314+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -8,7 +8,7 @@
    "Multihours": 9
   },
   "active_24h": 31,
-  "total_value_usd": 190271,
+  "total_value_usd": 189196,
   "total_activity": 225,
   "top": [
    {
@@ -19,25 +19,25 @@
    {
     "name": "lp",
     "category": "alpha",
-    "value_usd": 35817
+    "value_usd": 35772
    },
    {
     "name": "lp",
     "category": "Multihours",
-    "value_usd": 21544
+    "value_usd": 21559
    },
    {
     "name": "lp",
     "category": "Degen",
-    "value_usd": 13671
+    "value_usd": 13860
    },
    {
     "name": "lp",
     "category": "Degen",
-    "value_usd": 10744
+    "value_usd": 10901
    }
   ],
-  "decisions_mentioning": 20
+  "decisions_mentioning": 21
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.255906
+  "sol": 1.255924
  },
  "limits": {
   "max_positions": 3,
@@ -57,7 +57,7 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 2,
+  "open_count": 1,
   "open": [
    {
     "id": "FoHHepQpk5i9o5LhxHxsYpugZ7hjgiiM8eaY3dZmQfzN",
@@ -68,26 +68,16 @@
     "pnl_usd": null,
     "value_usd": null,
     "amount_sol": 1.1
-   },
-   {
-    "id": "3cWqc8TC3uxrtFyErKZTPRV8x6mLuQTpKau2NzRyUR7P",
-    "pool": "GME-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-25T15:55:35.884Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": null,
-    "amount_sol": 1.1
    }
   ],
   "total_tracked": 60
  },
  "pnl": {
   "last24h_usd": 52.29,
-  "fees24h_usd": 97.69,
+  "fees24h_usd": 97.7,
   "all_time_usd": 81.02,
-  "closed_total": 58,
-  "win_rate_pct": 66
+  "closed_total": 59,
+  "win_rate_pct": 64
  },
  "pnl_trades": [
   {
@@ -669,24 +659,50 @@
    "amount_sol": 1.8,
    "minutes_held": 11,
    "close_reason": "pumped far above range"
+  },
+  {
+   "pool": "GME-SOL",
+   "recorded_at": "2026-10-25T15:59:43.835Z",
+   "pnl_usd": 0,
+   "pnl_pct": 0,
+   "fees_usd": 0.010506971531982469,
+   "amount_sol": 1.1,
+   "minutes_held": 4,
+   "close_reason": "pumped far above range"
   }
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1177,
+  "total_real": 1178,
   "today": 100,
-  "today_real": 90,
+  "today_real": 91,
   "by_type": {
-   "skip": 35,
-   "close": 8,
-   "no_deploy": 48,
+   "skip": 33,
+   "close": 9,
+   "no_deploy": 49,
    "deploy": 9
   },
   "by_actor": {
-   "SCREENER": 92,
-   "MANAGER": 8
+   "SCREENER": 91,
+   "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T16:00:09.485Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GME-SOL (CvPyH4tJvUSk3cZ33zfMsT2DEbSanYJkJVJsBDVm4oAc) WHY SKIPPED The pool passes all hard gates (fees 53.42 SOL, bots 15.6%, top10 18.7%) and has solid fundamentals (organic 73, fee/TVL 1.92, vol $72K), but it fails the convict"
+   },
+   {
+    "ts": "2026-10-25T15:59:43.844Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "GME-SOL",
+    "summary": "Closed at -0.00%",
+    "reason_short": "pumped far above range"
+   },
    {
     "ts": "2026-10-25T15:55:35.886Z",
     "type": "deploy",
@@ -766,31 +782,11 @@
     "pool_name": "mint-SOL",
     "summary": "Closed at -0.28%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-25T15:25:00.397Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.556 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T15:20:01.026Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.556 < 1.83)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "04:00",
-    "count": 0
-   },
    {
     "hour": "05:00",
     "count": 0
@@ -805,7 +801,7 @@
    },
    {
     "hour": "08:00",
-    "count": 5
+    "count": 3
    },
    {
     "hour": "09:00",
@@ -833,25 +829,29 @@
    },
    {
     "hour": "15:00",
-    "count": 17
+    "count": 18
+   },
+   {
+    "hour": "16:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T15:55:01.490",
-  "last_management": "2026-10-25T15:55:00.844"
+  "last_screening": "2026-10-25T16:00:00.678",
+  "last_management": "2026-10-25T16:00:00.082"
  },
  "log_tail": [
-  "[2026-10-25T15:55:01.490Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T15:55:01.490Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.255906 SOL)",
-  "[2026-10-25T15:55:01.522Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T15:55:02.605Z] [SCREENING] PVP guard: 1-SOL has active rival 1 coin can change your life (GMvCfcZg)",
-  "[2026-10-25T15:55:15.031Z] [DEPLOY] Pool: CvPyH4tJvUSk3cZ33zfMsT2DEbSanYJkJVJsBDVm4oAc",
-  "[2026-10-25T15:55:15.032Z] [DEPLOY] Strategy: bid_ask, Bins: -606 to -556 (50 bins)",
   "[2026-10-25T15:55:15.032Z] [DEPLOY] Amount: 0 X, 1.1 Y",
   "[2026-10-25T15:55:15.032Z] [DEPLOY] Position: 3cWqc8TC3uxrtFyErKZTPRV8x6mLuQTpKau2NzRyUR7P",
   "[2026-10-25T15:55:35.883Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4vYZUX7gWf6wrmKXkW3bX5nA6iDFZdbkWUSopuWRHA4gtYH9BcLnRqfHdfcgvgAJGcrTpSDGt4nawPYkpDhvjJ6d",
-  "[2026-10-25T15:55:37.436Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-25T15:55:37.436Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-25T15:59:30.168Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-25T16:00:00.082Z] [CRON] Starting management cycle",
+  "[2026-10-25T16:00:00.678Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T16:00:00.679Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.255924 SOL)",
+  "[2026-10-25T16:00:00.798Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T16:00:09.485Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-25T15:56:30.111Z"
+ "state_last_updated": "2026-10-25T16:00:15.199Z"
 }

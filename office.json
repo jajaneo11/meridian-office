@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T19:17:39.810959+00:00",
+ "generated_at": "2026-10-25T19:22:39.636821+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -702,20 +702,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1187,
+  "total_real": 1188,
   "today": 100,
-  "today_real": 100,
+  "today_real": 101,
   "by_type": {
-   "deploy": 11,
    "skip": 57,
    "close": 11,
-   "no_deploy": 21
+   "deploy": 10,
+   "no_deploy": 22
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T19:20:28.566Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry \u2014 deploy tool failed. WHY SKIPPED The deployment call failed at execution: my first attempt returned `Pool undefined not found` (screening verification could not resolve the pool), and the system blocked the retry \u2014 `deploy_position already attempted th"
+   },
    {
     "ts": "2026-10-25T19:16:25.883Z",
     "type": "no_deploy",
@@ -803,14 +811,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.794 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T18:25:00.322Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.774 < 1.1300000000000001)"
    }
   ]
  },
@@ -834,7 +834,7 @@
    },
    {
     "hour": "12:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "13:00",
@@ -862,25 +862,25 @@
    },
    {
     "hour": "19:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T19:15:01.477",
-  "last_management": "2026-10-25T19:15:00.529"
+  "last_screening": "2026-10-25T19:20:01.366",
+  "last_management": "2026-10-25T19:20:00.817"
  },
  "log_tail": [
-  "[2026-10-25T19:10:00.263Z] [CRON] Starting management cycle",
-  "[2026-10-25T19:10:00.984Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T19:10:00.985Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
-  "[2026-10-25T19:10:01.042Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T19:10:01.042Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T19:15:00.529Z] [CRON] Starting management cycle",
   "[2026-10-25T19:15:01.449Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T19:15:01.449Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T19:15:01.477Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T19:15:01.478Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)"
+  "[2026-10-25T19:15:01.478Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
+  "[2026-10-25T19:20:00.817Z] [CRON] Starting management cycle",
+  "[2026-10-25T19:20:01.299Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T19:20:01.299Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T19:20:01.366Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T19:20:01.366Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)",
+  "[2026-10-25T19:20:28.566Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T18:46:57.895Z"
 }

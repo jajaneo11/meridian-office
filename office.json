@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T07:27:39.923302+00:00",
+ "generated_at": "2026-10-25T07:32:38.933143+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -574,7 +574,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1117,
-  "today": 98,
+  "today": 99,
   "today_real": 30,
   "by_type": {
    "skip": 62,
@@ -587,6 +587,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T07:30:01.288Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.527 < 1.58)"
+   },
    {
     "ts": "2026-10-25T07:25:00.993Z",
     "type": "skip",
@@ -674,14 +682,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE MADE-SOL (FxPPZGPiTNYzgdMkNgAkA8QRZjNxurjBo7JgPt9z4T5X) WHY SKIPPED MADE-SOL fails the core conviction gates: there is no usable narrative (narrative field still generating/empty) and zero of 78 tracked smart wallets hold a posit"
-   },
-   {
-    "ts": "2026-10-25T06:30:13.188Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE KNOTS-SOL (BcAaxXZZ16t4emqCqsN81QvkvWNwSMhQUYcs5JoU5uRa) WHY SKIPPED The single surviving candidate fails the hard risk gates. There is no real narrative \u2014 the untrusted narrative field is only a placeholder (\"Narrative is being "
    }
   ]
  },
@@ -701,7 +701,7 @@
    },
    {
     "hour": "23:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "00:00",
@@ -733,25 +733,25 @@
    },
    {
     "hour": "07:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T06:55:00.980",
-  "last_management": "2026-10-25T07:25:00.747"
+  "last_management": "2026-10-25T07:30:00.997"
  },
  "log_tail": [
-  "[2026-10-25T07:10:00.891Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T07:15:00.339Z] [CRON] Starting management cycle",
-  "[2026-10-25T07:15:00.618Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
   "[2026-10-25T07:15:01.072Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T07:20:00.532Z] [CRON] Starting management cycle",
   "[2026-10-25T07:20:00.816Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
   "[2026-10-25T07:20:01.194Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T07:25:00.747Z] [CRON] Starting management cycle",
   "[2026-10-25T07:25:00.992Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
-  "[2026-10-25T07:25:01.384Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T07:25:01.384Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T07:30:00.997Z] [CRON] Starting management cycle",
+  "[2026-10-25T07:30:01.287Z] [CRON] Screening skipped \u2014 insufficient SOL (0.527 < 1.58 needed for deploy + gas)",
+  "[2026-10-25T07:30:01.867Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T07:20:30.294Z"
+ "state_last_updated": "2026-10-25T07:31:00.341Z"
 }

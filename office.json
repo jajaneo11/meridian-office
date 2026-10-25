@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T14:17:41.652836+00:00",
+ "generated_at": "2026-10-25T14:22:39.121952+00:00",
  "smart_wallets": {
   "total": 87,
   "by_category": {
@@ -8,13 +8,13 @@
    "Multihours": 23
   },
   "active_24h": 42,
-  "total_value_usd": 153471,
+  "total_value_usd": 153794,
   "total_activity": 435,
   "top": [
    {
     "name": "Long LP",
     "category": "Multihours",
-    "value_usd": 22943
+    "value_usd": 21544
    },
    {
     "name": "Long LP",
@@ -29,7 +29,7 @@
    {
     "name": "Fast LP",
     "category": "Degen",
-    "value_usd": 8702
+    "value_usd": 8715
    },
    {
     "name": "Long LP",
@@ -37,7 +37,7 @@
     "value_usd": 8561
    }
   ],
-  "decisions_mentioning": 21
+  "decisions_mentioning": 20
  },
  "mode": {
   "dry_run": false,
@@ -612,9 +612,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1161,
+  "total_real": 1162,
   "today": 100,
-  "today_real": 74,
+  "today_real": 75,
   "by_type": {
    "no_deploy": 44,
    "deploy": 5,
@@ -626,6 +626,14 @@
    "MANAGER": 5
   },
   "recent": [
+   {
+    "ts": "2026-10-25T14:20:06.109Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": "GME-SOL",
+    "summary": "Single candidate skipped",
+    "reason_short": "token fees 29.61 SOL below minimum 30 SOL"
+   },
    {
     "ts": "2026-10-25T14:15:08.327Z",
     "type": "no_deploy",
@@ -713,14 +721,6 @@
     "pool_name": "PANGEA-SOL",
     "summary": "Deployed 1.8 SOL with bid_ask",
     "reason_short": "Chosen range -1130\u2192-1071 around active bin -1071"
-   },
-   {
-    "ts": "2026-10-25T13:25:00.797Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.106 < 1.83)"
    }
   ]
  },
@@ -740,7 +740,7 @@
    },
    {
     "hour": "06:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "07:00",
@@ -772,25 +772,25 @@
    },
    {
     "hour": "14:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T14:15:01.095",
-  "last_management": "2026-10-25T14:15:00.601"
+  "last_screening": "2026-10-25T14:20:01.524",
+  "last_management": "2026-10-25T14:20:00.885"
  },
  "log_tail": [
-  "[2026-10-25T14:10:09.344Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
-  "[2026-10-25T14:10:15.712Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T14:15:00.601Z] [CRON] Starting management cycle",
-  "[2026-10-25T14:15:01.095Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T14:15:01.095Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.35083 SOL)",
-  "[2026-10-25T14:15:01.119Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T14:15:01.119Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T14:15:01.762Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
   "[2026-10-25T14:15:01.799Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-25T14:20:00.885Z] [CRON] Starting management cycle",
+  "[2026-10-25T14:20:01.407Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T14:20:01.407Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T14:20:01.524Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T14:20:01.524Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.35083 SOL)",
+  "[2026-10-25T14:20:01.804Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)"
  ],
  "state_last_updated": "2026-10-25T13:54:30.959Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T10:47:39.020039+00:00",
+ "generated_at": "2026-10-25T10:52:38.757119+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -73,8 +73,8 @@
   "total_tracked": 52
  },
  "pnl": {
-  "last24h_usd": 61.47,
-  "fees24h_usd": 108.33,
+  "last24h_usd": 60.59,
+  "fees24h_usd": 108.07,
   "all_time_usd": 72.94,
   "closed_total": 51,
   "win_rate_pct": 67
@@ -593,13 +593,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1143,
+  "total_real": 1144,
   "today": 100,
-  "today_real": 56,
+  "today_real": 57,
   "by_type": {
-   "skip": 45,
+   "skip": 44,
    "close": 7,
-   "no_deploy": 41,
+   "no_deploy": 42,
    "deploy": 7
   },
   "by_actor": {
@@ -607,6 +607,14 @@
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T10:50:01.710Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": "BTC-SOL",
+    "summary": "Single candidate skipped",
+    "reason_short": "token fees 10.77 SOL below minimum 30 SOL"
+   },
    {
     "ts": "2026-10-25T10:45:09.499Z",
     "type": "no_deploy",
@@ -694,14 +702,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Chubby-SOL: bot holders 32.19% > 30%"
-   },
-   {
-    "ts": "2026-10-25T09:50:01.693Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- mint-SOL: token cooldown active"
    }
   ]
  },
@@ -725,7 +725,7 @@
    },
    {
     "hour": "03:00",
-    "count": 13
+    "count": 12
    },
    {
     "hour": "04:00",
@@ -753,25 +753,25 @@
    },
    {
     "hour": "10:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T10:45:00.979",
-  "last_management": "2026-10-25T10:45:00.185"
+  "last_screening": "2026-10-25T10:50:01.066",
+  "last_management": "2026-10-25T10:50:00.402"
  },
  "log_tail": [
-  "[2026-10-25T10:40:00.013Z] [CRON] Starting management cycle",
-  "[2026-10-25T10:40:00.749Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T10:40:00.750Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
-  "[2026-10-25T10:40:00.776Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T10:40:00.933Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T10:45:00.185Z] [CRON] Starting management cycle",
   "[2026-10-25T10:45:00.919Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T10:45:00.979Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T10:45:00.979Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
-  "[2026-10-25T10:45:01.251Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)"
+  "[2026-10-25T10:45:01.251Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)",
+  "[2026-10-25T10:50:00.402Z] [CRON] Starting management cycle",
+  "[2026-10-25T10:50:01.066Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T10:50:01.066Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
+  "[2026-10-25T10:50:01.113Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T10:50:01.321Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T10:50:01.446Z] [SCREENING] PVP guard: BTC-SOL has active rival Big Titty Coin (C5xph2yL)"
  ],
  "state_last_updated": "2026-10-25T10:30:07.750Z"
 }

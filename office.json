@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T19:32:39.474211+00:00",
+ "generated_at": "2026-10-25T19:37:38.687385+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -702,20 +702,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1190,
+  "total_real": 1191,
   "today": 100,
-  "today_real": 103,
+  "today_real": 104,
   "by_type": {
-   "skip": 55,
+   "skip": 54,
    "close": 11,
    "deploy": 10,
-   "no_deploy": 24
+   "no_deploy": 25
   },
   "by_actor": {
    "SCREENER": 89,
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-25T19:36:23.514Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-25T19:30:12.810Z",
     "type": "no_deploy",
@@ -803,14 +811,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.794 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T18:40:01.095Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.794 < 1.1300000000000001)"
    }
   ]
  },
@@ -834,7 +834,7 @@
    },
    {
     "hour": "12:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "13:00",
@@ -862,25 +862,25 @@
    },
    {
     "hour": "19:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T19:30:00.868",
-  "last_management": "2026-10-25T19:30:00.368"
+  "last_screening": "2026-10-25T19:35:01.144",
+  "last_management": "2026-10-25T19:35:00.618"
  },
  "log_tail": [
-  "[2026-10-25T19:30:08.546Z] [DEPLOY] Amount: 0 X, 1.1 Y",
-  "[2026-10-25T19:30:08.546Z] [DEPLOY] Position: FUxd4qnySRLuhTfvGh6QJJ9cHcFjeKMSBJFwaBENZPhZ",
-  "  \u2022 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
-  "  \u2022 Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo failed: custom program error: 0x1{\"InstructionError\":[3,{\"Custom\":1}]}",
-  "[2026-10-25T19:30:08.929Z] [DEPLOY_ERROR] Simulation failed.",
   "Message: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1.",
   "  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1\",",
   "  \"Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo failed: custom program error: 0x1\"",
   "[2026-10-25T19:30:12.809Z] [AGENT] \u26d4 NO DEPLOY",
-  "I picked LAUNCH-USDC (smart wallet present, fees 111.56 SOL, organic 89, vol ~$152K, volatility 4.31) as the highest-conviction candidate. The deploy_position call was executed but the on-chain simulation failed with error `0x1` (insufficient funds) \u2014 the SOL token transfer did not clear. The system blocks retries after a failed attempt, so no position was opened. Per hard rules, I will not claim a deploy that did not actually execute."
+  "I picked LAUNCH-USDC (smart wallet present, fees 111.56 SOL, organic 89, vol ~$152K, volatility 4.31) as the highest-conviction candidate. The deploy_position call was executed but the on-chain simulation failed with error `0x1` (insufficient funds) \u2014 the SOL token transfer did not clear. The system blocks retries after a failed attempt, so no position was opened. Per hard rules, I will not claim a deploy that did not actually execute.",
+  "[2026-10-25T19:35:00.618Z] [CRON] Starting management cycle",
+  "[2026-10-25T19:35:01.140Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T19:35:01.140Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T19:35:01.144Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T19:35:01.145Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.87834 SOL)"
  ],
  "state_last_updated": "2026-10-25T18:46:57.895Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T10:27:41.679128+00:00",
+ "generated_at": "2026-10-25T10:32:40.004383+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7005
    }
   ],
-  "decisions_mentioning": 21
+  "decisions_mentioning": 22
  },
  "mode": {
   "dry_run": false,
@@ -593,20 +593,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1139,
+  "total_real": 1140,
   "today": 100,
-  "today_real": 52,
+  "today_real": 53,
   "by_type": {
-   "skip": 46,
    "close": 8,
-   "no_deploy": 38,
-   "deploy": 8
+   "no_deploy": 39,
+   "deploy": 8,
+   "skip": 45
   },
   "by_actor": {
-   "SCREENER": 92,
-   "MANAGER": 8
+   "MANAGER": 8,
+   "SCREENER": 92
   },
   "recent": [
+   {
+    "ts": "2026-10-25T10:30:05.905Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PANGEA-USDC WHY SKIPPED The sole surviving candidate carries no usable narrative (narrative generation is pending/incomplete) and has zero smart wallets in the pool \u2014 the combination is an explicit hard skip signal. The on-chain "
+   },
    {
     "ts": "2026-10-25T10:25:19.072Z",
     "type": "no_deploy",
@@ -694,14 +702,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-USDC WHY SKIPPED Only one candidate survived the pre-filter, and it fails a HARD RULE: bin_step=50 is outside the required [80\u2013125] band, so the pool is not deployable regardless of other metrics. It also has no narrative "
-   },
-   {
-    "ts": "2026-10-25T09:30:17.369Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Agency-SOL (GDoenRAGQCdaa1o9rV5wjSNqM41HmmcKL5LkEKfvBiuW) WHY SKIPPED Agency-SOL passes the hard gates (fees 1,409 SOL, bots 8.9%, top10 25.4%, bin_step 100, volatility 2.63) but fails the soft conviction tests: there is no narra"
    }
   ]
  },
@@ -721,7 +721,7 @@
    },
    {
     "hour": "02:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "03:00",
@@ -753,25 +753,25 @@
    },
    {
     "hour": "10:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T10:25:00.982",
-  "last_management": "2026-10-25T10:25:00.357"
+  "last_screening": "2026-10-25T10:30:01.264",
+  "last_management": "2026-10-25T10:30:00.635"
  },
  "log_tail": [
-  "[2026-10-25T10:25:15.242Z] [DEPLOY] Strategy: bid_ask, Bins: -1377 to -1325 (52 bins)",
-  "[2026-10-25T10:25:15.242Z] [DEPLOY] Amount: 0 X, 1 Y",
-  "[2026-10-25T10:25:15.242Z] [DEPLOY] Position: G4KgYiif12U5daT81EwFef2opFMLuQYrAzqfr8TyZJbj",
-  "  \u2022 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
-  "  \u2022 Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo failed: custom program error: 0x1{\"InstructionError\":[2,{\"Custom\":1}]}",
-  "[2026-10-25T10:25:15.550Z] [DEPLOY_ERROR] Simulation failed.",
   "Message: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1.",
   "  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1\",",
   "  \"Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo failed: custom program error: 0x1\"",
-  "[2026-10-25T10:25:19.072Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T10:25:19.072Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T10:30:00.635Z] [CRON] Starting management cycle",
+  "[2026-10-25T10:30:01.264Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T10:30:01.264Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
+  "[2026-10-25T10:30:01.341Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T10:30:01.470Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
+  "[2026-10-25T10:30:05.905Z] [AGENT] \u26d4 NO DEPLOY"
  ],
- "state_last_updated": "2026-10-25T10:18:04.667Z"
+ "state_last_updated": "2026-10-25T10:30:07.750Z"
 }

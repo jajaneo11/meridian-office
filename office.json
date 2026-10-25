@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T10:37:40.106516+00:00",
+ "generated_at": "2026-10-25T10:42:42.365564+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -593,20 +593,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1141,
+  "total_real": 1142,
   "today": 100,
-  "today_real": 54,
+  "today_real": 55,
   "by_type": {
-   "no_deploy": 40,
    "deploy": 8,
    "skip": 45,
-   "close": 7
+   "close": 7,
+   "no_deploy": 40
   },
   "by_actor": {
    "SCREENER": 93,
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-25T10:40:00.934Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- mint-SOL: token cooldown active"
+   },
    {
     "ts": "2026-10-25T10:35:13.451Z",
     "type": "no_deploy",
@@ -694,14 +702,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- Chubby-SOL: bot holders 32.27% > 30%"
-   },
-   {
-    "ts": "2026-10-25T09:40:00.958Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "All candidates filtered before deploy"
    }
   ]
  },
@@ -721,7 +721,7 @@
    },
    {
     "hour": "02:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "03:00",
@@ -753,25 +753,25 @@
    },
    {
     "hour": "10:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T10:35:01.479",
-  "last_management": "2026-10-25T10:35:00.836"
+  "last_screening": "2026-10-25T10:40:00.749",
+  "last_management": "2026-10-25T10:40:00.013"
  },
  "log_tail": [
-  "[2026-10-25T10:30:01.470Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
-  "[2026-10-25T10:30:05.905Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T10:35:00.836Z] [CRON] Starting management cycle",
-  "[2026-10-25T10:35:01.479Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T10:35:01.479Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
   "[2026-10-25T10:35:01.548Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T10:35:01.834Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
   "[2026-10-25T10:35:01.837Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
   "[2026-10-25T10:35:01.843Z] [SCREENING] Filtered cooldown token Moustache (J9WL4zQV)",
-  "[2026-10-25T10:35:13.451Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T10:35:13.451Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T10:40:00.013Z] [CRON] Starting management cycle",
+  "[2026-10-25T10:40:00.749Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T10:40:00.750Z] [CRON] Computed deploy amount: 1 SOL (wallet: 1.076089 SOL)",
+  "[2026-10-25T10:40:00.776Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T10:40:00.933Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)"
  ],
  "state_last_updated": "2026-10-25T10:30:07.750Z"
 }

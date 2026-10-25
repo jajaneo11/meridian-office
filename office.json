@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T14:37:39.728302+00:00",
+ "generated_at": "2026-10-25T14:42:39.113284+00:00",
  "smart_wallets": {
   "total": 100,
   "by_category": {
@@ -637,16 +637,24 @@
   "today": 100,
   "today_real": 78,
   "by_type": {
-   "deploy": 7,
-   "skip": 46,
+   "skip": 47,
    "close": 6,
-   "no_deploy": 41
+   "no_deploy": 41,
+   "deploy": 6
   },
   "by_actor": {
    "SCREENER": 94,
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T14:40:01.148Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.509 < 1.83)"
+   },
    {
     "ts": "2026-10-25T14:35:07.614Z",
     "type": "deploy",
@@ -734,14 +742,6 @@
     "pool_name": "PANGEA-SOL",
     "summary": "Closed at 0.26%",
     "reason_short": "User initiated close"
-   },
-   {
-    "ts": "2026-10-25T13:50:00.498Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.307 < 1.83)"
    }
   ]
  },
@@ -761,7 +761,7 @@
    },
    {
     "hour": "06:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "07:00",
@@ -793,25 +793,25 @@
    },
    {
     "hour": "14:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T14:35:01.201",
-  "last_management": "2026-10-25T14:35:00.675"
+  "last_management": "2026-10-25T14:40:00.874"
  },
  "log_tail": [
-  "[2026-10-25T14:35:01.201Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.350811 SOL)",
-  "[2026-10-25T14:35:01.482Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
-  "[2026-10-25T14:35:01.492Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
   "[2026-10-25T14:35:01.496Z] [SCREENING] Filtered cooldown token DacityCoin (DKYcjobF)",
   "[2026-10-25T14:35:05.904Z] [DEPLOY] Pool: CvPyH4tJvUSk3cZ33zfMsT2DEbSanYJkJVJsBDVm4oAc",
   "[2026-10-25T14:35:05.904Z] [DEPLOY] Strategy: bid_ask, Bins: -619 to -550 (69 bins)",
   "[2026-10-25T14:35:05.905Z] [DEPLOY] Amount: 0 X, 1.8 Y",
   "[2026-10-25T14:35:05.905Z] [DEPLOY] Position: CnAdGsEpLxuR4UMs49fLBLKMZgq3pop1NLV688hoeUN8",
   "[2026-10-25T14:35:07.609Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3RL7Jo14o5DKjc3FrkDjfM7mLfS6QcgYn9R847n4pTwjQBi7KwuUpGMHiT2ohMCTSLUpgYnNZHuMSrFFz1yswwFu",
-  "[2026-10-25T14:35:09.468Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-25T14:35:09.468Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-25T14:40:00.874Z] [CRON] Starting management cycle",
+  "[2026-10-25T14:40:01.148Z] [CRON] Screening skipped \u2014 insufficient SOL (0.509 < 1.83 needed for deploy + gas)",
+  "[2026-10-25T14:40:01.640Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T14:37:15.465Z"
+ "state_last_updated": "2026-10-25T14:41:18.722Z"
 }

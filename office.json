@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T12:02:43.004200+00:00",
+ "generated_at": "2026-10-25T12:07:40.221128+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 7005
    }
   ],
-  "decisions_mentioning": 23
+  "decisions_mentioning": 22
  },
  "mode": {
   "dry_run": false,
@@ -592,9 +592,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1153,
+  "total_real": 1154,
   "today": 100,
-  "today_real": 66,
+  "today_real": 67,
   "by_type": {
    "no_deploy": 44,
    "deploy": 6,
@@ -606,6 +606,14 @@
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T12:05:02.178Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- RARI-SOL: bot holders 33.97% > 30%"
+   },
    {
     "ts": "2026-10-25T12:00:14.140Z",
     "type": "no_deploy",
@@ -693,14 +701,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BTC-SOL WHY SKIPPED BTC-SOL fails the hard fee gate \u2014 only 13.6 SOL in total fees paid, well under the 30 SOL minimum, which signals bundled/scam activity. It's also a 4h-old pump.fun launch with a HIGH PVP conflict: a rival Big "
-   },
-   {
-    "ts": "2026-10-25T11:05:09.770Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": "BTC-SOL",
-    "summary": "Single candidate skipped",
-    "reason_short": "token fees 12.41 SOL below minimum 30 SOL"
    }
   ]
  },
@@ -720,7 +720,7 @@
    },
    {
     "hour": "04:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "05:00",
@@ -752,25 +752,25 @@
    },
    {
     "hour": "12:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T12:00:00.813",
-  "last_management": "2026-10-25T12:00:00.154"
+  "last_screening": "2026-10-25T12:05:00.943",
+  "last_management": "2026-10-25T12:05:00.411"
  },
  "log_tail": [
-  "[2026-10-25T11:55:01.390Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T11:55:01.390Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T11:55:10.431Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.01% > 30%",
-  "[2026-10-25T11:55:13.548Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T12:00:00.154Z] [CRON] Starting management cycle",
-  "[2026-10-25T12:00:00.813Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T12:00:00.813Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11653 SOL)",
   "[2026-10-25T12:00:00.831Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T12:00:00.831Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T12:00:14.139Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T12:00:14.139Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T12:05:00.411Z] [CRON] Starting management cycle",
+  "[2026-10-25T12:05:00.911Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T12:05:00.911Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T12:05:00.943Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T12:05:00.943Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11653 SOL)",
+  "[2026-10-25T12:05:02.178Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 33.97% > 30%"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

@@ -1,14 +1,15 @@
 {
- "generated_at": "2026-10-25T15:32:43.149428+00:00",
+ "generated_at": "2026-10-25T15:37:39.734310+00:00",
  "smart_wallets": {
-  "total": 24,
+  "total": 45,
   "by_category": {
    "alpha": 10,
-   "Degen": 14
+   "Degen": 26,
+   "Multihours": 9
   },
-  "active_24h": 22,
-  "total_value_usd": 145915,
-  "total_activity": 120,
+  "active_24h": 31,
+  "total_value_usd": 190271,
+  "total_activity": 225,
   "top": [
    {
     "name": "lp",
@@ -18,22 +19,22 @@
    {
     "name": "lp",
     "category": "alpha",
-    "value_usd": 35715
+    "value_usd": 35817
+   },
+   {
+    "name": "lp",
+    "category": "Multihours",
+    "value_usd": 21544
    },
    {
     "name": "lp",
     "category": "Degen",
-    "value_usd": 13650
+    "value_usd": 13671
    },
    {
     "name": "lp",
     "category": "Degen",
-    "value_usd": 10727
-   },
-   {
-    "name": "lp",
-    "category": "Degen",
-    "value_usd": 5015
+    "value_usd": 10744
    }
   ],
   "decisions_mentioning": 20
@@ -651,13 +652,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1169,
+  "total_real": 1170,
   "today": 100,
-  "today_real": 82,
+  "today_real": 83,
   "by_type": {
-   "skip": 43,
+   "skip": 42,
    "close": 8,
-   "no_deploy": 42,
+   "no_deploy": 43,
    "deploy": 7
   },
   "by_actor": {
@@ -665,6 +666,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T15:36:39.196Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Deploy attempt did not succeed",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-25T15:30:01.314Z",
     "type": "no_deploy",
@@ -752,14 +761,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.509 < 1.83)"
-   },
-   {
-    "ts": "2026-10-25T14:50:00.875Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.509 < 1.83)"
    }
   ]
  },
@@ -783,7 +784,7 @@
    },
    {
     "hour": "08:00",
-    "count": 13
+    "count": 12
    },
    {
     "hour": "09:00",
@@ -811,25 +812,25 @@
    },
    {
     "hour": "15:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T15:30:00.937",
-  "last_management": "2026-10-25T15:30:00.361"
+  "last_screening": "2026-10-25T15:35:01.218",
+  "last_management": "2026-10-25T15:35:00.667"
  },
  "log_tail": [
-  "[2026-10-25T15:25:00.799Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T15:26:40.017Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-25T15:30:00.361Z] [CRON] Starting management cycle",
-  "[2026-10-25T15:30:00.855Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T15:30:00.855Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T15:30:00.937Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T15:30:00.937Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.397816 SOL)",
-  "[2026-10-25T15:30:01.309Z] [SCREENING] Filtered cooldown token \u2588\u2588\u2588 (EwX2T1p2)",
   "[2026-10-25T15:30:01.311Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T15:30:01.314Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)"
+  "[2026-10-25T15:30:01.314Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
+  "[2026-10-25T15:35:00.667Z] [CRON] Starting management cycle",
+  "[2026-10-25T15:35:01.176Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T15:35:01.176Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T15:35:01.218Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T15:35:01.218Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.397816 SOL)",
+  "[2026-10-25T15:35:01.371Z] [SCREENING] Filtered cooldown token GME (9gexoGn8)",
+  "[2026-10-25T15:35:01.375Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T15:35:31.228Z] [ERROR] Agent loop error at step 8: 429 Rate limit reached: input token limit exceeded"
  ],
  "state_last_updated": "2026-10-25T15:26:48.661Z"
 }

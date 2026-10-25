@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T09:27:38.629409+00:00",
+ "generated_at": "2026-10-25T09:32:39.980180+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 6997
    }
   ],
-  "decisions_mentioning": 17
+  "decisions_mentioning": 18
  },
  "mode": {
   "dry_run": false,
@@ -582,13 +582,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1127,
+  "total_real": 1128,
   "today": 100,
-  "today_real": 40,
+  "today_real": 41,
   "by_type": {
-   "skip": 58,
+   "skip": 57,
    "close": 8,
-   "no_deploy": 27,
+   "no_deploy": 28,
    "deploy": 7
   },
   "by_actor": {
@@ -596,6 +596,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T09:30:17.369Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Agency-SOL (GDoenRAGQCdaa1o9rV5wjSNqM41HmmcKL5LkEKfvBiuW) WHY SKIPPED Agency-SOL passes the hard gates (fees 1,409 SOL, bots 8.9%, top10 25.4%, bin_step 100, volatility 2.63) but fails the soft conviction tests: there is no narra"
+   },
    {
     "ts": "2026-10-25T09:25:01.275Z",
     "type": "no_deploy",
@@ -683,14 +691,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.527 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T08:35:01.153Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.527 < 1.58)"
    }
   ]
  },
@@ -710,7 +710,7 @@
    },
    {
     "hour": "01:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "02:00",
@@ -742,25 +742,25 @@
    },
    {
     "hour": "09:00",
-    "count": 6
+    "count": 7
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T09:25:00.969",
-  "last_management": "2026-10-25T09:25:00.458"
+  "last_screening": "2026-10-25T09:30:01.320",
+  "last_management": "2026-10-25T09:30:00.767"
  },
  "log_tail": [
-  "[2026-10-25T09:20:00.785Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T09:20:01.439Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T09:20:02.267Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 33.29% > 30%",
-  "[2026-10-25T09:20:02.267Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.76% > 30%",
-  "[2026-10-25T09:20:05.019Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T09:25:00.458Z] [CRON] Starting management cycle",
-  "[2026-10-25T09:25:00.969Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T09:25:00.969Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
   "[2026-10-25T09:25:00.991Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T09:25:00.991Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-25T09:25:00.991Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T09:30:00.767Z] [CRON] Starting management cycle",
+  "[2026-10-25T09:30:01.320Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T09:30:01.320Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
+  "[2026-10-25T09:30:01.399Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T09:30:01.399Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T09:30:01.999Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T09:30:11.969Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.76% > 30%",
+  "[2026-10-25T09:30:17.368Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T08:50:32.972Z"
 }

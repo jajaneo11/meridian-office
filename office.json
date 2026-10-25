@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T04:07:39.157950+00:00",
+ "generated_at": "2026-10-25T04:12:38.710840+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -532,20 +532,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1100,
-  "today": 55,
-  "today_real": 13,
+  "total_real": 1101,
+  "today": 56,
+  "today_real": 14,
   "by_type": {
-   "no_deploy": 10,
    "deploy": 9,
    "skip": 72,
-   "close": 9
+   "close": 9,
+   "no_deploy": 10
   },
   "by_actor": {
    "SCREENER": 91,
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-25T04:10:14.336Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Marvin-SOL WHY SKIPPED Neither candidate cleared the bar. Bugmageddon-SOL fails the hard fee gate (23.68 SOL < 30 SOL floor \u2192 bundled/scam signal), so it's disqualified regardless of its +312% 1h move. Marvin-SOL technically pass"
+   },
    {
     "ts": "2026-10-25T04:05:05.249Z",
     "type": "no_deploy",
@@ -633,14 +641,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.412 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T03:20:01.251Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.412 < 1.58)"
    }
   ]
  },
@@ -660,7 +660,7 @@
    },
    {
     "hour": "20:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "21:00",
@@ -692,25 +692,25 @@
    },
    {
     "hour": "04:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T04:05:00.741",
-  "last_management": "2026-10-25T04:05:00.235"
+  "last_screening": "2026-10-25T04:10:01.065",
+  "last_management": "2026-10-25T04:10:00.538"
  },
  "log_tail": [
-  "[2026-10-25T04:00:01.505Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.949612 SOL)",
-  "[2026-10-25T04:00:13.342Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T04:05:00.235Z] [CRON] Starting management cycle",
-  "[2026-10-25T04:05:00.741Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T04:05:00.741Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.949612 SOL)",
-  "[2026-10-25T04:05:00.801Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T04:05:00.801Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T04:05:00.978Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
   "[2026-10-25T04:05:03.118Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
-  "[2026-10-25T04:05:05.248Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T04:05:05.248Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T04:10:00.538Z] [CRON] Starting management cycle",
+  "[2026-10-25T04:10:01.053Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T04:10:01.053Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T04:10:01.065Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T04:10:01.065Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 1.949612 SOL)",
+  "[2026-10-25T04:10:01.450Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
+  "[2026-10-25T04:10:14.336Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T03:56:16.306Z"
 }

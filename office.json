@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T12:22:39.118335+00:00",
+ "generated_at": "2026-10-25T12:27:40.754038+00:00",
  "smart_wallets": {
   "total": 87,
   "by_category": {
@@ -618,6 +618,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-25T12:25:00.623Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.273 < 1.83)"
+   },
+   {
     "ts": "2026-10-25T12:20:00.362Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -704,14 +712,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LARPCHECK-SOL WHY SKIPPED LARPCHECK passes the hard gates (fees 95.99 SOL, bots 13.6%, bin_step 100, volatility positive), but it fails every qualitative signal. Narrative is empty (still being generated), and 0/78 smart wallets "
-   },
-   {
-    "ts": "2026-10-25T11:25:28.265Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE McRib-SOL (FDvrkkgGZe2xjeAuPpNvZb2BLfegvYFEfYS9xqYc6HC2) WHY SKIPPED Both candidates are the same token (McRib, same mint) and share the same core weaknesses: no narrative exists yet (narrative_untrusted is still \"being generated"
    }
   ]
  },
@@ -731,7 +731,7 @@
    },
    {
     "hour": "04:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "05:00",
@@ -763,25 +763,25 @@
    },
    {
     "hour": "12:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T12:15:01.505",
-  "last_management": "2026-10-25T12:20:00.130"
+  "last_management": "2026-10-25T12:25:00.348"
  },
  "log_tail": [
-  "[2026-10-25T12:15:01.515Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T12:15:09.933Z] [DEPLOY] Pool: FJdrgoAy4K57EzC9YG8uvXdNE3F81HZA9bcC3V3zm6KY",
-  "[2026-10-25T12:15:09.933Z] [DEPLOY] Strategy: bid_ask, Bins: -745 to -676 (69 bins)",
   "[2026-10-25T12:15:09.934Z] [DEPLOY] Amount: 0 X, 1.8 Y",
   "[2026-10-25T12:15:09.934Z] [DEPLOY] Position: 2ozUwmLnVnmuSAPj4cSvYYnWcz93f5HXjhJcP7fiEwHL",
   "[2026-10-25T12:15:22.547Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3yvVc5DnegCZRqCzLywZNTh5K8qa6uzPQ9zdft4AweDiujfyFbxNKnXNCU82wfibsuDy2qc792jWJ539o7taLTXp",
   "[2026-10-25T12:15:23.952Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-25T12:20:00.130Z] [CRON] Starting management cycle",
   "[2026-10-25T12:20:00.361Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
-  "[2026-10-25T12:20:00.902Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T12:20:00.902Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T12:25:00.348Z] [CRON] Starting management cycle",
+  "[2026-10-25T12:25:00.623Z] [CRON] Screening skipped \u2014 insufficient SOL (0.273 < 1.83 needed for deploy + gas)",
+  "[2026-10-25T12:25:00.976Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T12:22:37.861Z"
+ "state_last_updated": "2026-10-25T12:25:22.855Z"
 }

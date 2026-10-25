@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-10-25T12:07:40.221128+00:00",
+ "generated_at": "2026-10-25T12:12:39.120782+00:00",
  "smart_wallets": {
-  "total": 78,
+  "total": 87,
   "by_category": {
-   "alpha": 30,
-   "Degen": 25,
+   "alpha": 34,
+   "Degen": 30,
    "Multihours": 23
   },
-  "active_24h": 35,
-  "total_value_usd": 146037,
-  "total_activity": 390,
+  "active_24h": 45,
+  "total_value_usd": 153471,
+  "total_activity": 435,
   "top": [
    {
     "name": "Long LP",
     "category": "Multihours",
-    "value_usd": 21519
+    "value_usd": 22943
    },
    {
     "name": "Long LP",
     "category": "Multihours",
-    "value_usd": 16110
+    "value_usd": 16089
    },
    {
     "name": "lp",
@@ -27,17 +27,17 @@
     "value_usd": 13208
    },
    {
+    "name": "Fast LP",
+    "category": "Degen",
+    "value_usd": 8702
+   },
+   {
     "name": "Long LP",
     "category": "Multihours",
     "value_usd": 8561
-   },
-   {
-    "name": "Fast LP",
-    "category": "Degen",
-    "value_usd": 7005
    }
   ],
-  "decisions_mentioning": 22
+  "decisions_mentioning": 21
  },
  "mode": {
   "dry_run": false,
@@ -62,8 +62,8 @@
   "total_tracked": 52
  },
  "pnl": {
-  "last24h_usd": 60.54,
-  "fees24h_usd": 108.07,
+  "last24h_usd": 60.56,
+  "fees24h_usd": 108.06,
   "all_time_usd": 72.89,
   "closed_total": 52,
   "win_rate_pct": 65
@@ -592,9 +592,9 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1154,
+  "total_real": 1155,
   "today": 100,
-  "today_real": 67,
+  "today_real": 68,
   "by_type": {
    "no_deploy": 44,
    "deploy": 6,
@@ -606,6 +606,14 @@
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-25T12:10:09.746Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "- RARI-SOL: bot holders 34.13% > 30%"
+   },
    {
     "ts": "2026-10-25T12:05:02.178Z",
     "type": "no_deploy",
@@ -693,14 +701,6 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- BLACKTOBER-SOL: volatility 0 is unusable"
-   },
-   {
-    "ts": "2026-10-25T11:10:05.165Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BTC-SOL WHY SKIPPED BTC-SOL fails the hard fee gate \u2014 only 13.6 SOL in total fees paid, well under the 30 SOL minimum, which signals bundled/scam activity. It's also a 4h-old pump.fun launch with a HIGH PVP conflict: a rival Big "
    }
   ]
  },
@@ -720,7 +720,7 @@
    },
    {
     "hour": "04:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "05:00",
@@ -752,25 +752,25 @@
    },
    {
     "hour": "12:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T12:05:00.943",
-  "last_management": "2026-10-25T12:05:00.411"
+  "last_screening": "2026-10-25T12:10:01.216",
+  "last_management": "2026-10-25T12:10:00.655"
  },
  "log_tail": [
-  "[2026-10-25T12:00:00.813Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11653 SOL)",
-  "[2026-10-25T12:00:00.831Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T12:00:00.831Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T12:00:14.139Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T12:05:00.411Z] [CRON] Starting management cycle",
-  "[2026-10-25T12:05:00.911Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T12:05:00.911Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T12:05:00.943Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-25T12:05:00.943Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11653 SOL)",
-  "[2026-10-25T12:05:02.178Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 33.97% > 30%"
+  "[2026-10-25T12:05:02.178Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 33.97% > 30%",
+  "[2026-10-25T12:10:00.655Z] [CRON] Starting management cycle",
+  "[2026-10-25T12:10:01.216Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T12:10:01.216Z] [CRON] Computed deploy amount: 1.8 SOL (wallet: 2.11653 SOL)",
+  "[2026-10-25T12:10:01.250Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T12:10:01.251Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-25T12:10:09.745Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.13% > 30%"
  ],
  "state_last_updated": "2026-10-25T11:00:33.178Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T23:52:42.178846+00:00",
+ "generated_at": "2026-10-25T23:57:41.798772+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -788,6 +788,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-25T23:55:01.118Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.365 < 1.6300000000000001)"
+   },
+   {
     "ts": "2026-10-25T23:50:12.432Z",
     "type": "deploy",
     "actor": "SCREENER",
@@ -874,14 +882,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.318 < 1.6300000000000001)"
-   },
-   {
-    "ts": "2026-10-25T23:00:00.792Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.318 < 1.6300000000000001)"
    }
   ]
  },
@@ -905,7 +905,7 @@
    },
    {
     "hour": "16:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "17:00",
@@ -933,25 +933,25 @@
    },
    {
     "hour": "23:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T23:50:01.191",
-  "last_management": "2026-10-25T23:50:00.681"
+  "last_management": "2026-10-25T23:55:00.868"
  },
  "log_tail": [
-  "[2026-10-25T23:50:01.163Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T23:50:01.191Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T23:50:01.192Z] [CRON] Computed deploy amount: 1.6 SOL (wallet: 2.007179 SOL)",
   "[2026-10-25T23:50:04.879Z] [SCREENING] Bot-holder filter: dropped SCS-SOL \u2014 bots 35.69% > 30%",
   "[2026-10-25T23:50:09.602Z] [DEPLOY] Pool: 3ued9fQHLo5dyomDvhdPjmy5ET32e8YiCPUU3JwUx5Ja",
   "[2026-10-25T23:50:09.602Z] [DEPLOY] Strategy: bid_ask, Bins: 240 to 309 (69 bins)",
   "[2026-10-25T23:50:09.602Z] [DEPLOY] Amount: 0 X, 1.6 Y",
   "[2026-10-25T23:50:09.602Z] [DEPLOY] Position: AEH7xK8Vayt3hwzUMv45nUKQo455QsBpHvh9ZXaGDAm3",
   "[2026-10-25T23:50:12.427Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5VTP2iuLzPCiJyTcWHsQkavi5xZCDsotXhYhjLW5iK9vtrPVFdZbGj1y9ELQbkmJGyNh8owPksVTbkrbNgpdRhbS",
-  "[2026-10-25T23:50:13.696Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-25T23:50:13.696Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-25T23:55:00.868Z] [CRON] Starting management cycle",
+  "[2026-10-25T23:55:01.116Z] [CRON] Screening skipped \u2014 insufficient SOL (0.365 < 1.6300000000000001 needed for deploy + gas)",
+  "[2026-10-25T23:55:01.501Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-25T23:52:39.813Z"
+ "state_last_updated": "2026-10-25T23:57:03.841Z"
 }

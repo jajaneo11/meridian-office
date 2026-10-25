@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T09:22:40.651660+00:00",
+ "generated_at": "2026-10-25T09:27:38.629409+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -62,7 +62,7 @@
   "total_tracked": 51
  },
  "pnl": {
-  "last24h_usd": 63.27,
+  "last24h_usd": 63.44,
   "fees24h_usd": 112.91,
   "all_time_usd": 72.94,
   "closed_total": 51,
@@ -582,13 +582,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1126,
+  "total_real": 1127,
   "today": 100,
-  "today_real": 39,
+  "today_real": 40,
   "by_type": {
-   "skip": 59,
+   "skip": 58,
    "close": 8,
-   "no_deploy": 26,
+   "no_deploy": 27,
    "deploy": 7
   },
   "by_actor": {
@@ -596,6 +596,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T09:25:01.275Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-25T09:20:05.019Z",
     "type": "no_deploy",
@@ -683,14 +691,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.527 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T08:30:01.028Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.527 < 1.58)"
    }
   ]
  },
@@ -710,7 +710,7 @@
    },
    {
     "hour": "01:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "02:00",
@@ -742,25 +742,25 @@
    },
    {
     "hour": "09:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T09:20:00.730",
-  "last_management": "2026-10-25T09:20:00.164"
+  "last_screening": "2026-10-25T09:25:00.969",
+  "last_management": "2026-10-25T09:25:00.458"
  },
  "log_tail": [
-  "[2026-10-25T09:15:10.179Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 33.69% > 30%",
-  "[2026-10-25T09:20:00.164Z] [CRON] Starting management cycle",
-  "[2026-10-25T09:20:00.730Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T09:20:00.730Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
-  "[2026-10-25T09:20:00.785Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-25T09:20:00.785Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-25T09:20:01.439Z] [SCREENING] Filtered cooldown token mint (tybY2LFH)",
   "[2026-10-25T09:20:02.267Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 33.29% > 30%",
   "[2026-10-25T09:20:02.267Z] [SCREENING] Bot-holder filter: dropped RARI-SOL \u2014 bots 34.76% > 30%",
-  "[2026-10-25T09:20:05.019Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T09:20:05.019Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-25T09:25:00.458Z] [CRON] Starting management cycle",
+  "[2026-10-25T09:25:00.969Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-25T09:25:00.969Z] [CRON] Computed deploy amount: 1 SOL (wallet: 2.119488 SOL)",
+  "[2026-10-25T09:25:00.991Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-25T09:25:00.991Z] [CRON] Screening skipped \u2014 previous cycle still running"
  ],
  "state_last_updated": "2026-10-25T08:50:32.972Z"
 }

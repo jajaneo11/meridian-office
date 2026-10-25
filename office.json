@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T21:47:39.731708+00:00",
+ "generated_at": "2026-10-25T21:52:41.965553+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -747,16 +747,24 @@
   "today": 100,
   "today_real": 118,
   "by_type": {
-   "skip": 51,
    "close": 10,
    "no_deploy": 29,
-   "deploy": 10
+   "deploy": 10,
+   "skip": 51
   },
   "by_actor": {
-   "SCREENER": 90,
-   "MANAGER": 10
+   "MANAGER": 10,
+   "SCREENER": 90
   },
   "recent": [
+   {
+    "ts": "2026-10-25T21:50:00.620Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.246 < 1.6300000000000001)"
+   },
    {
     "ts": "2026-10-25T21:45:00.436Z",
     "type": "skip",
@@ -844,14 +852,6 @@
     "pool_name": "mint-SOL",
     "summary": "Closed at 0.06%",
     "reason_short": "pumped far above range"
-   },
-   {
-    "ts": "2026-10-25T21:05:00.590Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.737 < 1.6300000000000001)"
    }
   ]
  },
@@ -879,7 +879,7 @@
    },
    {
     "hour": "15:00",
-    "count": 17
+    "count": 16
    },
    {
     "hour": "16:00",
@@ -903,25 +903,25 @@
    },
    {
     "hour": "21:00",
-    "count": 13
+    "count": 14
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-25T21:25:00.802",
-  "last_management": "2026-10-25T21:45:00.181"
+  "last_management": "2026-10-25T21:50:00.365"
  },
  "log_tail": [
-  "[2026-10-25T21:30:01.212Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-25T21:35:00.690Z] [CRON] Starting management cycle",
-  "[2026-10-25T21:35:00.954Z] [CRON] Screening skipped \u2014 insufficient SOL (0.246 < 1.6300000000000001 needed for deploy + gas)",
   "[2026-10-25T21:35:01.349Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T21:40:00.923Z] [CRON] Starting management cycle",
   "[2026-10-25T21:40:01.296Z] [CRON] Screening skipped \u2014 insufficient SOL (0.246 < 1.6300000000000001 needed for deploy + gas)",
   "[2026-10-25T21:40:01.655Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-25T21:45:00.181Z] [CRON] Starting management cycle",
   "[2026-10-25T21:45:00.436Z] [CRON] Screening skipped \u2014 insufficient SOL (0.246 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-25T21:45:00.845Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-25T21:45:00.845Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-25T21:50:00.365Z] [CRON] Starting management cycle",
+  "[2026-10-25T21:50:00.619Z] [CRON] Screening skipped \u2014 insufficient SOL (0.246 < 1.6300000000000001 needed for deploy + gas)",
+  "[2026-10-25T21:50:01.115Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-25T21:37:35.188Z"
 }

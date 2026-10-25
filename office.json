@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T09:02:38.257806+00:00",
+ "generated_at": "2026-10-25T09:07:42.399864+00:00",
  "smart_wallets": {
   "total": 78,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 6997
    }
   ],
-  "decisions_mentioning": 15
+  "decisions_mentioning": 16
  },
  "mode": {
   "dry_run": false,
@@ -52,7 +52,7 @@
  },
  "limits": {
   "max_positions": 3,
-  "deploy_sol": 1.55,
+  "deploy_sol": 1.0,
   "screening_min": 30,
   "management_min": 10
  },
@@ -582,13 +582,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1121,
+  "total_real": 1123,
   "today": 100,
-  "today_real": 34,
+  "today_real": 36,
   "by_type": {
-   "skip": 63,
+   "skip": 62,
    "close": 8,
-   "no_deploy": 22,
+   "no_deploy": 23,
    "deploy": 7
   },
   "by_actor": {
@@ -596,6 +596,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-25T09:05:20.623Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE HOOKED-USDC WHY SKIPPED HOOKED-USDC fails a hard rule: bin_step=50 is outside the required 80\u2013125 band, so it can't be deployed regardless of other metrics. On top of that, the narrative is empty (\"Narrative is being generated\") "
+   },
    {
     "ts": "2026-10-25T09:00:06.212Z",
     "type": "no_deploy",
@@ -683,14 +691,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.527 < 1.58)"
-   },
-   {
-    "ts": "2026-10-25T08:10:01.183Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.527 < 1.58)"
    }
   ]
  },
@@ -710,7 +710,7 @@
    },
    {
     "hour": "01:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "02:00",
@@ -742,25 +742,25 @@
    },
    {
     "hour": "09:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-25T09:00:00.665",
-  "last_management": "2026-10-25T09:00:00.062"
+  "last_screening": "2026-10-25T09:05:07.774",
+  "last_management": "2026-10-25T09:05:00.309"
  },
  "log_tail": [
-  "[2026-10-25T08:55:01.347Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T08:55:01.347Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T08:55:15.604Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-25T09:00:00.062Z] [CRON] Starting management cycle",
-  "[2026-10-25T09:00:00.628Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-25T09:00:00.629Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-25T09:00:00.665Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-25T09:00:00.666Z] [CRON] Computed deploy amount: 1.55 SOL (wallet: 2.119488 SOL)",
-  "[2026-10-25T09:00:03.199Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 34.89% > 30%",
-  "[2026-10-25T09:00:06.212Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-25T09:05:16.080Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T09:05:16.080Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T09:05:16.083Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T09:05:16.087Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T09:05:16.088Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T09:05:16.091Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T09:05:16.099Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T09:05:16.105Z] [WALLET_POSITIONS_ERROR] 429 : Too Many Requests",
+  "[2026-10-25T09:05:17.604Z] [SCREENING] Bot-holder filter: dropped Chubby-SOL \u2014 bots 33.13% > 30%",
+  "[2026-10-25T09:05:20.620Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-25T08:50:32.972Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T18:17:39.064288+00:00",
+ "generated_at": "2026-10-26T18:22:40.657907+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 24921
    }
   ],
-  "decisions_mentioning": 1
+  "decisions_mentioning": 2
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.401376
+  "sol": 1.258307
  },
  "limits": {
   "max_positions": 3,
@@ -842,12 +842,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1218,
+  "total_real": 1219,
   "today": 100,
-  "today_real": 10,
+  "today_real": 11,
   "by_type": {
-   "skip": 94,
-   "no_deploy": 2,
+   "skip": 93,
+   "no_deploy": 3,
    "deploy": 2,
    "close": 2
   },
@@ -856,6 +856,14 @@
    "MANAGER": 2
   },
   "recent": [
+   {
+    "ts": "2026-10-26T18:20:45.472Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE \u30e4\u30ae-SOL WHY SKIPPED The top-ranked candidate (\u30e4\u30ae-SOL) actually failed at execution: deploy_position was blocked because its fee/active-TVL (0.000185%) fell below the configured minimum (0.09%), despite strong headline metrics. ARR"
+   },
    {
     "ts": "2026-10-26T18:16:12.709Z",
     "type": "close",
@@ -943,14 +951,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.253 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T17:30:00.754Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.253 < 1.1300000000000001)"
    }
   ]
  },
@@ -982,7 +982,7 @@
    },
    {
     "hour": "13:00",
-    "count": 24
+    "count": 23
    },
    {
     "hour": "14:00",
@@ -1002,25 +1002,25 @@
    },
    {
     "hour": "18:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-26T17:45:00.915",
-  "last_management": "2026-10-26T18:15:00.827"
+  "last_screening": "2026-10-26T18:20:00.673",
+  "last_management": "2026-10-26T18:20:00.123"
  },
  "log_tail": [
-  "[2026-10-26T18:05:00.664Z] [CRON] Screening skipped \u2014 insufficient SOL (0.258 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-26T18:05:01.073Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-26T18:10:00.623Z] [CRON] Starting management cycle",
-  "[2026-10-26T18:10:00.916Z] [CRON] Screening skipped \u2014 insufficient SOL (0.258 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-26T18:10:01.363Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-26T18:15:00.827Z] [CRON] Starting management cycle",
-  "[2026-10-26T18:15:01.123Z] [CRON] Screening skipped \u2014 insufficient SOL (0.258 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-26T18:15:01.537Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-26T18:16:01.551Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-26T18:16:13.688Z] [SWAP_ERROR] Swap failed on-chain: code=6001"
+  "[2026-10-26T18:16:13.688Z] [SWAP_ERROR] Swap failed on-chain: code=6001",
+  "[2026-10-26T18:20:00.123Z] [CRON] Starting management cycle",
+  "[2026-10-26T18:20:00.647Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T18:20:00.648Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T18:20:00.673Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-26T18:20:00.674Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
+  "[2026-10-26T18:20:01.132Z] [SCREENING] PVP guard: ANT-SOL has active rival Anthropic (BTZK1B3p)",
+  "[2026-10-26T18:20:06.879Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 32.12% > 30%",
+  "[2026-10-26T18:20:06.879Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 44.31% > 30%",
+  "[2026-10-26T18:20:45.471Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-26T18:16:12.317Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T15:17:38.538724+00:00",
+ "generated_at": "2026-10-26T15:22:40.267071+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 24921
    }
   ],
-  "decisions_mentioning": 0
+  "decisions_mentioning": 1
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": null
+  "sol": 1.396491
  },
  "limits": {
   "max_positions": 3,
@@ -822,16 +822,25 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1214,
+  "total_real": 1215,
   "today": 100,
-  "today_real": 6,
+  "today_real": 7,
   "by_type": {
-   "skip": 100
+   "skip": 99,
+   "no_deploy": 1
   },
   "by_actor": {
    "SCREENER": 100
   },
   "recent": [
+   {
+    "ts": "2026-10-26T15:20:30.141Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PMUP-SOL WHY SKIPPED Every candidate fails the \"no narrative + no smart wallets\" gate \u2014 all five have zero smart wallets present and zero usable narratives (all still \"being generated\"). The strongest-signal candidate (PMUP-SOL) "
+   },
    {
     "ts": "2026-10-26T15:15:01.242Z",
     "type": "skip",
@@ -919,14 +928,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.000 < 1.6300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T14:55:00.998Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.000 < 1.6300000000000001)"
    }
   ]
  },
@@ -962,7 +963,7 @@
    },
    {
     "hour": "11:00",
-    "count": 14
+    "count": 13
    },
    {
     "hour": "12:00",
@@ -978,25 +979,25 @@
    },
    {
     "hour": "15:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
-  "last_screening": null,
-  "last_management": "2026-10-26T15:15:00.516"
+  "last_screening": "2026-10-26T15:20:01.377",
+  "last_management": "2026-10-26T15:20:00.769"
  },
  "log_tail": [
-  "[2026-10-26T15:10:00.029Z] [CRON] Starting management cycle",
-  "[2026-10-26T15:10:00.265Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-26T15:10:00.695Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-26T15:10:00.824Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-26T15:13:00.472Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
-  "[2026-10-26T15:13:01.086Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-26T15:15:00.516Z] [CRON] Starting management cycle",
-  "[2026-10-26T15:15:00.688Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-26T15:15:01.107Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-26T15:15:01.242Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.1300000000000001 needed for deploy + gas)"
+  "[2026-10-26T15:15:01.242Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-26T15:20:00.769Z] [CRON] Starting management cycle",
+  "[2026-10-26T15:20:01.329Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T15:20:01.329Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T15:20:01.377Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-26T15:20:01.379Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.396491 SOL)",
+  "[2026-10-26T15:20:01.781Z] [SCREENING] PVP guard: PUMP-SOL has active rival Pump (pumpCmXq)",
+  "[2026-10-26T15:20:07.608Z] [SCREENING] Bot-holder filter: dropped PUMP-SOL \u2014 bots 33.27% > 30%",
+  "[2026-10-26T15:20:07.608Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 50.52% > 30%",
+  "[2026-10-26T15:20:30.140Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-26T09:01:30.617Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T03:57:40.581561+00:00",
+ "generated_at": "2026-10-26T04:02:40.026447+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -7,24 +7,24 @@
    "Degen": 26,
    "Multihours": 9
   },
-  "active_24h": 31,
-  "total_value_usd": 193680,
+  "active_24h": 33,
+  "total_value_usd": 196378,
   "total_activity": 225,
   "top": [
    {
     "name": "lp",
     "category": "alpha",
-    "value_usd": 64562
+    "value_usd": 64569
    },
    {
     "name": "lp",
     "category": "alpha",
-    "value_usd": 34805
+    "value_usd": 39988
    },
    {
     "name": "lp",
     "category": "Multihours",
-    "value_usd": 25867
+    "value_usd": 25894
    },
    {
     "name": "lp",
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 2.033403
+  "sol": 2.03385
  },
  "limits": {
   "max_positions": 3,
@@ -782,20 +782,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1209,
-  "today": 50,
-  "today_real": 1,
+  "total_real": 1210,
+  "today": 51,
+  "today_real": 2,
   "by_type": {
-   "deploy": 7,
    "skip": 85,
    "close": 7,
-   "no_deploy": 1
+   "no_deploy": 2,
+   "deploy": 6
   },
   "by_actor": {
    "SCREENER": 93,
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-26T04:01:08.554Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-26T03:55:30.368Z",
     "type": "close",
@@ -883,23 +891,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.391 < 1.6300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T03:05:00.543Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.391 < 1.6300000000000001)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "16:00",
-    "count": 0
-   },
    {
     "hour": "17:00",
     "count": 0
@@ -914,7 +910,7 @@
    },
    {
     "hour": "20:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "21:00",
@@ -943,24 +939,28 @@
    {
     "hour": "03:00",
     "count": 13
+   },
+   {
+    "hour": "04:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-26T02:55:01.440",
-  "last_management": "2026-10-26T03:55:00.592"
+  "last_screening": "2026-10-26T04:00:01.437",
+  "last_management": "2026-10-26T04:00:00.897"
  },
  "log_tail": [
-  "[2026-10-26T03:45:00.127Z] [CRON] Starting management cycle",
-  "[2026-10-26T03:45:00.387Z] [CRON] Screening skipped \u2014 insufficient SOL (0.391 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-26T03:45:00.805Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-26T03:50:00.364Z] [CRON] Starting management cycle",
-  "[2026-10-26T03:50:00.478Z] [CRON] Screening skipped \u2014 insufficient SOL (0.391 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-26T03:50:01.064Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-26T03:55:00.592Z] [CRON] Starting management cycle",
   "[2026-10-26T03:55:01.074Z] [CRON] Screening skipped \u2014 insufficient SOL (0.391 < 1.6300000000000001 needed for deploy + gas)",
   "[2026-10-26T03:55:01.088Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-26T03:55:15.543Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-26T03:55:15.543Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-26T04:00:00.897Z] [CRON] Starting management cycle",
+  "[2026-10-26T04:00:01.437Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-26T04:00:01.439Z] [CRON] Computed deploy amount: 1.6 SOL (wallet: 2.03385 SOL)",
+  "[2026-10-26T04:00:01.453Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T04:00:01.453Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T04:00:06.058Z] [SCREENING] Bot-holder filter: dropped SCS-SOL \u2014 bots 33.07% > 30%"
  ],
  "state_last_updated": "2026-10-26T03:55:29.915Z"
 }

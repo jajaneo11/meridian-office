@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T18:32:40.225598+00:00",
+ "generated_at": "2026-10-26T18:37:39.492024+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 24921
    }
   ],
-  "decisions_mentioning": 3
+  "decisions_mentioning": 4
  },
  "mode": {
   "dry_run": false,
@@ -842,12 +842,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1221,
+  "total_real": 1222,
   "today": 100,
-  "today_real": 13,
+  "today_real": 14,
   "by_type": {
-   "skip": 91,
-   "no_deploy": 5,
+   "skip": 90,
+   "no_deploy": 6,
    "deploy": 2,
    "close": 2
   },
@@ -856,6 +856,14 @@
    "MANAGER": 2
   },
   "recent": [
+   {
+    "ts": "2026-10-26T18:35:06.195Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED The only survivor, Macca-SOL, checks the hard boxes (bin_step=100, fees=113 SOL, bots=25%, top10=23%), but the pool memory is a decisive negative: 2 past deploys with a 0% win rate and both exits caused by g"
+   },
    {
     "ts": "2026-10-26T18:30:34.834Z",
     "type": "no_deploy",
@@ -943,14 +951,6 @@
     "pool_name": "SQUADS-SOL",
     "summary": "Deployed 1.1 SOL with bid_ask",
     "reason_short": "Chosen range -735\u2192-668 around active bin -668"
-   },
-   {
-    "ts": "2026-10-26T17:40:26.688Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED The pool screening passed and I selected mint-SOL as the highest-conviction candidate (strongest signals: volatility 10.05, organic 68, fee/TVL 0.82, 79% historical win rate with positive average PnL). Howeve"
    }
   ]
  },
@@ -982,7 +982,7 @@
    },
    {
     "hour": "13:00",
-    "count": 21
+    "count": 20
    },
    {
     "hour": "14:00",
@@ -1002,25 +1002,25 @@
    },
    {
     "hour": "18:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-26T18:30:01.183",
-  "last_management": "2026-10-26T18:30:00.625"
+  "last_screening": "2026-10-26T18:35:01.418",
+  "last_management": "2026-10-26T18:35:00.894"
  },
  "log_tail": [
-  "[2026-10-26T18:25:04.445Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 32.25% > 30%",
-  "[2026-10-26T18:25:09.267Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-26T18:30:00.625Z] [CRON] Starting management cycle",
-  "[2026-10-26T18:30:01.181Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-26T18:30:01.182Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-26T18:30:01.183Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-26T18:30:01.183Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
   "[2026-10-26T18:30:06.674Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.73% > 30%",
   "[2026-10-26T18:30:06.674Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 40.98% > 30%",
-  "[2026-10-26T18:30:34.834Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-26T18:30:34.834Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-26T18:35:00.894Z] [CRON] Starting management cycle",
+  "[2026-10-26T18:35:01.418Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-26T18:35:01.418Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
+  "[2026-10-26T18:35:01.441Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T18:35:01.441Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T18:35:02.020Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.32% > 30%",
+  "[2026-10-26T18:35:06.194Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-26T18:16:12.317Z"
 }

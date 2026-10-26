@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T17:42:39.896166+00:00",
+ "generated_at": "2026-10-26T17:47:41.132930+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 76
+  "open_count": 1,
+  "open": [
+   {
+    "id": "GM7iBbkoYRhToJFJQHf3SxExG6RcghcnasBBGcRDbS9Y",
+    "pool": "SQUADS-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-26T17:45:19.311Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.1
+   }
+  ],
+  "total_tracked": 77
  },
  "pnl": {
   "last24h_usd": -5.57,
@@ -832,13 +843,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1217,
+  "total_real": 1218,
   "today": 100,
-  "today_real": 9,
+  "today_real": 10,
   "by_type": {
-   "skip": 96,
+   "skip": 95,
    "no_deploy": 2,
-   "deploy": 1,
+   "deploy": 2,
    "close": 1
   },
   "by_actor": {
@@ -846,6 +857,14 @@
    "MANAGER": 1
   },
   "recent": [
+   {
+    "ts": "2026-10-26T17:45:19.312Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "SQUADS-SOL",
+    "summary": "Deployed 1.1 SOL with bid_ask",
+    "reason_short": "Chosen range -735\u2192-668 around active bin -668"
+   },
    {
     "ts": "2026-10-26T17:40:26.688Z",
     "type": "no_deploy",
@@ -933,14 +952,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.253 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T16:50:01.088Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.253 < 1.1300000000000001)"
    }
   ]
  },
@@ -972,7 +983,7 @@
    },
    {
     "hour": "12:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "13:00",
@@ -992,25 +1003,25 @@
    },
    {
     "hour": "17:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-26T17:40:00.810",
-  "last_management": "2026-10-26T17:40:00.157"
+  "last_screening": "2026-10-26T17:45:00.915",
+  "last_management": "2026-10-26T17:45:00.403"
  },
  "log_tail": [
-  "[2026-10-26T17:35:01.523Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-26T17:35:13.013Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-26T17:40:00.157Z] [CRON] Starting management cycle",
-  "[2026-10-26T17:40:00.810Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-26T17:40:00.813Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.401376 SOL)",
-  "[2026-10-26T17:40:00.826Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-26T17:40:00.826Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-26T17:40:07.699Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.64% > 30%",
-  "[2026-10-26T17:40:07.700Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 60.66% > 30%",
-  "[2026-10-26T17:40:26.686Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-26T17:45:00.923Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T17:45:03.494Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 30.93% > 30%",
+  "[2026-10-26T17:45:03.494Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 44.29% > 30%",
+  "[2026-10-26T17:45:03.494Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 44.29% > 30%",
+  "[2026-10-26T17:45:18.211Z] [DEPLOY] Pool: CSv3ixznHbM341uUUyuBwVY9yksujoq8qSrmJHjhCira",
+  "[2026-10-26T17:45:18.211Z] [DEPLOY] Strategy: bid_ask, Bins: -735 to -668 (67 bins)",
+  "[2026-10-26T17:45:18.211Z] [DEPLOY] Amount: 0 X, 1.1 Y",
+  "[2026-10-26T17:45:18.211Z] [DEPLOY] Position: GM7iBbkoYRhToJFJQHf3SxExG6RcghcnasBBGcRDbS9Y",
+  "[2026-10-26T17:45:19.309Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 43mdqH2tEegrqBY1NcnAm9ZxBgmjZ5frMXEP1tzBn3kfgFDG9aA5QqXW9eznzsyRRSeYpxBCMxdHprTUyQTutpQ2",
+  "[2026-10-26T17:45:21.299Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-26T17:35:26.087Z"
+ "state_last_updated": "2026-10-26T17:46:19.205Z"
 }

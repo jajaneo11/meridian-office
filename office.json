@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T17:37:40.548391+00:00",
+ "generated_at": "2026-10-26T17:42:39.896166+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.396491
+  "sol": 1.401376
  },
  "limits": {
   "max_positions": 3,
@@ -832,12 +832,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1216,
+  "total_real": 1217,
   "today": 100,
-  "today_real": 8,
+  "today_real": 9,
   "by_type": {
-   "skip": 97,
-   "no_deploy": 1,
+   "skip": 96,
+   "no_deploy": 2,
    "deploy": 1,
    "close": 1
   },
@@ -846,6 +846,14 @@
    "MANAGER": 1
   },
   "recent": [
+   {
+    "ts": "2026-10-26T17:40:26.688Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED The pool screening passed and I selected mint-SOL as the highest-conviction candidate (strongest signals: volatility 10.05, organic 68, fee/TVL 0.82, 79% historical win rate with positive average PnL). Howeve"
+   },
    {
     "ts": "2026-10-26T17:35:26.339Z",
     "type": "close",
@@ -933,14 +941,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.253 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T16:45:00.888Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.253 < 1.1300000000000001)"
    }
   ]
  },
@@ -972,7 +972,7 @@
    },
    {
     "hour": "12:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "13:00",
@@ -992,25 +992,25 @@
    },
    {
     "hour": "17:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-26T15:25:00.557",
-  "last_management": "2026-10-26T17:35:00.691"
+  "last_screening": "2026-10-26T17:40:00.810",
+  "last_management": "2026-10-26T17:40:00.157"
  },
  "log_tail": [
-  "[2026-10-26T17:25:00.549Z] [CRON] Screening skipped \u2014 insufficient SOL (0.253 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-26T17:25:01.003Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-26T17:30:00.448Z] [CRON] Starting management cycle",
-  "[2026-10-26T17:30:00.653Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
-  "[2026-10-26T17:30:00.753Z] [CRON] Screening skipped \u2014 insufficient SOL (0.253 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-26T17:30:00.766Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-26T17:35:00.691Z] [CRON] Starting management cycle",
-  "[2026-10-26T17:35:01.048Z] [CRON] Screening skipped \u2014 insufficient SOL (0.253 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-26T17:35:01.523Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-26T17:35:13.013Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-26T17:35:13.013Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-26T17:40:00.157Z] [CRON] Starting management cycle",
+  "[2026-10-26T17:40:00.810Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-26T17:40:00.813Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.401376 SOL)",
+  "[2026-10-26T17:40:00.826Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T17:40:00.826Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T17:40:07.699Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.64% > 30%",
+  "[2026-10-26T17:40:07.700Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 60.66% > 30%",
+  "[2026-10-26T17:40:26.686Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-26T17:35:26.087Z"
 }

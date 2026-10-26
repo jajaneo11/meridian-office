@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T12:42:38.886263+00:00",
+ "generated_at": "2026-10-26T12:47:40.562925+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -835,6 +835,22 @@
   },
   "recent": [
    {
+    "ts": "2026-10-26T12:45:01.779Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.000 < 1.6300000000000001)"
+   },
+   {
+    "ts": "2026-10-26T12:45:01.062Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.000 < 1.6300000000000001)"
+   },
+   {
     "ts": "2026-10-26T12:40:01.438Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -913,22 +929,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.000 < 1.6300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T12:15:00.931Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.000 < 1.6300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T12:15:00.342Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.000 < 1.6300000000000001)"
    }
   ]
  },
@@ -964,7 +964,7 @@
    },
    {
     "hour": "08:00",
-    "count": 11
+    "count": 9
    },
    {
     "hour": "09:00",
@@ -980,25 +980,25 @@
    },
    {
     "hour": "12:00",
-    "count": 18
+    "count": 20
    }
   ]
  },
  "cycles": {
   "last_screening": null,
-  "last_management": "2026-10-26T12:40:00.568"
+  "last_management": "2026-10-26T12:45:00.827"
  },
  "log_tail": [
-  "[2026-10-26T12:30:01.566Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-26T12:30:01.716Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-26T12:35:00.264Z] [CRON] Starting management cycle",
-  "[2026-10-26T12:35:00.409Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)",
   "[2026-10-26T12:35:00.824Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-26T12:35:00.915Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)",
   "[2026-10-26T12:40:00.568Z] [CRON] Starting management cycle",
   "[2026-10-26T12:40:00.992Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)",
   "[2026-10-26T12:40:01.292Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-26T12:40:01.437Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)"
+  "[2026-10-26T12:40:01.437Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)",
+  "[2026-10-26T12:45:00.827Z] [CRON] Starting management cycle",
+  "[2026-10-26T12:45:01.061Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)",
+  "[2026-10-26T12:45:01.495Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T12:45:01.773Z] [CRON] Screening skipped \u2014 insufficient SOL (0.000 < 1.6300000000000001 needed for deploy + gas)"
  ],
  "state_last_updated": "2026-10-26T09:01:30.617Z"
 }

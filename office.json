@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T04:32:39.228207+00:00",
+ "generated_at": "2026-10-26T04:37:39.034473+00:00",
  "smart_wallets": {
   "total": 45,
   "by_category": {
@@ -824,19 +824,27 @@
  "decisions": {
   "total": 100,
   "total_real": 1214,
-  "today": 60,
+  "today": 61,
   "today_real": 6,
   "by_type": {
-   "close": 10,
    "no_deploy": 2,
    "deploy": 10,
-   "skip": 78
+   "skip": 79,
+   "close": 9
   },
   "by_actor": {
-   "MANAGER": 10,
-   "SCREENER": 90
+   "SCREENER": 91,
+   "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-26T04:35:00.894Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.393 < 1.6300000000000001)"
+   },
    {
     "ts": "2026-10-26T04:30:00.698Z",
     "type": "skip",
@@ -924,14 +932,6 @@
     "pool_name": "mint-SOL",
     "summary": "Closed at -0.64%",
     "reason_short": "Low yield: fee/TVL 1.66% < min 7% (age: 60m)"
-   },
-   {
-    "ts": "2026-10-26T03:55:01.075Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.391 < 1.6300000000000001)"
    }
   ]
  },
@@ -955,7 +955,7 @@
    },
    {
     "hour": "21:00",
-    "count": 13
+    "count": 12
    },
    {
     "hour": "22:00",
@@ -983,25 +983,25 @@
    },
    {
     "hour": "04:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-26T04:25:00.763",
-  "last_management": "2026-10-26T04:30:00.427"
+  "last_management": "2026-10-26T04:35:00.716"
  },
  "log_tail": [
-  "[2026-10-26T04:25:00.764Z] [CRON] Computed deploy amount: 1.6 SOL (wallet: 2.034469 SOL)",
-  "[2026-10-26T04:25:09.603Z] [DEPLOY] Pool: 6VfgvidT3YYMb4BKzi2FQDMQDCwcFbqfiHbqk5vphb78",
-  "[2026-10-26T04:25:09.603Z] [DEPLOY] Strategy: bid_ask, Bins: -433 to -364 (69 bins)",
   "[2026-10-26T04:25:09.603Z] [DEPLOY] Amount: 0 X, 1.6 Y",
   "[2026-10-26T04:25:09.603Z] [DEPLOY] Position: 27nDvmvCyPd7jZ9FJiY9oxgQ718KyGG3RKcdBMTXxJ9P",
   "[2026-10-26T04:25:10.401Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 5sSrmzgKfYf6DaY78hWScEnFm9E42GEwew1Z2vk8SJP3HXpAyW8zc4GryYqApvacF7hxj8xF7GQBnik7pwi3QaP9",
   "[2026-10-26T04:25:11.652Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-26T04:30:00.427Z] [CRON] Starting management cycle",
   "[2026-10-26T04:30:00.698Z] [CRON] Screening skipped \u2014 insufficient SOL (0.393 < 1.6300000000000001 needed for deploy + gas)",
-  "[2026-10-26T04:30:01.376Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-26T04:30:01.376Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-26T04:35:00.716Z] [CRON] Starting management cycle",
+  "[2026-10-26T04:35:00.893Z] [CRON] Screening skipped \u2014 insufficient SOL (0.393 < 1.6300000000000001 needed for deploy + gas)",
+  "[2026-10-26T04:35:01.595Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-26T04:31:36.909Z"
+ "state_last_updated": "2026-10-26T04:35:45.922Z"
 }

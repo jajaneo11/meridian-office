@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T18:37:39.492024+00:00",
+ "generated_at": "2026-10-26T18:42:47.830700+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 24921
    }
   ],
-  "decisions_mentioning": 4
+  "decisions_mentioning": 5
  },
  "mode": {
   "dry_run": false,
@@ -842,12 +842,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1222,
+  "total_real": 1223,
   "today": 100,
-  "today_real": 14,
+  "today_real": 15,
   "by_type": {
-   "skip": 90,
-   "no_deploy": 6,
+   "skip": 89,
+   "no_deploy": 7,
    "deploy": 2,
    "close": 2
   },
@@ -856,6 +856,14 @@
    "MANAGER": 2
   },
   "recent": [
+   {
+    "ts": "2026-10-26T18:40:19.333Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE NTRNDM-SOL (9V1Bne2pfWXf2X5y6YUPUZPQ7MpHXYcBfYB14yPTHm9C) WHY SKIPPED Both candidates came in with **zero smart wallets and no usable narrative** (both still \"generating\"), which across the board fails the standard skip gate. NTR"
+   },
    {
     "ts": "2026-10-26T18:35:06.195Z",
     "type": "no_deploy",
@@ -943,14 +951,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.258 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T17:45:19.312Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "SQUADS-SOL",
-    "summary": "Deployed 1.1 SOL with bid_ask",
-    "reason_short": "Chosen range -735\u2192-668 around active bin -668"
    }
   ]
  },
@@ -982,7 +982,7 @@
    },
    {
     "hour": "13:00",
-    "count": 20
+    "count": 19
    },
    {
     "hour": "14:00",
@@ -1002,25 +1002,25 @@
    },
    {
     "hour": "18:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-26T18:35:01.418",
-  "last_management": "2026-10-26T18:35:00.894"
+  "last_screening": "2026-10-26T18:40:00.919",
+  "last_management": "2026-10-26T18:40:00.178"
  },
  "log_tail": [
-  "[2026-10-26T18:30:06.674Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.73% > 30%",
-  "[2026-10-26T18:30:06.674Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 40.98% > 30%",
-  "[2026-10-26T18:30:34.834Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-26T18:35:00.894Z] [CRON] Starting management cycle",
-  "[2026-10-26T18:35:01.418Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-26T18:35:01.418Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
-  "[2026-10-26T18:35:01.441Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-26T18:35:01.441Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-26T18:35:02.020Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.32% > 30%",
-  "[2026-10-26T18:35:06.194Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-26T18:35:06.194Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-26T18:40:00.178Z] [CRON] Starting management cycle",
+  "[2026-10-26T18:40:00.890Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T18:40:00.890Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T18:40:00.919Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-26T18:40:00.919Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
+  "[2026-10-26T18:40:06.165Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.71% > 30%",
+  "[2026-10-26T18:40:19.333Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-26T18:16:12.317Z"
 }

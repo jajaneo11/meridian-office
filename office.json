@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T18:27:41.032344+00:00",
+ "generated_at": "2026-10-26T18:32:40.225598+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -842,12 +842,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1220,
+  "total_real": 1221,
   "today": 100,
-  "today_real": 12,
+  "today_real": 13,
   "by_type": {
-   "skip": 92,
-   "no_deploy": 4,
+   "skip": 91,
+   "no_deploy": 5,
    "deploy": 2,
    "close": 2
   },
@@ -856,6 +856,14 @@
    "MANAGER": 2
   },
   "recent": [
+   {
+    "ts": "2026-10-26T18:30:34.834Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED mint-SOL was my top pick on fundamentals (fees 124 SOL > hard gate, bots only 11%, 79% historical win rate across 14 deploys, launchpad met-dbc), but the deploy_position call was BLOCKED: active-TVL fee ratio"
+   },
    {
     "ts": "2026-10-26T18:25:09.268Z",
     "type": "no_deploy",
@@ -943,14 +951,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED The pool screening passed and I selected mint-SOL as the highest-conviction candidate (strongest signals: volatility 10.05, organic 68, fee/TVL 0.82, 79% historical win rate with positive average PnL). Howeve"
-   },
-   {
-    "ts": "2026-10-26T17:35:26.339Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "GTA6-SOL",
-    "summary": "Closed at -0.23%",
-    "reason_short": "Low yield: fee/TVL 6.97% < min 7% (age: 129m)"
    }
   ]
  },
@@ -982,7 +982,7 @@
    },
    {
     "hour": "13:00",
-    "count": 22
+    "count": 21
    },
    {
     "hour": "14:00",
@@ -1002,25 +1002,25 @@
    },
    {
     "hour": "18:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-26T18:25:00.923",
-  "last_management": "2026-10-26T18:25:00.388"
+  "last_screening": "2026-10-26T18:30:01.183",
+  "last_management": "2026-10-26T18:30:00.625"
  },
  "log_tail": [
-  "[2026-10-26T18:25:00.915Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-26T18:25:00.915Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-26T18:25:00.923Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-26T18:25:00.923Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
-  "[2026-10-26T18:25:01.259Z] [SCREENING] PVP guard: ANT-SOL has active rival Anthropic (BTZK1B3p)",
-  "[2026-10-26T18:25:01.276Z] [SCREENING] PVP guard: ANT-SOL has active rival Anthropic (BTZK1B3p)",
-  "[2026-10-26T18:25:04.444Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 40.86% > 30%",
-  "[2026-10-26T18:25:04.445Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 40.86% > 30%",
   "[2026-10-26T18:25:04.445Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 32.25% > 30%",
-  "[2026-10-26T18:25:09.267Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-26T18:25:09.267Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-26T18:30:00.625Z] [CRON] Starting management cycle",
+  "[2026-10-26T18:30:01.181Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T18:30:01.182Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T18:30:01.183Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-26T18:30:01.183Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
+  "[2026-10-26T18:30:06.674Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.73% > 30%",
+  "[2026-10-26T18:30:06.674Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 40.98% > 30%",
+  "[2026-10-26T18:30:34.834Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-26T18:16:12.317Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T18:47:39.889738+00:00",
+ "generated_at": "2026-10-26T18:52:39.783059+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 30,
    "Multihours": 13
   },
-  "active_24h": 39,
+  "active_24h": 38,
   "total_value_usd": 365329,
   "total_activity": 270,
   "top": [
@@ -842,12 +842,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1224,
+  "total_real": 1225,
   "today": 100,
-  "today_real": 16,
+  "today_real": 17,
   "by_type": {
-   "skip": 88,
-   "no_deploy": 8,
+   "skip": 87,
+   "no_deploy": 9,
    "deploy": 2,
    "close": 2
   },
@@ -856,6 +856,14 @@
    "MANAGER": 2
   },
   "recent": [
+   {
+    "ts": "2026-10-26T18:50:13.515Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Deploy attempt failed \u2014 the `deploy_position` tool was blocked twice (first: \"Pool undefined not found\", then \"already attempted this session \u2014 do not retry\"). No on-chain position was opened, so I will not claim a deploy. BEST LOOKING CANDIDATE mint-SOL WHY SKIPPED The selected candidat"
+   },
    {
     "ts": "2026-10-26T18:45:15.910Z",
     "type": "no_deploy",
@@ -943,14 +951,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.258 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-26T17:55:01.136Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.258 < 1.1300000000000001)"
    }
   ]
  },
@@ -982,7 +982,7 @@
    },
    {
     "hour": "13:00",
-    "count": 18
+    "count": 17
    },
    {
     "hour": "14:00",
@@ -1002,25 +1002,25 @@
    },
    {
     "hour": "18:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-26T18:45:00.990",
-  "last_management": "2026-10-26T18:45:00.477"
+  "last_screening": "2026-10-26T18:50:01.315",
+  "last_management": "2026-10-26T18:50:00.770"
  },
  "log_tail": [
-  "[2026-10-26T18:40:00.919Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-26T18:40:00.919Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
-  "[2026-10-26T18:40:06.165Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.71% > 30%",
-  "[2026-10-26T18:40:19.333Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-26T18:45:00.477Z] [CRON] Starting management cycle",
-  "[2026-10-26T18:45:00.990Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-26T18:45:00.990Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
-  "[2026-10-26T18:45:01.110Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-26T18:45:01.110Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-26T18:45:15.909Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-26T18:45:15.909Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-26T18:50:00.770Z] [CRON] Starting management cycle",
+  "[2026-10-26T18:50:01.315Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-26T18:50:01.315Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.258307 SOL)",
+  "[2026-10-26T18:50:01.326Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-26T18:50:01.326Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-26T18:50:03.093Z] [SCREENING] Bot-holder filter: dropped XD-SOL \u2014 bots 31.35% > 30%",
+  "[2026-10-26T18:50:03.093Z] [SCREENING] Bot-holder filter: dropped ANT-SOL \u2014 bots 40.75% > 30%",
+  "[2026-10-26T18:50:13.514Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-26T18:16:12.317Z"
 }

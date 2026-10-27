@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T04:07:41.111277+00:00",
+ "generated_at": "2026-10-27T04:12:41.349434+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.386711
+  "sol": 1.433964
  },
  "limits": {
   "max_positions": 3,
@@ -57,13 +57,24 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 82
+  "open_count": 1,
+  "open": [
+   {
+    "id": "9wxW3jvNPDdk2DuRDrksJNwHEyGjMiBckbXKb84EG2bu",
+    "pool": "ELON2028-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-27T04:10:14.429Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 1.1,
+    "amount_sol": 1.1
+   }
+  ],
+  "total_tracked": 83
  },
  "pnl": {
-  "last24h_usd": -24.11,
-  "fees24h_usd": 36.04,
+  "last24h_usd": -24.17,
+  "fees24h_usd": 35.82,
   "all_time_usd": 28.68,
   "closed_total": 82,
   "win_rate_pct": 66
@@ -892,13 +903,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1232,
-  "today": 54,
-  "today_real": 4,
+  "total_real": 1233,
+  "today": 55,
+  "today_real": 5,
   "by_type": {
-   "skip": 90,
+   "skip": 89,
    "close": 5,
-   "deploy": 4,
+   "deploy": 5,
    "no_deploy": 1
   },
   "by_actor": {
@@ -906,6 +917,14 @@
    "MANAGER": 5
   },
   "recent": [
+   {
+    "ts": "2026-10-27T04:10:14.431Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "ELON2028-SOL",
+    "summary": "Deployed 1.1 SOL with bid_ask",
+    "reason_short": "Chosen range -580\u2192-514 around active bin -514"
+   },
    {
     "ts": "2026-10-27T04:05:14.930Z",
     "type": "close",
@@ -993,14 +1012,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.245 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-27T03:15:00.782Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.245 < 1.1300000000000001)"
    }
   ]
  },
@@ -1020,7 +1031,7 @@
    },
    {
     "hour": "20:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "21:00",
@@ -1052,25 +1063,25 @@
    },
    {
     "hour": "04:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-27T02:55:01.231",
-  "last_management": "2026-10-27T04:05:00.682"
+  "last_screening": "2026-10-27T04:10:01.541",
+  "last_management": "2026-10-27T04:10:00.949"
  },
  "log_tail": [
-  "[2026-10-27T03:55:00.324Z] [CRON] Starting management cycle",
-  "[2026-10-27T03:55:00.567Z] [CRON] Screening skipped \u2014 insufficient SOL (0.245 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-27T03:55:01.110Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T04:00:00.525Z] [CRON] Starting management cycle",
-  "[2026-10-27T04:00:00.786Z] [CRON] Screening skipped \u2014 insufficient SOL (0.245 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-27T04:00:01.231Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T04:05:00.682Z] [CRON] Starting management cycle",
-  "[2026-10-27T04:05:00.960Z] [CRON] Screening skipped \u2014 insufficient SOL (0.245 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-27T04:05:01.350Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-27T04:05:08.580Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-27T04:10:01.542Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.433964 SOL)",
+  "[2026-10-27T04:10:01.793Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-27T04:10:07.564Z] [SCREENING] Bot-holder filter: dropped wiener-SOL \u2014 bots 46.44% > 30%",
+  "[2026-10-27T04:10:07.564Z] [SCREENING] Bot-holder filter: dropped HACHI-SOL \u2014 bots 34.88% > 30%",
+  "[2026-10-27T04:10:11.848Z] [DEPLOY] Pool: HsG4A9hGVUAU2WQu2QtsY4acsuyoCJKKRHmy4a4YfuTm",
+  "[2026-10-27T04:10:11.848Z] [DEPLOY] Strategy: bid_ask, Bins: -580 to -514 (66 bins)",
+  "[2026-10-27T04:10:11.848Z] [DEPLOY] Amount: 0 X, 1.1 Y",
+  "[2026-10-27T04:10:11.848Z] [DEPLOY] Position: 9wxW3jvNPDdk2DuRDrksJNwHEyGjMiBckbXKb84EG2bu",
+  "[2026-10-27T04:10:14.425Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3oktcrDjQTvMonCVYK6T9KMRU4ZKYUqE2p14Dznk33DrkvJs8WgD4dCM4MRenp2y4hnP3TA2M6L3PKXGZC7evZeK",
+  "[2026-10-27T04:10:15.963Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-27T04:05:14.620Z"
+ "state_last_updated": "2026-10-27T04:11:17.682Z"
 }

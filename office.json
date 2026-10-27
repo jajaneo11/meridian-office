@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T22:03:02.525661+00:00",
+ "generated_at": "2026-10-27T22:27:43.626960+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -62,8 +62,8 @@
   "total_tracked": 86
  },
  "pnl": {
-  "last24h_usd": 11.78,
-  "fees24h_usd": 23.81,
+  "last24h_usd": 10.66,
+  "fees24h_usd": 21.07,
   "all_time_usd": 32.18,
   "closed_total": 86,
   "win_rate_pct": 67

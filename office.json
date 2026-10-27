@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T03:37:39.342994+00:00",
+ "generated_at": "2026-10-27T03:42:39.520130+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -894,7 +894,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1232,
-  "today": 47,
+  "today": 48,
   "today_real": 4,
   "by_type": {
    "skip": 91,
@@ -907,6 +907,14 @@
    "MANAGER": 4
   },
   "recent": [
+   {
+    "ts": "2026-10-27T03:40:00.870Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.245 < 1.1300000000000001)"
+   },
    {
     "ts": "2026-10-27T03:35:00.673Z",
     "type": "skip",
@@ -994,14 +1002,6 @@
     "pool_name": "Nothing-SOL",
     "summary": "Deployed 1.1 SOL with bid_ask",
     "reason_short": "Chosen range -564\u2192-495 around active bin -495"
-   },
-   {
-    "ts": "2026-10-27T02:45:16.750Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Nothing-SOL (DUBg37xCb2W6eqrhjNPLipvSZSdvxgYpi1SgK2qYv93Z) WHY SKIPPED The top-conviction pick (Nothing-SOL, volatility 7.64, organic 76, fees 90.4 SOL, smart wallet present, +20.79% momentum) was blocked by the deployment tool: "
    }
   ]
  },
@@ -1021,7 +1021,7 @@
    },
    {
     "hour": "19:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "20:00",
@@ -1053,25 +1053,25 @@
    },
    {
     "hour": "03:00",
-    "count": 8
+    "count": 9
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-27T02:55:01.231",
-  "last_management": "2026-10-27T03:35:00.393"
+  "last_management": "2026-10-27T03:40:00.586"
  },
  "log_tail": [
-  "[2026-10-27T03:20:01.597Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T03:25:00.035Z] [CRON] Starting management cycle",
-  "[2026-10-27T03:25:00.312Z] [CRON] Screening skipped \u2014 insufficient SOL (0.245 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-27T03:25:00.740Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-27T03:30:00.203Z] [CRON] Starting management cycle",
   "[2026-10-27T03:30:00.455Z] [CRON] Screening skipped \u2014 insufficient SOL (0.245 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-27T03:30:00.952Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-27T03:35:00.393Z] [CRON] Starting management cycle",
   "[2026-10-27T03:35:00.672Z] [CRON] Screening skipped \u2014 insufficient SOL (0.245 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-27T03:35:01.089Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-27T03:35:01.089Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-27T03:40:00.586Z] [CRON] Starting management cycle",
+  "[2026-10-27T03:40:00.869Z] [CRON] Screening skipped \u2014 insufficient SOL (0.245 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-27T03:40:01.348Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-27T03:37:26.333Z"
+ "state_last_updated": "2026-10-27T03:42:35.280Z"
 }

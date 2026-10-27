@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T09:37:40.447133+00:00",
+ "generated_at": "2026-10-27T09:42:40.170526+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 85
+  "open_count": 1,
+  "open": [
+   {
+    "id": "H8YYXbKepKvbNdhCMp42dMzuTEtZZnxJFxFoxTVzrswa",
+    "pool": "LAUNCH-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-27T09:40:17.169Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.3
+   }
+  ],
+  "total_tracked": 86
  },
  "pnl": {
   "last24h_usd": 3.22,
@@ -922,20 +933,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1245,
+  "total_real": 1246,
   "today": 100,
-  "today_real": 17,
+  "today_real": 18,
   "by_type": {
-   "skip": 75,
    "close": 8,
-   "deploy": 6,
+   "skip": 74,
+   "deploy": 7,
    "no_deploy": 11
   },
   "by_actor": {
-   "SCREENER": 92,
-   "MANAGER": 8
+   "MANAGER": 8,
+   "SCREENER": 92
   },
   "recent": [
+   {
+    "ts": "2026-10-27T09:40:17.179Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "LAUNCH-SOL",
+    "summary": "Deployed 1.3 SOL with bid_ask",
+    "reason_short": "Chosen range -428\u2192-359 around active bin -359"
+   },
    {
     "ts": "2026-10-27T09:35:32.163Z",
     "type": "no_deploy",
@@ -1023,14 +1042,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.064 < 1.33)"
-   },
-   {
-    "ts": "2026-10-27T08:45:01.045Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.064 < 1.33)"
    }
   ]
  },
@@ -1054,7 +1065,7 @@
    },
    {
     "hour": "02:00",
-    "count": 13
+    "count": 12
    },
    {
     "hour": "03:00",
@@ -1082,25 +1093,25 @@
    },
    {
     "hour": "09:00",
-    "count": 9
+    "count": 10
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-27T09:35:00.835",
-  "last_management": "2026-10-27T09:35:00.307"
+  "last_screening": "2026-10-27T09:40:01.075",
+  "last_management": "2026-10-27T09:40:00.543"
  },
  "log_tail": [
-  "[2026-10-27T09:25:01.542Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T09:30:00.009Z] [CRON] Starting management cycle",
-  "[2026-10-27T09:30:00.429Z] [CRON] Screening skipped \u2014 insufficient SOL (0.064 < 1.33 needed for deploy + gas)",
-  "[2026-10-27T09:30:00.888Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-27T09:35:00.307Z] [CRON] Starting management cycle",
-  "[2026-10-27T09:35:00.818Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-27T09:35:00.819Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-27T09:35:00.835Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-27T09:35:00.835Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.553896 SOL)",
-  "[2026-10-27T09:35:32.163Z] [AGENT] \u26d4 NO DEPLOY \u2014 TOOL FAILURE"
+  "[2026-10-27T09:40:01.026Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-27T09:40:01.075Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-27T09:40:01.075Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.553896 SOL)",
+  "[2026-10-27T09:40:01.578Z] [SCREENING] Filtered cooldown token ELON2028 (8BnNS15Q)",
+  "[2026-10-27T09:40:11.126Z] [DEPLOY] Pool: 2H2TNJuqivWWM87oZF3pgBa7KhH3ugo6qea5rjkFey2b",
+  "[2026-10-27T09:40:11.126Z] [DEPLOY] Strategy: bid_ask, Bins: -428 to -359 (69 bins)",
+  "[2026-10-27T09:40:11.126Z] [DEPLOY] Amount: 0 X, 1.3 Y",
+  "[2026-10-27T09:40:11.126Z] [DEPLOY] Position: H8YYXbKepKvbNdhCMp42dMzuTEtZZnxJFxFoxTVzrswa",
+  "[2026-10-27T09:40:17.153Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 294EyZRaP3oFR5PnE6ypR795CBGfm8bhFGzAYm8BaeM4ZAYRoS8u2pD85oRxf2231E9YvvSBrZWfHCF1jj24xwGV",
+  "[2026-10-27T09:40:19.156Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-27T08:06:04.050Z"
+ "state_last_updated": "2026-10-27T09:40:17.170Z"
 }

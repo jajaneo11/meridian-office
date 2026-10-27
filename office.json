@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T10:02:39.597787+00:00",
+ "generated_at": "2026-10-27T10:07:40.708312+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 23342
    }
   ],
-  "decisions_mentioning": 6
+  "decisions_mentioning": 7
  },
  "mode": {
   "dry_run": false,
@@ -932,20 +932,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1248,
+  "total_real": 1249,
   "today": 100,
-  "today_real": 20,
+  "today_real": 21,
   "by_type": {
-   "deploy": 7,
    "skip": 72,
    "close": 8,
-   "no_deploy": 13
+   "no_deploy": 14,
+   "deploy": 6
   },
   "by_actor": {
    "SCREENER": 92,
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-27T10:06:29.685Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-USDC (5Ey2p65wMh1KMBB1MkiUGenRegei9mAKvFm9urShnpuU) WHY SKIPPED My chosen candidate \u2014 LAUNCH-USDC \u2014 was the clear winner (fee/TVL 1.04%, vol $165K, organic 90, 3 smart wallets, low top10). But its deposit side is USDC, and"
+   },
    {
     "ts": "2026-10-27T10:00:15.771Z",
     "type": "no_deploy",
@@ -1033,14 +1041,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.064 < 1.33)"
-   },
-   {
-    "ts": "2026-10-27T09:15:00.879Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.064 < 1.33)"
    }
   ]
  },
@@ -1060,7 +1060,7 @@
    },
    {
     "hour": "02:00",
-    "count": 7
+    "count": 6
    },
    {
     "hour": "03:00",
@@ -1092,25 +1092,25 @@
    },
    {
     "hour": "10:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-27T10:00:01.137",
-  "last_management": "2026-10-27T10:00:00.497"
+  "last_screening": "2026-10-27T10:05:01.279",
+  "last_management": "2026-10-27T10:05:00.771"
  },
  "log_tail": [
-  "[2026-10-27T10:00:09.560Z] [DEPLOY] Strategy: bid_ask, Bins: -778 to -709 (69 bins)",
-  "[2026-10-27T10:00:09.560Z] [DEPLOY] Amount: 0 X, 1.3 Y",
-  "[2026-10-27T10:00:09.560Z] [DEPLOY] Position: 4eygXJiWhwB33bqYgCvVxoH3rWAiABZa8sZaFomuJPQi",
+  "[2026-10-27T10:06:21.077Z] [DEPLOY] Strategy: bid_ask, Bins: -760 to -709 (51 bins)",
+  "[2026-10-27T10:06:21.077Z] [DEPLOY] Amount: 0 X, 1.3 Y",
+  "[2026-10-27T10:06:21.077Z] [DEPLOY] Position: 2a3x2X7Jwks5cHPJ2xuddmSKBh5W3xMc8V8Waff1fBmz",
   "  \u2022 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
   "  \u2022 Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo failed: custom program error: 0x1{\"InstructionError\":[2,{\"Custom\":1}]}",
-  "[2026-10-27T10:00:09.920Z] [DEPLOY_ERROR] Simulation failed.",
+  "[2026-10-27T10:06:21.290Z] [DEPLOY_ERROR] Simulation failed.",
   "Message: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1.",
   "  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1\",",
   "  \"Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo failed: custom program error: 0x1\"",
-  "[2026-10-27T10:00:15.771Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-27T10:06:29.684Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-27T09:51:27.753Z"
 }

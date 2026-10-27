@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T08:12:39.127967+00:00",
+ "generated_at": "2026-10-27T08:17:39.711412+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -937,6 +937,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-27T08:15:01.347Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.064 < 1.33)"
+   },
+   {
     "ts": "2026-10-27T08:10:01.117Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -1023,14 +1031,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE REMUS-SOL WHY SKIPPED REMUS is a name in a crowded meme ecosystem with a clear PVP symbol conflict \u2014 search returns at least 3 different REMUS mints trading against SOL, which is a major negative signal for fee capture and makes "
-   },
-   {
-    "ts": "2026-10-27T07:20:00.981Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "No candidates available",
-    "reason_short": "- Nothing-SOL: token cooldown active"
    }
   ]
  },
@@ -1050,7 +1050,7 @@
    },
    {
     "hour": "00:00",
-    "count": 4
+    "count": 3
    },
    {
     "hour": "01:00",
@@ -1082,25 +1082,25 @@
    },
    {
     "hour": "08:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-27T07:35:01.782",
-  "last_management": "2026-10-27T08:10:00.547"
+  "last_management": "2026-10-27T08:15:00.819"
  },
  "log_tail": [
-  "[2026-10-27T07:55:01.515Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T08:00:00.026Z] [CRON] Starting management cycle",
-  "[2026-10-27T08:00:00.366Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.33 needed for deploy + gas)",
   "[2026-10-27T08:00:00.832Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-27T08:05:00.307Z] [CRON] Starting management cycle",
   "[2026-10-27T08:05:00.557Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.33 needed for deploy + gas)",
   "[2026-10-27T08:05:01.061Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-27T08:10:00.547Z] [CRON] Starting management cycle",
   "[2026-10-27T08:10:01.117Z] [CRON] Screening skipped \u2014 insufficient SOL (0.064 < 1.33 needed for deploy + gas)",
-  "[2026-10-27T08:10:01.126Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-27T08:10:01.126Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-27T08:15:00.819Z] [CRON] Starting management cycle",
+  "[2026-10-27T08:15:01.347Z] [CRON] Screening skipped \u2014 insufficient SOL (0.064 < 1.33 needed for deploy + gas)",
+  "[2026-10-27T08:15:01.379Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-27T08:06:04.050Z"
 }

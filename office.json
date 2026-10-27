@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T01:07:43.273698+00:00",
+ "generated_at": "2026-10-27T01:12:40.670574+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -864,7 +864,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1228,
-  "today": 14,
+  "today": 15,
   "today_real": 0,
   "by_type": {
    "skip": 85,
@@ -877,6 +877,14 @@
    "MANAGER": 3
   },
   "recent": [
+   {
+    "ts": "2026-10-27T01:10:00.884Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.125 < 1.1300000000000001)"
+   },
    {
     "ts": "2026-10-27T01:05:00.647Z",
     "type": "skip",
@@ -964,14 +972,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.125 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-27T00:10:01.152Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.125 < 1.1300000000000001)"
    }
   ]
  },
@@ -991,7 +991,7 @@
    },
    {
     "hour": "17:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "18:00",
@@ -1023,25 +1023,25 @@
    },
    {
     "hour": "01:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
   "last_screening": null,
-  "last_management": "2026-10-27T01:05:00.400"
+  "last_management": "2026-10-27T01:10:00.583"
  },
  "log_tail": [
-  "[2026-10-27T00:55:01.187Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-27T00:55:01.666Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T01:00:00.191Z] [CRON] Starting management cycle",
   "[2026-10-27T01:00:00.205Z] [CRON] Starting morning briefing",
   "[2026-10-27T01:00:00.302Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-27T01:00:00.403Z] [TELEGRAM_ERROR] sendMessage 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Unsupported start tag \\\"=\\\" at byte offset 1076\"}",
   "[2026-10-27T01:00:01.137Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-27T01:05:00.400Z] [CRON] Starting management cycle",
   "[2026-10-27T01:05:00.647Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-27T01:05:01.236Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-27T01:05:01.236Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-27T01:10:00.583Z] [CRON] Starting management cycle",
+  "[2026-10-27T01:10:00.883Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-27T01:10:01.389Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-27T01:00:00.405Z"
 }

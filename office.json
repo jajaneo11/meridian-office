@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T06:57:39.763349+00:00",
+ "generated_at": "2026-10-27T07:02:42.708012+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 23275
    }
   ],
-  "decisions_mentioning": 2
+  "decisions_mentioning": 3
  },
  "mode": {
   "dry_run": false,
@@ -912,20 +912,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1235,
-  "today": 92,
-  "today_real": 7,
+  "total_real": 1236,
+  "today": 93,
+  "today_real": 8,
   "by_type": {
-   "skip": 87,
+   "skip": 86,
    "close": 6,
    "deploy": 5,
-   "no_deploy": 2
+   "no_deploy": 3
   },
   "by_actor": {
    "SCREENER": 94,
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-27T07:00:07.865Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED BORDR passes the hard fee gate (420.92 SOL) and bin_step=100, but it has no narrative, no smart wallets, and a poor pool memory \u2014 1 prior deploy with PnL -0.05%, 0% win rate, closed for low yield. The other "
+   },
    {
     "ts": "2026-10-27T06:55:14.216Z",
     "type": "no_deploy",
@@ -1013,23 +1021,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.336 < 1.33)"
-   },
-   {
-    "ts": "2026-10-27T06:09:55.774Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.336 < 1.33)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "19:00",
-    "count": 0
-   },
    {
     "hour": "20:00",
     "count": 0
@@ -1044,7 +1040,7 @@
    },
    {
     "hour": "23:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "00:00",
@@ -1073,24 +1069,28 @@
    {
     "hour": "06:00",
     "count": 14
+   },
+   {
+    "hour": "07:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-27T06:55:01.395",
-  "last_management": "2026-10-27T06:55:00.816"
+  "last_screening": "2026-10-27T07:00:00.658",
+  "last_management": "2026-10-27T07:00:00.092"
  },
  "log_tail": [
-  "[2026-10-27T06:50:00.582Z] [CRON] Starting management cycle",
-  "[2026-10-27T06:50:00.708Z] [CRON] Screening skipped \u2014 insufficient SOL (0.336 < 1.33 needed for deploy + gas)",
-  "[2026-10-27T06:50:01.319Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T06:50:57.664Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-27T06:55:00.816Z] [CRON] Starting management cycle",
-  "[2026-10-27T06:55:01.395Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-27T06:55:01.396Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.467175 SOL)",
   "[2026-10-27T06:55:01.556Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-27T06:55:01.556Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-27T06:55:14.214Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-27T06:55:14.214Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-27T07:00:00.092Z] [CRON] Starting management cycle",
+  "[2026-10-27T07:00:00.658Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-27T07:00:00.658Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.467175 SOL)",
+  "[2026-10-27T07:00:00.715Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-27T07:00:00.716Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-27T07:00:01.070Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-27T07:00:07.864Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-27T06:51:18.168Z"
 }

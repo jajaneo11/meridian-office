@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T07:57:40.535930+00:00",
+ "generated_at": "2026-10-27T08:02:39.934466+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -938,6 +938,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-27T08:00:00.366Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.125 < 1.33)"
+   },
+   {
     "ts": "2026-10-27T07:55:01.129Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -1024,23 +1032,11 @@
     "pool_name": null,
     "summary": "No candidates available",
     "reason_short": "- HACHI-SOL: bot holders 34.66% > 30%"
-   },
-   {
-    "ts": "2026-10-27T07:00:07.865Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE BORDR-SOL WHY SKIPPED BORDR passes the hard fee gate (420.92 SOL) and bin_step=100, but it has no narrative, no smart wallets, and a poor pool memory \u2014 1 prior deploy with PnL -0.05%, 0% win rate, closed for low yield. The other "
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "20:00",
-    "count": 0
-   },
    {
     "hour": "21:00",
     "count": 0
@@ -1055,7 +1051,7 @@
    },
    {
     "hour": "00:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "01:00",
@@ -1084,24 +1080,28 @@
    {
     "hour": "07:00",
     "count": 12
+   },
+   {
+    "hour": "08:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-27T07:35:01.782",
-  "last_management": "2026-10-27T07:55:00.796"
+  "last_management": "2026-10-27T08:00:00.026"
  },
  "log_tail": [
-  "[2026-10-27T07:40:01.076Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T07:45:00.383Z] [CRON] Starting management cycle",
-  "[2026-10-27T07:45:00.627Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.33 needed for deploy + gas)",
   "[2026-10-27T07:45:01.138Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-27T07:50:00.577Z] [CRON] Starting management cycle",
   "[2026-10-27T07:50:00.869Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.33 needed for deploy + gas)",
   "[2026-10-27T07:50:01.404Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-27T07:55:00.796Z] [CRON] Starting management cycle",
   "[2026-10-27T07:55:01.129Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.33 needed for deploy + gas)",
-  "[2026-10-27T07:55:01.515Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-27T07:55:01.515Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-27T08:00:00.026Z] [CRON] Starting management cycle",
+  "[2026-10-27T08:00:00.366Z] [CRON] Screening skipped \u2014 insufficient SOL (0.125 < 1.33 needed for deploy + gas)",
+  "[2026-10-27T08:00:00.832Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
  "state_last_updated": "2026-10-27T07:51:37.418Z"
 }

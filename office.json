@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T09:57:39.362717+00:00",
+ "generated_at": "2026-10-27T10:02:39.597787+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -7,24 +7,24 @@
    "Degen": 30,
    "Multihours": 13
   },
-  "active_24h": 38,
-  "total_value_usd": 362366,
+  "active_24h": 40,
+  "total_value_usd": 356557,
   "total_activity": 270,
   "top": [
    {
     "name": "Degen #27",
     "category": "Degen",
-    "value_usd": 126059
+    "value_usd": 126076
    },
    {
     "name": "Whale #2 (GMGN)",
     "category": "alpha",
-    "value_usd": 58230
+    "value_usd": 57601
    },
    {
     "name": "Whale #4 (GMGN)",
     "category": "alpha",
-    "value_usd": 39994
+    "value_usd": 39193
    },
    {
     "name": "Whale LP #1",
@@ -34,10 +34,10 @@
    {
     "name": "Multihours #6",
     "category": "Multihours",
-    "value_usd": 23275
+    "value_usd": 23342
    }
   ],
-  "decisions_mentioning": 5
+  "decisions_mentioning": 6
  },
  "mode": {
   "dry_run": false,
@@ -932,20 +932,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1247,
+  "total_real": 1248,
   "today": 100,
-  "today_real": 19,
+  "today_real": 20,
   "by_type": {
-   "skip": 73,
    "deploy": 7,
+   "skip": 72,
    "close": 8,
-   "no_deploy": 12
+   "no_deploy": 13
   },
   "by_actor": {
    "SCREENER": 92,
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-27T10:00:15.771Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-USDC (5Ey2p65wMh1KMBB1MkiUGenRegei9mAKvFm9urShnpuU) WHY SKIPPED I selected LAUNCH-USDC as the top candidate (fee/TVL 1.17%, vol $142K, volatility 2.54, organic 90, 2 smart wallets) and called deploy_position. The on-chain "
+   },
    {
     "ts": "2026-10-27T09:55:25.128Z",
     "type": "no_deploy",
@@ -1033,23 +1041,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.064 < 1.33)"
-   },
-   {
-    "ts": "2026-10-27T09:10:01.762Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.064 < 1.33)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "22:00",
-    "count": 0
-   },
    {
     "hour": "23:00",
     "count": 0
@@ -1064,7 +1060,7 @@
    },
    {
     "hour": "02:00",
-    "count": 8
+    "count": 7
    },
    {
     "hour": "03:00",
@@ -1093,24 +1089,28 @@
    {
     "hour": "09:00",
     "count": 14
+   },
+   {
+    "hour": "10:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-27T09:55:00.787",
-  "last_management": "2026-10-27T09:55:00.221"
+  "last_screening": "2026-10-27T10:00:01.137",
+  "last_management": "2026-10-27T10:00:00.497"
  },
  "log_tail": [
-  "[2026-10-27T09:50:01.244Z] [CRON] Screening skipped \u2014 insufficient SOL (0.212 < 1.33 needed for deploy + gas)",
-  "[2026-10-27T09:50:01.647Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T09:51:05.851Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-27T09:55:00.221Z] [CRON] Starting management cycle",
-  "[2026-10-27T09:55:00.787Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-27T09:55:00.787Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.553888 SOL)",
-  "[2026-10-27T09:55:00.792Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-27T09:55:00.792Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-27T09:55:00.982Z] [SCREENING] Filtered cooldown token ELON2028 (8BnNS15Q)",
-  "[2026-10-27T09:55:25.128Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-27T10:00:09.560Z] [DEPLOY] Strategy: bid_ask, Bins: -778 to -709 (69 bins)",
+  "[2026-10-27T10:00:09.560Z] [DEPLOY] Amount: 0 X, 1.3 Y",
+  "[2026-10-27T10:00:09.560Z] [DEPLOY] Position: 4eygXJiWhwB33bqYgCvVxoH3rWAiABZa8sZaFomuJPQi",
+  "  \u2022 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+  "  \u2022 Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo failed: custom program error: 0x1{\"InstructionError\":[2,{\"Custom\":1}]}",
+  "[2026-10-27T10:00:09.920Z] [DEPLOY_ERROR] Simulation failed.",
+  "Message: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1.",
+  "  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1\",",
+  "  \"Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo failed: custom program error: 0x1\"",
+  "[2026-10-27T10:00:15.771Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-27T09:51:27.753Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T07:12:40.043766+00:00",
+ "generated_at": "2026-10-27T07:17:41.248793+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -912,20 +912,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1238,
-  "today": 95,
-  "today_real": 10,
+  "total_real": 1239,
+  "today": 96,
+  "today_real": 11,
   "by_type": {
-   "skip": 84,
+   "skip": 83,
    "close": 6,
    "deploy": 5,
-   "no_deploy": 5
+   "no_deploy": 6
   },
   "by_actor": {
    "SCREENER": 94,
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-27T07:15:02.020Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No candidates available",
+    "reason_short": "All candidates filtered before deploy"
+   },
    {
     "ts": "2026-10-27T07:10:01.508Z",
     "type": "no_deploy",
@@ -1013,14 +1021,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.336 < 1.33)"
-   },
-   {
-    "ts": "2026-10-27T06:20:00.452Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.336 < 1.33)"
    }
   ]
  },
@@ -1040,7 +1040,7 @@
    },
    {
     "hour": "23:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "00:00",
@@ -1072,25 +1072,25 @@
    },
    {
     "hour": "07:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-27T07:10:00.843",
-  "last_management": "2026-10-27T07:10:00.643"
+  "last_screening": "2026-10-27T07:15:01.430",
+  "last_management": "2026-10-27T07:15:00.893"
  },
  "log_tail": [
-  "[2026-10-27T07:05:00.882Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-27T07:05:05.659Z] [SCREENING] Bot-holder filter: dropped HACHI-SOL \u2014 bots 34.66% > 30%",
-  "[2026-10-27T07:10:00.643Z] [CRON] Starting management cycle",
-  "[2026-10-27T07:10:00.843Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
-  "[2026-10-27T07:10:00.843Z] [TELEGRAM_ERROR] sendChatAction failed: fetch failed",
   "[2026-10-27T07:10:00.843Z] [TELEGRAM_ERROR] sendMessage failed: fetch failed",
   "[2026-10-27T07:10:00.843Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-27T07:10:00.843Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.467175 SOL)",
   "[2026-10-27T07:10:00.963Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-27T07:10:00.963Z] [CRON] Screening skipped \u2014 previous cycle still running"
+  "[2026-10-27T07:10:00.963Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-27T07:15:00.893Z] [CRON] Starting management cycle",
+  "[2026-10-27T07:15:01.430Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-27T07:15:01.431Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.467175 SOL)",
+  "[2026-10-27T07:15:01.483Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-27T07:15:01.483Z] [CRON] Screening skipped \u2014 previous cycle still running"
  ],
  "state_last_updated": "2026-10-27T06:51:18.168Z"
 }

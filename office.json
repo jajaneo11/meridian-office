@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T06:52:40.177483+00:00",
+ "generated_at": "2026-10-27T06:57:39.763349+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 23275
    }
   ],
-  "decisions_mentioning": 1
+  "decisions_mentioning": 2
  },
  "mode": {
   "dry_run": false,
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": null
+  "sol": 1.467175
  },
  "limits": {
   "max_positions": 3,
@@ -912,20 +912,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1234,
-  "today": 91,
-  "today_real": 6,
+  "total_real": 1235,
+  "today": 92,
+  "today_real": 7,
   "by_type": {
-   "skip": 88,
+   "skip": 87,
    "close": 6,
    "deploy": 5,
-   "no_deploy": 1
+   "no_deploy": 2
   },
   "by_actor": {
    "SCREENER": 94,
    "MANAGER": 6
   },
   "recent": [
+   {
+    "ts": "2026-10-27T06:55:14.216Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE REMUS-SOL WHY SKIPPED None of the three candidates cleared the conviction bar. ARROW had the strongest volatility (5.17) but is hard-disqualified \u2014 fees_sol = 22.95 (< 30 gate), a classic bundled/scam signal that cannot be overri"
+   },
    {
     "ts": "2026-10-27T06:51:18.474Z",
     "type": "close",
@@ -1013,14 +1021,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.336 < 1.33)"
-   },
-   {
-    "ts": "2026-10-27T06:05:00.466Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.314 < 1.33)"
    }
   ]
  },
@@ -1044,7 +1044,7 @@
    },
    {
     "hour": "23:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "00:00",
@@ -1072,25 +1072,25 @@
    },
    {
     "hour": "06:00",
-    "count": 13
+    "count": 14
    }
   ]
  },
  "cycles": {
-  "last_screening": null,
-  "last_management": "2026-10-27T06:50:00.582"
+  "last_screening": "2026-10-27T06:55:01.395",
+  "last_management": "2026-10-27T06:55:00.816"
  },
  "log_tail": [
-  "[2026-10-27T06:40:00.110Z] [CRON] Starting management cycle",
-  "[2026-10-27T06:40:00.358Z] [CRON] Screening skipped \u2014 insufficient SOL (0.336 < 1.33 needed for deploy + gas)",
-  "[2026-10-27T06:40:00.857Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T06:45:00.364Z] [CRON] Starting management cycle",
-  "[2026-10-27T06:45:00.555Z] [CRON] Screening skipped \u2014 insufficient SOL (0.336 < 1.33 needed for deploy + gas)",
-  "[2026-10-27T06:45:01.043Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-27T06:50:00.582Z] [CRON] Starting management cycle",
   "[2026-10-27T06:50:00.708Z] [CRON] Screening skipped \u2014 insufficient SOL (0.336 < 1.33 needed for deploy + gas)",
   "[2026-10-27T06:50:01.319Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-27T06:50:57.664Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-27T06:50:57.664Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-27T06:55:00.816Z] [CRON] Starting management cycle",
+  "[2026-10-27T06:55:01.395Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-27T06:55:01.396Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.467175 SOL)",
+  "[2026-10-27T06:55:01.556Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-27T06:55:01.556Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-27T06:55:14.214Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-27T06:51:18.168Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T13:07:39.414471+00:00",
+ "generated_at": "2026-10-28T13:12:42.293188+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -1077,16 +1077,24 @@
   "today": 100,
   "today_real": 36,
   "by_type": {
-   "skip": 59,
    "close": 10,
    "deploy": 10,
+   "skip": 59,
    "no_deploy": 21
   },
   "by_actor": {
-   "SCREENER": 90,
-   "MANAGER": 10
+   "MANAGER": 10,
+   "SCREENER": 90
   },
   "recent": [
+   {
+    "ts": "2026-10-28T13:10:01.222Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.055 < 1.1300000000000001)"
+   },
    {
     "ts": "2026-10-28T13:06:55.224Z",
     "type": "deploy",
@@ -1174,14 +1182,6 @@
     "pool_name": "LAUNCH-SOL",
     "summary": "Deployed 1.3 SOL with bid_ask",
     "reason_short": "Chosen range -570\u2192-501 around active bin -501"
-   },
-   {
-    "ts": "2026-10-28T12:34:15.661Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "Based on my screening of all 6 pre-loaded candidates, none survive the hard gates and risk filters: **Hard rule check:** - **XD-SOL**: fees = 27.54 SOL < 30 \u2192 **HARD SKIP** (bundled/scam signal) - All others pass the fees gate. **Risk signal check:** - **ALL 6 pools have narrative = \"being generated"
    }
   ]
  },
@@ -1205,7 +1205,7 @@
    },
    {
     "hour": "06:00",
-    "count": 16
+    "count": 15
    },
    {
     "hour": "07:00",
@@ -1233,25 +1233,25 @@
    },
    {
     "hour": "13:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-28T13:06:39.081",
-  "last_management": "2026-10-28T13:05:00.640"
+  "last_management": "2026-10-28T13:10:00.872"
  },
  "log_tail": [
-  "[2026-10-28T13:05:01.359Z] [CRON] Screening skipped \u2014 insufficient SOL (1.197 < 1.33 needed for deploy + gas)",
-  "[2026-10-28T13:06:37.714Z] [CRON] Cycles started \u2014 management every 5m, screening every 10m, opportunity poll every 45s",
-  "[2026-10-28T13:06:39.081Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-28T13:06:39.081Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.197066 SOL)",
   "[2026-10-28T13:06:46.169Z] [DEPLOY] Pool: F7J2Mpnh3sbbqiYKmf1cHUFVrxjGWZZcAc6dQSjXUgCr",
   "[2026-10-28T13:06:46.170Z] [DEPLOY] Strategy: bid_ask, Bins: -466 to -401 (65 bins)",
   "[2026-10-28T13:06:46.170Z] [DEPLOY] Amount: 0 X, 1.1 Y",
   "[2026-10-28T13:06:46.170Z] [DEPLOY] Position: DAsAZHivksmDLnYWeLCg1joPCgnb6UYQkR2JF4iBVboi",
   "[2026-10-28T13:06:55.219Z] [DEPLOY] SUCCESS \u2014 1 tx(s): hs2cZb9T9yq6adg4FdyFwogUfP8HTqizf93YDA64wgqN1vPVbtaRDp9Zt3Tp1WMfc7jh58qbd9Uu7gJqaXf1SrB",
-  "[2026-10-28T13:06:56.795Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-28T13:06:56.795Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-28T13:10:00.872Z] [CRON] Starting management cycle",
+  "[2026-10-28T13:10:01.220Z] [CRON] Screening skipped \u2014 insufficient SOL (0.055 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-28T13:10:01.656Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-28T13:07:20.000Z"
+ "state_last_updated": "2026-10-28T13:10:17.033Z"
 }

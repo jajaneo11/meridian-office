@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:12:39.401308+00:00",
+ "generated_at": "2026-10-28T12:17:39.137291+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14249
    }
   ],
-  "decisions_mentioning": 10
+  "decisions_mentioning": 11
  },
  "mode": {
   "dry_run": false,
@@ -1052,20 +1052,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1278,
+  "total_real": 1279,
   "today": 100,
-  "today_real": 29,
+  "today_real": 30,
   "by_type": {
-   "deploy": 10,
    "close": 10,
+   "deploy": 9,
    "skip": 64,
-   "no_deploy": 16
+   "no_deploy": 17
   },
   "by_actor": {
-   "SCREENER": 90,
-   "MANAGER": 10
+   "MANAGER": 10,
+   "SCREENER": 90
   },
   "recent": [
+   {
+    "ts": "2026-10-28T12:15:09.100Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "\u26d4 **NO DEPLOY** **Cycle finished with no valid entry.** **BEST LOOKING CANDIDATE** LAUNCH-SOL **WHY SKIPPED** The single surviving candidate has decent fundamentals (organic 89, clean audit: bots 11.5%, top10 15%, fees 555 SOL) but its two key conviction signals are absent: there is **no narrative a"
+   },
    {
     "ts": "2026-10-28T12:10:17.304Z",
     "type": "no_deploy",
@@ -1153,14 +1161,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE INVISIBLE-SOL WHY SKIPPED The top-conviction pick (INVISIBLE-SOL) passed all screening gates \u2014 highest volatility (7.64), highest organic (75), and by far the best fee/TVL (2.01) with healthy fees (41.5 SOL, above the 30 gate). H"
-   },
-   {
-    "ts": "2026-10-28T11:25:13.444Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL WHY SKIPPED LAUNCH-SOL has solid fundamentals \u2014 organic 89, fees 548 SOL paid, TVL $87K, volume $80K, thin top-10 (16%) and low bots (12%) \u2014 but it fails the core conviction gate: the token narrative is unavailable (st"
    }
   ]
  },
@@ -1180,7 +1180,7 @@
    },
    {
     "hour": "04:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "05:00",
@@ -1212,25 +1212,25 @@
    },
    {
     "hour": "12:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T12:10:00.997",
-  "last_management": "2026-10-28T12:10:00.439"
+  "last_screening": "2026-10-28T12:15:01.844",
+  "last_management": "2026-10-28T12:15:00.743"
  },
  "log_tail": [
-  "[2026-10-28T12:05:05.183Z] [SCREENING] Bot-holder filter: dropped LAUNCHOORS-SOL \u2014 bots 42.85% > 30%",
-  "[2026-10-28T12:05:14.279Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-28T12:10:00.439Z] [CRON] Starting management cycle",
-  "[2026-10-28T12:10:00.997Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T12:10:00.997Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
-  "[2026-10-28T12:10:01.070Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T12:10:01.070Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-28T12:10:01.571Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
   "[2026-10-28T12:10:01.580Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T12:10:17.304Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-28T12:10:17.304Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-28T12:15:00.743Z] [CRON] Starting management cycle",
+  "[2026-10-28T12:15:01.353Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T12:15:01.844Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T12:15:01.845Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
+  "[2026-10-28T12:15:02.002Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
+  "[2026-10-28T12:15:05.085Z] [SCREENING] Bot-holder filter: dropped LAUNCHOORS-SOL \u2014 bots 42.24% > 30%",
+  "[2026-10-28T12:15:09.100Z] [AGENT] \u26d4 **NO DEPLOY**"
  ],
  "state_last_updated": "2026-10-28T11:51:27.558Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T11:27:39.501771+00:00",
+ "generated_at": "2026-10-28T11:32:38.309118+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14249
    }
   ],
-  "decisions_mentioning": 8
+  "decisions_mentioning": 7
  },
  "mode": {
   "dry_run": false,
@@ -1032,20 +1032,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1270,
-  "today": 97,
-  "today_real": 21,
+  "total_real": 1271,
+  "today": 98,
+  "today_real": 22,
   "by_type": {
-   "no_deploy": 12,
    "skip": 68,
    "deploy": 10,
-   "close": 10
+   "close": 10,
+   "no_deploy": 12
   },
   "by_actor": {
    "SCREENER": 90,
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-28T11:30:35.773Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE INVISIBLE-SOL WHY SKIPPED The top-conviction pick (INVISIBLE-SOL) passed all screening gates \u2014 highest volatility (7.64), highest organic (75), and by far the best fee/TVL (2.01) with healthy fees (41.5 SOL, above the 30 gate). H"
+   },
    {
     "ts": "2026-10-28T11:25:13.444Z",
     "type": "no_deploy",
@@ -1133,14 +1141,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.135 < 1.33)"
-   },
-   {
-    "ts": "2026-10-28T10:35:01.939Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.135 < 1.33)"
    }
   ]
  },
@@ -1192,25 +1192,25 @@
    },
    {
     "hour": "11:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T11:25:01.379",
-  "last_management": "2026-10-28T11:25:00.193"
+  "last_screening": "2026-10-28T11:30:00.981",
+  "last_management": "2026-10-28T11:30:00.442"
  },
  "log_tail": [
-  "[2026-10-28T11:20:15.052Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-28T11:25:00.193Z] [CRON] Starting management cycle",
-  "[2026-10-28T11:25:00.833Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T11:25:01.379Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T11:25:01.379Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476624 SOL)",
-  "[2026-10-28T11:25:01.541Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T11:25:05.338Z] [SCREENING] Bot-holder filter: dropped LAUNCHOORS-SOL \u2014 bots 46.20% > 30%",
-  "[2026-10-28T11:25:05.338Z] [SCREENING] Bot-holder filter: dropped MOGZ-SOL \u2014 bots 30.37% > 30%",
-  "[2026-10-28T11:25:05.338Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 39.84% > 30%",
-  "[2026-10-28T11:25:13.444Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-28T11:30:00.442Z] [CRON] Starting management cycle",
+  "[2026-10-28T11:30:00.981Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T11:30:00.981Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476624 SOL)",
+  "[2026-10-28T11:30:01.028Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T11:30:01.028Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T11:30:01.309Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T11:30:06.457Z] [SCREENING] Bot-holder filter: dropped LAUNCHOORS-SOL \u2014 bots 45.71% > 30%",
+  "[2026-10-28T11:30:06.457Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 40.80% > 30%",
+  "[2026-10-28T11:30:06.457Z] [SCREENING] Bot-holder filter: dropped MOGZ-SOL \u2014 bots 30.32% > 30%",
+  "[2026-10-28T11:30:35.773Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T11:00:14.133Z"
 }

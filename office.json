@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T22:03:00.597392+00:00",
+ "generated_at": "2026-10-28T22:07:50.620715+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -1127,9 +1127,9 @@
   "today": 100,
   "today_real": 53,
   "by_type": {
-   "no_deploy": 5,
+   "no_deploy": 4,
    "deploy": 5,
-   "skip": 86,
+   "skip": 87,
    "close": 4
   },
   "by_actor": {
@@ -1137,6 +1137,14 @@
    "MANAGER": 4
   },
   "recent": [
+   {
+    "ts": "2026-10-28T22:05:01.572Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.150 < 1.1300000000000001)"
+   },
    {
     "ts": "2026-10-28T22:00:00.408Z",
     "type": "skip",
@@ -1224,14 +1232,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.125 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-28T21:10:01.158Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.125 < 1.1300000000000001)"
    }
   ]
  },
@@ -1251,7 +1251,7 @@
    },
    {
     "hour": "14:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "15:00",
@@ -1283,25 +1283,25 @@
    },
    {
     "hour": "22:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-28T21:55:01.877",
-  "last_management": "2026-10-28T22:00:00.154"
+  "last_management": "2026-10-28T22:05:00.358"
  },
  "log_tail": [
-  "[2026-10-28T21:55:13.422Z] [SCREENING] Bot-holder filter: dropped HOUSECOIN-SOL \u2014 bots 31.76% > 30%",
-  "[2026-10-28T21:55:16.915Z] [DEPLOY] Pool: CHFsqZk6UjHQKidXbEcsJtdgnzjiqpvmRzwHsyNoqJCQ",
-  "[2026-10-28T21:55:16.915Z] [DEPLOY] Strategy: bid_ask, Bins: -502 to -433 (69 bins)",
-  "[2026-10-28T21:55:16.915Z] [DEPLOY] Amount: 0 X, 1.1 Y",
   "[2026-10-28T21:55:16.915Z] [DEPLOY] Position: TWoxTRnGuJZd3RXbvnDRTsivCVKe9e84F2eHSaRQq49",
   "[2026-10-28T21:55:19.043Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2y2FJVeRxZxNZzSvYtaCpe1shkU2FCthHdh86CwJiY6NXHvDhfqP7o4GVpCcpAJxzvhbbv9ujoVahKLNmZdbhmgg",
   "[2026-10-28T21:55:20.695Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-28T22:00:00.154Z] [CRON] Starting management cycle",
   "[2026-10-28T22:00:00.407Z] [CRON] Screening skipped \u2014 insufficient SOL (0.150 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-28T22:00:00.813Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-28T22:00:00.813Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-28T22:05:00.358Z] [CRON] Starting management cycle",
+  "[2026-10-28T22:05:01.067Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-28T22:05:01.301Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
+  "[2026-10-28T22:05:01.571Z] [CRON] Screening skipped \u2014 insufficient SOL (0.150 < 1.1300000000000001 needed for deploy + gas)"
  ],
  "state_last_updated": "2026-10-28T21:59:41.257Z"
 }

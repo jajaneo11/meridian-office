@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T08:12:42.610219+00:00",
+ "generated_at": "2026-10-28T08:17:43.979225+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14077
    }
   ],
-  "decisions_mentioning": 7
+  "decisions_mentioning": 6
  },
  "mode": {
   "dry_run": false,
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 94
+  "open_count": 1,
+  "open": [
+   {
+    "id": "JDS7YCAWPA1QnySb6RXxA6kPBLtJGdRd7xqy4pNNvARr",
+    "pool": "MOGZ-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-28T08:15:13.637Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 1.3,
+    "amount_sol": 1.3
+   }
+  ],
+  "total_tracked": 95
  },
  "pnl": {
   "last24h_usd": 7.09,
@@ -1012,12 +1023,12 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1260,
-  "today": 56,
-  "today_real": 11,
+  "total_real": 1261,
+  "today": 57,
+  "today_real": 12,
   "by_type": {
-   "no_deploy": 16,
-   "deploy": 10,
+   "no_deploy": 15,
+   "deploy": 11,
    "skip": 63,
    "close": 11
   },
@@ -1026,6 +1037,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-28T08:15:13.638Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "MOGZ-SOL",
+    "summary": "Deployed 1.3 SOL with bid_ask",
+    "reason_short": "Chosen range -610\u2192-561 around active bin -561"
+   },
    {
     "ts": "2026-10-28T08:10:18.873Z",
     "type": "no_deploy",
@@ -1113,14 +1132,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.124 < 1.33)"
-   },
-   {
-    "ts": "2026-10-28T07:20:00.895Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.124 < 1.33)"
    }
   ]
  },
@@ -1172,25 +1183,25 @@
    },
    {
     "hour": "08:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T08:10:01.521",
-  "last_management": "2026-10-28T08:10:00.972"
+  "last_screening": "2026-10-28T08:15:00.793",
+  "last_management": "2026-10-28T08:15:00.250"
  },
  "log_tail": [
-  "[2026-10-28T08:06:22.115Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-28T08:10:00.972Z] [CRON] Starting management cycle",
-  "[2026-10-28T08:10:01.521Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T08:10:01.522Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.47022 SOL)",
-  "[2026-10-28T08:10:01.622Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T08:10:01.622Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-28T08:10:01.760Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
-  "[2026-10-28T08:10:01.765Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T08:10:01.774Z] [SCREENING] Filtered cooldown token Robotaxi (6xc3RU6U)",
-  "[2026-10-28T08:10:18.871Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-28T08:15:00.793Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T08:15:00.793Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.47022 SOL)",
+  "[2026-10-28T08:15:01.512Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
+  "[2026-10-28T08:15:01.519Z] [SCREENING] Filtered cooldown token Robotaxi (6xc3RU6U)",
+  "[2026-10-28T08:15:08.123Z] [DEPLOY] Pool: 31pkb1MRGxRoAHYc9JhM3Lc7Kuammnk9fK4aaYFjtmmT",
+  "[2026-10-28T08:15:08.123Z] [DEPLOY] Strategy: bid_ask, Bins: -610 to -561 (49 bins)",
+  "[2026-10-28T08:15:08.123Z] [DEPLOY] Amount: 0 X, 1.3 Y",
+  "[2026-10-28T08:15:08.124Z] [DEPLOY] Position: JDS7YCAWPA1QnySb6RXxA6kPBLtJGdRd7xqy4pNNvARr",
+  "[2026-10-28T08:15:13.635Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 4tXp57FMNiaunygVX7vSrfDotitvkbDrpwHoegV19wj46sd25t7VX9L8nYacgEU2ZJRQoiFb167SvGZJ88qhv2NZ",
+  "[2026-10-28T08:15:15.694Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-28T08:06:43.908Z"
+ "state_last_updated": "2026-10-28T08:17:01.567Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T17:52:43.174975+00:00",
+ "generated_at": "2026-10-28T18:02:42.303772+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -1118,6 +1118,22 @@
   },
   "recent": [
    {
+    "ts": "2026-10-28T18:00:00.911Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.107 < 1.1300000000000001)"
+   },
+   {
+    "ts": "2026-10-28T17:55:01.721Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.107 < 1.1300000000000001)"
+   },
+   {
     "ts": "2026-10-28T17:50:00.374Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -1196,31 +1212,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.057 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-28T17:05:02.406Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.057 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-28T17:00:01.133Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.057 < 1.1300000000000001)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "06:00",
-    "count": 0
-   },
    {
     "hour": "07:00",
     "count": 0
@@ -1235,7 +1231,7 @@
    },
    {
     "hour": "10:00",
-    "count": 6
+    "count": 4
    },
    {
     "hour": "11:00",
@@ -1263,25 +1259,29 @@
    },
    {
     "hour": "17:00",
-    "count": 12
+    "count": 13
+   },
+   {
+    "hour": "18:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-28T17:45:01.831",
-  "last_management": "2026-10-28T17:50:00.049"
+  "last_management": "2026-10-28T18:00:00.503"
  },
  "log_tail": [
-  "[2026-10-28T17:45:05.292Z] [SCREENING] Bot-holder filter: dropped Grokbot-SOL \u2014 bots 32.00% > 30%",
-  "[2026-10-28T17:45:09.744Z] [DEPLOY] Pool: BWeVJwFnN9299tKRPGX7Nfkcns4dqiuzxTGhNttsFq5t",
-  "[2026-10-28T17:45:09.744Z] [DEPLOY] Strategy: bid_ask, Bins: -653 to -584 (69 bins)",
-  "[2026-10-28T17:45:09.744Z] [DEPLOY] Amount: 0 X, 1.1 Y",
-  "[2026-10-28T17:45:09.745Z] [DEPLOY] Position: EU7ujUNQo5CocAL6CsUcyAcMRuwtPX7MMQR3U7RivKvw",
-  "[2026-10-28T17:45:16.388Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3xX3gyBA6rt4xm86RAG6RdoURSZbxTTMjRXAxEvF54jHejVBBM9AtiFVuVNRmiBWeWKJuhhukS4SF2sr6wnfaS97",
-  "[2026-10-28T17:45:17.911Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-28T17:50:00.049Z] [CRON] Starting management cycle",
   "[2026-10-28T17:50:00.372Z] [CRON] Screening skipped \u2014 insufficient SOL (0.107 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-28T17:50:00.831Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-28T17:50:00.831Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-28T17:55:00.304Z] [CRON] Starting management cycle",
+  "[2026-10-28T17:55:01.082Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-28T17:55:01.373Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
+  "[2026-10-28T17:55:01.721Z] [CRON] Screening skipped \u2014 insufficient SOL (0.107 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-28T18:00:00.503Z] [CRON] Starting management cycle",
+  "[2026-10-28T18:00:00.910Z] [CRON] Screening skipped \u2014 insufficient SOL (0.107 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-28T18:00:02.031Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-28T17:51:23.321Z"
+ "state_last_updated": "2026-10-28T18:00:11.488Z"
 }

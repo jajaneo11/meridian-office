@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:22:39.238432+00:00",
+ "generated_at": "2026-10-28T12:27:42.894702+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -1052,20 +1052,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1280,
+  "total_real": 1281,
   "today": 100,
-  "today_real": 31,
+  "today_real": 32,
   "by_type": {
-   "deploy": 9,
    "skip": 64,
    "close": 9,
-   "no_deploy": 18
+   "deploy": 8,
+   "no_deploy": 19
   },
   "by_actor": {
    "SCREENER": 91,
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-28T12:26:35.346Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-28T12:20:58.090Z",
     "type": "no_deploy",
@@ -1153,14 +1161,6 @@
     "pool_name": "MOGZ-SOL",
     "summary": "Deployed 1.3 SOL with bid_ask",
     "reason_short": "Chosen range -583\u2192-514 around active bin -514"
-   },
-   {
-    "ts": "2026-10-28T11:35:47.270Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE MOGZ-SOL WHY SKIPPED I attempted to deploy into MOGZ-SOL (strongest conviction: 2 smart wallets, positive pool memory +1.22% PnL, 4.29 volatility, organic 75), but the actual on-chain deploy call was BLOCKED by a hard gate: the p"
    }
   ]
  },
@@ -1184,7 +1184,7 @@
    },
    {
     "hour": "05:00",
-    "count": 14
+    "count": 13
    },
    {
     "hour": "06:00",
@@ -1212,25 +1212,25 @@
    },
    {
     "hour": "12:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T12:20:00.810",
-  "last_management": "2026-10-28T12:20:00.008"
+  "last_screening": "2026-10-28T12:25:01.272",
+  "last_management": "2026-10-28T12:25:00.233"
  },
  "log_tail": [
-  "[2026-10-28T12:15:05.085Z] [SCREENING] Bot-holder filter: dropped LAUNCHOORS-SOL \u2014 bots 42.24% > 30%",
-  "[2026-10-28T12:15:09.100Z] [AGENT] \u26d4 **NO DEPLOY**",
-  "[2026-10-28T12:20:00.008Z] [CRON] Starting management cycle",
-  "[2026-10-28T12:20:00.597Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T12:20:00.597Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-28T12:20:00.810Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T12:20:00.810Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
-  "[2026-10-28T12:20:01.032Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
-  "[2026-10-28T12:20:49.381Z] [ERROR] Unknown tool: check_smart_wallets",
-  "\u26d4 NO DEPLOY"
+  "\u26d4 NO DEPLOY",
+  "[2026-10-28T12:25:00.233Z] [CRON] Starting management cycle",
+  "[2026-10-28T12:25:00.767Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T12:25:01.272Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T12:25:01.272Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
+  "[2026-10-28T12:25:01.453Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
+  "[2026-10-28T12:25:01.457Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T12:25:01.463Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T12:25:01.467Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T12:25:02.783Z] [SCREENING] Bot-holder filter: dropped LAUNCHOORS-SOL \u2014 bots 40.05% > 30%"
  ],
  "state_last_updated": "2026-10-28T11:51:27.558Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T05:12:41.066082+00:00",
+ "generated_at": "2026-10-28T05:17:42.120388+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -974,7 +974,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1254,
-  "today": 13,
+  "today": 16,
   "today_real": 5,
   "by_type": {
    "skip": 69,
@@ -987,6 +987,30 @@
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-28T05:17:11.791Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.075 < 1.33)"
+   },
+   {
+    "ts": "2026-10-28T05:15:28.265Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.075 < 1.33)"
+   },
+   {
+    "ts": "2026-10-28T05:15:00.361Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.075 < 1.33)"
+   },
    {
     "ts": "2026-10-28T05:10:01.190Z",
     "type": "skip",
@@ -1058,30 +1082,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.075 < 1.33)"
-   },
-   {
-    "ts": "2026-10-28T04:40:28.772Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "INVERSE-SOL",
-    "summary": "Deployed 1.3 SOL with bid_ask",
-    "reason_short": "Chosen range -498\u2192-429 around active bin -429"
-   },
-   {
-    "ts": "2026-10-28T04:35:33.381Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "OPENAI-SOL",
-    "summary": "Closed at 0.24%",
-    "reason_short": "User requested close via /close command"
-   },
-   {
-    "ts": "2026-10-28T04:35:00.811Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.077 < 1.33)"
    }
   ]
  },
@@ -1133,25 +1133,25 @@
    },
    {
     "hour": "05:00",
-    "count": 3
+    "count": 6
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-28T05:00:00.944",
-  "last_management": "2026-10-28T05:10:00.843"
+  "last_management": "2026-10-28T05:15:00.046"
  },
  "log_tail": [
-  "[2026-10-28T05:00:13.855Z] [DEPLOY] Amount: 0 X, 1.3 Y",
-  "[2026-10-28T05:00:13.855Z] [DEPLOY] Position: 8mK9N1fzKnTQ6vWY2Y7xfzeZLPfaLSP91Kdxqp7dPwjF",
-  "[2026-10-28T05:00:19.803Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3HdK6sZ7x2TMC4bZDrmpNPXiX7NCaznbSLDbDyMvkqE2AwQiP6B2UasSVKVYAjzXn76A5J7CoueEAeH1Nv3GN3C4",
-  "[2026-10-28T05:00:21.322Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-28T05:05:00.648Z] [CRON] Starting management cycle",
-  "[2026-10-28T05:05:00.958Z] [CRON] Screening skipped \u2014 insufficient SOL (0.075 < 1.33 needed for deploy + gas)",
-  "[2026-10-28T05:05:01.449Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-28T05:10:00.843Z] [CRON] Starting management cycle",
   "[2026-10-28T05:10:01.189Z] [CRON] Screening skipped \u2014 insufficient SOL (0.075 < 1.33 needed for deploy + gas)",
-  "[2026-10-28T05:10:01.696Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-28T05:10:01.696Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-28T05:15:00.046Z] [CRON] Starting management cycle",
+  "[2026-10-28T05:15:00.361Z] [CRON] Screening skipped \u2014 insufficient SOL (0.075 < 1.33 needed for deploy + gas)",
+  "[2026-10-28T05:15:00.865Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-28T05:15:27.122Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-28T05:15:28.265Z] [CRON] Screening skipped \u2014 insufficient SOL (0.075 < 1.33 needed for deploy + gas)",
+  "[2026-10-28T05:17:10.843Z] [CRON] Cycles started \u2014 management every 5m, screening every 5m, opportunity poll every 45s",
+  "[2026-10-28T05:17:11.790Z] [CRON] Screening skipped \u2014 insufficient SOL (0.075 < 1.33 needed for deploy + gas)"
  ],
  "state_last_updated": "2026-10-28T05:11:22.716Z"
 }

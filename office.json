@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T14:47:40.043295+00:00",
+ "generated_at": "2026-10-28T14:52:40.520678+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -1108,6 +1108,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-28T14:50:01.140Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.057 < 1.1300000000000001)"
+   },
+   {
     "ts": "2026-10-28T14:45:26.751Z",
     "type": "deploy",
     "actor": "SCREENER",
@@ -1194,14 +1202,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED Both candidates fail the core conviction gates. Neither has a usable narrative (both reports still \"being generated\") and neither has any smart-wallet presence, so per risk signals these must be skipped abse"
-   },
-   {
-    "ts": "2026-10-28T13:55:08.699Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL (2H2TNJuqivWWM87oZF3pgBa7KhH3ugo6qea5rjkFey2b) WHY SKIPPED No qualifying candidate cleared the bar. Both pre-loaded pools are the same token (LAUNCH, base mint AhBidGAgv6QbKSWfrSCegGrzFLcBx4E5FNYTKHNQQj6C) and both fai"
    }
   ]
  },
@@ -1225,7 +1225,7 @@
    },
    {
     "hour": "07:00",
-    "count": 6
+    "count": 5
    },
    {
     "hour": "08:00",
@@ -1253,25 +1253,25 @@
    },
    {
     "hour": "14:00",
-    "count": 11
+    "count": 12
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-28T14:45:01.706",
-  "last_management": "2026-10-28T14:45:00.604"
+  "last_management": "2026-10-28T14:50:00.834"
  },
  "log_tail": [
-  "[2026-10-28T14:45:01.135Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T14:45:01.706Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T14:45:01.706Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199237 SOL)",
   "[2026-10-28T14:45:04.445Z] [SCREENING] Bot-holder filter: dropped Grokbot-SOL \u2014 bots 34.30% > 30%",
   "[2026-10-28T14:45:09.815Z] [DEPLOY] Pool: BWeVJwFnN9299tKRPGX7Nfkcns4dqiuzxTGhNttsFq5t",
   "[2026-10-28T14:45:09.815Z] [DEPLOY] Strategy: bid_ask, Bins: -615 to -546 (69 bins)",
   "[2026-10-28T14:45:09.815Z] [DEPLOY] Amount: 0 X, 1.1 Y",
   "[2026-10-28T14:45:09.815Z] [DEPLOY] Position: nCrXX4DH3Xzc9KBKZhXpLnQaUTSzovKRRioTeSLLWmd",
   "[2026-10-28T14:45:26.747Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 3faECi1xCpEjHRSmv836c2kYTaG2sqUBg23Un9XNftN224NN2z55s9X4xNAgW3psdcfRex5Pa7Z1es4wf5ZwiMQx",
-  "[2026-10-28T14:45:28.535Z] [AGENT] \ud83d\ude80 DEPLOYED"
+  "[2026-10-28T14:45:28.535Z] [AGENT] \ud83d\ude80 DEPLOYED",
+  "[2026-10-28T14:50:00.834Z] [CRON] Starting management cycle",
+  "[2026-10-28T14:50:01.139Z] [CRON] Screening skipped \u2014 insufficient SOL (0.057 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-28T14:50:01.630Z] [CRON] Management: all positions STAY \u2014 skipping"
  ],
- "state_last_updated": "2026-10-28T14:47:36.204Z"
+ "state_last_updated": "2026-10-28T14:49:03.210Z"
 }

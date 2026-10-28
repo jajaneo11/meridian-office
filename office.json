@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T13:57:44.059156+00:00",
+ "generated_at": "2026-10-28T14:02:41.185458+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14249
    }
   ],
-  "decisions_mentioning": 18
+  "decisions_mentioning": 19
  },
  "mode": {
   "dry_run": false,
@@ -1072,13 +1072,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1291,
+  "total_real": 1292,
   "today": 100,
-  "today_real": 42,
+  "today_real": 43,
   "by_type": {
-   "skip": 58,
+   "skip": 57,
    "close": 8,
-   "no_deploy": 27,
+   "no_deploy": 28,
    "deploy": 7
   },
   "by_actor": {
@@ -1086,6 +1086,14 @@
    "MANAGER": 8
   },
   "recent": [
+   {
+    "ts": "2026-10-28T14:00:15.003Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Macca-SOL WHY SKIPPED Both candidates fail the core conviction gates. Neither has a usable narrative (both reports still \"being generated\") and neither has any smart-wallet presence, so per risk signals these must be skipped abse"
+   },
    {
     "ts": "2026-10-28T13:55:08.699Z",
     "type": "no_deploy",
@@ -1173,23 +1181,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.055 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-28T13:06:55.224Z",
-    "type": "deploy",
-    "actor": "SCREENER",
-    "pool_name": "INVERSE-SOL",
-    "summary": "Deployed 1.1 SOL with bid_ask",
-    "reason_short": "Chosen range -466\u2192-401 around active bin -401"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "02:00",
-    "count": 0
-   },
    {
     "hour": "03:00",
     "count": 0
@@ -1204,7 +1200,7 @@
    },
    {
     "hour": "06:00",
-    "count": 5
+    "count": 4
    },
    {
     "hour": "07:00",
@@ -1233,24 +1229,28 @@
    {
     "hour": "13:00",
     "count": 16
+   },
+   {
+    "hour": "14:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T13:55:01.209",
-  "last_management": "2026-10-28T13:55:00.038"
+  "last_screening": "2026-10-28T14:00:00.842",
+  "last_management": "2026-10-28T14:00:00.332"
  },
  "log_tail": [
-  "[2026-10-28T13:50:01.494Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
-  "[2026-10-28T13:50:01.499Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
-  "[2026-10-28T13:50:11.470Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-28T13:55:00.038Z] [CRON] Starting management cycle",
-  "[2026-10-28T13:55:00.672Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T13:55:01.209Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T13:55:01.210Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
-  "[2026-10-28T13:55:01.488Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
-  "[2026-10-28T13:55:01.493Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
-  "[2026-10-28T13:55:08.698Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-28T14:00:00.834Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T14:00:00.835Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T14:00:00.842Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T14:00:00.842Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
+  "[2026-10-28T14:00:01.113Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
+  "[2026-10-28T14:00:01.132Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
+  "[2026-10-28T14:00:01.150Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T14:00:01.157Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T14:00:05.682Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 34.83% > 30%",
+  "[2026-10-28T14:00:15.002Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T13:28:11.876Z"
 }

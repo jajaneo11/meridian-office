@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T09:52:42.587053+00:00",
+ "generated_at": "2026-10-28T09:57:45.166840+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14077
    }
   ],
-  "decisions_mentioning": 4
+  "decisions_mentioning": 5
  },
  "mode": {
   "dry_run": false,
@@ -1022,13 +1022,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1262,
-  "today": 77,
-  "today_real": 13,
+  "total_real": 1263,
+  "today": 78,
+  "today_real": 14,
   "by_type": {
-   "skip": 71,
+   "skip": 70,
    "close": 11,
-   "no_deploy": 8,
+   "no_deploy": 9,
    "deploy": 10
   },
   "by_actor": {
@@ -1036,6 +1036,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-28T09:55:08.657Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL WHY SKIPPED LAUNCH-SOL has no usable narrative (still \"being generated\") and zero smart wallets present \u2014 this hits the hard skip rule for no-narrative/no-smart-wallet setups. Volatility is also weak at just 1.2, which"
+   },
    {
     "ts": "2026-10-28T09:51:08.651Z",
     "type": "no_deploy",
@@ -1123,14 +1131,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.127 < 1.33)"
-   },
-   {
-    "ts": "2026-10-28T09:00:00.582Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.127 < 1.33)"
    }
   ]
  },
@@ -1182,25 +1182,25 @@
    },
    {
     "hour": "09:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T09:50:01.355",
-  "last_management": "2026-10-28T09:50:00.674"
+  "last_screening": "2026-10-28T09:55:01.516",
+  "last_management": "2026-10-28T09:55:00.936"
  },
  "log_tail": [
-  "[2026-10-28T09:40:01.061Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-28T09:45:00.417Z] [CRON] Starting management cycle",
-  "[2026-10-28T09:45:00.764Z] [CRON] Screening skipped \u2014 insufficient SOL (0.127 < 1.33 needed for deploy + gas)",
-  "[2026-10-28T09:45:01.261Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-28T09:45:41.569Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
-  "[2026-10-28T09:50:00.674Z] [CRON] Starting management cycle",
   "[2026-10-28T09:50:01.295Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-28T09:50:01.295Z] [CRON] Screening skipped \u2014 previous cycle still running",
   "[2026-10-28T09:50:01.355Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T09:50:01.356Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.478158 SOL)"
+  "[2026-10-28T09:50:01.356Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.478158 SOL)",
+  "[2026-10-28T09:55:00.936Z] [CRON] Starting management cycle",
+  "[2026-10-28T09:55:01.516Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T09:55:01.516Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.478158 SOL)",
+  "[2026-10-28T09:55:01.598Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T09:55:01.598Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T09:55:08.656Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T09:46:00.210Z"
 }

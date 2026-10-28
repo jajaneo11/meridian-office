@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T14:22:43.082471+00:00",
+ "generated_at": "2026-10-28T14:27:43.634148+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 100
+  "open_count": 1,
+  "open": [
+   {
+    "id": "BKHoVd3tTrGvabxLjrhRm7UPvuX7brTPxuCtBsMSV5pm",
+    "pool": "Nothing-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-28T14:25:17.110Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": null,
+    "amount_sol": 1.1
+   }
+  ],
+  "total_tracked": 101
  },
  "pnl": {
   "last24h_usd": -13.62,
@@ -1072,20 +1083,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1296,
+  "total_real": 1297,
   "today": 100,
-  "today_real": 47,
+  "today_real": 48,
   "by_type": {
-   "skip": 56,
+   "skip": 55,
    "close": 7,
    "no_deploy": 31,
-   "deploy": 6
+   "deploy": 7
   },
   "by_actor": {
    "SCREENER": 93,
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-28T14:25:17.112Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "Nothing-SOL",
+    "summary": "Deployed 1.1 SOL with bid_ask",
+    "reason_short": "Chosen range -613\u2192-555 around active bin -555"
+   },
    {
     "ts": "2026-10-28T14:20:03.213Z",
     "type": "no_deploy",
@@ -1173,14 +1192,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL (2H2TNJuqivWWM87oZF3pgBa7KhH3ugo6qea5rjkFey2b) WHY SKIPPED Both pre-loaded candidates are the same token (LAUNCH) across two pools, and neither clears the conviction bar. Both have zero smart wallets present and no usa"
-   },
-   {
-    "ts": "2026-10-28T13:28:12.177Z",
-    "type": "close",
-    "actor": "MANAGER",
-    "pool_name": "INVERSE-SOL",
-    "summary": "Closed at -0.11%",
-    "reason_short": "pumped far above range"
    }
   ]
  },
@@ -1204,7 +1215,7 @@
    },
    {
     "hour": "07:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "08:00",
@@ -1232,25 +1243,25 @@
    },
    {
     "hour": "14:00",
-    "count": 5
+    "count": 6
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T14:20:01.013",
-  "last_management": "2026-10-28T14:20:00.445"
+  "last_screening": "2026-10-28T14:25:01.810",
+  "last_management": "2026-10-28T14:25:00.722"
  },
  "log_tail": [
-  "[2026-10-28T14:15:01.766Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
-  "[2026-10-28T14:15:25.397Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-28T14:20:00.445Z] [CRON] Starting management cycle",
-  "[2026-10-28T14:20:01.013Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T14:20:01.013Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
-  "[2026-10-28T14:20:01.029Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T14:20:01.029Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-28T14:20:01.372Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
-  "[2026-10-28T14:20:01.398Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
-  "[2026-10-28T14:20:03.211Z] [SCREENING] Bot-holder filter: dropped Grokbot-SOL \u2014 bots 34.12% > 30%"
+  "[2026-10-28T14:25:01.811Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
+  "[2026-10-28T14:25:02.404Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
+  "[2026-10-28T14:25:02.414Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
+  "[2026-10-28T14:25:08.436Z] [SCREENING] Bot-holder filter: dropped Grokbot-SOL \u2014 bots 34.04% > 30%",
+  "[2026-10-28T14:25:14.454Z] [DEPLOY] Pool: BWeVJwFnN9299tKRPGX7Nfkcns4dqiuzxTGhNttsFq5t",
+  "[2026-10-28T14:25:14.455Z] [DEPLOY] Strategy: bid_ask, Bins: -613 to -555 (58 bins)",
+  "[2026-10-28T14:25:14.455Z] [DEPLOY] Amount: 0 X, 1.1 Y",
+  "[2026-10-28T14:25:14.455Z] [DEPLOY] Position: BKHoVd3tTrGvabxLjrhRm7UPvuX7brTPxuCtBsMSV5pm",
+  "[2026-10-28T14:25:17.106Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 49Z7Gi88PKVHUcgW8duCEqMntraFQGbouUVaaV6qMowfeVfi8T77WXmqBDq6FUrZ7hEk56EyW6itdeD8GLRzmTpH",
+  "[2026-10-28T14:25:18.650Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-28T13:28:11.876Z"
+ "state_last_updated": "2026-10-28T14:26:00.021Z"
 }

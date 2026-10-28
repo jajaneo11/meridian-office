@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:07:45.002315+00:00",
+ "generated_at": "2026-10-28T12:12:39.401308+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14249
    }
   ],
-  "decisions_mentioning": 9
+  "decisions_mentioning": 10
  },
  "mode": {
   "dry_run": false,
@@ -1052,20 +1052,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1277,
+  "total_real": 1278,
   "today": 100,
-  "today_real": 28,
+  "today_real": 29,
   "by_type": {
-   "no_deploy": 16,
    "deploy": 10,
    "close": 10,
-   "skip": 64
+   "skip": 64,
+   "no_deploy": 16
   },
   "by_actor": {
    "SCREENER": 90,
    "MANAGER": 10
   },
   "recent": [
+   {
+    "ts": "2026-10-28T12:10:17.304Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL WHY SKIPPED Both candidates failed the core qualitative gate: neither carries an actual narrative (both returned \"Narrative is being generated\") and both have zero smart wallets present \u2014 per the risk rules, no-narrati"
+   },
    {
     "ts": "2026-10-28T12:05:14.280Z",
     "type": "no_deploy",
@@ -1153,14 +1161,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL WHY SKIPPED LAUNCH-SOL has solid fundamentals \u2014 organic 89, fees 548 SOL paid, TVL $87K, volume $80K, thin top-10 (16%) and low bots (12%) \u2014 but it fails the core conviction gate: the token narrative is unavailable (st"
-   },
-   {
-    "ts": "2026-10-28T11:20:15.054Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE INVISIBLE-SOL WHY SKIPPED The only surviving candidate fails the core conviction gates. The narrative is unavailable (still generating, no identifiable story/catalyst), and zero smart wallets are present \u2014 per rules \"no narrative"
    }
   ]
  },
@@ -1180,7 +1180,7 @@
    },
    {
     "hour": "04:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "05:00",
@@ -1212,25 +1212,25 @@
    },
    {
     "hour": "12:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T12:05:01.277",
-  "last_management": "2026-10-28T12:05:00.168"
+  "last_screening": "2026-10-28T12:10:00.997",
+  "last_management": "2026-10-28T12:10:00.439"
  },
  "log_tail": [
-  "[2026-10-28T12:00:01.471Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T12:00:01.471Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
-  "[2026-10-28T12:00:01.655Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
-  "[2026-10-28T12:05:00.168Z] [CRON] Starting management cycle",
-  "[2026-10-28T12:05:00.747Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T12:05:01.277Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T12:05:01.277Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
-  "[2026-10-28T12:05:01.624Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
   "[2026-10-28T12:05:05.183Z] [SCREENING] Bot-holder filter: dropped LAUNCHOORS-SOL \u2014 bots 42.85% > 30%",
-  "[2026-10-28T12:05:14.279Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-28T12:05:14.279Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-28T12:10:00.439Z] [CRON] Starting management cycle",
+  "[2026-10-28T12:10:00.997Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T12:10:00.997Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
+  "[2026-10-28T12:10:01.070Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T12:10:01.070Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T12:10:01.571Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T12:10:01.580Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T12:10:17.304Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T11:51:27.558Z"
 }

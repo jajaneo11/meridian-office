@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T13:37:45.140125+00:00",
+ "generated_at": "2026-10-28T13:42:42.226616+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14249
    }
   ],
-  "decisions_mentioning": 15
+  "decisions_mentioning": 16
  },
  "mode": {
   "dry_run": false,
@@ -1072,20 +1072,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1287,
+  "total_real": 1288,
   "today": 100,
-  "today_real": 38,
+  "today_real": 39,
   "by_type": {
-   "skip": 60,
+   "skip": 59,
    "close": 9,
    "deploy": 8,
-   "no_deploy": 23
+   "no_deploy": 24
   },
   "by_actor": {
    "SCREENER": 91,
    "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-28T13:40:08.668Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL (2H2TNJuqivWWM87oZF3pgBa7KhH3ugo6qea5rjkFey2b) WHY SKIPPED Both candidates are the same token (LAUNCH-SOL, same mint) and fail the core conviction gate: the narrative is empty (\"being generated\" \u2014 no identifiable subje"
+   },
    {
     "ts": "2026-10-28T13:35:14.770Z",
     "type": "no_deploy",
@@ -1173,14 +1181,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (1.197 < 1.33)"
-   },
-   {
-    "ts": "2026-10-28T13:00:00.197Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (1.197 < 1.33)"
    }
   ]
  },
@@ -1204,7 +1204,7 @@
    },
    {
     "hour": "06:00",
-    "count": 9
+    "count": 8
    },
    {
     "hour": "07:00",
@@ -1232,25 +1232,25 @@
    },
    {
     "hour": "13:00",
-    "count": 12
+    "count": 13
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T13:35:02.101",
-  "last_management": "2026-10-28T13:35:00.981"
+  "last_screening": "2026-10-28T13:40:00.824",
+  "last_management": "2026-10-28T13:40:00.231"
  },
  "log_tail": [
-  "[2026-10-28T13:35:02.101Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T13:35:02.101Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
-  "[2026-10-28T13:35:02.330Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
-  "[2026-10-28T13:35:02.334Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
-  "[2026-10-28T13:35:02.338Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T13:35:02.343Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
-  "[2026-10-28T13:35:02.354Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T13:35:03.505Z] [SCREENING] Bot-holder filter: dropped BTC-SOL \u2014 bots 61.09% > 30%",
-  "[2026-10-28T13:35:03.505Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 36.18% > 30%",
-  "[2026-10-28T13:35:14.770Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-28T13:35:14.770Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-28T13:40:00.231Z] [CRON] Starting management cycle",
+  "[2026-10-28T13:40:00.824Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T13:40:00.824Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
+  "[2026-10-28T13:40:00.858Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T13:40:00.859Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T13:40:01.207Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
+  "[2026-10-28T13:40:01.214Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T13:40:01.225Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T13:40:08.667Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T13:28:11.876Z"
 }

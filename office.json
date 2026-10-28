@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:17:39.137291+00:00",
+ "generated_at": "2026-10-28T12:22:39.238432+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14249
    }
   ],
-  "decisions_mentioning": 11
+  "decisions_mentioning": 12
  },
  "mode": {
   "dry_run": false,
@@ -1052,20 +1052,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1279,
+  "total_real": 1280,
   "today": 100,
-  "today_real": 30,
+  "today_real": 31,
   "by_type": {
-   "close": 10,
    "deploy": 9,
    "skip": 64,
-   "no_deploy": 17
+   "close": 9,
+   "no_deploy": 18
   },
   "by_actor": {
-   "MANAGER": 10,
-   "SCREENER": 90
+   "SCREENER": 91,
+   "MANAGER": 9
   },
   "recent": [
+   {
+    "ts": "2026-10-28T12:20:58.090Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "The deploy was blocked by the fee/active-TVL gate (0.004% vs minimum 0.09%). Let me report. \u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE SAPLING-SOL WHY SKIPPED SAPLING-SOL was the only candidate that cleared the risk gate \u2014 4 smart wallets present (Multihours #6, Degen #28"
+   },
    {
     "ts": "2026-10-28T12:15:09.100Z",
     "type": "no_deploy",
@@ -1153,14 +1161,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE MOGZ-SOL WHY SKIPPED I attempted to deploy into MOGZ-SOL (strongest conviction: 2 smart wallets, positive pool memory +1.22% PnL, 4.29 volatility, organic 75), but the actual on-chain deploy call was BLOCKED by a hard gate: the p"
-   },
-   {
-    "ts": "2026-10-28T11:30:35.773Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE INVISIBLE-SOL WHY SKIPPED The top-conviction pick (INVISIBLE-SOL) passed all screening gates \u2014 highest volatility (7.64), highest organic (75), and by far the best fee/TVL (2.01) with healthy fees (41.5 SOL, above the 30 gate). H"
    }
   ]
  },
@@ -1180,7 +1180,7 @@
    },
    {
     "hour": "04:00",
-    "count": 1
+    "count": 0
    },
    {
     "hour": "05:00",
@@ -1212,25 +1212,25 @@
    },
    {
     "hour": "12:00",
-    "count": 4
+    "count": 5
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T12:15:01.844",
-  "last_management": "2026-10-28T12:15:00.743"
+  "last_screening": "2026-10-28T12:20:00.810",
+  "last_management": "2026-10-28T12:20:00.008"
  },
  "log_tail": [
-  "[2026-10-28T12:10:01.571Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T12:10:01.580Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T12:10:17.304Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-28T12:15:00.743Z] [CRON] Starting management cycle",
-  "[2026-10-28T12:15:01.353Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T12:15:01.844Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T12:15:01.845Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
-  "[2026-10-28T12:15:02.002Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
   "[2026-10-28T12:15:05.085Z] [SCREENING] Bot-holder filter: dropped LAUNCHOORS-SOL \u2014 bots 42.24% > 30%",
-  "[2026-10-28T12:15:09.100Z] [AGENT] \u26d4 **NO DEPLOY**"
+  "[2026-10-28T12:15:09.100Z] [AGENT] \u26d4 **NO DEPLOY**",
+  "[2026-10-28T12:20:00.008Z] [CRON] Starting management cycle",
+  "[2026-10-28T12:20:00.597Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T12:20:00.597Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T12:20:00.810Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T12:20:00.810Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.476673 SOL)",
+  "[2026-10-28T12:20:01.032Z] [SCREENING] Filtered cooldown token MOGZ (Pmfm2Rpr)",
+  "[2026-10-28T12:20:49.381Z] [ERROR] Unknown tool: check_smart_wallets",
+  "\u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T11:51:27.558Z"
 }

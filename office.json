@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T14:32:39.638762+00:00",
+ "generated_at": "2026-10-28T14:37:39.128967+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -1098,6 +1098,14 @@
   },
   "recent": [
    {
+    "ts": "2026-10-28T14:35:01.535Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.057 < 1.1300000000000001)"
+   },
+   {
     "ts": "2026-10-28T14:30:01.362Z",
     "type": "skip",
     "actor": "SCREENER",
@@ -1184,14 +1192,6 @@
     "pool_name": null,
     "summary": "LLM chose no deploy",
     "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL (2H2TNJuqivWWM87oZF3pgBa7KhH3ugo6qea5rjkFey2b) WHY SKIPPED Both candidates are the same token (LAUNCH-SOL, same mint) and fail the core conviction gate: the narrative is empty (\"being generated\" \u2014 no identifiable subje"
-   },
-   {
-    "ts": "2026-10-28T13:35:14.770Z",
-    "type": "no_deploy",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "LLM chose no deploy",
-    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL (2H2TNJuqivWWM87oZF3pgBa7KhH3ugo6qea5rjkFey2b) WHY SKIPPED The top duo of LAUNCH-SOL pools are the **same token** and both are crashing hard (-65.97% in 1h), with zero smart wallets present and no usable narrative (sti"
    }
   ]
  },
@@ -1215,7 +1215,7 @@
    },
    {
     "hour": "07:00",
-    "count": 10
+    "count": 9
    },
    {
     "hour": "08:00",
@@ -1243,25 +1243,25 @@
    },
    {
     "hour": "14:00",
-    "count": 7
+    "count": 8
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-28T14:25:01.810",
-  "last_management": "2026-10-28T14:30:00.972"
+  "last_management": "2026-10-28T14:35:00.183"
  },
  "log_tail": [
-  "[2026-10-28T14:25:08.436Z] [SCREENING] Bot-holder filter: dropped Grokbot-SOL \u2014 bots 34.04% > 30%",
-  "[2026-10-28T14:25:14.454Z] [DEPLOY] Pool: BWeVJwFnN9299tKRPGX7Nfkcns4dqiuzxTGhNttsFq5t",
-  "[2026-10-28T14:25:14.455Z] [DEPLOY] Strategy: bid_ask, Bins: -613 to -555 (58 bins)",
-  "[2026-10-28T14:25:14.455Z] [DEPLOY] Amount: 0 X, 1.1 Y",
   "[2026-10-28T14:25:14.455Z] [DEPLOY] Position: BKHoVd3tTrGvabxLjrhRm7UPvuX7brTPxuCtBsMSV5pm",
   "[2026-10-28T14:25:17.106Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 49Z7Gi88PKVHUcgW8duCEqMntraFQGbouUVaaV6qMowfeVfi8T77WXmqBDq6FUrZ7hEk56EyW6itdeD8GLRzmTpH",
   "[2026-10-28T14:25:18.650Z] [AGENT] \ud83d\ude80 DEPLOYED",
   "[2026-10-28T14:30:00.972Z] [CRON] Starting management cycle",
   "[2026-10-28T14:30:01.362Z] [CRON] Screening skipped \u2014 insufficient SOL (0.057 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-28T14:30:01.730Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-28T14:30:01.730Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-28T14:35:00.183Z] [CRON] Starting management cycle",
+  "[2026-10-28T14:35:00.987Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-28T14:35:01.271Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
+  "[2026-10-28T14:35:01.534Z] [CRON] Screening skipped \u2014 insufficient SOL (0.057 < 1.1300000000000001 needed for deploy + gas)"
  ],
  "state_last_updated": "2026-10-28T14:31:03.084Z"
 }

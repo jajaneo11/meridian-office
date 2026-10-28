@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T08:07:41.630770+00:00",
+ "generated_at": "2026-10-28T08:12:42.610219+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": 1.467432
+  "sol": 1.47022
  },
  "limits": {
   "max_positions": 3,
@@ -1012,20 +1012,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1259,
-  "today": 55,
-  "today_real": 10,
+  "total_real": 1260,
+  "today": 56,
+  "today_real": 11,
   "by_type": {
-   "close": 12,
-   "no_deploy": 15,
+   "no_deploy": 16,
    "deploy": 10,
-   "skip": 63
+   "skip": 63,
+   "close": 11
   },
   "by_actor": {
-   "MANAGER": 12,
-   "SCREENER": 88
+   "SCREENER": 89,
+   "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-28T08:10:18.873Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Frongus-SOL WHY SKIPPED Frongus passed the hard fee gate (297.97 SOL) and led on high-weight signals (volatility 4.52, organic 75, low top10 concentration 11.6%), but the deploy attempt was blocked by the system: pool fee/active-"
+   },
    {
     "ts": "2026-10-28T08:06:44.233Z",
     "type": "close",
@@ -1113,14 +1121,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.124 < 1.33)"
-   },
-   {
-    "ts": "2026-10-28T07:15:00.481Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.124 < 1.33)"
    }
   ]
  },
@@ -1172,25 +1172,25 @@
    },
    {
     "hour": "08:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T06:55:01.135",
-  "last_management": "2026-10-28T08:05:00.720"
+  "last_screening": "2026-10-28T08:10:01.521",
+  "last_management": "2026-10-28T08:10:00.972"
  },
  "log_tail": [
-  "[2026-10-28T07:55:00.271Z] [CRON] Starting management cycle",
-  "[2026-10-28T07:55:00.785Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.33 needed for deploy + gas)",
-  "[2026-10-28T07:55:00.797Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-28T08:00:00.469Z] [CRON] Starting management cycle",
-  "[2026-10-28T08:00:00.797Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.33 needed for deploy + gas)",
-  "[2026-10-28T08:00:01.253Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-28T08:05:00.720Z] [CRON] Starting management cycle",
-  "[2026-10-28T08:05:00.987Z] [CRON] Screening skipped \u2014 insufficient SOL (0.124 < 1.33 needed for deploy + gas)",
-  "[2026-10-28T08:05:01.459Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-28T08:06:22.115Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-28T08:06:22.115Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-28T08:10:00.972Z] [CRON] Starting management cycle",
+  "[2026-10-28T08:10:01.521Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T08:10:01.522Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.47022 SOL)",
+  "[2026-10-28T08:10:01.622Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T08:10:01.622Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T08:10:01.760Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
+  "[2026-10-28T08:10:01.765Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T08:10:01.774Z] [SCREENING] Filtered cooldown token Robotaxi (6xc3RU6U)",
+  "[2026-10-28T08:10:18.871Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T08:06:43.908Z"
 }

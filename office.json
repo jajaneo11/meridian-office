@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T14:12:41.839523+00:00",
+ "generated_at": "2026-10-28T14:17:41.775586+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -37,7 +37,7 @@
     "value_usd": 14249
    }
   ],
-  "decisions_mentioning": 19
+  "decisions_mentioning": 18
  },
  "mode": {
   "dry_run": false,
@@ -1072,20 +1072,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1294,
+  "total_real": 1295,
   "today": 100,
-  "today_real": 45,
+  "today_real": 46,
   "by_type": {
-   "no_deploy": 30,
    "deploy": 7,
    "skip": 56,
-   "close": 7
+   "close": 7,
+   "no_deploy": 30
   },
   "by_actor": {
    "SCREENER": 93,
    "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-28T14:15:25.397Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry \u2014 deployment was blocked and could not be executed. BEST LOOKING CANDIDATE Nothing-SOL (DUBg37xCb2W6eqrhjNPLipvSZSdvxgYpi1SgK2qYv93Z) WHY SKIPPED The deploy_position call for Nothing-SOL was blocked by the platform \u2014 my first attempt returned \"Pool unde"
+   },
    {
     "ts": "2026-10-28T14:11:17.909Z",
     "type": "no_deploy",
@@ -1173,14 +1181,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.055 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-28T13:20:00.609Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.055 < 1.1300000000000001)"
    }
   ]
  },
@@ -1200,7 +1200,7 @@
    },
    {
     "hour": "06:00",
-    "count": 2
+    "count": 1
    },
    {
     "hour": "07:00",
@@ -1232,25 +1232,25 @@
    },
    {
     "hour": "14:00",
-    "count": 3
+    "count": 4
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T14:10:01.699",
-  "last_management": "2026-10-28T14:10:00.872"
+  "last_screening": "2026-10-28T14:15:01.247",
+  "last_management": "2026-10-28T14:15:00.142"
  },
  "log_tail": [
-  "[2026-10-28T14:05:01.863Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
-  "[2026-10-28T14:05:02.354Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T14:05:02.361Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T14:05:03.442Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 35.14% > 30%",
-  "[2026-10-28T14:10:00.872Z] [CRON] Starting management cycle",
-  "[2026-10-28T14:10:01.699Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T14:10:01.699Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
   "[2026-10-28T14:10:01.804Z] [CRON] No open positions \u2014 triggering screening cycle",
   "[2026-10-28T14:10:01.804Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-28T14:10:07.582Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 35.78% > 30%"
+  "[2026-10-28T14:10:07.582Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 35.78% > 30%",
+  "[2026-10-28T14:15:00.142Z] [CRON] Starting management cycle",
+  "[2026-10-28T14:15:00.744Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T14:15:01.247Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T14:15:01.247Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
+  "[2026-10-28T14:15:01.762Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
+  "[2026-10-28T14:15:01.766Z] [SCREENING] Filtered cooldown token INVERSE (2gLhk8p2)",
+  "[2026-10-28T14:15:25.397Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T13:28:11.876Z"
 }

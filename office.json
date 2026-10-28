@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T14:07:39.903313+00:00",
+ "generated_at": "2026-10-28T14:12:41.839523+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -1072,20 +1072,28 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1293,
+  "total_real": 1294,
   "today": 100,
-  "today_real": 44,
+  "today_real": 45,
   "by_type": {
-   "close": 8,
-   "no_deploy": 29,
+   "no_deploy": 30,
    "deploy": 7,
-   "skip": 56
+   "skip": 56,
+   "close": 7
   },
   "by_actor": {
-   "MANAGER": 8,
-   "SCREENER": 92
+   "SCREENER": 93,
+   "MANAGER": 7
   },
   "recent": [
+   {
+    "ts": "2026-10-28T14:11:17.909Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "No successful deploy in screening cycle",
+    "reason_short": "Max steps reached. Review logs for partial progress."
+   },
    {
     "ts": "2026-10-28T14:05:03.443Z",
     "type": "no_deploy",
@@ -1173,14 +1181,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.055 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-28T13:15:01.497Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.055 < 1.1300000000000001)"
    }
   ]
  },
@@ -1200,7 +1200,7 @@
    },
    {
     "hour": "06:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "07:00",
@@ -1232,25 +1232,25 @@
    },
    {
     "hour": "14:00",
-    "count": 2
+    "count": 3
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T14:05:01.863",
-  "last_management": "2026-10-28T14:05:00.576"
+  "last_screening": "2026-10-28T14:10:01.699",
+  "last_management": "2026-10-28T14:10:00.872"
  },
  "log_tail": [
-  "[2026-10-28T14:00:01.157Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T14:00:05.682Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 34.83% > 30%",
-  "[2026-10-28T14:00:15.002Z] [AGENT] \u26d4 NO DEPLOY",
-  "[2026-10-28T14:05:00.576Z] [CRON] Starting management cycle",
-  "[2026-10-28T14:05:01.251Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T14:05:01.863Z] [CRON] Starting screening cycle [model: mercury-3]",
   "[2026-10-28T14:05:01.863Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
   "[2026-10-28T14:05:02.354Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
   "[2026-10-28T14:05:02.361Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
-  "[2026-10-28T14:05:03.442Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 35.14% > 30%"
+  "[2026-10-28T14:05:03.442Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 35.14% > 30%",
+  "[2026-10-28T14:10:00.872Z] [CRON] Starting management cycle",
+  "[2026-10-28T14:10:01.699Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T14:10:01.699Z] [CRON] Computed deploy amount: 1.1 SOL (wallet: 1.199257 SOL)",
+  "[2026-10-28T14:10:01.804Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T14:10:01.804Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T14:10:07.582Z] [SCREENING] Bot-holder filter: dropped jeff-SOL \u2014 bots 35.78% > 30%"
  ],
  "state_last_updated": "2026-10-28T13:28:11.876Z"
 }

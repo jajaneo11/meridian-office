@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T09:57:45.166840+00:00",
+ "generated_at": "2026-10-28T10:02:39.762768+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -7,8 +7,8 @@
    "Degen": 30,
    "Multihours": 13
   },
-  "active_24h": 39,
-  "total_value_usd": 328458,
+  "active_24h": 40,
+  "total_value_usd": 329504,
   "total_activity": 270,
   "top": [
    {
@@ -19,7 +19,7 @@
    {
     "name": "Whale #2 (GMGN)",
     "category": "alpha",
-    "value_usd": 57801
+    "value_usd": 57762
    },
    {
     "name": "Whale LP #1",
@@ -29,15 +29,15 @@
    {
     "name": "Multihours #6",
     "category": "Multihours",
-    "value_usd": 22004
+    "value_usd": 22033
    },
    {
     "name": "Degen #11",
     "category": "Degen",
-    "value_usd": 14077
+    "value_usd": 14249
    }
   ],
-  "decisions_mentioning": 5
+  "decisions_mentioning": 6
  },
  "mode": {
   "dry_run": false,
@@ -1022,13 +1022,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1263,
-  "today": 78,
-  "today_real": 14,
+  "total_real": 1264,
+  "today": 79,
+  "today_real": 15,
   "by_type": {
-   "skip": 70,
+   "skip": 69,
    "close": 11,
-   "no_deploy": 9,
+   "no_deploy": 10,
    "deploy": 10
   },
   "by_actor": {
@@ -1036,6 +1036,14 @@
    "MANAGER": 11
   },
   "recent": [
+   {
+    "ts": "2026-10-28T10:00:07.986Z",
+    "type": "no_deploy",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "LLM chose no deploy",
+    "reason_short": "\u26d4 NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE LAUNCH-SOL WHY SKIPPED Only one candidate survived screening, and it does not clear conviction bar. The pool has zero smart wallets present and no narrative available (generation pending), which per the risk rules is a hard skip "
+   },
    {
     "ts": "2026-10-28T09:55:08.657Z",
     "type": "no_deploy",
@@ -1123,23 +1131,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.127 < 1.33)"
-   },
-   {
-    "ts": "2026-10-28T09:05:00.821Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.127 < 1.33)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "22:00",
-    "count": 0
-   },
    {
     "hour": "23:00",
     "count": 0
@@ -1183,24 +1179,28 @@
    {
     "hour": "09:00",
     "count": 13
+   },
+   {
+    "hour": "10:00",
+    "count": 1
    }
   ]
  },
  "cycles": {
-  "last_screening": "2026-10-28T09:55:01.516",
-  "last_management": "2026-10-28T09:55:00.936"
+  "last_screening": "2026-10-28T10:00:00.797",
+  "last_management": "2026-10-28T10:00:00.226"
  },
  "log_tail": [
-  "[2026-10-28T09:50:01.295Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T09:50:01.295Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-28T09:50:01.355Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T09:50:01.356Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.478158 SOL)",
-  "[2026-10-28T09:55:00.936Z] [CRON] Starting management cycle",
-  "[2026-10-28T09:55:01.516Z] [CRON] Starting screening cycle [model: mercury-3]",
-  "[2026-10-28T09:55:01.516Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.478158 SOL)",
-  "[2026-10-28T09:55:01.598Z] [CRON] No open positions \u2014 triggering screening cycle",
-  "[2026-10-28T09:55:01.598Z] [CRON] Screening skipped \u2014 previous cycle still running",
-  "[2026-10-28T09:55:08.656Z] [AGENT] \u26d4 NO DEPLOY"
+  "[2026-10-28T09:55:08.656Z] [AGENT] \u26d4 NO DEPLOY",
+  "[2026-10-28T10:00:00.226Z] [CRON] Starting management cycle",
+  "[2026-10-28T10:00:00.797Z] [CRON] Starting screening cycle [model: mercury-3]",
+  "[2026-10-28T10:00:00.797Z] [CRON] Computed deploy amount: 1.3 SOL (wallet: 1.478158 SOL)",
+  "[2026-10-28T10:00:00.871Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-28T10:00:00.872Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-28T10:00:01.033Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T10:00:01.043Z] [SCREENING] Filtered cooldown token Nothing (51SfaAyr)",
+  "[2026-10-28T10:00:04.324Z] [SCREENING] Bot-holder filter: dropped MOGZ-SOL \u2014 bots 30.30% > 30%",
+  "[2026-10-28T10:00:07.986Z] [AGENT] \u26d4 NO DEPLOY"
  ],
  "state_last_updated": "2026-10-28T09:46:00.210Z"
 }

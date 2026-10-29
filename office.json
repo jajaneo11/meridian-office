@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T01:42:42.038282+00:00",
+ "generated_at": "2026-10-29T01:47:39.504101+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -48,7 +48,7 @@
   "fallback_model": "mercury-3"
  },
  "wallet": {
-  "sol": null
+  "sol": 1.159207
  },
  "limits": {
   "max_positions": 3,
@@ -57,9 +57,20 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 0,
-  "open": [],
-  "total_tracked": 106
+  "open_count": 1,
+  "open": [
+   {
+    "id": "DY4wAiegz4GXiBZUpeEcaf23tG2ySd43bANs63g8ZZJM",
+    "pool": "REMUS-SOL",
+    "closed": false,
+    "deployed_at": "2026-10-29T01:45:08.544Z",
+    "closed_at": null,
+    "pnl_usd": null,
+    "value_usd": 1.1,
+    "amount_sol": 1.1
+   }
+  ],
+  "total_tracked": 107
  },
  "pnl": {
   "last24h_usd": -14.86,
@@ -1132,13 +1143,13 @@
  ],
  "decisions": {
   "total": 100,
-  "total_real": 1303,
-  "today": 22,
-  "today_real": 0,
+  "total_real": 1304,
+  "today": 23,
+  "today_real": 1,
   "by_type": {
-   "deploy": 4,
    "skip": 91,
    "close": 4,
+   "deploy": 4,
    "no_deploy": 1
   },
   "by_actor": {
@@ -1146,6 +1157,14 @@
    "MANAGER": 4
   },
   "recent": [
+   {
+    "ts": "2026-10-29T01:45:08.549Z",
+    "type": "deploy",
+    "actor": "SCREENER",
+    "pool_name": "REMUS-SOL",
+    "summary": "Deployed 1.1 SOL with bid_ask",
+    "reason_short": "Chosen range -568\u2192-513 around active bin -513"
+   },
    {
     "ts": "2026-10-29T01:42:16.255Z",
     "type": "close",
@@ -1233,14 +1252,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-29T00:50:00.907Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
    }
   ]
  },
@@ -1260,7 +1271,7 @@
    },
    {
     "hour": "17:00",
-    "count": 3
+    "count": 2
    },
    {
     "hour": "18:00",
@@ -1292,25 +1303,25 @@
    },
    {
     "hour": "01:00",
-    "count": 10
+    "count": 11
    }
   ]
  },
  "cycles": {
-  "last_screening": null,
-  "last_management": "2026-10-29T01:40:00.814"
+  "last_screening": "2026-10-29T01:44:53.738",
+  "last_management": "2026-10-29T01:45:00.354"
  },
  "log_tail": [
-  "[2026-10-29T01:30:00.830Z] [CRON] Screening skipped \u2014 insufficient SOL (0.151 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-29T01:30:01.132Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-29T01:35:00.613Z] [CRON] Starting management cycle",
-  "[2026-10-29T01:35:01.512Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-29T01:35:01.782Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
-  "[2026-10-29T01:35:02.037Z] [CRON] Screening skipped \u2014 insufficient SOL (0.151 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-29T01:40:00.814Z] [CRON] Starting management cycle",
-  "[2026-10-29T01:40:01.109Z] [CRON] Screening skipped \u2014 insufficient SOL (0.151 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-29T01:40:01.799Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-29T01:42:00.382Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM"
+  "[2026-10-29T01:44:59.160Z] [SCREENING] Bot-holder filter: dropped paws-SOL \u2014 bots 38.36% > 30%",
+  "[2026-10-29T01:45:00.354Z] [CRON] Starting management cycle",
+  "[2026-10-29T01:45:00.798Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-29T01:45:00.798Z] [CRON] Screening skipped \u2014 previous cycle still running",
+  "[2026-10-29T01:45:07.495Z] [DEPLOY] Pool: 9TKVhSBJYW7J8JbvkXzCy1Z3NHtjxqUUz6cdNiUh24nf",
+  "[2026-10-29T01:45:07.497Z] [DEPLOY] Strategy: bid_ask, Bins: -568 to -513 (55 bins)",
+  "[2026-10-29T01:45:07.497Z] [DEPLOY] Amount: 0 X, 1.1 Y",
+  "[2026-10-29T01:45:07.497Z] [DEPLOY] Position: DY4wAiegz4GXiBZUpeEcaf23tG2ySd43bANs63g8ZZJM",
+  "[2026-10-29T01:45:08.538Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2TmLnh69iYFV9WLaUuATj8epSKB5HCsARijL5VWRLDVF5HtQ5poLXCZDk3VnhcsffyQydQxK7tdCFeMiv8t4KL6T",
+  "[2026-10-29T01:45:09.685Z] [AGENT] \ud83d\ude80 DEPLOYED"
  ],
- "state_last_updated": "2026-10-29T01:42:16.007Z"
+ "state_last_updated": "2026-10-29T01:47:16.683Z"
 }

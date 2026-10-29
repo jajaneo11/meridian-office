@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T01:02:40.907114+00:00",
+ "generated_at": "2026-10-29T01:07:41.802567+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -1134,7 +1134,7 @@
  "decisions": {
   "total": 100,
   "total_real": 1303,
-  "today": 13,
+  "today": 14,
   "today_real": 0,
   "by_type": {
    "skip": 91,
@@ -1147,6 +1147,14 @@
    "MANAGER": 4
   },
   "recent": [
+   {
+    "ts": "2026-10-29T01:05:01.525Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
+   },
    {
     "ts": "2026-10-29T01:00:00.346Z",
     "type": "skip",
@@ -1234,14 +1242,6 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-29T00:05:01.882Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
    }
   ]
  },
@@ -1261,7 +1261,7 @@
    },
    {
     "hour": "17:00",
-    "count": 12
+    "count": 11
    },
    {
     "hour": "18:00",
@@ -1293,25 +1293,25 @@
    },
    {
     "hour": "01:00",
-    "count": 1
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": null,
-  "last_management": "2026-10-29T01:00:00.087"
+  "last_management": "2026-10-29T01:05:00.278"
  },
  "log_tail": [
-  "[2026-10-29T00:50:01.435Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-29T00:55:00.902Z] [CRON] Starting management cycle",
-  "[2026-10-29T00:55:01.569Z] [CRON] Management: all positions STAY \u2014 skipping",
-  "[2026-10-29T00:55:01.798Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
   "[2026-10-29T00:55:02.019Z] [CRON] Screening skipped \u2014 insufficient SOL (0.151 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-29T01:00:00.087Z] [CRON] Starting management cycle",
   "[2026-10-29T01:00:00.118Z] [CRON] Starting morning briefing",
   "[2026-10-29T01:00:00.328Z] [TELEGRAM_ERROR] sendMessage 400: {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Unsupported start tag \\\"=\\\" at byte offset 762\"}",
   "[2026-10-29T01:00:00.344Z] [CRON] Screening skipped \u2014 insufficient SOL (0.151 < 1.1300000000000001 needed for deploy + gas)",
-  "[2026-10-29T01:00:00.819Z] [CRON] Management: all positions STAY \u2014 skipping"
+  "[2026-10-29T01:00:00.819Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-29T01:05:00.278Z] [CRON] Starting management cycle",
+  "[2026-10-29T01:05:00.993Z] [CRON] Management: all positions STAY \u2014 skipping",
+  "[2026-10-29T01:05:01.257Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
+  "[2026-10-29T01:05:01.524Z] [CRON] Screening skipped \u2014 insufficient SOL (0.151 < 1.1300000000000001 needed for deploy + gas)"
  ],
  "state_last_updated": "2026-10-29T01:00:00.330Z"
 }

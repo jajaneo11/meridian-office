@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T13:32:41.494543+00:00",
+ "generated_at": "2026-10-29T14:47:39.589666+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -62,7 +62,7 @@
   "total_tracked": 107
  },
  "pnl": {
-  "last24h_usd": -11.4,
+  "last24h_usd": -11.68,
   "fees24h_usd": 28.06,
   "all_time_usd": 7.16,
   "closed_total": 107,
@@ -1256,10 +1256,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "02:00",
-    "count": 18
-   },
-   {
     "hour": "03:00",
     "count": 18
    },
@@ -1301,6 +1297,10 @@
    },
    {
     "hour": "13:00",
+    "count": 0
+   },
+   {
+    "hour": "14:00",
     "count": 0
    }
   ]

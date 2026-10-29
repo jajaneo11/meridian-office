@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T01:57:42.810831+00:00",
+ "generated_at": "2026-10-29T02:02:40.642600+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -57,26 +57,15 @@
   "management_min": 10
  },
  "positions": {
-  "open_count": 1,
-  "open": [
-   {
-    "id": "DY4wAiegz4GXiBZUpeEcaf23tG2ySd43bANs63g8ZZJM",
-    "pool": "REMUS-SOL",
-    "closed": false,
-    "deployed_at": "2026-10-29T01:45:08.544Z",
-    "closed_at": null,
-    "pnl_usd": null,
-    "value_usd": 1.1,
-    "amount_sol": 1.1
-   }
-  ],
+  "open_count": 0,
+  "open": [],
   "total_tracked": 107
  },
  "pnl": {
-  "last24h_usd": -14.86,
-  "fees24h_usd": 37.18,
-  "all_time_usd": 17.32,
-  "closed_total": 106,
+  "last24h_usd": -25.02,
+  "fees24h_usd": 40.37,
+  "all_time_usd": 7.16,
+  "closed_total": 107,
   "win_rate_pct": 64
  },
  "pnl_trades": [
@@ -1139,24 +1128,58 @@
    "amount_sol": 1.1,
    "minutes_held": 207,
    "close_reason": "Stop loss: PnL -12.86% <= -12%"
+  },
+  {
+   "pool": "REMUS-SOL",
+   "recorded_at": "2026-10-29T01:58:48.784Z",
+   "pnl_usd": -10.16,
+   "pnl_pct": -9.19,
+   "fees_usd": 3.1946665132579843,
+   "amount_sol": 1.1,
+   "minutes_held": 13,
+   "close_reason": "Stop loss: PnL -12.17% <= -12%"
   }
  ],
  "decisions": {
   "total": 100,
   "total_real": 1304,
-  "today": 25,
+  "today": 28,
   "today_real": 1,
   "by_type": {
-   "skip": 91,
-   "close": 4,
+   "skip": 90,
+   "close": 5,
    "deploy": 4,
    "no_deploy": 1
   },
   "by_actor": {
-   "SCREENER": 96,
-   "MANAGER": 4
+   "SCREENER": 95,
+   "MANAGER": 5
   },
   "recent": [
+   {
+    "ts": "2026-10-29T02:00:00.667Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (1.054 < 1.1300000000000001)"
+   },
+   {
+    "ts": "2026-10-29T02:00:00.268Z",
+    "type": "skip",
+    "actor": "SCREENER",
+    "pool_name": null,
+    "summary": "Screening skipped",
+    "reason_short": "Insufficient SOL (1.054 < 1.1300000000000001)"
+   },
+   {
+    "ts": "2026-10-29T01:58:48.809Z",
+    "type": "close",
+    "actor": "MANAGER",
+    "pool_name": "REMUS-SOL",
+    "summary": "Closed at -9.19%",
+    "reason_short": "Stop loss: PnL -12.17% <= -12%"
+   },
    {
     "ts": "2026-10-29T01:55:01.955Z",
     "type": "skip",
@@ -1228,39 +1251,11 @@
     "pool_name": null,
     "summary": "Screening skipped",
     "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-29T01:15:02.106Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-29T01:10:00.808Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
-   },
-   {
-    "ts": "2026-10-29T01:05:01.525Z",
-    "type": "skip",
-    "actor": "SCREENER",
-    "pool_name": null,
-    "summary": "Screening skipped",
-    "reason_short": "Insufficient SOL (0.151 < 1.1300000000000001)"
    }
   ]
  },
  "activity": {
   "per_hour": [
-   {
-    "hour": "14:00",
-    "count": 0
-   },
    {
     "hour": "15:00",
     "count": 0
@@ -1275,7 +1270,7 @@
    },
    {
     "hour": "18:00",
-    "count": 12
+    "count": 9
    },
    {
     "hour": "19:00",
@@ -1303,25 +1298,29 @@
    },
    {
     "hour": "01:00",
-    "count": 13
+    "count": 14
+   },
+   {
+    "hour": "02:00",
+    "count": 2
    }
   ]
  },
  "cycles": {
   "last_screening": "2026-10-29T01:44:53.738",
-  "last_management": "2026-10-29T01:55:00.811"
+  "last_management": "2026-10-29T02:00:00.041"
  },
  "log_tail": [
-  "[2026-10-29T01:45:07.497Z] [DEPLOY] Position: DY4wAiegz4GXiBZUpeEcaf23tG2ySd43bANs63g8ZZJM",
-  "[2026-10-29T01:45:08.538Z] [DEPLOY] SUCCESS \u2014 1 tx(s): 2TmLnh69iYFV9WLaUuATj8epSKB5HCsARijL5VWRLDVF5HtQ5poLXCZDk3VnhcsffyQydQxK7tdCFeMiv8t4KL6T",
-  "[2026-10-29T01:45:09.685Z] [AGENT] \ud83d\ude80 DEPLOYED",
-  "[2026-10-29T01:50:00.606Z] [CRON] Starting management cycle",
-  "[2026-10-29T01:50:00.957Z] [CRON] Screening skipped \u2014 insufficient SOL (0.016 < 1.1300000000000001 needed for deploy + gas)",
   "[2026-10-29T01:50:01.317Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-29T01:55:00.811Z] [CRON] Starting management cycle",
   "[2026-10-29T01:55:01.479Z] [CRON] Management: all positions STAY \u2014 skipping",
   "[2026-10-29T01:55:01.721Z] [CRON] Post-management: 1/3 positions \u2014 triggering screening",
-  "[2026-10-29T01:55:01.954Z] [CRON] Screening skipped \u2014 insufficient SOL (0.016 < 1.1300000000000001 needed for deploy + gas)"
+  "[2026-10-29T01:55:01.954Z] [CRON] Screening skipped \u2014 insufficient SOL (0.016 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-29T01:58:34.893Z] [CRON] Management: executing 1 mechanical action(s) \u2014 no LLM",
+  "[2026-10-29T02:00:00.041Z] [CRON] Starting management cycle",
+  "[2026-10-29T02:00:00.267Z] [CRON] Screening skipped \u2014 insufficient SOL (1.054 < 1.1300000000000001 needed for deploy + gas)",
+  "[2026-10-29T02:00:00.550Z] [CRON] No open positions \u2014 triggering screening cycle",
+  "[2026-10-29T02:00:00.667Z] [CRON] Screening skipped \u2014 insufficient SOL (1.054 < 1.1300000000000001 needed for deploy + gas)"
  ],
- "state_last_updated": "2026-10-29T01:51:07.781Z"
+ "state_last_updated": "2026-10-29T01:58:48.525Z"
 }

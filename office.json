@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T12:37:39.340325+00:00",
+ "generated_at": "2026-11-06T12:42:38.644869+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -7,7 +7,7 @@
    "Degen": 30,
    "Multihours": 13
   },
-  "active_24h": 34,
+  "active_24h": 33,
   "total_value_usd": 375237,
   "total_activity": 270,
   "top": [

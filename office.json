@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T01:22:44.848026+00:00",
+ "generated_at": "2026-11-06T04:02:40.812005+00:00",
  "smart_wallets": {
   "total": 54,
   "by_category": {
@@ -7,24 +7,19 @@
    "Degen": 30,
    "Multihours": 13
   },
-  "active_24h": 37,
-  "total_value_usd": 341996,
+  "active_24h": 39,
+  "total_value_usd": 371737,
   "total_activity": 270,
   "top": [
    {
     "name": "Degen #27",
     "category": "Degen",
-    "value_usd": 168063
+    "value_usd": 194089
    },
    {
     "name": "Multihours #6",
     "category": "Multihours",
-    "value_usd": 25057
-   },
-   {
-    "name": "Degen #7",
-    "category": "Degen",
-    "value_usd": 24988
+    "value_usd": 27911
    },
    {
     "name": "Whale LP #1",
@@ -32,9 +27,14 @@
     "value_usd": 24920
    },
    {
+    "name": "Degen #7",
+    "category": "Degen",
+    "value_usd": 24152
+   },
+   {
     "name": "Whale #4 (GMGN)",
     "category": "alpha",
-    "value_usd": 19022
+    "value_usd": 22542
    }
   ],
   "decisions_mentioning": 0
@@ -1256,18 +1256,6 @@
  "activity": {
   "per_hour": [
    {
-    "hour": "14:00",
-    "count": 0
-   },
-   {
-    "hour": "15:00",
-    "count": 0
-   },
-   {
-    "hour": "16:00",
-    "count": 0
-   },
-   {
     "hour": "17:00",
     "count": 0
    },
@@ -1301,6 +1289,18 @@
    },
    {
     "hour": "01:00",
+    "count": 0
+   },
+   {
+    "hour": "02:00",
+    "count": 0
+   },
+   {
+    "hour": "03:00",
+    "count": 0
+   },
+   {
+    "hour": "04:00",
     "count": 0
    }
   ]
